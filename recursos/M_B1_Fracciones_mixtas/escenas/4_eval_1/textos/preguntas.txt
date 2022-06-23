@@ -1,0 +1,9 @@
+7
+
+'Expresa como fracción la parte coloreada'
+'Convierte a número mixto la fracción impropia '
+'Expresa como número mixto la parte coloreada'
+'Expresa como fracción impropia'
+'Expresa como número mixto'
+'convierte a número mixto la fracción impropia'
+'Expresa como fracción impropia'

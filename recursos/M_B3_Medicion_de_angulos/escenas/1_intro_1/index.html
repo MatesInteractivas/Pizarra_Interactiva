@@ -1,0 +1,74 @@
+<html>
+<head>
+	<title>Medición de ángulos.</title>
+	<style>
+		*{
+		border:0;
+		margin:0;
+		padding:0;
+		}
+	</style>
+</head>
+<body >
+
+<p align="left">
+<applet width=790 height=520
+        code="descinst.Descartes.class"
+        codebase="./"
+        archive="descinst.jar,http://recursostic.educacion.es/descartes/web/plugin/descinst.jar"
+        MAYSCRIPT>
+   <param name="tama&ntilde;o" value="790x520">
+   <param name="pleca" value="title='Ajusta el &aacute;ngulo de tiro y dispara al blanco.' subtitle='Tienes cinco intentos para acertar.' subtitlines='2' bgcolor='268bea' fgcolor='ffffff' align='center' titleimage='images/instrucciones.jpg' titlefont='SansSerif,PLAIN,22' subtitlefont='SansSerif,PLAIN,22' ">
+   <param name="sonido" value="s&iacute;">
+   <param name="&aacute;lgebra" value="s&iacute;">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="s&iacute;">
+   <param name="deshacer" value="no">
+   <param name="Versi&oacute;n" value="4.41, 2010-12-16">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="tipo='R2' id='E1' fijo='s&iacute;' escala='12' O.x='-300' O.y='50' imagen='images/fondo.png' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_00" value="id='Lanzar' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E1' nombre='Lanzar' expresi&oacute;n='(580,100,120,30)' fijo='s&iacute;' visible='no' color='blanco' color-int='naranja' negrita='s&iacute;' fuente puntos='20' imagen='images/btn120.png' acci&oacute;n='calcular' par&aacute;metro='animar=1\nintentos=intentos+1\n' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='(g1.x=0)&amp;(g1.y=0)' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_01" value="id='g1' tipo='gr&aacute;fico' espacio='E1' color='azul' color-int='rojo' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' dibujar-si='tt' activo-si='correcto!=1' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12'">
+   <param name="C_02" value="id='g1.x' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='g1.x' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_03" value="id='g1.y' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='g1.y' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_04" value="id='a' tipo='num&eacute;rico' regi&oacute;n='interior' espacio='E1' nombre='a' expresi&oacute;n='(195,175,50,30)' valor='30' incr='1' min='30' max='89' decimales='0' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='(g1.x=0)&amp;(g1.y=0)' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_05" value="id='otra' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E1' nombre='Otra' expresi&oacute;n='(580,100,120,30)' fijo='s&iacute;' visible='s&iacute;' color='blanco' color-int='naranja' negrita='s&iacute;' fuente puntos='20' imagen='images/btn120.png' acci&oacute;n='calcular' par&aacute;metro='g1.x=0\ng1.y=0\nprecio=888\nt=0\ng3.x=((intentos=5)|(correcto=1))?35+rnd*15:g3.x\nintentos=(correcto=1)?0:intentos\nintentos=(intentos=5)?0:intentos\nronda=(intentos=0)?ronda+1:ronda' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='(t&gt;Tv)' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_06" value="id='g2' tipo='gr&aacute;fico' espacio='E1' color='azul' color-int='rojo' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' dibujar-si='tt' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12'">
+   <param name="C_07" value="id='g2.x' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='g2.x' valor='-1' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_08" value="id='g2.y' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='g2.y' valor='-1' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_09" value="id='g3' tipo='gr&aacute;fico' espacio='E1' color='azul' color-int='rojo' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' dibujar-si='tt' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12'">
+   <param name="C_10" value="id='g3.x' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='g3.x' valor='40' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_11" value="id='g3.y' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='g3.y' valor='0.4' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="A_00" value="id='t' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_01" value="id='v' constante='s&iacute;' expresi&oacute;n='24' evaluar='una-sola-vez'">
+   <param name="A_02" value="id='pi' constante='s&iacute;' expresi&oacute;n='3.1416' evaluar='una-sola-vez'">
+   <param name="A_03" value="id='ar' expresi&oacute;n='pi*a/180'">
+   <param name="A_04" value="id='a5' algoritmo='s&iacute;' evaluar='siempre' hacer='g1.x=v*cos(ar)*t;g1.y=v*sen(ar)*t-(5*t*t);Tv=2*v*sen(ar)/10;R=v*cos(ar)*Tv;;mostrar=(t&gt;=Tv);correcto=(mostrar=1)&amp;(abs(R-g3.x)&lt;1.5)'">
+   <param name="A_05" value="id='e6' evento='s&iacute;' condici&oacute;n='animar=1' acci&oacute;n='animar' par&aacute;metro.fuente='Monospaced,PLAIN,12' ejecuci&oacute;n='alternar' pos_mensajes='centro'">
+   <param name="A_06" value="id='e7' evento='s&iacute;' condici&oacute;n='(t&gt;Tv)' acci&oacute;n='calcular' par&aacute;metro='animar=0' par&aacute;metro.fuente='Monospaced,PLAIN,12' ejecuci&oacute;n='alternar' pos_mensajes='centro'">
+   <param name="A_07" value="id='animar' constante='s&iacute;' expresi&oacute;n='99' evaluar='una-sola-vez'">
+   <param name="A_08" value="id='ronda' constante='s&iacute;' expresi&oacute;n='1' evaluar='una-sola-vez'">
+   <param name="G_00" value="espacio='E1' tipo='macro' expresi&oacute;n='macros/sombras.txt' nombre='SOM'">
+   <param name="G_01" value="espacio='E1' tipo='macro' dibujar-si='t=99' expresi&oacute;n='macros/redondangulo.txt' nombre='RA'">
+   <param name="G_02" value="espacio='E1' tipo='arco' color='ff0000ff' dibujar-si='(g1.x=0)&amp;(g1.y=0)' radio='4' fin='a' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' relleno='verde'">
+   <param name="G_03" value="espacio='E1' tipo='texto' dibujar-si='(mostrar=1)&amp;(correcto=1)' expresi&oacute;n='[20,30]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs44\b         \u161 Muy Bien!\par Contin\u250 a jugando\f2\fs24\b0}' fuente='Arial Bold,BOLD,22' fijo='s&iacute;'">
+   <param name="G_04" value="espacio='E1' tipo='texto' dibujar-si='(mostrar=1)&amp;(correcto!=1)&amp;(intentos!=5)' expresi&oacute;n='[20,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green158\blue0;\red0\green0\blue255;}\f1\fs44\b\cf0\u161 Int\u233 ntalo de nuevo!\par Te quedan{\*\mjaformula{\expr [5-intentos]\decimals 0\fixed1}intentos}\cf1\f2\fs24\b0}' fuente='Arial Bold,BOLD,22' fijo='s&iacute;'">
+   <param name="G_05" value="espacio='E1' tipo='texto' dibujar-si='(mostrar=1)&amp;(correcto!=1)&amp;(intentos=5)' expresi&oacute;n='[20,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green158\blue0;\red0\green0\blue255;}\f1\fs44\b\cf0\u161 Lo siento prueba ahora\par con otra posici\u243 n!\cf1\f2\fs24\b0}' fuente='Arial Bold,BOLD,22' fijo='s&iacute;'">
+   <param name="G_06" value="espacio='E1' tipo='texto' dibujar-si='ronda=3' expresi&oacute;n='[220,410]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red0\green150\blue186;\red0\green0\blue255;}\f1\fs48\b\cf0\u161 Puedes seguir con la exploraci\u243 n!\cf1\b0}' fuente='Arial Bold,BOLD,24' fijo='s&iacute;'">
+   <param name="G_07" value="espacio='E1' tipo='texto' dibujar-si='(g1.x=0)&amp;(g1.y=0)' expresi&oacute;n='[50,50]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs48 Ayuda al basquetbolista\par a encontrar el \b\u225 ngulo de tiro\b0\par para encestar la pelota.\f3\fs24\cf1}' fuente='Arial,PLAIN,24' fijo='s&iacute;'">
+   <param name="G_08" value="espacio='E1' tipo='flecha' color='blanco' dibujar-si='(g1.x=0)&amp;(g1.y=0)' expresi&oacute;n='(0,0)(4*cos(ar),4*sen(ar)) ' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='1' ancho='3' ancho='3' punta='5' flecha='ff9e00'">
+   <param name="G_09" value="espacio='E1' tipo='ecuaci&oacute;n' dibujar-si='tt' expresi&oacute;n='4=x^2+y^2' visible='no'">
+   <param name="G_10" value="espacio='E1' tipo='segmento' color='grisObscuro' dibujar-si='(g1.x=0)&amp;(g1.y=0)' expresi&oacute;n='(0,-3)(0,3)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='1'">
+   <param name="G_11" value="espacio='E1' tipo='segmento' color='grisObscuro' dibujar-si='(g1.x=0)&amp;(g1.y=0)' expresi&oacute;n='(-4,0)(4,0)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='1'">
+   <param name="G_12" value="espacio='E1' tipo='imagen' expresi&oacute;n='(g2.x+1,g2.y-6,0.8,0.8)' archivo='/images/player.png' rotini='-15'">
+   <param name="G_13" value="espacio='E1' tipo='imagen' expresi&oacute;n='(g3.x-2.5,g3.y)' archivo='/images/caja.png'">
+   <param name="G_14" value="espacio='E1' tipo='imagen' dibujar-si='t&lt;Tv' expresi&oacute;n='(g1.x-1.1,g1.y+1.1)' archivo='/images/bola.png' rotini='90*t+10'">
+   <param name="G_15" value="espacio='E1' tipo='texto' dibujar-si='tt' expresi&oacute;n='[20,150]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Courier New;}\f1\fs40 diferencia=\f2\fs44\i{\*\mjaformula{\expr abs(R-g3.x)\decimals 2\fixed1}}\f1\fs40\i0\par mostrar={\*\mjaformula{\expr mostrar\decimals 0\fixed1}}\par correcto={\*\mjaformula{\expr correcto\decimals 0\fixed1}}\par \par g3.x={\*\mjaformula{\expr g3.x\decimals 2\fixed1}}\par alcance={\*\mjaformula{\expr R\decimals 2\fixed1}}\f3\fs24}' fuente='Arial,PLAIN,20' fijo='s&iacute;'">
+   <param name="G_16" value="espacio='E1' tipo='texto' dibujar-si='(g1.x=0)&amp;(g1.y=0)' expresi&oacute;n='[50,180]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\f1\fs38\b\cf0\u193 ngulo de tiro\cf1}' fuente='Arial Bold,BOLD,19' fijo='s&iacute;'">
+   <param name="Animaci&oacute;n" value="pausa='120' controles='no' auto='no' inicio='t=0' hacer='t=t+0.1;;;' mientras='t&lt;Tv'">
+<font face="Arial" size="3">Esta unidad interactiva requiere la m&aacute;quina virtual de Java <a href="http://java.sun.com/javase/downloads/index.jsp" target="_blank">J2RE</a>.</font>
+</applet></p>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<html>
+<head>
+	<title>&Aacute;rea de figuras planas &nbsp;-&nbsp; Exploraci&oacute;n.</title>
+	<style>
+		*{
+		border:0;
+		margin:0;
+		padding:0;
+		}
+		body{
+			background-color:#7db9f2;
+		}
+	</style>
+</head>
+<body >
+
+<p align="center">
+<applet width=790 height=520
+        code="descinst.Descartes.class"
+        codebase="./"
+        archive="descinst.jar,http://recursostic.educacion.es/descartes/web/plugin/descinst.jar"
+        MAYSCRIPT>
+   <param name="tama&ntilde;o" value="790x520">
+   <param name="pleca" value="title='En esta escena vas a observar c&oacute;mo se calculan el per&iacute;metro y el &aacute;rea' subtitle='Puedes observar varias figuras, haciendo clic en el bot&oacute;n -Otro-.' subtitlines='2' bgcolor='268bea' fgcolor='ffffff' align='center' titleimage='images/instrucciones.jpg' titlefont='SansSerif,BOLD,22' subtitlefont='SansSerif,BOLD,22' ">
+   <param name="sonido" value="s&iacute;">
+   <param name="&aacute;lgebra" value="s&iacute;">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="deshacer" value="no">
+   <param name="Versi&oacute;n" value="4.41, 2010-12-16">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="tipo='R2' id='E1' fijo='s&iacute;' escala='40' O.x='-45%' O.y='150' imagen='images/fondo.png' despl_imagen='expand.' fondo='blanco' red='grisClaro' red10='ff808080' ejes='ff000000' texto='no' sensible_a_los_movimientos_del_rat&oacute;n='s&iacute;'">
+   <param name="C_00" value="id='Otro' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E1' nombre='Otro' expresi&oacute;n='((E1._w-100-50),300,100,30)' fijo='s&iacute;' visible='s&iacute;' color='negro' color-int='naranja' negrita='s&iacute;' fuente puntos='22' imagen='images/btn100.png' acci&oacute;n='calcular' par&aacute;metro='x11=ent(rnd*2)\nx12=ent(rnd*2)\nx13=ent(rnd*2)\nx14=ent(rnd*2)\nx15=ent(rnd*2)\nx16=ent(rnd*2)\nx21=x11+ent(rnd*4)+2\nx22=x12+ent(rnd*4)+2\nx23=x13+ent(rnd*4)+2\nx24=x14+ent(rnd*4)+2\nx25=x15+ent(rnd*4)+2\nx26=x16+ent(rnd*4)+2' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_01" value="id='Perimetro' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E1' nombre='C&aacute;lculo del Per&iacute;metro' expresi&oacute;n='(350,300,200,30)' fijo='s&iacute;' visible='s&iacute;' color='negro' color-int='naranja' negrita='s&iacute;' fuente puntos='19' imagen='images/btn200.png' acci&oacute;n='calcular' par&aacute;metro='per=1\nare=0' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='per=0' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_02" value="id='Area' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E1' nombre='C&aacute;lculo del &Aacute;rea' expresi&oacute;n='(350,300,200,30)' fijo='s&iacute;' visible='s&iacute;' color='negro' color-int='naranja' negrita='s&iacute;' fuente puntos='19' imagen='images/btn200.png' acci&oacute;n='calcular' par&aacute;metro='per=0\nare=1' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='are=0' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="A_00" value="id='INICIO_MACROS' algoritmo='s&iacute;' evaluar='una-sola-vez' hacer='RA.transp=0.0;RA.rojo=1.0;RA.verde=0.93;RA.azul=0.32;RA.w=360;RA.h=240;RA.x=(E1._w-RA.w)/2;RA.y=((E1._h-50)-RA.h)/2;SOM1.transp=0.8;SOM1.rojo=0.2;SOM1.verde=0.8;SOM1.azul=0.99;SOM1.Top=140;SOM1.Left=100;SOM2.transp=0.8;SOM2.rojo=0.2;SOM2.verde=0.8;SOM2.azul=0.99;SOM2.Top=180;SOM2.Left=100'">
+   <param name="A_01" value="id='INICIO' algoritmo='s&iacute;' evaluar='una-sola-vez' hacer='x11=ent(rnd*2);x12=ent(rnd*2);x13=ent(rnd*2);x14=ent(rnd*2);x15=ent(rnd*2);x16=ent(rnd*2);x21=x11+ent(rnd*4)+2;x22=x12+ent(rnd*4)+2;x23=x13+ent(rnd*4)+2;x24=x14+ent(rnd*4)+2;x25=x15+ent(rnd*4)+2;x26=x16+ent(rnd*4)+2;per=1;'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='s&iacute;' evaluar='siempre' hacer='p1x=(x21-x11);t2x=(x22-x12);p2x=(x22-x12);p2x=(x12=x11)?abs(p1x-p2x):p2x;p2x=(x12&lt;x11)?abs(p1x-p2x)+2*(x22&lt;x21):p2x;p2x=(x12&gt;x11)?1+abs(x22-x21):p2x;t3x=(x23-x13);p3x=(x23-x13);p3x=(x13=x12)?abs(t2x-p3x):p3x;p3x=(x13&lt;x12)?abs(t2x-p3x)+2*(x23&lt;x22):p3x;p3x=(x13&gt;x12)?1+abs(x23-x22):p3x;t4x=(x24-x14);p4x=(x24-x14);p4x=(x14=x13)?abs(t3x-p4x):p4x;p4x=(x14&lt;x13)?abs(t3x-p4x)+2*(x24&lt;x23):p4x;p4x=(x14&gt;x13)?1+abs(x24-x23):p4x;t5x=(x25-x15);p5x=(x25-x15);p5x=(x15=x14)?abs(t4x-p5x):p5x;p5x=(x15&lt;x14)?abs(t4x-p5x)+2*(x25&lt;x24):p5x;p5x=(x15&gt;x14)?1+abs(x25-x24):p5x;t6x=(x26-x16);p6x=(x26-x16);p6x=(x16=x15)?abs(t5x-p6x):p6x;p6x=(x16&lt;x15)?abs(t5x-p6x)+2*(x26&lt;x25):p6x;p6x=(x16&gt;x15)?1+abs(x26-x25):p6x;p7x=(x26-x16);peri=12+p1x+p2x+p3x+p4x+p5x+p6x+p7x;area=p1x+p7x+t2x+t3x+t4x+t5x;;'">
+   <param name="G_00" value="espacio='E1' tipo='macro' fondo='s&iacute;' expresi&oacute;n='macros/sombras.txt' nombre='SOM1'">
+   <param name="G_01" value="espacio='E1' tipo='macro' fondo='s&iacute;' expresi&oacute;n='macros/sombras_inv.txt' nombre='SOM2'">
+   <param name="G_02" value="espacio='E1' tipo='pol&iacute;gono' color='9dffff00' dibujar-si='are=1' expresi&oacute;n='(x11,1)(x11,2)(x12,2)(x12,3)(x13,3)(x13,4)(x14,4)(x14,5)(x15,5)(x15,6)(x16,6)(x16,7)(x26,7)(x26,6)(x25,6)(x25,5)(x24,5)(x24,4)(x23,4)(x23,3)(x22,3)(x22,2)(x21,2)(x21,1)(x11,1)' relleno='50ff0000'">
+   <param name="G_03" value="espacio='E1' tipo='pol&iacute;gono' color='negro' dibujar-si='per=1' expresi&oacute;n='(x11,1)(x11,2)(x12,2)(x12,3)(x13,3)(x13,4)(x14,4)(x14,5)(x15,5)(x15,6)(x16,6)(x16,7)(x26,7)(x26,6)(x25,6)(x25,5)(x24,5)(x24,4)(x23,4)(x23,3)(x22,3)(x22,2)(x21,2)(x21,1)(x11,1)' ancho='2'">
+   <param name="G_04" value="espacio='E1' tipo='texto' dibujar-si='per=1' expresi&oacute;n='[330,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs48 El per\u237 metro de la figura es igual a\par la longitud de su contorno. En este\par caso,\par \par \b p = {\*\mjaformula{\expr peri\decimals 0\fixed1}}u\b0 , donde u significa unidades.\par \par Explora con otras figuras y observa c\u243 mo\par se calcula el  \u225 rea\par }' fuente='Arial,PLAIN,24' fijo='s&iacute;'">
+   <param name="G_05" value="espacio='E1' tipo='texto' dibujar-si='are' expresi&oacute;n='[330,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Arial;\f4\fcharset0 Times New Roman;}\f1\fs48 El \u225 rea de la figura es igual a\par la suma de todos los cuadrados\par de una unidad cuadrada de \par medida (1 u\f2\fs52{\*\mjaformula{\supix 2}}\f1\fs48 ). En este caso,\par \par \b A = {\*\mjaformula{\expr area\decimals 0\fixed1}}u\f4\fs52{\*\mjaformula{\supix 2}}\f1\fs48\b0\par \par Explora con otras figuras u observa c\u243 mo\par se calcula el  per\u237 metro\par }' fuente='Arial,PLAIN,24' fijo='s&iacute;'">
+   <param name="Animaci&oacute;n" value="pausa='20' controles='no' auto='s&iacute;' inicio='t=0;anim=1;animar=0' hacer='t=t+10;anim=(t&lt;RA1.w-10)?1:0' mientras='t&lt;RA1.w'">
+<font face="Arial" size="3">Esta unidad interactiva requiere la m&aacute;quina virtual de Java <a href="http://java.sun.com/javase/downloads/index.jsp" target="_blank">J2RE</a>.</font>
+</applet></p>
+
+</body>
+</html>

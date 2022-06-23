@@ -1,0 +1,166 @@
+<html>
+<head>
+	<title>Elementos de un &aacute;ngulo</title>
+	<style>
+		*{
+		border:0;
+		margin:0;
+		padding:0;
+		}
+	</style>
+</head>
+<body >
+
+<p align="left">
+<applet width=790 height=520
+        code="descinst.Descartes.class"
+        archive="descinst.jar,http://recursostic.educacion.es/descartes/web/plugin/descinst.jar"
+        MAYSCRIPT>
+   <param name="tama&ntilde;o" value="790x520">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="deshacer" value="no">
+   <param name="Versi&oacute;n" value="4.0982, 2010-05-26">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="tipo='R2' id='graficas' fijo='s&iacute;' despl_imagen='arr-izq' fondo='blanco' red='b8c4c8' red10='no' ejes='405860' texto='no'">
+   <param name="C_00" value="id='debug' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='graficas' nombre='debug' incr='1' min='0' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_01" value="id='O' tipo='gr&aacute;fico' espacio='graficas' color='(O.borde.rojo,O.borde.verde,O.borde.azul,O.borde.alfa)' color-int='(O.rojo,O.verde,O.azul,O.alfa)' tama&ntilde;o='6' expresi&oacute;n='(O.x,O.y)' fuente='Arial Bold,BOLD,22' decimales='20' fijo='no' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12'">
+   <param name="C_02" value="id='A' tipo='gr&aacute;fico' espacio='graficas' color='(A.borde.rojo,A.borde.verde,A.borde.azul,A.borde.alfa)' color-int='(A.rojo,A.verde,A.azul,A.alfa)' tama&ntilde;o='6' expresi&oacute;n='(A.x,A.y)' fuente='Arial Bold,BOLD,22' decimales='20' fijo='no' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12'">
+   <param name="C_03" value="id='B' tipo='gr&aacute;fico' espacio='graficas' color='(B.borde.rojo,B.borde.verde,B.borde.azul,B.borde.alfa)' color-int='(B.rojo,B.verde,B.azul,B.alfa)' tama&ntilde;o='6' expresi&oacute;n='(B.x,B.y)' fuente='Arial Bold,BOLD,22' decimales='20' fijo='no' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12'">
+   <param name="A_00" value="id='debug' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_01" value="id='O.x' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_02" value="id='O.y' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_03" value="id='A.x' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_04" value="id='A.y' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_05" value="id='B.x' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_06" value="id='B.y' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_07" value="id='O.activo' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_08" value="id='A.activo' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_09" value="id='B.activo' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_10" value="id='sec.r' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_11" value="id='alfa' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_12" value="id='alfaGrados' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_13" value="id='___COLORES___'">
+   <param name="A_14" value="id='O.ancho' constante='s&iacute;' expresi&oacute;n='6' evaluar='una-sola-vez'">
+   <param name="A_15" value="id='O.alfa' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_16" value="id='O.rojo' constante='s&iacute;' expresi&oacute;n='1' evaluar='una-sola-vez'">
+   <param name="A_17" value="id='O.verde' constante='s&iacute;' expresi&oacute;n='25/255' evaluar='una-sola-vez'">
+   <param name="A_18" value="id='O.azul' constante='s&iacute;' expresi&oacute;n='1' evaluar='una-sola-vez'">
+   <param name="A_19" value="id='O.borde.alfa' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_20" value="id='O.borde.rojo' constante='s&iacute;' expresi&oacute;n='1' evaluar='una-sola-vez'">
+   <param name="A_21" value="id='O.borde.verde' constante='s&iacute;' expresi&oacute;n='25/255' evaluar='una-sola-vez'">
+   <param name="A_22" value="id='O.borde.azul' constante='s&iacute;' expresi&oacute;n='1' evaluar='una-sola-vez'">
+   <param name="A_23" value="id='A.ancho' constante='s&iacute;' expresi&oacute;n='6' evaluar='una-sola-vez'">
+   <param name="A_24" value="id='A.alfa' constante='s&iacute;' expresi&oacute;n='72/255' evaluar='una-sola-vez'">
+   <param name="A_25" value="id='A.rojo' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_26" value="id='A.verde' constante='s&iacute;' expresi&oacute;n='153/255' evaluar='una-sola-vez'">
+   <param name="A_27" value="id='A.azul' constante='s&iacute;' expresi&oacute;n='1' evaluar='una-sola-vez'">
+   <param name="A_28" value="id='A.borde.alfa' constante='s&iacute;' expresi&oacute;n='72/255' evaluar='una-sola-vez'">
+   <param name="A_29" value="id='A.borde.rojo' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_30" value="id='A.borde.verde' constante='s&iacute;' expresi&oacute;n='153/255' evaluar='una-sola-vez'">
+   <param name="A_31" value="id='A.borde.azul' constante='s&iacute;' expresi&oacute;n='1' evaluar='una-sola-vez'">
+   <param name="A_32" value="id='B.ancho' constante='s&iacute;' expresi&oacute;n='6' evaluar='una-sola-vez'">
+   <param name="A_33" value="id='B.alfa' constante='s&iacute;' expresi&oacute;n='72/255' evaluar='una-sola-vez'">
+   <param name="A_34" value="id='B.rojo' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_35" value="id='B.verde' constante='s&iacute;' expresi&oacute;n='153/255' evaluar='una-sola-vez'">
+   <param name="A_36" value="id='B.azul' constante='s&iacute;' expresi&oacute;n='1' evaluar='una-sola-vez'">
+   <param name="A_37" value="id='B.borde.alfa' constante='s&iacute;' expresi&oacute;n='72/255' evaluar='una-sola-vez'">
+   <param name="A_38" value="id='B.borde.rojo' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_39" value="id='B.borde.verde' constante='s&iacute;' expresi&oacute;n='153/255' evaluar='una-sola-vez'">
+   <param name="A_40" value="id='B.borde.azul' constante='s&iacute;' expresi&oacute;n='1' evaluar='una-sola-vez'">
+   <param name="A_41" value="id='___VAR ESPACIO___'">
+   <param name="A_42" value="id='Esp.mouse_x' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_43" value="id='Esp.mouse_y' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_44" value="id='Esp.w' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_45" value="id='Esp.h' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_46" value="id='Esp.Ox' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_47" value="id='Esp.Oy' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_48" value="id='Esp.escala' constante='s&iacute;' expresi&oacute;n='45' evaluar='una-sola-vez'">
+   <param name="A_49" value="id='Esp.mouse_pressed' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_50" value="id='___VAR_INTERNAS___'">
+   <param name="A_51" value="id='Esp.minX' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_52" value="id='Esp.minY' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_53" value="id='Esp.maxX' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_54" value="id='Esp.maxY' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_55" value="id='A0.x' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_56" value="id='A0.y' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_57" value="id='B0.x' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_58" value="id='B0.y' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_59" value="id='U.x' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_60" value="id='U.y' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_61" value="id='V.x' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_62" value="id='V.y' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_63" value="id='maxRadio' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_64" value="id='verInfoSec' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_65" value="id='verInfoRec' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_66" value="id='verInfoVer' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_67" value="id='rectaActiva' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_68" value="id='_xProy' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_69" value="id='_yProy' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_70" value="id='pressAnt' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_71" value="id='Esp.mouse_xPix' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_72" value="id='Esp.mouse_yPix' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_73" value="id='___FUNCIONES___'">
+   <param name="A_74" value="id='distPtoP(P1.x,P1.y,P2.x,P2.y)' algoritmo='s&iacute;' expresi&oacute;n='_dist' algoritmo='s&iacute;' hacer='_dist=(P1.x-P2.x)^2+(P1.y-P2.y)^2;_dist=sqrt(_dist)'">
+   <param name="A_75" value="id='distPunToRec(Px,Py,Rx1,Ry1,Rx2,Ry2)' algoritmo='s&iacute;' expresi&oacute;n='D' algoritmo='s&iacute;' hacer='N=distPtoP(Rx1,Ry1,Rx2,Ry2);;U=(Rx2-Rx1)/N;V=(Ry2-Ry1)/N;D=abs(-V*(Px-Rx1)+U*(Py-Ry1))'">
+   <param name="A_76" value="id='angleVtoV(_x1,_y1,_x2,_y2)' algoritmo='s&iacute;' expresi&oacute;n='_alfa' algoritmo='s&iacute;' hacer='_NU=sqrt(_x1^2+_y1^2);_Ux=_x1/_NU;_Uy=_y1/_NU;;;_NV=sqrt(_x2^2+_y2^2);_Vx=_x2/_NV;_Vy=_y2/_NV;;;_cosa=_Ux*_Vx+_Uy*_Vy;_sena=_Ux*_Vy-_Uy*_Vx;;_alfa=acos(_cosa);_alfa=(_sena&lt;0)?(2*pi-_alfa):_alfa;;;'">
+   <param name="A_77" value="id='proyToRecta(_iRec,x,y)' algoritmo='s&iacute;' algoritmo='s&iacute;' hacer='_x1=O.x;_y1=O.y;;_x2=(_iRec==0)?A0.x:B0.x;_y2=(_iRec==0)?A0.y:B0.y;;_N=distPtoP(_x1,_y1,_x2,_y2);_U=(_x2-_x1)/_N;_V=(_y2-_y1)/_N;_Pr=_U*(x-_x1)+_V*(y-_y1);_xProy=_x1+_Pr*_U;_yProy=_y1+_Pr*_V'">
+   <param name="A_78" value="id='clickEnSector(_mx,_my)' algoritmo='s&iacute;' expresi&oacute;n='_dentro' algoritmo='s&iacute;' hacer='_v1.x=(O.x-A.x);_v1.y=(O.y-A.y);;_v2.x=(O.x-_mx);_v2.y=(O.y-_my);;_dist=sqrt(_v2.x^2+_v2.y^2);_dentro=_dist&lt;=sec.r;;;_angActSec=(_dentro)?angleVtoV(_v1.x,_v1.y,_v2.x,_v2.y):(alfa+0.1);_dentro=(_dentro)&amp;(_angActSec&lt;=alfa);;'">
+   <param name="A_79" value="id='clickRecta(_mx,_my)' algoritmo='s&iacute;' expresi&oacute;n='_click1|_click2' algoritmo='s&iacute;' hacer='actualizaAlfa();;proyToRecta(0,_mx,_my);_click1=distPtoP(_mx,_my,_xProy,_yProy);_click1=(_click1&lt;(2/Esp.escala));_K1=(A.x-O.x)/U.x;_usarY=(_K1&lt;=0.000001);_K1=(_usarY)?_K1:((A.y-O.y)/U.y);_K2=(_usarY)?((_yProy-O.y)/U.y):((_xProy-O.x)/U.x);_click1=(_click1)&amp;(_K2&gt;=0)&amp;(_K2&lt;=_K1);rectaActiva=(_click1)?0:-1;;;;tt=(_click1)?0:proyToRecta(1,_mx,_my);_click2=(_click1)?100:(distPtoP(_mx,_my,_xProy,_yProy));_click2=(_click2&lt;(2/Esp.escala));_K1=(B.x-O.x)/V.x;_usarY=(_K1&lt;=0.000001);_K1=(_usarY)?_K1:((B.y-O.y)/V.y);_K2=(_usarY)?((_yProy-O.y)/V.y):((_xProy-O.x)/V.x);_click2=(_click2)&amp;(_K2&gt;=0)&amp;(_K2&lt;=_K1);rectaActiva=(_click2)?1:rectaActiva;;;;;;'">
+   <param name="A_80" value="id='clickEnVertice(_mx,_my)' algoritmo='s&iacute;' expresi&oacute;n='_click1' algoritmo='s&iacute;' hacer='_click1=distPtoP(_mx,_my,O.x,O.y);_click1=(_click1&lt;(5/Esp.escala));;;'">
+   <param name="A_81" value="id='actualizaAlfa()' algoritmo='s&iacute;' algoritmo='s&iacute;' hacer='U.x=A.x-O.x;U.y=A.y-O.y;;NU=sqrt(U.x^2+U.y^2);U.x=U.x/NU;U.y=U.y/NU;V.x=B.x-O.x;V.y=B.y-O.y;;NV=sqrt(V.x^2+V.y^2);V.x=V.x/NV;V.y=V.y/NV;;;cosa=U.x*V.x+U.y*V.y;sena=U.x*V.y-U.y*V.x;;alfa=acos(cosa);alfa=(sena&lt;0)?(2*pi-alfa):alfa;alfaGrados=alfa*180/pi;'">
+   <param name="A_82" value="id='cambiaAngRec(_iRec,Mx,My)' algoritmo='s&iacute;' expresi&oacute;n='x' algoritmo='s&iacute;' hacer='_dist1=distPtoP(O.x,O.y,A.x,A.y);_dist2=distPtoP(O.x,O.y,B.x,B.y);;_rActual=(_iRec==1)?_dist2:_dist1;;_v1.x=(Mx-O.x);_v1.y=(My-O.y);_nV1=distPtoP(_v1.x,_v1.y,0,0);cosa=((_v1.x*1)+(_v1.y*0))/(_nV1*1);_angActual=acos(cosa);_angActual=(_v1.y&lt;0)?-_angActual:_angActual;_angActual=ent(_angActual*180/pi);;_angActual=ent(_angActual);_angActual=ent(_angActual);_angActual=ent(_angActual);;_angActual=_angActual*pi/180;;;_newX=O.x+_rActual*cos(_angActual);_newY=O.y+_rActual*sen(_angActual);;;A.x=(_iRec==0)?_newX:A.x;A.y=(_iRec==0)?_newY:A.y;;B.x=(_iRec==1)?_newX:B.x;B.y=(_iRec==1)?_newY:B.y;;actualizaAlfa();'">
+   <param name="A_83" value="id='mantenDentro()' algoritmo='s&iacute;' algoritmo='s&iacute;' inicio='_estaDentro=0;_facReg=1/Esp.escala' hacer=';_dentroX=(A.x&gt;=Esp.minX)&amp;(A.x&lt;=Esp.maxX);_dentroY=(A.y&gt;=Esp.minY)&amp;(A.y&lt;=Esp.maxY);_dentro1=(_dentroX)&amp;(_dentroY);;A.x=A.x-((_dentro1)?0:U.x*_facReg);A.y=A.y-((_dentro1)?0:U.y*_facReg);;_dentroX=(B.x&gt;=Esp.minX)&amp;(B.x&lt;=Esp.maxX);_dentroY=(B.y&gt;=Esp.minY)&amp;(B.y&lt;=Esp.maxY);_dentro2=(_dentroX)&amp;(_dentroY);;B.x=B.x-((_dentro2)?0:V.x*_facReg);B.y=B.y-((_dentro2)?0:V.y*_facReg);;_estaDentro=(_dentro1)&amp;(_dentro2)' mientras='!_estaDentro'">
+   <param name="A_84" value="id='constricCtrEsp()' algoritmo='s&iacute;' expresi&oacute;n='x' algoritmo='s&iacute;' hacer='tt=(A.activo)?proyToRecta(0,A.x,A.y):0;A.x=(A.activo)?_xProy:A.x;A.y=(A.activo)?_yProy:A.y;;tt=(B.activo)?proyToRecta(1,B.x,B.y):0;B.x=(B.activo)?_xProy:B.x;B.y=(B.activo)?_yProy:B.y;;;Esp.minX=(10-Esp.w/2-Esp.Ox)/Esp.escala;Esp.maxX=(Esp.w-10-Esp.w/2-Esp.Ox)/Esp.escala;;Esp.maxY=-(10-Esp.h/2-Esp.Oy)/Esp.escala;Esp.minY=-(Esp.h-10-Esp.h/2-Esp.Oy)/Esp.escala;;O.x=max(Esp.minX,min(Esp.maxX,O.x));O.y=max(Esp.minY,min(Esp.maxY,O.y));;;actualizaAlfa();tt=(O.activo)?cambiaAngRec(0,O.x+U.x,O.y+U.y):0;tt=(O.activo)?cambiaAngRec(1,O.x+V.x,O.y+V.y):0;;;mantenDentro();;_dist1=distPtoP(O.x,O.y,A.x,A.y);_dist2=distPtoP(O.x,O.y,B.x,B.y);maxRadio=min(_dist1,_dist2);;;'">
+   <param name="A_85" value="id='initEscena()' algoritmo='s&iacute;' expresi&oacute;n='x' algoritmo='s&iacute;' hacer='_margen=10;_radio=min(Esp.w,Esp.h)/2;_radio=(_radio-2*_margen)/Esp.escala;;_tmpA=ent(rnd*359);_tmpA=_tmpA;_tmpB=_tmpA+ent(rnd*330);;_tmpA=_tmpA*pi/180;_tmpB=_tmpB*pi/180;;;O.x=0;O.y=0;;A.x=O.x+_radio*(cos(_tmpA));A.y=O.y+_radio*(sen(_tmpA));;B.x=O.x+_radio*(cos(_tmpB));B.y=O.y+_radio*(sen(_tmpB));;;verInfoSec=0;verInfoRec=0;verInfoVer=0;A0.x=A.x;A0.y=A.y;B0.x=B.x;B0.y=B.y;'">
+   <param name="A_86" value="id='actualizar()' algoritmo='s&iacute;' algoritmo='s&iacute;' hacer='recienPress=(!pressAnt)&amp;(Esp.mouse_pressed);;;_limpiaVar=(recienPress)|(A.activo)|(B.activo)|(O.activo);rectaActiva=(Esp.mouse_pressed)?rectaActiva:-1;verInfoSec=(_limpiaVar)?0:verInfoSec;verInfoRec=(_limpiaVar)?0:verInfoRec;verInfoVer=(_limpiaVar)?0:verInfoVer;;_puedeB=(recienPress);verInfoVer=(_puedeB)?clickEnVertice(Esp.mouse_x,Esp.mouse_y):verInfoVer;verInfoVer=verInfoVer|O.activo;;_puedeB=(!verInfoVer)&amp;(_puedeB);verInfoRec=(_puedeB)?clickRecta(Esp.mouse_x,Esp.mouse_y):verInfoRec;;_puedeB=(!verInfoRec)&amp;(_puedeB);verInfoSec=(_puedeB)?clickEnSector(Esp.mouse_x,Esp.mouse_y):verInfoSec;;;tt=((Esp.mouse_pressed)&amp;(rectaActiva&gt;-1))?cambiaAngRec(rectaActiva,Esp.mouse_x,Esp.mouse_y):0;;constricCtrEsp();actualizaAlfa();;;A0.x=A.x;A0.y=A.y;B0.x=B.x;B0.y=B.y;;pressAnt=Esp.mouse_pressed'">
+   <param name="A_87" value="id='___ALGORITMOS___'">
+   <param name="A_88" value="id='CALC_BASURA' algoritmo='s&iacute;' evaluar='siempre' hacer='Esp.w=graficas._w;Esp.h=graficas._h;Esp.Ox=graficas.Ox;Esp.Oy=graficas.Oy;Esp.escala=graficas.escala;;;;Esp.mouse_x=graficas.mouse_x;Esp.mouse_y=graficas.mouse_y;Esp.mouse_pressed=graficas.mouse_pressed'">
+   <param name="A_89" value="id='INICIO' algoritmo='s&iacute;' evaluar='una-sola-vez' hacer='sec.r=60/Esp.escala;initEscena();;'">
+   <param name="A_90" value="id='CALCULOS' algoritmo='s&iacute;' evaluar='siempre' hacer='actualizar()'">
+   <param name="G_00" value="espacio='graficas' tipo='arco' color='3666de33' dibujar-si='verInfoSec' centro='(O.x,O.y)' radio='min(sec.r,maxRadio)+4/Esp.escala' inicio='_(U.x,U.y)' fin='(V.x,V.y)' vectores='s&iacute;' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' ancho='6'">
+   <param name="G_01" value="espacio='graficas' tipo='arco' color='41a70d' centro='(O.x,O.y)' radio='min(sec.r,maxRadio)' inicio='_(U.x,U.y)' fin='(V.x,V.y)' vectores='s&iacute;' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' relleno='66de33' ancho='3'">
+   <param name="G_02" value="espacio='graficas' tipo='pol&iacute;gono' color='720099ff' dibujar-si='verInfoRec' expresi&oacute;n='(A.x,A.y)(O.x,O.y)(B.x,B.y)' ancho='12'">
+   <param name="G_03" value="espacio='graficas' tipo='pol&iacute;gono' color='0065cc' expresi&oacute;n='(A.x,A.y)(O.x,O.y)(B.x,B.y)' ancho='5'">
+   <param name="G_04" value="espacio='graficas' tipo='punto' color='fd1371' dibujar-si='verInfoVer' expresi&oacute;n='(O.x,O.y)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='10'">
+   <param name="G_05" value="espacio='graficas' tipo='punto' color='fd1371' expresi&oacute;n='(O.x,O.y)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='6'">
+   <param name="G_06" value="espacio='graficas' tipo='punto' color='ff20303a' expresi&oacute;n='(A.x+cos(s)*(1/Esp.escala),A.y+sen(s)*(1/Esp.escala))' familia='s' s.intervalo='[0,2*pi]' s.pasos='8' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red224\green224\blue224;\red32\green48\blue58;}\f1\fs44\b\cf0 A\cf1\f2\fs24\b0}' fuente='Arial Bold,BOLD,22' fijo='s&iacute;' tama&ntilde;o='4'">
+   <param name="G_07" value="espacio='graficas' tipo='punto' color='ff20303a' expresi&oacute;n='(A.x,A.y)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red64\green120\blue153;\red32\green48\blue58;}\f1\fs44\b\cf0 A\cf1\f2\fs24\b0}' fuente='Arial Bold,BOLD,22' fijo='s&iacute;' tama&ntilde;o='4'">
+   <param name="G_08" value="espacio='graficas' tipo='punto' color='ff20303a' expresi&oacute;n='(B.x+cos(s)*(1/Esp.escala),B.y+sen(s)*(1/Esp.escala))' familia='s' s.intervalo='[0,2*pi]' s.pasos='8' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red224\green224\blue224;\red32\green48\blue58;}\f1\fs44\b\cf0 B\cf1\f2\fs24\b0}' fuente='Arial Bold,BOLD,22' fijo='s&iacute;' tama&ntilde;o='4'">
+   <param name="G_09" value="espacio='graficas' tipo='punto' color='ff20303a' expresi&oacute;n='(B.x,B.y)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red64\green120\blue153;\red32\green48\blue58;}\f1\fs44\b\cf0 B\cf1\f2\fs24\b0}' fuente='Arial Bold,BOLD,22' fijo='s&iacute;' tama&ntilde;o='4'">
+   <param name="G_10" value="espacio='graficas' tipo='punto' expresi&oacute;n='(O.x+cos(s)*(1/Esp.escala),O.y+sen(s)*(1/Esp.escala))' familia='s' s.intervalo='[0,2*pi]' s.pasos='4' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red224\green224\blue224;\red32\green48\blue58;}\f1\fs44\b\cf0 O\cf1\f2\fs24\b0}' fuente='Arial Bold,BOLD,22' fijo='s&iacute;' tama&ntilde;o='4'">
+   <param name="G_11" value="espacio='graficas' tipo='punto' expresi&oacute;n='(O.x,O.y)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red64\green120\blue153;\red32\green48\blue58;}\f1\fs44\b\cf0 O\cf1\f2\fs24\b0}' fuente='Arial Bold,BOLD,22' fijo='s&iacute;' tama&ntilde;o='4'">
+   <param name="G_12" value="espacio='graficas' tipo='texto' fondo='s&iacute;' dibujar-si='0' expresi&oacute;n='[__DEBUG__,0]' fuente='Arial Bold,BOLD,18' fijo='s&iacute;'">
+   <param name="G_13" value="espacio='graficas' tipo='segmento' color='203038' dibujar-si='debug==1' expresi&oacute;n='(0,0)(2*cos(_angActSec) , 2*sen(_angActSec))' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_14" value="espacio='graficas' tipo='texto' dibujar-si='debug==1' expresi&oacute;n='[20,20]' texto='_K1=[_K1]\n_K2=[_K2]\n' fuente='Monospaced,PLAIN,12' decimales='20' fijo='no'">
+<font face="Arial" size="3">Esta unidad interactiva requiere la m&aacute;quina virtual de Java <a href="http://java.sun.com/javase/downloads/index.jsp" target="_blank">J2RE</a>.</font>
+</applet>
+
+<applet width=790 height=565
+        code="descinst.Descartes.class"
+        archive="descinst.jar,http://recursostic.educacion.es/descartes/web/plugin/descinst.jar"
+        MAYSCRIPT>
+   <param name="tama&ntilde;o" value="790x565">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="deshacer" value="no">
+   <param name="Versi&oacute;n" value="4.0982, 2010-05-26">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=s&iacute; config=s&iacute; inicio=s&iacute; limpiar=s&iacute;">
+   <param name="E_00" value="tipo='R2' id='E1' fijo='s&iacute;' despl_imagen='arr-izq' fondo='blanco' red='grisClaro' red10='gris' ejes='grisObscuro' texto='no'">
+   <param name="C_00" value="id='angulo.O' tipo='gr&aacute;fico' espacio='E1' color='(angulo.O.borde.rojo,angulo.O.borde.verde,angulo.O.borde.azul,angulo.O.borde.alfa)' color-int='(angulo.O.rojo,angulo.O.verde,angulo.O.azul,angulo.O.alfa)' tama&ntilde;o='6' expresi&oacute;n='(angulo.O.x,angulo.O.y)' fuente='Arial Bold,BOLD,22' decimales='0' fijo='no' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12'">
+   <param name="C_01" value="id='angulo.A' tipo='gr&aacute;fico' espacio='E1' color='(angulo.A.borde.rojo,angulo.A.borde.verde,angulo.A.borde.azul,angulo.A.borde.alfa)' color-int='(angulo.A.rojo,angulo.A.verde,angulo.A.azul,angulo.A.alfa)' tama&ntilde;o='6' expresi&oacute;n='(angulo.A.x,angulo.A.y)' fuente='Arial Bold,BOLD,22' decimales='0' fijo='no' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12'">
+   <param name="C_02" value="id='angulo.B' tipo='gr&aacute;fico' espacio='E1' color='(angulo.B.borde.rojo,angulo.B.borde.verde,angulo.B.borde.azul,angulo.B.borde.alfa)' color-int='(angulo.B.rojo,angulo.B.verde,angulo.B.azul,angulo.B.alfa)' tama&ntilde;o='6' expresi&oacute;n='(angulo.B.x,angulo.B.y)' fuente='Arial Bold,BOLD,22' decimales='0' fijo='no' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12'">
+   <param name="C_03" value="id='angulo.sec.r' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='angulo.sec.r' valor='angulo.sec.r' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_04" value="id='angulo.debug' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='angulo.debug' valor='angulo.debug' incr='1' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="A_00" value="id='CALC_BASURA' algoritmo='s&iacute;' evaluar='siempre' hacer='angulo.Esp.w=E1._w;angulo.Esp.h=E1._h;angulo.Esp.Ox=E1.Ox;angulo.Esp.Oy=E1.Oy;angulo.Esp.escala=E1.escala;;angulo.Esp.mouse_x=E1.mouse_x;angulo.Esp.mouse_y=E1.mouse_y;angulo.Esp.mouse_pressed=E1.mouse_pressed'">
+   <param name="A_01" value="id='INICIO' algoritmo='s&iacute;' evaluar='una-sola-vez' hacer='angulo.initEscena()'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='s&iacute;' evaluar='siempre'">
+   <param name="G_00" value="espacio='E1' tipo='macro' expresi&oacute;n='angulo.txt' nombre='angulo'">
+   <param name="G_01" value="espacio='E1' tipo='texto' expresi&oacute;n='[20,20]' texto='[angulo.aInit] [angulo.aFin]' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+<font face="Arial" size="3">Esta unidad interactiva requiere la m&aacute;quina virtual de Java <a href="http://java.sun.com/javase/downloads/index.jsp" target="_blank">J2RE</a>.</font>
+</applet></p>
+
+</body>
+</html>

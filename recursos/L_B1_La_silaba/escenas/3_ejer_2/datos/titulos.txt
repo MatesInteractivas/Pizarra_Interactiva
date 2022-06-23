@@ -1,0 +1,10 @@
+3
+'Agudas'
+'Graves'
+'Esdrújulas'
+'Monosílaba'
+'Bisílaba'
+'Trisílaba'
+'Agudas'
+'Graves'
+'Esdrújulas'

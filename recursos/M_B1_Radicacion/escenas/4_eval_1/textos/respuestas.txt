@@ -1,0 +1,26 @@
+'Escribe las tres respuestas de cada pregunta y la posición de la respuesta correcta'
+
+'cuadrada de 10'
+'cúbica de 1000'
+'cúbica de 100'
+2
+
+'4'
+'8'
+'2'
+3
+
+'8'
+'6'
+'7'
+1
+
+'6'
+'7'
+'4'
+2
+
+'4'
+'5'
+'3'
+3

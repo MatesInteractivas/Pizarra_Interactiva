@@ -1,0 +1,46 @@
+'Escribe las tres respuestas de cada pregunta y la posición de la respuesta correcta'
+
+'Se lee 3 es a 3 como 6 es a 4'
+'Se lee 6 es a 2 como 3 es a 4'
+'Se lee 3 es a 2 como 6 es a 4'
+'Se lee 6 es a 2 como 4 es a 6'
+'Se lee 2 es a 3 como 4 es a 6'
+0
+0
+1
+0
+0
+
+'Los extremos son 21 y 7.Los medios son 2 y 6 '
+'Los extremos son 21 y 6.Los medios son 7 y 2 '
+'Los extremos son 2 y 21.Los medios son 6 y 7 '
+'Los extremos son 7 y 2.Los medios son 21 y 6 '
+'Los extremos son 7 y 6.Los medios son 2 y 21 '
+0
+0
+0
+0
+1
+
+'3/4 y 6/8'
+'2/5 y 6/20'
+'12/3 y 60/15'
+'3/5 y 5/7'
+'2/6 y 8/24'
+1
+0
+1
+0
+1
+
+'6/2'
+'2/1'
+'3/1'
+'3.6/1.2'
+'27/2'
+1
+0
+1
+1
+0
+

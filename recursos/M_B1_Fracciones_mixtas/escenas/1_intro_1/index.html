@@ -1,0 +1,60 @@
+<html>
+<head>
+	<title>Indicar el femenino de nombres de personas y animales.</title>
+	<style>
+		*{
+		border:0;
+		margin:0;
+		padding:0;
+		}
+	</style>
+</head>
+<body >
+
+<p align="left">
+<applet width=790 height=520
+        code="descinst.Descartes.class"
+        codebase="./"
+        archive="descinst.jar,http://recursostic.educacion.es/descartes/web/plugin/descinst.jar"
+        MAYSCRIPT>
+   <param name="tama&ntilde;o" value="790x520">
+   <param name="pleca" value="title='Construye tus fracciones e investiga por qu&eacute; algunas' subtitle='se marcan con diferente color.' subtitlines='2' bgcolor='268bea' fgcolor='ffffff' align='center' titleimage='images/instrucciones.jpg' titlefont='SansSerif,PLAIN,22' subtitlefont='SansSerif,PLAIN,22' ">
+   <param name="sonido" value="s&iacute;">
+   <param name="&aacute;lgebra" value="s&iacute;">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="s&iacute;">
+   <param name="deshacer" value="no">
+   <param name="Versi&oacute;n" value="4.41, 2010-12-16">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="tipo='R2' id='E1' fijo='s&iacute;' escala='120' O.y='20' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_00" value="id='n4' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E1' nombre='Fracciones' expresi&oacute;n='(560,400,200,30)' fijo='s&iacute;' visible='s&iacute;' negrita='s&iacute;' fuente puntos='18' imagen='/imagenes/btn200.png' acci&oacute;n='calcular' par&aacute;metro='muestra=0\nfracciones=1\nclasificacion=0' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='fracciones=0' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_01" value="id='n3' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E1' nombre='Clasificaci&oacute;n' expresi&oacute;n='(560,400,200,30)' fijo='s&iacute;' visible='s&iacute;' negrita='s&iacute;' fuente puntos='18' imagen='/imagenes/btn200.png' acci&oacute;n='calcular' par&aacute;metro='muestra=1\nfracciones=0\nclasificacion=1' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='clasificacion=0' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_02" value="id='a' tipo='num&eacute;rico' regi&oacute;n='interior' espacio='E1' nombre='Numerador' expresi&oacute;n='(20,400,180,30)' valor='9' incr='1' min='0' max='2*b' decimales='0' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='fracciones=1' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_03" value="id='b' tipo='num&eacute;rico' regi&oacute;n='interior' espacio='E1' nombre='Denominador' expresi&oacute;n='(300,400,180,30)' valor='6' incr='1' min='2' max='20' decimales='0' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='fracciones=1' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="A_00" value="id='INICIO' algoritmo='s&iacute;' evaluar='una-sola-vez' hacer='SOM.Top=200;SOM.Left=200;SOM.transp=0.80;SOM.rojo=0.28;SOM.verde=0.60;SOM.azul=0.93;clasificacion=0;fracciones=1;;;;'">
+   <param name="A_01" value="id='a2' algoritmo='s&iacute;' evaluar='siempre' hacer='r1=ent(a/b);re=a-b*r1'">
+   <param name="A_02" value="id='c' constante='s&iacute;' expresi&oacute;n='ent(a-b)*(a&gt;b)' evaluar='siempre'">
+   <param name="A_03" value="id='muestra' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="G_00" value="espacio='E1' tipo='imagen' dibujar-si='fracciones=1' expresi&oacute;n='(-1,1)' archivo='imagenes/pizza.png'">
+   <param name="G_01" value="espacio='E1' tipo='imagen' dibujar-si='fracciones=1' expresi&oacute;n='(1,1)' archivo='imagenes/pizza.png'">
+   <param name="G_02" value="espacio='E1' tipo='macro' expresi&oacute;n='macros/sombras.txt' nombre='SOM'">
+   <param name="G_03" value="espacio='E1' tipo='texto' dibujar-si='fracciones=1' expresi&oacute;n='[41,60]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs36\b Mueve los controles y observa\par las porciones de pizza marcadas.\par \par \u191 Cu\u225 ndo las porciones\par marcadas son de color rojo?\fs40\b0}' fuente='Arial Bold,BOLD,18' fijo='s&iacute;'">
+   <param name="G_04" value="espacio='E1' tipo='arco' color='blanco' dibujar-si='(fracciones=1)&amp;(a&lt;b)' fin='(360*a)/b' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' relleno='81ffff00' ancho='0'">
+   <param name="G_05" value="espacio='E1' tipo='arco' color='blanco' dibujar-si='(a&lt;b)&amp;(fracciones=1)' centro='(2,0)' fin='(360*c)/b' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' relleno='81ffff00'">
+   <param name="G_06" value="espacio='E1' tipo='segmento' color='75ffffff' dibujar-si='(fracciones=1)&amp;(b&gt;1)' expresi&oacute;n='(0,0)(cos(2*s*pi/b),sen(2*s*pi/b))' familia='s' s.intervalo='[0,b]' s.pasos='b' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0' ancho='4'">
+   <param name="G_07" value="espacio='E1' tipo='segmento' color='7effffff' dibujar-si='(fracciones=1)&amp;(b&gt;1)' expresi&oacute;n='(2,0)(cos(2*s*pi/b)+2,sen(2*s*pi/b))' familia='s' s.intervalo='[0,b]' s.pasos='b' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0' ancho='4'">
+   <param name="G_08" value="espacio='E1' tipo='texto' dibujar-si='fracciones=1' expresi&oacute;n='[41,200]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Arial;}\f1\fs36\b En total se han\par marcado \f2\fs40\b0\i{\*\mjaformula{\fraction{\num{\expr [a]\decimals 0\fixed1}}{\den{\expr [b]\decimals 0\fixed1}}}}\f3\fs40\i0 de pizza.}' fuente='Arial Bold,BOLD,18' fijo='s&iacute;'">
+   <param name="G_09" value="espacio='E1' tipo='texto' dibujar-si='clasificacion=1' expresi&oacute;n='[160,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Courier New;}\f1\fs44\b Una fracci\u243 n es:\par \par     - menor que la unidad\par       si el numerador es menor que el denominador.\par       Por ejemplo: \f2\fs48\b0\i{\*\mjaformula{\fraction{\num 1}{\den 2}}}\f1\fs44\b\i0 , \f2\fs48\b0\i{\*\mjaformula{\fraction{\num 5}{\den 8}}}\f1\fs44\b\i0 , \f2\fs48\b0\i{\*\mjaformula{\fraction{\num 3}{\den 16}}}\f1\fs44\b\i0 .\par \par     - mayor que la unidad \par       si el numerador es mayor que el denominador.\par       Por ejemplo: \f2\fs48\b0\i{\*\mjaformula{\fraction{\num 9}{\den 5}}}\f1\fs44\b\i0 , \f2\fs48\b0\i{\*\mjaformula{\fraction{\num 15}{\den 4}}}\f1\fs44\b\i0 , \f2\fs48\b0\i{\*\mjaformula{\fraction{\num 9}{\den 2}}}\f1\fs44\b\i0 .\par \par    - e igual a la unidad, si los dos t\u233 rminos son iguales.\par      Por ejeplo: \f2\fs48\b0\i{\*\mjaformula{\fraction{\num 4}{\den 4}}}\f1\fs44\b\i0 , \f2\fs48\b0\i{\*\mjaformula{\fraction{\num 7}{\den 7}}}\f1\fs44\b\i0 , \f2\fs48\b0\i{\*\mjaformula{\fraction{\num 12}{\den 12}}}\f1\fs44\b\i0 .\par \f3\fs24\b0}' fuente='Arial Bold,BOLD,22' fijo='s&iacute;'">
+   <param name="G_10" value="espacio='E1' tipo='arco' color='blanco' dibujar-si='(a=b)&amp;(fracciones=1)' fin='(360*a)/b' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' relleno='870000ff' ancho='0'">
+   <param name="G_11" value="espacio='E1' tipo='arco' color='blanco' dibujar-si='(a=b)&amp;(fracciones=1)' centro='(2,0)' fin='(360*c)/b' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' relleno='870000ff'">
+   <param name="G_12" value="espacio='E1' tipo='arco' color='blanco' dibujar-si='(a&gt;b)&amp;(fracciones=1)' fin='(360*a)/b' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' relleno='90ff0000' ancho='0'">
+   <param name="G_13" value="espacio='E1' tipo='arco' color='blanco' dibujar-si='(a&gt;b)&amp;(fracciones=1)' centro='(2,0)' fin='(360*c)/b' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' relleno='90ff0000'">
+   <param name="G_14" value="espacio='E1' tipo='imagen' dibujar-si='clasificacion=1' expresi&oacute;n='(-2.8,1.5)' archivo='imagenes/1.png'">
+   <param name="G_15" value="espacio='E1' tipo='imagen' dibujar-si='clasificacion=1' expresi&oacute;n='(-2.8,.5)' archivo='imagenes/2.png'">
+   <param name="G_16" value="espacio='E1' tipo='imagen' dibujar-si='clasificacion=1' expresi&oacute;n='(-2.8,-.5)' archivo='imagenes/3.png'">
+<font face="Arial" size="3">Esta unidad interactiva requiere la m&aacute;quina virtual de Java <a href="http://java.sun.com/javase/downloads/index.jsp" target="_blank">J2RE</a>.</font>
+</applet></p>
+
+</body>
+</html>

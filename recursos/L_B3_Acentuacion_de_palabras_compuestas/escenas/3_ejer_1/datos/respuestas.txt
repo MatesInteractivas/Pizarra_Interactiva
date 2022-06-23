@@ -1,0 +1,14 @@
+0
+'Tajalápices'
+'Decimoséptimo'
+'Colombofrancés'
+'Inútilmente'
+'Balompié' 
+'Lácteo-cárnico'
+'ítalo-francés'
+'Matemático-geométrico'
+'Gráfico-estético'
+'Histórico-biográfico'
+
+
+

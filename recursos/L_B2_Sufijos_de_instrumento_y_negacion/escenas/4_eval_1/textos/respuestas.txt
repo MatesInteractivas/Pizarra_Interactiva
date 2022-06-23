@@ -1,0 +1,10 @@
+'Escribe la respuesta correcta de cada pregunta'
+
+'V'
+'F'
+'F'
+'V'
+'F'
+'V'
+'V'
+'V'

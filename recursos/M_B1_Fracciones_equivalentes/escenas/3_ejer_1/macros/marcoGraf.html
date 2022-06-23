@@ -1,0 +1,79 @@
+
+<html>
+<body bgcolor="#000">
+<center>
+
+<applet name="MacroTitulo" width=790 height=560
+        code="Descartes.class"
+        codebase="../../"
+        archive="Descartes4.jar"
+        MAYSCRIPT>
+   <param name="separate_jvm" value="true">
+   <param name="decimal_symbol" value=".">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="MacroTitulo">
+   <param name="Versi&oacute;n" value="4.05, 2009-05-29">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="tipo='R2' id='E2' despl_imagen='arr-izq' fondo='blanco' red='grisClaro' red10='gris' ejes='gris' texto='rosa'">
+   <param name="C_00" value="id='Esp.x' espacio='E2' tipo='num&eacute;rico' regi&oacute;n='exterior' valor='Esp.x' fijo='s&iacute;' nombre='Esp.x' incr='1' min='0' max='E2._w' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12'">
+   <param name="C_01" value="id='Esp.y' espacio='E2' tipo='num&eacute;rico' regi&oacute;n='exterior' valor='Esp.y' fijo='s&iacute;' nombre='Esp.y' incr='1' min='0' max='E2._h' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12'">
+   <param name="C_02" value="id='Esp.w' espacio='E2' tipo='num&eacute;rico' regi&oacute;n='exterior' valor='Esp.w' fijo='s&iacute;' nombre='Esp.w' incr='1' min='50' max='E2._w' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12'">
+   <param name="C_03" value="id='Esp.h' espacio='E2' tipo='num&eacute;rico' regi&oacute;n='exterior' valor='Esp.h' fijo='s&iacute;' nombre='Esp.h' incr='1' min='50' max='E2._h' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12'">
+   <param name="A_00" value="id='debug' constante='s&iacute;' expresi&oacute;n='1' evaluar='una-sola-vez'">
+   <param name="A_01" value="id='Esp.x' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_02" value="id='Esp.y' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_03" value="id='Esp.w' constante='s&iacute;' expresi&oacute;n='20' evaluar='una-sola-vez'">
+   <param name="A_04" value="id='Esp.h' constante='s&iacute;' expresi&oacute;n='20' evaluar='una-sola-vez'">
+   <param name="A_05" value="id='margenImg' constante='s&iacute;' expresi&oacute;n='4' evaluar='una-sola-vez'">
+   <param name="A_06" value="id='INIT' algoritmo='s&iacute;' evaluar='una-sola-vez' hacer='imgEsq.h=10;imgEsq.w=10;imgLado.w=10;imgLado.h=2'">
+   <param name="A_07" value="id='CALC_BASURA' algoritmo='s&iacute;' evaluar='una-sola-vez' hacer='Esp.x=10;Esp.y=100;Esp.w=200;Esp.h=200'">
+   <param name="A_08" value="id='CALC' algoritmo='s&iacute;' evaluar='siempre' hacer='tmpEsp.x=Esp.x-margenImg;tmpEsp.y=Esp.y-margenImg;tmpEsp.w=Esp.w+2*margenImg;tmpEsp.h=Esp.h+2*margenImg;;tmpEsp.w=tmpEsp.w+(tmpEsp.w%2);tmpEsp.h=tmpEsp.h+(tmpEsp.h%2);;esqLT.x=tmpEsp.x-imgEsq.w/2;esqLT.y=tmpEsp.y-imgEsq.h/2;;esqLB.x=tmpEsp.x-imgEsq.w/2;esqLB.y=tmpEsp.y+tmpEsp.h-imgEsq.h/2;;esqRT.x=tmpEsp.x+tmpEsp.w-imgEsq.w/2;esqRT.y=tmpEsp.y-imgEsq.h/2;;esqRB.x=tmpEsp.x+tmpEsp.w-imgEsq.w/2;esqRB.y=tmpEsp.y+tmpEsp.h-imgEsq.h/2;;;borL.escX=1;borL.escY=(tmpEsp.h-imgEsq.h)/imgLado.h;borL.x=tmpEsp.x;borL.y=tmpEsp.y+tmpEsp.h/2;;borR.escX=1;borR.escY=borL.escY;borR.x=tmpEsp.x+tmpEsp.w;borR.y=borL.y;;;;;;borT.x=tmpEsp.x+tmpEsp.w/2;borT.y=tmpEsp.y;borT.escX=1;borT.escY=(tmpEsp.w-imgEsq.w)/imgLado.h;;;borB.x=tmpEsp.x+tmpEsp.w/2;borB.y=tmpEsp.y+tmpEsp.h;borB.escX=1;borB.escY=(tmpEsp.w-imgEsq.w)/imgLado.h'">
+   <param name="G_00" value="espacio='E2' tipo='imagen' coord_abs='s&iacute;' expresi&oacute;n='(borT.x,borT.y,borT.escX,borT.escY)' archivo='images/titulo/marcoGraf/lado.png' rotini='90'">
+   <param name="G_01" value="espacio='E2' tipo='imagen' coord_abs='s&iacute;' expresi&oacute;n='(borR.x,borR.y,borR.escX,borR.escY)' archivo='images/titulo/marcoGraf/lado.png'">
+   <param name="G_02" value="espacio='E2' tipo='imagen' coord_abs='s&iacute;' expresi&oacute;n='(borB.x,borB.y,borB.escX,borB.escY)' archivo='images/titulo/marcoGraf/lado.png' rotini='-90'">
+   <param name="G_03" value="espacio='E2' tipo='imagen' coord_abs='s&iacute;' expresi&oacute;n='(borL.x,borL.y,borL.escX,borL.escY)' archivo='images/titulo/marcoGraf/lado.png' rotini='180'">
+   <param name="G_04" value="espacio='E2' tipo='imagen' coord_abs='s&iacute;' expresi&oacute;n='(esqLT.x,esqLT.y)' archivo='images/titulo/marcoGraf/esquina.png' rotini='180'">
+   <param name="G_05" value="espacio='E2' tipo='imagen' coord_abs='s&iacute;' expresi&oacute;n='(esqRT.x,esqRT.y)' archivo='images/titulo/marcoGraf/esquina.png' rotini='90'">
+   <param name="G_06" value="espacio='E2' tipo='imagen' coord_abs='s&iacute;' expresi&oacute;n='(esqLB.x,esqLB.y)' archivo='images/titulo/marcoGraf/esquina.png' rotini='-90'">
+   <param name="G_07" value="espacio='E2' tipo='imagen' coord_abs='s&iacute;' expresi&oacute;n='(esqRB.x,esqRB.y)' archivo='images/titulo/marcoGraf/esquina.png'">
+   <param name="G_08" value="espacio='E2' tipo='pol&iacute;gono' coord_abs='s&iacute;' expresi&oacute;n='(Esp.x,Esp.y)(Esp.x+Esp.w,Esp.y)(Esp.x+Esp.w,Esp.y+Esp.h)(Esp.x,Esp.y+Esp.h)(Esp.x,Esp.y)' relleno='blanco' ancho='0'">
+<font face="Arial" size="3">Esta unidad interactiva requiere la m&aacute;quina virtual de Java <a href="http://java.sun.com/javase/downloads/index.jsp" target="_blank">J2RE</a>.</font>
+</applet>
+
+
+
+</center>
+<br><br>
+<center>
+<applet name="rectangulo" width=790 height=560
+        code="Descartes.class"
+        codebase="../../"
+        archive="Descartes4.jar"
+        MAYSCRIPT>
+   <param name="separate_jvm" value="true">
+   <param name="decimal_symbol" value=".">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="rectangulo">
+   <param name="Versi&oacute;n" value="4.05, 2009-05-29">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="tipo='R2' id='E2' fijo='s&iacute;' escala='1' O.x='-50%' O.y='-50%' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='gris' texto='no'">
+   <param name="E_01" value="tipo='R2' id='E3' x='E3.x' y='-E3.y' ancho='250' alto='200' despl_imagen='arr-izq' fondo='blanco' red='grisClaro' red10='gris' ejes='gris' texto='rosa'">
+   <param name="C_00" value="id='titulo.titulo.w' espacio='E3' tipo='num&eacute;rico' regi&oacute;n='exterior' valor='titulo.titulo.w' fijo='no' nombre='titulo.titulo.w' incr='1' min='0' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12'">
+   <param name="C_01" value="id='E3' espacio='E2' tipo='gr&aacute;fico' color='azul' color-int='rojo' tama&ntilde;o='6' expresi&oacute;n='(30,-160)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12'">
+   <param name="C_02" value="id='marcoG1.margenImg' espacio='E2' tipo='num&eacute;rico' regi&oacute;n='exterior' valor='marcoG1.margenImg' fijo='s&iacute;' nombre='marcoG1.margenImg' incr='1' min='0' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12'">
+   <param name="C_03" value="id='divMarcoInt' espacio='E2' tipo='num&eacute;rico' regi&oacute;n='exterior' valor='divMarcoInt' fijo='s&iacute;' nombre='divMarcoInt' incr='1' min='0' max='1' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12'">
+   <param name="A_00" value="id='INIT_T' algoritmo='s&iacute;' evaluar='una-sola-vez' hacer='titulo.nRenglones=3'">
+   <param name="A_01" value="id='CALC_BASURA' algoritmo='s&iacute;' evaluar='siempre' hacer='titulo.Esp.escala=E2.escala;titulo.Esp.Ox=E2.Ox;titulo.Esp.Oy=E2.Oy;titulo.Esp.w=E2._w;titulo.Esp.h=E2._h;;titulo.Esp.mouse_p=E2.mouse_pressed;titulo.Esp.mouse_x=E2.mouse_x;titulo.Esp.mouse_y=E2.mouse_y;;;;marcoG1.Esp.x=E3.x;marcoG1.Esp.y=-E3.y;marcoG1.Esp.w=E3._w;marcoG1.Esp.h=E3._h;;;marcoG2.x=0;marcoG2.y=0;marcoG2.Esp.w=E3._w;marcoG2.Esp.h=E3._h;;marcoG2.margenImg=0'">
+   <param name="G_00" value="espacio='E2' tipo='macro' expresi&oacute;n='tituloUNAM.txt' nombre='titulo'">
+   <param name="G_01" value="espacio='E2' tipo='macro' expresi&oacute;n='marcoGraf.txt' nombre='marcoG1'">
+   <param name="G_02" value="espacio='E3' tipo='macro' dibujar-si='divMarcoInt' expresi&oacute;n='marcoGraf.txt' nombre='marcoG2'">
+<font face="Arial" size="3">Esta unidad interactiva requiere la m&aacute;quina virtual de Java <a href="http://java.sun.com/javase/downloads/index.jsp" target="_blank">J2RE</a>.</font>
+</applet>
+
+</center>
+</body>
+
+
+</html>

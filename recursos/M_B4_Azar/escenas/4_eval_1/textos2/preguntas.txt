@@ -1,0 +1,16 @@
+7
+
+'Es un fenómeno aleatorio'
+''
+'Marca los sucesos probables'
+'al girar la ruleta'
+'Al lanzar un dado es imposible que:'
+''
+'Al lanzar dos monedas al aire'
+'¿Cuántos sucesos pueden darse?'
+'Al lanzar un par de dados'
+'¿Qué es más probable?'
+'Cuál de las siguientes situaciones dependen del azar'
+''
+'Al lanzar un dado es'
+''

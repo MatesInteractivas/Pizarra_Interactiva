@@ -1,0 +1,26 @@
+'Escribe las tres respuestas de cada pregunta y la posición de la respuesta correcta'
+
+'secante'
+'tangente'
+'cuerda'
+2
+
+'cuerda'
+'diámetro'
+'radio'
+1
+
+'cuerda'
+'diámetro'
+'radio'
+2
+
+'cuerda'
+'tangente'
+'secante'
+3
+
+'radio'
+'diámetro'
+'cuerda'
+1

@@ -1,0 +1,66 @@
+<html>
+<head>
+	<title>&Aacute;rea de figuras planas &nbsp;-&nbsp; Exploraci&oacute;n.</title>
+	<style>
+		*{
+		border:0;
+		margin:0;
+		padding:0;
+		}
+		body{
+			background-color:#7db9f2;
+		}
+	</style>
+</head>
+<body >
+
+<p align="center">
+<applet width=790 height=520
+        code="descinst.Descartes.class"
+        codebase="./"
+        archive="descinst.jar,http://recursostic.educacion.es/descartes/web/plugin/descinst.jar"
+        MAYSCRIPT>
+   <param name="tama&ntilde;o" value="790x520">
+   <param name="sonido" value="s&iacute;">
+   <param name="&aacute;lgebra" value="s&iacute;">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="Versi&oacute;n" value="4.41, 2010-12-16">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="tipo='R2' id='E1' y='65' fijo='s&iacute;' escala='30' O.x='-50%' O.y='65%' imagen='/images/marquito.png' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_01" value="tipo='R2' id='pleca' x='0' y='0' ancho='790' alto='65' fijo='s&iacute;' imagen='images/instrucciones.jpg' despl_imagen='expand.' fondo='6298cb' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_00" value="id='n1' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E1' nombre='Otra suma' expresi&oacute;n='(50,370,150,30)' fijo='s&iacute;' visible='s&iacute;' color='blanco' color-int='azul' negrita='s&iacute;' fuente puntos='22' imagen='/images/btn150.png' acci&oacute;n='calcular' par&aacute;metro='a=ent(rnd*10)\nb=ent(rnd*10)\nc=ent(rnd*10)\nd=ent(rnd*10)\ne=ent(rnd*10)\nf=ent(rnd*10)\nn2=0\nn1=0\nn3=&squot;&squot;\ncomprueba=0\nmuestra=0\ncorrecto=0\n' par&aacute;metro.fuente='Monospaced,PLAIN,12' activo-si='muestra=1' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_01" value="id='n2' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E1' nombre='Comprobar' expresi&oacute;n='(50,330,150,30)' valor='1' fijo='s&iacute;' visible='s&iacute;' color='blanco' color-int='azul' negrita='s&iacute;' fuente puntos='22' imagen='/images/btn150.png' acci&oacute;n='calcular' par&aacute;metro='comprueba=1' par&aacute;metro.fuente='Monospaced,PLAIN,12' activo-si='muestra=0' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_02" value="id='n3' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' espacio='E1' expresi&oacute;n='(290,340,175,80)' valor='&squot;&squot;' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' activo-si='muestra=0' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="A_00" value="id='INICIO' algoritmo='s&iacute;' evaluar='una-sola-vez' hacer='a=ent(rnd*10);b=ent(rnd*10);c=ent(rnd*10);d=ent(rnd*10);e=ent(rnd*10);f=ent(rnd*10);SOM.Top=500;SOM.Left=300;SOM.transp=0.80;SOM.rojo=0.20;SOM.verde=0.80;SOM.azul=0.99;'">
+   <param name="A_01" value="id='e1' evento='s&iacute;' condici&oacute;n='((b=0)&amp;(c=0))|((e=0)&amp;(f=0))|((c=0)&amp;(f=0))' acci&oacute;n='calcular' par&aacute;metro='b=ent(rnd*10)\nc=ent(rnd*10)\ne=ent(rnd*10)\nf=ent(rnd*10)\ncentesimas=(c+f)%10\ndecimas=(b+e)%10\ncaso=((c+f&gt;9)&amp;(b+e+1&gt;9))?1:caso\ncaso=((c+f&gt;9)&amp;(b+e+1&lt;10))?2:caso\ncaso=((c+f&lt;10)&amp;(b+e&gt;9))?3:caso\ncaso=((c+f&lt;10)&amp;(b+e&lt;10))?4:caso\n' par&aacute;metro.fuente='Monospaced,PLAIN,12' ejecuci&oacute;n='una-sola-vez' pos_mensajes='centro'">
+   <param name="A_02" value="id='e4' evento='s&iacute;' condici&oacute;n='comprueba' acci&oacute;n='calcular' par&aacute;metro='s1=a+b*0.1+c*0.01\ns2=d+e*0.1+f*0.01\ns=s1+s2\ncorrecto=(ent(s*100)=ent(n3*100))&amp;(n3!=0)\ncomprueba=0\nmuestra=1\n' par&aacute;metro.fuente='Monospaced,PLAIN,12' ejecuci&oacute;n='siempre' pos_mensajes='centro'">
+   <param name="G_00" value="espacio='E1' tipo='macro' expresi&oacute;n='macros/sombras.txt' nombre='SOM'">
+   <param name="G_01" value="espacio='pleca' tipo='texto' expresi&oacute;n='[60,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green255\blue255;\red0\green0\blue255;}\f1\fs64\b\cf0\u191 YA DOMINAS LAS SUMAS DE DECIMALES?\cf1\f2\fs24\b0}' fuente='Arial Bold,BOLD,32' fijo='s&iacute;'">
+   <param name="G_02" value="espacio='E1' tipo='texto' expresi&oacute;n='[81,11]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\f1\fs88\cf0 Realiza la suma y luego haz clic\par  para comprobar el resultado.\fs104   \cf1\f3\fs24}' fuente='Arial,PLAIN,44' fijo='s&iacute;'">
+   <param name="G_03" value="espacio='E1' tipo='texto' expresi&oacute;n='[80,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red9\green134\blue215;\red0\green0\blue255;}\cf0\f1\fs88 Realiza la suma y luego haz clic\par  para comprobar el resultado.\fs104   \cf1\f3\fs24}' fuente='Arial,PLAIN,44' fijo='s&iacute;'">
+   <param name="G_04" value="espacio='E1' tipo='texto' dibujar-si='c!=0' expresi&oacute;n='[400,150]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red100\green188\blue20;}\f1\fs160\b{\*\mjaformula\cf0{\expr c\decimals 0\fixed1}}\f2\fs24\b0}' fuente='Arial Bold,BOLD,80' fijo='s&iacute;'">
+   <param name="G_05" value="espacio='E1' tipo='texto' expresi&oacute;n='[340,150]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red100\green188\blue20;}\f1\fs160\b{\*\mjaformula\cf0{\expr b\decimals 0\fixed1}}\f2\fs24\b0}' fuente='Arial Bold,BOLD,80' fijo='s&iacute;'">
+   <param name="G_06" value="espacio='E1' tipo='texto' expresi&oacute;n='[270,150]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red100\green188\blue20;}\f1\fs160\b{\*\mjaformula\cf0{\expr a\decimals 0\fixed1}}\f2\fs24\b0}' fuente='Arial Bold,BOLD,80' fijo='s&iacute;'">
+   <param name="G_07" value="espacio='E1' tipo='texto' expresi&oacute;n='[330,150]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red0\green0\blue255;\red100\green188\blue20;}\f1\fs160\b\cf0 ,\cf1{\*\mjaformula\cf2}\f2\fs24\b0}' fuente='Arial Bold,BOLD,80' fijo='s&iacute;'">
+   <param name="G_08" value="espacio='E1' tipo='texto' dibujar-si='f!=0' expresi&oacute;n='[400,230]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red100\green188\blue20;}\f1\fs160\b{\*\mjaformula\cf0{\expr f\decimals 0\fixed1}}\f2\fs24\b0}' fuente='Arial Bold,BOLD,80' fijo='s&iacute;'">
+   <param name="G_09" value="espacio='E1' tipo='texto' expresi&oacute;n='[340,230]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red100\green188\blue20;}\f1\fs160\b{\*\mjaformula\cf0{\expr e\decimals 0\fixed1}}\f2\fs24\b0}' fuente='Arial Bold,BOLD,80' fijo='s&iacute;'">
+   <param name="G_10" value="espacio='E1' tipo='texto' expresi&oacute;n='[270,230]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red100\green188\blue20;}\f1\fs160\b{\*\mjaformula\cf0{\expr d\decimals 0\fixed1}}\f2\fs24\b0}' fuente='Arial Bold,BOLD,80' fijo='s&iacute;'">
+   <param name="G_11" value="espacio='E1' tipo='texto' expresi&oacute;n='[330,230]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red0\green0\blue255;\red100\green188\blue20;}\f1\fs160\b\cf0 ,\cf1{\*\mjaformula\cf2}\f2\fs24\b0}' fuente='Arial Bold,BOLD,80' fijo='s&iacute;'">
+   <param name="G_12" value="espacio='E1' tipo='segmento' color='negro' expresi&oacute;n='(9,6.5)(16,6.5)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='1' ancho='4'">
+   <param name="G_13" value="espacio='E1' tipo='texto' dibujar-si='pp' expresi&oacute;n='[325,325]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red0\green0\blue255;\red100\green188\blue20;}\f1\fs160\b\cf0 ,\cf1{\*\mjaformula\cf2}\f2\fs24\b0}' fuente='Arial Bold,BOLD,80' fijo='s&iacute;'">
+   <param name="G_14" value="espacio='E1' tipo='texto' dibujar-si='pp' expresi&oacute;n='[20,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Courier New;}\f1\fs28\i{\*\mjaformula{\expr centesimas\decimals 0\fixed1}}\f2\fs24\i0\par \par \f1\fs28\i{\*\mjaformula{\expr decimas\decimals 0\fixed1}}\f2\fs24\i0}' fuente='Times New Roman Italic,ITALIC,14' fijo='s&iacute;'">
+   <param name="G_15" value="espacio='E1' tipo='texto' dibujar-si='(correcto)&amp;(muestra)' expresi&oacute;n='[481,341]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\f1\fs104\b\cf0\u161 MUY BIEN!\f2\fs24\b0\cf1}' fuente='Arial Bold,BOLD,52' fijo='s&iacute;'">
+   <param name="G_16" value="espacio='E1' tipo='texto' dibujar-si='(correcto)&amp;(muestra)' expresi&oacute;n='[480,340]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green255\blue0;\red0\green0\blue255;}\f1\fs104\b\cf0\u161 MUY BIEN!\f2\fs24\b0\cf1}' fuente='Arial Bold,BOLD,52' fijo='s&iacute;'">
+   <param name="G_17" value="espacio='E1' tipo='imagen' dibujar-si='(correcto)&amp;(muestra)' expresi&oacute;n='(8.5,5,1.5,1.5)' archivo='/images/ok.png'">
+   <param name="G_18" value="espacio='E1' tipo='imagen' dibujar-si='(correcto=0)&amp;(n3!=&squot;&squot;)&amp;(muestra)' expresi&oacute;n='(8.5,5,1.5,1.5)' archivo='/images/ko.png'">
+   <param name="G_19" value="espacio='E1' tipo='texto' expresi&oacute;n='[220,230]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}{\colortbl\red0\green255\blue0;}\f1\fs160\b\cf0 +}' fuente='Arial Bold,BOLD,80' fijo='s&iacute;'">
+   <param name="G_20" value="espacio='E1' tipo='texto' dibujar-si='(correcto=0)&amp;(n3!=&squot;&squot;)&amp;(muestra)' expresi&oacute;n='[481,301]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Times New Roman;\f4\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red0\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs60\b     \cf1\u161 LO SIENTO!\par La suma correcta es\par           \f2\fs64{\*\mjaformula{\expr s\decimals 2\fixed1}}\par \fs60 Intenta con otra suma  \cf2\par \f4\fs24\b0}' fuente='Arial Bold,BOLD,30' fijo='s&iacute;'">
+   <param name="G_21" value="espacio='E1' tipo='texto' dibujar-si='(correcto=0)&amp;(n3!=&squot;&squot;)&amp;(muestra)' expresi&oacute;n='[480,300]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Times New Roman;\f4\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red0\green168\blue255;\red0\green0\blue255;}\cf0\f1\fs60\b     \u161 LO SIENTO!\par La suma correcta es\par         \cf1   \f2\fs64{\*\mjaformula{\expr s\decimals 2\fixed1}}\cf0\par \fs60 Intenta con otra suma  \cf2\par \f4\fs24\b0}' fuente='Arial Bold,BOLD,30' fijo='s&iacute;'">
+   <param name="Animaci&oacute;n" value="controles='no' auto='no' inicio='dx=dx+(px1+150)*(paso=0);dy1=0;kk=0;dy2=0' hacer='kk=kk+1;dx=dx-3*(paso=0);dy2=(dy2&gt;61)?dy2:dy2+2*(paso=1);dy1=dy1+2*(dy2&lt;62)*(paso=1)' mientras='kk&lt;55'">
+<font face="Arial" size="3">Esta unidad interactiva requiere la m&aacute;quina virtual de Java <a href="http://java.sun.com/javase/downloads/index.jsp" target="_blank">J2RE</a>.</font>
+</applet></p>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<html>
+<head>
+	<title>M&uacute;ltiplos y m&iacute;nimo com&uacute;n m&uacute;ltiplo &nbsp;-&nbsp; Exploraci&oacute;n</title>
+	<style>
+		*{
+		border:0;
+		margin:0;
+		padding:0;
+		}
+		body{
+			background-color:#7db9f2;
+		}
+	</style>
+</head>
+<body >
+
+<p align="center">
+<applet width=790 height=520
+        code="descinst.Descartes.class"
+        archive="descinst.jar,http://recursostic.educacion.es/descartes/web/plugin/descinst.jar"
+        MAYSCRIPT>
+   <param name="tama&ntilde;o" value="790x520">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="deshacer" value="no">
+   <param name="Versi&oacute;n" value="4.0985, 2010-06-05">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="tipo='R2' id='hg' fijo='s&iacute;' imagen='images/fondo1.png' despl_imagen='expand.' fondo='009b00' red='no' red10='no' ejes='no' texto='no' n&uacute;meros='s&iacute;'">
+   <param name="E_01" value="tipo='R2' id='LEJOS' x='66' y='96' ancho='660' alto='100' dibujar-si='a&gt;12' escala='4' O.x='-281' imagen='images/pista_lejos.png' despl_imagen='arr-izq' fondo='ff000000' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='INSTRUCCIONES' ancho='790' alto='65' imagen='images/instrucciones.jpg' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='mcm' x='20' y='150' ancho='750' alto='280' dibujar-si='g10%2=1' despl_imagen='arr-izq' fondo='5fa000' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_00" value="id='j' tipo='num&eacute;rico' regi&oacute;n='interior' espacio='hg' nombre='j' expresi&oacute;n='(10,265)(40,30)' valor='1' incr='1' min='1' max='9' decimales='0' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' activo-si='(a&lt;=1)' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_01" value="id='k' tipo='num&eacute;rico' regi&oacute;n='interior' espacio='hg' nombre='j' expresi&oacute;n='(10,320)(40,30)' valor='1' incr='1' min='1' max='9' decimales='0' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' activo-si='(a&lt;=1)' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_02" value="id='l' tipo='num&eacute;rico' regi&oacute;n='interior' espacio='hg' nombre='j' expresi&oacute;n='(10,375)(40,30)' valor='1' incr='1' min='1' max='9' decimales='0' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' activo-si='(a&lt;=1)' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_03" value="id='a' tipo='num&eacute;rico' regi&oacute;n='escenario' espacio='hg' nombre='saltos' expresi&oacute;n='(200,400)' valor='-.25' max='300' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_04" value="id='g6' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='hg' nombre='Iniciar' expresi&oacute;n='(100,460)(120,40)' fijo='s&iacute;' visible='s&iacute;' color='blanco' color-int='blanco' negrita='s&iacute;' fuente puntos='22' imagen='images/btn100.png' acci&oacute;n='calcular' par&aacute;metro='pausado=(pausado=0)?1:0' dibujar-si='(pausado=0)&amp;((j&gt;1)|(k&gt;1)|(l&gt;1))' pos_mensajes='centro'">
+   <param name="C_05" value="id='g11' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='hg' nombre='Pausar' expresi&oacute;n='(100,460)(120,40)' fijo='s&iacute;' visible='s&iacute;' color='blanco' negrita='s&iacute;' fuente puntos='22' imagen='images/btn100.png' acci&oacute;n='calcular' par&aacute;metro='pausado=(pausado=0)?1:0' dibujar-si='(pausado=1)&amp;((j&gt;1)|(k&gt;1)|(l&gt;1))' pos_mensajes='centro'">
+   <param name="C_06" value="id='g10' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='hg' nombre='M&uacute;ltiplos' expresi&oacute;n='(240,460)(150,40)' valor='g10' fijo='s&iacute;' visible='s&iacute;' color='blanco' negrita='s&iacute;' fuente puntos='22' imagen='images/btn150.png' acci&oacute;n='calcular' par&aacute;metro='g10=g10+1\npausado=0' dibujar-si='(v&gt;1)&amp;(g10%2=0)' pos_mensajes='centro'">
+   <param name="C_07" value="id='g7' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='hg' nombre='Reiniciar' expresi&oacute;n='(600,460)(120,40)' fijo='s&iacute;' visible='s&iacute;' color='blanco' negrita='s&iacute;' fuente puntos='22' imagen='images/btn100.png' acci&oacute;n='calcular' par&aacute;metro='a=0\nhg.Ox=0\nj=1\nk=1\nl=1\nv=1\npausado=0' dibujar-si='(a&gt;1) &amp; (g10%2=0)' pos_mensajes='centro'">
+   <param name="C_08" value="id='v' tipo='num&eacute;rico' regi&oacute;n='escenario' espacio='hg' nombre='v' incr='1' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_09" value="id='w' tipo='num&eacute;rico' regi&oacute;n='escenario' espacio='hg' nombre='w' incr='0.25' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_10" value="id='cerrar' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='mcm' expresi&oacute;n='(680,250)(60,20)' fijo='s&iacute;' visible='s&iacute;' imagen='images/cerrar.png' acci&oacute;n='calcular' par&aacute;metro='g10=0' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_11" value="id='n8' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='hg' nombre='n8' incr='1' fijo='s&iacute;' visible='s&iacute;' pos_mensajes='centro'">
+   <param name="C_12" value="id='n9' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='hg' nombre='n9' incr='1' fijo='s&iacute;' visible='s&iacute;' pos_mensajes='centro'">
+   <param name="A_00" value="id='g1(x)' expresi&oacute;n='sin(x)'">
+   <param name="A_01" value="id='e3' evento='s&iacute;' condici&oacute;n='pausado' acci&oacute;n='animar' par&aacute;metro.fuente='Monospaced,PLAIN,12' ejecuci&oacute;n='alternar' pos_mensajes='centro'">
+   <param name="A_02" value="id='e4' evento='s&iacute;' condici&oacute;n='!pausado' acci&oacute;n='animar' par&aacute;metro.fuente='Monospaced,PLAIN,12' ejecuci&oacute;n='alternar' pos_mensajes='centro'">
+   <param name="A_03" value="id='mcm(a,b)' algoritmo='s&iacute;' expresi&oacute;n='y*z*x' algoritmo='s&iacute;' inicio='x=min(a,b);z=max(a,b);i=2;y=1' hacer='asigna=((x%i)==0)&amp;((z%i)==0);y=(asigna)?y*i:y;x=(asigna)?x/i:x;z=(asigna)?z/i:z;i=(asigna)?2:(i+1);' mientras='i&lt;=x'">
+   <param name="A_04" value="id='h' algoritmo='s&iacute;' evaluar='siempre' hacer='minimo=mcm(j,k);minimo2=mcm(minimo,l)'">
+   <param name="G_00" value="espacio='INSTRUCCIONES' tipo='texto' color='blanco' expresi&oacute;n='[25,7]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs44\b     Selecciona con qu\u233  n\u250 meros quieres trabajar, observa cu\u225 les son\par los m\u250 ltiplos comunes y cu\u225 l es el menor m\u250 ltiplo que tienen en com\u250 n.\par \b0}' fuente='Arial Negrita,BOLD,22' fijo='s&iacute;'">
+   <param name="G_01" value="espacio='hg' tipo='segmento' color='blanco' dibujar-si='(s%j=0)&amp;(s%k=0)&amp;(s%l=0)' expresi&oacute;n='(-6.1+(s),0.5*abs(g1(2pi*(s)/j)))(-6.5+(s),-3.5+0.5*abs(g1(pi*(s)/l)))' familia='s' s.intervalo='[1,ent(a)]' s.pasos='ent(a-1)' fijo='s&iacute;' tama&ntilde;o='3' ancho='5'">
+   <param name="G_02" value="espacio='hg' tipo='segmento' color='amarillo' dibujar-si='a&gt;w' expresi&oacute;n='(-6.5+(w+0.25),-3.5)(-6.1+(w+0.25),0)' familia='s' s.intervalo='[0,150]' s.pasos='150' fuente='Times New Roman,PLAIN,12' decimales='0' fijo='s&iacute;' tama&ntilde;o='1' ancho='2'">
+   <param name="G_03" value="espacio='hg' tipo='curva' color='grisObscuro' dibujar-si='a&gt;.25' expresi&oacute;n='(-6.1+a,-.5+0.5*abs(g1(pi*a/j)))' par&aacute;metro='a' a.intervalo='[0,a]' a.pasos='a*8' visible='no'">
+   <param name="G_04" value="espacio='hg' tipo='curva' color='grisObscuro' dibujar-si='a&gt;.25' expresi&oacute;n='(-6.3+a,-1.7+0.5*abs(g1(pi*a/k)))' par&aacute;metro='a' a.intervalo='[0,a]' a.pasos='a*8' visible='no'">
+   <param name="G_05" value="espacio='hg' tipo='curva' color='grisObscuro' dibujar-si='a&gt;.25' expresi&oacute;n='(-6.5+a,-3+0.5*abs(g1(pi*a/l)))' par&aacute;metro='a' a.intervalo='[0,a]' a.pasos='a*8' visible='no'">
+   <param name="G_06" value="espacio='hg' tipo='segmento' color='blanco' expresi&oacute;n='(-6.5,-3.7)(143.5,-3.7)' fijo='s&iacute;' tama&ntilde;o='1' ancho='2'">
+   <param name="G_07" value="espacio='hg' tipo='segmento' color='blanco' expresi&oacute;n='(-6.5+s,-3.5)(-6.5+s,-3.7)' familia='s' s.intervalo='[0,150]' s.pasos='150' fuente='Times New Roman,PLAIN,12' decimales='0' fijo='s&iacute;' tama&ntilde;o='1'">
+   <param name="G_08" value="espacio='hg' tipo='punto' color='blanco' expresi&oacute;n='(-6.7+s,-4.3)' familia='s' s.intervalo='[0,150]' s.pasos='75' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue255;}\f1\fs52\b{\*\mjaformula{\expr s\decimals 0\fixed1}}\cf0\f2\fs24\b0\par }' fuente='SansSerif,BOLD,26' fijo='s&iacute;' tama&ntilde;o='1'">
+   <param name="G_09" value="espacio='LEJOS' tipo='punto' color='008d00' expresi&oacute;n='(-6.5+a,4+0.5*abs(g1(pi*a/j)))' fijo='s&iacute;'">
+   <param name="G_10" value="espacio='LEJOS' tipo='punto' color='7dff31' expresi&oacute;n='(-6.5+a,.5+0.5*abs(g1(pi*a/k)))' fijo='s&iacute;'">
+   <param name="G_11" value="espacio='LEJOS' tipo='punto' color='5441b6' expresi&oacute;n='(-6.5+a,-3+0.5*abs(g1(pi*a/l)))' fijo='s&iacute;'">
+   <param name="G_12" value="espacio='LEJOS' tipo='segmento' color='blanco' expresi&oacute;n='(-6.5,-6)(143.5,-6)' fijo='s&iacute;' tama&ntilde;o='1' ancho='2'">
+   <param name="G_13" value="espacio='LEJOS' tipo='segmento' color='blanco' expresi&oacute;n='(-6.5+5*s,-6)(-6.5+s*5,-5)' familia='s' s.intervalo='[0,30]' s.pasos='30' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;}\par}' fuente='Times New Roman,PLAIN,12' decimales='0' fijo='s&iacute;' tama&ntilde;o='1'">
+   <param name="G_14" value="espacio='LEJOS' tipo='segmento' color='blanco' dibujar-si='(s%j=0)&amp;(s%k=0)&amp;(s%l=0)' expresi&oacute;n='(-6.5+(s),4+0.5*abs(g1(2pi*(s)/j)))(-6.5+(s),-5+0.5*abs(g1(pi*(s)/l)))' familia='s' s.intervalo='[1,ent(a)]' s.pasos='ent(a-1)' fijo='s&iacute;' tama&ntilde;o='1'">
+   <param name="G_15" value="espacio='LEJOS' tipo='segmento' color='amarillo' dibujar-si='a&gt;w' expresi&oacute;n='(-6.5+(w+0.25),-2.5)(-6.5+(w+0.25),2)' familia='s' s.intervalo='[0,150]' s.pasos='150' fuente='Times New Roman,PLAIN,12' decimales='0' fijo='s&iacute;' tama&ntilde;o='1'">
+   <param name="G_16" value="espacio='LEJOS' tipo='punto' expresi&oacute;n='(-9+s,-5.5)' familia='s' s.intervalo='[0,150]' s.pasos='15' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red255\green255\blue255;\red0\green0\blue255;}\cf0\f1\fs32\par \cf1\fs36\b{\*\mjaformula{\expr s\decimals 0\fixed1}}\fs40\par \f4\fs24\b0\cf2}' fuente='SansSerif,PLAIN,16' fijo='s&iacute;' tama&ntilde;o='1'">
+   <param name="G_17" value="espacio='mcm' tipo='texto' color='grisObscuro' expresi&oacute;n='[10,2]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs44     \fs80          Los primeros m\u250 ltiplos de\par \par            {\*\mjaformula{\expr j\decimals 0\fixed1}}, {\*\mjaformula{\expr k\decimals 0\fixed1}} y {\*\mjaformula{\expr l\decimals 0\fixed1}} son {\*\mjaformula{\expr (w+.25)\decimals 0\fixed1}}, {\*\mjaformula{\expr (w+.25)*2\decimals 0\fixed1}}, {\*\mjaformula{\expr (w+.25)*3\decimals 0\fixed1}}, {\*\mjaformula{\expr (w+.25)*4\decimals 0\fixed1}}.\par \par       Y el m\u237 nimo com\u250 n m\u250 ltiplo es {\*\mjaformula{\expr w+.25\decimals 0\fixed0}}.\par    \fs44\par }' fuente='Arial,PLAIN,22' fijo='s&iacute;'">
+   <param name="G_18" value="espacio='hg' tipo='imagen' expresi&oacute;n='(27*s,1.5)(1,1)' familia='s' s.intervalo='[0,5]' s.pasos='5' archivo='images/ranas.png'">
+   <param name="G_19" value="espacio='hg' tipo='imagen' dibujar-si='0.5*abs(g1(pi*a/j))&gt;0.05' expresi&oacute;n='(-5.9+a,-.7)(.1,.1)' archivo='images/sombra.png'">
+   <param name="G_20" value="espacio='hg' tipo='imagen' dibujar-si='0.5*abs(g1(pi*a/j))&lt;=0.05' expresi&oacute;n='(-5.9+a,-.7)(.2,.1)' archivo='images/sombra.png'">
+   <param name="G_21" value="espacio='hg' tipo='imagen' dibujar-si='0.5*abs(g1(pi*a/j))&gt;0.05' expresi&oacute;n='(-6.1+a,-.5+0.5*abs(g1(pi*a/j)))(1,1)' archivo='images/r2_aire.png'">
+   <param name="G_22" value="espacio='hg' tipo='imagen' dibujar-si='0.5*abs(g1(pi*a/j))&lt;=0.05' expresi&oacute;n='(-6.1+a,-.5+0.5*abs(g1(pi*a/j)))(1,1)' archivo='images/r2_suelo.png'">
+   <param name="G_23" value="espacio='hg' tipo='imagen' dibujar-si='0.5*abs(g1(pi*a/k))&gt;0.05' expresi&oacute;n='(-6.1+a,-2)(.1,.1)' archivo='images/sombra.png'">
+   <param name="G_24" value="espacio='hg' tipo='imagen' dibujar-si='0.5*abs(g1(pi*a/k))&lt;=0.05' expresi&oacute;n='(-6.1+a,-2)(.2,.1)' archivo='images/sombra.png'">
+   <param name="G_25" value="espacio='hg' tipo='imagen' dibujar-si='0.5*abs(g1(pi*a/k))&gt;0.05' expresi&oacute;n='(-6.3+a,-1.7+0.5*abs(g1(pi*a/k)))(1,1)' archivo='images/r1_aire.png'">
+   <param name="G_26" value="espacio='hg' tipo='imagen' dibujar-si='0.5*abs(g1(pi*a/k))&lt;=0.05' expresi&oacute;n='(-6.3+a,-1.7+0.5*abs(g1(pi*a/k)))(1,1)' archivo='images/r1_suelo.png'">
+   <param name="G_27" value="espacio='hg' tipo='imagen' dibujar-si='0.5*abs(g1(pi*a/l))&gt;0.05' expresi&oacute;n='(-6.3+a,-3.2)(.1,.1)' archivo='images/sombra.png'">
+   <param name="G_28" value="espacio='hg' tipo='imagen' dibujar-si='0.5*abs(g1(pi*a/l))&lt;=0.05' expresi&oacute;n='(-6.3+a,-3.2)(.25,.1)' archivo='images/sombra.png'">
+   <param name="G_29" value="espacio='hg' tipo='imagen' dibujar-si='0.5*abs(g1(pi*a/l))&gt;0.05' expresi&oacute;n='(-6.45+a,-3+0.5*abs(g1(pi*a/l)))(1,1)' archivo='images/r3_aire.png'">
+   <param name="G_30" value="espacio='hg' tipo='imagen' dibujar-si='0.5*abs(g1(pi*a/l))&lt;=0.05' expresi&oacute;n='(-6.45+a,-3+0.5*abs(g1(pi*a/l)))(1,1)' archivo='images/r3_suelo.png'">
+   <param name="G_31" value="espacio='hg' tipo='imagen' expresi&oacute;n='(-7+27*s,1.3)(.6,.6)' familia='s' s.intervalo='[0,5]' s.pasos='5' archivo='images/arbol.png'">
+   <param name="G_32" value="espacio='hg' tipo='imagen' expresi&oacute;n='(7+27*s,1.5)(.6,.6)' familia='s' s.intervalo='[0,5]' s.pasos='5' archivo='images/arbol2.png'">
+   <param name="G_33" value="espacio='hg' tipo='imagen' coord_abs='s&iacute;' expresi&oacute;n='(0,65)' archivo='images/marco.png'">
+   <param name="Animaci&oacute;n" value="pausa='80' controles='no' auto='no' hacer='a=a+0.25;hg.Ox=(a&lt;10)?0:hg.Ox-12;v= (  (a%j=0)&amp;(a%k=0)&amp;(a%l=0)  )?(v+1):v;w= (v&lt;2)?(a):(w);' mientras='(a&lt;150)&amp;((j&gt;1)|(k&gt;1)|(l&gt;1))'">
+<font face="Arial" size="3">Esta unidad interactiva requiere la m&aacute;quina virtual de Java <a href="http://java.sun.com/javase/downloads/index.jsp" target="_blank">J2RE</a>.</font>
+</applet></p>
+
+ <!-- FIN DEL APPLET -->
+
+</body>
+
+
+
+</html>
+
+
+
+
+

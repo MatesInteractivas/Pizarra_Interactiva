@@ -1,0 +1,14 @@
+0
+'¡Tu eres el mejor estudiante!'
+'A mi no me gusta bailar flamenco, además que no lo hago bien.'
+'Si no te gusta el te, te invito a tomar un jugo de piña.'
+'¡Ya te lo dije, quiero te!'
+'Estaré pendiente de que tu banco te de los intereses.' 
+'Que te guste mi presencia, es lo más grato para mi.'
+'Yo se que debo estudiar para triunfar'
+'Estoy cansado, no quiero jugar mas.'
+'Ese que ves ahí, es mi tío'
+'¡Si, te estoy esperendo!'
+
+
+

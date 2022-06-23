@@ -1,0 +1,27 @@
+'Escribe las tres respuestas de cada pregunta y la posición de la respuesta correcta'
+
+
+'9'
+'6'
+'27'
+3
+
+'12.5'
+'5'
+'50'
+2
+
+'24'
+'4'
+'2'
+3
+
+'27'
+'9'
+'40.5'
+2
+
+'3X3 = 9 cubos'
+'27 cubos'
+'12 cubos'
+2

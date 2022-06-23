@@ -1,0 +1,12 @@
+0
+10
+'rápido'
+'de prisa'
+'adrede'
+'a propósito'
+'claro'
+'sin duda'
+'delante'
+'a la cabeza'
+'quizá'
+'tal vez'

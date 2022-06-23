@@ -1,0 +1,38 @@
+'_ Ingresa  6 palabras origen y 6 de destino, luego la posición de las respuestas correctas_'
+
+'Vamos al hotel'
+'Este libro es costoso'
+'Compraremos tres tortas'
+'Primero eres tú'
+'Algunos vinos son buenos'
+'¡Qué bueno es verte!'
+'Exclamativo'
+'Indefinido'
+'Artículo contracto'
+'Numeral Cardinal'
+'Demostrativo cercanía'
+'Numeral Ordinal'
+3
+5
+4
+6
+2
+1
+'Iremos pocas personas'
+'¿Cuáles vasos?'
+'Reuniremos siete aros'
+'Aquel amigo es fiel'
+'Un amigo nos ama'
+'Tus lápices son buenos'
+'Determinante posesivo'
+'Artículo indeterminado'
+'Demostrativo lejanía'
+'Numeral Cardinal'
+'Interrogativo'
+'Indefinido'
+6
+5
+4
+3
+2
+1

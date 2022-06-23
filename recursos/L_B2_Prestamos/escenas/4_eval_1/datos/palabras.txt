@@ -1,0 +1,39 @@
+'_ Ingresa  6 palabras origen y 6 de destino, luego la posición de las respuestas correctas_'
+
+'Face'
+'Chiken'
+'Street'
+'e-mail'
+'Avenue'
+'Chat'
+'Charla'
+'Avenida'
+'Pollo'
+'Cara'
+'Calle'
+'Correo electrónico'
+4
+3
+5
+6
+2
+1
+'Billar'
+'Hamburguesa'
+'Pool'
+'Gutapercha'
+'Parking'
+'Surfer'
+
+'Estacionamiento'
+'Goma insoluble'
+'Torta de carne'
+'Juego de salón'
+'Piscina'
+'surfista'
+4
+3
+5
+2
+1
+6

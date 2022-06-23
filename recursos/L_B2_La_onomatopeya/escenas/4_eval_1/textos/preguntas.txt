@@ -1,0 +1,7 @@
+5
+
+'El gato ladra'
+'La gallina muge'
+'El ganso grazna'
+'La vaca bala'
+'El pato aúlla'

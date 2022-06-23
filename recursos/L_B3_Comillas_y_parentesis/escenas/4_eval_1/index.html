@@ -1,0 +1,58 @@
+<html>
+<head>
+	<title>Paréntesis y comillas.</title>
+	<style>
+		*{
+		border:0;
+		margin:0;
+		padding:0;
+		}
+	</style>
+</head>
+<body >
+
+<p align="left">
+<applet width=790 height=520
+        code="descinst.Descartes.class"
+        codebase="./"
+        archive="descinst.jar,http://recursostic.educacion.es/descartes/web/plugin/descinst.jar"
+        MAYSCRIPT>
+   <param name="tama&ntilde;o" value="790x520">
+   <param name="pleca" value="title='EJERCICIOS DE PAR&Eacute;NTESIS Y COMILLAS' subtitle='Modifica la frase de acuerdo a la instrucci&oacute;n dada, luego haz clic en comprobar.' subtitlines='2' bgcolor='d0f0ff' fgcolor='ffffff' align='center' titleimage='imagenes/instrucciones.jpg' titlefont='SansSerif,BOLD,18' subtitlefont='SansSerif,PLAIN,22' ">
+   <param name="sonido" value="s&iacute;">
+   <param name="&aacute;lgebra" value="s&iacute;">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="s&iacute;">
+   <param name="Versi&oacute;n" value="4.41, 2010-12-16">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="tipo='R2' id='E1' fijo='s&iacute;' escala='137' O.x='-260' O.y='-30' imagen='/imagenes/fondo.png' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_00" value="id='n0' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E1' nombre='Inicio' expresi&oacute;n='(600,400,120,30)' fijo='s&iacute;' visible='s&iacute;' fuente puntos='18' imagen='/imagenes/btn120.png' acci&oacute;n='calcular' par&aacute;metro='otra=(otra=8)?1:otra+1\nrespuestas=0\nasigna=1\nasigna()' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='otra=0' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_01" value="id='n1' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E1' nombre='Otro Ejercicio' expresi&oacute;n='(600,400,120,30)' fijo='s&iacute;' visible='s&iacute;' fuente puntos='18' imagen='/imagenes/btn120.png' acci&oacute;n='calcular' par&aacute;metro='otra=(otra=8)?0:otra+1\ncomprueba=0\nasigna=1\nasigna()' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='comprueba=1' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_02" value="id='n2' tipo='num&eacute;rico' interfaz='campo de texto' solo_texto='s&iacute;' regi&oacute;n='interior' espacio='E1' expresi&oacute;n='(70,120,650,30)' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='otra!=0' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_03" value="id='n3' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E1' nombre='Comprobar' expresi&oacute;n='(600,400,120,30)' fijo='s&iacute;' visible='s&iacute;' fuente puntos='18' imagen='/imagenes/btn120.png' acci&oacute;n='calcular' par&aacute;metro='comprueba=1' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='comprueba=0' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="A_00" value="id='P' vector='s&iacute;' evaluar='una-sola-vez' tama&ntilde;o='9' expresi&oacute;n='P[0]=&squot;&squot;;P[1]=&squot;&squot;;P[2]=&squot;&squot;' archivo='/datos/preguntas.txt'">
+   <param name="A_01" value="id='R' vector='s&iacute;' evaluar='una-sola-vez' tama&ntilde;o='9' expresi&oacute;n='R[0]=&squot;&squot;;R[1]=&squot;&squot;;R[2]=&squot;&squot;' archivo='/datos/respuestas.txt'">
+   <param name="A_02" value="id='INICIO' algoritmo='s&iacute;' evaluar='una-sola-vez' hacer='otra=0;n2=P[otra];SOM.Top=200;SOM.Left=400;SOM.transp=0.80;SOM.rojo=0.28;SOM.verde=0.60;SOM.azul=0.93'">
+   <param name="A_03" value="id='CALCULOS' algoritmo='s&iacute;' evaluar='siempre' hacer='ff=(asigna=1)?asigna():0;correcto=(n2=R[otra]);;'">
+   <param name="A_04" value="id='asigna()' algoritmo='s&iacute;' algoritmo='s&iacute;' hacer='asigna=0;n2=&squot;&squot;;kk=P[otra];n2=kk'">
+   <param name="A_05" value="id='e6' evento='s&iacute;' condici&oacute;n='comprueba' acci&oacute;n='calcular' par&aacute;metro='correctas=correctas+correcto' par&aacute;metro.fuente='Monospaced,PLAIN,12' ejecuci&oacute;n='alternar' pos_mensajes='centro'">
+   <param name="G_00" value="espacio='E1' tipo='macro' expresi&oacute;n='macros/sombras.txt' nombre='SOM'">
+   <param name="G_01" value="espacio='E1' tipo='texto' dibujar-si='otra=0' expresi&oacute;n='[121,81]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\f1\fs44\b\cf0\u161 Haz clic en el bot\u243 n &amp;quote;Inicio&amp;quote; para comenzar!\b0\cf1}' fuente='Arial Bold,BOLD,22' fijo='s&iacute;'">
+   <param name="G_02" value="espacio='E1' tipo='texto' dibujar-si='otra=0' expresi&oacute;n='[120,80]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red255\green135\blue0;\red0\green0\blue255;}\f1\fs44\b\cf0\u161 Haz clic en el bot\u243 n &amp;quote;Inicio&amp;quote; para comenzar!\b0\cf1}' fuente='Arial Bold,BOLD,22' fijo='s&iacute;'">
+   <param name="G_03" value="espacio='E1' tipo='texto' dibujar-si='(otra&gt;0)&amp;(otra&lt;5)' expresi&oacute;n='[121,81]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\f1\fs44\b\cf0\u161 Escribe el par\u233 ntesis en el lugar correspondiente!\b0\cf1\par }' fuente='Arial Bold,BOLD,22' fijo='s&iacute;'">
+   <param name="G_04" value="espacio='E1' tipo='texto' dibujar-si='(otra&gt;0)&amp;(otra&lt;5)' expresi&oacute;n='[120,80]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red186\green129\blue60;\red0\green0\blue255;}\f1\fs44\b\cf0\u161 Escribe el par\u233 ntesis en el lugar correspondiente!\b0\cf1\par }' fuente='Arial Bold,BOLD,22' fijo='s&iacute;'">
+   <param name="G_05" value="espacio='E1' tipo='texto' dibujar-si='(otra&gt;4)' expresi&oacute;n='[121,81]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs46\b\u161 Utiliza las comillas adecuadamente!\fs44\b0\cf1\par }' fuente='Arial Bold,BOLD,23' fijo='s&iacute;'">
+   <param name="G_06" value="espacio='E1' tipo='texto' dibujar-si='(otra&gt;4)' expresi&oacute;n='[120,80]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red0\green144\blue0;\red0\green0\blue255;}\f1\fs46\b\cf0\u161 Utiliza las comillas adecuadamente!\fs44\b0\cf1\par }' fuente='Arial Bold,BOLD,23' fijo='s&iacute;'">
+   <param name="G_07" value="espacio='E1' tipo='imagen' dibujar-si='(correcto)' expresi&oacute;n='(0,0)' archivo='/imagenes/feliz.png'">
+   <param name="G_08" value="espacio='E1' tipo='imagen' dibujar-si='(correcto=0)&amp;(comprueba)' expresi&oacute;n='(0,0)' archivo='/imagenes/triste.png'">
+   <param name="G_09" value="espacio='E1' tipo='texto' dibujar-si='(correcto=0)&amp;(comprueba)' expresi&oacute;n='[21,321]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\f1\fs40\b\cf0 La frase correcta es:\par {\*\mjaformula{\expr R[otra]}}\cf1\b0}' fuente='Arial Bold,BOLD,20' fijo='s&iacute;'">
+   <param name="G_10" value="espacio='E1' tipo='texto' dibujar-si='(correcto=0)&amp;(comprueba)' expresi&oacute;n='[20,320]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red0\green111\blue255;\red0\green0\blue0;\red255\green0\blue0;\red0\green0\blue255;}\f1\fs40\b\cf0 La frase correcta es:\cf1\par \cf2{\*\mjaformula{\expr R[otra]}}\cf3\b0}' fuente='Arial Bold,BOLD,20' fijo='s&iacute;'">
+   <param name="G_11" value="espacio='E1' tipo='texto' dibujar-si='(otra&gt;1)&amp;(correctas&gt;1)' expresi&oacute;n='[20,420]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36\b\u161 Tienes {\*\mjaformula{\expr correctas\decimals 0\fixed1}} respuestas correctas de 8!\f2\fs24\b0}' fuente='Arial Bold,BOLD,18' fijo='s&iacute;'">
+   <param name="G_12" value="espacio='E1' tipo='texto' dibujar-si='(otra=1)&amp;(correctas)' expresi&oacute;n='[20,420]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36\b\u161 Tienes {\*\mjaformula{\expr correctas\decimals 0\fixed1}} respuesta correcta de 8!\f2\fs24\b0}' fuente='Arial Bold,BOLD,18' fijo='s&iacute;'">
+   <param name="G_13" value="espacio='E1' tipo='texto' dibujar-si='(otra=8)&amp;(correctas=0)&amp;(comprueba)' expresi&oacute;n='[20,420]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red0\green0\blue255;}\f1\fs36\b\cf0\u161 Increible, no atinaste a ninguna!\cf1\f2\fs24\b0}' fuente='Arial Bold,BOLD,18' fijo='s&iacute;'">
+<font face="Arial" size="3">Esta unidad interactiva requiere la m&aacute;quina virtual de Java <a href="http://java.sun.com/javase/downloads/index.jsp" target="_blank">J2RE</a>.</font>
+</applet></p>
+
+</body>
+</html>

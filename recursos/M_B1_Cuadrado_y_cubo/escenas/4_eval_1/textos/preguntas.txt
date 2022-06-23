@@ -1,0 +1,7 @@
+5
+
+'el cubo de 3 es igual a'
+'25 es el cuadrado de'
+'8 es el cubo de'
+'81 es el cuadrado de'
+'El cubo de Rubik está formado por'

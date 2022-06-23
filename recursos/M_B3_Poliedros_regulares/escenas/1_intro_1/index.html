@@ -1,0 +1,69 @@
+<html>
+<head>
+	<title>Poliedros regulares.</title>
+	<style>
+		*{
+		border:0;
+		margin:0;
+		padding:0;
+		}
+	</style>
+</head>
+<body >
+
+<p align="left">
+<applet width=790 height=520
+        code="descinst.Descartes.class"
+        codebase="./"
+        archive="descinst.jar,http://recursostic.educacion.es/descartes/web/plugin/descinst.jar"
+        MAYSCRIPT>
+   <param name="tama&ntilde;o" value="790x520">
+   <param name="pleca" value="title='Poliedros regulares.' subtitle='Observa algunas caracter&iacute;sticas de estos poliedros.' subtitlines='2' bgcolor='268bea' fgcolor='ffffff' align='center' titleimage='images/instrucciones.jpg' titlefont='SansSerif,PLAIN,22' subtitlefont='SansSerif,PLAIN,22' ">
+   <param name="sonido" value="s&iacute;">
+   <param name="&aacute;lgebra" value="s&iacute;">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="s&iacute;">
+   <param name="deshacer" value="no">
+   <param name="Versi&oacute;n" value="4.41, 2010-12-16">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="tipo='R2' id='E1' imagen='/imagenes/fondo.png' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_01" value="tipo='R3' id='E2' x='40' y='23%' ancho='40%' alto='55%' escala='70' despl_imagen='arr-izq' fondo='negro' R3='s&iacute;'">
+   <param name="E_02" value="tipo='R3' id='E3' O.x='200' O.y='60' despl_imagen='arr-izq' fondo='ffffffff' R3='s&iacute;'">
+   <param name="C_00" value="id='n1' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E3' nombre='Continuar' expresi&oacute;n='(560,110,120,30)' fijo='s&iacute;' visible='s&iacute;' fuente puntos='20' imagen='/images/btn120.png' acci&oacute;n='calcular' par&aacute;metro='sigue=sigue+1' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='sigue&lt;5' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="A_00" value="id='INICIO' algoritmo='s&iacute;' evaluar='una-sola-vez' hacer='SOM.Top=200;SOM.Left=200;SOM.transp=0.80;SOM.rojo=0.28;SOM.verde=0.60;SOM.azul=0.93;;'">
+   <param name="A_01" value="id='posicion' algoritmo='s&iacute;' evaluar='siempre' hacer='a1=36*pi/180;a1=108*pi/180;;'">
+   <param name="G_00" value="espacio='E1' tipo='macro' expresi&oacute;n='macros/sombras.txt' nombre='SOM'">
+   <param name="G_01" value="espacio='E1' tipo='texto' dibujar-si='sigue=0' expresi&oacute;n='[380,40]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\f1\fs56\b\cf0 Los poliedros regulares\par son cinco, todas sus caras\par son iguales.\fs48\cf1\par }' fuente='Arial Bold,BOLD,28' fijo='s&iacute;'">
+   <param name="G_02" value="espacio='E1' tipo='texto' dibujar-si='sigue=0' expresi&oacute;n='[381,41]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red0\green143\blue255;\red0\green0\blue255;}\f1\fs56\b\cf0 Los poliedros regulares\par son cinco, todas sus caras\par son iguales.\fs48\cf1\par }' fuente='Arial Bold,BOLD,28' fijo='s&iacute;'">
+   <param name="G_03" value="espacio='E1' tipo='texto' dibujar-si='sigue=1' expresi&oacute;n='[380,40]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\f1\fs56\b\cf0 El cubo o hexaedro que tiene\par seis caras iguales que son\par cuadrados.\fs48\cf1\par }' fuente='Arial Bold,BOLD,28' fijo='s&iacute;'">
+   <param name="G_04" value="espacio='E1' tipo='texto' dibujar-si='sigue=1' expresi&oacute;n='[381,41]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red255\green91\blue0;\red0\green0\blue255;}\f1\fs56\b\cf0 El cubo o hexaedro que tiene\par seis caras iguales que son\par cuadrados.\fs48\par \cf1}' fuente='Arial Bold,BOLD,28' fijo='s&iacute;'">
+   <param name="G_05" value="espacio='E1' tipo='texto' dibujar-si='sigue=2' expresi&oacute;n='[380,40]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red0\green0\blue0;\red0\green133\blue0;\red0\green0\blue255;}\f1\fs56\b\cf0 El tetraedro que tiene\par cuatro caras y cuatro\par v\u233 rtices.\cf1\fs48\par \cf2}' fuente='Arial Bold,BOLD,28' fijo='s&iacute;'">
+   <param name="G_06" value="espacio='E1' tipo='texto' dibujar-si='sigue=2' expresi&oacute;n='[381,41]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red0\green133\blue0;\red0\green0\blue255;}\f1\fs56\b\cf0 El tetraedro que tiene\par cuatro caras y cuatro\par v\u233 rtices.\fs48\par \cf1}' fuente='Arial Bold,BOLD,28' fijo='s&iacute;'">
+   <param name="G_07" value="espacio='E1' tipo='texto' dibujar-si='sigue=3' expresi&oacute;n='[380,40]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red0\green0\blue0;\red0\green133\blue0;\red0\green0\blue255;}\f1\fs56\b\cf0 El octaedro que tiene ocho\par caras triangulares iguales y\cf1\fs48  \par \cf0\fs56 12 aristas.\cf1\fs48\par \cf2}' fuente='Arial Bold,BOLD,28' fijo='s&iacute;'">
+   <param name="G_08" value="espacio='E1' tipo='texto' dibujar-si='sigue=3' expresi&oacute;n='[381,41]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red255\green31\blue0;\red0\green133\blue0;\red0\green0\blue255;}\f1\fs56\b\cf0 El octaedro que tiene ocho\par caras triangulares iguales y\fs48  \par \fs56 12 aristas.\cf1\fs48\par \cf2}' fuente='Arial Bold,BOLD,28' fijo='s&iacute;'">
+   <param name="G_09" value="espacio='E1' tipo='texto' dibujar-si='sigue=4' expresi&oacute;n='[380,40]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red0\green0\blue0;\red0\green133\blue0;\red0\green0\blue255;}\f1\fs56\b\cf0 El dodecaedro con sus\par 12 caras pentagonales y\par 20 v\u233 rtices.\cf1\fs48\par \cf2}' fuente='Arial Bold,BOLD,28' fijo='s&iacute;'">
+   <param name="G_10" value="espacio='E1' tipo='texto' dibujar-si='sigue=4' expresi&oacute;n='[381,41]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red192\green192\blue192;\red0\green133\blue0;\red0\green0\blue255;}\f1\fs56\b\cf0 El dodecaedro con sus\par 12 caras pentagonales y\par 20 v\u233 rtices.\cf1\fs48\par \cf2}' fuente='Arial Bold,BOLD,28' fijo='s&iacute;'">
+   <param name="G_11" value="espacio='E1' tipo='texto' dibujar-si='sigue=5' expresi&oacute;n='[381,41]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red0\green0\blue0;\red0\green133\blue0;\red0\green0\blue255;}\f1\fs56\b\cf0 El icosaedro con sus\par 20 caras triangulares.\par Observa que a cada\par v\u233 rtice le llegan cinco\par aristas.\cf1\fs48\par \cf2}' fuente='Arial Bold,BOLD,28' fijo='s&iacute;'">
+   <param name="G_12" value="espacio='E1' tipo='texto' dibujar-si='sigue=5' expresi&oacute;n='[380,40]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red154\green77\blue178;\red0\green0\blue255;}\f1\fs56\b\cf0 El icosaedro con sus\par 20 caras triangulares.\par Observa que a cada\par v\u233 rtice le llegan cinco\par aristas.\fs48\par \cf1}' fuente='Arial Bold,BOLD,28' fijo='s&iacute;'">
+   <param name="S_00" value="espacio='E2' tipo='superficie' color='c4ffffff' color_reverso='c4ffffff' expresi&oacute;n='y=2*u-2 z=2*v-1 x=0' cortar='s&iacute;' aristas='s&iacute;' modelo='metal' Nu='1' Nv='1'">
+   <param name="S_01" value="espacio='E2' tipo='superficie' color='c4ffffff' color_reverso='c4ffffff' expresi&oacute;n='y=2*u-2 z=2*v-1 x=0' rotini='(0,0,72)' cortar='s&iacute;' aristas='s&iacute;' modelo='metal' Nu='1' Nv='1'">
+   <param name="S_02" value="espacio='E2' tipo='superficie' color='c4ffffff' color_reverso='c4ffffff' expresi&oacute;n='y=2*u-2 z=2*v-1 x=0' rotini='(0,0,144)' cortar='s&iacute;' aristas='s&iacute;' modelo='metal' Nu='1' Nv='1'">
+   <param name="S_03" value="espacio='E2' tipo='superficie' color='c4ffffff' color_reverso='c4ffffff' expresi&oacute;n='y=2*u-2 z=2*v-1 x=0' rotini='(0,0,216)' cortar='s&iacute;' aristas='s&iacute;' modelo='metal' Nu='1' Nv='1'">
+   <param name="S_04" value="espacio='E2' tipo='superficie' color='c4ffffff' color_reverso='c4ffffff' expresi&oacute;n='y=2*u-2 z=2*v-1 x=0' rotini='(0,0,288)' cortar='s&iacute;' aristas='s&iacute;' modelo='metal' Nu='1' Nv='1'">
+   <param name="S_05" value="espacio='E2' tipo='cubo' color='9a00ff00' color_reverso='9a00ff00' expresi&oacute;n='Cubo' posini='(1.5*sin(a1),1.5*cos(a1),0)' rotfin='(0,0,36)' aristas='s&iacute;' modelo='metal' ancho='1.5'">
+   <param name="S_06" value="espacio='E2' tipo='tetraedro' color='9dff7700' color_reverso='9dff7700' expresi&oacute;n='Tetraedro' posini='(1.5*sin(a1),1.5*cos(a1),0)' rotfin='(0,0,108)' aristas='s&iacute;' modelo='metal' ancho='1.5'">
+   <param name="S_07" value="espacio='E2' tipo='octaedro' color='73ffff00' color_reverso='73ffff00' expresi&oacute;n='Octaedro' posini='(1.5*sin(a1),1.5*cos(a1),0)' rotfin='(0,0,180)' aristas='s&iacute;' modelo='metal' ancho='1.5'">
+   <param name="S_08" value="espacio='E2' tipo='dodecaedro' color='8fff00ff' color_reverso='8fff00ff' expresi&oacute;n='Dodecaedro' posini='(1.5*sin(a1),1.5*cos(a1),0)' rotfin='(0,0,252)' aristas='s&iacute;' modelo='metal' ancho='1.5'">
+   <param name="S_09" value="espacio='E2' tipo='icosaedro' color='9300ffff' color_reverso='9300ffff' expresi&oacute;n='Icosaedro' posini='(1.5*sin(a1),1.5*cos(a1),0)' rotfin='(0,0,328)' aristas='s&iacute;' modelo='metal' ancho='1.5'">
+   <param name="S_10" value="espacio='E3' tipo='cubo' color='verde' color_reverso='rosa' dibujar-si='sigue=1' expresi&oacute;n='Cubo' rotini='(0,0,30)' aristas='s&iacute;' modelo='metal' ancho='5'">
+   <param name="S_11" value="espacio='E3' tipo='tetraedro' color='ff8c00' color_reverso='rosa' dibujar-si='sigue=2' expresi&oacute;n='Tetraedro' rotini='(0,0,20)' aristas='s&iacute;' modelo='metal' ancho='5'">
+   <param name="S_12" value="espacio='E3' tipo='octaedro' color='amarillo' color_reverso='rosa' dibujar-si='sigue=3' expresi&oacute;n='Octaedro' rotini='(0,0,20)' aristas='s&iacute;' modelo='metal' ancho='5'">
+   <param name="S_13" value="espacio='E3' tipo='dodecaedro' color_reverso='rosa' dibujar-si='sigue=4' expresi&oacute;n='Dodecaedro' aristas='s&iacute;' modelo='metal' ancho='5'">
+   <param name="S_14" value="espacio='E3' tipo='icosaedro' color='turquesa' color_reverso='rosa' dibujar-si='sigue=5' expresi&oacute;n='Icosaedro' aristas='s&iacute;' modelo='metal' ancho='5'">
+   <param name="Animaci&oacute;n" value="controles='no' auto='s&iacute;' hacer='E2.rot.z=E2.rot.z+1;E3.rot.z=E3.rot.z+1' mientras='1'">
+<font face="Arial" size="3">Esta unidad interactiva requiere la m&aacute;quina virtual de Java <a href="http://java.sun.com/javase/downloads/index.jsp" target="_blank">J2RE</a>.</font>
+</applet></p>
+
+</body>
+</html>

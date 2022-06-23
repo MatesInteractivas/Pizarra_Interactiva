@@ -1,0 +1,12 @@
+5
+
+'Otras formas de expresar el porcentaje 25% son'
+''
+'El 40% de los alumnos de un colegio son niñas'
+'y el resto niños'
+'De los 600 alumnos de un colegio el 32% son niñas y el'
+'resto niños ¿Cuántos niños y niñas hay en el colegio?'
+'Un ordenador cuesta 800 euros ¿Cuánto pagaremos'
+'si nos descuentan el 20% ?'
+'Una bicicleta cuesta 300 euros ¿Cuánto pagaremos'
+'si nos incrementan el 5% por pagar a plazos?'

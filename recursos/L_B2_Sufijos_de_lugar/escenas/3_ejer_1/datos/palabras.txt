@@ -1,0 +1,38 @@
+'_ Ingresa  6 palabras origen y 6 de destino, luego la posición de las respuestas correctas_'
+
+'Médico especialista en niños'
+'Persona que come peces '
+'Persona que utiliza mentiras'
+'Profesional que cultiva la huerta'
+'Persona amante de la tierra'
+'Persona que navega en el mar'
+'Marinero'
+'Horticultor'
+'Pediatra'
+'Mitómano'
+'Piscívoro'
+'Geófilo '
+3
+5
+4
+2
+6
+1
+'ista'
+'iego'
+'era'
+'ico'
+'ión'
+'ería'
+'Papel'
+'Organizar'
+'Rato'
+'Fiambre'
+'Mujer'
+'Piano'
+6
+5
+4
+3
+2
+1

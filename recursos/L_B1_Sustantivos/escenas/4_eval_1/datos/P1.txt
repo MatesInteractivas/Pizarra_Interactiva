@@ -1,0 +1,16 @@
+0
+'Señala el sustantivo masculino'
+5
+6
+'Señala el sustantivo propio'
+3
+5
+'Señala el sustantivo femenino'
+2
+6
+'Señala el sustantivo abstracto'
+3
+6
+'Señala el sustantivo que no es colectivo'
+5
+6

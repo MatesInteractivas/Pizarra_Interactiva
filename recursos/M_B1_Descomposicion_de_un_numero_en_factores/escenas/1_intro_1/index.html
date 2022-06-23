@@ -1,0 +1,64 @@
+<html>
+<head>
+	<title>Descomposición de un número</title>
+	<style>
+		*{
+		border:0;
+		margin:0;
+		padding:0;
+		}
+	</style>
+</head>
+<body >
+
+<p align="left">
+<applet width=790 height=520
+        code="descinst.Descartes.class"
+        codebase="./"
+        archive="descinst.jar,http://recursostic.educacion.es/descartes/web/plugin/descinst.jar"
+        MAYSCRIPT>
+   <param name="tama&ntilde;o" value="790x520">
+   <param name="pleca" value="title='DESCOMPOSICI&Oacute;N DE UN N&Uacute;MERO EN FACTORES' subtitle='Analiza las distintas formas en que se puede escribir un n&uacute;mero.' subtitlines='2' bgcolor='268bea' fgcolor='ffffff' align='center' titleimage='images/instrucciones.jpg' titlefont='SansSerif,PLAIN,22' subtitlefont='SansSerif,PLAIN,22' ">
+   <param name="sonido" value="s&iacute;">
+   <param name="&aacute;lgebra" value="s&iacute;">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="s&iacute;">
+   <param name="deshacer" value="no">
+   <param name="Versi&oacute;n" value="4.41, 2010-12-16">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="tipo='R2' id='E1' imagen='images/fondo.png' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no' sensible_a_los_movimientos_del_rat&oacute;n='s&iacute;'">
+   <param name="C_00" value="id='n3' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E1' nombre='Continuar' expresi&oacute;n='(480,170,120,40)' fijo='s&iacute;' visible='s&iacute;' color='blanco' negrita='s&iacute;' fuente puntos='18' imagen='images/btn120.png' acci&oacute;n='calcular' par&aacute;metro='mostrar=1' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='(mostrar=0)&amp;(n4!=&squot;&squot;)' activo-si='n4!=&squot;&squot;' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_01" value="id='n4' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' espacio='E1' expresi&oacute;n='(290,15,50,30)' valor='&squot;&squot;' discreto='s&iacute;' decimales='0' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_02" value="id='n6' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E1' nombre='Continuar' expresi&oacute;n='(560,300,120,40)' fijo='s&iacute;' visible='s&iacute;' color='blanco' negrita='s&iacute;' fuente puntos='18' imagen='images/btn120.png' acci&oacute;n='calcular' par&aacute;metro='mostrar=0\notro=(otro=4)?1:otro+1\nmostrar=0\nn4=&squot;&squot;' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='mostrar=1' activo-si='mostrar=1' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="A_00" value="id='INICIO' algoritmo='s&iacute;' evaluar='una-sola-vez' hacer='RA.x=22;RA.y=22;RA.w=488;RA.h=360;RA.transp=0.0;RA.rojo=174/255;RA.verde=246/255;RA.azul=238/255;RA3.x=515;RA3.y=22;RA3.w=255;RA3.h=330;RA3.transp=0.0;RA3.rojo=1.0;RA3.verde=0.9;RA3.azul=0.25;SOM.Top=500;SOM.Left=400;SOM.transp=0.80;SOM.rojo=0.28;SOM.verde=0.60;SOM.azul=0.93'">
+   <param name="A_01" value="id='CALCULOS' algoritmo='s&iacute;' evaluar='siempre' hacer='px=E1.mouse_x;py=E1.mouse_y;;cy=(py&lt;5)?300:py;cy=(py&gt;380)?20:py;;r1=(px&gt;5)&amp;(px&lt;6)&amp;(py&gt;-1)&amp;(py&lt;1);r2=(px&gt;-7)&amp;(px&lt;-6)&amp;(py&gt;-1)&amp;(py&lt;1);'">
+   <param name="A_02" value="id='otro' constante='s&iacute;' expresi&oacute;n='1' evaluar='una-sola-vez'">
+   <param name="A_03" value="id='V4' vector='s&iacute;' evaluar='una-sola-vez' tama&ntilde;o='10' expresi&oacute;n='V4[0]=0;V4[1]=24;V4[2]=30;V4[3]=18;V4[4]=20'">
+   <param name="A_04" value="id='V5' vector='s&iacute;' evaluar='una-sola-vez' tama&ntilde;o='10' expresi&oacute;n='V5[0]=0;V5[1]=4;V5[2]=5;V5[3]=3;V5[4]=4'">
+   <param name="A_05" value="id='V6' vector='s&iacute;' evaluar='una-sola-vez' tama&ntilde;o='10' expresi&oacute;n='V6[0]=0;V6[1]=6;V6[2]=6;V6[3]=6;V6[4]=5'">
+   <param name="A_06" value="id='V7' vector='s&iacute;' evaluar='una-sola-vez' tama&ntilde;o='10' expresi&oacute;n='V7[0]=0;V7[1]=3;V7[2]=3;V7[3]=2;V7[4]=2'">
+   <param name="A_07" value="id='V8' vector='s&iacute;' evaluar='una-sola-vez' tama&ntilde;o='10' expresi&oacute;n='V8[0]=0;V8[1]=8;V8[2]=10;V8[3]=9;V8[4]=10'">
+   <param name="G_00" value="espacio='E1' tipo='macro' expresi&oacute;n='macros/sombras.txt' nombre='SOM'">
+   <param name="G_01" value="espacio='E1' tipo='macro' dibujar-si='tt=8' expresi&oacute;n='macros/redondangulo.txt' nombre='RA'">
+   <param name="G_02" value="espacio='E1' tipo='macro' dibujar-si='n4=88' expresi&oacute;n='macros/redondangulo.txt' nombre='RA3'">
+   <param name="G_03" value="espacio='E1' tipo='imagen' dibujar-si='(otro=1)' coord_abs='s&iacute;' expresi&oacute;n='(50,60)' archivo='images/im11.png'">
+   <param name="G_04" value="espacio='E1' tipo='imagen' dibujar-si='(otro=1)&amp;(mostrar=1)' coord_abs='s&iacute;' expresi&oacute;n='(50,260)' archivo='images/im12.png'">
+   <param name="G_05" value="espacio='E1' tipo='texto' expresi&oacute;n='[30,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs44\b\u191 Cu\u225 ntos botones hay?\b0\par \par \cf1\fs36\par \par \f4\fs24}' fuente='Arial-BoldMT,BOLD,22' fijo='s&iacute;'">
+   <param name="G_06" value="espacio='E1' tipo='imagen' dibujar-si='(otro=2)' coord_abs='s&iacute;' expresi&oacute;n='(50,60)' archivo='images/im21.png'">
+   <param name="G_07" value="espacio='E1' tipo='imagen' dibujar-si='(otro=2)&amp;(mostrar=1)' coord_abs='s&iacute;' expresi&oacute;n='(50,260)' archivo='images/img22.png'">
+   <param name="G_08" value="espacio='E1' tipo='imagen' dibujar-si='(otro=3)' coord_abs='s&iacute;' expresi&oacute;n='(50,60)' archivo='images/im31.png'">
+   <param name="G_09" value="espacio='E1' tipo='imagen' dibujar-si='(otro=3)&amp;(mostrar=1)' coord_abs='s&iacute;' expresi&oacute;n='(50,270)' archivo='images/im32.png'">
+   <param name="G_10" value="espacio='E1' tipo='imagen' dibujar-si='(otro=4)' coord_abs='s&iacute;' expresi&oacute;n='(50,60)' archivo='images/im41.png'">
+   <param name="G_11" value="espacio='E1' tipo='imagen' dibujar-si='(otro=4)&amp;(mostrar=1)' coord_abs='s&iacute;' expresi&oacute;n='(50,270)' archivo='images/im42.png'">
+   <param name="G_12" value="espacio='E1' tipo='texto' dibujar-si='n4!=&squot;&squot;' expresi&oacute;n='[330,75]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;\f1\fcharset0 Courier New;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Arial;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\f1\fs24\cf0  \f2\fs44         Hay {\*\mjaformula{\expr V4[otro]\decimals 0\fixed1}} botones, {\*\mjaformula{\expr V4[otro]\decimals 0\fixed1}} = {\*\mjaformula{\expr [V5[otro]]\decimals 0\fixed1}}  x {\*\mjaformula{\expr V6[otro]\decimals 0\fixed1}}.\par El {\*\mjaformula{\expr V4[otro]\decimals 0\fixed1}} se ha descompuesto en dos factores.\par \b\u191 Se puede descomponer de otra manera?\b0\par \par \cf1\fs36\par \par \f1\fs24}' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_13" value="espacio='E1' tipo='texto' dibujar-si='mostrar=1' expresi&oacute;n='[120,415]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs44{\*\mjaformula{\expr [V4[otro]]\decimals 0\fixed1}} equivale tambi\u233 n a {\*\mjaformula{\expr [V7[otro]]\decimals 0\fixed1}} x {\*\mjaformula{\expr [V8[otro]]\decimals 0\fixed1}}, {\*\mjaformula{\expr [V7[otro]]\decimals 0\fixed1}} y {\*\mjaformula{\expr [V8[otro]]\decimals 0\fixed1}} son factores de {\*\mjaformula{\expr V4[otro]\decimals 0\fixed1}}.\par \par \cf1\fs36\par \par \f3\fs24}' fuente='ArialMT,PLAIN,22' fijo='s&iacute;'">
+   <param name="G_14" value="espacio='E1' tipo='texto' dibujar-si='(n4!=&squot;&squot;)&amp;(n4=V4[otro])' expresi&oacute;n='[330,30]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;\f1\fcharset0 Courier New;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Arial;\f5\fcharset0 Arial;}{\colortbl\red0\green0\blue0;\red0\green148\blue0;\red0\green0\blue255;}\f1\fs24\cf0                  \f2\fs44\b      \cf1\fs56\u161 Correcto!\cf0\fs44\b0\par \par \cf2\fs36\par \par \f1\fs24}' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_15" value="espacio='E1' tipo='texto' dibujar-si='(n4!=&squot;&squot;)&amp;(n4!=V4[otro])' expresi&oacute;n='[310,30]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;\f1\fcharset0 Courier New;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Arial;\f5\fcharset0 Arial;}{\colortbl\red0\green0\blue0;\red255\green0\blue0;\red0\green0\blue255;}\f1\fs24\cf0                 \cf1  \f2\fs44\b      \fs56\u161 Incorrecto!\cf0\fs44\b0\par \cf2\fs36\par \par \f1\fs24}' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_16" value="espacio='E1' tipo='texto' dibujar-si='otra=4' expresi&oacute;n='[-px+90,100]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Arial;\f5\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs44  \par \par \par \par \b               \fs48\cf1\u161 Contin\u250 a ahora con la exploraci\u243 n!\fs44  \cf0  \b0\par \par \par \cf1\fs36\par \par \f5\fs24}' fuente='ArialMT,PLAIN,22' fijo='s&iacute;'">
+   <param name="Animaci&oacute;n" value="controles='no' auto='s&iacute;' hacer=';'">
+<font face="Arial" size="3">Esta unidad interactiva requiere la m&aacute;quina virtual de Java <a href="http://java.sun.com/javase/downloads/index.jsp" target="_blank">J2RE</a>.</font>
+</applet></p>
+
+</body>
+</html>

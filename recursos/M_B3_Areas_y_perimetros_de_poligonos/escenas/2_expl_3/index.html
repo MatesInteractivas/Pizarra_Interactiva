@@ -1,0 +1,51 @@
+<html>
+<head>
+	<title>&Aacute;rea de figuras planas &nbsp;-&nbsp; Exploraci&oacute;n.</title>
+	<style>
+		*{
+		border:0;
+		margin:0;
+		padding:0;
+		}
+		body{
+			background-color:#7db9f2;
+		}
+	</style>
+</head>
+<body >
+
+<p align="center">
+<applet width=790 height=520
+        code="descinst.Descartes.class"
+        codebase="./"
+        archive="descinst.jar,http://recursostic.educacion.es/descartes/web/plugin/descinst.jar"
+        MAYSCRIPT>
+   <param name="tama&ntilde;o" value="790x520">
+   <param name="pleca" value="title='En esta escena observar&aacute;s c&oacute;mo se c&aacute;lcula el &aacute;rea de un pol&iacute;gono regular.' subtitle='Puedes explorar varios pol&iacute;gonos.' subtitlines='2' bgcolor='268bea' fgcolor='ffffff' align='center' titleimage='images/instrucciones.jpg' titlefont='SansSerif,BOLD,22' subtitlefont='SansSerif,BOLD,22' ">
+   <param name="sonido" value="s&iacute;">
+   <param name="&aacute;lgebra" value="s&iacute;">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="deshacer" value="no">
+   <param name="Versi&oacute;n" value="4.41, 2010-12-16">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="tipo='R2' id='E1' fijo='s&iacute;' escala='23' O.x='-55%' O.y='24%' imagen='images/fondo.png' despl_imagen='expand.' fondo='blanco' red='no' red10='no' ejes='no' texto='no' sensible_a_los_movimientos_del_rat&oacute;n='s&iacute;'">
+   <param name="C_00" value="id='Otro' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E1' nombre='Otro' expresi&oacute;n='((E1._w-100-50),300,100,30)' fijo='s&iacute;' visible='s&iacute;' color='negro' color-int='naranja' negrita='s&iacute;' fuente puntos='22' imagen='images/btn100.png' acci&oacute;n='calcular' par&aacute;metro='lados=3+ent(rnd*10)\nang=pi*(180/lados)/180\napo=6*cos(ang)\nL=2*sqrt(36-(apo)^2)\nxj=11+apo*cos(pi/lados)\nyj=7+apo*sen(pi/lados)' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="A_00" value="id='INICIO_MACROS' algoritmo='s&iacute;' evaluar='una-sola-vez' hacer='RA.transp=0.0;RA.rojo=1.0;RA.verde=0.93;RA.azul=0.32;RA.w=360;RA.h=240;RA.x=(E1._w-RA.w)/2;RA.y=((E1._h-50)-RA.h)/2;SOM1.transp=0.8;SOM1.rojo=0.2;SOM1.verde=0.8;SOM1.azul=0.99;SOM1.Top=140;SOM1.Left=100;SOM2.transp=0.8;SOM2.rojo=0.2;SOM2.verde=0.8;SOM2.azul=0.99;SOM2.Top=180;SOM2.Left=100'">
+   <param name="A_01" value="id='INICIO' algoritmo='s&iacute;' evaluar='una-sola-vez' hacer='RA.y=30;RA.w=400;RA.h=300;RA.transp=0.30;RA.rojo=174/255;RA.verde=246/255;RA.azul=18/255;RA2.x=470;RA2.y=30;RA2.w=310;RA2.h=300;RA2.transp=0.30;RA2.rojo=17/255;RA2.verde=246/255;RA2.azul=180/255;RA3.y=30;RA3.w=400;RA3.h=300;RA3.transp=0.30;RA3.rojo=184/255;RA3.verde=120/255;RA3.azul=181/255;RA4.x=470;RA4.y=30;RA4.w=310;RA4.h=300;RA4.transp=0.30;RA4.rojo=17/255;RA4.verde=246/255;RA4.azul=180/255;RA5.y=30;RA5.w=400;RA5.h=300;RA5.transp=0.30;RA5.rojo=.99;RA5.verde=.99;RA5.azul=0;RA6.x=470;RA6.y=30;RA6.w=310;RA6.h=300;RA6.transp=0.30;RA6.rojo=17/255;RA6.verde=246/255;RA6.azul=180/255;lados=3+ent(rnd*10);ang=pi*(180/lados)/180;apo=6*cos(ang);L=2*sqrt(36-(apo)^2);xj=11+apo*cos(pi/lados);yj=7+apo*sen(pi/lados);'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='s&iacute;' evaluar='siempre' hacer='recta1=(g2.x=5);'">
+   <param name="G_00" value="espacio='E1' tipo='macro' fondo='s&iacute;' expresi&oacute;n='macros/sombras.txt' nombre='SOM1'">
+   <param name="G_01" value="espacio='E1' tipo='macro' fondo='s&iacute;' expresi&oacute;n='macros/sombras_inv.txt' nombre='SOM2'">
+   <param name="G_02" value="espacio='E1' tipo='macro' expresi&oacute;n='macros/redondangulo.txt' nombre='RA5'">
+   <param name="G_03" value="espacio='E1' tipo='macro' expresi&oacute;n='macros/redondangulo.txt' nombre='RA6'">
+   <param name="G_04" value="espacio='E1' tipo='pol&iacute;gono' color='grisObscuro' expresi&oacute;n='(11+6*cos(2*s*pi/lados),7+6*sen(2*pi*s/lados))(11+6*cos(2*(s+1)*pi/lados),7+6*sen(2*pi*(s+1)/lados))(11,7)' familia='s' s.intervalo='[1,lados]' s.pasos='lados-1' relleno='b900ffff'">
+   <param name="G_05" value="espacio='E1' tipo='segmento' color='rojo' expresi&oacute;n='(11,7)(xj,yj)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red255\green0\blue0;}\cf0\f1\fs24\b apotema\f2\fs24\b0\cf1}' fuente='Arial Bold,BOLD,12' fijo='s&iacute;' tama&ntilde;o='.2' ancho='2'">
+   <param name="G_06" value="espacio='E1' tipo='texto' expresi&oacute;n='[480,40]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;}{\colortbl\red0\green0\blue0;}\f1\fs44\b El \u225 rea del pol\u237 gono regular\par se calcula con la f\u243 rmula:\par \par A = (per\u237 metro x apotema) :2\par \par A = \f2\fs48\b0{\*\mjaformula{\fraction{\num{\expr lados\decimals 0\fixed1} x {\expr L\decimals 2\fixed1} x {\expr apo\decimals 2\fixed1} }{\den 2\cf0}}}\f1\fs44\b\par \par A  = {\*\mjaformula{\expr (lados*L*apo)/2\decimals 2\fixed1}} u{\*\mjaformula{\supix 2}}}' fuente='Arial Bold,BOLD,22' fijo='s&iacute;'">
+   <param name="G_07" value="espacio='E1' tipo='texto' expresi&oacute;n='[30,27]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;}{\colortbl\red0\green0\blue0;}\f1\fs40\cf0 Lado = \f2\fs44\b{\*\mjaformula{\expr L\decimals 2\fixed1}}\f1\fs40\b0\par \par \par \par \par \par \par \par \par \par \par                                         apotema = \f2\fs44\b{\*\mjaformula{\expr apo\decimals 2\fixed1}}\f1\fs40\b0}' fuente='Arial,PLAIN,20' fijo='s&iacute;'">
+   <param name="Animaci&oacute;n" value="pausa='20' controles='no' auto='s&iacute;' inicio='t=0;anim=1;animar=0' hacer='t=t+10;anim=(t&lt;RA1.w-10)?1:0' mientras='t&lt;RA1.w'">
+<font face="Arial" size="3">Esta unidad interactiva requiere la m&aacute;quina virtual de Java <a href="http://java.sun.com/javase/downloads/index.jsp" target="_blank">J2RE</a>.</font>
+</applet></p>
+
+</body>
+</html>

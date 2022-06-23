@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>El plano cartesiano &nbsp;-&nbsp; Exploraci&oacute;n.</title>
+	<style>
+		*{
+		border:0;
+		margin:0;
+		padding:0;
+		}
+		body{
+			background-color:#7db9f2;
+		}
+	</style>
+</head>
+<body >
+
+<p align="center">
+<applet name="Explorar" width=790 height=520
+        code="descinst.Descartes.class"
+        archive="descinst.jar,http://recursostic.educacion.es/descartes/web/plugin/descinst.jar"
+        MAYSCRIPT>
+   <param name="tama&ntilde;o" value="790x520">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="s&iacute;">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Explorar">
+   <param name="Versi&oacute;n" value="4.0985, 2010-06-05">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="tipo='R2' id='E1' y='65' ancho='790' fijo='s&iacute;' despl_imagen='centrada' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_01" value="tipo='R2' id='E2' x='2%' y='92' ancho='400' alto='400' fijo='s&iacute;' escala='20.8' imagen='images/fondoPlano.png' despl_imagen='arr-izq' fondo='ffffcc' red='grisClaro' red10='no' ejes='gris' texto='no'">
+   <param name="E_02" value="tipo='R2' id='pleca' x='0' y='0' ancho='790' alto='65' imagen='images/instrucciones.jpg' despl_imagen='expand.' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_00" value="id='P' tipo='gr&aacute;fico' espacio='E2' color='ff00dd22' color-int='00dd22' tama&ntilde;o='6' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12'">
+   <param name="C_01" value="id='P.x' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='P.x' incr='1' min='-7' max='7' discreto='s&iacute;' fijo='s&iacute;' visible='s&iacute;' pos_mensajes='centro'">
+   <param name="C_02" value="id='P.y' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='P.y' incr='1' min='-8' max='8' discreto='s&iacute;' fijo='s&iacute;' visible='s&iacute;' pos_mensajes='centro'">
+   <param name="C_03" value="id='n5' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='n5' incr='1' fijo='s&iacute;' visible='s&iacute;' pos_mensajes='centro'">
+   <param name="C_04" value="id='n6' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='n6' incr='1' fijo='s&iacute;' visible='s&iacute;' pos_mensajes='centro'">
+   <param name="C_05" value="id='otro' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E1' nombre='Otra distribuci&oacute;n' expresi&oacute;n='(512,395,200,32)' fijo='s&iacute;' visible='s&iacute;' color='blanco' negrita='s&iacute;' fuente puntos='22' imagen='images/btn200.png' acci&oacute;n='calcular' par&aacute;metro='otro=1' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="A_00" value="id='N' constante='s&iacute;' expresi&oacute;n='8' evaluar='una-sola-vez'">
+   <param name="A_01" value="id='Vx' vector='s&iacute;' evaluar='una-sola-vez' tama&ntilde;o='N'">
+   <param name="A_02" value="id='Vy' vector='s&iacute;' evaluar='una-sola-vez' tama&ntilde;o='N'">
+   <param name="A_03" value="id='Ve' vector='s&iacute;' evaluar='una-sola-vez' tama&ntilde;o='N'">
+   <param name="A_04" value="id='faltan()' algoritmo='s&iacute;' expresi&oacute;n='f' algoritmo='s&iacute;' inicio='f=0;n=0' hacer='f=(Ve[n]=0)?f+1:f;n=n+1' mientras='n&lt;N'">
+   <param name="A_05" value="id='nuevosPuntos()' algoritmo='s&iacute;' algoritmo='s&iacute;' inicio='n=1;Vx[0]=-6+ent(13*rnd);Vy[0]=7-ent(rnd*2);Ve[0]=1' hacer='Vx[n]=-6+ent(13*rnd);Vy[n]=Vy[n-1]-1-ent(rnd*2);Ve[n]=1;n=((Vx[n]=0)&amp;(Vy[n]=0))?n:n+1' mientras='n&lt;N'">
+   <param name="A_06" value="id='desordena()' algoritmo='s&iacute;' algoritmo='s&iacute;' inicio='k=0' hacer='m=ent(rnd*N);n=ent(rnd*N);aux=Vy[n];Vy[n]=Vy[m];Vy[m]=aux;' mientras='k&lt;10'">
+   <param name="A_07" value="id='reinit()' algoritmo='s&iacute;' algoritmo='s&iacute;' inicio='caso=-1;P.x=0;P.y=0;nuevosPuntos();desordena()'">
+   <param name="A_08" value="id='INI_B' algoritmo='s&iacute;' evaluar='una-sola-vez' hacer='xB=(E1._w-B.ancho)/2;yB=E1._h-B.alto-7;B.dx=12;B.dy=4;B.texto=|Otra distribuci&oacute;n|;B.ancho=200;B.alto=32;'">
+   <param name="A_09" value="id='FUZZ' algoritmo='s&iacute;' evaluar='siempre' inicio='FUZZ.ancho=790;FUZZ.alto=520' hacer='FUZZ.MaxT=0.7;FUZZ.Cx=250;FUZZ.Cy=350;FUZZ.Cw=300;FUZZ.Ch=300;FUZZ.Rojo=0.85;FUZZ.Verde=0.85;FUZZ.Azul=0.95;'">
+   <param name="A_10" value="id='INICIO' algoritmo='s&iacute;' evaluar='una-sola-vez' inicio='p1x=420;p1y=240;p2x=490;p2y=p1y' hacer='reinit();SOM.Top=600;SOM.Left=400;SOM.transp=0.80;SOM.rojo=0.20;SOM.verde=0.80;SOM.azul=0.99'">
+   <param name="A_11" value="id='CALCULOS' algoritmo='s&iacute;' evaluar='siempre' inicio='caso=-1;n=0;' hacer='caso=((Vx[n]=P.x)&amp;(Vy[n]=P.y))?n:caso;Ve[n]=((Vx[n]=P.x)&amp;(Vy[n]=P.y))?1:Ve[n];n=n+1;' mientras='n&lt;N'">
+   <param name="A_12" value="id='MP' evento='s&iacute;' condici&oacute;n='E2.mouse_pressed' acci&oacute;n='calcular' par&aacute;metro='P.x=E2.mouse_x\nP.y=E2.mouse_y\nP.x=ent(P.x+0.5)\nP.y=ent(P.y+0.5)' ejecuci&oacute;n='alternar' pos_mensajes='centro'">
+   <param name="A_13" value="id='Otro' evento='s&iacute;' condici&oacute;n='otro' acci&oacute;n='calcular' par&aacute;metro='reinit()\notro=0' ejecuci&oacute;n='siempre' pos_mensajes='centro'">
+   <param name="G_00" value="espacio='E1' tipo='macro' expresi&oacute;n='macros/sombras.txt' nombre='SOM'">
+   <param name="G_01" value="espacio='E1' tipo='imagen' coord_abs='s&iacute;' expresi&oacute;n='(427,83)' archivo='images/postit.png'">
+   <param name="G_02" value="espacio='E2' tipo='segmento' fondo='s&iacute;' expresi&oacute;n='(-8,0)(8,0)' fijo='s&iacute;' tama&ntilde;o='0' ancho='2'">
+   <param name="G_03" value="espacio='E2' tipo='segmento' fondo='s&iacute;' color='rojo' expresi&oacute;n='(0,-9)(0,9)' fijo='s&iacute;' tama&ntilde;o='0' ancho='2'">
+   <param name="G_04" value="espacio='E1' tipo='texto' color='1111ff' dibujar-si='P.x&gt;=0' expresi&oacute;n='[p1x+30+56,p1y+5-67]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs48 ( + {\*\mjaformula{\expr P.x\decimals 0\fixed1}},\f2\fs24\par }' fuente='SansSerif,PLAIN,24' fijo='s&iacute;'">
+   <param name="G_05" value="espacio='E1' tipo='texto' color='1111ff' dibujar-si='P.x&lt;0' expresi&oacute;n='[p1x+30+56,p1y+5-67]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs48 ( - {\*\mjaformula{\expr -P.x\decimals 0\fixed1}}, \f2\fs24\par }' fuente='SansSerif,PLAIN,24' fijo='s&iacute;'">
+   <param name="G_06" value="espacio='E1' tipo='texto' color='ff1122' dibujar-si='P.y&gt;=0' expresi&oacute;n='[p2x+30+56,p2y+5-67]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs48 + {\*\mjaformula{\expr P.y\decimals 0\fixed1}} )\f2\fs24\par }' fuente='SansSerif,PLAIN,24' fijo='s&iacute;'">
+   <param name="G_07" value="espacio='E1' tipo='texto' color='ff1122' dibujar-si='P.y&lt;0' expresi&oacute;n='[p2x+30+56,p2y+5-67]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs48 - {\*\mjaformula{\expr -P.y\decimals 0\fixed1}} )\f2\fs24\par }' fuente='SansSerif,PLAIN,24' fijo='s&iacute;'">
+   <param name="G_08" value="espacio='E2' tipo='punto' color='cc0011' dibujar-si='Ve[s]' expresi&oacute;n='(Vx[s],Vy[s])' familia='s' s.intervalo='[0,N-1]' s.pasos='N-1' fuente='SansSerif,PLAIN,18' fijo='s&iacute;' tama&ntilde;o='3'">
+   <param name="G_09" value="espacio='E2' tipo='punto' color='ff0022' dibujar-si='Ve[0]' expresi&oacute;n='(Vx[0]-3*(Vx[0]&gt;0),Vy[0]+0.1)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red255\green0\blue34;}\cf0\f1\fs36 Norma\cf1\f2\fs24\par }' fuente='SansSerif,PLAIN,18' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_10" value="espacio='E1' tipo='texto' color='negro' dibujar-si='caso&gt;=0' expresi&oacute;n='[450+56,280-67]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs48 es la ubicaci\u243 n\f2\fs24\par }' fuente='SansSerif,PLAIN,24' fijo='s&iacute;'">
+   <param name="G_11" value="espacio='E1' tipo='texto' color='negro' dibujar-si='caso=0' expresi&oacute;n='[450+56,310-67]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs48 de la casa de Norma\f2\fs24\par }' fuente='SansSerif,PLAIN,24' fijo='s&iacute;'">
+   <param name="G_12" value="espacio='E2' tipo='punto' color='cc0011' dibujar-si='Ve[1]' expresi&oacute;n='(Vx[1]-3.5*(Vx[1]&gt;0),Vy[1]+0.1)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red255\green0\blue34;}\cf0\f1\fs36 Escuela\cf1\f2\fs24\par }' fuente='SansSerif,PLAIN,18' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_13" value="espacio='E1' tipo='texto' color='negro' dibujar-si='caso=1' expresi&oacute;n='[450+56,310-67]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs48 de la la escuela\f2\fs24\par }' fuente='SansSerif,PLAIN,24' fijo='s&iacute;'">
+   <param name="G_14" value="espacio='E2' tipo='punto' color='cc0011' dibujar-si='Ve[2]' expresi&oacute;n='(Vx[2]-2.5*(Vx[2]&gt;0),Vy[2]+0.1)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red255\green0\blue34;}\cf0\f1\fs36 Sonia\cf1\f2\fs24\par}' fuente='SansSerif,PLAIN,18' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_15" value="espacio='E1' tipo='texto' color='negro' dibujar-si='caso=2' expresi&oacute;n='[450+56,310-67]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs48 de la casa de Sonia\f2\fs24\par}' fuente='SansSerif,PLAIN,24' fijo='s&iacute;'">
+   <param name="G_16" value="espacio='E2' tipo='punto' color='ff0022' dibujar-si='Ve[3]' expresi&oacute;n='(Vx[3]-2*(Vx[3]&gt;0),Vy[3]+0.1)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red255\green0\blue34;}\cf0\f1\fs36 Cine\cf1\f2\fs24\par}' fuente='SansSerif,PLAIN,18' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_17" value="espacio='E1' tipo='texto' color='negro' dibujar-si='caso=3' expresi&oacute;n='[450+56,310-67]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs48 del cine\f2\fs24\par}' fuente='SansSerif,PLAIN,24' fijo='s&iacute;'">
+   <param name="G_18" value="espacio='E2' tipo='punto' color='ff0022' dibujar-si='Ve[4]' expresi&oacute;n='(Vx[4]-4*(Vx[4]&gt;0),Vy[4]+0.1)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red255\green0\blue34;}\cf0\f1\fs36 Mercado\cf1\f2\fs24\par}' fuente='SansSerif,PLAIN,18' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_19" value="espacio='E1' tipo='texto' color='negro' dibujar-si='caso=4' expresi&oacute;n='[450+56,310-67]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs48 del mercado\f2\fs24\par}' fuente='SansSerif,PLAIN,24' fijo='s&iacute;'">
+   <param name="G_20" value="espacio='E2' tipo='punto' color='ff0022' dibujar-si='Ve[5]' expresi&oacute;n='(Vx[5]-2*(Vx[5]&gt;0),Vy[5]+0.1)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red255\green0\blue34;}\cf0\f1\fs36 Luis\cf1\f2\fs24\par}' fuente='SansSerif,PLAIN,18' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_21" value="espacio='E1' tipo='texto' color='negro' dibujar-si='caso=5' expresi&oacute;n='[450+56,310-67]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs48 de la casa de Luis\f2\fs24\par}' fuente='SansSerif,PLAIN,24' fijo='s&iacute;'">
+   <param name="G_22" value="espacio='E2' tipo='punto' color='ff0022' dibujar-si='Ve[6]' expresi&oacute;n='(Vx[6]-2*(Vx[6]&gt;0),Vy[6]+0.1)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red255\green0\blue34;}\cf0\f1\fs36 Lola\cf1\f2\fs24\par }' fuente='SansSerif,PLAIN,18' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_23" value="espacio='E1' tipo='texto' color='negro' dibujar-si='caso=6' expresi&oacute;n='[450+56,310-67]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs48 de la casa de Lola\f2\fs24\par}' fuente='SansSerif,PLAIN,24' fijo='s&iacute;'">
+   <param name="G_24" value="espacio='E2' tipo='punto' color='ff0022' dibujar-si='Ve[7]' expresi&oacute;n='(Vx[7]-5*(Vx[7]&gt;0),Vy[7]+0.1)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red255\green0\blue34;}\cf0\f1\fs36 Caf\u233  internet\cf1\f2\fs24\par}' fuente='SansSerif,PLAIN,18' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_25" value="espacio='E1' tipo='texto' color='negro' dibujar-si='caso=7' expresi&oacute;n='[450+56,310-67]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs48 del caf\u233  internet\f2\fs24\par}' fuente='SansSerif,PLAIN,24' fijo='s&iacute;'">
+   <param name="G_26" value="espacio='E1' tipo='texto' color='negro' dibujar-si='faltan()&gt;1' expresi&oacute;n='[450,360]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs48 Faltan {\*\mjaformula{\expr faltan()\decimals 0\fixed1}} sitios\f2\fs24\par}' fuente='SansSerif,PLAIN,24' fijo='s&iacute;'">
+   <param name="G_27" value="espacio='E1' tipo='texto' color='negro' dibujar-si='faltan()=1' expresi&oacute;n='[450,360]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs48 Falta  {\*\mjaformula{\expr faltan()\decimals 0\fixed1}}  sitio\f2\fs24\par }' fuente='SansSerif,PLAIN,24' fijo='s&iacute;'">
+   <param name="G_28" value="espacio='E2' tipo='segmento' color='ff1122' expresi&oacute;n='(P.x,0)(P.x,P.y)' fijo='s&iacute;' tama&ntilde;o='0' ancho='2'">
+   <param name="G_29" value="espacio='E2' tipo='segmento' color='1111ff' expresi&oacute;n='(0,P.y)(P.x,P.y)' fijo='s&iacute;' tama&ntilde;o='0' ancho='2'">
+   <param name="G_30" value="espacio='pleca' tipo='texto' expresi&oacute;n='[15,7]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;}{\colortbl\red255\green255\blue255;\red64\green64\blue64;}\f1\fs44\cf0 Cada punto del plano est\u225  determinado por un par ordenado de coordenadas,\par   pulsa sobre cada uno de los sitios se\u241 alados para ver cu\u225 l es su ubicaci\u243 n.\cf1\f2\fs44}' fuente='Arial,PLAIN,22' fijo='s&iacute;'">
+   <param name="G_31" value="espacio='E2' tipo='flecha' expresi&oacute;n='(8,0)(8.5,0)' fijo='s&iacute;' tama&ntilde;o='1' ancho='2' ancho='2' punta='3' flecha='azul'">
+   <param name="G_32" value="espacio='E2' tipo='flecha' expresi&oacute;n='(8,0)(-8.5,0)' fijo='s&iacute;' tama&ntilde;o='1' ancho='2' ancho='2' punta='3' flecha='azul'">
+   <param name="G_33" value="espacio='E2' tipo='flecha' color='rojo' expresi&oacute;n='(0,9)(0,9.5)' fijo='s&iacute;' tama&ntilde;o='1' ancho='2' ancho='2' punta='3' flecha='rojo'">
+   <param name="G_34" value="espacio='E2' tipo='flecha' color='rojo' expresi&oacute;n='(0,-9)(0,-9.5)' fijo='s&iacute;' tama&ntilde;o='1' ancho='2' ancho='2' punta='3' flecha='rojo'">
+   <param name="G_35" value="espacio='E1' tipo='texto' color='1111ff' expresi&oacute;n='[p1x+30+56,p1y-25-67]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red17\green17\blue255;}\f1\fs48 (  x    , \cf0   y   )\cf1\f2\fs24\par }' fuente='SansSerif,PLAIN,24' fijo='s&iacute;'">
+   <param name="G_36" value="espacio='E1' tipo='imagen' coord_abs='s&iacute;' expresi&oacute;n='(0,0)' archivo='images/marco.png'">
+<font face="Arial" size="3">Esta unidad interactiva requiere la m&aacute;quina virtual de Java <a href="http://java.sun.com/javase/downloads/index.jsp" target="_blank">J2RE</a>.</font>
+</applet>
+</p>
+
+</body>
+</html>

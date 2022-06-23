@@ -1,0 +1,7 @@
+5
+
+'10 es equivalente a la raíz'
+'la raíz cuarta de 16 es igual a'
+'el total de cristales cuadrados de la base es'
+'el total de cajas cúbicas de la base es'
+'Si el índice es 4 y el radicando es 81, la raíz es'

@@ -1,0 +1,7 @@
+5
+
+'La palabra compuesta "decimoseptimo", lleva tilde en el primer elemento'
+'No se marca tilde a la palabra compuesta de dos tildadas originalmente'
+'Siempre se marca tilde en una palabra compuesta'
+'La palabra "italo-frances", se tilda en el segundo elemento'
+'Las plabras compuestas con la partícula "mente", no se tildan'

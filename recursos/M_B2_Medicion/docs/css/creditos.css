@@ -1,0 +1,21 @@
+@import 'info.css';
+
+	
+div.seccionCredito{
+	text-align:center;
+	margin-bottom:20px;
+}
+
+
+div.seccionCredito span.cargo{
+	display:block;
+	clear:both;
+	font-weight:bold;
+}
+
+
+
+div.seccionCredito span.nombre{
+	display:block;
+	clear:both;
+}

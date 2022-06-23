@@ -1,0 +1,10 @@
+3
+'Diptongos'
+'Triptongos'
+'Hiatos'
+'Diptongos'
+'Triptongos'
+'Hiatos'
+'Diptongos'
+'Triptongos'
+'Hiatos'

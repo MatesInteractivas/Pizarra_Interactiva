@@ -1,0 +1,7 @@
+5
+
+'Falcao, es mi ídolo. Mi, es un artículo demostrativo'
+'Susana es tu novia.Tu, es un artículo posesivo'
+'Los niños son la alegría de mi familia. Mi, es un artículo posesivo'
+'El 13 el su número de suerte. Su, es un artículo demostrativo'
+'Sus caprichos lo levaron al fracaso. Sus, es un artículo demostrativo'

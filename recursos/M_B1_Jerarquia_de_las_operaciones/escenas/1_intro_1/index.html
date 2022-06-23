@@ -1,0 +1,67 @@
+<html>
+<head>
+	<title>Jerarqu&iacute;a de las operaciones - Introducci&oacute;n</title>
+	<style>
+		*{
+		border:0;
+		margin:0;
+		padding:0;
+		}
+		body{
+			background-color:#7db9f2;
+		}
+	</style>
+</head>
+<body >
+
+<p align="center">
+<applet width=790 height=520
+        code="descinst.Descartes.class"
+        archive="descinst.jar,http://recursostic.educacion.es/descartes/web/plugin/descinst.jar"
+        MAYSCRIPT>
+   <param name="tama&ntilde;o" value="790x520">
+   <param name="pleca" value="title='Jordi y Maribel no logran entender por qu&eacute; obtienen diferentes resultados. ' subtitle='Observa sus operaciones y ay&uacute;dales a resolver este problema.' subtitlines='2' bgcolor='268bea' fgcolor='ffffff' align='center' titleimage='images/instrucciones.jpg' titlefont='SansSerif,BOLD,22' subtitlefont='SansSerif,BOLD,22' ">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="s&iacute;">
+   <param name="deshacer" value="no">
+   <param name="Versi&oacute;n" value="4.0985, 2010-06-05">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="tipo='R2' id='E1' imagen='images/fondo.png' despl_imagen='expand.' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_00" value="id='g' tipo='gr&aacute;fico' espacio='E1' color='azul' color-int='rojo' tama&ntilde;o='8' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs40 ( {\*\mjaformula{\expr Px}}, {\*\mjaformula{\expr Py}} )\cf1\f2\fs24}' fuente='Arial,PLAIN,20' decimales='0' fijo='s&iacute;' dibujar-si='0' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12'">
+   <param name="C_01" value="id='bot_jor' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E1' nombre='Jordi' expresi&oacute;n='(20,400,150,30)' valor='[0,10]' fijo='s&iacute;' visible='s&iacute;' color='blanco' color-int='naranja' negrita='s&iacute;' fuente puntos='22' imagen='images/btn150.png' acci&oacute;n='calcular' par&aacute;metro='jor=1-jor' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='(!otro)' activo-si='(!anim)&amp;(!preg)' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_02" value="id='bot_mar' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E1' nombre='Maribel' expresi&oacute;n='(625,400,150,30)' valor='[0,10]' fijo='s&iacute;' visible='s&iacute;' color='blanco' color-int='naranja' negrita='s&iacute;' fuente puntos='22' imagen='images/btn150.png' acci&oacute;n='calcular' par&aacute;metro='mar=1-mar' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='(!otro)' activo-si='(!anim)&amp;(!preg)' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_03" value="id='preg' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E1' nombre='&iquest;Qu&eacute; pasa?' expresi&oacute;n='((E1._w-150)/2,400,150,30)' fijo='s&iacute;' visible='s&iacute;' color='blanco' color-int='naranja' negrita='s&iacute;' fuente puntos='22' imagen='images/btn150.png' acci&oacute;n='calcular' par&aacute;metro='preg=1-preg' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='(jor=1)&amp;(mar=1)' activo-si='(!preg)' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_04" value="id='cerrar' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E1' nombre='Cerrar' expresi&oacute;n='((E1._w-100)/2,270,100,30)' fijo='s&iacute;' visible='s&iacute;' color='blanco' color-int='naranja' negrita='s&iacute;' fuente puntos='22' imagen='images/btn100.png' acci&oacute;n='calcular' par&aacute;metro='preg=0\notro=1' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='preg' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_05" value="id='otro' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E1' nombre='Otro ejemplo' expresi&oacute;n='(E1._w-220,400,200,30)' fijo='s&iacute;' visible='s&iacute;' color='blanco' color-int='naranja' negrita='s&iacute;' fuente puntos='22' imagen='images/btn200.png' acci&oacute;n='calcular' par&aacute;metro='initRnd()\nanimar=1' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='otro' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="A_00" value="id='initRnd()' algoritmo='s&iacute;' algoritmo='s&iacute;' inicio='jor=0;mar=0;preg=0;otro=0' hacer='a=2+ent(rnd*8);b=2+ent(rnd*8);c=2+ent(rnd*8);e=2+ent(rnd*8);d=e*(2+ent(rnd*8));res_mal=(a+b)*(c-d/e);res_bien=a+b*c-d/e;rep=(a=b)|(a=c)|(a=d)|(a=e)|(b=c)|(b=d)|(b=e)|(c=d)|(c=e)|(d=e);cual=ent(rnd*2);res_jor=(cual=0)?res_bien:res_mal;res_mar=(cual=0)?res_mal:res_bien;X_bien=(cual=0)?160:390;Y_bien=(cual=0)?130:155;X_mal=(cual=0)?390:160;Y_mal=(cual=0)?155:130;' mientras='(c&lt;d/e)|(c=d/e)|(res_mal=res_bien)|rep|res_bien&lt;1|res_mal&lt;1'">
+   <param name="A_01" value="id='initRedon()' algoritmo='s&iacute;' algoritmo='s&iacute;' hacer='RA1.transp=0.80;RA1.rojo=0.95;RA1.verde=0.00;RA1.azul=0.10;RA1.w=280;RA1.h=40;RA1.x=(E1._w-RA1.w)/2;RA1.y=16;RA2.transp=0.80;RA2.rojo=0.95;RA2.verde=0.00;RA2.azul=0.10;RA2.x=180;RA2.y=140;RA2.w=420;RA2.h=120'">
+   <param name="A_02" value="id='initSombras()' algoritmo='s&iacute;' algoritmo='s&iacute;' hacer='SOM1.transp=0.80;SOM1.rojo=0.90;SOM1.verde=0.10;SOM1.azul=0.99;SOM1.Top=200;SOM1.Left=100;SOM2.transp=0.90;SOM2.rojo=0.00;SOM2.verde=0.50;SOM2.azul=0.95;SOM2.Top=400;SOM2.Left=300;'">
+   <param name="A_03" value="id='INICIO' algoritmo='s&iacute;' evaluar='una-sola-vez' inicio='initRnd()' hacer='initSombras();initRedon();anim=1'">
+   <param name="A_04" value="id='CALCULOS' algoritmo='s&iacute;' evaluar='siempre' hacer='Px=E1._w/2+g.x*E1.escala;Py=E1._h/2-g.y*E1.escala;;'">
+   <param name="A_05" value="id='Animar' evento='s&iacute;' condici&oacute;n='animar' acci&oacute;n='animar' par&aacute;metro.fuente='Monospaced,PLAIN,12' ejecuci&oacute;n='alternar' pos_mensajes='centro'">
+   <param name="G_00" value="espacio='E1' tipo='macro' fondo='s&iacute;' expresi&oacute;n='macros/sombras.txt' nombre='SOM1'">
+   <param name="G_01" value="espacio='E1' tipo='macro' fondo='s&iacute;' expresi&oacute;n='macros/sombras_inv.txt' nombre='SOM2'">
+   <param name="G_02" value="espacio='E1' tipo='macro' dibujar-si='!(anim|animar)' coord_abs='s&iacute;' expresi&oacute;n='macros/redondangulo.txt' nombre='RA2'">
+   <param name="G_03" value="espacio='E1' tipo='texto' dibujar-si='!(anim|animar)' expresi&oacute;n='[210,160]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red32\green48\blue80;\red32\green48\blue58;}\f1\fs44\cf0      Si quieres ver c\u243 mo ha hecho \par       sus c\u225 lculos Jordi o Maribel, \par      pulsa el bot\u243 n con su nombre\par \cf1\f2\fs24}' fuente='Arial,PLAIN,22' fijo='s&iacute;'">
+   <param name="G_04" value="espacio='E1' tipo='imagen' dibujar-si='!(anim|animar)' coord_abs='s&iacute;' expresi&oacute;n='(100,50,0.20,0.40)' archivo='images/globoDerArr.png'">
+   <param name="G_05" value="espacio='E1' tipo='imagen' dibujar-si='!(anim|animar)' coord_abs='s&iacute;' expresi&oacute;n='(720,55,0.20,0.40)' archivo='images/globoDerArr.png'">
+   <param name="G_06" value="espacio='E1' tipo='texto' dibujar-si='!(anim|animar)' expresi&oacute;n='[80,35]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs56\i{\*\mjaformula{\expr (res_jor&lt;9.9)?&squot; &squot;+res_jor:res_jor\decimals 0\fixed0}}\par \f2\fs44\i0\par \cf1\f3\fs24}' fuente='Times New Roman Cursiva,ITALIC,28' fijo='s&iacute;'">
+   <param name="G_07" value="espacio='E1' tipo='texto' dibujar-si='!(anim|animar)' expresi&oacute;n='[702,40]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs56\i{\*\mjaformula{\expr (res_mar&lt;9.9)?&squot; &squot;+res_mar:res_mar\decimals 0\fixed0}}\par \f2\fs44\i0\par \cf1\f3\fs24}' fuente='Times New Roman Cursiva,ITALIC,28' fijo='s&iacute;'">
+   <param name="G_08" value="espacio='E1' tipo='imagen' coord_abs='s&iacute;' expresi&oacute;n='(100,230,-0.8,0.8)' archivo='images/ninyo_03.png'">
+   <param name="G_09" value="espacio='E1' tipo='imagen' coord_abs='s&iacute;' expresi&oacute;n='(705,240,0.7,0.7)' archivo='images/ninya_05.png'">
+   <param name="G_10" value="espacio='E1' tipo='imagen' dibujar-si='jor=1' coord_abs='s&iacute;' expresi&oacute;n='(260,215,0.66,1.5)' archivo='images/globoDerAba.png'">
+   <param name="G_11" value="espacio='E1' tipo='imagen' dibujar-si='mar=1' coord_abs='s&iacute;' expresi&oacute;n='(520,240,0.66,1.5)' archivo='images/globoIzqAba.png'">
+   <param name="G_12" value="espacio='E1' tipo='macro' coord_abs='s&iacute;' expresi&oacute;n='macros/redondangulo.txt' nombre='RA1'">
+   <param name="G_13" value="espacio='E1' tipo='texto' dibujar-si='!animar' expresi&oacute;n='[273,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs60\i{\*\mjaformula{\expr a\decimals 0\fixed0}+{\expr b\decimals 0\fixed0}\u215 {\expr c\decimals 0\fixed0}\u8722 {\expr d\decimals 0\fixed0}\u247 {\expr e\decimals 0\fixed0}}\cf1\f2\fs24\i0}' fuente='Times New Roman Cursiva,ITALIC,30' fijo='s&iacute;'">
+   <param name="G_14" value="espacio='E1' tipo='pol&iacute;gono' dibujar-si='anim' coord_abs='s&iacute;' expresi&oacute;n='(RA1.x+10+t,RA1.y+1)(RA1.x+10+RA1.w-20,RA1.y+1)(RA1.x+10+RA1.w-20,RA1.y+RA1.h-2)(RA1.x+10+t,RA1.y+RA1.h-2)' relleno='(252/256,204/256,209/256,00)' ancho='0'">
+   <param name="G_15" value="espacio='E1' tipo='texto' dibujar-si='((cual=0)&amp;(jor=1))|((cual=1)&amp;(mar=1))' expresi&oacute;n='[X_bien,Y_bien]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs56\i{\*\mjaformula{\expr a\decimals 0\fixed0}+{\expr b\decimals 0\fixed0}\u215 {\expr c\decimals 0\fixed0}\u8722 {\expr d\decimals 0\fixed0}\u247 {\expr e\decimals 0\fixed0}}\par {\*\mjaformula{\expr a\decimals 0\fixed0}+{\expr b*c\decimals 0\fixed0}\u8722 {\expr d\decimals 0\fixed0}\u247 {\expr e\decimals 0\fixed0}}\par {\*\mjaformula{\expr a\decimals 0\fixed0}+{\expr b*c\decimals 0\fixed0}\u8722 {\expr d/e\decimals 0\fixed0}}\par        {\*\mjaformula{\expr a+b*c\decimals 0\fixed0}\u8722 {\expr d/e\decimals 0\fixed0}}\par          {\*\mjaformula{\expr a+b*c-d/e\decimals 0\fixed0}}\par \f2\fs44\i0           \par \cf1\f3\fs24}' fuente='Times New Roman Cursiva,ITALIC,28' fijo='s&iacute;'">
+   <param name="G_16" value="espacio='E1' tipo='texto' dibujar-si='((cual=1)&amp;(jor=1))|((cual=0)&amp;(mar=1))' expresi&oacute;n='[X_mal,Y_mal]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs56\i{\*\mjaformula{\expr a\decimals 0\fixed0}+{\expr b\decimals 0\fixed0}\u215 {\expr c\decimals 0\fixed0}\u8722 {\expr d\decimals 0\fixed0}\u247 {\expr e\decimals 0\fixed0}}\par {\*\mjaformula{\expr a\decimals 0\fixed0}+{\expr b\decimals 0\fixed0}\u215 {\expr c\decimals 0\fixed0}\u8722 {\expr d/e\decimals 0\fixed0}}\par      {\*\mjaformula{\expr a+b\decimals 0\fixed0}\u215 {\expr c\decimals 0\fixed0}\u8722 {\expr d/e\decimals 0\fixed0}}\par      {\*\mjaformula{\expr a+b\decimals 0\fixed0}\u215 {\expr c-d/e\decimals 0\fixed0}}\par          {\*\mjaformula{\expr (a+b)*(c-d/e)\decimals 0\fixed0}}\par \f2\fs44\i0\par \cf1\f3\fs24}' fuente='Times New Roman Cursiva,ITALIC,28' fijo='s&iacute;'">
+   <param name="G_17" value="espacio='E1' tipo='imagen' dibujar-si='preg=1' coord_abs='s&iacute;' expresi&oacute;n='(395,220,1.1,1.05)' archivo='images/postit_500.png'">
+   <param name="G_18" value="espacio='E1' tipo='texto' color='203040' dibujar-si='preg=1' expresi&oacute;n='[170,140]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs44\u191 Se equivoc\u243  Jordi en alguna operaci\u243 n?\par \u191 Se equivoc\u243  Maribel en alguna operaci\u243 n?\par \u191 Hicieron las operaciones en distinto orden?\par \u191 Alguno de los dos lo hizo bien?\par \f2\fs24}' fuente='Arial,PLAIN,22' fijo='s&iacute;'">
+   <param name="Animaci&oacute;n" value="pausa='20' controles='no' auto='s&iacute;' inicio='t=0;anim=1;animar=0' hacer='t=t+10;anim=(t&lt;RA1.w-10)?1:0' mientras='t&lt;RA1.w'">
+<font face="Arial" size="3">Esta unidad interactiva requiere la m&aacute;quina virtual de Java <a href="http://java.sun.com/javase/downloads/index.jsp" target="_blank">J2RE</a>.</font>
+</applet></p>
+
+</body>
+</html>

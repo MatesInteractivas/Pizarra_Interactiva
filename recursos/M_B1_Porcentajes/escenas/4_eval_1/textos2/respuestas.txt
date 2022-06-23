@@ -1,0 +1,56 @@
+'Escribe las tres respuestas de cada pregunta y la posición de la respuesta correcta'
+
+'25/100'
+'100/25'
+'2.5'
+'25/10'
+'0.25'
+1
+0
+0
+0
+1
+
+'Hay 40 niñas'
+'Hay 60 niños'
+'40 de cada 100 alumnos son niñas'  
+'40 de cada 100 alumnos son niños'
+'60 de cada 100 alumnos son niños'    
+0
+0
+1
+0
+1
+
+'Hay 192 niñas y 408 niños'
+'Hay 200 niñas y 400 niños'
+'Hay 408 niñas y 192 niños'
+'Hay 300 niñas y 300 niños'
+'Hay 190 niñas y 410 niños'
+1
+0
+0
+0
+0
+
+'Pagaremos 960 euros'
+'Pagaremos 640 euros'
+'Pagaremos 820 euros'
+'Pagaremos 780 euros'
+'Pagaremos 880 euros'
+0
+1
+0
+0
+0
+
+'Pagaremos 320 euros'
+'Pagaremos 15 euros'
+'Pagaremos 305 euros'
+'Pagaremos 315 euros'
+'Pagaremos 305 euros'
+0
+0
+0
+1
+0

@@ -1,0 +1,7 @@
+0
+'./images/semej1.png'
+'./images/semej2.png'
+'./images/semej3.png'
+'./images/semej4.png'
+'./images/semej5.png'
+

@@ -1,0 +1,95 @@
+<html>
+<body>
+<p align=center>
+<applet name="Puntos_en_el_plano_cartesiano_01"
+        code="Descartes.class"
+        codebase="../../../"
+        archive="Descartes4.jar"
+        MAYSCRIPT
+        width=790 height=520>
+   <param name="decimal_symbol" value=".">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Puntos_en_el_plano_cartesiano_01">
+   <param name="Versi&oacute;n" value="3.92, 2008-06-22">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="tipo='R2' id='E1' ancho='790' alto='520' despl_imagen='arr-izq' fondo='blanco' red='grisClaro' red10='a50000' ejes='a50000' texto='rosa' n&uacute;meros='si'">
+   <param name="C_00" value="id='E1.escala' espacio='E1' tipo='num&eacute;rico' regi&oacute;n='exterior' valor='30' decimales='(escala&lt;0.01)+(escala&lt;0.1)+(escala&lt;1)+(escala&lt;10)+(escala&lt;100)+(escala&lt;1000)+(escala&lt;10000)+(escala&lt;100000)' nombre='zoom' incr='0.1*escala' min='0.000001' max='1000000' visible='no' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12'">
+   <param name="C_01" value="id='E1.Ox' espacio='E1' tipo='num&eacute;rico' regi&oacute;n='exterior' valor='-360' decimales='0' nombre='O.x' incr='100' visible='si' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12'">
+   <param name="C_02" value="id='E1.Oy' espacio='E1' tipo='num&eacute;rico' regi&oacute;n='exterior' valor='210' decimales='0' nombre='O.y' incr='100' visible='si' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12'">
+   <param name="C_03" value="id='G.escalaX' espacio='E1' tipo='num&eacute;rico' regi&oacute;n='exterior' valor='G.escalaX' nombre='G.escalaX' min='0.1' visible='si' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12'">
+   <param name="C_04" value="id='G.escalaY' espacio='E1' tipo='num&eacute;rico' regi&oacute;n='exterior' valor='G.escalaY' nombre='G.escalaX' min='0.1' visible='si' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12'">
+   <param name="A_00" value="id='esp.escala' constante='si' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_01" value="id='esp.Ox' constante='si' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_02" value="id='esp.Oy' constante='si' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_03" value="id='esp.mouseX' constante='si' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_04" value="id='esp.mouseY' constante='si' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_05" value="id='esp.mousePressed' constante='si' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_06" value="id='esp.WIDTH' constante='si' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_07" value="id='esp.HEIGHT' constante='si' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_08" value="id='--Grafica1--()'">
+   <param name="A_09" value="id='G.verGrafica' constante='si' expresi&oacute;n='1' evaluar='una-sola-vez'">
+   <param name="A_10" value="id='G.verPuntos' constante='si' expresi&oacute;n='1' evaluar='una-sola-vez'">
+   <param name="A_11" value="id='G.escalaX' constante='si' expresi&oacute;n='10' evaluar='una-sola-vez'">
+   <param name="A_12" value="id='G.escalaY' constante='si' expresi&oacute;n='1' evaluar='una-sola-vez'">
+   <param name="A_13" value="id='G.anchoPuntos' constante='si' expresi&oacute;n='5' evaluar='una-sola-vez'">
+   <param name="A_14" value="id='G.anchoGrafica' constante='si' expresi&oacute;n='3' evaluar='una-sola-vez'">
+   <param name="A_15" value="id='G.rojo' constante='si' expresi&oacute;n='1' evaluar='una-sola-vez'">
+   <param name="A_16" value="id='G.verde' constante='si' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_17" value="id='G.azul' constante='si' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_18" value="id='G.m' constante='si' expresi&oacute;n='5' evaluar='una-sola-vez'">
+   <param name="A_19" value="id='G.b' constante='si' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_20" value="id='G.n_puntos' constante='si' expresi&oacute;n='6' evaluar='una-sola-vez'">
+   <param name="A_21" value="id='G.puntos_X' vector='si' tama&ntilde;o='G.n_puntos' evaluar='una-sola-vez' expresi&oacute;n='puntos1_X[0]=0;puntos1_X[1]=0;puntos1_X[2]=0'">
+   <param name="A_22" value="id='G.puntos_Y' vector='si' tama&ntilde;o='G.n_puntos' evaluar='una-sola-vez' expresi&oacute;n='puntos1_X[0]=0;puntos1_X[1]=0;puntos1_X[2]=0'">
+   <param name="A_23" value="id='--Funciones--()'">
+   <param name="A_24" value="id='distancia(x1,y1,x2,y2)' algoritmo='si' expresi&oacute;n='_distTMP' algoritmo='si' hacer='_dist1=(x2-x1)^2;_dist2=(y2-y1)^2;_distTMP=sqrt(_dist1+_dist2) '">
+   <param name="A_25" value="id='sobrePunto(pX,pY)' algoritmo='si' expresi&oacute;n='_indexSobreTMP' algoritmo='si' inicio='_indexTMP=-1;_deltaTmp=(G.anchoPuntos/esp.escala);_estaSobreTMP=0' hacer='_indexTMP=_indexTMP+1;_xTmp=G.puntos_X[_indexTMP]*G.escalaX;_yTmp=G.puntos_Y[_indexTMP]*G.escalaY;_distTmp=distancia(_xTmp,_yTmp,pX,pY);_estaSobreTMP=(_distTmp&lt;=_deltaTmp);_indexSobreTMP=(_estaSobreTMP)?_indexTMP:-1' mientras='(_indexTMP&lt;G.n_puntos)&amp;(!_estaSobreTMP)'">
+   <param name="A_26" value="id='--ALGORITMOS--()'">
+   <param name="A_27" value="id='INIT' algoritmo='si' evaluar='una-sola-vez' hacer='sobreP2=-1;sobreP1=-1;;marco.w=(125);marco.h=(40)'">
+   <param name="A_28" value="id='INIT_P1_fake' algoritmo='si' evaluar='una-sola-vez' inicio='_indexTMP=-1;' hacer='G.puntos_X[_indexTMP]=_indexTMP;G.puntos_Y[_indexTMP]=_indexTMP*G.m+G.b;_indexTMP=_indexTMP+1' mientras='(_indexTMP&lt;G.n_puntos)'">
+   <param name="A_29" value="id='CALCULOS_PRUEBA' algoritmo='si' evaluar='siempre' hacer='esp.WIDTH=790;esp.HEIGHT=520;esp.mouseX=E1.mouse_x;esp.mouseY=E1.mouse_y;esp.Ox=E1.Ox;esp.Oy=E1.Oy;esp.escala=E1.escala;esp.mousePressed=E1.mouse_pressed'">
+   <param name="A_30" value="id='CALCULOS' algoritmo='si' evaluar='siempre' hacer='_recienPress=(!esp.mousePressedAnt)&amp;(esp.mousePressed);sobreP1=(_recienPress)?sobrePunto(esp.mouseX,esp.mouseY):sobreP1;;;pix2Coord(0,esp.HEIGHT-marco.h);_minX = coordX;_minY = coordY;;pix2Coord(esp.WIDTH-120,5);_maxX=coordX;_maxY=coordY;;marco.x=G.puntos_X[sobreP1]*G.escalaX;marco.y=G.puntos_Y[sobreP1]*G.escalaY+(marco.h/esp.escala);;marco.x=max(marco.x,_minX);marco.x=min(marco.x,_maxX);;marco.y=max(marco.y,_minY);marco.y=min(marco.y,_maxY);;;despYTexto=(-marco.h+15)/esp.escala;despXTexto=(6/esp.escala);;;;esp.mousePressedAnt=esp.mousePressed;;;;;'">
+   <param name="A_31" value="id='pix2Coord(x_p,y_p)' algoritmo='si' algoritmo='si' hacer='_Cx=esp.WIDTH/2;_Cy=esp.HEIGHT/2;;coordX=(x_p-_Cx-esp.Ox)/esp.escala;coordY=(-y_p+_Cy+esp.Oy)/esp.escala'">
+   <param name="G_00" value="espacio='E1' tipo='ecuaci&oacute;n' color='(G.rojo,G.verde,G.azul,00)' dibujar-si='G.verGrafica&amp;0' expresi&oacute;n='y=(G.m*(x/G.escalaX)+G.b)*G.escalaY' ancho='G.anchoGrafica' visible='no'">
+   <param name="G_01" value="espacio='E1' tipo='ecuaci&oacute;n' color='(G.rojo,G.verde,G.azul,00)' dibujar-si='G.verGrafica' expresi&oacute;n='y=(G.m/(x/G.escalaX)+G.b)*G.escalaY' ancho='G.anchoGrafica' visible='no'">
+   <param name="G_02" value="espacio='E1' tipo='punto' color='(G.rojo,G.verde,G.azul,00)' dibujar-si='(G.verPuntos)' expresi&oacute;n='(G.puntos_X[s]*G.escalaX,G.puntos_Y[s]*G.escalaY)' familia='s' s.intervalo='[0,G.n_puntos-1]' s.pasos='G.n_puntos-1' fuente='Monospaced,PLAIN,12' tama&ntilde;o='G.anchoPuntos'">
+   <param name="G_03" value="espacio='E1' tipo='imagen' dibujar-si='sobreP1&gt;-1' expresi&oacute;n='(marco.x,marco.y)' archivo='images/marquito.png'">
+   <param name="G_04" value="espacio='E1' tipo='punto' color='negro' dibujar-si='(sobreP1&gt;-1)' expresi&oacute;n='(marco.x+despXTexto,marco.y+despYTexto)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs32\b ({\*\mjaformula{\expr G.puntos_X[sobreP1]\decimals 2\fixed0}},{\*\mjaformula{\expr G.puntos_Y[sobreP1]\decimals 2\fixed0}})\f2\fs24\b0\par}' fuente='Arial,BOLD,16' fijo='no' tama&ntilde;o='0'">
+   <param name="G_05" value="espacio='E1' tipo='texto' color='azul' dibujar-si='debug' expresi&oacute;n='[20,20]' texto='marco = [marco.x],[marco.y]\nMouse [esp.mouseX],[esp.mouseY] [esp.mousePressed]\n min [_minX],[_minY]\n max [_maxX][_maxY]' fuente='Monospaced,PLAIN,12'">
+</applet>
+
+
+
+
+
+
+<br><br>
+<applet name="PruebaMacroEjes"
+        code="Descartes.class"
+        codebase="../../../"
+        archive="Descartes4.jar"
+        MAYSCRIPT
+        width=790 height=520>
+   <param name="decimal_symbol" value=".">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="PruebaMacroEjes">
+   <param name="Versi&oacute;n" value="3.92, 2008-06-22">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="tipo='R2' id='E3' ancho='790' alto='540' despl_imagen='arr-izq' fondo='blanco' red='grisClaro' red10='gris' ejes='gris' texto='rosa'">
+   <param name="C_00" value="id='ejes.tamFuente' espacio='E3' tipo='num&eacute;rico' interfaz='men&uacute;' regi&oacute;n='exterior' valor='ejes.tamFuente' nombre='ejes.tamFuente' visible='no' opciones='8[8],10[10],12[12],16[16]' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12'">
+   <param name="C_01" value="id='ejes.graduado' espacio='E3' tipo='num&eacute;rico' regi&oacute;n='exterior' valor='ejes.graduado' nombre='ejes.graduado' incr='1' min='0' max='1' discreto='si' visible='si' opciones='8[8],10[10],12[12],16[16]' pos_mensajes='centro'">
+   <param name="C_02" value="id='btnCualVer' espacio='E3' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='exterior' nombre='btnCualVer' visible='si' acci&oacute;n='calcular' par&aacute;metro='cualVer=!cualVer' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12'">
+   <param name="A_00" value="id='a2' algoritmo='si' evaluar='siempre' hacer='grafica.esp.WIDTH=790;grafica.esp.HEIGHT=540;grafica.esp.Ox=E3.Ox;grafica.esp.Oy=E3.Oy;grafica.esp.escala=E3.escala;grafica.esp.mouseX=E3.mouse_x;grafica.esp.mouseY=E3.mouse_y;grafica.esp.mousePressed=E3.mouse_pressed;;;;grafica2.esp.WIDTH=790;grafica2.esp.HEIGHT=540;grafica2.esp.Ox=E3.Ox;grafica2.esp.Oy=E3.Oy;grafica2.esp.escala=E3.escala;grafica2.esp.mouseX=E3.mouse_x;grafica2.esp.mouseY=E3.mouse_y;grafica2.esp.mousePressed=E3.mouse_pressed'">
+   <param name="A_01" value="id='INIT_P' algoritmo='si' evaluar='una-sola-vez' inicio='_indexTMP=0;' hacer='grafica.G.puntos_X[_indexTMP]=2*_indexTMP;grafica.G.puntos_Y[_indexTMP]=2*_indexTMP*grafica.G.m+grafica.G.b;grafica2.G.puntos_X[_indexTMP]=2*_indexTMP;grafica2.G.puntos_Y[_indexTMP]=2*_indexTMP*grafica.G.m+grafica.G.b;_indexTMP=_indexTMP+1' mientras='_indexTMP&lt;grafica.G.n_puntos'">
+   <param name="G_00" value="espacio='E3' tipo='macro' dibujar-si='cualVer=0' expresi&oacute;n='grafica.txt' nombre='grafica'">
+   <param name="G_01" value="espacio='E3' tipo='macro' dibujar-si='cualVer=1' expresi&oacute;n='graficaP.txt' nombre='grafica2'">
+</applet>
+
+
+
+
+</p>
+</body>
+</html>

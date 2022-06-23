@@ -1,0 +1,11 @@
+10
+'capacitado'
+'favorable'
+'regular'
+'típico'
+'contento'
+'remediable'
+'preocupado'
+'engañado'
+'legal'
+'prudente'

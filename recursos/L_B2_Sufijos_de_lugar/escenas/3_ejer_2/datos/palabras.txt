@@ -1,0 +1,38 @@
+'_ Ingresa  6 palabras origen y 6 de destino, luego la posición de las respuestas correctas_'
+
+'Donde se venden libros'
+'Cuarto para dormir'
+'Donde lavan ropa'
+'Tienda de juguetes'
+'Terreno sembrado de arboles'
+'Tienda de muebles'
+'Librería'
+'Arboleda'
+'Juguetería'
+'Mueblería'
+'Lavandería'
+'Dormitorio'
+1
+6
+5
+3
+2
+4
+'Flauta'
+'Hormiga'
+'Escuela'
+'Gerencia'
+'Empresa'
+'Mujer'
+'Empresario'
+'Hormiguero'
+'Escuelita'
+'Flautista'
+'Gerente'
+'Mujeriego'
+4
+2
+3
+5
+1
+6

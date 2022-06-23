@@ -1,0 +1,72 @@
+<html>
+<head>
+	<title>Clasificaci&oacute;n de &aacute;ngulos &nbsp;-&nbsp; Elementos de un &aacute;ngulo</title>
+	<style>
+		*{
+		border:0;
+		margin:0;
+		padding:0;
+		}
+		body{
+			background-color:#7db9f2;
+		}
+	</style>
+</head>
+<body >
+
+<p align="left">
+<applet width=790 height=520
+        code="descinst.Descartes.class"
+        archive="descinst.jar,http://recursostic.educacion.es/descartes/web/plugin/descinst.jar"
+        MAYSCRIPT>
+   <param name="tama&ntilde;o" value="790x520">
+   <param name="pleca" value="title='Haz clic en cada uno de los elementos que componen el &aacute;ngulo AOB.' subtitle='Observa cu&aacute;l es su nombre y lee la descripci&oacute;n.' subtitlines='2' bgcolor='268bea' fgcolor='ffffff' align='center' titleimage='images/instrucciones.jpg' titlefont='SansSerif,BOLD,22' subtitlefont='SansSerif,BOLD,22' ">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="deshacer" value="no">
+   <param name="Versi&oacute;n" value="4.0986, 2010-06-13">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="tipo='R2' id='E1' fijo='s&iacute;' escala='1' O.x='-50%' O.y='-50%' imagen='images/fondoapplet.png' despl_imagen='arr-izq' fondo='7db9f2' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_01" value="tipo='R2' id='graficas' x='graficas.x' y='-graficas.y' ancho='450' alto='300' fijo='s&iacute;' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='popup' x='popup.x' y='popup.y' ancho='300' alto='216' dibujar-si='popup.visible' fijo='s&iacute;' imagen='images/postit_300.png' despl_imagen='arr-izq' fondo='ffffffff' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='popup2' x='popup2.x' y='popup2.y' ancho='300' alto='216' dibujar-si='popup2.visible' fijo='s&iacute;' imagen='images/postit_300.png' despl_imagen='arr-izq' fondo='ffffffff' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_00" value="id='btnMover' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E1' nombre='Otro &aacute;ngulo' expresi&oacute;n='(btnMover.x,-btnMover.y,btnMover.w,btnMover.h)' fijo='s&iacute;' visible='s&iacute;' color='blanco' negrita='s&iacute;' fuente puntos='22' imagen='images/btn_150.png' acci&oacute;n='calcular' par&aacute;metro='initEscena()' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='btnMover.visible' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_01" value="id='angulo.O' tipo='gr&aacute;fico' espacio='graficas' color='ff19ff' color-int='ff19ff' tama&ntilde;o='7' expresi&oacute;n='(angulo.O.x,angulo.O.y)' fuente='Arial Bold,BOLD,22' decimales='0' fijo='no' activo-si='0' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12'">
+   <param name="C_02" value="id='angulo.A' tipo='gr&aacute;fico' espacio='graficas' color='720099ff' color-int='720099ff' tama&ntilde;o='8' expresi&oacute;n='(angulo.A.x,angulo.A.y)' fuente='Arial Bold,BOLD,22' decimales='0' fijo='no' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12'">
+   <param name="C_03" value="id='angulo.B' tipo='gr&aacute;fico' espacio='graficas' color='720099ff' color-int='720099ff' tama&ntilde;o='8' expresi&oacute;n='(angulo.B.x,angulo.B.y)' fuente='Arial Bold,BOLD,22' decimales='0' fijo='no' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12'">
+   <param name="C_04" value="id='debug' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='debug' incr='1' min='0' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_05" value="id='__ACOMODO___' interfaz='bot&oacute;n' regi&oacute;n='exterior' espacio='E1' nombre='__ACOMODO___' fijo='s&iacute;' visible='s&iacute;' acci&oacute;n='calcular' par&aacute;metro='verAcomodar=!verAcomodar\ninitEscena()' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_06" value="id='output' tipo='num&eacute;rico' interfaz='campo de texto' solo_texto='s&iacute;' regi&oacute;n='exterior' espacio='E1' fijo='s&iacute;' visible='s&iacute;' acci&oacute;n='calcular' par&aacute;metro='muestraPosCtr()' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_07" value="id='graficas' tipo='gr&aacute;fico' espacio='E1' tama&ntilde;o='6' expresi&oacute;n='(graficas.x,graficas.y)' fuente='Monospaced,PLAIN,12' decimales='0' fijo='no' dibujar-si='verAcomodar==1' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12'">
+   <param name="C_08" value="id='btnMover' tipo='gr&aacute;fico' espacio='E1' tama&ntilde;o='6' expresi&oacute;n='(btnMover.x,btnMover.y)' fuente='Monospaced,PLAIN,12' decimales='0' fijo='no' dibujar-si='verAcomodar==1' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12'">
+   <param name="C_09" value="id='popup.x' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='popup.x' valor='popup.x' incr='1' min='0' max='E1._w' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_10" value="id='popup.y' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='popup.y' valor='popup.y' incr='1' min='0' max='E1._h' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="A_00" value="id='___Aux2Pos___'">
+   <param name="A_01" value="id='ctrNames' vector='s&iacute;' evaluar='una-sola-vez' expresi&oacute;n='ctrNames[0]=|graficas|;ctrNames[1]=|popup|;ctrNames[2]=|btnMover|;'">
+   <param name="A_02" value="id='muestraPosCtr()' algoritmo='s&iacute;' expresi&oacute;n='x' algoritmo='s&iacute;' inicio='_index=0;output=&squot;&squot;;' hacer='_varName=ctrNames[_index];;_varX=_varName+&squot;.x&squot;;_valX=_Eval_(_varX);_varY=_varName+&squot;.y&squot;;_valY=_Eval_(_varY);;output=output+_varX+&squot;=&squot;+_valX+&squot;@&squot;;output=output+_varY+&squot;=&squot;+_valY+&squot;@&squot;;;_index=_index+1' mientras='_index&lt;ctrNames.long'">
+   <param name="A_03" value="id='___FUNCIONES___'">
+   <param name="A_04" value="id='synch_esp()' algoritmo='s&iacute;' algoritmo='s&iacute;' hacer='marcoG1.Esp.x=graficas.x;marcoG1.Esp.y=-graficas.y;marcoG1.Esp.w=graficas._w;marcoG1.Esp.h=graficas._h;;angulo.Esp.x=graficas.x;angulo.Esp.y=-graficas.y;angulo.Esp.w=graficas._w;angulo.Esp.h=graficas._h;angulo.Esp.escala=graficas.escala;angulo.Esp.Ox=graficas.Ox;angulo.Esp.Oy=graficas.Oy;angulo.Esp.mouse_pressed=graficas.mouse_pressed;angulo.Esp.mouse_x=graficas.mouse_x;angulo.Esp.mouse_y=graficas.mouse_y;;;;;;'">
+   <param name="A_05" value="id='ponInfoRectas()' algoritmo='s&iacute;' algoritmo='s&iacute;' hacer='popup2.visible=0;;popup.x=7;popup.y=225'">
+   <param name="A_06" value="id='ponInfoVertice()' algoritmo='s&iacute;' algoritmo='s&iacute;' hacer='popup2.visible=0;;popup.x=475;popup.y=225'">
+   <param name="A_07" value="id='ponInfoSector()' algoritmo='s&iacute;' algoritmo='s&iacute;' hacer='popup2.visible=1;;popup.x=7;popup.y=10;;popup2.x=480;popup2.y=225'">
+   <param name="A_08" value="id='ponInfo()' algoritmo='s&iacute;' algoritmo='s&iacute;' hacer='tt=(angulo.verInfoSec)?ponInfoSector():0;tt=(angulo.verInfoRec)?ponInfoRectas():0;tt=(angulo.verInfoVer)?ponInfoVertice():0;'">
+   <param name="A_09" value="id='initEscena()' algoritmo='s&iacute;' algoritmo='s&iacute;' hacer='angulo.initEscena();;popup.visible=0;popup2.visible=0;;'">
+   <param name="A_10" value="id='___ALGORITMOS___'">
+   <param name="A_11" value="id='INIT_CTR_SIZE' algoritmo='s&iacute;' evaluar='una-sola-vez' hacer='movil.alfa.w=150;movil.alfa.h=25;movil.alfa.visible=1;;;btnMover.w=151;btnMover.h=31;btnMover.visible=1'">
+   <param name="A_12" value="id='INIT_POS' algoritmo='s&iacute;' evaluar='una-sola-vez' hacer='graficas.x=(E1._w-graficas._w)/2;graficas.y=-50;btnMover.x=(E1._w-btnMover.w)/2;btnMover.y=-(E1._h-50);movil.alfa.x=100;movil.alfa.y=-250;'">
+   <param name="A_13" value="id='INICIO' algoritmo='s&iacute;' evaluar='una-sola-vez' hacer='synch_esp();initEscena();;'">
+   <param name="A_14" value="id='CALCULOS' algoritmo='s&iacute;' evaluar='siempre' hacer='mouse.pressed=graficas.mouse_pressed;mouse.x=graficas.mouse_x;mouse.y=graficas.mouse_y;mouse.xPix=(mouse.x*graficas.escala+graficas._w/2+graficas.Ox);mouse.yPix=(-mouse.y*graficas.escala+graficas._h/2+graficas.Oy);;synch_esp();angulo.actualizar();recienPress=(!pressAnt)&amp;(mouse.pressed);;popup.visible=(angulo.verInfoSec|angulo.verInfoRec|angulo.verInfoVer);popup2.visible=(popup2.visible)&amp;(popup.visible);;tt=(recienPress)?ponInfo():0;;;pressAnt=mouse.pressed'">
+   <param name="G_00" value="espacio='E1' tipo='macro' expresi&oacute;n='macros/marcoGraf.txt' nombre='marcoG1'">
+   <param name="G_01" value="espacio='graficas' tipo='macro' expresi&oacute;n='macros/angulo.txt' nombre='angulo'">
+   <param name="G_02" value="espacio='popup' tipo='texto' dibujar-si='angulo.verInfoRec' expresi&oacute;n='[5,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Arial;\f5\fcharset0 Arial;\f6\fcharset0 Courier New;}{\colortbl\red0\green101\blue204;\red32\green48\blue57;\red32\green48\blue58;}\cf0\f1\fs54\b Lados\cf1\par \fs28\b0\par \fs44 Son los segmentos de recta\par que forman el \u225 ngulo\cf2 .\par \fs30\par \fs40\i Puedes modificar su tama\u241 o \par sin que cambie la abertura \par del \u225 ngulo.\f6\fs24\i0}' fuente='Arial Negrita,BOLD,27' fijo='s&iacute;'">
+   <param name="G_03" value="espacio='popup' tipo='texto' dibujar-si='angulo.verInfoVer' expresi&oacute;n='[50,50]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Courier New;}{\colortbl\red253\green19\blue113;\red32\green48\blue56;\red32\green48\blue58;}\cf0\f1\fs54\b V\u233 rtice\fs44\b0\cf1\par \fs30\par \fs44 Es el origen com\u250 n\par de los lados\cf2 .\f4\fs24}' fuente='Arial Negrita,BOLD,27' fijo='s&iacute;'">
+   <param name="G_04" value="espacio='popup' tipo='texto' dibujar-si='angulo.verInfoSec' expresi&oacute;n='[15,42]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red65\green167\blue13;\red32\green48\blue56;\red32\green48\blue58;}\cf0\f1\fs44 La \b\cf1 amplitud\cf2  \b0 o \b\cf1 abertura\cf2\b0\par del \u225 ngulo la medimos en\par grados, su s\u237 mbolo es \fs50\b\u176 \fs44\b0 .\par Por ejemplo 34\fs50\b\u176 \fs44\b0 , se lee \par 34 grados.\cf3\f4\fs24}' fuente='Arial,PLAIN,22' fijo='s&iacute;'">
+   <param name="G_05" value="espacio='popup2' tipo='texto' dibujar-si='angulo.verInfoSec' expresi&oacute;n='[10,50]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red32\green48\blue56;\red32\green48\blue58;}\cf0\f1\fs42 Los \u225 ngulos se nombran con \par una  letra o  con las letras de\par los segmentos que lo forman\cf1 .\par \par            \cf0\u8737 AOB,   \u8738 O \f2\fs24}' fuente='Arial,PLAIN,21' fijo='s&iacute;'">
+<font face="Arial" size="3">Esta unidad interactiva requiere la m&aacute;quina virtual de Java <a href="http://java.sun.com/javase/downloads/index.jsp" target="_blank">J2RE</a>.</font>
+</applet>
+
+</p>
+
+</body>
+</html>

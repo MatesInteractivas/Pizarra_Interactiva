@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>El plano cartesiano &nbsp;-&nbsp; Ejercicios.</title>
+	<style>
+		*{
+		border:0;
+		margin:0;
+		padding:0;
+		}
+		body{
+			background-color:#7db9f2;
+		}
+	</style>
+</head>
+<body >
+
+<p align="center">
+<applet name="descartes" width=790 height=520
+        code="descinst.Descartes.class"
+        archive="descinst.jar,http://recursostic.educacion.es/descartes/web/plugin/descinst.jar"
+        MAYSCRIPT>
+   <param name="tama&ntilde;o" value="790x520">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="s&iacute;">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="descartes">
+   <param name="Versi&oacute;n" value="4.0985, 2010-06-05">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="tipo='R2' id='E0' y='65' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_01" value="tipo='R2' id='E1' x='13' y='85' ancho='764' alto='365' fijo='s&iacute;' escala='30' O.x='-10' imagen='images/fondoPlano.png' despl_imagen='arr-izq' fondo='ffffffff' red='335196f3' red10='no' ejes='negro' texto='no'">
+   <param name="E_02" value="tipo='R2' id='E3' x='208' y='144' ancho='350' alto='252' dibujar-si='(correcto=0)&amp;(cerrar=1)' fijo='s&iacute;' imagen='images/postit.png' despl_imagen='centrada' fondo='ffff0000' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='E4' x='208' y='144' ancho='350' alto='252' dibujar-si='(correcto=1)&amp;(cerrar=1)' fijo='s&iacute;' imagen='images/postit.png' despl_imagen='centrada' fondo='ff9f0000' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_04" value="tipo='R2' id='pleca' x='0' y='0' ancho='790' alto='65' imagen='images/instrucciones.jpg' despl_imagen='expand.' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_00" value="id='G.x' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='G.x' incr='1' min='-15' max='15' discreto='s&iacute;' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_01" value="id='G.y' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='G.y' incr='1' min='-5' max='5' discreto='s&iacute;' fijo='s&iacute;' visible='s&iacute;' pos_mensajes='centro'">
+   <param name="C_02" value="id='G' tipo='gr&aacute;fico' espacio='E1' color='negro' color-int='turquesa' tama&ntilde;o='7' fijo='s&iacute;' imagen='images/buspk.png'">
+   <param name="C_03" value="id='otros' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E0' nombre='Otro' expresi&oacute;n='(458,406,100,30)' fijo='s&iacute;' visible='s&iacute;' color='blanco' negrita='s&iacute;' fuente puntos='20' imagen='images/btn100.png' acci&oacute;n='calcular' par&aacute;metro='a=(ent(rnd*24))-12\nb=(ent(rnd*10))-5\nverif=0\nG.x=0\nG.y=0\ncorrecto=0\ncerrar=0\n' dibujar-si='correcto=1' pos_mensajes='centro'">
+   <param name="C_04" value="id='verif' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E0' nombre='Verificar' expresi&oacute;n='(458,406,150,30)' fijo='s&iacute;' visible='s&iacute;' color='blanco' negrita='s&iacute;' fuente puntos='20' imagen='images/btn150.png' acci&oacute;n='calcular' par&aacute;metro='verif=1\ncerrar=1' dibujar-si='correcto=0' pos_mensajes='centro'">
+   <param name="C_05" value="id='aceptar' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E3' expresi&oacute;n='(308,210,25,25)' fijo='s&iacute;' visible='s&iacute;' color='blanco' negrita='s&iacute;' fuente puntos='20' imagen='images/cerrar.png' acci&oacute;n='calcular' par&aacute;metro='cerrar=0' pos_mensajes='centro'">
+   <param name="C_06" value="id='aceptar' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E4' expresi&oacute;n='(308,210,25,25)' fijo='s&iacute;' visible='s&iacute;' color='blanco' negrita='s&iacute;' fuente puntos='20' imagen='images/cerrar.png' acci&oacute;n='calcular' par&aacute;metro='cerrar=0' pos_mensajes='centro'">
+   <param name="C_07" value="id='n8' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='n8' incr='1' fijo='s&iacute;' visible='s&iacute;' pos_mensajes='centro'">
+   <param name="C_08" value="id='n9' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='n9' incr='1' fijo='s&iacute;' visible='s&iacute;' pos_mensajes='centro'">
+   <param name="A_00" value="id='Bien(x1,y1)' expresi&oacute;n='(abs(x1-y1)&lt;0.15)?1:0' hacer=';;'">
+   <param name="A_01" value="id='a' constante='s&iacute;' expresi&oacute;n='(ent(rnd*24))-12' evaluar='una-sola-vez'">
+   <param name="A_02" value="id='b' constante='s&iacute;' expresi&oacute;n='(ent(rnd*10))-5' evaluar='una-sola-vez'">
+   <param name="A_03" value="id='FinBien' evento='s&iacute;' condici&oacute;n='(verif=1)&amp;((Bien(a,G.x)=1)&amp;(Bien(b,G.y)=1))' acci&oacute;n='calcular' par&aacute;metro='correcto=1' ejecuci&oacute;n='alternar' pos_mensajes='centro'">
+   <param name="A_04" value="id='FinMal' evento='s&iacute;' condici&oacute;n='(verif=1)&amp;((Bien(a,G.x)=0)|(Bien(b,G.y)=0))' acci&oacute;n='calcular' par&aacute;metro='correcto=0' ejecuci&oacute;n='alternar' pos_mensajes='centro'">
+   <param name="A_05" value="id='default' evento='s&iacute;' condici&oacute;n='1' acci&oacute;n='calcular' par&aacute;metro='verif=0' ejecuci&oacute;n='siempre' pos_mensajes='centro'">
+   <param name="A_06" value="id='Inicio' algoritmo='s&iacute;' evaluar='una-sola-vez' hacer='SOM.Top=600;SOM.Left=400;SOM.transp=0.80;SOM.rojo=0.20;SOM.verde=0.80;SOM.azul=0.99'">
+   <param name="G_00" value="espacio='E0' tipo='macro' expresi&oacute;n='macros/sombras.txt' nombre='SOM'">
+   <param name="G_01" value="espacio='E1' tipo='pol&iacute;gono' fondo='s&iacute;' color='blanco' dibujar-si='0' expresi&oacute;n='(-8,16)(-0.1,16)(-0.1,-3)(-8,-3)' relleno='blanco'">
+   <param name="G_02" value="espacio='E1' tipo='pol&iacute;gono' fondo='s&iacute;' color='blanco' dibujar-si='0' expresi&oacute;n='(-3,-0.1)(22,-0.1)(22,-3)(-3,-3)' relleno='blanco'">
+   <param name="G_03" value="espacio='pleca' tipo='texto' expresi&oacute;n='[85,7]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red255\green255\blue255;\red0\green0\blue0;}\cf0\f1\fs44\b Arrastra el autob\u250 s y ub\u237 calo seg\u250 n las coordenadas dadas,  \par    verifica tu respuesta. Puedes apoyarte en la cuadr\u237 cula.\cf1\b0}' fuente='Arial Negrita,BOLD,22' fijo='s&iacute;'">
+   <param name="G_04" value="espacio='E1' tipo='punto' color='f69000' expresi&oacute;n='(16-4,-0.5)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red255\green30\blue0;\red0\green0\blue255;\red246\green144\blue0;}\cf0\f1\fs32\b   \cf1   \fs44\i\cf2 x\cf1\f0\fs24\b0\i0\par }' fuente='SansSerif,BOLD,16' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_05" value="espacio='E1' tipo='punto' color='f69000' expresi&oacute;n='(-0.5,10.5-4.9)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs44\b\i y\f0\fs24\b0\i0\par }' fuente='SansSerif,BOLD+ITALIC,22' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_06" value="espacio='E1' tipo='punto' color='negro' expresi&oacute;n='(-0.3+s,-0.7)' familia='s' s.intervalo='[1,12]' s.pasos='11' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28\b{\*\mjaformula{\expr s\decimals 0\fixed1}}\f2\fs24\b0\par}' fuente='SansSerif,BOLD,14' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_07" value="espacio='E1' tipo='punto' color='negro' expresi&oacute;n='(-0.8,s-0.2)' familia='s' s.intervalo='[1,5]' s.pasos='4' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28\b{\*\mjaformula{\expr s\decimals 0\fixed1}}\f2\fs24\b0\par}' fuente='SansSerif,BOLD,14' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_08" value="espacio='E0' tipo='imagen' coord_abs='s&iacute;' expresi&oacute;n='(0,0)' archivo='images/marco.png'">
+   <param name="G_09" value="espacio='E3' tipo='texto' expresi&oacute;n='[35,-8]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs40\b\par   \u161 INT\u201 NTALO DE NUEVO!\b0\par \par La primera coordenada indica\par la distancia del punto al eje \par horizontal. \par La segunda coordenada indica la \par distancia del punto al eje vertical. \par \par      Ap\u243 yate en la cuadr\u237 cula.\par \par \cf1\par \par \par \par \par \par }' fuente='SansSerif,BOLD,20' fijo='s&iacute;'">
+   <param name="G_10" value="espacio='E4' tipo='texto' expresi&oacute;n='[41,50]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs40     \b     \u161 FELICIDADES!\b0\par \par Ubicaste bien el autob\u250 s en \par el plano de ejes coordenados.\par \par \par  \cf1\par \par }' fuente='SansSerif,PLAIN,20' fijo='s&iacute;'">
+   <param name="G_11" value="espacio='E0' tipo='texto' dibujar-si='0' expresi&oacute;n='[80,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs44 Arrastra el punto azul y ub\u237 calo seg\u250 n las coordenadas dadas.\cf1\f2\fs40\b\par }' fuente='SansSerif,PLAIN,22' fijo='s&iacute;'">
+   <param name="G_12" value="espacio='E1' tipo='pol&iacute;gono' fondo='s&iacute;' color='blanco' dibujar-si='0' expresi&oacute;n='(17,-0.1)(17,12)(22.6,12)(22.6,-0.1)(17,-0.1)' relleno='blanco'">
+   <param name="G_13" value="espacio='E1' tipo='punto' color='negro' expresi&oacute;n='(-0.3+s-0.2,-0.7)' familia='s' s.intervalo='[-1,-12]' s.pasos='11' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28\b{\*\mjaformula{\expr s\decimals 0\fixed1}}\f2\fs24\b0\par }' fuente='SansSerif,BOLD,14' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_14" value="espacio='E1' tipo='punto' color='negro' expresi&oacute;n='(-0.8,s-0.2-0.1)' familia='s' s.intervalo='[-1,-5]' s.pasos='4' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28\b{\*\mjaformula{\expr s\decimals 0\fixed1}}\f2\fs24\b0\par}' fuente='SansSerif,BOLD,14' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_15" value="espacio='E1' tipo='punto' color='negro' expresi&oacute;n='(-0.4,-0.7)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28\b{\*\mjaformula 0}\f2\fs24\b0\par }' fuente='SansSerif,BOLD,14' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_16" value="espacio='E0' tipo='texto' expresi&oacute;n='[100,410]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs40 abscisa:\cf1{\*\mjaformula{\expr a\decimals 0\fixed1}\f2\fs24} \cf0         ordenada:{\*\mjaformula\cf1{\expr b\decimals 0\fixed1}\cf0}\cf1\f2\fs24\par \par }' fuente='SansSerif,PLAIN,20' fijo='s&iacute;'">
+<font face="Arial" size="3">Esta unidad interactiva requiere la m&aacute;quina virtual de Java <a href="http://java.sun.com/javase/downloads/index.jsp" target="_blank">J2RE</a>.</font>
+</applet>
+</p>
+</body>
+</html>

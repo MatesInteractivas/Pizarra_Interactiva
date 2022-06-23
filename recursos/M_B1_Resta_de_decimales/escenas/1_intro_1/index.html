@@ -1,0 +1,51 @@
+<html>
+<head>
+	<title>Resta de decimales</title>
+	<style>
+		*{
+		border:0;
+		margin:0;
+		padding:0;
+		}
+	</style>
+</head>
+<body >
+
+<p align="left">
+<applet width=790 height=520
+        code="descinst.Descartes.class"
+        codebase="./"
+        archive="descinst.jar,http://recursostic.educacion.es/descartes/web/plugin/descinst.jar"
+        MAYSCRIPT>
+   <param name="tama&ntilde;o" value="790x520">
+   <param name="sonido" value="s&iacute;">
+   <param name="&aacute;lgebra" value="s&iacute;">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="Versi&oacute;n" value="4.41, 2010-12-16">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="tipo='R2' id='E1' y='65' fijo='s&iacute;' escala='30' O.x='-50%' O.y='65%' imagen='/images/marquito.png' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_01" value="tipo='R2' id='pleca' x='0' y='0' ancho='790' alto='65' fijo='s&iacute;' imagen='images/instrucciones.jpg' despl_imagen='expand.' fondo='6298cb' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_00" value="id='n2' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E1' nombre='Otra Pregunta' expresi&oacute;n='(580,100,200,30)' fijo='s&iacute;' visible='s&iacute;' color='blanco' color-int='verde' negrita='s&iacute;' fuente puntos='22' imagen='/images/btn150.png' acci&oacute;n='calcular' par&aacute;metro='kk=ent(rnd*4)+1\njj=ent(rnd*5)+1\njj=(jj=kk)?5:jj\n\nA=ent(rnd*10)+ent(rnd*100)/100\nB=ent(rnd*10)+ent(rnd*100)/100\nC=ent(rnd*10)+ent(rnd*100)/100\nD=ent(rnd*10)+ent(rnd*100)/100\nE=ent(rnd*10)+ent(rnd*100)/100\nn3=1\n' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_01" value="id='n3' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E1' nombre='Respuesta' expresi&oacute;n='(580,140,200,30)' fijo='s&iacute;' visible='s&iacute;' color='blanco' color-int='verde' negrita='s&iacute;' fuente puntos='22' imagen='/images/btn150.png' acci&oacute;n='calcular' par&aacute;metro='\n' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="A_00" value="id='INICIO' algoritmo='s&iacute;' evaluar='una-sola-vez' hacer='kk=ent(rnd*4)+1;jj=ent(rnd*5)+1;jj=(jj=kk)?5:jj;;;A=ent(rnd*10)+ent(rnd*100)/100;B=ent(rnd*10)+ent(rnd*100)/100;C=ent(rnd*10)+ent(rnd*100)/100;D=ent(rnd*10)+ent(rnd*100)/100;E=ent(rnd*10)+ent(rnd*100)/100;n3=1;;;'">
+   <param name="A_01" value="id='CALCULOS' algoritmo='s&iacute;' evaluar='siempre' hacer=';'">
+   <param name="A_02" value="id='V2' vector='s&iacute;' evaluar='siempre' tama&ntilde;o='6' expresi&oacute;n='V2[0]=&squot;&squot;;V2[1]=A;V2[2]=B;V2[3]=C;V2[4]=D;V2[5]=E'">
+   <param name="A_03" value="id='V1' vector='s&iacute;' evaluar='una-sola-vez' tama&ntilde;o='6' expresi&oacute;n='V1[0]=&squot;&squot;;V1[1]=&squot;las bananas&squot;;V1[2]=&squot;las manzanas&squot;;V1[3]=&squot;los cocos&squot;;V1[4]=&squot;las toronjas&squot;;V1[5]=&squot;las peras&squot;'">
+   <param name="G_00" value="espacio='E1' tipo='macro' expresi&oacute;n='macros/sombras.txt' nombre='SOM'">
+   <param name="G_01" value="espacio='pleca' tipo='texto' expresi&oacute;n='[160,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red255\green255\blue255;}\f1\fs48\b\cf0 OBSERVA LA SITUACI\u211 N Y PIENSA\b0  }' fuente='Arial Bold,BOLD,24' fijo='s&iacute;'">
+   <param name="G_02" value="espacio='E1' tipo='imagen' expresi&oacute;n='(0,0)' archivo='/images/marquito.png'">
+   <param name="G_03" value="espacio='E1' tipo='imagen' fondo='s&iacute;' expresi&oacute;n='(10,8,.6,.6)' archivo='/images/venta.png'">
+   <param name="G_04" value="espacio='E1' tipo='texto' expresi&oacute;n='[100,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red62\green87\blue255;\red0\green216\blue0;\red0\green0\blue255;}\f1\fs60\b\cf0\u191 Cu\u225 l es la diferencia entre el precio de\par {\*\mjaformula\cf1{\expr V1[kk]\decimals 0\fixed1}\cf0} y el precio de {\*\mjaformula\cf1{\expr V1[jj]\decimals 0\fixed1}\cf0}?\cf2\f2\fs24\b0}' fuente='Arial Bold,BOLD,30' fijo='s&iacute;'">
+   <param name="G_05" value="espacio='E1' tipo='texto' expresi&oacute;n='[275,200]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs52\b{\*\mjaformula{\expr V2[1]\decimals 2\fixed1}}\u8364 \cf1\f2\fs24\b0}' fuente='Arial Bold,BOLD,26' fijo='s&iacute;'">
+   <param name="G_06" value="espacio='E1' tipo='texto' expresi&oacute;n='[400,196]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs52\b{\*\mjaformula{\expr V2[2]\decimals 2\fixed1}}\u8364 \cf1\f2\fs24\b0}' fuente='Arial Bold,BOLD,26' fijo='s&iacute;'">
+   <param name="G_07" value="espacio='E1' tipo='texto' expresi&oacute;n='[515,200]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs52\b{\*\mjaformula{\expr V2[3]\decimals 2\fixed1}}\u8364 \cf1\f2\fs24\b0}' fuente='Arial Bold,BOLD,26' fijo='s&iacute;'">
+   <param name="G_08" value="espacio='E1' tipo='texto' expresi&oacute;n='[315,310]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs52\b{\*\mjaformula{\expr V2[4]\decimals 2\fixed1}}\u8364 \cf1\f2\fs24\b0}' fuente='Arial Bold,BOLD,26' fijo='s&iacute;'">
+   <param name="G_09" value="espacio='E1' tipo='texto' expresi&oacute;n='[480,320]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red0\green0\blue255;}\f1\fs52\b\cf0{\*\mjaformula{\expr V2[5]\decimals 2\fixed1}}\u8364 \cf1\f2\fs24\b0}' fuente='Arial Bold,BOLD,26' fijo='s&iacute;'">
+   <param name="G_10" value="espacio='E1' tipo='texto' dibujar-si='n3=0' expresi&oacute;n='[600,250]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red62\green87\blue255;\red0\green216\blue0;}\cf0\f1\fs40\b\u161 La diferencia es \cf1\par      {\*\mjaformula\cf2{\expr abs(V2[kk]-V2[jj])\decimals 2\fixed1}\cf1}\cf2\u8364 \cf0 !\cf1\par Haz clic en Otra\par Pregunta o pasa\par a la Exploraci\u243 n \f2\fs24\b0}' fuente='Arial Bold,BOLD,20' fijo='s&iacute;'">
+<font face="Arial" size="3">Esta unidad interactiva requiere la m&aacute;quina virtual de Java <a href="http://java.sun.com/javase/downloads/index.jsp" target="_blank">J2RE</a>.</font>
+</applet></p>
+
+</body>
+</html>

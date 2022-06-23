@@ -1,0 +1,9 @@
+7
+
+'El sumando que falta es'
+'¿Qué propiedad de la suma se muestra?'
+'La expresión que muestra la ley conmutativa es'
+'El sumando que falta es'
+'La expresión que muestra la ley associativa es'
+'La relación correcta es'
+'El elemento neutro de la suma se muestra en'

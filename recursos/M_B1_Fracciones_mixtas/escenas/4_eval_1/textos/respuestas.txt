@@ -1,0 +1,35 @@
+'Escribe las tres respuestas de cada pregunta y la posición de la respuesta correcta'
+
+'3/4'
+'9/4'
+'2  1/4'
+2
+
+'2  5/8'
+'3  2/3'
+'2  2/3'
+3
+
+'1  6/3'
+'7/3'
+'2  1/3'
+3
+
+'19/8'
+'19/3'
+'16/3'
+1
+
+'1  3/4'
+'5/4'
+'1  1/4'
+3
+
+'9/15'
+'1  6/9'
+'1  9/6'
+2
+'15 séptimos'
+'32 séptimos'
+'28 séptimos'
+2

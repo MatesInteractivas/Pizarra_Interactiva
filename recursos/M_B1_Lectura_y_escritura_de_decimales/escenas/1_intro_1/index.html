@@ -1,0 +1,65 @@
+<html>
+<head>
+	<title>Lectura y escritura de n&uacute;meros decimales &nbsp;-&nbsp; Introducci&oacute;n</title>
+	<style>
+		*{
+		border:0;
+		margin:0;
+		padding:0;
+		}
+		body{
+			background-color:#7db9f2;
+		}
+	</style>
+</head>
+<body >
+
+<p align="center">
+<applet width=790 height=520
+        code="descinst.Descartes.class"
+        archive="descinst.jar,http://recursostic.educacion.es/descartes/web/plugin/descinst.jar"
+        MAYSCRIPT>
+   <param name="tama&ntilde;o" value="790x520">
+   <param name="pleca" value="title='N&uacute;meros con coma' subtitle='&iquest;Sab&iacute;as que?' subtitlines='2' bgcolor='268bea' fgcolor='ffffff' align='center' titleimage='images/instrucciones.jpg' titlefont='SansSerif,BOLD,22' subtitlefont='SansSerif,BOLD,22' ">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="deshacer" value="no">
+   <param name="Versi&oacute;n" value="4.0991, 2010-06-18">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="tipo='R2' id='text1' imagen='images/fondo.png' despl_imagen='expand.' fondo='ffffffff' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_01" value="tipo='R2' id='actual' x='20' y='20' ancho='750' alto='420' dibujar-si='actual=1' fijo='s&iacute;' imagen='images/planisferio.png' despl_imagen='expand.' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_00" value="id='actual' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='text1' nombre='Actualmente' expresi&oacute;n='((text1._w-200)/2,text1._h-50,200,30)' fijo='s&iacute;' visible='s&iacute;' color='blanco' color-int='naranja' negrita='s&iacute;' fuente puntos='22' imagen='images/btn200.png' acci&oacute;n='calcular' par&aacute;metro='actual=actual+1' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_01" value="id='cerrar' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='actual' nombre='X' expresi&oacute;n='(10,actual._h-55,50,50)' fijo='s&iacute;' visible='s&iacute;' color='blanco' color-int='naranja' negrita='s&iacute;' fuente puntos='22' imagen='images/btn050.png' acci&oacute;n='calcular' par&aacute;metro='actual=0' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_02" value="id='numdec' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' espacio='actual' expresi&oacute;n='(actual._h-150/2,actual._h-55,90,50)' valor='3.65' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_03" value="id='g' tipo='gr&aacute;fico' espacio='actual' color='azul' color-int='rojo' tama&ntilde;o='8' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs40 ( {\*\mjaformula{\expr Px\decimals 2\fixed1}}, {\*\mjaformula{\expr Py\decimals 2\fixed1}} )\cf1\f2\fs24}' fuente='Arial,PLAIN,20' decimales='0' fijo='s&iacute;' dibujar-si='0' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12'">
+   <param name="A_00" value="id='initMacros()' algoritmo='s&iacute;' algoritmo='s&iacute;' hacer='RM.transp=0.5;RM.rojo=1.0;RM.verde=0.95;RM.azul=1.0;RM.w=245;RM.h=60;RM.x=135;RM.y=176;;RE.transp=0.5;RE.rojo=1.0;RE.verde=0.95;RE.azul=1.0;RE.w=220;RE.h=60;RE.x=131;RE.y=127;;RI.transp=0.5;RI.rojo=1.0;RI.verde=0.95;RI.azul=1.0;RI.w=270;RI.h=60;RI.x=360;RI.y=88;;RV.transp=0.5;RV.rojo=1.0;RV.verde=0.95;RV.azul=1.0;RV.w=343;RV.h=60;RV.x=363;RV.y=127;;RC.transp=0.5;RC.rojo=1.0;RC.verde=0.95;RC.azul=1.0;RC.w=315;RC.h=60;RC.x=418;RC.y=60;;SOM1.transp=0.8;SOM1.rojo=0.2;SOM1.verde=0.8;SOM1.azul=0.99;SOM1.Top=500;SOM1.Left=300;SOM2.transp=0.8;SOM2.rojo=0.2;SOM2.verde=0.8;SOM2.azul=0.99;SOM2.Top=500;SOM2.Left=300;'">
+   <param name="A_01" value="id='INICIO' algoritmo='s&iacute;' evaluar='una-sola-vez' inicio='initMacros()' hacer=';'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='s&iacute;' evaluar='siempre' hacer='Px=actual._w/2+g.x*actual.escala;Py=actual._h/2-g.y*actual.escala;pintamex=actual.mouse_pressed&amp;(-5.5&lt;=actual.mouse_x)&amp;(actual.mouse_x&lt;=-5.1)&amp;(0.2&lt;=actual.mouse_y)&amp;(actual.mouse_y&lt;=0.7);pintaeua=actual.mouse_pressed&amp;(-5.5&lt;=actual.mouse_x)&amp;(actual.mouse_x&lt;=-5.1)&amp;(1.1&lt;=actual.mouse_y)&amp;(actual.mouse_y&lt;=1.6);pintaingl=actual.mouse_pressed&amp;(-0.7&lt;=actual.mouse_x)&amp;(actual.mouse_x&lt;=-0.3)&amp;(1.95&lt;=actual.mouse_y)&amp;(actual.mouse_y&lt;=2.45);pintaeuro=actual.mouse_pressed&amp;(-0.70&lt;=actual.mouse_x)&amp;(actual.mouse_x&lt;=-0.35)&amp;(1.22&lt;=actual.mouse_y)&amp;(actual.mouse_y&lt;=1.62);pintaesca=actual.mouse_pressed&amp;(0.4&lt;=actual.mouse_x)&amp;(actual.mouse_x&lt;=0.8)&amp;(2.44&lt;=actual.mouse_y)&amp;(actual.mouse_y&lt;=2.8);'">
+   <param name="G_00" value="espacio='text1' tipo='macro' fondo='s&iacute;' expresi&oacute;n='macros/sombras.txt' nombre='SOM1'">
+   <param name="G_01" value="espacio='text1' tipo='macro' fondo='s&iacute;' expresi&oacute;n='macros/sombras_inv.txt' nombre='SOM2'">
+   <param name="G_02" value="espacio='text1' tipo='texto' expresi&oacute;n='[30,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red32\green48\blue58;}\f1\fs60\cf0 Desde que se inventaron los n\u250 meros decimales no\par se han puesto de acuerdo todos los pa\u237 ses en c\u243 mo\par representarlos.\par \par Durante alg\u250 n tiempo en diferentes lugares se \par representaron as\u237 :\par \fs38\par \fs60\par \par                        Todos representan 6,839\cf1\f3\fs24      }' fuente='Arial,PLAIN,30' fijo='s&iacute;'">
+   <param name="G_03" value="espacio='text1' tipo='imagen' coord_abs='s&iacute;' expresi&oacute;n='(42,238)' archivo='images/antes.gif'">
+   <param name="G_04" value="espacio='actual' tipo='texto' expresi&oacute;n='[20,15]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}{\colortbl\red255\green255\blue255;\red0\green0\blue0;}\f1\fs44\b\cf0 Da clic sobre los puntos para ver las formas de escribir los decimales\cf1}' fuente='Arial Negrita,BOLD,22' fijo='s&iacute;'">
+   <param name="G_05" value="espacio='actual' tipo='punto' color='b64400' expresi&oacute;n='(-5.3,0.4)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='8'">
+   <param name="G_06" value="espacio='actual' tipo='punto' color='b64400' expresi&oacute;n='(-5.3,1.3)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='8'">
+   <param name="G_07" value="espacio='actual' tipo='punto' color='b64400' expresi&oacute;n='(-0.5,2.15)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='8'">
+   <param name="G_08" value="espacio='actual' tipo='punto' color='b64400' expresi&oacute;n='(-0.55,1.42)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='8'">
+   <param name="G_09" value="espacio='actual' tipo='punto' color='b64400' expresi&oacute;n='(0.6,2.6)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='8'">
+   <param name="G_10" value="espacio='actual' tipo='macro' dibujar-si='pintamex' coord_abs='s&iacute;' expresi&oacute;n='macros/redondangulo.txt' nombre='RM'">
+   <param name="G_11" value="espacio='actual' tipo='texto' dibujar-si='pintamex' expresi&oacute;n='[133,180]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Times New Roman;\f4\fcharset0 Courier New;}{\colortbl\red32\green48\blue80;\red32\green48\blue58;}\f1\fs48\cf0  En M\u233 xico se escribe\par            \f2\fs48{\*\mjaformula{\expr ent(numdec)\decimals 0\fixed1}}\fs52\b .\fs48\b0{\*\mjaformula{\expr (numdec-ent(numdec)&lt;=0.09)?&squot;0&squot;+((numdec-(ent(numdec)))*100):((numdec-(ent(numdec)))*100)\decimals 0\fixed1}} \cf1\f4\fs24}' fuente='Arial,PLAIN,24' fijo='s&iacute;'">
+   <param name="G_12" value="espacio='actual' tipo='macro' dibujar-si='pintaeua' coord_abs='s&iacute;' expresi&oacute;n='macros/redondangulo.txt' nombre='RE'">
+   <param name="G_13" value="espacio='actual' tipo='texto' dibujar-si='pintaeua' expresi&oacute;n='[135,130]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Times New Roman;\f4\fcharset0 Courier New;}{\colortbl\red32\green48\blue80;\red32\green48\blue58;}\f1\fs48\cf0 En EUA se escribe\par           \f2\fs48{\*\mjaformula{\expr ent(numdec)\decimals 0\fixed1}}\fs52\b .\fs48\b0{\*\mjaformula{\expr (numdec-ent(numdec)&lt;=0.09)?&squot;0&squot;+((numdec-(ent(numdec)))*100):((numdec-(ent(numdec)))*100)\decimals 0\fixed1}}\f1\fs48    \cf1\f4\fs24}' fuente='Arial,PLAIN,24' fijo='s&iacute;'">
+   <param name="G_14" value="espacio='actual' tipo='macro' dibujar-si='pintaingl' coord_abs='s&iacute;' expresi&oacute;n='macros/redondangulo.txt' nombre='RI'">
+   <param name="G_15" value="espacio='actual' tipo='texto' dibujar-si='pintaingl' expresi&oacute;n='[360,90]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Times New Roman;\f4\fcharset0 Courier New;}{\colortbl\red32\green48\blue80;\red32\green48\blue58;}\f1\fs48\cf0 En Inglaterra se escribe\par           \f2\fs48{\*\mjaformula{\expr ent(numdec)\decimals 0\fixed1}}\fs56\b\u183 \fs48\b0{\*\mjaformula{\expr (numdec-ent(numdec)&lt;=0.09)?&squot;0&squot;+((numdec-(ent(numdec)))*100):((numdec-(ent(numdec)))*100)\decimals 0\fixed1}}  \f1\fs48  \cf1\f4\fs24}' fuente='Arial,PLAIN,24' fijo='s&iacute;'">
+   <param name="G_16" value="espacio='actual' tipo='macro' dibujar-si='pintaeuro' coord_abs='s&iacute;' expresi&oacute;n='macros/redondangulo.txt' nombre='RV'">
+   <param name="G_17" value="espacio='actual' tipo='texto' color='203050' dibujar-si='pintaeuro' expresi&oacute;n='[365,130]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Courier New;}\f1\fs48 En Alemania, Espa\u241 a, Francia\par e Italia se escribe \f2\fs48{\*\mjaformula{\expr numdec\decimals 2\fixed1}}\f1\fs48     \f3\fs24}' fuente='Arial,PLAIN,24' fijo='s&iacute;'">
+   <param name="G_18" value="espacio='actual' tipo='macro' dibujar-si='pintaesca' coord_abs='s&iacute;' expresi&oacute;n='macros/redondangulo.txt' nombre='RC'">
+   <param name="G_19" value="espacio='actual' tipo='texto' dibujar-si='pintaesca' expresi&oacute;n='[420,63]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Times New Roman;\f4\fcharset0 Courier New;}{\colortbl\red32\green48\blue48;\red32\green48\blue58;}\f1\fs48\cf0 En los pa\u237 ses escandinavos\par se escribe \f2\fs48{\*\mjaformula{\expr ent(numdec)\decimals 0\fixed1}}\fs52\b ,\f1\fs48\b0   \cf1\f4\fs24}' fuente='Arial,PLAIN,24' fijo='s&iacute;'">
+   <param name="G_20" value="espacio='actual' tipo='texto' color='203030' dibujar-si='pintaesca' expresi&oacute;n='[400,87]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Arial;\f4\fcharset0 Courier New;}\f1\fs36                                 \f2\fs36{\*\mjaformula{\expr (numdec-ent(numdec)&lt;=0.09)?&squot;0&squot;+((numdec-(ent(numdec)))*100):((numdec-(ent(numdec)))*100)\decimals 0\fixed1}}\f3\fs48   \f4\fs24}' fuente='Arial,PLAIN,18' fijo='s&iacute;'">
+   <param name="Animaci&oacute;n" value="pausa='20' controles='no' auto='s&iacute;' inicio='t=0;anim=1;animar=0' hacer='t=t+10;anim=(t&lt;RA1.w-10)?1:0' mientras='t&lt;RA1.w'">
+<font face="Arial" size="3">Esta unidad interactiva requiere la m&aacute;quina virtual de Java <a href="http://java.sun.com/javase/downloads/index.jsp" target="_blank">J2RE</a>.</font>
+</applet></p>
+
+</body>
+</html>

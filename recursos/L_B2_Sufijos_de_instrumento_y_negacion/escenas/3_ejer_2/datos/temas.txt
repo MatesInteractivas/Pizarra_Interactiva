@@ -1,0 +1,11 @@
+1
+'Fruta'
+'Ropa'
+'Mar'
+'Deporte'
+'Vagar'
+'era'
+'ero'
+'ino'
+'ista'
+'ancia'
