@@ -1,0 +1,13 @@
+{
+  "nivel": [
+    "Primaria"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Estadística y probabilidad"
+  ], 
+  "titulo": "Gráfica de líneas", 
+  "descripcion": "Mostrar ejemplos de situaciones cuyos datos conviene presentar en gráficas de líneas. Además se pide al alumno construir gráficas de líneas a partir de una tabla y también obtener datos de una gráfica de líneas y trasladarlos a una tabla.",
+  "resena": "Mostrar ejemplos de situaciones cuyos datos conviene presentar en gráficas de líneas. Además se pide al alumno construir gráficas de líneas a partir de una tabla y también obtener datos de una gráfica de líneas y trasladarlos a una tabla.",
+  "id": "M_B4_Graficas_de_lineas"
+}

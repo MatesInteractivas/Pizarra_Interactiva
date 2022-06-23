@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>La oración, sujeto y predicado</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' ancho='100%' alto='100%' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='500' fijo='sí' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='boton3' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Continuar' expresión='(507+(467-140)/2,240,140,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='boton3=1;texto1=1;boton2=0;vacio=0;vacio2=0;vacio3=0;' dibujar-si='(boton1=1)&(boton2=0)&(boton3=0)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_02" value="id='boton4' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Continuar' expresión='(507+(467-140)/2,240,140,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='boton4=1;texto2=1;' dibujar-si='(boton2=1)&(boton1=1)&(texto2=0)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_03" value="id='boton1' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Los niños' expresión='(dia.x+15+(dia.w-15-120)/2,dia.y+10,120,35)' color='000000' color-int='ffffffff' fuente puntos='20' imagen='vacio.gif' acción='calcular' parámetro='boton1=1;vacio2=0;texto1=0' dibujar-si='boton1=0' ">
+    <param name="C_04" value="id='vacio' interfaz='botón' tipo='numérico' región='interior' espacio='E1' expresión='(dia.x+15+(dia.w-15-120)/2,dia.y+10,120,35)' color='000000' color-int='ffffffff' fuente puntos='21' imagen='vacio.gif' acción='calcular' parámetro='vacio=1' dibujar-si='(boton1=1)&(boton3=0)' ">
+    <param name="C_05" value="id='vacio1' interfaz='botón' tipo='numérico' región='interior' espacio='E1' expresión='(dia.x+15+(dia.w-15-120)/2,dia.y+10,120,35)' color='000000' color-int='ffffffff' fuente puntos='21' imagen='vacio.gif' acción='calcular' parámetro='vacio1=1' dibujar-si='(boton3=1)&(boton2=0)' ">
+    <param name="C_06" value="id='boton2' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='juegan en el parque.' expresión='(dia.x+15+(dia.w-15-220)/2,dia.y+60,220,35)' color='000000' color-int='ffffffff' fuente puntos='20' imagen='vacio.gif' acción='calcular' parámetro='boton2=1;texto1=1;vacio1=0;' dibujar-si='(texto1=1)&(boton2=0)' ">
+    <param name="C_07" value="id='vacio2' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='juegan en el parque.' expresión='(dia.x+15+(dia.w-15-220)/2,dia.y+60,220,35)' color='000000' color-int='ffffffff' fuente puntos='20' imagen='vacio.gif' acción='calcular' parámetro='vacio2=1' dibujar-si='boton1=0' ">
+    <param name="C_08" value="id='vacio3' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='juegan en el parque.' expresión='(dia.x+15+(dia.w-15-220)/2,dia.y+60,220,35)' color='000000' color-int='ffffffff' fuente puntos='20' imagen='vacio.gif' acción='calcular' parámetro='vacio3=1' dibujar-si='(boton1=1)&(boton3=0)' ">
+    <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='dia.x=215;dia.y=20;dia.w=270;dia.h=110' ">
+    <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='boton11=(boton1)?1:boton11;boton21=(boton2)?1:boton21;boton31=(boton3)?1:boton31;boton41=(boton4)?1:boton41;suma=boton1+boton2+boton3+boton4;vertexto=(boton11+boton21+boton31+boton41=4)&(suma=0);vertexto1=(vertexto)?1:vertexto1;fase1=boton1+boton3;fase11=(fase1)?1:fase11;suma3=boton1+boton2+boton3;fase2=(boton11+boton21+boton31=3);fase21=(fase2)?1:fase21;;;' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_h.svg' clip='(0,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='La oración es un conjunto de palabras ordenadas con sentido completo. ¿Cuáles son los elementos que podemos encontrar en una oración?' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,500)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='E1' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(125,190,0.9)' archivo='images/maestra.svg' ">
+    <param name="G_06" value="espacio='E1' tipo='macro' fondo='sí' coord_abs='no' nombre='dia' expresión='macros/msg_bubble.txt' posini='[0,0]' ">
+    <param name="G_07" value="espacio='E1' tipo='texto' color='000000' coord_abs='sí' expresión='[507,20]' texto='La oración está formada por el \b{sujeto} y el \b{predicado}.' ancho='467' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_08" value="espacio='E1' tipo='texto' color='000000' dibujar-si='boton1=0' coord_abs='sí' expresión='[507,80]' texto='Vamos a identificar estas partes. Fíjate bien en la oración e indica:\n\n• ¿De quiénes habla la profesora?\n\n\color{34495e}{Responde pulsando en la parte correspondiente de la oración.}' ancho='467' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_09" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(boton1=1)&(texto1=0)' coord_abs='sí' expresión='[507,80]' texto='\c{\b{\color{34cc67}{¡Muy bien!}}}\n\nHas identificado el \b{sujeto} de la oración. ¿Te atreves a seguir analizando la oración?' ancho='467' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_10" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(boton3=1)&(boton2=0)' coord_abs='sí' expresión='[507,80]' texto='Y ahora identifiquemos el predicado. Fíjate de nuevo en la oración e indica: \n\n• ¿Qué están haciendo los niños?\n\n\color{34495e}{Responde pulsando en la parte correspondiente de la oración.}' ancho='467' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_11" value="espacio='E1' tipo='texto' color='000000' dibujar-si='boton4=1' coord_abs='sí' expresión='[507,120]' texto='Toda oración debe tener como mínimo un \b{verbo en forma personal}.\n\nEl \b{sujeto} y el \b{predicado} siempre \b{concuerdan} en \b{número y persona}.' ancho='467' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_12" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(fase2=1)&(texto2=0)' coord_abs='sí' expresión='[507,80]' texto='\c{\b{\color{34cc67}{¡Muy bien!}}}\n\nHas identificado el \b{predicado} de la oración. ¿Qué relación hay entre el sujeto y el predicado?' ancho='467' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_13" value="espacio='E1' tipo='texto' color='000000' dibujar-si='boton1=1' coord_abs='sí' expresión='(dia.x+15+(dia.w-15)/2,dia.y+5)' texto='\b{sujeto}\nLos niños' ancho='1' fuente puntos='20' align='a_center' anchor='a_top_center' ">
+    <param name="G_14" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(boton1=1)&(boton2=1)' coord_abs='sí' expresión='(dia.x+15+(dia.w-15)/2,dia.y+55)' texto='juegan en el parque.\n\b{predicado}' ancho='1' fuente puntos='20' align='a_center' anchor='a_top_center' ">
+    <param name="G_15" value="espacio='E1' tipo='texto' color='d40809' dibujar-si='vacio2=1' coord_abs='sí' expresión='[3*E1._w/4,280]' texto='No es correcto.' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_16" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(vacio=1)|(vacio3=1)' coord_abs='sí' expresión='[3*E1._w/4,280]' texto='Pulsa “Continuar”.' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_17" value="espacio='E1' tipo='texto' color='d40809' dibujar-si='vacio1=1' coord_abs='sí' expresión='[3*E1._w/4,280]' texto='No es correcto. Esto es el sujeto.' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_18" value="espacio='E1' tipo='rectángulo' color='a79c4e' dibujar-si='boton1=1' coord_abs='sí' expresión='(20,E1._h-70-20,(E1._w-60)/2,70)' relleno='f3e372' ancho='1' border_radius='2' ">
+    <param name="G_19" value="espacio='E1' tipo='texto' color='000000' dibujar-si='boton1=1' coord_abs='sí' expresión='[30,E1._h-30]' texto='En el \b{sujeto} se indica \b{quién} realiza la acción del verbo.' ancho='E1._w/2-55' fuente puntos='20' align='a_justify' anchor='a_bottom_left' ">
+    <param name="G_20" value="espacio='E1' tipo='rectángulo' color='a79c4e' dibujar-si='(boton1=1)&(boton2=1)' coord_abs='sí' expresión='(E1._w/2+10,E1._h-70-20,(E1._w-60)/2,70)' relleno='f3e372' ancho='1' border_radius='2' ">
+    <param name="G_21" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(boton1=1)&(boton2=1)' coord_abs='sí' expresión='[E1._w/2+20,E1._h-30]' texto='El \b{predicado} es la parte de la oración en la que se dice algo del sujeto.' ancho='E1._w/2-55' fuente puntos='20' align='a_justify' anchor='a_bottom_left' ">
+  </ajs>
+
+<script type="descartes/macro" id="macros/msg_bubble.txt">
+id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='x=10;y=10;w=400;h=50;color=&squot;ffffff&squot;;borde=&squot;34495e&squot;;punta_w=15;punta_h=15;txt=&squot;&squot;;txt_size=20;dir=&squot;izq&squot;;pos=&squot;abj&squot;;' 
+id='CALCULOS' algoritmo='sí' evaluar='siempre' 
+espacio='E1' tipo='rectángulo' color='(_Rojo_(borde),_Verde_(borde),_Azul_(borde),00)' dibujar-si='dir==&squot;izq&squot;' coord_abs='sí' expresión='(x+punta_w,y,w-punta_w,h)' relleno='(_Rojo_(color),_Verde_(color),_Azul_(color),00)' ancho='1' border_radius='6' info='izq' 
+espacio='E1' tipo='polígono' color='(_Rojo_(borde),_Verde_(borde),_Azul_(borde),00)' dibujar-si='(dir==&squot;izq&squot;)&&(pos==&squot;abj&squot;)' coord_abs='sí' expresión='(x+punta_w,y+h-punta_h)(x,y+h)(x+punta_w*2,y+h)' relleno='(_Rojo_(color),_Verde_(color),_Azul_(color),00)' ancho='1' info='punta izq abajo' 
+espacio='E1' tipo='polígono' color='(_Rojo_(borde),_Verde_(borde),_Azul_(borde),00)' dibujar-si='(dir==&squot;izq&squot;)&&(pos!=&squot;abj&squot;)' coord_abs='sí' expresión='(x+punta_w,y+punta_h)(x,y)(x+punta_w*2,y)' relleno='(_Rojo_(color),_Verde_(color),_Azul_(color),00)' ancho='1' info='punta izq arriba' 
+espacio='E1' tipo='texto' color='000000' dibujar-si='dir==&squot;izq&squot;' coord_abs='sí' expresión='(x+punta_w+10,y+10)' texto='[txt]' fijo='no' ancho='w-punta_w-20' fuente puntos='txt_size' align='a_justify' anchor='a_top_left' info='izq' 
+espacio='E1' tipo='rectángulo' color='(_Rojo_(borde),_Verde_(borde),_Azul_(borde),00)' dibujar-si='dir!=&squot;izq&squot;' coord_abs='sí' expresión='(x,y,w-punta_w,h)' relleno='(_Rojo_(color),_Verde_(color),_Azul_(color),00)' ancho='1' border_radius='6' info='der' 
+espacio='E1' tipo='polígono' color='(_Rojo_(borde),_Verde_(borde),_Azul_(borde),00)' dibujar-si='(dir!=&squot;izq&squot;)&&(pos==&squot;abj&squot;)' coord_abs='sí' expresión='(x+w-punta_w,y+h-punta_h)(x+w,y+h)(x+w-punta_w*2,y+h)' relleno='(_Rojo_(color),_Verde_(color),_Azul_(color),00)' ancho='1' info='punta der abajo' 
+espacio='E1' tipo='polígono' color='(_Rojo_(borde),_Verde_(borde),_Azul_(borde),00)' dibujar-si='(dir!=&squot;izq&squot;)&&(pos!=&squot;abj&squot;)' coord_abs='sí' expresión='(x+w-punta_w,y+punta_h)(x+w,y)(x+w-punta_w*2,y)' relleno='(_Rojo_(color),_Verde_(color),_Azul_(color),00)' ancho='1' info='punta der arriba' 
+espacio='E1' tipo='texto' color='000000' dibujar-si='dir!=&squot;izq&squot;' coord_abs='sí' expresión='(x+10,y+10)' texto='[txt]' fijo='no' ancho='w-punta_w-20' fuente puntos='txt_size' align='a_justify' anchor='a_top_left' info='der' 
+</script>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Potenciación</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='450' dibujar-si='!evalua' fijo='sí' escala='45' O.x='-250' O.y='180' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="E_03" value="tipo='R2' id='E2' x='15' y='110' ancho='994' alto='450' dibujar-si='evalua' fijo='sí' escala='42' O.x='-350' O.y='180' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='n4' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Animar' expresión='(pleca._w/4-150/2,pleca._h-35-15,150,35)' valor='1' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='animar' dibujar-si='(kk!=50)' activo-si='(evalua==0)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_02" value="id='n1' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Otra potencia' expresión='(pleca._w/4-150/2,pleca._h-35-15,150,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='otroPotencia()' dibujar-si='(kk==50)' activo-si='(evalua==0)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_03" value="id='n2' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Términos' expresión='(3*pleca._w/4-150/2,pleca._h-35-15,150,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='evalua=1' dibujar-si='evalua=0' activo-si='(kk==0)||(kk==50)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_04" value="id='n3' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Volver a explorar' expresión='(3*pleca._w/4-180/2,pleca._h-35-15,180,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='evalua=0' dibujar-si='evalua=1' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_05" value="id='g23' tipo='gráfico' espacio='E2' color='0000ff' color-int='ff0000' tamaño='10' expresión='(g23.x,g23.y)' imagen='images/base.svg' ">
+    <param name="C_06" value="id='g24' tipo='gráfico' espacio='E2' color='0000ff' color-int='ff0000' tamaño='10' expresión='(g24.x,g24.y)' imagen='images/exponente.svg' ">
+    <param name="C_07" value="id='g25' tipo='gráfico' espacio='E2' color='0000ff' color-int='ff0000' tamaño='10' expresión='(g25.x,g25.y)' imagen='images/potencia.svg' ">
+    <param name="A_01" value="id='I' vector='sí' evaluar='una-sola-vez' tamaño='11' expresión='I[0]=&squot;images/cero.png&squot;;I[1]=&squot;images/uno.png&squot;;I[2]=&squot;images/dos.png&squot;;I[3]=&squot;images/tres.png&squot;;I[4]=&squot;images/cuatro.png&squot;;I[5]=&squot;images/cinco.png&squot;;I[6]=&squot;images/seis.png&squot;;I[7]=&squot;images/siete.png&squot;;I[8]=&squot;images/ocho.png&squot;;I[9]=&squot;images/nueve.png&squot;' tipo='vector' ">
+    <param name="A_02" value="id='I2' vector='sí' evaluar='una-sola-vez' tamaño='8' expresión='I2[0]=&squot;images/cero.png&squot;;I2[1]=&squot;images/uno.png&squot;;I2[2]=&squot;images/dos_horse50.png&squot;;I2[3]=&squot;images/tres_horse50.png&squot;;I2[4]=&squot;images/cuatro_horse50.png&squot;;I2[5]=&squot;images/cinco_horse50.png&squot;;I2[6]=&squot;images/seis_horse50.png&squot;' tipo='vector' ">
+    <param name="A_03" value="id='otroPotencia()' algoritmo='sí' expresión='0' hacer='A=ent(rnd*9)+1;B=ent(rnd*5)+2;kk=0;n4=0;g1.x=-4;g1.y=1;g2.x=-2.5;g2.y=0.7;g3.x=1.6;g3.y=2;g4.x=0;g4.y=2;g5.x=1.2;g5.y=-0.5;g6.x=-0.5;g6.y=0.3;g7.x=-1.1;g7.y=2.1;g8.x=-2;g8.y=2.8;g9.x=-3.5;g9.y=1.7;g12.x=-1.8;g12.y=1.9;g13.x=0.4;g13.y=0.9;g14.x=-3.2;g14.y=2.6;g15.x=-1.6;g15.y=0.7;g16.x=-4.4;g16.y=2.8;g23.x=-0.5;g23.y=rnd*2+4;g24.x=-0.5;g24.y=rnd*2+2;g25.x=-0.5;g25.y=rnd*2' tipo='función' ">
+    <param name="A_04" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='otro=1;evalua=0;kk=0;n4=0;;otroPotencia()' ">
+    <param name="A_05" value="id='TERMINOS' algoritmo='sí' evaluar='siempre' hacer='g1.x=((A=1)&(n4=1))?(-4+9*(kk/50)):g1.x;g1.y=((A=1)&(n4=1))?(1+1*(kk/50)):g1.y;g2.x=((A=2)&(n4=1))?(-2.5+7.5*(kk/50)):g2.x;g2.y=((A=2)&(n4=1))?(0.7+1.3*(kk/50)):g2.y;g3.x=((A=3)&(n4=1))?(1.6+3.4*(kk/50)):g3.x;g3.y=((A=3)&(n4=1))?2:g3.y;g4.x=((A=4)&(n4=1))?(5*(kk/50)):g4.x;g4.y=((A=4)&(n4=1))?2:g4.y;g5.x=((A=5)&(n4=1))?(1.2+3.8*(kk/50)):g5.x;g5.y=((A=5)&(n4=1))?(-0.5+2.5*(kk/50)):g5.y;g6.x=((A=6)&(n4=1))?(-0.5+5.5*(kk/50)):g6.x;g6.y=((A=6)&(n4=1))?(0.3+1.7*(kk/50)):g6.y;g7.x=((A=7)&(n4=1))?(-1.1+6.1*(kk/50)):g7.x;g7.y=((A=7)&(n4=1))?(2.1-0.1*(kk/50)):g7.y;g8.x=((A=8)&(n4=1))?(-2+7*(kk/50)):g8.x;g8.y=((A=8)&(n4=1))?(2.8-0.8*(kk/50)):g8.y;g9.x=((A=9)&(n4=1))?(-3.5+8.5*(kk/50)):g9.x;g9.y=((A=9)&(n4=1))?(1.7+0.3*(kk/50)):g9.y;g12.x=((B=2)&(n4=1))?(-1.8+7.8*(kk/50)):g12.x;g12.y=((B=2)&(n4=1))?(1.9+1.4*(kk/50)):g12.y;g13.x=((B=3)&(n4=1))?(0.4+5.4*(kk/50)):g13.x;g13.y=((B=3)&(n4=1))?(0.9+2.4*(kk/50)):g13.y;g14.x=((B=4)&(n4=1))?(-3.2+9.2*(kk/50)):g14.x;g14.y=((B=4)&(n4=1))?(2.6+0.7*(kk/50)):g14.y;g15.x=((B=5)&(n4=1))?(-1.6+7.6*(kk/50)):g15.x;g15.y=((B=5)&(n4=1))?(0.7+2.6*(kk/50)):g15.y;g16.x=((B=6)&(n4=1))?(-4.4+10.4*(kk/50)):g16.x;g16.y=((B=6)&(n4=1))?(2.8+0.5*(kk/50)):g16.y;r1=((g23.x>2)&(g23.x<5));r2=((g24.x>7)&(g24.x<12));r3=((g25.x>13.8)&(g25.x<16));encaja=(r1*r2*r3);c1=((g23.y>0.5)&(g23.y<1.5));c2=((g24.y>6.5)&(g24.y<8.5));c3=((g25.y>2.7)&(g25.y<4));correcto=(c1*c2*c3)*encaja' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_m.svg' clip='(120,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='Pulsa el botón “Animar” para ver la multiplicación como una potencia. Y pulsa el botón “Términos” para ubicar los nombres de los términos de la potenciación.' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,450)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='E1' tipo='texto' color='000000' dibujar-si='B>4' coord_abs='no' expresión='(-4,6)' texto='[A]' fijo='no' ancho='1' negrita='sí' fuente puntos='100' align='a_left' anchor='a_center_center' ">
+    <param name="G_06" value="espacio='E1' tipo='texto' color='000000' dibujar-si='B>2' coord_abs='no' expresión='(-1,6)' texto='[A]' fijo='no' ancho='1' negrita='sí' fuente puntos='100' align='a_left' anchor='a_center_center' ">
+    <param name="G_07" value="espacio='E1' tipo='texto' color='000000' coord_abs='no' expresión='(2,6)' texto='[A]' fijo='no' ancho='1' negrita='sí' fuente puntos='100' align='a_left' anchor='a_center_center' ">
+    <param name="G_08" value="espacio='E1' tipo='texto' color='000000' coord_abs='no' expresión='(5,6)' texto='[A]' fijo='no' ancho='1' negrita='sí' fuente puntos='100' align='a_left' anchor='a_center_center' ">
+    <param name="G_09" value="espacio='E1' tipo='texto' color='000000' dibujar-si='B>3' coord_abs='no' expresión='(8,6)' texto='[A]' fijo='no' ancho='1' negrita='sí' fuente puntos='100' align='a_left' anchor='a_center_center' ">
+    <param name="G_10" value="espacio='E1' tipo='texto' color='000000' dibujar-si='B>5' coord_abs='no' expresión='(11,6)' texto='[A]' fijo='no' ancho='1' negrita='sí' fuente puntos='100' align='a_left' anchor='a_center_center' ">
+    <param name="G_11" value="espacio='E1' tipo='texto' color='000000' dibujar-si='pp' coord_abs='no' expresión='(g16.x,g16.y)' texto='[A]' fijo='no' ancho='1' negrita='sí' fuente puntos='100' align='a_left' anchor='a_center_center' ">
+    <param name="G_12" value="espacio='E1' tipo='texto' color='000000' dibujar-si='B>4' coord_abs='no' expresión='[-2.5,6]' texto='×' ancho='1' fuente puntos='90' align='a_left' anchor='a_center_center' ">
+    <param name="G_13" value="espacio='E1' tipo='texto' color='000000' dibujar-si='B>2' coord_abs='no' expresión='[0.5,6]' texto='×' ancho='1' fuente puntos='90' align='a_left' anchor='a_center_center' ">
+    <param name="G_14" value="espacio='E1' tipo='texto' color='000000' coord_abs='no' expresión='[3.5,6]' texto='×' ancho='1' fuente puntos='90' align='a_left' anchor='a_center_center' ">
+    <param name="G_15" value="espacio='E1' tipo='texto' color='000000' dibujar-si='B>3' coord_abs='no' expresión='[6.5,6]' texto='×' ancho='1' fuente puntos='90' align='a_left' anchor='a_center_center' ">
+    <param name="G_16" value="espacio='E1' tipo='texto' color='000000' dibujar-si='B>5' coord_abs='no' expresión='[9.5,6]' texto='×' ancho='1' fuente puntos='90' align='a_left' anchor='a_center_center' ">
+    <param name="G_17" value="espacio='E1' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='[20,20]' texto='La multiplicación ' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_18" value="espacio='E1' tipo='texto' color='000000' dibujar-si='kk=50' coord_abs='sí' expresión='[523,257]' texto='= [A^B]' fijo='no' ancho='1' negrita='sí' fuente puntos='100' align='a_left' anchor='a_top_left' ">
+    <param name="G_19" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(kk=50)&((B!=2)&(B!=3))' coord_abs='sí' expresión='[E1._w/2,E1._h-20]' texto='Y se lee: “\b{[A]} elevado a \b{[B]}”' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_bottom_center' ">
+    <param name="G_20" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(kk=50)&(B=2)' coord_abs='sí' expresión='[E1._w/2,E1._h-20]' texto='Y se lee: “\b{[A]} elevado a \b{[B]}” o “\b{[A]} al \b{cuadrado}”' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_bottom_center' ">
+    <param name="G_21" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(kk=50)&(B=3)' coord_abs='sí' expresión='[E1._w/2,E1._h-20]' texto='Y se lee: “\b{[A]} elevado a \b{[B]}” o “\b{[A]} al \b{cubo}”' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_bottom_center' ">
+    <param name="G_22" value="espacio='E1' tipo='texto' color='16a085' dibujar-si='(A==(s+1))||(kk!=50)' coord_abs='no' expresión='(_Eval_(&squot;g&squot;+(s+1)+&squot;.x&squot;),_Eval_(&squot;g&squot;+(s+1)+&squot;.y&squot;))' familia='s' s.intervalo='[0,9]' s.pasos='9' texto='[s+1]' fijo='no' ancho='1' color_borde_texto='f1f2f6' negrita='sí' fuente puntos='100' align='a_left' anchor='a_center_center' border_size='4' ">
+    <param name="G_23" value="espacio='E1' tipo='texto' color='2980b9' dibujar-si='(B==(s+2))||(kk!=50)' coord_abs='no' expresión='(_Eval_(&squot;g1&squot;+(s+2)+&squot;.x&squot;),_Eval_(&squot;g1&squot;+(s+2)+&squot;.y&squot;))' familia='s' s.intervalo='[0,5]' s.pasos='5' texto='[s+2]' fijo='no' ancho='1' color_borde_texto='f1f2f6' negrita='sí' fuente puntos='70' align='a_left' anchor='a_center_center' border_size='4' ">
+    <param name="G_24" value="espacio='E2' tipo='texto' color='000000' coord_abs='sí' expresión='[20,20]' texto='¡Ubica los nombres de los términos de la potenciación!' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_25" value="espacio='E2' tipo='texto' color='000000' coord_abs='no' expresión='(5,3)' texto='[A]' fijo='no' ancho='1' negrita='sí' fuente puntos='100' align='a_left' anchor='a_center_center' ">
+    <param name="G_26" value="espacio='E2' tipo='texto' color='000000' coord_abs='no' expresión='(6,4)' texto='[B]' fijo='no' ancho='1' negrita='sí' fuente puntos='70' align='a_left' anchor='a_center_center' ">
+    <param name="G_27" value="espacio='E2' tipo='texto' color='000000' coord_abs='no' expresión='[6.5,3]' texto='= [A^B]' fijo='no' ancho='1' fuente puntos='60' align='a_left' anchor='a_center_left' ">
+    <param name="G_28" value="espacio='E2' tipo='imagen' fondo='sí' coord_abs='no' expresión='(9.2,6.5,0.4,0.4)' archivo='images/nube1.png' ">
+    <param name="G_29" value="espacio='E2' tipo='imagen' fondo='sí' coord_abs='no' expresión='(3.5,1,0.4,0.4)' archivo='images/nube2.png' ">
+    <param name="G_30" value="espacio='E2' tipo='imagen' fondo='sí' coord_abs='no' expresión='(14,3,0.4,0.4)' archivo='images/flecha.png' ">
+    <param name="G_31" value="espacio='E2' tipo='texto' color='000000' coord_abs='no' expresión='(g23.x,g23.y)' texto='\b{Base}\nFactor que\nse repite' ancho='1' color_borde_texto='f1f2f6' fuente puntos='20' align='a_center' anchor='a_center_center' border_size='3' ">
+    <param name="G_32" value="espacio='E2' tipo='texto' color='000000' coord_abs='no' expresión='(g24.x,g24.y)' texto='\b{Exponente}\nNúmero de veces que\nse repite el factor' ancho='1' color_borde_texto='f1f2f6' fuente puntos='20' align='a_center' anchor='a_center_center' border_size='3' ">
+    <param name="G_33" value="espacio='E2' tipo='texto' color='000000' coord_abs='no' expresión='(g25.x,g25.y)' texto='\b{Potencia}\nResultado\no producto' ancho='1' color_borde_texto='f1f2f6' fuente puntos='20' align='a_center' anchor='a_center_center' border_size='3' ">
+    <param name="G_34" value="espacio='E2' tipo='imagen' dibujar-si='correcto' coord_abs='no' expresión='(17,7,1,1)' archivo='images/emojis.svg' clip='(0,0,100,100)' ">
+    <param name="Animación" value="pausa='40' controles='sí' auto='no' repetir='no' inicio='kk=0' hacer='kk=kk+1;hp=(pn<-3.5)*6+((pn>-3.5)&(pn<0))*1.8-(pn>0)&(pn<1)-(pn>1)*pn;h0=(pn<-3.5)*6+((pn>-3.5)&(pn<0))*3+(pn>0)&(pn<1)+(pn>1)*0;pn=pn+.2;ang=ang+kk*36' mientras='kk<50' ">
+  </ajs>
+
+
+
+</body>
+</html>

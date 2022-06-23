@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Medición del tiempo</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' despl_imagen='expand.' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='btnVerif01' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Verificar' expresión='((pleca._w-120)/2,pleca._h-35-15,120,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='Verificar()' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_02" value="id='OtroEj' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Otro ejercicio' expresión='(pleca._w-160-15,pleca._h-35-15,160,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='reInit();otraVez=(otraVez=1)?0:1;' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_03" value="id='n0' tipo='numérico' interfaz='campo de texto' región='interior' espacio='pleca' expresión='(posPreg1.x-75,posPreg1.y+90,50,35)' valor='&squot;&squot;' decimales='0' visible='sí' activo-si='!bien0' evaluar='sí' respuesta='krypto_ovdfoppaae0q744nvvevqn95vljfc8tsrl3uac5v2pralpbnfrrjgkqqql6h5lft73b2cl6o2a2m3me4brusbkks8fd2ijue1iavau66fj58tfff2ojvbe5pjlarfn7sr9ea38cl2rbvaukoq3mqg2m7oe4ou6qd' keyboard='sí' kblayout='16x1' kbexp='(194,506)' ">
+    <param name="C_04" value="id='n1' tipo='numérico' interfaz='campo de texto' región='interior' espacio='pleca' expresión='(posPreg1.x+22,posPreg1.y+90,50,35)' valor='&squot;&squot;' decimales='0' visible='sí' activo-si='!bien1' evaluar='sí' respuesta='krypto_bvd7teevi378vpd6g9v0n7rqbiubtaessj1k2cve8o3fns4pntarbnjlnb3iaqmmghlullp3r7gd0oaegd0o6npagjjui38vlejlo5totdhbvbqjlivgjv6aduut7or85f4pntatot9bvtpk2tblthl8fdthdagl3m360meoermr' keyboard='sí' kblayout='16x1' kbexp='(194,506)' ">
+    <param name="C_05" value="id='n2' tipo='numérico' interfaz='campo de texto' región='interior' espacio='pleca' expresión='(posPreg1.x+130,posPreg1.y+90,50,35)' valor='&squot;&squot;' decimales='0' visible='sí' activo-si='!bien2' evaluar='sí' respuesta='krypto_nrdrijvae028vr9vmsocs38utptvv9ecuruhqsnf2uklsp5vblqltu2tnbe7lml8cc5gnqno60mu4gtcglegl8memjnqirnkfcq7ksspo54uusuc2prosl2hahfv3u4rbucpftan2n3gnriqjnqt2bb6flroa0mm2m2a0r4c97rd' keyboard='sí' kblayout='16x1' kbexp='(194,506)' ">
+    <param name="C_06" value="id='n3' tipo='numérico' interfaz='campo de texto' región='interior' espacio='pleca' expresión='(posPreg2.x-75,posPreg2.y+90,50,35)' valor='&squot;&squot;' decimales='0' visible='sí' activo-si='!bien3' evaluar='sí' respuesta='krypto_bkd7leuqi3a8f0865fniq3fpjeudphaqr9corvbu3pb9iokn7hpbnk6nm2d2rjnipht3mkc0bmgdbomdclqjb2be6qf747veuathsaucummgqtn36ora5fksf1joinbbj7jkmlmq4mtjvlmo6agd1gd4gdmgdttu' keyboard='sí' kblayout='16x1' kbexp='(194,506)' ">
+    <param name="C_07" value="id='n4' tipo='numérico' interfaz='campo de texto' región='interior' espacio='pleca' expresión='(posPreg2.x+22,posPreg2.y+90,50,35)' valor='&squot;&squot;' decimales='0' visible='sí' activo-si='!bien4' evaluar='sí' respuesta='krypto_5gd3eemk571kvmdeqie3nbnlu4qrebeqsp2aj1uufoflib3pfioittm6f6eiqhdln2rvb1uhtg2m1cleom0cp4ilfup75fdq7tde7tkrtu7l75k7uinl6vgqfonb9ofvi7cp3ogovulpsnlk2tlqj6mknq8htk1r1ru40m3mgamr' keyboard='sí' kblayout='16x1' kbexp='(194,506)' ">
+    <param name="C_08" value="id='n5' tipo='numérico' interfaz='campo de texto' región='interior' espacio='pleca' expresión='(posPreg2.x+130,posPreg2.y+90,50,35)' valor='&squot;&squot;' decimales='0' visible='sí' activo-si='!bien5' evaluar='sí' respuesta='krypto_pudrqjr65n9fl7te75vdsvjnnbqt4i76vs6a3vtd3um9bu9urt46qrveulia4bbtfc9sbbdc930r0me1rd2m9jluvs6hiv8hueqmaus7eninn4nv8edqstghaur34s98p55pf3hvrrffue4lrilur2bvaspo2bgl0bs0bdv1mseb' keyboard='sí' kblayout='16x1' kbexp='(194,506)' ">
+    <param name="A_01" value="id='restringir(tSeg)' algoritmo='sí' expresión='tRestringido' hacer='tSeg=(tSeg<3600)?tSeg+43200:((tSeg>46800)?tSeg-43200:tSeg);tSeg=(tSeg>=86400)?tSeg-86400:tSeg;tSeg=(tSeg<0)?tSeg+86400:tSeg;;tRestringido=tSeg' tipo='función' ">
+    <param name="A_02" value="id='getHours(tSeg)' algoritmo='sí' expresión='hours' hacer='cociente1=ent(tSeg/60);hours=ent(cociente1/60)' tipo='función' ">
+    <param name="A_03" value="id='getMinutes(tSeg)' algoritmo='sí' expresión='minutes' hacer='cociente1=ent(tSeg/60);cociente2=ent(cociente1/60);minutes=round( 60*((cociente1/60)-cociente2) )' tipo='función' ">
+    <param name="A_04" value="id='getSeconds(tSeg)' algoritmo='sí' expresión='seconds' hacer='cociente1=ent(tSeg/60);seconds=round( 60*((tSeg/60)-cociente1) );;' tipo='función' ">
+    <param name="A_05" value="id='falsoResul(tS1,tS2,oper)' algoritmo='sí' expresión='resultado' hacer='tS1=tS1+(ent(rnd*10))*60;resultado=(oper=1)?tS1+tS2:tS1-tS2 ' tipo='función' ">
+    <param name="A_06" value="id='buenResul(tS1,tS2,oper)' algoritmo='sí' expresión='resultado' hacer='resultado=(oper=1)?tS1+tS2:tS1-tS2 ' tipo='función' ">
+    <param name="A_07" value="id='esCorrecto()' algoritmo='sí' expresión='correcto' hacer='correcto=(rnd<0.5)?0:1' tipo='función' ">
+    <param name="A_08" value="id='Correcto' vector='sí' evaluar='una-sola-vez' tamaño='3' expresión='Correcto[0]=0;Correcto[1]=0;Correcto[2]=0' tipo='vector' ">
+    <param name="A_09" value="id='posBotX' vector='sí' evaluar='una-sola-vez' tamaño='3' expresión='posBotX[0]=0;posBotX[1]=250;posBotX[2]=500' tipo='vector' ">
+    <param name="A_10" value="id='reInit()' algoritmo='sí' expresión='x' inicio='n0.ok=0;n1.ok=0;n2.ok=0;n3.ok=0;n4.ok=0;n5.ok=0;n6.ok=0;n7.ok=0;n8.ok=0' hacer='verif=0;tSeg1=restringir(initTime());tSeg2=restringir(initTime());;operUno=tSeg1+tSeg2;;tSeg3=restringir(initTime());tSeg4=restringir(initTime());tAux34=tSeg3;tSeg3=(tSeg3<tSeg4)?tSeg4:tSeg3;tSeg4=(tAux34<tSeg4)?tAux34:tSeg4;;operDos=tSeg3-tSeg4;;tSeg5=restringir(initTime());tSeg6=restringir(initTime());tAux56=tSeg5;tSeg5=(tSeg5<tSeg6)?tSeg6:tSeg5;tSeg6=(tAux56<tSeg6)?tAux56:tSeg6;;operTres=tSeg5-tSeg6;;tSeg7=restringir(initTime());tSeg8=restringir(initTime());tAux78=tSeg7;tSeg7=(tSeg7<tSeg8)?tSeg8:tSeg7;tSeg8=(tAux78<tSeg8)?tAux78:tSeg8;;tSeg9=restringir(initTime());tSeg10=restringir(initTime());;tSeg11=restringir(initTime());tSeg12=restringir(initTime());;;Correcto[0]=esCorrecto();Correcto[1]=esCorrecto();Correcto[2]=esCorrecto();;tResulA=(Correcto[0]=0)?falsoResul(tSeg7,tSeg8,0):buenResul(tSeg7,tSeg8,0);tResulB=(Correcto[1]=0)?falsoResul(tSeg9,tSeg10,1):buenResul(tSeg9,tSeg10,1);tResulC=(Correcto[2]=0)?falsoResul(tSeg11,tSeg12,1):buenResul(tSeg11,tSeg12,1);;a=0;b=0;c=0;Ej1=0;Ej2=0;Ej3=0;Ej4=0;Ej5=0;Ej6=0;otraVez=0;n0=&squot;&squot;;n1=&squot;&squot;;n2=&squot;&squot;;n3=&squot;&squot;;n4=&squot;&squot;;n5=&squot;&squot;;;verif=0;bien0=0;bien1=0;bien2=0;bien3=0;bien4=0;bien5=0;' tipo='función' ">
+    <param name="A_11" value="id='initTime()' algoritmo='sí' expresión='tiempo' hacer='tiempo=ent(rnd*86400)' tipo='función' ">
+    <param name="A_12" value="id='Verificar()' algoritmo='sí' expresión='x' inicio='verif=1' hacer='bien0=n0.ok;bien1=n1.ok;bien2=n2.ok;bien3=n3.ok;bien4=n4.ok;bien5=n5.ok' tipo='función' ">
+    <param name="A_13" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='reInit();;posPreg1.x=200;posPreg1.y=240;posPreg1.sep=100;;posPreg2.x=200+500;posPreg2.y=posPreg1.y;posPreg2.sep=posPreg1.sep' ">
+    <param name="A_14" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer=';' ">
+    <param name="A_15" value="id='clean' evento='sí' condición='otraVez=1' acción='limpiar' ejecución='siempre' ">
+    <param name="A_16" value="id='fin' evento='sí' condición='1' acción='calcular' parámetro='otraVez=0' ejecución='alternar' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_m.svg' clip='(240,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='Resuelve las siguientes sumas y restas de tiempos, al terminar de escribir la respuesta en los campos de texto pulsa el botón “Verificar”.' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,450)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='pleca' tipo='texto' color='000000' coord_abs='sí' expresión='(posPreg1.x-100,posPreg1.y+42)' texto='+' ancho='1' negrita='sí' fuente puntos='35' align='a_left' anchor='a_top_left' ">
+    <param name="G_06" value="espacio='pleca' tipo='texto' color='000000' coord_abs='sí' expresión='(posPreg1.x,posPreg1.y)' texto='[getHours(tSeg1)]h\n[getHours(tSeg2)]h\nh' decimales='0' fijo='no' ancho='1' negrita='sí' fuente puntos='35' align='a_right' anchor='a_top_right' ">
+    <param name="G_07" value="espacio='pleca' tipo='texto' color='000000' coord_abs='sí' expresión='(posPreg1.x+posPreg1.sep+5,posPreg1.y)' texto='[(getMinutes(tSeg1)<10)?&squot;0&squot;:&squot;&squot;][getMinutes(tSeg1)]m\n[(getMinutes(tSeg2)<10)?&squot;0&squot;:&squot;&squot;][getMinutes(tSeg2)]m\nm' decimales='0' fijo='no' ancho='1' negrita='sí' fuente puntos='35' align='a_right' anchor='a_top_right' ">
+    <param name="G_08" value="espacio='pleca' tipo='texto' color='000000' coord_abs='sí' expresión='(posPreg1.x+2*posPreg1.sep,posPreg1.y)' texto='[(getSeconds(tSeg1)<10)?&squot;0&squot;:&squot;&squot;][getSeconds(tSeg1)]s\n[(getSeconds(tSeg2)<10)?&squot;0&squot;:&squot;&squot;][getSeconds(tSeg2)]s\ns' decimales='0' fijo='no' ancho='1' negrita='sí' fuente puntos='35' align='a_right' anchor='a_top_right' ">
+    <param name="G_09" value="espacio='pleca' tipo='segmento' color='000000' coord_abs='sí' expresión='(posPreg1.x-110,posPreg1.y+85)(posPreg1.x+210,posPreg1.y+85)' tamaño='0' ancho='2' ">
+    <param name="G_10" value="espacio='pleca' tipo='texto' color='000000' coord_abs='sí' expresión='(posPreg2.x-100,posPreg2.y+42)' texto='-' ancho='1' negrita='sí' fuente puntos='35' align='a_left' anchor='a_top_left' ">
+    <param name="G_11" value="espacio='pleca' tipo='texto' color='000000' coord_abs='sí' expresión='(posPreg2.x,posPreg2.y)' texto='[getHours(tSeg3)]h\n[getHours(tSeg4)]h\nh' decimales='0' fijo='no' ancho='1' negrita='sí' fuente puntos='35' align='a_right' anchor='a_top_right' ">
+    <param name="G_12" value="espacio='pleca' tipo='texto' color='000000' coord_abs='sí' expresión='(posPreg2.x+posPreg2.sep+5,posPreg2.y)' texto='[(getMinutes(tSeg3)<10)?&squot;0&squot;:&squot;&squot;][getMinutes(tSeg3)]m\n[(getMinutes(tSeg4)<10)?&squot;0&squot;:&squot;&squot;][getMinutes(tSeg4)]m\nm' decimales='0' fijo='no' ancho='1' negrita='sí' fuente puntos='35' align='a_right' anchor='a_top_right' ">
+    <param name="G_13" value="espacio='pleca' tipo='texto' color='000000' coord_abs='sí' expresión='(posPreg2.x+2*posPreg2.sep,posPreg2.y)' texto='[(getSeconds(tSeg3)<10)?&squot;0&squot;:&squot;&squot;][getSeconds(tSeg3)]s\n[(getSeconds(tSeg4)<10)?&squot;0&squot;:&squot;&squot;][getSeconds(tSeg4)]s\ns' decimales='0' fijo='no' ancho='1' negrita='sí' fuente puntos='35' align='a_right' anchor='a_top_right' ">
+    <param name="G_14" value="espacio='pleca' tipo='segmento' color='000000' coord_abs='sí' expresión='(posPreg2.x-110,posPreg2.y+85)(posPreg2.x+210,posPreg2.y+85)' tamaño='0' ancho='2' ">
+    <param name="G_15" value="espacio='pleca' tipo='imagen' dibujar-si='(verif)&&(bien0)' coord_abs='sí' expresión='(posPreg1.x-75+25,posPreg1.y+155,1,1)' archivo='images/ok.svg' ">
+    <param name="G_16" value="espacio='pleca' tipo='imagen' dibujar-si='(verif)&&(!bien0)' coord_abs='sí' expresión='(posPreg1.x-75+25,posPreg1.y+155,1,1)' archivo='images/ko.svg' ">
+    <param name="G_17" value="espacio='pleca' tipo='imagen' dibujar-si='(verif)&&(bien1)' coord_abs='sí' expresión='(posPreg1.x+22+25,posPreg1.y+155,1,1)' archivo='images/ok.svg' ">
+    <param name="G_18" value="espacio='pleca' tipo='imagen' dibujar-si='(verif)&&(!bien1)' coord_abs='sí' expresión='(posPreg1.x+22+25,posPreg1.y+155,1,1)' archivo='images/ko.svg' ">
+    <param name="G_19" value="espacio='pleca' tipo='imagen' dibujar-si='(verif)&&(bien2)' coord_abs='sí' expresión='(posPreg1.x+130+25,posPreg1.y+155,1,1)' archivo='images/ok.svg' ">
+    <param name="G_20" value="espacio='pleca' tipo='imagen' dibujar-si='(verif)&&(!bien2)' coord_abs='sí' expresión='(posPreg1.x+130+25,posPreg1.y+155,1,1)' archivo='images/ko.svg' ">
+    <param name="G_21" value="espacio='pleca' tipo='imagen' dibujar-si='(verif)&&(bien3)' coord_abs='sí' expresión='(posPreg2.x-75+25,posPreg2.y+155,1,1)' archivo='images/ok.svg' ">
+    <param name="G_22" value="espacio='pleca' tipo='imagen' dibujar-si='(verif)&&(!bien3)' coord_abs='sí' expresión='(posPreg2.x-75+25,posPreg2.y+155,1,1)' archivo='images/ko.svg' ">
+    <param name="G_23" value="espacio='pleca' tipo='imagen' dibujar-si='(verif)&&(bien4)' coord_abs='sí' expresión='(posPreg2.x+22+25,posPreg2.y+155,1,1)' archivo='images/ok.svg' ">
+    <param name="G_24" value="espacio='pleca' tipo='imagen' dibujar-si='(verif)&&(!bien4)' coord_abs='sí' expresión='(posPreg2.x+22+25,posPreg2.y+155,1,1)' archivo='images/ko.svg' ">
+    <param name="G_25" value="espacio='pleca' tipo='imagen' dibujar-si='(verif)&&(bien5)' coord_abs='sí' expresión='(posPreg2.x+130+25,posPreg2.y+155,1,1)' archivo='images/ok.svg' ">
+    <param name="G_26" value="espacio='pleca' tipo='imagen' dibujar-si='(verif)&&(!bien5)' coord_abs='sí' expresión='(posPreg2.x+130+25,posPreg2.y+155,1,1)' archivo='images/ko.svg' ">
+  </ajs>
+
+
+
+</body>
+</html>

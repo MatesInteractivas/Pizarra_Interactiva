@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="M_B1_Cuadrado_y_cubo" 
+	nivel="Primaria" 
+	area="Matemáticas, Números y operaciones" 
+	plataforma="HTML 5" 
+	>
+	<titulo><![CDATA[
+		Cuadrado y Cubo
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+    Ofrecer actividades que permitan al alumno practicar con los cuadrados y cubos.
+	]]></Descripcion>
+</recurso>

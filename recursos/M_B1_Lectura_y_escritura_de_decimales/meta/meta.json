@@ -1,0 +1,13 @@
+{
+  "nivel": [
+    "Primaria"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Números y operaciones"
+  ], 
+  "titulo": "Lectura y escritura de números decimales", 
+  "descripcion": "Presentar la forma de expresar y escribir con palabras los números decimales.",
+  "resena": "Presentar la forma de expresar y escribir con palabras los números decimales.",
+  "id": "M_B1_Lectura_y_escritura_de_decimales"
+}

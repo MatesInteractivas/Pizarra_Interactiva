@@ -1,0 +1,13 @@
+{
+  "nivel": [
+    "Primaria"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Geometría"
+  ], 
+  "titulo": "El plano cartesiano", 
+  "descripcion": "Que los alumnos encuentren las coordenadas cartesianas de un punto dado y ubiquen puntos en el plano dadas sus coordenadas.",
+  "resena": "Que los alumnos encuentren las coordenadas cartesianas de un punto dado y ubiquen puntos en el plano dadas sus coordenadas.",
+  "id": "M_B3_El_plano_cartesiano"
+}

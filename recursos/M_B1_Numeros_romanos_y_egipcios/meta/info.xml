@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="M_B1_Numeros_romanos_y_egipcios" 
+	nivel="Primaria" 
+	area="Matemáticas, Números y operaciones" 
+	plataforma="HTML 5" 
+	>
+	<titulo><![CDATA[
+		Números romanos y egipcios
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+    Comprender las estructuras de numeración en las culturas romana y egipcia.
+	]]></Descripcion>
+</recurso>

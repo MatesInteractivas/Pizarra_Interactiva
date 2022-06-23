@@ -1,3 +1,0 @@
-Máximo siete partes
-En coordenadas el primer valor es el número de imágenes, luego vienen las coordenadas de cada imagen, primero la x luego la y.
-En partes, primero viene el número de partes y luego el nombre de cada una de las partes

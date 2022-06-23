@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Divisores comunes</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='450' fijo='sí' escala='43' O.x='140' O.y='4' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='n1' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E1' expresión='(20,50,150,35)' valor='&squot;&squot;' decimales='0' visible='sí' keyboard='sí' kblayout='7x2' kbexp='(65,220)' ">
+    <param name="C_02" value="id='m1' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Mostrar ayuda' expresión='((430-160)/2,E1._h-35-15,160,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='ayuda=1' dibujar-si='(ayuda=0)&(p>1)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_03" value="id='m1' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Ocultar ayuda' expresión='((430-160)/2,E1._h-35-15,160,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='ayuda=0' dibujar-si='ayuda=1' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_04" value="id='m3' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Otro ejercicio' expresión='(pleca._w-170-15,pleca._h-35-15,170,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='inicio' activo-si='(p>1)|(jj-1=q)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_05" value="id='verif' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Verificar' expresión='((pleca._w-130)/2,pleca._h-35-15,130,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='p=p+1;((n1!=&squot;&squot;)&&(n1!=0))?verificar():0' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="A_01" value="id='ZZ' vector='sí' evaluar='una-sola-vez' tamaño='9' expresión='ZZ[0]=0;ZZ[1]=ent(rnd*31+2)*3;ZZ[2]=ent(rnd*23+2)*4;ZZ[3]=ent(rnd*18+2)*5;ZZ[4]=ent(rnd*90+10);ZZ[5]=ent(rnd*12+2)*7;ZZ[6]=ent(rnd*6+2)*12;ZZ[7]=ent(rnd*8+2)*10;ZZ[8]=ent(rnd*3+1)*7*3;' tipo='vector' ">
+    <param name="A_02" value="id='M3' matriz='sí' evaluar='una-sola-vez' columnas='11' filas='11' expresión='M3[0,0]=0;M3[1,0]=0;M3[2,0]=0;M3[0,1]=0;M3[1,1]=0;M3[2,1]=0;M3[0,2]=0;M3[1,2]=0;M3[2,2]=0;' tipo='matriz' ">
+    <param name="A_03" value="id='N3' matriz='sí' evaluar='una-sola-vez' columnas='11' filas='11' expresión='M3[0,0]=0;M3[1,0]=0;M3[2,0]=0;M3[0,1]=0;M3[1,1]=0;M3[2,1]=0;M3[0,2]=0;M3[1,2]=0;M3[2,2]=0;' tipo='matriz' ">
+    <param name="A_04" value="id='VY' vector='sí' evaluar='una-sola-vez' tamaño='11' expresión='VX[0]=0;VX[1]=0;VX[2]=0' tipo='vector' ">
+    <param name="A_05" value="id='VX' vector='sí' evaluar='una-sola-vez' tamaño='11' expresión='VX[0]=0;VX[1]=0;VX[2]=0' tipo='vector' ">
+    <param name="A_06" value="id='WY' vector='sí' evaluar='una-sola-vez' tamaño='11' expresión='VX[0]=0;VX[1]=0;VX[2]=0' tipo='vector' ">
+    <param name="A_07" value="id='WX' vector='sí' evaluar='una-sola-vez' tamaño='11' expresión='VX[0]=0;VX[1]=0;VX[2]=0' tipo='vector' ">
+    <param name="A_08" value="id='VZ' vector='sí' evaluar='una-sola-vez' tamaño='13' expresión='VX[0]=0;VX[1]=0;VX[2]=0' tipo='vector' ">
+    <param name="A_09" value="id='WZ' vector='sí' evaluar='una-sola-vez' tamaño='12' expresión='VX[0]=0;VX[1]=0;VX[2]=0' tipo='vector' ">
+    <param name="A_10" value="id='verificar()' algoritmo='sí' expresión='0' hacer='n1=(n1==&squot;&squot;)?0:n1;z1=(ent(n/n1)=(n/n1))?1:2;z2=(ent(m/n1)=(m/n1))?3:4;;' tipo='función' ">
+    <param name="A_11" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='started=0' hacer='vertexto=0;;n1=1;a=ent(rnd*8+1);b=ent(rnd*8+1);n=ZZ[a];m=ZZ[b];;//;txt_y=150;datos_x=-4.3;datos_y=4.3;sep_x=0.3;escala_x=1.25;escala_y=0.94' ">
+    <param name="A_12" value="id='c' expresión='0.98' evaluar='una-sola-vez' constante='sí' ">
+    <param name="A_13" value="id='d' expresión='0.68' evaluar='una-sola-vez' constante='sí' ">
+    <param name="A_14" value="id='e' expresión='1' evaluar='una-sola-vez' constante='sí' ">
+    <param name="A_15" value="id='f' expresión='0.68' evaluar='una-sola-vez' constante='sí' ">
+    <param name="A_16" value="id='a4' algoritmo='sí' evaluar='siempre' inicio='k=0;j=1;i=0' hacer='k=k+1;M3[j,k]=k+10*(j-1);VX[k]=((n/(M3[j,k])=ent(n/(M3[j,k]))))?k:VX[k];VY[j]=((n/(M3[j,k])=ent(n/(M3[j,k]))))?j:VY[j];M3[j,k]=((n/(M3[j,k])=ent(n/(M3[j,k]))))?0:M3[j,k];j=(k=10)?j+1:j;k=(k=10)?0:k;i=i+1;' mientras='i<100' ">
+    <param name="A_17" value="id='a5' algoritmo='sí' evaluar='siempre' inicio='km=0;jm=1;im=0' hacer='km=km+1;N3[jm,km]=km+10*(jm-1);WX[km]=((m/(N3[jm,km])=ent(m/(N3[jm,km]))))?km:WX[km];WY[jm]=((m/(N3[jm,km])=ent(m/(N3[jm,km]))))?jm:WY[jm];N3[jm,km]=((m/(N3[jm,km])=ent(m/(N3[jm,km]))))?0:N3[jm,km];jm=(km=10)?jm+1:jm;km=(km=10)?0:km;im=im+1' mientras='im<100' ">
+    <param name="A_18" value="id='a6' algoritmo='sí' evaluar='una-sola-vez' inicio='k=0;j=1;i=0;jj=1' hacer='k=k+1;VZ[jj]=((N3[j,k]=M3[j,k])&(N3[j,k]=0))?10*(j-1)+k:VZ[jj];jj=((N3[j,k]=0)&(M3[j,k]=0))?jj+1:jj;j=(k=10)?j+1:j;k=(k=10)?0:k;i=i+1;;;' mientras='i<100' ">
+    <param name="A_19" value="id='a7' algoritmo='sí' evaluar='siempre' inicio='k=0;j=1;i=0;ii=0' hacer='k=k+1;WZ[p]=n1;VZ[k]=((VZ[k]=WZ[p])&(WZ[k]>0))?120:VZ[k];j=(k=10)?j+1:j;k=(k=10)?0:k;i=i+1;' mientras='i<100' ">
+    <param name="A_20" value="id='a8' algoritmo='sí' evaluar='siempre' inicio='k=0; i=0; q=0' hacer=';q=((VZ[k]=120)&(VZ[k]>0))?q+1:q;k=k+1;i=i+1;;' mientras='i<12' ">
+    <param name="A_21" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_m.svg' clip='(240,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='Encuentra los divisores comunes de los dos números que se presentan a continuación. Escribe el divisor y pulsa el botón “Verificar” para comprobar tu respuesta.' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,450)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='E1' tipo='polígono' color='000000' dibujar-si='0' coord_abs='no' expresión='(-9,3.3)(8,3.3)(8,-5.0)(-9,-5.0)(-9,3.3)' relleno='00ff00' ancho='1' ">
+    <param name="G_06" value="espacio='E1' tipo='imagen' dibujar-si='0' coord_abs='no' expresión='(2.5,-1,1,1)' archivo='images/imagen.png' ">
+    <param name="G_07" value="espacio='E1' tipo='polígono' color='000000' dibujar-si='0' coord_abs='no' expresión='(-8,4.6)(6,4.6)(6,3.6)(-8,3.6)(-8,4.6)' relleno='ffff00' ancho='1' ">
+    <param name="G_08" value="espacio='E1' tipo='imagen' dibujar-si='0' coord_abs='no' expresión='(5.4,-3.7)' archivo='images/flecha.png' ">
+    <param name="G_09" value="espacio='E1' tipo='texto' color='000000' dibujar-si='p=0' coord_abs='sí' expresión='[20,20]' texto='Escribe un divisor común entre \b{[n]} y \b{[m]}' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_10" value="espacio='E1' tipo='texto' color='000000' dibujar-si='p>0' coord_abs='sí' expresión='[20,20]' texto='Escribe otro divisor común entre \b{[n]} y \b{[m]}' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_11" value="espacio='E1' tipo='segmento' fondo='sí' color='000000' coord_abs='no' expresión='(datos_x-0.5+s*escala_x,datos_y+0.5)(datos_x-0.5+s*escala_x,datos_y+0.5-escala_y*10)' familia='s' s.intervalo='[0,10]' s.pasos='10' tamaño='0' ancho='1' ">
+    <param name="G_12" value="espacio='E1' tipo='segmento' fondo='sí' color='000000' coord_abs='no' expresión='(datos_x-0.5,datos_y+0.5-escala_y*s)(datos_x-0.5+escala_x*10,datos_y+0.5-escala_y*s)' familia='s' s.intervalo='[0,10]' s.pasos='10' tamaño='0' ancho='1' ">
+    <param name="G_13" value="espacio='E1' tipo='punto' color='80ff0000' dibujar-si='(ayuda)&&((n%(s+1))==0)' coord_abs='no' expresión='(escala_x*(s%10)+datos_x,-escala_y*ent(s/10)+datos_y)' familia='s' s.intervalo='[0,99]' s.pasos='99' fijo='no' tamaño='18' negrita='sí' font_family='Monospaced' fuente puntos='12' ">
+    <param name="G_14" value="espacio='E1' tipo='punto' color='800000ff' dibujar-si='(ayuda)&&((m%(s+1))==0)' coord_abs='no' expresión='(sep_x+escala_x*(s%10)+datos_x,-escala_y*ent(s/10)+datos_y)' familia='s' s.intervalo='[0,99]' s.pasos='99' fijo='no' tamaño='18' negrita='sí' font_family='Monospaced' fuente puntos='12' ">
+    <param name="G_15" value="espacio='E1' tipo='texto' color='000000' coord_abs='no' expresión='(escala_x*(s%10)+datos_x+0.15,-escala_y*ent(s/10)+datos_y)' familia='s' s.intervalo='[0,99]' s.pasos='99' texto='[s+1]' fijo='no' ancho='1' color_borde_texto='f1f2f6' negrita='sí' fuente puntos='16' align='a_left' anchor='a_center_center' border_size='2' ">
+    <param name="G_16" value="espacio='E1' tipo='texto' color='34cc67' dibujar-si='(z1=1)&(z2=3)' coord_abs='sí' expresión='[20,110]' texto='¡Muy bien! \b{[n1]} es divisor de \b{[n]} y \b{[m]}' fijo='no' ancho='380' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_17" value="espacio='E1' tipo='texto' color='d40809' dibujar-si='(z1=1)&(z2!=3)' coord_abs='sí' expresión='[20,110]' texto='Lo siento, \b{[n1]} es divisor de \b{[n]} pero no de \b{[m]}' fijo='no' ancho='380' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_18" value="espacio='E1' tipo='texto' color='d40809' dibujar-si='(z1!=1)&(z2=3)' coord_abs='sí' expresión='[20,110]' texto='Lo siento, \b{[n1]} es divisor de \b{[m]} pero no de \b{[n]}' fijo='no' ancho='380' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_19" value="espacio='E1' tipo='texto' color='d40809' dibujar-si='(z1!=1)&(z2!=3)&(p>0)&&(n1!=1)' coord_abs='sí' expresión='[20,110]' texto='Lo siento, \b{[n1]} no es divisor de \b{[n]} ni de \b{[m]}' fijo='no' ancho='380' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_20" value="espacio='E1' tipo='texto' color='3498db' dibujar-si='jj=2' coord_abs='sí' expresión='[20,170]' texto='Hay \b{[jj-1]} divisor común' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_21" value="espacio='E1' tipo='texto' color='3498db' dibujar-si='jj>2' coord_abs='sí' expresión='[20,170]' texto='Hay \b{[jj-1]} divisores comunes' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_22" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(q==1)&&((jj-1)>1)' coord_abs='sí' expresión='[20,270]' texto='Muy bien, llevas \b{[q]} divisor común' fijo='no' ancho='380' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_23" value="espacio='E1' tipo='texto' color='000000' dibujar-si='q>1' coord_abs='sí' expresión='[20,270]' texto='Ahora llevas \b{[q]} divisores comunes' fijo='no' ancho='380' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_24" value="espacio='E1' tipo='texto' color='000000' dibujar-si='q==(jj-1)' coord_abs='sí' expresión='(20,320)' texto='Excelente encontraste todos los múltiplos' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+  </ajs>
+
+
+
+</body>
+</html>

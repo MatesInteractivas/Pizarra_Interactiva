@@ -1,0 +1,13 @@
+{
+  "nivel": [
+    "Primaria"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Medidas"
+  ], 
+  "titulo": "Medición", 
+  "descripcion": "Presentar ejemplos de los objetos que medimos y las unidades de medida que normalmente ocupamos para ello.",
+  "resena": "Presentar ejemplos de los objetos que medimos y las unidades de medida que normalmente ocupamos para ello.",
+  "id": "M_B2_Medicion"
+}

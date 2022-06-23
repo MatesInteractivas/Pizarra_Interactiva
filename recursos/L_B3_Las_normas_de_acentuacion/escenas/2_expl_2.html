@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Las normas de acentuación</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='500' fijo='sí' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="E_03" value="tipo='R2' id='COVER' dibujar-si='boton1||boton2||ejem1' fijo='sí' imagen='images/backwindow.png' despl_imagen='mosaico' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="E_04" value="tipo='R2' id='INFO' x='35' y='185' ancho='954' alto='405' dibujar-si='boton1||boton2||ejem1' fijo='sí' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='cerrar' interfaz='botón' tipo='numérico' región='interior' espacio='INFO' expresión='(INFO._w-35,0,35,35)' color='ffffff' color-int='ffffff' fuente puntos='19' imagen='images/cerrar.svg' acción='calcular' parámetro='boton1=0;boton2=0;ejem1=0;' ">
+    <param name="C_02" value="id='boton1' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Monosílabos' expresión='(E1._w/4-290/2,20,290,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='boton1=1;ejem1=0;boton2=0;ok=1;' dibujar-si='cont=1' activo-si='!boton1' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_03" value="id='boton2' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Interrogativos / Exclamativos' expresión='(3*E1._w/4-290/2,20,290,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='boton2=1;boton1=0;ejem1=0;ok=1;' dibujar-si='cont=1' activo-si='!boton2' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_04" value="id='ejem1' interfaz='botón' tipo='numérico' región='interior' espacio='INFO' nombre='Ver ejemplos' expresión='((INFO._w-160)/2,INFO._h-35-15,160,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='ejem1=1;boton1=0;' dibujar-si='boton1=1' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='vertexto=0;cont=1;started=1;;dia1.x=190;dia1.y=140;dia1.w=330;dia1.h=45;dia1.txt=&squot;¿\b{Dónde} puedo dejar \b{tu} regalo?&squot;;;dia2.w=270;dia2.h=45;dia2.x=E1._w-dia2.w-dia1.x;dia2.y=dia1.y+50;dia2.dir=&squot;der&squot;;dia2.txt=&squot;Déjalo \b{donde tú} quieras.&squot;;' ">
+    <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='boton11=(boton1)?1:boton11;boton21=(boton2)?1:boton21;ejem11=(ejem1)?1:ejem11;suma=boton1+boton2+ejem1;vertexto=(boton11+boton21=2);vertexto1=(vertexto)?1:vertexto1;;' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_h.svg' clip='(120,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='Observa las palabras destacadas en la conversación. ¿Por qué una misma palabra se acentúa en un caso y en el otro no? Veamos el acento diacrítico.' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,500)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='E1' tipo='texto' color='000000' dibujar-si='vertexto=1' coord_abs='sí' expresión='[E1._w/2,E1._h/2+15]' texto='Ya conoces las principales aplicaciones del \b{acento diacrítico}.' ancho='1' fuente puntos='20' align='a_left' anchor='a_center_center' ">
+    <param name="G_06" value="espacio='E1' tipo='macro' dibujar-si='(cont=1)&(ok=0)' coord_abs='no' nombre='dia1' expresión='macros/msg_bubble.txt' posini='[0,0]' ">
+    <param name="G_07" value="espacio='E1' tipo='macro' dibujar-si='(cont=1)&(ok=0)' coord_abs='no' nombre='dia2' expresión='macros/msg_bubble.txt' posini='[0,0]' ">
+    <param name="G_08" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(cont=1)&(ok=0)' coord_abs='sí' expresión='[20,320]' texto='El \b{acento diacrítico} o \b{tilde diacrítica} sirve para \b{diferenciar palabras} que se escriben de la misma forma pero tienen \b{significados diferentes}. ¿Quieres ver las palabras con \b{acento diacrítico} más habituales? Pulsa los botones para conocerlas.' ancho='E1._w-40' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_09" value="espacio='INFO' tipo='rectángulo' fondo='sí' color='341f97' coord_abs='sí' expresión='(1,1,INFO._w-3,INFO._h-3)' relleno='ffffff' ancho='3' border_radius='4' ">
+    <param name="G_10" value="espacio='INFO' tipo='rectángulo' fondo='sí' color='ffffffff' coord_abs='sí' expresión='(0,0,INFO._w,35)' relleno='341f97' ancho='0' border_radius='4' ">
+    <param name="G_11" value="espacio='INFO' tipo='texto' color='000000' dibujar-si='boton1=1' coord_abs='sí' expresión='[20,50]' texto='En general, los \b{monosílabos no llevan tilde}.\n\n\b{Ejemplos}: \n\ngran, mar, me, no, sal, sol, ti, un... \n\nSin embargo, cuando necesitan diferenciarse de otros monosílabos con significado distinto, se escriben con \b{acento diacrítico}.' ancho='INFO._w-40' fuente puntos='20' align='a_justify' anchor='a_top_left' info='boton1=1' ">
+    <param name="G_12" value="espacio='INFO' tipo='texto' color='000000' dibujar-si='ejem1=1' coord_abs='sí' expresión='[20,50]' texto='\b{Con acento diacrítico}\n\ts{13}{\n}\b{dé}: del verbo dar\n\ts{13}{\n}\b{él}: pronombre personal \n\ts{13}{\n}\b{mí}: pronombre personal \n\ts{13}{\n}\b{sé}: verbo ser o saber \n\ts{13}{\n}\b{sí}: afirmación y pronombre\n\ts{13}{\n}\b{té}: nombre (infusión) \n\ts{13}{\n}\b{tú}: pronombre personal' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_13" value="espacio='INFO' tipo='texto' color='000000' dibujar-si='ejem1=1' coord_abs='sí' expresión='[350,50]' texto='\b{Sin acento}\n\ts{13}{\n}\b{de}: preposición \n\ts{13}{\n}\b{el}: artículo \n\ts{13}{\n}\b{mi}: posesivo\n\ts{13}{\n}\b{se}: pronombre\n\ts{13}{\n}\b{si}: condicional \n\ts{13}{\n}\b{te}: pronombre \n\ts{13}{\n}\b{tu}: posesivo' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_14" value="espacio='INFO' tipo='texto' color='000000' dibujar-si='ejem1=1' coord_abs='sí' expresión='[INFO._w-20,50]' texto='\b{Ejemplos}\n\ts{13}{\n}Que no le \b{dé} el sol \b{de} lleno.\n\ts{13}{\n}\b{Él} es \b{el} mejor del grupo.\n\ts{13}{\n}Dímelo a \b{mí}. / Eres \b{mi} amigo.\n\ts{13}{\n}\b{Sé} valiente. / No \b{sé} si \b{se} parece a ti.\n\ts{13}{\n}\b{Sí}, ya vuelve en \b{sí}./ \b{Si} llamas, vendré.\n\ts{13}{\n}¿Prefieres \b{té} o café? / \b{Te} quiero.\n\ts{13}{\n}\b{Tú} tienes \b{tu} propia casa. ' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_right' ">
+    <param name="G_15" value="espacio='INFO' tipo='texto' color='000000' dibujar-si='boton2=1' coord_abs='sí' expresión='[20,50]' texto='Usamos el \b{acento diacrítico} en las palabras \b{qué}, \b{cuál}, \b{quién}, \b{cuánto}, \b{cuándo}, \b{cómo} y \b{dónde} cuando se usan en sentido \b{interrogativo} o \b{exclamativo}. \n\n¿\b{Qué} te pasa? / Dime \b{qué} quieres. / ¡\b{Qué} tarde es! \n¿A \b{cuál} de ellos prefieres? / ¡\b{Cuál} no sería mi asombro al comprobarlo! \n¿\b{Quién} eres tú? / No sé a \b{quién} quieres engañar. / ¡Mira \b{quién} fue a hablar! \n¿\b{Cuánto} te ha costado? / Dígame \b{cuánto} le debo. / ¡\b{Cuánto} has tardado! \n¿\b{Cuándo} vas a venir a verme? / Dime \b{cuándo} vas a venir a verme. \n¿\b{Cómo} te llamas? / No sé \b{cómo} lo has conseguido. / ¡\b{Cómo} me gusta! \n¿De \b{dónde} vienes? / No sé \b{dónde} he puesto las llaves. \n\nObserva que las oraciones \b{interrogativas indirectas} no llevan signos de interrogación y realizan la pregunta a través de un verbo como \i{decir} o \i{saber}. ' ancho='INFO._w-40' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+  </ajs>
+
+<script type="descartes/macro" id="macros/msg_bubble.txt">
+id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='x=10;y=10;w=400;h=50;color=&squot;ffffff&squot;;borde=&squot;34495e&squot;;punta_w=15;punta_h=15;txt=&squot;&squot;;txt_size=20;dir=&squot;izq&squot;;pos=&squot;abj&squot;;' 
+id='CALCULOS' algoritmo='sí' evaluar='siempre' 
+espacio='E1' tipo='rectángulo' color='(_Rojo_(borde),_Verde_(borde),_Azul_(borde),00)' dibujar-si='dir==&squot;izq&squot;' coord_abs='sí' expresión='(x+punta_w,y,w-punta_w,h)' relleno='(_Rojo_(color),_Verde_(color),_Azul_(color),00)' ancho='1' border_radius='6' info='izq' 
+espacio='E1' tipo='polígono' color='(_Rojo_(borde),_Verde_(borde),_Azul_(borde),00)' dibujar-si='(dir==&squot;izq&squot;)&&(pos==&squot;abj&squot;)' coord_abs='sí' expresión='(x+punta_w,y+h-punta_h)(x,y+h)(x+punta_w*2,y+h)' relleno='(_Rojo_(color),_Verde_(color),_Azul_(color),00)' ancho='1' info='punta izq abajo' 
+espacio='E1' tipo='polígono' color='(_Rojo_(borde),_Verde_(borde),_Azul_(borde),00)' dibujar-si='(dir==&squot;izq&squot;)&&(pos!=&squot;abj&squot;)' coord_abs='sí' expresión='(x+punta_w,y+punta_h)(x,y)(x+punta_w*2,y)' relleno='(_Rojo_(color),_Verde_(color),_Azul_(color),00)' ancho='1' info='punta izq arriba' 
+espacio='E1' tipo='texto' color='000000' dibujar-si='dir==&squot;izq&squot;' coord_abs='sí' expresión='(x+punta_w+10,y+10)' texto='[txt]' fijo='no' ancho='w-punta_w-20' fuente puntos='txt_size' align='a_justify' anchor='a_top_left' info='izq' 
+espacio='E1' tipo='rectángulo' color='(_Rojo_(borde),_Verde_(borde),_Azul_(borde),00)' dibujar-si='dir!=&squot;izq&squot;' coord_abs='sí' expresión='(x,y,w-punta_w,h)' relleno='(_Rojo_(color),_Verde_(color),_Azul_(color),00)' ancho='1' border_radius='6' info='der' 
+espacio='E1' tipo='polígono' color='(_Rojo_(borde),_Verde_(borde),_Azul_(borde),00)' dibujar-si='(dir!=&squot;izq&squot;)&&(pos==&squot;abj&squot;)' coord_abs='sí' expresión='(x+w-punta_w,y+h-punta_h)(x+w,y+h)(x+w-punta_w*2,y+h)' relleno='(_Rojo_(color),_Verde_(color),_Azul_(color),00)' ancho='1' info='punta der abajo' 
+espacio='E1' tipo='polígono' color='(_Rojo_(borde),_Verde_(borde),_Azul_(borde),00)' dibujar-si='(dir!=&squot;izq&squot;)&&(pos!=&squot;abj&squot;)' coord_abs='sí' expresión='(x+w-punta_w,y+punta_h)(x+w,y)(x+w-punta_w*2,y)' relleno='(_Rojo_(color),_Verde_(color),_Azul_(color),00)' ancho='1' info='punta der arriba' 
+espacio='E1' tipo='texto' color='000000' dibujar-si='dir!=&squot;izq&squot;' coord_abs='sí' expresión='(x+10,y+10)' texto='[txt]' fijo='no' ancho='w-punta_w-20' fuente puntos='txt_size' align='a_justify' anchor='a_top_left' info='der' 
+</script>
+
+</body>
+</html>

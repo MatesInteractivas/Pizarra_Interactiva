@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Figuras planas</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='EF' x='15' y='110' ancho='994' alto='500' fijo='sí' escala='12' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='vel' tipo='numérico' interfaz='pulsador' región='interior' espacio='pleca' nombre='Velocidad' expresión='(100,E1._h-47,120,30)' valor='1.02' incr='0.01' min='1.02' max='1.2' discreto='sí' fijo='no' visible='no' ">
+    <param name="A_01" value="id='COLORES' vector='sí' evaluar='una-sola-vez' tamaño='16' expresión='&squot;1abc9c&squot;;&squot;16a085&squot;;&squot;2ecc71&squot;;&squot;27ae60&squot;;&squot;3498db&squot;;&squot;2980b9&squot;;&squot;9b59b6&squot;;&squot;8e44ad&squot;;&squot;34495e&squot;;&squot;2c3e50&squot;;&squot;f1c40f&squot;;&squot;f39c12&squot;;&squot;e67e22&squot;;&squot;d35400&squot;;&squot;e74c3c&squot;;&squot;c0392b&squot;' tipo='vector' ">
+    <param name="A_02" value="id='T0x' vector='sí' evaluar='una-sola-vez' tamaño='3' expresión='T0x[0]=-3;T0x[1]=1;T0x[2]=1' tipo='vector' ">
+    <param name="A_03" value="id='T0y' vector='sí' evaluar='una-sola-vez' tamaño='3' expresión='T0y[0]=-1;T0y[1]=-1;T0y[2]=2' tipo='vector' ">
+    <param name="A_04" value="id='Tx' vector='sí' evaluar='una-sola-vez' tamaño='3' expresión='Tx[0]=T0x[0];Tx[1]=T0x[1];Tx[2]=T0x[2]' tipo='vector' ">
+    <param name="A_05" value="id='Ty' vector='sí' evaluar='una-sola-vez' tamaño='3' expresión='Ty[0]=T0y[0];Ty[1]=T0y[1];Ty[2]=T0y[2]' tipo='vector' ">
+    <param name="A_06" value="id='Px' vector='sí' evaluar='una-sola-vez' tamaño='65' tipo='vector' ">
+    <param name="A_07" value="id='Py' vector='sí' evaluar='una-sola-vez' tamaño='65' tipo='vector' ">
+    <param name="A_08" value="id='C0x' vector='sí' evaluar='una-sola-vez' tamaño='5' tipo='vector' ">
+    <param name="A_09" value="id='C0y' vector='sí' evaluar='una-sola-vez' tamaño='5' tipo='vector' ">
+    <param name="A_10" value="id='Cx' vector='sí' evaluar='una-sola-vez' tamaño='5' tipo='vector' ">
+    <param name="A_11" value="id='Cy' vector='sí' evaluar='una-sola-vez' tamaño='5' tipo='vector' ">
+    <param name="A_12" value="id='RotateT(alfa)' algoritmo='sí' expresión='x' inicio='cs=cos(alfa);sn=sen(alfa);i=0' hacer='aux=Tx[i];Tx[i]=cs*Tx[i]+sn*Ty[i];Ty[i]=-sn*aux+cs*Ty[i];i=i+1' mientras='i<3' tipo='función' ">
+    <param name="A_13" value="id='RotateC(alfa)' algoritmo='sí' expresión='x' inicio='cs=cos(alfa);sn=sen(alfa);i=0' hacer='aux=Cx[i];Cx[i]=cs*Cx[i]+sn*Cy[i];Cy[i]=-sn*aux+cs*Cy[i];i=i+1' mientras='i<5' tipo='función' ">
+    <param name="A_14" value="id='RotateP(alfa)' algoritmo='sí' expresión='x' inicio='cs=cos(alfa);sn=sen(alfa);i=0' hacer='aux=Px[i];Px[i]=cs*Px[i]+sn*Py[i];Py[i]=-sn*aux+cs*Py[i];i=i+1' mientras='i<N+1' tipo='función' ">
+    <param name="A_15" value="id='TranslateT(px,py)' algoritmo='sí' expresión='x' inicio='i=0' hacer='Tx[i]=Tx[i]+px;Ty[i]=Ty[i]+py;i=i+1' mientras='i<3' tipo='función' ">
+    <param name="A_16" value="id='TranslateC(px,py)' algoritmo='sí' expresión='x' inicio='i=0' hacer='Cx[i]=Cx[i]+px;Cy[i]=Cy[i]+py;i=i+1' mientras='i<5' tipo='función' ">
+    <param name="A_17" value="id='TranslateP(px,py,N)' algoritmo='sí' expresión='x' inicio='i=0' hacer='Px[i]=Px[i]+px;Py[i]=Py[i]+py;i=i+1' mientras='i<N+1' tipo='función' ">
+    <param name="A_18" value="id='t_equi()' algoritmo='sí' expresión='x' hacer='T0x[0]=4;T0y[0]=0;T0x[1]=-4*sen(pi/6);T0y[1]=4*cos(pi/6);T0x[2]=T0x[1];T0y[2]=-T0y[1];str_triangulo=&squot;equilátero&squot;;' tipo='función' ">
+    <param name="A_19" value="id='t_isoc()' algoritmo='sí' expresión='x' hacer='T0x[0]=3+7*rnd;T0y[0]=0;T0x[1]=sen(pi/6);T0y[1]=(2+8*rnd)*cos(pi/6);T0x[2]=T0x[1];T0y[2]=-T0y[1];str_triangulo=&squot;isóceles&squot;;' tipo='función' ">
+    <param name="A_20" value="id='t_rect()' algoritmo='sí' expresión='x' hacer='T0x[0]=-2;T0y[0]=-2;T0x[1]=-2+4+7*rnd;T0y[1]=-2;T0x[2]=-2;T0y[2]=-2+4+7*rnd;str_triangulo=&squot;rectángulo&squot;;' tipo='función' ">
+    <param name="A_21" value="id='t_esca()' algoritmo='sí' expresión='x' hacer='T0x[0]=-3-3*rnd;T0y[0]=-1;T0x[1]=4;T0y[1]=-1+cos(pi/6);T0x[2]=0;T0y[2]=1+12*rnd;str_triangulo=&squot;escaleno &squot;;altura=T0y[2];alfa1=atan(-T0x[0]/altura);alfa2=atan(T0x[1]/altura);alfa=alfa1+alfa2;extra=(alfa>pi/2)?&squot;obtusángulo&squot;:&squot;acutaángulo&squot;;str_triangulo=str_triangulo+extra;' tipo='función' ">
+    <param name="A_22" value="id='cuadrado()' algoritmo='sí' expresión='x' hacer='C0x[0]=3;C0y[0]=0;C0x[1]=0;C0y[1]=3;C0x[2]=-C0x[0];C0y[2]=0;C0x[3]=0;C0y[3]=-C0y[1];str_cuadrilatero=&squot;Cuadrado&squot;;' tipo='función' ">
+    <param name="A_23" value="id='rectangulo()' algoritmo='sí' expresión='x' hacer='w=3+2*rnd;h=2+1*rnd;C0x[0]=w;C0y[0]=h;C0x[1]=-w;C0y[1]=h;C0x[2]=-w;C0y[2]=-h;C0x[3]=w;C0y[3]=-h;str_cuadrilatero=&squot;Rectángulo&squot;;' tipo='función' ">
+    <param name="A_24" value="id='paralelogramo()' algoritmo='sí' expresión='x' hacer='rectangulo();dx=1+rnd;C0x[0]=C0x[0]+dx;C0x[1]=C0x[1]+dx;C0x[2]=C0x[2]-dx;C0x[3]=C0x[3]-dx;str_cuadrilatero=&squot;Paralelogramo&squot;;' tipo='función' ">
+    <param name="A_25" value="id='rombo()' algoritmo='sí' expresión='x' hacer='dM=3+3*rnd;dm=2+2*rnd;C0x[0]=dM;C0y[0]=0;C0x[1]=0;C0y[1]=dm;C0x[2]=-C0x[0];C0y[2]=0;C0x[3]=0;C0y[3]=-C0y[1];str_cuadrilatero=&squot;Rombo&squot;;' tipo='función' ">
+    <param name="A_26" value="id='romboide()' algoritmo='sí' expresión='x' hacer='rombo();d=1+rnd;C0x[0]=C0x[0]+d;C0x[2]=C0x[2]+d;str_cuadrilatero=&squot;Romboide&squot;;;' tipo='función' ">
+    <param name="A_27" value="id='trapecioIs()' algoritmo='sí' expresión='x' hacer='rectangulo();dx=1+1.5*rnd;C0x[0]=C0x[0]-dx;C0x[1]=C0x[1]+dx;C0x[2]=C0x[2];C0x[3]=C0x[3];str_cuadrilatero=&squot;Trapecio isósceles&squot;;;' tipo='función' ">
+    <param name="A_28" value="id='trapecio()' algoritmo='sí' expresión='x' hacer='rectangulo();C0x[0]=C0x[0]-3;C0x[1]=C0x[1]+1+rnd;C0x[2]=C0x[2];C0x[3]=C0x[3];str_cuadrilatero=&squot;Trapecio&squot;;' tipo='función' ">
+    <param name="A_29" value="id='trapezoide()' algoritmo='sí' expresión='x' hacer='rectangulo();C0x[0]=C0x[0]-3;C0y[0]=(rnd<0.5)?C0y[0]+1:C0y[0]-1;C0x[1]=C0x[1]+1+rnd;C0x[2]=C0x[2];C0x[3]=C0x[3];str_cuadrilatero=&squot;Trapezoide&squot;;' tipo='función' ">
+    <param name="A_30" value="id='poli(N)' algoritmo='sí' expresión='x' inicio='j=0; r=2+rnd*2;alfa=rnd*2*pi' hacer='Px[j]=r*cos(alfa+2*pi*j/N);Py[j]=r*sen(alfa+2*pi*j/N);j=j+1' mientras='j<N+1' tipo='función' ">
+    <param name="A_31" value="id='newTriangle(t0)' algoritmo='sí' expresión='x' inicio='Tt=t0+0.1' hacer='Ttransp=0.4;cCol=ent(rnd*COLORES.long);Trojo= _Rojo_(COLORES[cCol]);Tverde=_Verde_(COLORES[cCol]);Tazul= _Azul_(COLORES[cCol]);tipo=ent(rnd*4);aux=(tipo=0)?t_equi():0;aux=(tipo=1)?t_isoc():0;aux=(tipo=2)?t_rect():0;aux=(tipo=3)?t_esca():0;Tx[0]=T0x[0];Ty[0]=T0y[0];Tx[1]=T0x[1];Ty[1]=T0y[1];Tx[2]=T0x[2];Ty[2]=T0y[2];Tx[3]=Tx[0];Ty[3]=Ty[0];Talfa=rnd*2*pi;RotateT(Talfa);px=(rnd-0.5)*Dx;py=(rnd-0.5)*Dy;TranslateT(px,py);vRT=-0.2+0.4*rnd' tipo='función' ">
+    <param name="A_32" value="id='newCuadr(t0)' algoritmo='sí' expresión='x' inicio='Ct=t0+0.1' hacer='Ctransp=0.4;cCol=ent(rnd*COLORES.long);Crojo= _Rojo_(COLORES[cCol]);Cverde=_Verde_(COLORES[cCol]);Cazul= _Azul_(COLORES[cCol]);tipoc=ent(rnd*8);aux=(tipoc=0)?cuadrado():0;aux=(tipoc=1)?rectangulo():0;aux=(tipoc=2)?paralelogramo():0;aux=(tipoc=3)?rombo():0;aux=(tipoc=4)?romboide():0;aux=(tipoc=5)?trapecioIs():0;aux=(tipoc=6)?trapecio():0;aux=(tipoc=7)?trapezoide():0;C0x[4]=C0x[0];C0y[4]=C0y[0];Cx[0]=C0x[0];Cy[0]=C0y[0];Cx[1]=C0x[1];Cy[1]=C0y[1];Cx[2]=C0x[2];Cy[2]=C0y[2];Cx[3]=C0x[3];Cy[3]=C0y[3];Cx[4]=Cx[0];Cy[4]=Cy[0];alfa=rnd*2*pi;RotateC(alfa);px=(rnd-0.5)*Dx;py=(rnd-0.5)*Dy;TranslateC(px,py);vRC=-0.2+0.4*rnd' tipo='función' ">
+    <param name="A_33" value="id='newPoli(t0)' algoritmo='sí' expresión='x' inicio='Pt=t0+0.1' hacer='Ptransp=0.4;cCol=ent(rnd*COLORES.long);Projo= _Rojo_(COLORES[cCol]);Pverde=_Verde_(COLORES[cCol]);Pazul= _Azul_(COLORES[cCol]);N=5+ent(rnd*5.5);N=(N>7)?5+ent(rnd*5.5):N;N=(N>7)?5+ent(rnd*5.5):N;N=(rnd<0.2)?64:N;poli(N);str_poligono=&squot;&squot;;str_poligono=(N=5)?&squot;Pentágono regular&squot;:str_poligono;str_poligono=(N=6)?&squot;Hexágono regular&squot;:str_poligono;str_poligono=(N=7)?&squot;Heptágono regular&squot;:str_poligono;str_poligono=(N=8)?&squot;Octágono regular&squot;:str_poligono;str_poligono=(N=9)?&squot;Eneágono regular&squot;:str_poligono;str_poligono=(N=10)?&squot;Decágono regular&squot;:str_poligono;str_poligono=(N=64)?&squot;Círculo&squot;:str_poligono;px=(rnd-0.5)*Dx;py=(rnd-0.5)*Dy;TranslateP(px,py,N);vRP=-0.2+0.4*rnd' tipo='función' ">
+    <param name="A_34" value="id='animar()' algoritmo='sí' expresión='0' hacer='Tt=Tt*vel;RotateT(vRT);aux=(Tt>=Tf)?newTriangle(0):0;Ct=Ct*vel;RotateC(vRC);aux=(Ct>=Tf)?newCuadr(0):0;Pt=Pt*vel;RotateP(vRP);aux=(Pt>=Tf)?newPoli(0):0' tipo='función' ">
+    <param name="A_35" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='continuar=1;Tf=3.5;Dx=25;Dy=10;K=log(Tf)/log(vel);newTriangle(0);t1=0.1*vel^K;newCuadr(t1);t2=0.1*vel^(2*K);newPoli(t2);;' ">
+    <param name="A_36" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_m.svg' clip='(0,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='Hay muchas figuras planas que podemos reconocer fácilmente. ¿Sabes cómo se llama cada una de ellas?' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,500)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='EF' tipo='curva' color='(Trojo,Tverde,Tazul,Ttransp)' dibujar-si='(Tt<Ct)&(Tt<Pt)' coord_abs='no' expresión='(Tt*Tx[t],Tt*Ty[t])' parámetro='t' t.intervalo='[0,2]' t.pasos='2' relleno='(Trojo,Tverde,Tazul,Ttransp)' ancho='0' ">
+    <param name="G_06" value="espacio='EF' tipo='curva' color='(Crojo,Cverde,Cazul,Ctransp)' dibujar-si='(Ct<Tt)&(Ct<Pt)' coord_abs='no' expresión='(Ct*Cx[t],Ct*Cy[t])' parámetro='t' t.intervalo='[0,4]' t.pasos='4' relleno='(Crojo,Cverde,Cazul,Ctransp)' ancho='0' ">
+    <param name="G_07" value="espacio='EF' tipo='curva' color='(Projo,Pverde,Pazul,Ptransp)' dibujar-si='(Pt<Ct)&(Pt<Tt)' coord_abs='no' expresión='(Pt*Px[t],Pt*Py[t])' parámetro='t' t.intervalo='[0,N]' t.pasos='N' relleno='(Projo,Pverde,Pazul,Ptransp)' ancho='0' ">
+    <param name="G_08" value="espacio='EF' tipo='curva' color='(Trojo,Tverde,Tazul,Ttransp)' dibujar-si='((Tt<Ct)&(Tt>Pt))|((Tt>Ct)&(Tt<Pt))' coord_abs='no' expresión='(Tt*Tx[t],Tt*Ty[t])' parámetro='t' t.intervalo='[0,2]' t.pasos='2' relleno='(Trojo,Tverde,Tazul,Ttransp)' ancho='0' ">
+    <param name="G_09" value="espacio='EF' tipo='curva' color='(Crojo,Cverde,Cazul,Ctransp)' dibujar-si='((Ct<Tt)&(Ct>Pt))|((Ct>Tt)&(Ct<Pt))' coord_abs='no' expresión='(Ct*Cx[t],Ct*Cy[t])' parámetro='t' t.intervalo='[0,4]' t.pasos='4' relleno='(Crojo,Cverde,Cazul,Ctransp)' ancho='0' ">
+    <param name="G_10" value="espacio='EF' tipo='curva' color='(Projo,Pverde,Pazul,Ptransp)' dibujar-si='((Pt<Tt)&(Pt>Ct))|((Pt>Tt)&(Pt<Ct))' coord_abs='no' expresión='(Pt*Px[t],Pt*Py[t])' parámetro='t' t.intervalo='[0,N]' t.pasos='N' relleno='(Projo,Pverde,Pazul,Ptransp)' ancho='0' ">
+    <param name="G_11" value="espacio='EF' tipo='curva' color='(Trojo,Tverde,Tazul,Ttransp)' dibujar-si='(Tt>Ct)&(Tt>Pt)' coord_abs='no' expresión='(Tt*Tx[t],Tt*Ty[t])' parámetro='t' t.intervalo='[0,2]' t.pasos='2' relleno='(Trojo,Tverde,Tazul,Ttransp)' ancho='0' ">
+    <param name="G_12" value="espacio='EF' tipo='curva' color='(Crojo,Cverde,Cazul,Ctransp)' dibujar-si='(Ct>Pt)&(Ct>Pt)' coord_abs='no' expresión='(Ct*Cx[t],Ct*Cy[t])' parámetro='t' t.intervalo='[0,4]' t.pasos='4' relleno='(Crojo,Cverde,Cazul,Ctransp)' ancho='0' ">
+    <param name="G_13" value="espacio='EF' tipo='curva' color='(Projo,Pverde,Pazul,Ptransp)' dibujar-si='(Pt>Ct)&(Pt>Tt)' coord_abs='no' expresión='(Pt*Px[t],Pt*Py[t])' parámetro='t' t.intervalo='[0,N]' t.pasos='N' relleno='(Projo,Pverde,Pazul,Ptransp)' ancho='0' ">
+    <param name="G_14" value="espacio='EF' tipo='texto' color='000000' dibujar-si='(0.8<Tt)&(Tt<2)' coord_abs='sí' expresión='[EF._w/2,20]' texto='Triángulo [str_triangulo]' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_15" value="espacio='EF' tipo='texto' color='000000' dibujar-si='(0.8<Ct)&(Ct<2)' coord_abs='sí' expresión='[EF._w/2,20]' texto='[str_cuadrilatero]' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_16" value="espacio='EF' tipo='texto' color='000000' dibujar-si='(0.8<Pt)&(Pt<2)' coord_abs='sí' expresión='[EF._w/2,20]' texto='[str_poligono]' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="Animación" value="pausa='40' controles='no' auto='sí' repetir='no' inicio='t=0' hacer='t=t+40;animar()' mientras='1' ">
+  </ajs>
+
+
+
+</body>
+</html>

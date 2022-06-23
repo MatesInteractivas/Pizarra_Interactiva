@@ -1,6 +1,0 @@
-4
-
-'La proporción 3/2 = 6/4 se lee'
-'Dada la proporción 7/2 = 21/6'
-'Señala las parejas que forman proporción'
-'Señala las razones que forman proporción con 18/6'

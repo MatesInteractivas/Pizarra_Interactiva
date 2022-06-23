@@ -1,7 +1,0 @@
-3
-'Sustantivos comunes'
-'Sustantivos propios'
-'Sustantivos comunes'
-'Sustantivos propios'
-'Sustantivo masculino'
-'Sustantivo femenino'

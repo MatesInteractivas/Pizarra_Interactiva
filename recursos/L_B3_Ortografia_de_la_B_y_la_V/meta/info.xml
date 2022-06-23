@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="L_B3_Ortografia_de_la_B_y_la_V" 
+	nivel="Primaria" 
+	area="Español, Ortografía"
+	plataforma="HTML 5" 
+	>
+	<titulo><![CDATA[
+		Ortografía de la b y la v
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+		Ofrecer actividades que inviten al alumno a repasar y practicar las normas ortográficas de la b y la v.
+	]]></Descripcion>
+</recurso>

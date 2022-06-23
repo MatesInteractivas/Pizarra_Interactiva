@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Porcentajes</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='450' fijo='sí' escala='120' O.y='20' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="E_03" value="tipo='R2' id='E2' x='15' y='110' ancho='994' alto='450' dibujar-si='ejem#0' fijo='sí' O.x='230' O.y='155' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='entrar' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Entrar' expresión='((pleca._w-100)/2,pleca._h-35-15,100,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='n1=1;n2=0;n3=0;ejem=1;p=1' dibujar-si='(ejem=0)*(s>14)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_02" value="id='inicio' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Inicio' expresión='((pleca._w-100)/2,pleca._h-35-15,100,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='inicio' dibujar-si='p>=1' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_03" value="id='ejemplo 1' interfaz='botón' tipo='numérico' región='interior' espacio='E2' nombre='Ejemplo 1' expresión='(E1._w/6-150/2,20,150,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='n1=1;n2=0;n3=0;ejem=1;p=1' dibujar-si='p>=1' activo-si='n1=0' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_04" value="id='ejemplo 2' interfaz='botón' tipo='numérico' región='interior' espacio='E2' nombre='Ejemplo 2' expresión='(3*E1._w/6-150/2,20,150,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='n1=0;n2=1;n3=0;ejem=2;p=1' dibujar-si='p>=1' activo-si='n2=0' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_05" value="id='ejemplo 3' interfaz='botón' tipo='numérico' región='interior' espacio='E2' nombre='Ejemplo 3' expresión='(5*E1._w/6-150/2,20,150,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='n1=0;n2=0;n3=1;ejem=3;p=1' dibujar-si='p>=1' activo-si='n3=0' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='g1.x=-0.9;g1.y=1.6;g2.x=g1.x;g2.y=g1.y;g3.x=g1.x;g3.y=g1.y;g4.x=g1.x;g4.y=g1.y;g5.x=g1.x;g5.y=g1.y;;a=ent(99*rnd+1);b=10*ent(99rnd+1);' ">
+    <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='fin=5' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_m.svg' clip='(0,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='Los porcentajes a nuestro alrededor, observa los encabezados de las noticias. Y después selecciona un ejemplo para conocer más sobre porcentajes.' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,450)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='E1' tipo='imagen' dibujar-si='ejem=0' coord_abs='sí' expresión='(320,225,1.5,1.5)' archivo='images/noticias_tv.svg' ">
+    <param name="G_06" value="espacio='E1' tipo='texto' color='ffffff' dibujar-si='ejem=0' coord_abs='sí' expresión='[50,50]' texto='Telenoticias' ancho='1' color_borde_texto='b8000000' fuente puntos='20' align='a_left' anchor='a_top_left' border_size='4' ">
+    <param name="G_07" value="espacio='E1' tipo='texto' color='d35400' dibujar-si='ejem=0' coord_abs='no' expresión='(g1.x+s,g1.y)' texto='El hijo del Conde Casals \nheredará el 75% de la fortuna ' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_08" value="espacio='E2' tipo='polígono' color='00ff00' coord_abs='no' expresión='(0,0)(0,4)(4,4)(4,0)(0,0)' ancho='2' ">
+    <param name="G_09" value="espacio='E2' tipo='polígono' color='ffffff' dibujar-si='ejem=1' coord_abs='no' expresión='(2,0)(2,2)(4,2)(4,0)(2,0)' relleno='ffc800' ancho='1' ">
+    <param name="G_10" value="espacio='E2' tipo='polígono' color='ffffff' dibujar-si='(ejem=2)|(ejem=1)' coord_abs='no' expresión='(0,0)(0,4)(2,4)(2,0)(0,0)' relleno='ffc800' ancho='1' ">
+    <param name="G_11" value="espacio='E2' tipo='polígono' color='ffffff' dibujar-si='ejem=3' coord_abs='no' expresión='(0,0)(0,4)(1.2,4)(1.2,0)(0,0)' relleno='ffc800' ancho='1' ">
+    <param name="G_12" value="espacio='E2' tipo='curva' color='000000' coord_abs='no' expresión='(s,t)' familia='s' s.intervalo='[0,4]' s.pasos='10' parámetro='t' t.intervalo='[0,4]' t.pasos='8' ancho='1' ">
+    <param name="G_13" value="espacio='E2' tipo='curva' color='000000' coord_abs='no' expresión='(t,s)' familia='s' s.intervalo='[0,4]' s.pasos='10' parámetro='t' t.intervalo='[0,4]' t.pasos='8' ancho='1' ">
+    <param name="G_14" value="espacio='E1' tipo='texto' color='ff77af' dibujar-si='s>3' coord_abs='no' expresión='(g2.x+s-3,g2.y)' texto='El 50% de las personas \nque conducen son mujeres' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_15" value="espacio='E2' tipo='texto' color='000000' dibujar-si='ejem=1' coord_abs='sí' expresión='[20,70]' texto='Todo lo que debes saber de la expresión: el \b{75%} de la herencia es para Juan.' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_16" value="espacio='E1' tipo='texto' color='00ce00' dibujar-si='s>6' coord_abs='no' expresión='(g3.x+s-6,g3.y)' texto='El 30% de la población\ncompra por Internet' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_17" value="espacio='E1' tipo='texto' color='d949ff' dibujar-si='s>9' coord_abs='no' expresión='(g4.x+s-9,g4.y)' texto='El 25% de la población\npractica deporte' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_18" value="espacio='E1' tipo='texto' color='ff9b3c' dibujar-si='(s>12)*(ejem=0)' coord_abs='no' expresión='(g5.x+s-12,g5.y)' texto='El 30% de los niños y\nniñas tiene mascota' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_19" value="espacio='E1' tipo='imagen' dibujar-si='(ejem=0)*(s>14)' coord_abs='sí' expresión='(800,287,0.5,0.5)' archivo='images/niña.png' ">
+    <param name="G_20" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(ejem=0)*(s>14)' coord_abs='sí' expresión='[650,170]' texto='¿Qué significa %?\n¿Qué es un porcentaje?' fijo='no' ancho='1' negrita='sí' fuente puntos='20' align='a_center' anchor='a_top_left' ">
+    <param name="G_21" value="espacio='E2' tipo='imagen' dibujar-si='ejem=1' coord_abs='sí' expresión='(150,260,0.5,0.5)' archivo='images/cofre.png' ">
+    <param name="G_22" value="espacio='E2' tipo='texto' color='000000' dibujar-si='ejem=1' coord_abs='sí' expresión='[310,110]' texto='Se lee: el \b{setenta y cinco por ciento} de la herencia es para Juan.\n\nComo razón se escribe: \b{\${\frac{75}{100}}}\n\nSu valor como decimal es: \n\b{\${\frac{75}{100} = 0.75}} (dividimos \b{75} entre \b{100})\n\nSignifica que: \n\b{$75} de cada \b{$100} son para Juan.' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_23" value="espacio='E2' tipo='texto' color='000000' dibujar-si='ejem=2' coord_abs='sí' expresión='[20,70]' texto='Todo lo que debes saber de la expresión: el \b{50%} de las personas que conducen son mujeres.' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_24" value="espacio='E2' tipo='imagen' dibujar-si='ejem=2' coord_abs='sí' expresión='(150,260,0.5,0.5)' archivo='images/mujer_conduciendo.png' ">
+    <param name="G_25" value="espacio='E2' tipo='texto' color='000000' dibujar-si='ejem=2' coord_abs='sí' expresión='[310,110]' texto='Se lee: el \b{cincuenta por ciento} de las personas que conducen son \nmujeres.\n\nComo razón se escribe: \b{\${\frac{50}{100}}}\n\nSu valor como decimal es: \n\b{\${\frac{50}{100} = 0.5}} (dividimos \b{50} entre \b{100})\n\nSignifica que:\n\b{50} conductores de cada \b{100} son mujeres.' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_26" value="espacio='E2' tipo='texto' color='000000' dibujar-si='ejem=3' coord_abs='sí' expresión='[20,70]' texto='Todo lo que debes saber de la expresión: el \b{30%} de los niños y niñas tienen mascota.' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_27" value="espacio='E2' tipo='imagen' dibujar-si='ejem=3' coord_abs='sí' expresión='(150,260,0.5,0.5)' archivo='images/mascotas.png' ">
+    <param name="G_28" value="espacio='E2' tipo='texto' color='000000' dibujar-si='ejem=3' coord_abs='sí' expresión='[310,110]' texto='Se lee: el \b{treinta por ciento} de los niños y niñas tienen mascota.\n\nComo razón se escribe: \b{\${\frac{30}{100}}}\n\nSu valor como decimal es: \n\b{\${\frac{30}{100} = 0.3}} (dividimos \b{30} entre \b{100})\n\nSignifica que:\n\b{30} de cada \b{100} niños tienen mascota.' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="Animación" value="pausa='40' controles='no' auto='sí' repetir='no' hacer='s=s+0.04;' mientras='s<14' ">
+  </ajs>
+
+
+
+</body>
+</html>

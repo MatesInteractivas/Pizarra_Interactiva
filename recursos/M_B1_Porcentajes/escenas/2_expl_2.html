@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Porcentajes</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='450' fijo='sí' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='n2' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Descuento' expresión='(E1._w/4-150/2,20,150,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='n1=0;n2=1;n3=0;p=1' dibujar-si='(n1=0)|(n3=0)|(n2=0)' activo-si='n2=0' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_02" value="id='n3' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Recargo' expresión='(3*E1._w/4-150/2,20,150,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='n1=0;n2=0;n3=1;p=1' dibujar-si='(n1=0)|(n2=0)|(n3=0)' activo-si='n3=0' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_03" value="id='Otro ejemplo' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Otro ejemplo' expresión='((pleca._w-150)/2,pleca._h-35-15,150,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='ff=datos();p=1' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="A_01" value="id='datos()' algoritmo='sí' expresión='x' inicio='ep=24' hacer='a=ent(42*rnd+4);b=100*ent(5*rnd)+200;b=b*ep;c=a*b/100;d=b-c;rec=b+c' tipo='función' ">
+    <param name="A_02" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='n1=0;n2=1;n3=0;p=1;ver=1;r=0;m=0;limp;datos();;' ">
+    <param name="A_03" value="id='fin' expresión='3' evaluar='siempre' constante='sí' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_m.svg' clip='(120,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='Observa la aplicación de los porcentajes en descuentos y recargos. ¿Descuento del \b{15%}? ¿Recargo del \b{10%}? ¿Cuánto se paga en realidad?' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,450)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(n1=0)*(n2=0)*(n3=0)*(p=0)' coord_abs='sí' expresión='[69,25]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs68\b NOS VAMOS DE COMPRAS\fs64\cf1\par \f3\fs24\b0}' ancho='1' negrita='sí' fuente puntos='34' align='a_left' anchor='a_top_left' ">
+    <param name="G_06" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(n1=0)*(n2=0)*(n3=0)*(p=0)' coord_abs='sí' expresión='[69,25]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs68\b NOS VAMOS DE COMPRAS\par \f2\fs24\b0}' ancho='1' negrita='sí' font_family='Arial Negrita' fuente puntos='34' align='left' anchor='top_left' ">
+    <param name="G_07" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(n1=0)*(n2=0)*(n3=0)*(p=0)' coord_abs='sí' expresión='[208,360]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red0\green0\blue255;\red0\green0\blue0;}\f1\fs40\b\u191 Descuento del 15%?\cf0    \u191 Recargo del 10%?\cf1  \par        \cf2\fs46\u191 Cu\u225 nto se paga en  realidad?\cf1\f3\fs24\b0\par \par }' ancho='1' negrita='sí' font_family='Arial Negrita' fuente puntos='20' align='left' anchor='top_left' ">
+    <param name="G_08" value="espacio='E1' tipo='texto' color='000000' dibujar-si='n2' coord_abs='sí' expresión='[E1._w/2,80]' texto='Una TV cuesta \b{$[b]}. Nos descuentan el \b{[a]%} ¿Cuánto pagaremos en realidad?' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_09" value="espacio='E1' tipo='texto' color='000000' dibujar-si='n3' coord_abs='sí' expresión='[E1._w/2,80]' texto='Una TV cuesta \b{$[b]}. Nos recargan el \b{[a]%} por comprar a plazos. ¿Cuánto pagaremos en realidad?' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_10" value="espacio='E1' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(210,230,0.35,0.35)' archivo='images/monitor.png' ">
+    <param name="G_11" value="espacio='E1' tipo='texto' color='000000' dibujar-si='n2' coord_abs='sí' expresión='[450,130]' texto='Cálculo del descuento \n\b{[a]%} de \b{\${[b] = \frac{[a] · [b]}{100} = \frac{[a*b]}{100}}}\npor lo que tenemos un descuento de \b{$[a*b/100]}\n\n\nCálculo del precio final \n\b{$[b] - $[c]} por lo que pagaremos \b{$[d]} ' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_12" value="espacio='E1' tipo='texto' color='000000' dibujar-si='n3' coord_abs='sí' expresión='[450,130]' texto='Cálculo del recargo\n\b{[a]%} de \b{\${[b] = \frac{[a] · [b]}{100} = \frac{[a*b]}{100}}}\npor lo que tenemos un recargo de \b{$[a*b/100]}\n\n\nCálculo del precio final\n\b{[b] + [c]} por lo que pagaremos \b{$[rec]}' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_13" value="espacio='E1' tipo='texto' color='000000' coord_abs='sí' expresión='[210,370]' texto='Precio \b{$[b]}' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_14" value="espacio='E1' tipo='texto' color='000000' dibujar-si='n2' coord_abs='sí' expresión='[210,400]' texto='con \b{[a]%} de descuento' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_15" value="espacio='E1' tipo='texto' color='000000' dibujar-si='n3' coord_abs='sí' expresión='[210,400]' texto='\b{[a]%} de recargo si compra a plazos' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+  </ajs>
+
+
+
+</body>
+</html>

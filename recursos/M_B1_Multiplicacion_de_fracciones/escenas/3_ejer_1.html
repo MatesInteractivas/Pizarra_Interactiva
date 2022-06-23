@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Multiplicación de fracciones</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='450' fijo='sí' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='Otro' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Otro ejercicio' expresión='(pleca._w-150-15,pleca._h-35-15,150,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='otro()' activo-si='bien' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_02" value="id='veri' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Verificar' expresión='((pleca._w-120)/2,pleca._h-35-15,120,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='verificar()' activo-si='!bien' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_03" value="id='s1' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E1' expresión='(posOper.x-70,posOper.y,60,40)' valor='&squot;&squot;' decimales='0' visible='sí' activo-si='!bien1' keyboard='sí' kblayout='14x1' kbexp='(194,506)' ">
+    <param name="C_04" value="id='s2' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E1' expresión='(posOper.x-70,posOper.y+60,60,40)' valor='&squot;&squot;' decimales='0' visible='sí' activo-si='!bien2' keyboard='sí' kblayout='14x1' kbexp='(194,506)' ">
+    <param name="A_01" value="id='otro()' algoritmo='sí' expresión='0' inicio='verificado=0;bien1=0;bien2=0;bien=0' hacer='kk=0;pn=-6;a=ent(rnd*7)+1;b=ent(rnd*7)+2;c=ent(rnd*7)+1;d=ent(rnd*7)+2;e=ent(rnd*7)+1;f=ent(rnd*7)+2;tipo=ent(rnd*2)+1;;k1=(tipo=1)?a*c:k1;k1=(tipo=2)?a*c*e:k1;;k2=(tipo=1)?b*d:k2;k2=(tipo=2)?b*d*f:k2;sw=(k1%k2=0)?1:0;s1=&squot;&squot;;s2=&squot;&squot;;s3=&squot;&squot;' tipo='función' ">
+    <param name="A_02" value="id='verificar()' algoritmo='sí' expresión='0' inicio='verificado=1;bien1=0;bien2=0' hacer='bien1=(tipo==1)?((a*c)==s1):bien1;bien1=(tipo==2)?((a*c*e)==s1):bien1;bien2=(tipo==1)?((b*d)==s2):bien2;bien2=(tipo==2)?((b*d*f)==s2):bien2;;bien=bien1&&bien2' tipo='función' ">
+    <param name="A_03" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='otro();;posOper.x=602;posOper.y=200' ">
+    <param name="A_04" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_m.svg' clip='(240,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='Resuelve las multiplicaciones de fracciones propuestos y pulsa el botón “Verificar” para comprobar tu respuesta.' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,450)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='E1' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(E1._w/2,100,1.2,1.2)' archivo='images/operandos.svg' ">
+    <param name="G_06" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(tipo!=2)' coord_abs='sí' expresión='[posOper.x,posOper.y]' texto='\${\frac{[a]}{[b]} × \frac{[c]}{[d]} = \frac{}{      }}' fijo='no' ancho='1' negrita='sí' fuente puntos='45' align='a_left' anchor='a_top_right' ">
+    <param name="G_07" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(tipo==2)' coord_abs='sí' expresión='[posOper.x,posOper.y]' texto='\${\frac{[a]}{[b]} × \frac{[c]}{[d]} × \frac{[e]}{[f]} = \frac{}{      }}' fijo='no' ancho='1' negrita='sí' fuente puntos='45' align='a_left' anchor='a_top_right' ">
+    <param name="G_08" value="espacio='E1' tipo='texto' color='34cc67' dibujar-si='(verificado)&&(bien)' coord_abs='sí' expresión='[E1._w/2,E1._h-20]' texto='¡Muy Bien! Intenta con otro ejercicio' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_bottom_center' ">
+    <param name="G_09" value="espacio='E1' tipo='imagen' dibujar-si='(verificado)&&(bien1)' coord_abs='sí' expresión='(posOper.x+25,posOper.y+15,1,1)' archivo='images/ok.svg' ">
+    <param name="G_10" value="espacio='E1' tipo='imagen' dibujar-si='(verificado)&&(!bien1)' coord_abs='sí' expresión='(posOper.x+25,posOper.y+15,1,1)' archivo='images/ko.svg' ">
+    <param name="G_11" value="espacio='E1' tipo='texto' color='d40809' dibujar-si='(verificado)&&(!bien)' coord_abs='sí' expresión='[E1._w/2,E1._h-20]' texto='Lo siento, tu respuesta no es correcta, revisa tus calculos' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_bottom_center' ">
+    <param name="G_12" value="espacio='E1' tipo='imagen' dibujar-si='(verificado)&&(bien2)' coord_abs='sí' expresión='(posOper.x+25,posOper.y+80,1,1)' archivo='images/ok.svg' ">
+    <param name="G_13" value="espacio='E1' tipo='imagen' dibujar-si='(verificado)&&(!bien2)' coord_abs='sí' expresión='(posOper.x+25,posOper.y+80,1,1)' archivo='images/ko.svg' ">
+  </ajs>
+
+
+
+</body>
+</html>

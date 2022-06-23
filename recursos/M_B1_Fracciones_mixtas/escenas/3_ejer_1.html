@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Fracciones mixtas</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body>
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='450' fijo='sí' escala='120' O.x='-240' O.y='20' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='n4' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E1' expresión='(posfrac.x,posfrac.y,50,35)' valor='&squot;&squot;' decimales='0' visible='sí' keyboard='sí' kblayout='14x1' kbexp='(194,506)' ">
+    <param name="C_02" value="id='n5' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E1' expresión='(posfrac.x+60,posfrac.y-22,50,35)' valor='&squot;&squot;' decimales='0' visible='sí' keyboard='sí' kblayout='14x1' kbexp='(194,506)' ">
+    <param name="C_03" value="id='n6' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E1' expresión='(posfrac.x+60,posfrac.y+22,50,35)' valor='&squot;&squot;' decimales='0' visible='sí' keyboard='sí' kblayout='14x1' kbexp='(194,506)' ">
+    <param name="C_04" value="id='veri' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Verificar' expresión='((pleca._w-130)/2,pleca._h-35-15,130,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='verificar()' activo-si='(intentos<2)&&(!ok)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_05" value="id='otro' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Otro ejercicio' expresión='(pleca._w-150-15,pleca._h-35-15,150,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='entero=ent(rnd*2)+1;denominador=ent(rnd*9)+2;tomadas=ent(rnd*(denominador-1))+1;;a=entero*denominador+tomadas;b=denominador;intentos=0;n4=&squot;&squot;;n5=&squot;&squot;;n6=&squot;&squot;;ok=0' activo-si='(ok=1)|(intentos>1)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="A_01" value="id='verificar()' algoritmo='sí' expresión='0' hacer='intentos=intentos+1' tipo='función' ">
+    <param name="A_02" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='entero=ent(rnd*2)+1;denominador=ent(rnd*9)+2;tomadas=ent(rnd*(denominador-1))+1;;a=entero*denominador+tomadas;b=denominador;;etapa=1;activo1=1;;posfrac.x=660;posfrac.y=35;;' ">
+    <param name="A_03" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='r1=ent(a/b);re=a-b*r1;;c=ent(a-b)*(a>b);d=ent(a-2*b)*(a>(2*b));;ok=(n4=entero)&(tomadas=n5)&(denominador=n6);' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_m.svg' clip='(240,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='Identifica el valor de la zona sombreada, escribe tu respuesta en los campos de texto y pulsa el botón “Verificar” para comprobarla.' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,450)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='E1' tipo='imagen' coord_abs='no' expresión='(0,0,0.5,0.5)' archivo='images/pizza.png' ">
+    <param name="G_06" value="espacio='E1' tipo='imagen' coord_abs='no' expresión='(2,0,0.5,0.5)' archivo='images/pizza.png' ">
+    <param name="G_07" value="espacio='E1' tipo='imagen' coord_abs='no' expresión='(4,0,0.5,0.5)' archivo='images/pizza.png' ">
+    <param name="G_08" value="espacio='E1' tipo='arco' color='ffffff' coord_abs='no' centro='(0,0)' radio='1' inicio='0' fin='(360*a)/b' relleno='87ff00ff' ancho='0' ">
+    <param name="G_09" value="espacio='E1' tipo='arco' color='ffffff' coord_abs='no' centro='(2,0)' radio='1' inicio='0' fin='(360*c)/b' relleno='87ff00ff' ancho='1' ">
+    <param name="G_10" value="espacio='E1' tipo='segmento' color='ffffff' coord_abs='no' expresión='(0,0)(cos(2*s*pi/b),sen(2*s*pi/b))' familia='s' s.intervalo='[0,b]' s.pasos='b' tamaño='0' ancho='2' ">
+    <param name="G_11" value="espacio='E1' tipo='segmento' color='ffffff' coord_abs='no' expresión='(2,0)(cos(2*s*pi/b)+2,sen(2*s*pi/b))' familia='s' s.intervalo='[0,b]' s.pasos='b' tamaño='0' ancho='2' ">
+    <param name="G_12" value="espacio='E1' tipo='segmento' color='ffffff' coord_abs='no' expresión='(4,0)(cos(2*s*pi/b)+4,sen(2*s*pi/b))' familia='s' s.intervalo='[0,b]' s.pasos='b' tamaño='0' ancho='2' ">
+    <param name="G_13" value="espacio='E1' tipo='texto' color='000000' coord_abs='sí' expresión='[20,40]' texto='Las porciones coloreadas están representadas por el número mixto: ' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_14" value="espacio='E1' tipo='arco' color='ffffff' coord_abs='no' centro='(4,0)' radio='1' inicio='0' fin='(360*d)/b' relleno='84ff00ff' ancho='1' ">
+    <param name="G_15" value="espacio='E1' tipo='segmento' color='000000' coord_abs='sí' expresión='(posfrac.x+60,posfrac.y+18)(posfrac.x+60+50,posfrac.y+18)' tamaño='0' ancho='2' ">
+    <param name="G_16" value="espacio='E1' tipo='texto' color='d40809' dibujar-si='intentos>1' coord_abs='sí' expresión='[E1._w/2,E1._h-15]' texto='¡Lo siento! \b{\${\frac{[a]}{[b]} = [entero] + \frac{[tomadas]}{[denominador]} = [entero] \frac{[tomadas]}{[denominador]}}}' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_bottom_center' ">
+    <param name="G_17" value="espacio='E1' tipo='texto' color='34cc67' dibujar-si='ok' coord_abs='sí' expresión='[E1._w/2,E1._h-15]' texto='¡Muy bien! \b{\${\frac{[a]}{[b]} = [entero] + \frac{[tomadas]}{[denominador]} = [entero] \frac{[tomadas]}{[denominador]}}}' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_bottom_center' ">
+    <param name="G_18" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(intentos==1)&(ok!=1)' coord_abs='sí' expresión='[E1._w/2,E1._h-15]' texto='Debes transforma los \b{\${\frac{[a]}{[b]}}} en un número mixto.' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_bottom_center' ">
+    <param name="G_19" value="espacio='E1' tipo='imagen' dibujar-si='(intentos>0)&&(ok)' coord_abs='sí' expresión='(posfrac.x+125,posfrac.y)' archivo='images/ok.svg' ">
+    <param name="G_20" value="espacio='E1' tipo='imagen' dibujar-si='(intentos>0)&&(!ok)' coord_abs='sí' expresión='(posfrac.x+125,posfrac.y)' archivo='images/ko.svg' ">
+  </ajs>
+
+
+
+</body>
+</html>

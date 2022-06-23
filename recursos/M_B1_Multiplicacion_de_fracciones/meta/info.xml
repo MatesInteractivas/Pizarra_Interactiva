@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="M_B1_Multiplicacion_de_fracciones" 
+	nivel="Primaria" 
+	area="Matemáticas, Números y operaciones" 
+	plataforma="HTML 5" 
+	>
+	<titulo><![CDATA[
+		Multiplicación de fracciones
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+    Ofrecer actividades que permitan al alumno comprender el procedimiento para multiplicar fracciones.
+	]]></Descripcion>
+</recurso>

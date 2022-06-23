@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="L_B3_Ortografia_de_la_G_y_la_J" 
+	nivel="Primaria" 
+	area="Español, Ortografía"
+	plataforma="HTML 5" 
+	>
+	<titulo><![CDATA[
+		Ortografía de la g y la j
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+		La lección presenta actividades que permiten repasar y practicar las normas ortográficas de la g y la j.
+	]]></Descripcion>
+</recurso>

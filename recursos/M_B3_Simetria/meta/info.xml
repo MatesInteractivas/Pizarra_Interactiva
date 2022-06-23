@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="M_B3_Simetria" 
+	nivel="Primaria" 
+	area="Matemáticas, Geometría" 
+	plataforma="HTML 5" 
+	>
+	<titulo><![CDATA[
+		Simetría
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+    Que el alumno desarrolle la idea de simetría axial explorando las propiedades de los puntos simétricos.
+	]]></Descripcion>
+</recurso>

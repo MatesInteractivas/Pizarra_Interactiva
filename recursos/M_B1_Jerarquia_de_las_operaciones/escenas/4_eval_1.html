@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Jerarquía de las operaciones</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='E0' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='Counter' x='15' y='500' ancho='994' alto='60' fijo='sí' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='Res1' tipo='numérico' interfaz='campo de texto' solo_texto='sí' región='interior' espacio='E0' expresión='(ctr1.x+10,ctr1.y,120,35)' valor='&squot;&squot;' visible='sí' activo-si='!verif' keyboard='sí' kblayout='4x4' kbexp='(804,130)' ">
+    <param name="C_02" value="id='Res2' tipo='numérico' interfaz='campo de texto' solo_texto='sí' región='interior' espacio='E0' expresión='(ctr1.x+10,ctr1.y+sep1,120,35)' valor='&squot;&squot;' visible='sí' activo-si='!verif' keyboard='sí' kblayout='4x4' kbexp='(804,130)' ">
+    <param name="C_03" value="id='Res3' tipo='numérico' interfaz='campo de texto' solo_texto='sí' región='interior' espacio='E0' expresión='(ctr1.x+10,ctr1.y+2*sep1,120,35)' valor='&squot;&squot;' visible='sí' activo-si='!verif' keyboard='sí' kblayout='4x4' kbexp='(804,130)' ">
+    <param name="C_04" value="id='op11' tipo='numérico' interfaz='menú' región='interior' espacio='E0' expresión='(ctr2.x+30,ctr2.y,50,35)' decimales='0' visible='no' opciones=' ,+,−,×,÷' acción='calcular' parámetro='otraVez=1' activo-si='!verif' ">
+    <param name="C_05" value="id='op12' tipo='numérico' interfaz='menú' región='interior' espacio='E0' expresión='(ctr2.x+124,ctr2.y,50,35)' decimales='0' visible='no' opciones=' ,+,−,×,÷' acción='calcular' parámetro='otraVez=1' activo-si='!verif' ">
+    <param name="C_06" value="id='op13' tipo='numérico' interfaz='menú' región='interior' espacio='E0' expresión='(ctr2.x+218,ctr2.y,50,35)' decimales='0' visible='no' opciones=' ,+,−,×,÷' acción='calcular' parámetro='otraVez=1' activo-si='!verif' ">
+    <param name="C_07" value="id='res1' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E0' expresión='(0,0,60,34)' valor='&squot;&squot;' decimales='0' fijo='no' visible='sí' dibujar-si='0' activo-si='0' evaluar='sí' respuesta='krypto_epd3g2b8c96qa1oq9nu0r67om0r307m4bdh5mjhtvad5ouledcoqb1b6oet4mpen' info='e1' ">
+    <param name="C_08" value="id='op21' tipo='numérico' interfaz='menú' región='interior' espacio='E0' expresión='(ctr2.x+30,ctr2.y+sep2,50,35)' decimales='0' visible='no' opciones=' ,+,−,×,÷' acción='calcular' parámetro='otraVez=1' activo-si='!verif' ">
+    <param name="C_09" value="id='op22' tipo='numérico' interfaz='menú' región='interior' espacio='E0' expresión='(ctr2.x+124,ctr2.y+sep2,50,35)' decimales='0' visible='no' opciones=' ,+,−,×,÷' acción='calcular' parámetro='otraVez=1' activo-si='!verif' ">
+    <param name="C_10" value="id='op23' tipo='numérico' interfaz='menú' región='interior' espacio='E0' expresión='(ctr2.x+218,ctr2.y+sep2,50,35)' decimales='0' visible='no' opciones=' ,+,−,×,÷' acción='calcular' parámetro='otraVez=1' activo-si='!verif' ">
+    <param name="C_11" value="id='res2' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E0' expresión='(0,0,60,34)' valor='&squot;&squot;' decimales='0' fijo='no' visible='sí' dibujar-si='0' activo-si='0' evaluar='sí' respuesta='krypto_fhdjg5uo4rmlv1c93tq1r84oiu0bac5hl4u2fapqml2aom4e51oergl1ml4m3uen' info='e2' ">
+    <param name="C_12" value="id='btnVerif' interfaz='botón' tipo='numérico' región='interior' espacio='E0' nombre='Verificar' expresión='((E0._w-130)/2,E0._h-35-15,130,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='aux=(!verif)?Verificar():0' dibujar-si='!verif' activo-si='!verif' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_13" value="id='OtraEv' interfaz='botón' tipo='numérico' región='interior' espacio='E0' nombre='Otra evaluación' expresión='(E0._w-160-15,E0._h-35-15,160,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='aux=(verif)?reInit():0' activo-si='verif' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="A_01" value="id='OPS' vector='sí' evaluar='una-sola-vez' tamaño='4' expresión='OPS[0]=&squot;+&squot;;OPS[1]=&squot;-&squot;;OPS[2]=&squot;*&squot;;OPS[3]=&squot;/&squot;;' tipo='vector' ">
+    <param name="A_02" value="id='POS' vector='sí' evaluar='una-sola-vez' tamaño='4' expresión='POS[0]=&squot;+&squot;;POS[1]=&squot;−&squot;;POS[2]=&squot;×&squot;;POS[3]=&squot;÷&squot;;' tipo='vector' ">
+    <param name="A_03" value="id='Divisor()' algoritmo='sí' expresión='1+ent(rnd*4)' tipo='función' ">
+    <param name="A_04" value="id='Multiplo(D)' algoritmo='sí' expresión='M' hacer='M=1+ent(rnd*9)' mientras='((M%D)!=0)|(abs(M-D)<1.5)' tipo='función' ">
+    <param name="A_05" value="id='genOps()' algoritmo='sí' expresión='x' hacer='hop2=ent(rnd*4);hop3=ent(rnd*4);twoEqual=(hop1=hop2)|(hop2=hop3)|(hop1=hop3);hop2=(twoEqual)?ent(rnd*4):hop2;hop3=(twoEqual)?ent(rnd*4):hop3;threeEqual=(hop1=hop2)&(hop2=hop3);divs=(hop1=3)+(hop2=3)+(hop3=3);;' mientras='((hop1=3)&(hop2=1))|((divs>1)&(hop2=3))' tipo='función' ">
+    <param name="A_06" value="id='checkRnd1()' algoritmo='sí' expresión='(Ao1Bo2C<=0)|(Ao2Bo1C<=0)' hacer='sAo1Bo2C=Ao1B+OPS[hop2]+&squot;C&squot;;Ao1Bo2C=_Eval_(sAo1Bo2C);sAo2Bo1C=&squot;A&squot;+OPS[hop1]+Bo1C;Ao2Bo1C=_Eval_(sAo2Bo1C);' tipo='función' ">
+    <param name="A_07" value="id='checkRnd2()' algoritmo='sí' expresión='(Bo1Co2D<=0)|(Bo2Co1D<=0)' hacer='sBo1Co2D=Bo1C+OPS[hop3]+&squot;D&squot;;Bo1Co2D=_Eval_(sBo1Co2D);sBo2Co1D=&squot;B&squot;+OPS[hop2]+Co1D;Bo2Co1D=_Eval_(sBo2Co1D);;' tipo='función' ">
+    <param name="A_08" value="id='checkRnd3()' algoritmo='sí' expresión='(Ao1Bo2Co3D<=0)|(Ao1Bo3Co2D<=0)|(Ao2Bo1Co3D<=0)|(Ao2Bo3Co1D<=0)|(Ao3Bo1Co2D<=0)|(Ao3Bo2Co1D<=0)' hacer='sAo1Bo2Co3D=Ao1Bo2C+OPS[hop3]+&squot;D&squot;;Ao1Bo2Co3D=_Eval_(sAo1Bo2Co3D);sAo1Bo3Co2D=Ao1B+OPS[hop2]+Co1D;Ao1Bo3Co2D=_Eval_(sAo1Bo3Co2D);sAo2Bo1Co3D=Ao2Bo1C+OPS[hop3]+&squot;D&squot;;Ao2Bo1Co3D=_Eval_(sAo2Bo1Co3D);sAo2Bo3Co1D=Ao1B+OPS[hop2]+Co1D;Ao2Bo3Co1D=_Eval_(sAo2Bo3Co1D);sAo3Bo1Co2D=&squot;A&squot;+OPS[hop1]+Bo1Co2D;Ao3Bo1Co2D=_Eval_(sAo3Bo1Co2D);sAo3Bo2Co1D=&squot;A&squot;+OPS[hop1]+Bo2Co1D;Ao3Bo2Co1D=_Eval_(sAo3Bo2Co1D);' tipo='función' ">
+    <param name="A_09" value="id='nonUnique()' algoritmo='sí' expresión='u>1' hacer='u=(abs(Ao1Bo2Co3D-E)<0.01)+(abs(Ao1Bo3Co2D-E)<0.01)+(abs(Ao2Bo1Co3D-E)<0.01)+(abs(Ao2Bo3Co1D-E)<0.01)+(abs(Ao3Bo1Co2D-E)<0.01)+(abs(Ao3Bo2Co1D-E)<0.01)' tipo='función' ">
+    <param name="A_10" value="id='rndInitOne()' algoritmo='sí' expresión='x' inicio='hop1=ent(rnd*4)' hacer='genOps();A=1+ent(rnd*9);B=1+ent(rnd*9);B=(hop1=3)?Divisor():B;A=(hop1=3)?Multiplo(B):A;C=1+ent(rnd*9);C=(hop2=3)?Divisor():C;B=(hop2=3)?Multiplo(C):B;D=1+ent(rnd*9);D=(hop3=3)?Divisor():D;C=(hop3=3)?Multiplo(D):C;sAo1B=&squot;A&squot;+OPS[hop1]+&squot;B&squot;;Ao1B=_Eval_(sAo1B);sBo1C=&squot;B&squot;+OPS[hop2]+&squot;C&squot;;Bo1C=_Eval_(sBo1C);sCo1D=&squot;C&squot;+OPS[hop3]+&squot;D&squot;;Co1D=_Eval_(sCo1D);AUX=&squot;A&squot;+OPS[hop1]+&squot;B&squot;+OPS[hop2]+&squot;C&squot;+OPS[hop3]+&squot;D&squot;;E=_Eval_(AUX)' mientras='(E<0)|(E>99)|(Ao1B<=0)|(Bo1C<=0)|(Co1D<=0)|checkRnd1()|checkRnd2()|checkRnd3()|nonUnique()' tipo='función' ">
+    <param name="A_11" value="id='reInit()' algoritmo='sí' expresión='x' inicio='verif=0;otraVez=0;res1=&squot;&squot;;res2=&squot;&squot;;' hacer='Res1=&squot;&squot;;Res2=&squot;&squot;;Res3=&squot;&squot;;op11=0;op12=0;op13=0;op21=0;op22=0;op23=0;verif=0;otraVez=0;rndInitOne();A1=A;B1=B;C1=C;D1=D;E1=E;aux1=AUX;AUX1=&squot;A1&squot;+POS[hop1]+&squot;B1&squot;+POS[hop2]+&squot;C1&squot;+POS[hop3]+&squot;D1&squot;;rndInitOne();A2=A;B2=B;C2=C;D2=D;E2=E;aux2=AUX;AUX2=&squot;A2&squot;+POS[hop1]+&squot;B2&squot;+POS[hop2]+&squot;C2&squot;+POS[hop3]+&squot;D2&squot;;rndInitOne();a1=A;b1=B;c1=C;d1=D;e1=E;expr1=&squot;&squot;+e1;Aux1=AUX;AUX1=&squot; &squot;+a1+&squot;  &squot;+POS[hop1]+&squot;  &squot;+b1+&squot;  &squot;+POS[hop2]+&squot;  &squot;+c1+&squot;  &squot;+POS[hop3]+&squot;  &squot;+d1;rndInitOne();a2=A;b2=B;c2=C;d2=D;e2=E;expr2=&squot;&squot;+e2;Aux2=AUX;AUX2=&squot; &squot;+a2+&squot;  &squot;+POS[hop1]+&squot;  &squot;+b2+&squot;  &squot;+POS[hop2]+&squot;  &squot;+c2+&squot;  &squot;+POS[hop3]+&squot;  &squot;+d2;rndInitOne();a3=A;b3=B;c3=C;d3=D;e3=E;expr3=&squot;&squot;+e3;Aux3=AUX;AUX3=&squot; &squot;+a3+&squot;  &squot;+POS[hop1]+&squot;  &squot;+b3+&squot;  &squot;+POS[hop2]+&squot;  &squot;+c3+&squot;  &squot;+POS[hop3]+&squot;  &squot;+d3;' tipo='función' ">
+    <param name="A_12" value="id='Verificar()' algoritmo='sí' expresión='x' hacer='verif=1;verif2=1;bien11=(Res1=expr1);bien12=(Res2=expr2);bien13=(Res3=expr3);aux=&squot;A1&squot;+OPS[op11-1]+&squot;B1&squot;+OPS[op12-1]+&squot;C1&squot;+OPS[op13-1]+&squot;D1&squot;;res1=_Eval_(aux);bien21=abs(E1-res1)<0.001;aux=&squot;A2&squot;+OPS[op21-1]+&squot;B2&squot;+OPS[op22-1]+&squot;C2&squot;+OPS[op23-1]+&squot;D2&squot;;res2=_Eval_(aux);bien22=abs(E2-res2)<0.001;buenas=bien11+bien12+bien13+bien21+bien22;nota=buenas*20;Evaluaciones=Evaluaciones+1;Buenas=Buenas+buenas;Nota=(Buenas*100)/(Evaluaciones*5);otraVez=1-otraVez;' tipo='función' ">
+    <param name="A_13" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='Evaluaciones=0;Buenas=0' hacer='reInit();;ctr1.x=575;ctr1.y=170;sep1=50;;ctr2.x=330;ctr2.y=380;sep2=50;' ">
+    <param name="A_14" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='opsOn=(op11>0)&(op12>0)&(op13>0)&(op21>0)&(op22>0)&(op23>0);resOn=(Res1!=&squot;&squot;)&(Res2!=&squot;&squot;)&(Res3!=&squot;&squot;);' ">
+    <param name="A_15" value="id='clean' evento='sí' condición='otraVez|verif2' acción='limpiar' ejecución='siempre' ">
+    <param name="A_16" value="id='fin' evento='sí' condición='1' acción='calcular' parámetro='otraVez=0;verif2=0' ejecución='alternar' ">
+    <param name="G_01" value="espacio='Counter' tipo='texto' color='000000' dibujar-si='Evaluaciones>0' coord_abs='sí' expresión='[20,20]' texto='Evaluaciones = [Evaluaciones]    Media = [Nota]' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_02" value="espacio='Counter' tipo='texto' color='000000' dibujar-si='verif' coord_abs='sí' expresión='[Counter._w-20,20]' texto='Buenas = [buenas]    Malas = [5-buenas]    Nota =[nota]' decimales='1' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_right' ">
+    <param name="G_03" value="espacio='E0' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_04" value="espacio='E0' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_m.svg' clip='(360,0,120,120)' ">
+    <param name="G_05" value="espacio='E0' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='Resuelve los siguientes ejercicios, respetando la jerarquía de las operaciones, al terminar pulsa el botón “Verificar” para comprobar tus respuestas.' ancho='E0._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_06" value="espacio='E0' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,450)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_07" value="espacio='E0' tipo='texto' color='000000' coord_abs='sí' expresión='(40,130)' texto='\b{1)} Realiza las operaciones indicadas en la expresión respetando la jerarquía de las operaciones.' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_08" value="espacio='E0' tipo='texto' color='000000' coord_abs='sí' expresión='[ctr1.x,ctr1.y]' texto='\${[AUX1] =}' fijo='no' ancho='1' negrita='sí' fuente puntos='30' align='a_left' anchor='a_top_right' ">
+    <param name="G_09" value="espacio='E0' tipo='texto' color='000000' coord_abs='sí' expresión='[ctr1.x,ctr1.y+sep1]' texto='\${[AUX2] =}' fijo='no' ancho='1' negrita='sí' fuente puntos='30' align='a_left' anchor='a_top_right' ">
+    <param name="G_10" value="espacio='E0' tipo='texto' color='000000' coord_abs='sí' expresión='[ctr1.x,ctr1.y+2*sep1]' texto='\${[AUX3] =}' fijo='no' ancho='1' negrita='sí' fuente puntos='30' align='a_left' anchor='a_top_right' ">
+    <param name="G_11" value="espacio='E0' tipo='imagen' dibujar-si='verif&bien11' coord_abs='sí' expresión='(ctr1.x+160,ctr1.y+15,1,1)' archivo='images/bien.svg' ">
+    <param name="G_12" value="espacio='E0' tipo='imagen' dibujar-si='verif&!bien11' coord_abs='sí' expresión='(ctr1.x+160,ctr1.y+15,1,1)' archivo='images/ko.svg' ">
+    <param name="G_13" value="espacio='E0' tipo='imagen' dibujar-si='verif&bien12' coord_abs='sí' expresión='(ctr1.x+160,ctr1.y+15+sep1,1,1)' archivo='images/bien.svg' ">
+    <param name="G_14" value="espacio='E0' tipo='imagen' dibujar-si='verif&!bien12' coord_abs='sí' expresión='(ctr1.x+160,ctr1.y+15+sep1,1,1)' archivo='images/ko.svg' ">
+    <param name="G_15" value="espacio='E0' tipo='imagen' dibujar-si='verif&bien13' coord_abs='sí' expresión='(ctr1.x+160,ctr1.y+15+2*sep1,1,1)' archivo='images/bien.svg' ">
+    <param name="G_16" value="espacio='E0' tipo='imagen' dibujar-si='verif&!bien13' coord_abs='sí' expresión='(ctr1.x+160,ctr1.y+15+2*sep1,1,1)' archivo='images/ko.svg' ">
+    <param name="G_17" value="espacio='E0' tipo='texto' color='000000' coord_abs='sí' expresión='(40,330)' texto='\b{2)} Selecciona los operadores necesarios para que el resultado sea el valor indicado.' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_18" value="espacio='E0' tipo='texto' color='000000' coord_abs='sí' expresión='(ctr2.x,ctr2.y)' texto='[A1]         [B1]          [C1]         [D1] = [(E1<9.9)?&squot; &squot;+E1:E1]' fijo='no' ancho='1' negrita='sí' fuente puntos='30' align='a_left' anchor='a_top_left' ">
+    <param name="G_19" value="espacio='E0' tipo='texto' color='000000' coord_abs='sí' expresión='(ctr2.x,ctr2.y+sep2)' texto='[A2]         [B2]          [C2]         [D2] = [(E2<9.9)?&squot; &squot;+E2:E2]' fijo='no' ancho='1' negrita='sí' fuente puntos='30' align='a_left' anchor='a_top_left' ">
+    <param name="G_20" value="espacio='E0' tipo='texto' color='34495e' dibujar-si='verif' coord_abs='sí' expresión='(E0._w-120,ctr2.y-22)' texto='Tu resultado es\n[res1]\n\n[res2]' fijo='no' ancho='1' negrita='sí' fuente puntos='20' align='a_center' anchor='a_top_right' ">
+    <param name="G_21" value="espacio='E0' tipo='imagen' dibujar-si='verif&bien21' coord_abs='sí' expresión='(ctr2.x+410,ctr2.y+15,1,1)' archivo='images/bien.svg' ">
+    <param name="G_22" value="espacio='E0' tipo='imagen' dibujar-si='verif&!bien21' coord_abs='sí' expresión='(ctr2.x+410,ctr2.y+15,1,1)' archivo='images/ko.svg' ">
+    <param name="G_23" value="espacio='E0' tipo='imagen' dibujar-si='verif&bien22' coord_abs='sí' expresión='(ctr2.x+410,ctr2.y+15+sep2,1,1)' archivo='images/bien.svg' ">
+    <param name="G_24" value="espacio='E0' tipo='imagen' dibujar-si='verif&!bien22' coord_abs='sí' expresión='(ctr2.x+410,ctr2.y+15+sep2,1,1)' archivo='images/ko.svg' ">
+  </ajs>
+
+
+
+</body>
+</html>

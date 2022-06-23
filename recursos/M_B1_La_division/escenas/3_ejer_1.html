@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>La división</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' despl_imagen='expand.' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='450' fijo='sí' escala='30' O.x='-50%' O.y='65%' imagen='images/fondo_ejer.svg' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='n2' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Continuar' expresión='((pleca._w-140)/2,pleca._h-35-15,140,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='paso=paso+1' dibujar-si='(d1!=&squot;&squot;)&(error1+error2=0)&(dx<0)&(paso=0)&(correcto1=0)&(kk=55)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_02" value="id='n1' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Otro ejercicio' expresión='(pleca._w-150-15,pleca._h-35-15,150,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='otro()' activo-si='(correcto1)||(correcto3)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_03" value="id='d1' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E1' expresión='(p3x-20,p1y+55,100,35)' valor='&squot;&squot;' decimales='0' visible='sí' dibujar-si='(correcto1=0)&(paso=0)' keyboard='sí' kblayout='7x2' kbexp='(120,400)' ">
+    <param name="C_04" value="id='d2' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E1' expresión='(p3x+23,p1y+55,100,35)' valor='&squot;&squot;' min='0' decimales='0' visible='sí' dibujar-si='(correcto3=0)&(paso=1)' keyboard='sí' kblayout='7x2' kbexp='(120,400)' ">
+    <param name="A_01" value="id='otro()' algoritmo='sí' expresión='0' hacer='dividendo=ent(rnd*900)+100;divisor=ent(rnd*90)+10;;d1=&squot;&squot;;d2=&squot;&squot;;dx=0;dy1=0;error1=0;error2=0;error3=0;error2t=&squot;&squot;;correcto1=0;correcto3=0;paso=0;caso=0;' tipo='función' ">
+    <param name="A_02" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='p1x=90+90;p1y=135;p2x=p1x/30+2+1.5;p2y=16.5-p1y/30-0.75;p3x=p1x+65+60;p3y=p1y;p4x=p1x/30+.5-2.1;p4y=15.5-p1y/30;p5x=p1x/30-2.6;p5y=15.5-p1y/30-1.5;;otro();' ">
+    <param name="A_03" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' inicio='error1=0;error2=0;error3=0;correcto1=0;correcto3=0;error4=0' hacer='dividendo2=ent(dividendo/10);producto1=d1*divisor;error1=(producto1>dividendo2)&(dividendo2>=divisor)?1:error1;error1=(producto1>dividendo)&(dividendo2<divisor)?1:error1;error2=((dividendo2-producto1)>=divisor)&(dividendo2>=divisor)?1:error2;error2=((dividendo-producto1)>=divisor)&(dividendo2<divisor)?1:error2;error2t=((dividendo2-producto1)>=divisor)&(dividendo2>=divisor)?(dividendo2-producto1):error2t;error2t=((dividendo-producto1)>=divisor)&(dividendo2<divisor)?(dividendo-producto1):error2t;correcto1=(error1=0)&(error2=0)&(dividendo-producto1<divisor)?1:correcto1;correcto2=(error1=0)&(error2=0)&(dividendo2-producto1<divisor)?1:correcto2;dividendo3=(dividendo2-producto1);dividendo31=dividendo-dividendo2*10;dividendo32=dividendo3*10+dividendo31;producto2=(paso=1)&(d2!=&squot;&squot;)?d2*divisor:producto2;residuo=dividendo32-producto2;error3=(residuo>=divisor)&(paso=1)&(d2!=&squot;&squot;)?1:error3;error4=(producto2>dividendo32)&(paso=1)&(d2!=&squot;&squot;)?1:error4;correcto3=(paso=1)&(error3+error4=0)&(d2!=&squot;&squot;)?1:correcto3;' ">
+    <param name="A_04" value="id='e3' evento='sí' condición='d1!=&squot;&squot;' acción='animar' ejecución='alternar' ">
+    <param name="A_05" value="id='e4' evento='sí' condición='paso=1' acción='animar' ejecución='alternar' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_m.svg' clip='(240,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='Practica la división con enteros de dos cifras, escribe el resultado que se te vaya pidiendo en el campo de texto.' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,450)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='E1' tipo='texto' color='000000' coord_abs='sí' expresión='[p1x,p1y]' texto='[dividendo]' fijo='no' ancho='1' fuente puntos='40' align='a_left' anchor='a_top_right' ">
+    <param name="G_06" value="espacio='E1' tipo='polígono' color='000000' coord_abs='no' expresión='(p2x,p2y+1.5)(p2x,p2y)(p2x+3.5,p2y)' ancho='2' ">
+    <param name="G_07" value="espacio='E1' tipo='texto' color='000000' coord_abs='sí' expresión='[p3x,p3y]' texto='[divisor]' fijo='no' ancho='1' fuente puntos='40' align='a_left' anchor='a_top_left' ">
+    <param name="G_08" value="espacio='E1' tipo='arco' color='ff0000' dibujar-si='(dividendo2>=divisor)&(paso=0)' coord_abs='no' centro='(p4x,p4y)' radio='2' inicio='70' fin='110' ancho='2' font_family='Monospaced' fuente puntos='12' ">
+    <param name="G_09" value="espacio='E1' tipo='arco' color='ff0000' dibujar-si='(dividendo2<divisor)&(paso=0)' coord_abs='no' centro='(p4x+0.45,p4y)' radio='2' inicio='65' fin='115' ancho='2' font_family='Monospaced' fuente puntos='12' ">
+    <param name="G_10" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(d1!=&squot;&squot;)&(dx<0)' coord_abs='sí' expresión='[p1x-((dividendo2>=divisor)?25:0),p1y+50]' texto='−[d1*divisor]' fijo='no' ancho='1' fuente puntos='40' align='a_left' anchor='a_top_right' ">
+    <param name="G_11" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(dividendo2>=divisor)&(d1=&squot;&squot;)&(paso=0)' coord_abs='sí' expresión='[E1._w/2,15]' texto='¿Cuántas veces está el \b{[divisor]} en el \b{[dividendo2]}?' fijo='no' ancho='1' fuente puntos='25' align='a_left' anchor='a_top_center' ">
+    <param name="G_12" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(dividendo2<divisor)&(d1=&squot;&squot;)&(paso=0)' coord_abs='sí' expresión='[E1._w/2,15]' texto='¿Cuántas veces está el \b{[divisor]} en el \b{[dividendo]}?' fijo='no' ancho='1' fuente puntos='25' align='a_left' anchor='a_top_center' ">
+    <param name="G_13" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(d1!=&squot;&squot;)&(dx>0)' coord_abs='sí' expresión='[p1x-50+1.75*dx,p1y+50]' texto='[divisor] × [d1] = [d1*divisor]' fijo='no' ancho='1' fuente puntos='40' align='a_left' anchor='a_top_left' ">
+    <param name="G_14" value="espacio='E1' tipo='texto' color='d40809' dibujar-si='(error1)&(dx<0)' coord_abs='sí' expresión='[E1._w/2,70]' texto='¡Te has pasado! Corrige el valor' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_15" value="espacio='E1' tipo='texto' color='d40809' dibujar-si='(error2)&(dx<0)' coord_abs='sí' expresión='[E1._w/2,70]' texto='¡Te sobra una cantidad mayor o igual que el divisor! Corrige el valor' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_16" value="espacio='E1' tipo='segmento' color='000000' dibujar-si='(d1!=&squot;&squot;)&(dx<0)' coord_abs='no' expresión='(p5x,p5y)(p5x+2.75-((dividendo2>=divisor)?1:0),p5y)' tamaño='.2' ancho='2' font_family='Monospaced' fuente puntos='12' ">
+    <param name="G_17" value="espacio='E1' tipo='texto' color='d40809' dibujar-si='(error2)&(dx<0)' coord_abs='sí' expresión='[p1x-((dividendo2>=divisor)?25:0),p1y+100]' texto='[error2t]' fijo='no' ancho='1' negrita='sí' fuente puntos='40' align='a_left' anchor='a_top_right' ">
+    <param name="G_18" value="espacio='E1' tipo='texto' color='34cc67' dibujar-si='correcto1&(dx<0)' coord_abs='sí' expresión='[E1._w/2,70]' texto='¡Excelente! El resultado de la división es \b{[d1]} y el resto es \b{[dividendo-producto1]}' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_19" value="espacio='E1' tipo='texto' color='000000' dibujar-si='correcto1&(dx<0)' coord_abs='sí' expresión='[p1x,p1y+100]' texto='[dividendo-producto1]' fijo='no' ancho='1' negrita='sí' fuente puntos='40' align='a_left' anchor='a_top_right' ">
+    <param name="G_20" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(d1!=&squot;&squot;)&(error1+error2=0)&(dividendo3<10)&(correcto1=0)&(dx<0)' coord_abs='sí' expresión='[p1x-25,p1y+100]' texto='[dividendo3]' fijo='no' ancho='1' fuente puntos='40' align='a_left' anchor='a_top_right' ">
+    <param name="G_21" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(d1!=&squot;&squot;)&(error1+error2=0)&(dividendo3>9)&(correcto1=0)&(dx<0)' coord_abs='sí' expresión='[p1x-25,p1y+100]' texto='[dividendo3]' fijo='no' ancho='1' fuente puntos='40' align='a_left' anchor='a_top_right' ">
+    <param name="G_22" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(d1!=&squot;&squot;)&(error1+error2=0)&(correcto1=0)&(dx<0)&(paso=0)' coord_abs='sí' expresión='[E1._w/2,70]' texto='¡Muy bien! Haz clic en continuar' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_23" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(paso=1)' coord_abs='sí' expresión='[p1x+2,p1y+1.67*dy1]' texto='[dividendo31]' fijo='no' ancho='1' fuente puntos='40' align='a_left' anchor='a_top_right' ">
+    <param name="G_24" value="espacio='E1' tipo='texto' color='000000' dibujar-si='dy1>55' coord_abs='sí' expresión='[p1x+2,p1y+1.67*dy1]' texto='[dividendo31]' fijo='no' ancho='1' fuente puntos='40' align='a_left' anchor='a_top_right' ">
+    <param name="G_25" value="espacio='E1' tipo='texto' color='000000' coord_abs='sí' expresión='[p3x,p3y+50]' texto='[d1]' fijo='no' ancho='1' fuente puntos='40' align='a_left' anchor='a_top_left' ">
+    <param name="G_26" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(d2=&squot;&squot;)&(paso=1)&(dy1>55)' coord_abs='sí' expresión='[E1._w/2,15]' texto='¿Cuántas veces está el \b{[divisor]} en el \b{[dividendo32]}?' fijo='no' ancho='1' fuente puntos='25' align='a_left' anchor='a_top_center' ">
+    <param name="G_27" value="espacio='E1' tipo='texto' color='d40809' dibujar-si='(error3)' coord_abs='sí' expresión='[E1._w/2,70]' texto='¡Te sobra una cantidad mayor o igual que el divisor! Corrige el valor' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_28" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(d2!=&squot;&squot;)' coord_abs='sí' expresión='[p1x,p1y+150]' texto='−[d2*divisor]' fijo='no' ancho='1' fuente puntos='40' align='a_left' anchor='a_top_right' ">
+    <param name="G_29" value="espacio='E1' tipo='segmento' color='000000' dibujar-si='(d2!=&squot;&squot;)' coord_abs='no' expresión='(p5x+0.25,p5y-3.25)(p5x+2.7,p5y-3.25)' tamaño='.2' ancho='2' font_family='Monospaced' fuente puntos='12' ">
+    <param name="G_30" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(d2!=&squot;&squot;)' coord_abs='sí' expresión='[p1x,p1y+200]' texto='[residuo]' fijo='no' ancho='1' fuente puntos='40' align='a_left' anchor='a_top_right' ">
+    <param name="G_31" value="espacio='E1' tipo='texto' color='d40809' dibujar-si='(error4)' coord_abs='sí' expresión='[E1._w/2,70]' texto='¡Te excediste, el resto no puede ser negativo! Corrige el valor' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_32" value="espacio='E1' tipo='texto' color='34cc67' dibujar-si='correcto3' coord_abs='sí' expresión='[E1._w/2,70]' texto='¡Excelente! El resultado de la división es \b{[d1*10+d2]} y el resto es \b{[residuo]}' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_33" value="espacio='E1' tipo='texto' color='000000' coord_abs='sí' expresión='[p3x+28,p3y+50]' texto='[d2]' fijo='no' ancho='1' fuente puntos='40' align='a_left' anchor='a_top_left' ">
+    <param name="Animación" value="pausa='0' controles='no' auto='no' repetir='no' inicio='dx=dx+(px1+150)*(paso=0);dy1=0;kk=0;dy2=0' hacer='kk=kk+1;dx=dx-3*(paso=0);dy2=(dy2>61)?dy2:dy2+2*(paso=1);dy1=dy1+2*(dy2<62)*(paso=1)' mientras='kk<55' info='40' ">
+  </ajs>
+
+
+
+</body>
+</html>

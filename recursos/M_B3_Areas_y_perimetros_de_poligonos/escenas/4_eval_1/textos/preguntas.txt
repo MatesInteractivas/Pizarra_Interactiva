@@ -1,7 +1,0 @@
-5
-
-'El área de color turquesa es'
-'El área de color rojo es'
-'El área de color verde es'
-'El área del pentágono es (L=7, a=4.8)'
-'El área del polígono es (L=8, a=11)'

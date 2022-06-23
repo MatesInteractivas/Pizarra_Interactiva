@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Multiplicación de naturales</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' despl_imagen='expand.' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='450' fijo='sí' escala='30' O.x='-390' O.y='380' fondo='f1f2f6' red='no' red10='no' ejes='no' border_width='2' border_color='729ad4' border_radius='6' ">
+    <param name="C_01" value="id='n1' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Respuesta' expresión='((pleca._w-120)/2,pleca._h-35-15,120,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='z=1' activo-si='z=0' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_02" value="id='n2' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Otro ejemplo' expresión='(pleca._w-150-15,pleca._h-35-15,150,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='z=0;kk=1;w=w+1;w=(w>2)?0:w;n=ent(rnd*10+2);' activo-si='z!=0' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='divisor=ent(rnd*2)+2;cociente=ent(rnd*3)+1;residuo=ent(divisor-rnd*divisor);kk=1;n=ent(rnd*11+2);z=0;w=ent(rnd*3);' ">
+    <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+    <param name="A_03" value="id='e4' evento='sí' condición='z==1' acción='animar' ejecución='alternar' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_m.svg' clip='(0,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='Recordemos el concepto de multiplicación, el cual consiste en encontrar el resultado de sumar un número tantas veces como indica otro número.' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' dibujar-si='0' coord_abs='sí' expresión='(15,110,994,450)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(w=0)' coord_abs='sí' expresión='[E1._w/2,20]' texto='¿Cuántas bolas hay si hay \b{\${[n]}} grupos y cada grupo tiene \b{15} bolas?' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_06" value="espacio='E1' tipo='imagen' dibujar-si='(n>0)&((z=1)|(z=0))&(w=0)' coord_abs='no' expresión='(1+12kk,15)' archivo='images/billar.svg' ">
+    <param name="G_07" value="espacio='E1' tipo='imagen' dibujar-si='(n>1)&((z=1)|(z=0))&(w=0)' coord_abs='no' expresión='(5+12kk,15)' archivo='images/billar.svg' ">
+    <param name="G_08" value="espacio='E1' tipo='imagen' dibujar-si='(n>2)&((z=1)|(z=0))&(w=0)' coord_abs='no' expresión='(9+12kk,15)' archivo='images/billar.svg' ">
+    <param name="G_09" value="espacio='E1' tipo='imagen' dibujar-si='(n>3)&((z=1)|(z=0))&(w=0)' coord_abs='no' expresión='(13+12kk,15)' archivo='images/billar.svg' ">
+    <param name="G_10" value="espacio='E1' tipo='imagen' dibujar-si='(n>4)&((z=1)|(z=0))&(w=0)' coord_abs='no' expresión='(17+12kk,15)' archivo='images/billar.svg' ">
+    <param name="G_11" value="espacio='E1' tipo='imagen' dibujar-si='(n>5)&((z=1)|(z=0))&(w=0)' coord_abs='no' expresión='(21+12kk,15)' archivo='images/billar.svg' ">
+    <param name="G_12" value="espacio='E1' tipo='imagen' dibujar-si='(n>6)&((z=1)|(z=0))&(w=0)' coord_abs='no' expresión='(1+12kk,11)' archivo='images/billar.svg' ">
+    <param name="G_13" value="espacio='E1' tipo='imagen' dibujar-si='(n>7)&((z=1)|(z=0))&(w=0)' coord_abs='no' expresión='(5+12kk,11)' archivo='images/billar.svg' ">
+    <param name="G_14" value="espacio='E1' tipo='imagen' dibujar-si='(n>8)&((z=1)|(z=0))&(w=0)' coord_abs='no' expresión='(9+12kk,11)' archivo='images/billar.svg' ">
+    <param name="G_15" value="espacio='E1' tipo='imagen' dibujar-si='(n>9)&((z=1)|(z=0))&(w=0)' coord_abs='no' expresión='(13+12kk,11)' archivo='images/billar.svg' ">
+    <param name="G_16" value="espacio='E1' tipo='imagen' dibujar-si='(n>10)&((z=1)|(z=0))&(w=0)' coord_abs='no' expresión='(17+12kk,11)' archivo='images/billar.svg' ">
+    <param name="G_17" value="espacio='E1' tipo='imagen' dibujar-si='(n>11)&((z=1)|(z=0))&(w=0)' coord_abs='no' expresión='(21+12kk,11)' archivo='images/billar.svg' ">
+    <param name="G_18" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(z=1)&(w=0)' coord_abs='sí' expresión='[E1._w/2,E1._h-20]' texto='Hay \b{[n] × 15} que son \b{[15*n]} bolas' fijo='no' ancho='1' fuente puntos='25' align='a_left' anchor='a_bottom_center' ">
+    <param name="G_19" value="espacio='E1' tipo='imagen' dibujar-si='(w=1)' coord_abs='sí' expresión='(E1._w/2,290,1,1)' archivo='images/casa.svg' ">
+    <param name="G_20" value="espacio='E1' tipo='imagen' dibujar-si='(n>0)&((z=1)|(z=0))&(w=1)&(kk>0.1)' coord_abs='no' expresión='(1+12kk,13)' archivo='images/uvas3.svg' ">
+    <param name="G_21" value="espacio='E1' tipo='imagen' dibujar-si='(n>0)&((z=1)|(z=0))&(w=1)&(kk>0.2)' coord_abs='no' expresión='(5+12kk,13)' archivo='images/uvas3.svg' ">
+    <param name="G_22" value="espacio='E1' tipo='imagen' dibujar-si='(n>0)&((z=1)|(z=0))&(w=1)&(kk>0.1)' coord_abs='no' expresión='(9+12kk,13)' archivo='images/uvas3.svg' ">
+    <param name="G_23" value="espacio='E1' tipo='imagen' dibujar-si='(w=1)' coord_abs='no' expresión='(-2,16)' archivo='images/camion.svg' ">
+    <param name="G_24" value="espacio='E1' tipo='imagen' dibujar-si='(n>0)&((z=1)|(z=0))&(w=1)' coord_abs='no' expresión='(5,14.5)' archivo='images/uvasd.svg' ">
+    <param name="G_25" value="espacio='E1' tipo='imagen' dibujar-si='(n>0)&((z=1)|(z=0))&(w=1)' coord_abs='no' expresión='(19.7,12.7)' archivo='images/uvase.svg' ">
+    <param name="G_26" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(w=1)' coord_abs='sí' expresión='[E1._w/2,20]' texto='¿Cuántas uvas se transportan si hay \b{[5n]} racimos y cada racimo tiene \b{16} uvas?' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_27" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(z=1)&(w=1)' coord_abs='sí' expresión='[E1._w/2,E1._h-20]' texto='Hay \b{[5*n] × 16} que son \b{[16*5*n]} uvas' fijo='no' ancho='1' fuente puntos='25' align='a_left' anchor='a_bottom_center' ">
+    <param name="G_28" value="espacio='E1' tipo='imagen' dibujar-si='(n>0)&((z=1)|(z=0))&(w=2)' coord_abs='no' expresión='(2+12kk,13.5,0.4,0.4)' archivo='images/pastel.svg' ">
+    <param name="G_29" value="espacio='E1' tipo='imagen' dibujar-si='(n>1)&((z=1)|(z=0))&(w=2)' coord_abs='no' expresión='(6+12kk,13.5,0.4,0.4)' archivo='images/pastel.svg' ">
+    <param name="G_30" value="espacio='E1' tipo='imagen' dibujar-si='(n>2)&((z=1)|(z=0))&(w=2)' coord_abs='no' expresión='(10+12kk,13.5,0.4,0.4)' archivo='images/pastel.svg' ">
+    <param name="G_31" value="espacio='E1' tipo='imagen' dibujar-si='(n>3)&((z=1)|(z=0))&(w=2)' coord_abs='no' expresión='(14+12kk,13.5,0.4,0.4)' archivo='images/pastel.svg' ">
+    <param name="G_32" value="espacio='E1' tipo='imagen' dibujar-si='(n>4)&((z=1)|(z=0))&(w=2)' coord_abs='no' expresión='(18+12kk,13.5,0.4,0.4)' archivo='images/pastel.svg' ">
+    <param name="G_33" value="espacio='E1' tipo='imagen' dibujar-si='(n>5)&((z=1)|(z=0))&(w=2)' coord_abs='no' expresión='(22+12kk,13.5,0.4,0.4)' archivo='images/pastel.svg' ">
+    <param name="G_34" value="espacio='E1' tipo='imagen' dibujar-si='(n>6)&((z=1)|(z=0))&(w=2)' coord_abs='no' expresión='(2+12kk,10,0.4,0.4)' archivo='images/pastel.svg' ">
+    <param name="G_35" value="espacio='E1' tipo='imagen' dibujar-si='(n>7)&((z=1)|(z=0))&(w=2)' coord_abs='no' expresión='(6+12kk,10,0.4,0.4)' archivo='images/pastel.svg' ">
+    <param name="G_36" value="espacio='E1' tipo='imagen' dibujar-si='(n>8)&((z=1)|(z=0))&(w=2)' coord_abs='no' expresión='(10+12kk,10,0.4,0.4)' archivo='images/pastel.svg' ">
+    <param name="G_37" value="espacio='E1' tipo='imagen' dibujar-si='(n>9)&((z=1)|(z=0))&(w=2)' coord_abs='no' expresión='(14+12kk,10,0.4,0.4)' archivo='images/pastel.svg' ">
+    <param name="G_38" value="espacio='E1' tipo='imagen' dibujar-si='(n>10)&((z=1)|(z=0))&(w=2)' coord_abs='no' expresión='(18+12kk,10,0.4,0.4)' archivo='images/pastel.svg' ">
+    <param name="G_39" value="espacio='E1' tipo='imagen' dibujar-si='(n>11)&((z=1)|(z=0))&(w=2)' coord_abs='no' expresión='(22+12kk,10,0.4,0.4)' archivo='images/pastel.svg' ">
+    <param name="G_40" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(w=2)' coord_abs='sí' expresión='[E1._w/2,20]' texto='¿Cuántas velas hay si hay \b{[n]} pasteles y cada pastel tiene \b{5} velas?' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_41" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(z=1)&(w=2)' coord_abs='sí' expresión='[E1._w/2,E1._h-20]' texto='Hay \b{[n] × 5} que son \b{[5*n]} velas' fijo='no' ancho='1' fuente puntos='25' align='a_left' anchor='a_bottom_center' ">
+    <param name="Animación" value="pausa='40' controles='no' auto='no' repetir='no' inicio='kk=1' hacer='kk=kk-0.1;kk=(w=1)?kk+0.05:kk;' mientras='kk>0.1' ">
+  </ajs>
+
+
+
+</body>
+</html>

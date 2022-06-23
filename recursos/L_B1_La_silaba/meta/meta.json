@@ -1,0 +1,13 @@
+{
+  "nivel": [
+    "Primaria"
+  ], 
+  "area": [
+    "Español", 
+    "Gramática"
+  ], 
+  "titulo": "La sílaba", 
+  "descripcion": "Identificar los tipos de sílabas según su número y el nombre de las palabras según la posición de la acentuación.",
+  "resena": "Identificar los tipos de sílabas según su número y el nombre de las palabras según la posición de la acentuación.",
+  "id": "L_B1_La_silaba"
+}

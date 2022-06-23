@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="M_B2_Unidades_de_masa" 
+	nivel="Primaria" 
+	area="Matemáticas, Medidas" 
+	plataforma="HTML 5" 
+	>
+	<titulo><![CDATA[
+		Unidades de masa
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+    Presentar las diferentes unidades con las que se mide la masa y que el alumno ejercite las conversiones entre ellas.
+	]]></Descripcion>
+</recurso>

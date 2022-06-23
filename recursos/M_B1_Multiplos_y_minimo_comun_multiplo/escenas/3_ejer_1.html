@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Múltiplos y mínimo común múltiplo</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='INSTRUCCIONES' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='hg' x='15' y='110' ancho='994' alto='450' fijo='sí' O.y='-15' despl_imagen='expand.' red='no' red10='no' ejes='no' border_width='2' border_color='729ad4' border_radius='6' ">
+    <param name="E_03" value="tipo='R2' id='LEJOS' x='335' y='125' ancho='660' alto='100' dibujar-si='a>12' fijo='sí' escala='4' O.x='-281' fondo='ffffffff' red='no' red10='no' ejes='no' border_width='2' border_color='ffffff' border_radius='6' ">
+    <param name="E_04" value="tipo='R2' id='bien' x='30' y='125' ancho='964' alto='110' dibujar-si='((w+.25)/j=p)&((w+.25)/k=q)&((w+.25)/l=r)&(a>0)' fijo='sí' fondo='fffadd' red='no' red10='no' ejes='no' border_width='2' border_color='afa14f' border_radius='6' ">
+    <param name="E_05" value="tipo='R2' id='bien2' x='30' y='125' ancho='964' alto='110' dibujar-si='(j*p=minimo2)&(k*q=minimo2)&(l*r=minimo2)&(a>149)' fijo='sí' fondo='fffadd' red='no' red10='no' ejes='no' border_width='2' border_color='afa14f' border_radius='6' ">
+    <param name="E_06" value="tipo='R2' id='mal' x='30' y='125' ancho='964' alto='110' dibujar-si='(((w+.25)/j!=p)|((w+.25)/k!=q)|((w+.25)/l!=r))&(v=1)&(a>0)' fijo='sí' fondo='fffadd' red='no' red10='no' ejes='no' border_width='2' border_color='afa14f' border_radius='6' ">
+    <param name="E_07" value="tipo='R2' id='mal2' x='30' y='125' ancho='964' alto='110' dibujar-si='((j*p!=minimo2)|(k*q!=minimo2)|(l*r!=minimo2))&(a>149)' fijo='sí' fondo='fffadd' red='no' red10='no' ejes='no' border_width='2' border_color='afa14f' border_radius='6' ">
+    <param name="E_08" value="tipo='R2' id='COVERTURA' dibujar-si='(sigui<1)' fijo='sí' fondo='7716a085' red='no' red10='no' ejes='no' ">
+    <param name="E_09" value="tipo='R2' id='mcm' x='(1024-500)/2' y='(625-300)/2' ancho='500' alto='300' dibujar-si='sigui<1' fijo='sí' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='g6' interfaz='botón' tipo='numérico' región='interior' espacio='INSTRUCCIONES' nombre='Iniciar' expresión='(INSTRUCCIONES._w/4-140/2,INSTRUCCIONES._h-35-15,140,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='animar' activo-si='(a=0)&((p>0)|(q>0)|(r>0))' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_02" value="id='g7' interfaz='botón' tipo='numérico' región='interior' espacio='INSTRUCCIONES' nombre='Reiniciar' expresión='(3*INSTRUCCIONES._w/4-140/2,INSTRUCCIONES._h-35-15,140,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='a=0;hg.Ox=0;g6=0;v=0;p=0;q=0;r=0;rand();w=0;m=0;cmcm=0;sigui=0' activo-si='(v=1)|(a>148)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_03" value="id='m' tipo='numérico' interfaz='pulsador' región='interior' espacio='mcm' expresión='((mcm._w-135)/2,155,135,35)' incr='1' min='0' decimales='0' visible='sí' dibujar-si='cmcm<3' activo-si='w<1' image_inc='images/spinner_plus.svg' image_dec='images/spinner_minus.svg' btn_pos='h_left_right' keyboard='sí' kblayout='14x1' kbexp='(194,506)' ">
+    <param name="C_04" value="id='cmcm' interfaz='botón' tipo='numérico' región='interior' espacio='mcm' nombre='Comprobar' expresión='((mcm._w-150)/2,mcm._h-50,150,35)' valor='cmcm' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='cmcm=cmcm+1;w=w+1' dibujar-si='(cmcm<3)&(w%2=0)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_05" value="id='repetir' interfaz='botón' tipo='numérico' región='interior' espacio='mcm' nombre='Repetir' expresión='(mcm._w-150-15,mcm._h-50,150,35)' valor='sigui' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='w=0;m=0' dibujar-si='(m!=minimo2)&(w>0)&(cmcm<3)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_06" value="id='sigui' interfaz='botón' tipo='numérico' región='interior' espacio='mcm' nombre='Siguiente' expresión='(mcm._w-150-15,mcm._h-50,150,35)' valor='sigui' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='sigui=sigui+1' dibujar-si='(cmcm>2)|((m=minimo2)&(w>0))' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_07" value="id='a' tipo='numérico' interfaz='pulsador' región='exterior' espacio='hg' nombre='saltos' expresión='(200,400)' incr='0.25' min='0' max='300' visible='sí' ">
+    <param name="C_08" value="id='v' tipo='numérico' interfaz='pulsador' región='exterior' espacio='hg' nombre='v' expresión='(0,0)' incr='1' visible='sí' ">
+    <param name="C_09" value="id='w' tipo='numérico' interfaz='pulsador' región='exterior' espacio='hg' nombre='w' expresión='(0,0)' incr='0.25' visible='sí' ">
+    <param name="C_10" value="id='p' tipo='numérico' interfaz='pulsador' región='interior' espacio='hg' expresión='((hg._w-120)/2,228,120,35)' incr='1' min='0' max='150' decimales='0' visible='sí' dibujar-si='(sigui>0)&&(a<1)' activo-si='a<1' image_inc='images/spinner_plus.svg' image_dec='images/spinner_minus.svg' btn_pos='h_left_right' keyboard='sí' kblayout='14x1' kbexp='(194,506)' ">
+    <param name="C_11" value="id='q' tipo='numérico' interfaz='pulsador' región='interior' espacio='hg' expresión='((hg._w-120)/2,285,120,35)' incr='1' min='0' max='150' decimales='0' visible='sí' dibujar-si='(sigui>0)&&(a<1)' activo-si='a<1' image_inc='images/spinner_plus.svg' image_dec='images/spinner_minus.svg' btn_pos='h_left_right' keyboard='sí' kblayout='14x1' kbexp='(194,506)' ">
+    <param name="C_12" value="id='r' tipo='numérico' interfaz='pulsador' región='interior' espacio='hg' expresión='((hg._w-120)/2,342,120,35)' incr='1' min='0' max='150' decimales='0' visible='sí' dibujar-si='(sigui>0)&&(a<1)' activo-si='a<1' image_inc='images/spinner_plus.svg' image_dec='images/spinner_minus.svg' btn_pos='h_left_right' keyboard='sí' kblayout='14x1' kbexp='(194,506)' ">
+    <param name="A_01" value="id='g1(x)' algoritmo='no' expresión='sin(x)' tipo='función' ">
+    <param name="A_02" value="id='reinit()' algoritmo='sí' expresión='x' hacer='j=(ent(rnd*vMax))+1;k=(ent(rnd*vMax))+1;l=(ent(rnd*vMax))+1;w=0;' tipo='función' ">
+    <param name="A_03" value="id='rand()' algoritmo='sí' expresión='x' hacer='j=(ent(rnd*vMax))+1;k=(ent(rnd*vMax))+1;l=(ent(rnd*vMax))+1;flag=((l=k)|(l=j)|(j=k))?1:0' mientras='flag=1' tipo='función' ">
+    <param name="A_04" value="id='mcm(a,b)' algoritmo='sí' expresión='y*z*x' inicio='x=min(a,b);z=max(a,b);i=2;y=1' hacer='asigna=((x%i)==0)&((z%i)==0);y=(asigna)?y*i:y;x=(asigna)?x/i:x;z=(asigna)?z/i:z;i=(asigna)?2:(i+1);' mientras='i<=x' tipo='función' ">
+    <param name="A_05" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='flag=0;j=0;k=0;l=0;vMax=8' hacer='aux=reinit();aux=((l=k)|(l=j)|(j=k))?rand():0;' ">
+    <param name="A_06" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='minimo=mcm(j,k);minimo2=mcm(minimo,l)' ">
+    <param name="G_01" value="espacio='INSTRUCCIONES' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='INSTRUCCIONES' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_m.svg' clip='(240,0,120,120)' ">
+    <param name="G_03" value="espacio='INSTRUCCIONES' tipo='texto' color='000000' coord_abs='sí' expresión='(110,30)' texto='Elige el número de saltos que deberá dar cada rana para que coincidan, toma en cuenta el tamaño del salto de cada una. Pulsa el botón “Iniciar” para comenzar.' ancho='INSTRUCCIONES._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='hg' tipo='curva' color='008d00' coord_abs='no' expresión='(-6.1+a,-.5+0.5*abs(g1(pi*a/j)))' parámetro='a' a.intervalo='[0,a]' a.pasos='a*8' ancho='2' ">
+    <param name="G_05" value="espacio='hg' tipo='curva' color='7dff31' coord_abs='no' expresión='(-6.3+a,-1.7+0.5*abs(g1(pi*a/k)))' parámetro='a' a.intervalo='[0,a]' a.pasos='a*8' ancho='2' ">
+    <param name="G_06" value="espacio='hg' tipo='curva' color='5441b6' coord_abs='no' expresión='(-6.5+a,-3+0.5*abs(g1(pi*a/l)))' parámetro='a' a.intervalo='[0,a]' a.pasos='a*8' ancho='2' ">
+    <param name="G_07" value="espacio='hg' tipo='segmento' color='ffffff' coord_abs='no' expresión='(-6.5,-3.7)(143.5,-3.7)' tamaño='1' ancho='2' font_family='Monospaced' fuente puntos='12' ">
+    <param name="G_08" value="espacio='hg' tipo='segmento' color='ffffff' coord_abs='no' expresión='(-6.5+s,-3.7)(-6.5+s,-3.5)' familia='s' s.intervalo='[0,150]' s.pasos='150' decimales='0' tamaño='0' ancho='1' fuente puntos='12' ">
+    <param name="G_09" value="espacio='hg' tipo='segmento' color='00ffff' dibujar-si='a>w' coord_abs='no' expresión='(-6.5+(w+0.25),-3.5)(-5.9+(w+0.25),1)' familia='s' s.intervalo='[0,150]' s.pasos='150' decimales='0' tamaño='1' ancho='1' fuente puntos='12' ">
+    <param name="G_10" value="espacio='hg' tipo='texto' color='ffffff' coord_abs='no' expresión='(-6.5+s,-4.0)' familia='s' s.intervalo='[0,150]' s.pasos='75' texto='[s]' fijo='no' ancho='1' negrita='sí' fuente puntos='30' align='a_left' anchor='a_top_center' ">
+    <param name="G_11" value="espacio='hg' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(hg._w/2,hg._h/2+hg.Oy,1.5,1.1)' archivo='images/fondo1.svg' ">
+    <param name="G_12" value="espacio='hg' tipo='imagen' dibujar-si='0.5*abs(g1(pi*a/j))>0.05' coord_abs='no' expresión='(-5.9+a,-.7,.1,.1)' archivo='images/sombra.svg' ">
+    <param name="G_13" value="espacio='hg' tipo='imagen' dibujar-si='0.5*abs(g1(pi*a/j))<=0.05' coord_abs='no' expresión='(-5.9+a,-.7,.2,.1)' archivo='images/sombra.svg' ">
+    <param name="G_14" value="espacio='hg' tipo='imagen' dibujar-si='0.5*abs(g1(pi*a/j))>0.05' coord_abs='no' expresión='(-6.1+a,-.5+0.5*abs(g1(pi*a/j)),0.5,0.5)' archivo='images/r2_aire.png' ">
+    <param name="G_15" value="espacio='hg' tipo='imagen' dibujar-si='0.5*abs(g1(pi*a/j))<=0.05' coord_abs='no' expresión='(-6.1+a,-.5+0.5*abs(g1(pi*a/j)),0.5,0.5)' archivo='images/r2_suelo.png' ">
+    <param name="G_16" value="espacio='hg' tipo='imagen' dibujar-si='0.5*abs(g1(pi*a/k))>0.05' coord_abs='no' expresión='(-6.1+a,-2,.1,.1)' archivo='images/sombra.svg' ">
+    <param name="G_17" value="espacio='hg' tipo='imagen' dibujar-si='0.5*abs(g1(pi*a/k))<=0.05' coord_abs='no' expresión='(-6.1+a,-2,.2,.1)' archivo='images/sombra.svg' ">
+    <param name="G_18" value="espacio='hg' tipo='imagen' dibujar-si='0.5*abs(g1(pi*a/k))>0.05' coord_abs='no' expresión='(-6.3+a,-1.7+0.5*abs(g1(pi*a/k)),0.5,0.5)' archivo='images/r1_aire.png' ">
+    <param name="G_19" value="espacio='hg' tipo='imagen' dibujar-si='0.5*abs(g1(pi*a/k))<=0.05' coord_abs='no' expresión='(-6.3+a,-1.7+0.5*abs(g1(pi*a/k)),0.5,0.5)' archivo='images/r1_suelo.png' ">
+    <param name="G_20" value="espacio='hg' tipo='imagen' dibujar-si='0.5*abs(g1(pi*a/l))>0.05' coord_abs='no' expresión='(-6.3+a,-3.2,.1,.1)' archivo='images/sombra.svg' ">
+    <param name="G_21" value="espacio='hg' tipo='imagen' dibujar-si='0.5*abs(g1(pi*a/l))<=0.05' coord_abs='no' expresión='(-6.3+a,-3.2,.25,.1)' archivo='images/sombra.svg' ">
+    <param name="G_22" value="espacio='hg' tipo='imagen' dibujar-si='0.5*abs(g1(pi*a/l))>0.05' coord_abs='no' expresión='(-6.45+a,-3+0.5*abs(g1(pi*a/l)),0.5,0.5)' archivo='images/r3_aire.png' ">
+    <param name="G_23" value="espacio='hg' tipo='imagen' dibujar-si='0.5*abs(g1(pi*a/l))<=0.05' coord_abs='no' expresión='(-6.45+a,-3+0.5*abs(g1(pi*a/l)),0.5,0.5)' archivo='images/r3_suelo.png' ">
+    <param name="G_24" value="espacio='hg' tipo='imagen' coord_abs='no' expresión='(-7+27*s,1.3,0.3,0.3)' familia='s' s.intervalo='[0,5]' s.pasos='5' archivo='images/arbol.png' ">
+    <param name="G_25" value="espacio='hg' tipo='imagen' coord_abs='no' expresión='(7+27*s,1.5,0.3,0.3)' familia='s' s.intervalo='[0,5]' s.pasos='5' archivo='images/arbol2.png' ">
+    <param name="G_26" value="espacio='hg' tipo='texto' color='ffffff' coord_abs='sí' expresión='[15,165]' texto='Tamaño \ndel salto\n\ts{10}{\n}[j]\n\ts{11}{\n\n}[k]\n\ts{11}{\n\n}[l]' fijo='no' ancho='1' negrita='sí' fuente puntos='20' align='a_center' anchor='a_top_left' ">
+    <param name="G_27" value="espacio='hg' tipo='texto' color='ffffff' dibujar-si='(a<1)&&(sigui>0)' coord_abs='sí' expresión='[hg._w/2,165]' texto='Número de saltos' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_28" value="espacio='hg' tipo='texto' color='ffffff' dibujar-si='a>1' coord_abs='sí' expresión='[hg._w-15,165]' texto='\n\n\ts{10}{\n}[p]\n\ts{11}{\n\n}[q]\n\ts{11}{\n\n}[r]' fijo='no' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_right' ">
+    <param name="G_29" value="espacio='LEJOS' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(LEJOS._w/2,LEJOS._h/2,1,1)' archivo='images/pista_lejos.svg' ">
+    <param name="G_30" value="espacio='LEJOS' tipo='punto' color='008d00' coord_abs='no' expresión='(-6.5+a,4+0.5*abs(g1(pi*a/j)))' tamaño='2' font_family='Monospaced' fuente puntos='12' ">
+    <param name="G_31" value="espacio='LEJOS' tipo='punto' color='7dff31' coord_abs='no' expresión='(-6.5+a,.5+0.5*abs(g1(pi*a/k)))' tamaño='2' font_family='Monospaced' fuente puntos='12' ">
+    <param name="G_32" value="espacio='LEJOS' tipo='punto' color='5441b6' coord_abs='no' expresión='(-6.5+a,-3+0.5*abs(g1(pi*a/l)))' tamaño='2' font_family='Monospaced' fuente puntos='12' ">
+    <param name="G_33" value="espacio='LEJOS' tipo='segmento' color='ffffff' coord_abs='no' expresión='(-6.5,-6)(143.5,-6)' tamaño='1' ancho='2' font_family='Monospaced' fuente puntos='12' ">
+    <param name="G_34" value="espacio='LEJOS' tipo='segmento' color='ffffff' coord_abs='no' expresión='(-6.5+5*s,-6)(-6.5+s*5,-5)' familia='s' s.intervalo='[0,30]' s.pasos='30' decimales='0' tamaño='1' ancho='1' fuente puntos='12' ">
+    <param name="G_35" value="espacio='LEJOS' tipo='segmento' color='00ffff' dibujar-si='a>w' coord_abs='no' expresión='(-6.5+(w+0.25),-5)(-6.5+(w+0.25),4)' familia='s' s.intervalo='[0,150]' s.pasos='150' decimales='0' tamaño='1' ancho='1' fuente puntos='12' ">
+    <param name="G_36" value="espacio='LEJOS' tipo='texto' color='ffffff' coord_abs='no' expresión='(-6.5+s,-6.5)' familia='s' s.intervalo='[0,150]' s.pasos='15' texto='[s]' fijo='no' ancho='1' fuente puntos='15' align='a_left' anchor='a_top_center' ">
+    <param name="G_37" value="espacio='mcm' tipo='rectángulo' fondo='sí' color='341f97' coord_abs='sí' expresión='(1,1,mcm._w-3,mcm._h-3)' relleno='ffffff' ancho='3' border_radius='4' ">
+    <param name="G_38" value="espacio='mcm' tipo='rectángulo' fondo='sí' color='ffffffff' coord_abs='sí' expresión='(0,0,mcm._w,35)' relleno='341f97' ancho='0' border_radius='4' ">
+    <param name="G_39" value="espacio='mcm' tipo='texto' color='000000' dibujar-si='cmcm<3' coord_abs='sí' expresión='(20,50)' texto='El lugar en el que coinciden por primera vez es el mínimo común múltiplo. Escribe cuál es el mínimo común múltiplo de \b{[j]}, \b{[k]} y \b{[l]}.' fijo='no' ancho='mcm._w-40' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_40" value="espacio='mcm' tipo='texto' color='c0392b' dibujar-si='(m!=minimo2)&(w>0)&(cmcm<3)' coord_abs='sí' expresión='[mcm._w/2,205]' texto='¡Vuelve a intentar!' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_41" value="espacio='mcm' tipo='texto' color='27ae60' dibujar-si='(m=minimo2)&(w>0)' coord_abs='sí' expresión='[mcm._w/2,205]' texto='¡Correcto!' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_42" value="espacio='mcm' tipo='texto' color='000000' dibujar-si='(cmcm>2)&(m!=minimo2)' coord_abs='sí' expresión='(20,50)' texto='¡El mínimo común múltiplo de \b{[j]}, \b{[k]}, y \b{[l]} es \b{[minimo2]}, y es la distancia en la que coinciden!' fijo='no' ancho='mcm._w-40' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_43" value="espacio='bien' tipo='texto' color='000000' dibujar-si='cmcm<3' coord_abs='sí' expresión='(15,15)' texto='Recuerda que el mínimo común múltiplo es \b{[minimo2]} y es la distancia recorrida. ¡El resultado es \color{2ecc71}{correcto}!, pues:' decimales='0' fijo='no' ancho='bien._w-30' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_44" value="espacio='bien' tipo='texto' color='000000' dibujar-si='cmcm<3' coord_abs='sí' expresión='(bien._w/2,65)' texto='[j] × [(w+.25)/j] = [minimo2]                    [k] × [(w+.25)/k] = [minimo2]                    [l] × [(w+.25)/l] = [minimo2]' decimales='0' fijo='no' ancho='0' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_45" value="espacio='bien2' tipo='texto' color='000000' coord_abs='sí' expresión='(15,15)' texto='Recuerda que el mínimo común múltiplo es \b{[minimo2]} y es la distancia que recorrerán. ¡El resultado es \color{2ecc71}{correcto}!, pues:' decimales='0' fijo='no' ancho='bien._w-30' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_46" value="espacio='bien2' tipo='texto' color='000000' coord_abs='sí' expresión='(bien2._w/2,65)' texto='[j] × [p] = [minimo2]                    [k] × [q] = [minimo2]                    [l] × [r] = [minimo2]' decimales='0' fijo='no' ancho='0' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_47" value="espacio='mal' tipo='texto' color='000000' coord_abs='sí' expresión='(15,15)' texto='Recuerda que el mínimo común múltiplo es \b{[(w+.25)]} y es la distancia recorrida. ¡El resultado es \color{c0392b}{incorrecto}!, pues:' decimales='0' fijo='no' ancho='bien._w-30' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_48" value="espacio='mal' tipo='texto' color='000000' coord_abs='sí' expresión='(mal2._w/2,65)' texto='[j] × [p] = [j*p]                    [k] × [q] = [k*q]                    [l] × [r] = [l*r]' decimales='0' fijo='no' ancho='0' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_49" value="espacio='mal2' tipo='texto' color='000000' coord_abs='sí' expresión='(15,15)' texto='Recuerda que el mínimo común múltiplo es \b{[minimo2]} y es la distancia que recorrerán. ¡El resultado es \color{c0392b}{incorrecto}!, pues:' decimales='0' fijo='no' ancho='bien._w-30' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_50" value="espacio='mal2' tipo='texto' color='000000' coord_abs='sí' expresión='(mal2._w/2,65)' texto='[j] × [p] = [j*p]                    [k] × [q] = [k*q]                    [l] × [r] = [l*r]' decimales='0' fijo='no' ancho='0' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="Animación" value="pausa='80' controles='no' auto='no' repetir='no' inicio='a=0' hacer='a=a+0.25;hg.Ox=(a<(6))?0:hg.Ox-12;v= (  (a%j=0)&(a%k=0)&(a%l=0)  )?(v+1):v;w= (v<1)?(a):(w);' mientras='(v<1)&(a<150)' ">
+  </ajs>
+
+
+
+</body>
+</html>

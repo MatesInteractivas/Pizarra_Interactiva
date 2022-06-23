@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Sustantivos</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='450' fijo='sí' escala='30' O.x='-50%' O.y='50%' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='n1' interfaz='botón' tipo='numérico' región='interior' espacio='E1' expresión='(posX,posY,F1[2]*17,30)' color='222222' color-int='f0f8ff' fuente puntos='19' imagen='vacio.gif' acción='calcular' parámetro='r1=(r1=0)?1:0;r2=0;r3=0;r4=0;r5=0;r6=0;rta=1' ">
+    <param name="C_02" value="id='n2' interfaz='botón' tipo='numérico' región='interior' espacio='E1' expresión='(posX+lw*F1[2]+15,posY,F1[4]*17,30)' color='222222' color-int='f0f8ff' fuente puntos='19' imagen='vacio.gif' acción='calcular' parámetro='r2=(r2=0)?1:0;r1=0;r3=0;r4=0;r5=0;r6=0;rta=2' ">
+    <param name="C_03" value="id='n3' interfaz='botón' tipo='numérico' región='interior' espacio='E1' expresión='(posX+lw*F1[2]+lw*F1[4]+15,posY,F1[6]*17,30)' color='222222' color-int='f0f8ff' fuente puntos='19' imagen='vacio.gif' acción='calcular' parámetro='r3=(r3=0)?1:0;r2=0;r1=0;r4=0;r5=0;r6=0;rta=3' ">
+    <param name="C_04" value="id='n4' interfaz='botón' tipo='numérico' región='interior' espacio='E1' expresión='(posX+lw*F1[2]+lw*F1[4]+lw*F1[6]+15,posY,F1[8]*17,30)' color='222222' color-int='f0f8ff' fuente puntos='19' imagen='vacio.gif' acción='calcular' parámetro='r4=(r4=0)?1:0;r2=0;r3=0;r1=0;r5=0;r6=0;rta=4' ">
+    <param name="C_05" value="id='n5' interfaz='botón' tipo='numérico' región='interior' espacio='E1' expresión='(posX+lw*F1[2]+lw*F1[4]+lw*F1[6]+lw*F1[8]+15,posY,F1[10]*17,30)' color='222222' color-int='f0f8ff' fuente puntos='19' imagen='vacio.gif' acción='calcular' parámetro='r5=(r5=0)?1:0;r2=0;r3=0;r4=0;r1=0;r6=0;rta=5' activo-si='pal>4' ">
+    <param name="C_06" value="id='n6' interfaz='botón' tipo='numérico' región='interior' espacio='E1' expresión='(posX+lw*F1[2]+lw*F1[4]+lw*F1[6]+lw*F1[8]+lw*F1[10]+15,posY,F1[12]*17,30)' color='222222' color-int='f0f8ff' fuente puntos='19' imagen='vacio.gif' acción='calcular' parámetro='r6=(r6=0)?1:0;r2=0;r3=0;r4=0;r5=0;r1=0;rta=6' activo-si='pal>5' ">
+    <param name="C_07" value="id='n25' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Verificar' expresión='((pleca._w-120)/2,pleca._h-35-15,120,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='ver=1;verifica()' activo-si='(r1+r2+r3+r4+r5+r6=1)&(ver=0)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_08" value="id='n27' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Resultados' expresión='(pleca._w-150-15,pleca._h-35-15,150,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='eval=1' dibujar-si='(otro=5)&(ver)&(eval=0)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_09" value="id='n26' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Siguiente pregunta' expresión='(pleca._w-190-15,pleca._h-35-15,190,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='otro=otro+1;rta=0;ver=0;correcto=0;r1=0;r2=0;r3=0;r4=0;r5=0;r6=0;asigna()' dibujar-si='(otro<5)&(ver=1)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="A_01" value="id='F1' vector='sí' evaluar='una-sola-vez' tamaño='17' tipo='vector' ">
+    <param name="A_02" value="id='P' vector='sí' evaluar='una-sola-vez' tamaño='81' expresión='0;&squot;La&squot;;2;&squot;campana&squot;;7;&squot;es&squot;;2;&squot;un&squot;;2;&squot;objeto&squot;;5;&squot;sonoro&squot;;6;0;0;0;0;&squot;Gato&squot;;4;&squot;Cascada&squot;;6;&squot;Mónica&squot;;6;&squot;Torre&squot;;5;&squot;Ciudad&squot;;6;0;0;0;0;0;0;&squot;Las&squot;;3;&squot;monjitas&squot;;7;&squot;están&squot;;5;&squot;en&squot;;3;&squot;el&squot;;3;&squot;convento&squot;;7;0;0;0;0;&squot;Coche&squot;;5;&squot;Balón&squot;;5;&squot;Amor&squot;;5;&squot;Nilo&squot;;4;&squot;Flauta&squot;;6;&squot;Rosa&squot;;4;&squot;Piano&squot;;4;0;0;&squot;Gente&squot;;5;&squot;Caserío&squot;;6;&squot;Manada&squot;;6;&squot;Cardumen&squot;;8;&squot;Peces&squot;;5;&squot;Alumnado&squot;;7;0;0;0;0' tipo='vector' ">
+    <param name="A_03" value="id='T' vector='sí' evaluar='una-sola-vez' tamaño='16' expresión='0;&squot;Señala el sustantivo masculino&squot;;5;6;&squot;Señala el sustantivo propio&squot;;3;5;&squot;Señala el sustantivo femenino&squot;;2;6;&squot;Señala el sustantivo abstracto&squot;;3;6;&squot;Señala el sustantivo que no es colectivo&squot;;5;6' tipo='vector' ">
+    <param name="A_04" value="id='asigna()' algoritmo='sí' expresión='x' inicio='kk=0' hacer='kk=kk+1
+;zz=(otro-1)*16
+;F1[kk]=P[zz+kk]
+;pal=T[(otro-1)*3+3]
+;' mientras='kk<16' tipo='función' ">
+    <param name="A_05" value="id='verifica()' algoritmo='sí' expresión='x' hacer='correcto=(T[(otro-1)*3+2]=rta)
+;buenas=buenas+correcto' tipo='función' ">
+    <param name="A_06" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='e=30;otro=1;asigna();posX=80;posY=90;lw=22' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_h.svg' clip='(360,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='Señala el sustantivo que corresponde a cada instrucción dada, y pulsa el botón “Verificar” para comprobar tu respuesta.' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,450)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='E1' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(260,339,-0.5,0.5)' archivo='images/fondo_ejer.svg' ">
+    <param name="G_06" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(eval==0)&&(r1=0)' coord_abs='sí' expresión='[posX,posY]' texto='[F1[1]]' ancho='1' negrita='sí' fuente puntos='30' align='a_left' anchor='a_top_left' ">
+    <param name="G_07" value="espacio='E1' tipo='texto' color='3498db' dibujar-si='(eval==0)&&(r1=1)' coord_abs='sí' expresión='[posX,posY]' texto='[F1[1]]' ancho='1' negrita='sí' fuente puntos='30' align='a_left' anchor='a_top_left' ">
+    <param name="G_08" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(eval==0)&&(r2=0)' coord_abs='sí' expresión='[posX+10+lw*F1[2],posY]' texto='[F1[3]]' ancho='1' negrita='sí' fuente puntos='30' align='a_left' anchor='a_top_left' ">
+    <param name="G_09" value="espacio='E1' tipo='texto' color='3498db' dibujar-si='(eval==0)&&(r2=1)' coord_abs='sí' expresión='[posX+10+lw*F1[2],posY]' texto='[F1[3]]' ancho='1' negrita='sí' fuente puntos='30' align='a_left' anchor='a_top_left' ">
+    <param name="G_10" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(eval==0)&&(r3=0)' coord_abs='sí' expresión='[posX+10+lw*F1[2]+lw*F1[4],posY]' texto='[F1[5]]' ancho='1' negrita='sí' fuente puntos='30' align='a_left' anchor='a_top_left' ">
+    <param name="G_11" value="espacio='E1' tipo='texto' color='3498db' dibujar-si='(eval==0)&&(r3=1)' coord_abs='sí' expresión='[posX+10+lw*F1[2]+lw*F1[4],posY]' texto='[F1[5]]' ancho='1' negrita='sí' fuente puntos='30' align='a_left' anchor='a_top_left' ">
+    <param name="G_12" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(eval==0)&&(r4=0)' coord_abs='sí' expresión='[posX+10+lw*F1[2]+lw*F1[4]+lw*F1[6],posY]' texto='[F1[7]]' ancho='1' negrita='sí' fuente puntos='30' align='a_left' anchor='a_top_left' ">
+    <param name="G_13" value="espacio='E1' tipo='texto' color='3498db' dibujar-si='(eval==0)&&(r4=1)' coord_abs='sí' expresión='[posX+10+lw*F1[2]+lw*F1[4]+lw*F1[6],posY]' texto='[F1[7]]' ancho='1' negrita='sí' fuente puntos='30' align='a_left' anchor='a_top_left' ">
+    <param name="G_14" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(eval==0)&&(r5=0)&(pal>4)' coord_abs='sí' expresión='[posX+10+lw*F1[2]+lw*F1[4]+lw*F1[6]+lw*F1[8],posY]' texto='[F1[9]]' ancho='1' negrita='sí' fuente puntos='30' align='a_left' anchor='a_top_left' ">
+    <param name="G_15" value="espacio='E1' tipo='texto' color='3498db' dibujar-si='(eval==0)&&(r5=1)&(pal>4)' coord_abs='sí' expresión='[posX+10+lw*F1[2]+lw*F1[4]+lw*F1[6]+lw*F1[8],posY]' texto='[F1[9]]' ancho='1' negrita='sí' fuente puntos='30' align='a_left' anchor='a_top_left' ">
+    <param name="G_16" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(eval==0)&&(r6=0)&(pal>5)' coord_abs='sí' expresión='[posX+10+lw*F1[2]+lw*F1[4]+lw*F1[6]+lw*F1[8]+lw*F1[10],posY]' texto='[F1[11]]' ancho='1' negrita='sí' fuente puntos='30' align='a_left' anchor='a_top_left' ">
+    <param name="G_17" value="espacio='E1' tipo='texto' color='3498db' dibujar-si='(eval==0)&&(r6=1)&(pal>5)' coord_abs='sí' expresión='[posX+10+lw*F1[2]+lw*F1[4]+lw*F1[6]+lw*F1[8]+lw*F1[10],posY]' texto='[F1[11]]' ancho='1' negrita='sí' fuente puntos='30' align='a_left' anchor='a_top_left' ">
+    <param name="G_18" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(eval==0)' coord_abs='sí' expresión='[E1._w/2,20]' texto='[T[(otro-1)*3+1]]' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_19" value="espacio='E1' tipo='texto' color='34cc67' dibujar-si='correcto&(eval=0)' coord_abs='sí' expresión='[E1._w/2,E1._h-20]' texto='¡Muy bien!' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_bottom_center' ">
+    <param name="G_20" value="espacio='E1' tipo='texto' color='d40809' dibujar-si='(correcto=0)&(ver=1)&(eval=0)' coord_abs='sí' expresión='[E1._w/2,E1._h-20]' texto='¡Incorrecto! El sustantivo es \b{[F1[T[(otro-1)*3+2]*2-1]]}' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_bottom_center' ">
+    <param name="G_21" value="espacio='E1' tipo='texto' color='000000' dibujar-si='eval=1' coord_abs='sí' expresión='[E1._w/2,E1._h-20]' texto='Respondiste bien \b{[buenas]} de \b{5}' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_bottom_center' ">
+    <param name="Animación" value="pausa='300' controles='no' auto='sí' repetir='no' inicio='t=0; R=0' hacer='t=t+1;k=(t%2);w=(k=0)?0.7:0.73;u=cos(R*180/3.14);R=R+15;;;;' mientras='t<60' ">
+  </ajs>
+
+
+
+</body>
+</html>

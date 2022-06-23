@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="M_B1_Fracciones_mixtas" 
+	nivel="Primaria" 
+	area="Matemáticas, Números y operaciones" 
+	plataforma="HTML 5" 
+	>
+	<titulo><![CDATA[
+		Fracciones mixtas
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+    Ofrecer actividades que permitan al alumno practicar con fracciones mixtas.
+	]]></Descripcion>
+</recurso>

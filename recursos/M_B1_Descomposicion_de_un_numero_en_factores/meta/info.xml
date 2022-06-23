@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="M_B1_Descomposicion_de_un_numero_en_factores" 
+	nivel="Primaria" 
+	area="Matemáticas, Números y operaciones" 
+	plataforma="HTML 5" 
+	>
+	<titulo><![CDATA[
+		Descomposición de un número en factores
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+    Descomponer un número en dos o más factores.
+	]]></Descripcion>
+</recurso>

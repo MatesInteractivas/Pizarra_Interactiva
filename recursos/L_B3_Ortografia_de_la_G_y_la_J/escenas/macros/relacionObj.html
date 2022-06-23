@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>TITULO</title>
+  <script type="text/javascript" src="https://arquimedes.matem.unam.mx/Descartes5/lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body bgcolor="e0e4e8">
+
+  <p align="center">
+    <ajs name="Descartes" code="Descartes" width="970" height="550">
+      <param name="tamaño" value="970x550">
+      <param name="decimal_symbol" value=",">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="sí">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=40 ">
+      <param name="E_01" value="tipo='R2' id='E1' fijo='sí' escala='1' O.x='-50%' O.y='-50%' red='c0c0c0' red10='808080' ejes='404040' ">
+      <param name="A_01" value="id='adyacencias' matriz='sí' evaluar='una-sola-vez' columnas='200+n_col1' filas='200+n_col1' tipo='matriz' ">
+      <param name="A_02" value="id='relDer' vector='sí' evaluar='una-sola-vez' tamaño='n_relaciones+100' tipo='vector' ">
+      <param name="A_03" value="id='relIzq' vector='sí' evaluar='una-sola-vez' tamaño='n_relaciones+100' tipo='vector' ">
+      <param name="A_04" value="id='col1_x' vector='sí' evaluar='una-sola-vez' tamaño='n_col1+100' tipo='vector' ">
+      <param name="A_05" value="id='col1_y' vector='sí' evaluar='una-sola-vez' tamaño='n_col1+100' tipo='vector' ">
+      <param name="A_06" value="id='col1_w' vector='sí' evaluar='una-sola-vez' tamaño='n_col1+100' tipo='vector' ">
+      <param name="A_07" value="id='col1_h' vector='sí' evaluar='una-sola-vez' tamaño='n_col1+100' tipo='vector' ">
+      <param name="A_08" value="id='col1_txt' vector='sí' evaluar='una-sola-vez' tamaño='n_col1+100' tipo='vector' ">
+      <param name="A_09" value="id='col1_dx' vector='sí' evaluar='una-sola-vez' tamaño='n_col1+100' tipo='vector' ">
+      <param name="A_10" value="id='col1_dy' vector='sí' evaluar='una-sola-vez' tamaño='n_col1+100' tipo='vector' ">
+      <param name="A_11" value="id='col1_IMG' vector='sí' evaluar='una-sola-vez' tamaño='n_col1+100' expresión='&squot;images/palabras/cong.png&squot;;&squot;images/palabras/conj.png&squot;;&squot;images/palabras/img0.png&squot;;&squot;images/palabras/img1.png&squot;;&squot;images/palabras/img2.png&squot;;&squot;images/palabras/img3.png&squot;;&squot;images/palabras/img4.png&squot;;&squot;images/palabras/img5.png&squot;;&squot;images/palabras/img6.png&squot;;&squot;images/palabras/img7.png&squot;;&squot;images/palabras/img8.png&squot;;&squot;images/palabras/img9.png&squot;' tipo='vector' ">
+      <param name="A_12" value="id='col1_A' vector='sí' evaluar='una-sola-vez' tamaño='n_col1+100' tipo='vector' ">
+      <param name="A_13" value="id='col1_R' vector='sí' evaluar='una-sola-vez' tamaño='n_col1+100' tipo='vector' ">
+      <param name="A_14" value="id='col1_G' vector='sí' evaluar='una-sola-vez' tamaño='n_col1+100' tipo='vector' ">
+      <param name="A_15" value="id='col1_B' vector='sí' evaluar='una-sola-vez' tamaño='n_col1+100' tipo='vector' ">
+      <param name="A_16" value="id='col1_BW' vector='sí' evaluar='una-sola-vez' tamaño='n_col1+100' tipo='vector' ">
+      <param name="A_17" value="id='col1_BA' vector='sí' evaluar='una-sola-vez' tamaño='n_col1+100' tipo='vector' ">
+      <param name="A_18" value="id='col1_BR' vector='sí' evaluar='una-sola-vez' tamaño='n_col1+100' tipo='vector' ">
+      <param name="A_19" value="id='col1_BG' vector='sí' evaluar='una-sola-vez' tamaño='n_col1+100' tipo='vector' ">
+      <param name="A_20" value="id='col1_BB' vector='sí' evaluar='una-sola-vez' tamaño='n_col1+100' tipo='vector' ">
+      <param name="A_21" value="id='acomoda_Col1(xP,yP,_radioX,_radioY)' algoritmo='sí' expresión='x' inicio='_index=0;posX=0;posY=0;_incrX=(horien==X_AXIS);_incrY=(horien==Y_AXIS);_maxW=0;_maxH=0;maxVal2=(maxVal<0)?9999999:maxVal;strDebug=&squot;&squot;;_incTetha=(2*pi/(n_col1))' hacer='col1_x[_index]=xP+_radioX*cos(_incTetha*_index);col1_y[_index]=yP+_radioY*sen(_incTetha*_index);;;col1_x[_index]=col1_x[_index]-col1_w[_index]/2;col1_y[_index]=col1_y[_index]-col1_h[_index]/2;;;_index=_index+1' mientras='_index<n_col1' tipo='función' ">
+      <param name="A_22" value="id='calRecResize(_iObj)' algoritmo='sí' expresión='(edicion==MODIF_OBJ)' hacer='_cuadroR.x1=col1_x[_iObj]+col1_w[_iObj]-_wResize;_cuadroR.y1=col1_y[_iObj]+col1_h[_iObj]-_wResize;;_cuadroR.x2=_cuadroR.x1+_wResize;_cuadroR.y2=_cuadroR.y1+_wResize;;;' tipo='función' ">
+      <param name="A_23" value="id='calRecDxy(_iObj)' algoritmo='sí' expresión='(edicion==MODIF_OBJ)' hacer='_cuadroR.x1=col1_x[_iObj]+col1_dx[_iObj]-_wResize/2;_cuadroR.y1=col1_y[_iObj]+col1_dy[_iObj]-_wResize/2;;_cuadroR.x2=_cuadroR.x1+_wResize;_cuadroR.y2=_cuadroR.y1+_wResize;;;' tipo='función' ">
+      <param name="A_24" value="id='calculaSegmento(_iSeg)' algoritmo='sí' expresión='1' hacer='_iCol1=relDer[_iSeg];_iCol2=relIzq[_iSeg];;_segX1=col1_x[_iCol1]+col1_w[_iCol1]/2;_segY1=col1_y[_iCol1]+col1_h[_iCol1]/2;;_segX2=col1_x[_iCol2]+col1_w[_iCol2]/2;_segY2=col1_y[_iCol2]+col1_h[_iCol2]/2;;' tipo='función' ">
+      <param name="A_25" value="id='sobreCual(_mX,_mY)' algoritmo='sí' expresión='_res' inicio='_index=0;limiteIter=n_col1;_res=-1' hacer='_pos.x=col1_x[_index];_pos.y=col1_y[_index];;_pos.x2=_pos.x+col1_w[_index]+wArgolla;_pos.y2=_pos.y+col1_h[_index];;;_estaSobre=(_pos.x<=_mX)&&(_pos.x2>=_mX);_estaSobre=_estaSobre&&(_pos.y<=_mY)&&(_pos.y2>=_mY);;_res=(_estaSobre)?_index:_res;;_index=_index+1' mientras='(_index<n_col1)&&(!_estaSobre)' tipo='función' ">
+      <param name="A_26" value="id='sobreCualParaSize(_mX,_mY)' algoritmo='sí' expresión='_res' inicio='_index=0;_res=-1' hacer='_posSCS.x=col1_x[_index]+col1_w[_index]-_wResize;_posSCS.y=col1_y[_index]+col1_h[_index]-_wResize;;_posSCS.x2=_posSCS.x+_wResize;_posSCS.y2=_posSCS.y+_wResize;;_estaSobreX=(_posSCS.x<=_mX)&&(_posSCS.x2>=_mX);_estaSobreY=(_posSCS.y<=_mY)&&(_posSCS.y2>=_mY);_estaSobre=(_estaSobreX)&&(_estaSobreY);;_res=(_estaSobre)?_index:_res;;_index=_index+1' mientras='(_index<n_col1)&&(!_estaSobre)' tipo='función' ">
+      <param name="A_27" value="id='sobreCualParaDxy(mX,mY)' algoritmo='sí' expresión='_res' inicio='index=0;_res=-1' hacer='_pos.x=col1_x[index]+col1_dx[index]-_wResize/2;_pos.y=col1_y[index]+col1_dy[index]-_wResize/2;;_pos.x2=_pos.x+_wResize;_pos.y2=_pos.y+_wResize;;_estaSobre=(_pos.x<=mX)&&(_pos.x2>=mX);_estaSobre=_estaSobre&&(_pos.y<=mY)&&(_pos.y2>=mY);;_res=(_estaSobre)?index:_res;;index=index+1' mientras='(index<n_col1)&&(!_estaSobre)' tipo='función' ">
+      <param name="A_28" value="id='moveLabelFor(iL1,onPX,onPY)' algoritmo='sí' expresión='x' hacer='_posT.x=col1_x[iL1]+onPX;_posT.y=col1_y[iL1]+onPY;;;col1_x[iL1]=_posT.x;col1_y[iL1]=_posT.y;' tipo='función' ">
+      <param name="A_29" value="id='moveDxyObj(iL1,toPX,toPY)' algoritmo='sí' expresión='x' hacer='_posT.x=col1_x[iL1];_posT.y=col1_y[iL1];;;_tmpW=(toPX-_posT.x);_tmpH=(toPY-_posT.y);;col1_dx[iL1]=min(max(_tmpW,0),col1_w[iL1]);col1_dy[iL1]=min(max(_tmpH,0),col1_h[iL1]);;;' tipo='función' ">
+      <param name="A_30" value="id='resizeObj(iL1,toPX,toPY)' algoritmo='sí' expresión='x' hacer='_posT.x=col1_x[iL1];_posT.y=col1_y[iL1];;;_tmpW=(toPX+_wResize/2-_posT.x);_tmpH=(toPY+_wResize/2-_posT.y);;col1_w[iL1]=max(_tmpW,_wResize);col1_h[iL1]=max(_tmpH,_wResize);;;' tipo='función' ">
+      <param name="A_31" value="id='relExiste(_iCEx1,_iCEx2)' algoritmo='sí' expresión='_res' inicio='_index=0;_res=0;' hacer='_tmpBool1=(relDer[_index]==_iCEx1);_tmpBool2=(relIzq[_index]==_iCEx2);;_tmpBool3=(relDer[_index]==_iCEx2);_tmpBool4=(relIzq[_index]==_iCEx1);;_tmpBool5=(_tmpBool1)&&(_tmpBool2);_tmpBool6=(_tmpBool4)&&(_tmpBool3);;_caso1=(tipoRel==REL_1_1)&&(_tmpBool1|_tmpBool2|_tmpBool3|_tmpBool4);_caso2=(tipoRel==REL_N_N)&&(_tmpBool5|_tmpBool6);_caso3=(_iCEx1==_iCEx2);_res=(n_relaciones>0)&&(_caso1|_caso2|_caso3);;_index=_index+1' mientras='(_index<n_relaciones)&&(!_res)' tipo='función' ">
+      <param name="A_32" value="id='relCols(_iCRel1,_iCRel2)' algoritmo='sí' expresión='x' hacer='adyacencias[_iCRel1,_iCRel2]=1' tipo='función' ">
+      <param name="A_33" value="id='soltando(iLabel,_pMXpix,_pMYpix)' algoritmo='sí' expresión='_relCol' hacer='activo2=sobreCual(_pMXpix,_pMYpix);_relCol=(activo2>-1)&&(!relExiste(iLabel,activo2));tt=(_relCol)?relCols(iLabel,activo2):0;activo2=-1;;' tipo='función' ">
+      <param name="A_34" value="id='borrarRel(_iCalB1,_iCalB2)' algoritmo='sí' expresión='x' hacer='adyacencias[_iCalB1,_iCalB2]=0;adyacencias[_iCalB2,_iCalB1]=0;' tipo='función' ">
+      <param name="A_35" value="id='actVecRelaciones()' algoritmo='sí' expresión='x' inicio='_index=0;_limiteRel=(n_col1*n_col1);n_relaciones=0' hacer='_indexCol=(_index%n_col1);_indexRow=ent(_index/n_col1);;_hayRel=(adyacencias[_indexRow,_indexCol]==1);;relDer[n_relaciones]=(_hayRel)?_indexRow:relDer[n_relaciones];relIzq[n_relaciones]=(_hayRel)?_indexCol:relIzq[n_relaciones];;n_relaciones=n_relaciones+((_hayRel)?1:0);_index=_index+1' mientras='_index<_limiteRel' tipo='función' ">
+      <param name="A_36" value="id='limpiarRel()' algoritmo='sí' expresión='x' inicio='_index=0;_lIter=(n_col1*n_col1);' hacer='_indexCol=(_index%n_col1);_indexRow=ent(_index/n_col1);adyacencias[_indexRow,_indexCol]=0;_index=_index+1' mientras='_index<_lIter' tipo='función' ">
+      <param name="A_37" value="id='calcRelacionarArrastre()' algoritmo='sí' expresión='1' hacer='entroFun=&squot;_mousePressed=&squot;+_mousePressed;entroFun=entroFun+&squot; _soltado=&squot;+_soltado;;;_puedeRel=(_soltado)&&(activo>-1);tt=(_puedeRel)?soltando(activo,_mousePixX,_mousePixY):0;;activo=(!_mousePressed)?-1:activo;activo=(_resienPress)?sobreCual(_mousePixX,_mousePixY):activo;entroFun=entroFun+&squot; activo=&squot;+activo;' tipo='función' ">
+      <param name="A_38" value="id='calcRelacionarClick()' algoritmo='sí' expresión='1' hacer='_puedeRel=(_soltado)&&(activo>=0);_relacionados=(_puedeRel)?soltando(activo,_mousePixX,_mousePixY):0;;activo=(_soltado)?sobreCual(_mousePixX,_mousePixY):activo;activo=(_relacionados)?-1:activo;' tipo='función' ">
+      <param name="A_39" value="id='calcRelacionar()' algoritmo='sí' expresión='1' hacer='tt=(tipoInter==ARRASTRE)?calcRelacionarArrastre():calcRelacionarClick()' tipo='función' ">
+      <param name="A_40" value="id='calcBorrar()' algoritmo='sí' expresión='1' hacer='activo2=((_resienPress)&&(activo>-1))?sobreCual(_mousePixX,_mousePixY):activo2;activo2=(!_mousePressed)?-1:activo2;;_borrarRelacion=(activo>-1)&&(activo2>-1)&&(edicion==BORRAR);tt=(_borrarRelacion)?borrarRel(activo,activo2):0;;;activo=(_resienPress)?sobreCual(_mousePixX,_mousePixY):activo;;activo=(_borrarRelacion)?-1:activo;activo2=(_borrarRelacion)?-1:activo2' tipo='función' ">
+      <param name="A_41" value="id='calcModifObj()' algoritmo='sí' expresión='1' hacer='activo=(_resienPress)?sobreCual(_mousePixX,_mousePixY):activo;activoResize=((_resienPress)&&(activo>-1))?sobreCualParaSize(_mousePixX,_mousePixY):activoResize;activoDxy=((_resienPress)&&(activo>-1))?sobreCualParaDxy(_mousePixX,_mousePixY):activoDxy;;;;activo=(_mousePressed)?activo:-1;activoResize=(_mousePressed)?activoResize:-1;activoDxy=(_mousePressed)?activoDxy:-1;;;_tmpBResize=(activo>-1)&&(activoResize>-1)&&(activoResize==activo);_tmpBDxy=(activo>-1)&&(!_tmpBResize)&&(activoDxy>-1)&&(activoDxy==activo);;_tmpBArras=(activo>-1)&&(!_tmpBResize)&&(!_tmpBDxy);;tt=(_tmpBArras)?moveLabelFor(activo,_deltaMPixX,_deltaMPixY):0;tt=(_tmpBDxy)?moveDxyObj(activo,_mousePixX,_mousePixY):0;tt=(_tmpBResize)?resizeObj(activo,_mousePixX,_mousePixY):0;;;' tipo='función' ">
+      <param name="A_42" value="id='update()' algoritmo='sí' expresión='0' hacer='_mousePressed=Esp.mousePressed ;_resienPress=(!_mousePressed_ANT)&&(_mousePressed);_soltado=(_mousePressed_ANT)&&(!_mousePressed);//_resienPress=1;//_soltado=1;;_mousePixX=(Esp.mouse_x*Esp.escala)+Esp.w/2+Esp.Ox;_mousePixY=(-Esp.mouse_y*Esp.escala)+Esp.h/2+Esp.Oy;_mousePixX=min(max(_mousePixX,0),Esp.w);_mousePixY=min(max(_mousePixY,0),Esp.h);;_mousePixXAnt=(_resienPress)?_mousePixX:_mousePixXAnt;_mousePixYAnt=(_resienPress)?_mousePixY:_mousePixYAnt;;_deltaMPixX=(_mousePixX-_mousePixXAnt);_deltaMPixY=(_mousePixY-_mousePixYAnt);;tt=(edicion==NORMAL)?calcRelacionar():0;tt=(edicion==BORRAR)?calcBorrar():0;tt=(edicion==MODIF_OBJ)?calcModifObj():0;;actVecRelaciones();;_mousePressed_ANT=_mousePressed;;_mousePixXAnt=_mousePixX;_mousePixYAnt=_mousePixY;;;//;;segEdit.ver=(_mousePressed)&&(edicion==NORMAL)&&(tipoInter==ARRASTRE)&&(activo>-1);;tt=(activo>-1)?calcArgollaCol1(activo):0;segEdit.X1=(activo>-1)?(col1_x[activo]+col1_w[activo]/2):0;segEdit.Y1=(activo>-1)?(col1_y[activo]+col1_h[activo]/2):0;segEdit.X2=_mousePixX;segEdit.Y2=_mousePixY;' tipo='función' ">
+      <param name="A_43" value="id='NORMAL' expresión='10' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_44" value="id='BORRAR' expresión='11' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_45" value="id='MODIF_OBJ' expresión='12' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_46" value="id='CLICK' expresión='0' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_47" value="id='ARRASTRE' expresión='1' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_48" value="id='tipoInter' expresión='0' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_49" value="id='REL_1_1' expresión='0' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_50" value="id='REL_N_N' expresión='1' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_51" value="id='_mousePixX' expresión='0' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_52" value="id='_mousePixY' expresión='0' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_53" value="id='_mousePixXAnt' expresión='0' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_54" value="id='_mousePixYAnt' expresión='0' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_55" value="id='_deltaMPixX' expresión='0' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_56" value="id='_deltaMPixY' expresión='0' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_57" value="id='_mousePressed' expresión='0' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_58" value="id='_resienPress' expresión='0' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_59" value="id='_soltado' expresión='0' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_60" value="id='debug' expresión='0' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_61" value="id='verImagen' expresión='1' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_62" value="id='verRecFondo' expresión='1' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_63" value="id='verTexto' expresión='1' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_64" value="id='tipoRel' expresión='REL_1_N' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_65" value="id='edicion' expresión='NORMAL' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_66" value="id='tipoUnion' expresión='0' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_67" value="id='_wResize' expresión='10' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_68" value="id='n_col1' expresión='10' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_69" value="id='n_relaciones' expresión='0' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_70" value="id='maskSelect.A' expresión='0.4' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_71" value="id='maskSelect.R' expresión='1' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_72" value="id='maskSelect.G' expresión='1' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_73" value="id='maskSelect.B' expresión='1' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_74" value="id='maskSelect.BW' expresión='2' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_75" value="id='maskSelect.BA' expresión='0' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_76" value="id='maskSelect.BR' expresión='0' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_77" value="id='maskSelect.BG' expresión='0' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_78" value="id='maskSelect.BB' expresión='0' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_79" value="id='segmentos.A' expresión='0' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_80" value="id='segmentos.R' expresión='0' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_81" value="id='segmentos.G' expresión='0' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_82" value="id='segmentos.B' expresión='0.5' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_83" value="id='segmentos.W' expresión='2' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_84" value="id='segmentoSel.A' expresión='0' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_85" value="id='segmentoSel.R' expresión='0.4' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_86" value="id='segmentoSel.G' expresión='1' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_87" value="id='segmentoSel.B' expresión='1' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_88" value="id='segmentoSel.W' expresión='3' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_89" value="id='HACK_TO_FUN' algoritmo='sí' evaluar='una-sola-vez' hacer='_mousePixX=-1;_mousePixY=-1;_mousePressed=0;_resienPress=0;_soltado=0;;entroFun=&squot;&squot;;;calculaSegmento(0);calcSegEdicion(0);sobreCual(-1,-1);moveLabelTo(0,0,0);relExiste(0,0);relCols(0,0);soltando(0,-1,-1);;;calcModifObj();calcRelacionar();calcBorrar();;limpiarRel();' ">
+      <param name="A_90" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='activo=-1;activo2=-1' ">
+      <param name="A_91" value="id='INICIO_COL1' algoritmo='sí' evaluar='una-sola-vez' inicio='index=0;limiteIter=min(n_col1,n_col1);' hacer='col1_txt[index]=&squot;Label_&squot;+index;col1_x[index]=150;col1_y[index]=100+index*20;col1_w[index]=125+ent(rnd*5)*5;col1_h[index]=30;;col1_dy[index]=3;col1_dx[index]=0;;;col1_A[index]=0.6;col1_R[index]=0;col1_G[index]=1;col1_B[index]=1;;col1_BW[index]=1;col1_BA[index]=0.5;col1_BR[index]=0;col1_BG[index]=0;col1_BB[index]=1;;index=index+1' mientras='index<limiteIter' ">
+      <param name="A_92" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='acomoda_Col1(400,300,300,150);' ">
+      <param name="A_93" value="id='CALCULOS_BASURA' algoritmo='sí' evaluar='siempre' hacer='Esp.mousePressed=(E1.mouse_pressed)&(enabled);Esp.mousePressed=(E1.mouse_pressed);Esp.mouse_x=E1.mouse_x;Esp.mouse_y=E1.mouse_y;Esp.Ox=E1.Ox;Esp.Oy=E1.Oy;Esp.w=E1._w;Esp.h=E1._h;Esp.escala=E1.escala;;update()' ">
+      <param name="G_01" value="espacio='E1' tipo='segmento' color='(segmentos.R,segmentos.G,segmentos.B,segmentos.A)' dibujar-si='(tipoUnion==1)&calculaSegmento(s)' coord_abs='sí' expresión='(_segX1,_segY1)(_segX2,_segY2)' familia='s' s.intervalo='[0,n_relaciones-1]' s.pasos='n_relaciones-1' tamaño='2' ancho='segmentos.W' ">
+      <param name="G_02" value="espacio='E1' tipo='segmento' color='(segmentoSel.R,segmentoSel.G,segmentoSel.B,segmentoSel.A)' dibujar-si='(tipoUnion==1)&calculaSegmento(s)&((activo==_iCol1)|(activo==_iCol2))' coord_abs='sí' expresión='(_segX1,_segY1)(_segX2,_segY2)' familia='s' s.intervalo='[0,n_relaciones-1]' s.pasos='n_relaciones-1' tamaño='2' ancho='segmentoSel.W' ">
+      <param name="G_03" value="espacio='E1' tipo='segmento' color='(segmentoSel.R,segmentoSel.G,segmentoSel.B,segmentoSel.A)' dibujar-si='(tipoUnion==1)&segEdit.ver' coord_abs='sí' expresión='(segEdit.X1,segEdit.Y1)(segEdit.X2,segEdit.Y2)' tamaño='2' ancho='2' ">
+      <param name="G_04" value="espacio='E1' tipo='polígono' color='(col1_BR[s],col1_BG[s],col1_BB[s],col1_BA[s])' dibujar-si='verRecFondo' coord_abs='sí' expresión='(col1_x[s],col1_y[s])(col1_x[s]+col1_w[s],col1_y[s])(col1_x[s]+col1_w[s],col1_y[s]+col1_h[s])(col1_x[s],col1_y[s]+col1_h[s])(col1_x[s],col1_y[s])' familia='s' s.intervalo='[0,n_col1-1]' s.pasos='n_col1-1' relleno='(col1_R[s],col1_G[s],col1_B[s],col1_A[s])' ancho='col1_BW[s]' ">
+      <param name="G_05" value="espacio='E1' tipo='imagen' dibujar-si='verImagen' coord_abs='sí' expresión='(col1_x[s]+col1_w[s]/2,col1_y[s]+col1_h[s]/2,0.5)' familia='s' s.intervalo='[0,n_col1-1]' s.pasos='n_col1-1' archivo='[col1_IMG[s]]' ">
+      <param name="G_06" value="espacio='E1' tipo='texto' color='000000' dibujar-si='verTexto' coord_abs='sí' expresión='[col1_x[s]+col1_dx[s],col1_y[s]+col1_dy[s]]' familia='s' s.intervalo='[0,n_col1-1]' s.pasos='n_col1-1' texto='[col1_txt[s]]' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+      <param name="G_07" value="espacio='E1' tipo='polígono' color='(maskSelect.BR,maskSelect.BG,maskSelect.BB,maskSelect.BA)' dibujar-si='activo>=0' coord_abs='sí' expresión='(col1_x[activo],col1_y[activo])(col1_x[activo]+col1_w[activo],col1_y[activo])(col1_x[activo]+col1_w[activo],col1_y[activo]+col1_h[activo])(col1_x[activo],col1_y[activo]+col1_h[activo])(col1_x[activo],col1_y[activo])' relleno='(maskSelect.R,maskSelect.G,maskSelect.B,maskSelect.A)' ancho='maskSelect.BW' ">
+      <param name="G_08" value="espacio='E1' tipo='polígono' color='690000' dibujar-si='calRecResize(s)' coord_abs='sí' expresión='(_cuadroR.x1,_cuadroR.y1)(_cuadroR.x2,_cuadroR.y1)(_cuadroR.x2,_cuadroR.y2)(_cuadroR.x1,_cuadroR.y2)(_cuadroR.x1,_cuadroR.y1)' familia='s' s.intervalo='[0,n_col1-1]' s.pasos='n_col1-1' relleno='ff0000' ancho='1' ">
+      <param name="G_09" value="espacio='E1' tipo='polígono' color='006900' dibujar-si='calRecDxy(s)' coord_abs='sí' expresión='(_cuadroR.x1,_cuadroR.y1)(_cuadroR.x2,_cuadroR.y1)(_cuadroR.x2,_cuadroR.y2)(_cuadroR.x1,_cuadroR.y2)(_cuadroR.x1,_cuadroR.y1)' familia='s' s.intervalo='[0,n_col1-1]' s.pasos='n_col1-1' relleno='00ff00' ancho='1' ">
+      <param name="G_10" value="espacio='E1' tipo='punto' color='000000' dibujar-si='(edicion==MODIF_OBJ)' coord_abs='sí' expresión='(col1_x[s]+col1_dx[s],col1_y[s]+col1_dy[s])' familia='s' s.intervalo='[0,n_col1-1]' s.pasos='n_col1-1' tamaño='2' ">
+      <param name="G_11" value="espacio='E1' tipo='flecha' color='000000' dibujar-si='(tipoUnion==0)&(calculaSegmento(s))' coord_abs='sí' expresión='(_segX1,_segY1)(_segX2,_segY2)' familia='s' s.intervalo='[0,n_relaciones-1]' s.pasos='n_relaciones-1' ancho='5' punta='8' flecha='(segmentos.R,segmentos.G,segmentos.B,segmentos.A)' ">
+      <param name="G_12" value="espacio='E1' tipo='flecha' color='000000' dibujar-si='(tipoUnion==0)&calculaSegmento(s)&((activo==_iCol1)|(activo==_iCol2))' coord_abs='sí' expresión='(_segX1,_segY1)(_segX2,_segY2)' familia='s' s.intervalo='[0,n_relaciones-1]' s.pasos='n_relaciones-1' ancho='5' punta='8' flecha='(segmentoSel.R,segmentoSel.G,segmentoSel.B,segmentoSel.A)' ">
+      <param name="G_13" value="espacio='E1' tipo='flecha' color='000000' dibujar-si='(tipoUnion==0)&(segEdit.ver)' coord_abs='sí' expresión='(segEdit.X1,segEdit.Y1)(segEdit.X2,segEdit.Y2)' ancho='5' punta='8' flecha='(segmentoSel.R,segmentoSel.G,segmentoSel.B,segmentoSel.A)' ">
+    </ajs>
+  </p>
+
+
+
+</body>
+</html>

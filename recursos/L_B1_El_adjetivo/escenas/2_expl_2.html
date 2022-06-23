@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>El adjetivo</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='500' fijo='sí' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="E_03" value="tipo='R2' id='COVER' dibujar-si='boton1||boton2||boton3' fijo='sí' imagen='images/backwindow.png' despl_imagen='mosaico' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="E_04" value="tipo='R2' id='INFO' x='35' y='185' ancho='954' alto='405' dibujar-si='boton1||boton2||boton3' fijo='sí' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='cerrar' interfaz='botón' tipo='numérico' región='interior' espacio='INFO' expresión='(INFO._w-35,0,35,35)' color='ffffff' color-int='ffffff' fuente puntos='19' imagen='images/cerrar.svg' acción='calcular' parámetro='boton1=0;boton2=0;boton3=0;abs=0;rel=0;' ">
+    <param name="C_02" value="id='boton1' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Grado positivo' expresión='(E1._w/6-220/2,20,220,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='boton1=1;boton2=0;boton3=0' activo-si='!boton1' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_03" value="id='boton2' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Grado comparativo' expresión='(3*E1._w/6-220/2,20,220,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='boton1=0;boton2=1;boton3=0' activo-si='!boton2' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_04" value="id='boton3' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Grado superlativo' expresión='(5*E1._w/6-220/2,20,220,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='boton1=0;boton2=0;boton3=1' activo-si='!boton3' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_05" value="id='compar' tipo='numérico' interfaz='menú' región='interior' espacio='INFO' expresión='(325,148,240,35)' fijo='no' visible='no' opciones=' ,más simpática que,tan simpática como,menos simpática que' dibujar-si='boton2=1' fuente puntos='20' ">
+    <param name="C_06" value="id='super1' interfaz='botón' tipo='numérico' región='interior' espacio='INFO' nombre='Relativo' expresión='(240,95,130,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='rel=1;abs=0;' dibujar-si='boton3=1' activo-si='!rel' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_07" value="id='super2' interfaz='botón' tipo='numérico' región='interior' espacio='INFO' nombre='Absoluto' expresión='(390,95,130,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='abs=1;rel=0;' dibujar-si='boton3=1' activo-si='!abs' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='vertexto=0;' ">
+    <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='boton11=(boton1)?1:boton11;boton21=(boton2)?1:boton21;boton31=(boton3)?1:boton31;suma=boton1+boton2+boton3;vertexto=(boton11+boton21+boton31=3)&(suma=0);vertexto1=(vertexto)?1:vertexto1;rel1=(rel)?1:rel1;abs1=(abs)?1:abs1;ok=(rel1+abs1=2);ok1=(ok)?1:ok1;;si11=compar1;si21=compar2;si31=compar3;sitodas=(si11+si21+si31=3);sitodas1=(sitodas)?1:sitodas1' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_h.svg' clip='(120,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='Las cualidades que expresan los adjetivos pueden aparecer en diferente grado o intensidad. Utiliza los botones para conocer los tres grados del adjetivo.' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,500)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='INFO' tipo='rectángulo' fondo='sí' color='341f97' coord_abs='sí' expresión='(1,1,INFO._w-3,INFO._h-3)' relleno='ffffff' ancho='3' border_radius='4' ">
+    <param name="G_06" value="espacio='INFO' tipo='rectángulo' fondo='sí' color='ffffffff' coord_abs='sí' expresión='(0,0,INFO._w,35)' relleno='341f97' ancho='0' border_radius='4' ">
+    <param name="G_07" value="espacio='INFO' tipo='texto' color='000000' dibujar-si='boton1=1' coord_abs='sí' expresión='(20,50)' texto='El \b{grado positivo} simplemente indica la cualidad del sustantivo, sin hacer referencia a su intensidad.\n\n\b{Ejemplos:}\n\nMe gustan los caramelos \b{ácidos}.\nDesde mi ventana se ven unas vistas \b{preciosas}.' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' info='boton1=1' ">
+    <param name="G_08" value="espacio='INFO' tipo='texto' color='000000' dibujar-si='boton2=1' coord_abs='sí' expresión='(20,50)' texto='El \b{grado comparativo} expresa la cualidad del nombre en comparación con otro.\n\nUtiliza el menú de la siguiente oración para ver los \b{tres tipos} de comparaciones posibles:\n\c{Marta es                                                    Eva.}' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' info='boton2=1' ">
+    <param name="G_09" value="espacio='INFO' tipo='texto' color='000000' dibujar-si='(boton2=1)&(compar=1)' coord_abs='sí' expresión='[20,250]' texto='Si el primer nombre tiene una cualidad con mayor intensidad que el segundo nombre, el \b{grado comparativo} es de \b{superioridad}.\n\nSu estructura es: \b{\color{3498db}{más + adjetivo + que}}.' ancho='INFO._w-40' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_10" value="espacio='INFO' tipo='texto' color='000000' dibujar-si='(boton2=1)&(compar=2)' coord_abs='sí' expresión='[20,250]' texto='Cuando ambos sustantivos tienen la cualidad en la misma intensidad, el \b{grado comparativo} es de \b{igualdad}.\n\nFíjate en la estructura: \b{\color{3498db}{tan + adjetivo + como}}.' ancho='INFO._w-40' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_11" value="espacio='INFO' tipo='texto' color='000000' dibujar-si='(boton2=1)&(compar=3)' coord_abs='sí' expresión='[20,250]' texto='Si el primer nombre tiene una cualidad con menor intensidad que el segundo nombre, el \b{grado comparativo} es de \b{inferioridad}.\n\nSe forma así: \b{\color{3498db}{menos + adjetivo + que}}.' ancho='INFO._w-40' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_12" value="espacio='INFO' tipo='texto' color='000000' dibujar-si='boton3=1' coord_abs='sí' expresión='[20,50]' texto='El \b{grado superlativo} expresa una cualidad en su grado más alto.\n\nPuede ser de dos tipos:' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' info='boton3=1' ">
+    <param name="G_13" value="espacio='E1' tipo='texto' color='000000' dibujar-si='vertexto=1' coord_abs='sí' expresión='[20,88]' texto='Ahora ya conoces los tres \b{grados del adjetivo}. \n\nDebes tener en cuenta que algunos adjetivos tienen \b{formas especiales} para los distintos grados. \n\nLos más habituales son los siguientes:' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_14" value="espacio='E1' tipo='texto' color='000000' dibujar-si='vertexto=1' coord_abs='sí' expresión='[E1._w/2-200,260]' texto='\b{Positivo}\nbueno\nmalo\ngrande\npequeño\nalto\nbajo' ancho='1' fuente puntos='20' align='a_center' anchor='a_top_center' ">
+    <param name="G_15" value="espacio='INFO' tipo='texto' color='000000' dibujar-si='rel=1' coord_abs='sí' expresión='[20,170]' texto='El \b{grado superlativo relativo} expresa una cualidad en su grado máximo o mínimo en relación con el resto de un grupo.\n\nSe construye utilizando: \b{\color{3498db}{el/la + más/menos + adjetivo + de}}.\n\n\b{Ejemplos}:\nEsta perra es \b{la más traviesa de} la ciudad.\nTu pueblo es \b{el menos pintoresco de} la zona.' ancho='INFO._w-40' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_16" value="espacio='INFO' tipo='texto' color='000000' dibujar-si='abs=1' coord_abs='sí' expresión='[20,170]' texto='El \b{grado superlativo absoluto} expresa una cualidad en alto grado, sin relacionarlo con otras personas, animales u objetos.\n\nSe forma de dos maneras:\n\b{\color{3498db}{muy + adjetivo}}: \nLa tarta que has preparado está \b{muy rica}.\n\b{\color{3498db}{adjetivo + ísimo/a}}: \nHe resuelto un ejercicio \b{dificilísimo}.' ancho='INFO._w-40' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_17" value="espacio='E1' tipo='texto' color='000000' dibujar-si='vertexto=1' coord_abs='sí' expresión='[E1._w/2,260]' texto='\b{Comparativo}\nmejor\npeor\nmayor\nmenor\nsuperior\ninferior' ancho='1' fuente puntos='20' align='a_center' anchor='a_top_center' ">
+    <param name="G_18" value="espacio='E1' tipo='texto' color='000000' dibujar-si='vertexto=1' coord_abs='sí' expresión='[E1._w/2+200,260]' texto='\b{Superlativo}\nóptimo\npésimo\nmáximo\nmínimo\nsupremo\nínfimo' ancho='1' fuente puntos='20' align='a_center' anchor='a_top_center' ">
+  </ajs>
+
+
+
+</body>
+</html>

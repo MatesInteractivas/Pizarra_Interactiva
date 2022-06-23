@@ -1,0 +1,13 @@
+{
+  "nivel": [
+    "Primaria"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Geometría"
+  ], 
+  "titulo": "Simetría", 
+  "descripcion": "Que el alumno desarrolle la idea de simetría axial explorando las propiedades de los puntos simétricos.",
+  "resena": "Que el alumno desarrolle la idea de simetría axial explorando las propiedades de los puntos simétricos.",
+  "id": "M_B3_Simetria"
+}

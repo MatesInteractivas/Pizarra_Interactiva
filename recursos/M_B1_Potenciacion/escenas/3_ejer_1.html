@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Potenciación</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='450' fijo='sí' escala='45' O.x='-20%' O.y='40%' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='veri' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Verificar' expresión='((pleca._w-120)/2,pleca._h-35-15,120,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='verificar()' activo-si='(intento<2)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_02" value="id='n1' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Otro ejercicio' expresión='(pleca._w-150-15,pleca._h-35-15,150,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='otroEjercicio()' activo-si='(n2=ent(B))|(intento=2)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_03" value="id='n2' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E1' expresión='(240,220,40,40)' valor='&squot;&squot;' decimales='0' visible='sí' activo-si='intento<2' keyboard='sí' kblayout='7x2' kbexp='(50,450)' ">
+    <param name="A_01" value="id='verificar()' algoritmo='sí' expresión='0' inicio='verif=1' hacer='intento=intento+1' tipo='función' ">
+    <param name="A_02" value="id='otroEjercicio()' algoritmo='sí' expresión='0' inicio='verif=0' hacer='A=ent(rnd*10)+1;B=ent(rnd*6)+2;otro=otro+1;intento=0;n2=&squot;&squot;' tipo='función' ">
+    <param name="A_03" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='otro=1;evalua=0;;A=ent(rnd*10)+1;B=ent(rnd*6)+2;' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_m.svg' clip='(240,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='Escribe en el campo de texto el exponente para completar la expresión, luego pulsa el botón “Verificar” para comprobar tu respuesta.' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,450)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='E1' tipo='texto' color='34cc67' dibujar-si='(verif)&&(B==n2)' coord_abs='sí' expresión='[20,E1._h-20]' texto='¡Muy bien! Intenta con otro ejercicio' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_bottom_left' ">
+    <param name="G_06" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(B!=ent(n2))&(intento=1)' coord_abs='sí' expresión='[20,E1._h-20]' texto='\b{\color{d40809}{Recuerda:}}\nEl exponente es el número de veces que una cantidad se \nmultiplica por sí misma. ¡Intenta de nuevo!' ancho='1' fuente puntos='20' align='a_left' anchor='a_bottom_left' ">
+    <param name="G_07" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(B!=ent(n2))&(intento=2)' coord_abs='sí' expresión='[20,E1._h-20]' texto='\b{\color{d40809}{¡Lo siento!}}\nEl exponente correcto es \b{[B]}, que indica el número de veces \nque se multiplica \b{[A]} por sí mismo.' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_bottom_left' ">
+    <param name="G_08" value="espacio='E1' tipo='texto' color='000000' dibujar-si='B>s' coord_abs='sí' expresión='[100+s*100,50]' familia='s' s.intervalo='[0,7]' s.pasos='7' texto='[A]' fijo='no' ancho='1' negrita='sí' fuente puntos='60' align='a_left' anchor='a_top_center' ">
+    <param name="G_09" value="espacio='E1' tipo='texto' color='000000' dibujar-si='B>(s+1)' coord_abs='sí' expresión='[152+s*100,60]' familia='s' s.intervalo='[0,7]' s.pasos='7' texto='×' ancho='1' negrita='sí' fuente puntos='40' align='a_left' anchor='a_top_center' ">
+    <param name="G_10" value="espacio='E1' tipo='texto' color='000000' coord_abs='sí' expresión='[240,250]' texto='= [A]' fijo='no' ancho='1' negrita='sí' fuente puntos='80' align='a_left' anchor='a_top_right' ">
+    <param name="G_11" value="espacio='E1' tipo='imagen' dibujar-si='(verif)&&(B==n2)' coord_abs='sí' expresión='(310,240,0.8,0.8)' archivo='images/ok.svg' ">
+    <param name="G_12" value="espacio='E1' tipo='imagen' dibujar-si='(verif)&&(B!=n2)' coord_abs='sí' expresión='(310,240,0.8,0.8)' archivo='images/ko.svg' ">
+    <param name="G_13" value="espacio='E1' tipo='imagen' coord_abs='sí' expresión='(605,285,0.75,0.75)' archivo='images/fondo_ejer.svg' ">
+  </ajs>
+
+
+
+</body>
+</html>

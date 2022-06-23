@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Sustantivo: género y número</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='500' fijo='sí' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="E_03" value="tipo='R2' id='COVER' dibujar-si='boton1||boton2||boton3||boton4' fijo='sí' imagen='images/backwindow.png' despl_imagen='mosaico' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="E_04" value="tipo='R2' id='INFO' x='35' y='185' ancho='954' alto='405' dibujar-si='boton1||boton2||boton3||boton4' fijo='sí' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='cerrar' interfaz='botón' tipo='numérico' región='interior' espacio='INFO' expresión='(INFO._w-35,0,35,35)' color='ffffff' color-int='ffffff' fuente puntos='19' imagen='images/cerrar.svg' acción='calcular' parámetro='boton1=0;boton2=0;boton3=0;boton4=0' ">
+    <param name="C_02" value="id='boton1' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Femenino' expresión='(E1._w/8-160/2,20,160,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='boton1=1;boton2=0;boton3=0;boton4=0;started=1;' activo-si='!boton1' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_03" value="id='boton2' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Masculino' expresión='(3*E1._w/8-160/2,20,160,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='boton1=0;boton2=1;boton3=0;boton4=0;started=1;' activo-si='!boton2' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_04" value="id='boton3' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Epiceno' expresión='(5*E1._w/8-160/2,20,160,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='boton1=0;boton2=0;boton3=1;boton4=0;started=1;' activo-si='!boton3' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_05" value="id='boton4' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Número' expresión='(7*E1._w/8-160/2,20,160,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='boton1=0;boton2=0;boton3=0;boton4=1;started=1;' activo-si='!boton4' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='started=0;vertexto=0;' ">
+    <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='boton11=(boton1)?1:boton11;boton21=(boton2)?1:boton21;boton31=(boton3)?1:boton31;boton41=(boton4)?1:boton41;suma=boton1+boton2+boton3+boton4;vertexto=(boton11+boton21+boton31+boton41=4)&(suma=0);vertexto1=(vertexto)?1:vertexto1;;' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_h.svg' clip='(120,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,42)' texto='¿Distingues la clases de género? Pulsa los botones para distinguir los diferentes casos.' fuente puntos='21' align='a_left' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,500)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='INFO' tipo='rectángulo' fondo='sí' color='341f97' coord_abs='sí' expresión='(1,1,INFO._w-3,INFO._h-3)' relleno='ffffff' ancho='3' border_radius='4' ">
+    <param name="G_06" value="espacio='INFO' tipo='rectángulo' fondo='sí' color='ffffffff' coord_abs='sí' expresión='(0,0,INFO._w,35)' relleno='341f97' ancho='0' border_radius='4' ">
+    <param name="G_07" value="espacio='E1' tipo='texto' color='000000' dibujar-si='!started' coord_abs='sí' expresión='[E1._w/2,E1._h/2+20]' texto='Se entiende por \b{género}, al conjunto de seres y cosas que tienen características comunes. En él distinguimos varias clases, donde destacan: femenino, masculino y epiceno.' ancho='600' fuente puntos='20' align='a_center' anchor='a_center_center' ">
+    <param name="G_08" value="espacio='E1' tipo='texto' color='000000' dibujar-si='vertexto=1' coord_abs='sí' expresión='[E1._w/2,E1._h/2+20]' texto='Muy bien, ya distingues las clases de género: femenino, masculino y epiceno.' ancho='1' fuente puntos='20' align='a_left' anchor='a_center_center' ">
+    <param name="G_09" value="espacio='INFO' tipo='texto' color='000000' dibujar-si='boton1=1' coord_abs='sí' expresión='[20,50]' texto='Cuando hablas del \b{género femenino} haces referencia a la mujer, a los animales hembra y a las profesiones, artes y oficios propios de esta clase. Por lo general, estas palabras terminan en \b{a}. \n\nDetalla los siguientes ejemplos: Dam\b{a}, vac\b{a}, modist\b{a}.' ancho='INFO._w-40' fuente puntos='20' align='a_justify' anchor='a_top_left' info='boton1=1' ">
+    <param name="G_10" value="espacio='INFO' tipo='texto' color='000000' dibujar-si='boton2=1' coord_abs='sí' expresión='[20,50]' texto='El \b{género masculino} comprende al hombre, a los animales machos y a las profesiones, artes y oficios propios de esta clase. Por lo general, estas palabras terminan en \b{o}.\n\nAsí por ejemplo: Caballer\b{o}, tor\b{o}, zapater\b{o}.' ancho='INFO._w-40' fuente puntos='20' align='a_justify' anchor='a_top_left' info='boton2=1' ">
+    <param name="G_11" value="espacio='INFO' tipo='texto' color='000000' dibujar-si='boton3=1' coord_abs='sí' expresión='[20,50]' texto='Este género comprende los nombres empleados tanto en el \b{masculino como en el femenino}. Su condición está determinada por el artículo. Cuando decimos el gusano se arrastra, estamos hablamos en términos generales del \b{macho} de este animal, puesto que termina en \b{o}. Si te quieres referir a la hembra del gusano, dirás el \b{gusano hembra}, puesto que gusano carece del femenino, \i{gusana}.\n\nDe idéntica manera sucede con la expresión \b{foca}, que termina en \b{a}, que implica el femenino. Ahora bien, Si te quieres referir al macho de la foca, dirás la foca macho, puesto que foca no tiene el masculino \i{foco}. \n\nExiste una especie de género denominado \b{ambiguo}, que se aplica de manera indiscriminada en femenino y en masculino. Es el caso de las palabras: mar, que podemos decir el mar o la mar. Radio: La radio o el radio. Azúcar: El azúcar, la azúcar.' ancho='INFO._w-40' fuente puntos='20' align='a_justify' anchor='a_top_left' info='boton3=1' ">
+    <param name="G_12" value="espacio='INFO' tipo='texto' color='000000' dibujar-si='boton4=1' coord_abs='sí' expresión='[20,50]' texto='El \b{número} es la categoría gramatical que nos indica cuántos elementos o entidades participan en la acción como sujeto. Más claro aún: indica si uno o más de un sujeto, ejecuta la acción. De ahí que los distinguimos como singular y plural.\n\b{Número singular}: Está referido a un solo elemento, y diríamos: El, la, un, uno, algún, alguna.\n\b{Número plural}: Está referido a varios elementos, y diríamos: Ellos, ellas; las, los; unas, unos; algunas. Lo conformas añadiendo \b{s}, si la palabra termina en vocal: sapo, sapo\b{s}; roca, roca\b{s}.\n\nCuando la terminación es una vocal tónica o en una consonante, le agregas \b{es}: Iglúes, cartones, zulúes.\n• Ten presente esta pequeña glosa: El género y el número deben guardar \b{concordancia} con el sujeto: La botella, las botellas; el nido, los nidos; la señora, las señoras; el varón, los varones.\n• Algunas palabras \b{pierden la tilde} al cambiar de número. ' ancho='INFO._w-40' fuente puntos='20' align='a_justify' anchor='a_top_left' info='boton4=1' ">
+  </ajs>
+
+
+
+</body>
+</html>

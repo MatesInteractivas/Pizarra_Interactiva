@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="M_B1_Porcentajes" 
+	nivel="Primaria" 
+	area="Matemáticas, Números y operaciones" 
+	plataforma="HTML 5" 
+	>
+	<titulo><![CDATA[
+		Porcentajes
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+    Ofrecer actividades que inviten al alumno a repasar y practicar con los porcentajes aplicados a la vida diaria.
+	]]></Descripcion>
+</recurso>

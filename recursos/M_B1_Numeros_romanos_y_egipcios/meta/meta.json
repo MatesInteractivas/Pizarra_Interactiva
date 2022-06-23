@@ -1,0 +1,13 @@
+{
+  "nivel": [
+    "Primaria"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Números y operaciones"
+  ], 
+  "titulo": "Números romanos y egipcios", 
+  "descripcion": "Comprender las estructuras de numeración en las culturas romana y egipcia.",
+  "resena": "Comprender las estructuras de numeración en las culturas romana y egipcia.",
+  "id": "M_B1_Numeros_romanos_y_egipcios"
+}

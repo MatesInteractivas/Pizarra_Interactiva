@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>TITULO</title>
+  <script type="text/javascript" src="https://arquimedes.matem.unam.mx/Descartes5/lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body bgcolor="ffffff">
+
+  <p align="left">
+    <ajs name="Descartes" code="descinst.Descartes.class" width="790" height="565">
+      <param name="tamaño" value="790x565">
+      <param name="decimal_symbol" value=".">
+      <param name="nombre" value="">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="sí">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' red='c0c0c0' red10='808080' ejes='404040' ">
+      <param name="C_01" value="id='A1' tipo='gráfico' espacio='E1' color='ff000000' color-int='90ffff80' tamaño='10' expresión='(A1.x,A1.y)' ">
+      <param name="C_02" value="id='A2' tipo='gráfico' espacio='E1' color='ff000000' color-int='90ffff80' tamaño='10' expresión='(A2.x,A2.y)' ">
+      <param name="C_03" value="id='debug' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='debug' expresión='(0,0)' valor='1' incr='1' min='0' visible='sí' ">
+      <param name="A_01" value="id='distPtoP(x1,y1,x2,y2)' algoritmo='sí' expresión='_distTMP' hacer='_dist1=(x2-x1)^2;_dist2=(y2-y1)^2;_distTMP=sqrt(_dist1+_dist2) ' tipo='función' ">
+      <param name="A_02" value="id='pix2Coord(x_p,y_p)' algoritmo='sí' expresión='x' hacer='_Cx=Esp.w/2;_Cy=Esp.h/2;;_coordX=(x_p-_Cx-Esp.Ox)/Esp.escala;_coordY=(-y_p+_Cy+Esp.Oy)/Esp.escala' tipo='función' ">
+      <param name="A_03" value="id='calcPol()' algoritmo='sí' expresión='1' hacer='_a=alto1;;_p1.x=A1.x;_p1.y=A1.y;_p2.x=A1.x+_a/ar*(A1.y-A2.y);_p2.y=A1.y+_a/ar*(A2.x-A1.x);_p3.x=A2.x-_a/ar*(A2.y-A1.y);_p3.y=A2.y-_a/ar*(A1.x-A2.x);_p4.x=A2.x;_p4.y=A2.y;' tipo='función' ">
+      <param name="A_04" value="id='constriciones()' algoritmo='sí' expresión='x' hacer='pix2Coord(puntos.ancho,puntos.ancho);_minX=_coordX;_maxY=_coordY;pix2Coord(Esp.w-puntos.ancho,Esp.h-puntos.ancho);_maxX=_coordX;_minY=_coordY;;A1.x=min(_maxX,max(_minX,A1.x));A1.y=min(_maxY,max(_minY,A1.y));;A2.x=min(_maxX,max(_minX,A2.x));A2.y=min(_maxY,max(_minY,A2.y));' tipo='función' ">
+      <param name="A_05" value="id='update()' algoritmo='sí' expresión='x' hacer='alto1=ancho/Esp.escala;alto10=alto1/3;alto2=alto1/2;;//constriciones();ar=distPtoP(A1.x,A1.y,A2.x,A2.y);ar=max(ar,0.00001);distancia=distPtoP(A1.x,A1.y,A2.x,A2.y);' tipo='función' ">
+      <param name="A_06" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='A1.x=-2;A1.y=0;A2.x=2;A2.y=0;debug=0;ancho=50;puntos.ancho=5;puntos.A=0.5;puntos.R=1;puntos.G=1;puntos.B=0;intA=0.6;intR=241/255;intG=196/255;intB= 15/255;A=0;R=0.1;G=0.1;B=0.1;ar=0;alto1=0;alto2=0;alto10=0;distancia=0;' ">
+      <param name="A_07" value="id='CALCULOS_BASURA' algoritmo='sí' evaluar='siempre' hacer='Esp.Ox=E1.Ox;Esp.Oy=E1.Oy;Esp.w=E1._w;Esp.h=E1._h;Esp.escala=E1.escala;Esp.mouse_pressed=E1.mouse_pressed;Esp.mouse_x=E1.mouse_x;Esp.mouse_y=E1.mouse_y;;' ">
+      <param name="A_08" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='update();' ">
+      <param name="G_01" value="espacio='E1' tipo='polígono' color='(R,G,B,A)' dibujar-si='calcPol()' coord_abs='no' expresión='(_p1.x,_p1.y)(_p2.x,_p2.y)(_p3.x,_p3.y)(_p4.x,_p4.y)(_p1.x,_p1.y)' relleno='(intR,intG,intB,intA)' ancho='1' ">
+      <param name="G_02" value="espacio='E1' tipo='segmento' color='000000' coord_abs='no' expresión='(s/ar*(A2.x-A1.x)+A1.x,s/ar*(A2.y-A1.y)+A1.y)(s/ar*(A2.x-A1.x)+A1.x+alto1/ar*(A1.y-A2.y),s/ar*(A2.y-A1.y)+A1.y+alto1/ar*(A2.x-A1.x))' familia='s' s.intervalo='[0,ent(ar)]' s.pasos='ent(ar)' fijo='no' tamaño='0' ancho='2' negrita='sí' fuente puntos='15' ">
+      <param name="G_03" value="espacio='E1' tipo='segmento' color='(R,G,B,A)' coord_abs='no' expresión='(s/ar*(A2.x-A1.x)+A1.x,s/ar*(A2.y-A1.y)+A1.y)(s/ar*(A2.x-A1.x)+A1.x+alto10/ar*(A1.y-A2.y),s/ar*(A2.y-A1.y)+A1.y+alto10/ar*(A2.x-A1.x))' familia='s' s.intervalo='[0,ent(10*ar)/10]' s.pasos='ent(10*ar)' tamaño='0' ancho='1' ">
+      <param name="G_04" value="espacio='E1' tipo='segmento' color='(R,G,B,A)' coord_abs='no' expresión='(s/ar*(A2.x-A1.x)+A1.x,s/ar*(A2.y-A1.y)+A1.y)(s/ar*(A2.x-A1.x)+A1.x+alto2/ar*(A1.y-A2.y),s/ar*(A2.y-A1.y)+A1.y+alto2/ar*(A2.x-A1.x))' familia='s' s.intervalo='[0,ent(2*ar)/2]' s.pasos='ent(2*ar)' tamaño='0' ancho='1' ">
+      <param name="G_05" value="espacio='E1' tipo='texto' color='000000' coord_abs='no' expresión='((s/ar*(A2.x-A1.x)+A1.x+s/ar*(A2.x-A1.x)+A1.x+alto1/ar*(A1.y-A2.y))/2,(s/ar*(A2.y-A1.y)+A1.y+s/ar*(A2.y-A1.y)+A1.y+alto1/ar*(A2.x-A1.x))/2)' familia='s' s.intervalo='[0,ent(ar)]' s.pasos='ent(ar)' texto='[s]' fijo='no' ancho='2' color_borde_texto='ffffff' negrita='sí' fuente puntos='14' align='a_left' anchor='a_center_center' border_size='3' ">
+      <param name="G_06" value="espacio='E1' tipo='punto' color='(puntos.R,puntos.G,puntos.B,puntos.A)' coord_abs='no' expresión='(A1.x,A1.y)' tamaño='puntos.ancho' ">
+      <param name="G_07" value="espacio='E1' tipo='punto' color='(puntos.R,puntos.G,puntos.B,puntos.A)' coord_abs='no' expresión='(A2.x,A2.y)' tamaño='puntos.ancho' ">
+      <param name="G_08" value="espacio='E1' tipo='texto' color='20303a' dibujar-si='debug==1' coord_abs='sí' expresión='[20,20]' texto='distancia=[distancia]' decimales='10' fijo='no' ancho='1' align='a_left' anchor='a_top_left' ">
+    </ajs>
+    <ajs name="Descartes" code="descinst.Descartes.class" width="790" height="565">
+      <param name="tamaño" value="790x565">
+      <param name="decimal_symbol" value=".">
+      <param name="nombre" value="">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="sí">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' red='c0c0c0' red10='808080' ejes='404040' ">
+      <param name="C_01" value="id='regla.A1' tipo='gráfico' espacio='E1' color='222222' color-int='0000ff' tamaño='6' expresión='(regla.A1.x,regla.A1.y)' ">
+      <param name="C_02" value="id='regla.A2' tipo='gráfico' espacio='E1' color='222222' color-int='ff0000' tamaño='6' expresión='(regla.A2.x,regla.A2.y)' ">
+      <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='regla.debug=1;' ">
+      <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='regla.Esp.Ox=E1.Ox;regla.Esp.Oy=E1.Oy;regla.Esp.w=E1._w;regla.Esp.h=E1._h;regla.Esp.escala=E1.escala;regla.Esp.mouse_pressed=E1.mouse_pressed;regla.Esp.mouse_x=E1.mouse_x;regla.Esp.mouse_y=E1.mouse_y;' ">
+      <param name="G_01" value="espacio='E1' tipo='macro' coord_abs='no' nombre='regla' expresión='regla.txt' posini='[0,0]' ">
+      <param name="G_02" value="espacio='E1' tipo='texto' color='20303a' coord_abs='sí' expresión='(320,20)' texto='[regla.puntos.ancho] ** [regla._p1.x] [regla._p1.y] | [regla._p2.x] [regla._p2.y] [regla._p3.x] [regla._p3.y] | [regla._p4.x] [regla._p4.y]' ancho='1' align='a_left' anchor='a_top_left' ">
+    </ajs>
+  </p>
+
+<script type="descartes/macro" id="regla.txt">
+id='distPtoP(x1,y1,x2,y2)' algoritmo='sí' expresión='_distTMP' hacer='_dist1=(x2-x1)^2;_dist2=(y2-y1)^2;_distTMP=sqrt(_dist1+_dist2) ' tipo='función' 
+id='pix2Coord(x_p,y_p)' algoritmo='sí' expresión='x' hacer='_Cx=Esp.w/2;_Cy=Esp.h/2;;_coordX=(x_p-_Cx-Esp.Ox)/Esp.escala;_coordY=(-y_p+_Cy+Esp.Oy)/Esp.escala' tipo='función' 
+id='calcPol()' algoritmo='sí' expresión='1' hacer='_a=alto1;;_p1.x=A1.x;_p1.y=A1.y;_p2.x=A1.x+_a/ar*(A1.y-A2.y);_p2.y=A1.y+_a/ar*(A2.x-A1.x);_p3.x=A2.x-_a/ar*(A2.y-A1.y);_p3.y=A2.y-_a/ar*(A1.x-A2.x);_p4.x=A2.x;_p4.y=A2.y;' tipo='función' 
+id='constriciones()' algoritmo='sí' expresión='x' hacer='pix2Coord(puntos.ancho,puntos.ancho);_minX=_coordX;_maxY=_coordY;pix2Coord(Esp.w-puntos.ancho,Esp.h-puntos.ancho);_maxX=_coordX;_minY=_coordY;;A1.x=min(_maxX,max(_minX,A1.x));A1.y=min(_maxY,max(_minY,A1.y));;A2.x=min(_maxX,max(_minX,A2.x));A2.y=min(_maxY,max(_minY,A2.y));' tipo='función' 
+id='update()' algoritmo='sí' expresión='x' hacer='alto1=ancho/Esp.escala;alto10=alto1/3;alto2=alto1/2;;//constriciones();ar=distPtoP(A1.x,A1.y,A2.x,A2.y);ar=max(ar,0.00001);distancia=distPtoP(A1.x,A1.y,A2.x,A2.y);' tipo='función' 
+id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='A1.x=-2;A1.y=0;A2.x=2;A2.y=0;debug=0;ancho=50;puntos.ancho=5;puntos.A=0.5;puntos.R=1;puntos.G=1;puntos.B=0;intA=0.6;intR=241/255;intG=196/255;intB= 15/255;A=0;R=0.1;G=0.1;B=0.1;ar=0;alto1=0;alto2=0;alto10=0;distancia=0;' 
+id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='update();' 
+espacio='E1' tipo='polígono' color='(R,G,B,A)' dibujar-si='calcPol()' coord_abs='no' expresión='(_p1.x,_p1.y)(_p2.x,_p2.y)(_p3.x,_p3.y)(_p4.x,_p4.y)(_p1.x,_p1.y)' relleno='(intR,intG,intB,intA)' ancho='1' 
+espacio='E1' tipo='segmento' color='000000' coord_abs='no' expresión='(s/ar*(A2.x-A1.x)+A1.x,s/ar*(A2.y-A1.y)+A1.y)(s/ar*(A2.x-A1.x)+A1.x+alto1/ar*(A1.y-A2.y),s/ar*(A2.y-A1.y)+A1.y+alto1/ar*(A2.x-A1.x))' familia='s' s.intervalo='[0,ent(ar)]' s.pasos='ent(ar)' fijo='no' tamaño='0' ancho='2' negrita='sí' fuente puntos='15' 
+espacio='E1' tipo='segmento' color='(R,G,B,A)' coord_abs='no' expresión='(s/ar*(A2.x-A1.x)+A1.x,s/ar*(A2.y-A1.y)+A1.y)(s/ar*(A2.x-A1.x)+A1.x+alto10/ar*(A1.y-A2.y),s/ar*(A2.y-A1.y)+A1.y+alto10/ar*(A2.x-A1.x))' familia='s' s.intervalo='[0,ent(10*ar)/10]' s.pasos='ent(10*ar)' tamaño='0' ancho='1' 
+espacio='E1' tipo='segmento' color='(R,G,B,A)' coord_abs='no' expresión='(s/ar*(A2.x-A1.x)+A1.x,s/ar*(A2.y-A1.y)+A1.y)(s/ar*(A2.x-A1.x)+A1.x+alto2/ar*(A1.y-A2.y),s/ar*(A2.y-A1.y)+A1.y+alto2/ar*(A2.x-A1.x))' familia='s' s.intervalo='[0,ent(2*ar)/2]' s.pasos='ent(2*ar)' tamaño='0' ancho='1' 
+espacio='E1' tipo='texto' color='000000' coord_abs='no' expresión='((s/ar*(A2.x-A1.x)+A1.x+s/ar*(A2.x-A1.x)+A1.x+alto1/ar*(A1.y-A2.y))/2,(s/ar*(A2.y-A1.y)+A1.y+s/ar*(A2.y-A1.y)+A1.y+alto1/ar*(A2.x-A1.x))/2)' familia='s' s.intervalo='[0,ent(ar)]' s.pasos='ent(ar)' texto='[s]' fijo='no' ancho='2' color_borde_texto='ffffff' negrita='sí' fuente puntos='14' align='a_left' anchor='a_center_center' border_size='3' 
+espacio='E1' tipo='punto' color='(puntos.R,puntos.G,puntos.B,puntos.A)' coord_abs='no' expresión='(A1.x,A1.y)' tamaño='puntos.ancho' 
+espacio='E1' tipo='punto' color='(puntos.R,puntos.G,puntos.B,puntos.A)' coord_abs='no' expresión='(A2.x,A2.y)' tamaño='puntos.ancho' 
+espacio='E1' tipo='texto' color='20303a' dibujar-si='debug==1' coord_abs='sí' expresión='[20,20]' texto='distancia=[distancia]' decimales='10' fijo='no' ancho='1' align='a_left' anchor='a_top_left' 
+</script>
+
+</body>
+</html>

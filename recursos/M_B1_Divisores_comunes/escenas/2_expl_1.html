@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Divisores comunes</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='500' fijo='sí' O.x='100' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='ctr_n' tipo='numérico' interfaz='pulsador' región='interior' espacio='E1' expresión='(150,15,150,35)' valor='n' incr='1' min='0' max='101' visible='no' acción='calcular' parámetro='ctr_n=(ctr_n==101)?1:ctr_n;ctr_n=(ctr_n==0)?100:ctr_n;n=ctr_n' image_inc='images/spinner_plus.svg' image_dec='images/spinner_minus.svg' btn_pos='h_left_right' ">
+    <param name="C_02" value="id='ctr_m' tipo='numérico' interfaz='pulsador' región='interior' espacio='E1' expresión='(150,15+50,150,35)' valor='m' incr='1' min='0' max='101' visible='no' acción='calcular' parámetro='ctr_m=(ctr_m==101)?1:ctr_m;ctr_m=(ctr_m==0)?100:ctr_m;m=ctr_m' image_inc='images/spinner_plus.svg' image_dec='images/spinner_minus.svg' btn_pos='h_left_right' ">
+    <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='n=ent(rnd*99+2);m=ent(rnd*99+2);c=0.98;d=0.68;e=1;f=0.68;;//;txt_y=150;datos_x=-4.3;datos_y=4.3;sep_x=0.3;escala_x=1.25;escala_y=0.94' ">
+    <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='n=((n>100)|(n<0))?ent(rnd*99+2):n;m=((m>100)|(m<0))?ent(rnd*99+2):m;' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_m.svg' clip='(120,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='Identifica los divisores comunes de dos números enteros a través de su señalización en una tabla. Puedes cambiar los números con los pulsadores (\b{+} y \b{-}).' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,500)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='E1' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='[20,20]' texto='Divisores de:' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_06" value="espacio='E1' tipo='texto' color='80ff0000' coord_abs='sí' expresión='[228,8]' texto='[n]' fijo='no' ancho='1' negrita='sí' fuente puntos='40' align='a_left' anchor='a_top_center' ">
+    <param name="G_07" value="espacio='E1' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='[20,20+50]' texto='Divisores de:' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_08" value="espacio='E1' tipo='texto' color='800000ff' coord_abs='sí' expresión='[228,8+50]' texto='[m]' fijo='no' ancho='1' negrita='sí' fuente puntos='40' align='a_left' anchor='a_top_center' ">
+    <param name="G_09" value="espacio='E1' tipo='texto' color='000000' coord_abs='sí' expresión='[20,txt_y]' texto='Reconoce los divisores en \nla tabla por los puntos:\n\nDe \color{ff0000}{\b{[n]}} por:\n\nDe \color{0000ff}{\b{[m]}} por:\n\nY los divisores comunes \nde \color{ff0000}{\b{[n]}} y \color{0000ff}{\b{[m]}} por:' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_10" value="espacio='E1' tipo='punto' fondo='sí' color='80ff0000' coord_abs='sí' expresión='(160,txt_y+90)' tamaño='16' font_family='Monospaced' fuente puntos='12' ">
+    <param name="G_11" value="espacio='E1' tipo='punto' fondo='sí' color='800000ff' coord_abs='sí' expresión='(160,txt_y+142)' tamaño='16' font_family='Monospaced' fuente puntos='12' ">
+    <param name="G_12" value="espacio='E1' tipo='punto' fondo='sí' color='80ff0000' coord_abs='sí' expresión='(200,txt_y+220)' tamaño='16' font_family='Monospaced' fuente puntos='12' ">
+    <param name="G_13" value="espacio='E1' tipo='punto' fondo='sí' color='800000ff' coord_abs='sí' expresión='(220,txt_y+220)' tamaño='16' font_family='Monospaced' fuente puntos='12' ">
+    <param name="G_14" value="espacio='E1' tipo='segmento' fondo='sí' color='000000' coord_abs='no' expresión='(datos_x-0.5+s*escala_x,datos_y+0.5)(datos_x-0.5+s*escala_x,datos_y+0.5-escala_y*10)' familia='s' s.intervalo='[0,10]' s.pasos='10' tamaño='0' ancho='1' ">
+    <param name="G_15" value="espacio='E1' tipo='segmento' fondo='sí' color='000000' coord_abs='no' expresión='(datos_x-0.5,datos_y+0.5-escala_y*s)(datos_x-0.5+escala_x*10,datos_y+0.5-escala_y*s)' familia='s' s.intervalo='[0,10]' s.pasos='10' tamaño='0' ancho='1' ">
+    <param name="G_16" value="espacio='E1' tipo='punto' color='80ff0000' dibujar-si='(n%(s+1))==0' coord_abs='no' expresión='(escala_x*(s%10)+datos_x,-escala_y*ent(s/10)+datos_y)' familia='s' s.intervalo='[0,99]' s.pasos='99' fijo='no' tamaño='18' negrita='sí' font_family='Monospaced' fuente puntos='12' ">
+    <param name="G_17" value="espacio='E1' tipo='punto' color='800000ff' dibujar-si='(m%(s+1))==0' coord_abs='no' expresión='(sep_x+escala_x*(s%10)+datos_x,-escala_y*ent(s/10)+datos_y)' familia='s' s.intervalo='[0,99]' s.pasos='99' fijo='no' tamaño='18' negrita='sí' font_family='Monospaced' fuente puntos='12' ">
+    <param name="G_18" value="espacio='E1' tipo='texto' color='000000' coord_abs='no' expresión='(escala_x*(s%10)+datos_x+0.15,-escala_y*ent(s/10)+datos_y)' familia='s' s.intervalo='[0,99]' s.pasos='99' texto='[s+1]' fijo='no' ancho='1' color_borde_texto='f1f2f6' negrita='sí' fuente puntos='16' align='a_left' anchor='a_center_center' border_size='2' ">
+  </ajs>
+
+
+
+</body>
+</html>

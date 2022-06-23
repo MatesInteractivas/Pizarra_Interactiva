@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>El diccionario</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='500' fijo='sí' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='entrada' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Entrada' expresión='(20,20,btnw,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='started=1;entrada=1;abreviatura=0;origen=0;acepcion=0;ejemplos=0;locuciones=0;' activo-si='!entrada' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_02" value="id='abreviatura' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Abreviaturas' expresión='(20+btnsep+btnw,20,btnw,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='started=1;entrada=0;abreviatura=1;origen=0;acepcion=0;ejemplos=0;locuciones=0;' activo-si='!abreviatura' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_03" value="id='origen' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Origen' expresión='(20+2*(btnsep+btnw),20,btnw,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='started=1;entrada=0;abreviatura=0;origen=1;acepcion=0;ejemplos=0;locuciones=0;' activo-si='!origen' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_04" value="id='acepcion' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Acepciones' expresión='(20+3*(btnsep+btnw),20,btnw,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='started=1;entrada=0;abreviatura=0;origen=0;acepcion=1;ejemplos=0;locuciones=0;' activo-si='!acepcion' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_05" value="id='ejemplos' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Ejemplos' expresión='(20+4*(btnsep+btnw),20,btnw,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='started=1;entrada=0;abreviatura=0;origen=0;acepcion=0;ejemplos=1;locuciones=0;' activo-si='!ejemplos' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_06" value="id='locuciones' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Locuciones' expresión='(20+5*(btnsep+btnw),20,btnw,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='started=1;entrada=0;abreviatura=0;origen=0;acepcion=0;ejemplos=0;locuciones=1;' activo-si='!locuciones' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='started=0;vertexto=0;btnw=140;btnsep=(994-40-6*btnw)/5;' ">
+    <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='entrada1=(entrada)?1:entrada1;abreviatura1=(abreviatura)?1:abreviatura1;origen1=(origen)?1:origen1;acepcion1=(acepcion)?1:acepcion1;ejemplos1=(ejemplos)?1:ejemplos1;locuciones1=(locuciones)?1:locuciones1;suma=entrada+abreviatura+origen+acepcion+ejemplos+locuciones;vertexto=(entrada1+abreviatura1+origen1+acepcion1+ejemplos1+locuciones1=6)&(suma=0);vertexto1=(vertexto)?1:vertexto1;' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_h.svg' clip='(120,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='Observa la siguiente definición de diccionario. Pulsa los botones para descubrir qué información se proporciona sobre cada palabra y ve la información del diccionario.' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,500)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='E1' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(20,75)' archivo='images/hoja.svg' ">
+    <param name="G_06" value="espacio='E1' tipo='rectángulo' color='ffffffff' dibujar-si='entrada=1' coord_abs='sí' expresión='(25,80,82,30)' relleno='f1c40f' ancho='0' info='entrada=1' ">
+    <param name="G_07" value="espacio='E1' tipo='rectángulo' color='ffffffff' dibujar-si='abreviatura=1' coord_abs='sí' expresión='(111,80,40,30)' relleno='f1c40f' ancho='0' info='abreviatura=1' ">
+    <param name="G_08" value="espacio='E1' tipo='rectángulo' color='ffffffff' dibujar-si='abreviatura=1' coord_abs='sí' expresión='(192,80,45,30)' relleno='f1c40f' ancho='0' ">
+    <param name="G_09" value="espacio='E1' tipo='rectángulo' color='ffffffff' dibujar-si='abreviatura=1' coord_abs='sí' expresión='(165,180,35,30)' relleno='f1c40f' ancho='0' ">
+    <param name="G_10" value="espacio='E1' tipo='rectángulo' color='ffffffff' dibujar-si='abreviatura=1' coord_abs='sí' expresión='(107,257,13,30)' relleno='f1c40f' ancho='0' ">
+    <param name="G_11" value="espacio='E1' tipo='rectángulo' color='ffffffff' dibujar-si='abreviatura=1' coord_abs='sí' expresión='(127,257,80,30)' relleno='f1c40f' ancho='0' ">
+    <param name="G_12" value="espacio='E1' tipo='rectángulo' color='ffffffff' dibujar-si='abreviatura=1' coord_abs='sí' expresión='(233,308,13,30)' relleno='f1c40f' ancho='0' ">
+    <param name="G_13" value="espacio='E1' tipo='rectángulo' color='ffffffff' dibujar-si='abreviatura=1' coord_abs='sí' expresión='(296,308,13,30)' relleno='f1c40f' ancho='0' ">
+    <param name="G_14" value="espacio='E1' tipo='rectángulo' color='ffffffff' dibujar-si='abreviatura=1' coord_abs='sí' expresión='(480,308,164,30)' relleno='f1c40f' ancho='0' ">
+    <param name="G_15" value="espacio='E1' tipo='rectángulo' color='ffffffff' dibujar-si='origen=1' coord_abs='sí' expresión='(151,80,168,30)' relleno='f1c40f' ancho='0' info='origen=1' ">
+    <param name="G_16" value="espacio='E1' tipo='rectángulo' color='ffffffff' dibujar-si='acepcion=1' coord_abs='sí' expresión='(25,107,683,30)' relleno='f1c40f' ancho='0' info='acepcion=1' ">
+    <param name="G_17" value="espacio='E1' tipo='rectángulo' color='ffffffff' dibujar-si='acepcion=1' coord_abs='sí' expresión='(25,155,938,30)' relleno='f1c40f' ancho='0' ">
+    <param name="G_18" value="espacio='E1' tipo='rectángulo' color='ffffffff' dibujar-si='acepcion=1' coord_abs='sí' expresión='(45,180,155,30)' relleno='f1c40f' ancho='0' ">
+    <param name="G_19" value="espacio='E1' tipo='rectángulo' color='ffffffff' dibujar-si='acepcion=1' coord_abs='sí' expresión='(25,205,920,30)' relleno='f1c40f' ancho='0' ">
+    <param name="G_20" value="espacio='E1' tipo='rectángulo' color='ffffffff' dibujar-si='acepcion=1' coord_abs='sí' expresión='(45,230,265,30)' relleno='f1c40f' ancho='0' ">
+    <param name="G_21" value="espacio='E1' tipo='rectángulo' color='ffffffff' dibujar-si='ejemplos=1' coord_abs='sí' expresión='(710,107,250,30)' relleno='f1c40f' ancho='0' info='ejemplos=1' ">
+    <param name="G_22" value="espacio='E1' tipo='rectángulo' color='ffffffff' dibujar-si='ejemplos=1' coord_abs='sí' expresión='(50,130,210,30)' relleno='f1c40f' ancho='0' ">
+    <param name="G_23" value="espacio='E1' tipo='rectángulo' color='ffffffff' dibujar-si='ejemplos=1' coord_abs='sí' expresión='(200,180,575,30)' relleno='f1c40f' ancho='0' ">
+    <param name="G_24" value="espacio='E1' tipo='rectángulo' color='ffffffff' dibujar-si='ejemplos=1' coord_abs='sí' expresión='(310,230,490,30)' relleno='f1c40f' ancho='0' ">
+    <param name="G_25" value="espacio='E1' tipo='rectángulo' color='ffffffff' dibujar-si='locuciones=1' coord_abs='sí' expresión='(25,255,938,110)' relleno='f1c40f' ancho='0' info='locuciones=1' ">
+    <param name="G_26" value="espacio='E1' tipo='texto' color='000000' coord_abs='sí' expresión='(30,85)' texto='\b{bandeja}   \color{666666}{n. f.} (Del port. \i{bandeja})\n\b{1.} Pieza plana o con poco fondo que se utiliza para poner, llevar o servir cosas. \i{Usa una bandeja para llevar\n     el desayuno a la cama.}\n\b{2.} Pieza movible, en forma de caja descubierta y de poca altura, que divide horizontalmente el interior de un \n    baúl, maleta, etc. \i{Mi lapicero tiene una bandeja superior para los objetos pequeños.}\n\b{3.} En un automóvil, pieza plana, horizontal y abatible, situada entre los asientos y el cristal traseros y que \n    se usa para depositar objetos. \i{En la bandeja de mi coche tengo un muñeco de peluche.}\n\b{pasar la ~:} \color{666666}{loc. verb.} Hacerlo para recoger donativos o limosnas. \i{los músicos de la calle  pasan la bandeja \n   después de cada canción.}\n\b{poner}, o \b{servir} algo \b{en ~}, o \b{en ~ de plata} a alguien: \color{666666}{locs. verbs. coloqs.} Darle grandes facilidades para que \n    consiga algo. \i{El delantero le pasó tan bien el balón que le puso el gol en bandeja.}' ancho='0' fuente puntos='19' align='a_left' anchor='a_top_left' ">
+    <param name="G_27" value="espacio='E1' tipo='texto' color='000000' dibujar-si='entrada' coord_abs='sí' expresión='[20,E1._h-20]' texto='En el diccionario, la palabra que se define se conoce como entrada.' ancho='0' fuente puntos='20' align='a_left' anchor='a_bottom_left' ">
+    <param name="G_28" value="espacio='E1' tipo='texto' color='000000' dibujar-si='abreviatura' coord_abs='sí' expresión='[20,E1._h-20]' texto='En el diccionario se usan \b{abreviaturas} para algunos conceptos. Al principio de cada definición suele indicarse con una abreviatura la \b{categoría gramatical} de la palabra. También se utilizan símbolos. En este caso, el símbolo \b{~} en las locuciones verbales sustituye a la palabra \i{bandeja}. En tu diccionario encontrarás la lista de abreviaturas y símbolos empleados.' ancho='E1._w-40' fuente puntos='20' align='a_justify' anchor='a_bottom_left' ">
+    <param name="G_29" value="espacio='E1' tipo='texto' color='000000' dibujar-si='origen' coord_abs='sí' expresión='[20,E1._h-20]' texto='Algunos diccionarios informan sobre el \b{origen etimológico} de las palabras. En este caso, \i{bandeja} procede de un vocablo portugués. ' ancho='E1._w-40' fuente puntos='20' align='a_justify' anchor='a_bottom_left' ">
+    <param name="G_30" value="espacio='E1' tipo='texto' color='000000' dibujar-si='acepcion' coord_abs='sí' expresión='[20,E1._h-20]' texto='Las \b{acepciones} son los diferentes significados de una misma palabra. Suelen aparecer numeradas si hay más de una.' ancho='E1._w-40' fuente puntos='20' align='a_justify' anchor='a_bottom_left' ">
+    <param name="G_31" value="espacio='E1' tipo='texto' color='000000' dibujar-si='ejemplos' coord_abs='sí' expresión='[20,E1._h-20]' texto='A veces, las definiciones van seguidas de \b{ejemplos} que nos ayudan a comprender mejor el significado de la palabra.' ancho='E1._w-40' fuente puntos='20' align='a_justify' anchor='a_bottom_left' ">
+    <param name="G_32" value="espacio='E1' tipo='texto' color='000000' dibujar-si='locuciones' coord_abs='sí' expresión='[20,E1._h-20]' texto='En el diccionario también se incluyen \b{locuciones} que se forman con la palabra definida. Se trata de combinaciones fijas de palabras con significado propio.' ancho='E1._w-40' fuente puntos='20' align='a_justify' anchor='a_bottom_left' ">
+  </ajs>
+
+
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>El plano cartesiano</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='530' y='110' ancho='479' alto='270' fijo='sí' despl_imagen='centrada' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="E_03" value="tipo='R2' id='E2' x='17' y='112' ancho='496' alto='496' fijo='sí' escala='30' red='c0c0c0' red10='no' ejes='808080' border_radius='6' ">
+    <param name="C_01" value="id='P' tipo='gráfico' espacio='E2' color='ffffff' color-int='f1c40f' tamaño='10' expresión='(0,0)' ">
+    <param name="C_02" value="id='P.x' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='P.x' expresión='(0,0)' incr='1' min='-8' max='8' discreto='sí' visible='sí' ">
+    <param name="C_03" value="id='P.y' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='P.y' expresión='(0,0)' incr='1' min='-8' max='8' discreto='sí' visible='sí' ">
+    <param name="C_04" value="id='n5' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='n5' expresión='(0,0)' incr='1' visible='sí' ">
+    <param name="C_05" value="id='n6' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='n6' expresión='(0,0)' incr='1' visible='sí' ">
+    <param name="C_06" value="id='otro' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Otra distribución' expresión='(pleca._w-190-15,pleca._h-35-15,190,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='otro=1' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="A_01" value="id='Vx' vector='sí' evaluar='una-sola-vez' tamaño='N' tipo='vector' ">
+    <param name="A_02" value="id='Vy' vector='sí' evaluar='una-sola-vez' tamaño='N' tipo='vector' ">
+    <param name="A_03" value="id='Ve' vector='sí' evaluar='una-sola-vez' tamaño='N' tipo='vector' ">
+    <param name="A_04" value="id='NOM' vector='sí' evaluar='una-sola-vez' tamaño='8' expresión='&squot;Norma&squot;;&squot;Escuela&squot;;&squot;Sonia&squot;;&squot;Cine&squot;;&squot;Mercado&squot;;&squot;Luis&squot;;&squot;Lola&squot;;&squot;Café internet&squot;' tipo='vector' ">
+    <param name="A_05" value="id='NOM_UB' vector='sí' evaluar='una-sola-vez' tamaño='8' expresión='&squot;de la casa de Norma&squot;;&squot;de la escuela&squot;;&squot;de la casa de Sonia&squot;;&squot;del cine&squot;;&squot;del mercado&squot;;&squot;de la casa de Luis&squot;;&squot;de la casa de Lola&squot;;&squot;del café internet&squot;' tipo='vector' ">
+    <param name="A_06" value="id='faltan()' algoritmo='sí' expresión='f' inicio='f=0;n=0' hacer='f=(Ve[n]=0)?f+1:f;n=n+1' mientras='n<N' tipo='función' ">
+    <param name="A_07" value="id='nuevosPuntos()' algoritmo='sí' expresión='x' inicio='n=1;Vx[0]=-6+ent(13*rnd);Vy[0]=7-ent(rnd*2);Ve[0]=1' hacer='Vx[n]=-6+ent(13*rnd);Vy[n]=Vy[n-1]-1-ent(rnd*2);Ve[n]=1;n=((Vx[n]=0)&(Vy[n]=0))?n:n+1' mientras='n<N' tipo='función' ">
+    <param name="A_08" value="id='desordena()' algoritmo='sí' expresión='x' inicio='k=0' hacer='m=ent(rnd*N);n=ent(rnd*N);aux=Vy[n];Vy[n]=Vy[m];Vy[m]=aux;' mientras='k<10' tipo='función' ">
+    <param name="A_09" value="id='reinit()' algoritmo='sí' expresión='x' hacer='caso=-1;P.x=0;P.y=0;nuevosPuntos();desordena()' tipo='función' ">
+    <param name="A_10" value="id='INI_B' algoritmo='sí' evaluar='una-sola-vez' hacer='N=8;xB=(E1._w-B.ancho)/2;yB=E1._h-B.alto-7;B.dx=12;B.dy=4;B.texto=|Otra distribución|;B.ancho=200;B.alto=32;' ">
+    <param name="A_11" value="id='FUZZ' algoritmo='sí' evaluar='siempre' inicio='FUZZ.ancho=790;FUZZ.alto=520' hacer='FUZZ.MaxT=0.7;FUZZ.Cx=250;FUZZ.Cy=350;FUZZ.Cw=300;FUZZ.Ch=300;FUZZ.Rojo=0.85;FUZZ.Verde=0.85;FUZZ.Azul=0.95;' ">
+    <param name="A_12" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='p1x=20;p1y=20;p2x=490;p2y=p1y;reinit();' ">
+    <param name="A_13" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' inicio='caso=-1;n=0;' hacer='caso=((Vx[n]=P.x)&(Vy[n]=P.y))?n:caso;Ve[n]=((Vx[n]=P.x)&(Vy[n]=P.y))?1:Ve[n];n=n+1;' mientras='n<N' ">
+    <param name="A_14" value="id='MP' evento='sí' condición='E2.mouse_pressed' acción='calcular' parámetro='P.x=E2.mouse_x;P.y=E2.mouse_y;P.x=ent(P.x+0.5);P.y=ent(P.y+0.5)' ejecución='alternar' ">
+    <param name="A_15" value="id='Otro' evento='sí' condición='otro' acción='calcular' parámetro='reinit();otro=0' ejecución='siempre' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_m.svg' clip='(120,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='Cada punto del plano está determinado por un par ordenado de coordenadas, pulsa sobre cada uno de los sitios señalados para ver cuál es su ubicación.' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,500,500)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='b49f52' coord_abs='sí' expresión='(530,110,479,270)' relleno='fff2c2' ancho='2' border_radius='6' ">
+    <param name="G_06" value="espacio='E1' tipo='texto' color='000000' coord_abs='sí' expresión='[E1._w/2,20]' texto='( \color{2980b9}{x}, \color{e74c3c}{y} )\n\n( \color{2980b9}{[(P.x<0)?&squot;&squot;:&squot;+&squot;][P.x]}, \color{e74c3c}{[(P.y<0)?&squot;&squot;:&squot;+&squot;][P.y]} )' ancho='1' negrita='sí' fuente puntos='30' align='a_center' anchor='a_top_center' ">
+    <param name="G_07" value="espacio='E1' tipo='texto' color='000000' dibujar-si='caso>=0' coord_abs='sí' expresión='[E1._w/2,190]' texto='es la ubicación\n[NOM_UB[caso]]' ancho='1' fuente puntos='20' align='a_center' anchor='a_top_center' ">
+    <param name="G_08" value="espacio='E2' tipo='flecha' fondo='sí' color='2980b9' coord_abs='no' expresión='(7.75,0)(8.25,0)' ancho='2' punta='3' flecha='2980b9' ">
+    <param name="G_09" value="espacio='E2' tipo='flecha' fondo='sí' color='2980b9' coord_abs='no' expresión='(7.75,0)(-8.25,0)' ancho='2' punta='3' flecha='2980b9' ">
+    <param name="G_10" value="espacio='E2' tipo='flecha' color='e74c3c' coord_abs='no' expresión='(0,7.75)(0,8.25)' ancho='2' punta='3' flecha='e74c3c' ">
+    <param name="G_11" value="espacio='E2' tipo='flecha' color='e74c3c' coord_abs='no' expresión='(0,7.75)(0,-8.25)' ancho='2' punta='3' flecha='e74c3c' ">
+    <param name="G_12" value="espacio='E2' tipo='segmento' color='e74c3c' coord_abs='no' expresión='(P.x,0)(P.x,P.y)' tamaño='0' ancho='2' lineDash='dash' ">
+    <param name="G_13" value="espacio='E2' tipo='segmento' color='2980b9' coord_abs='no' expresión='(0,P.y)(P.x,P.y)' tamaño='0' ancho='2' lineDash='dash' ">
+    <param name="G_14" value="espacio='E2' tipo='punto' color='ffffff' dibujar-si='Ve[s]' coord_abs='no' expresión='(Vx[s],Vy[s])' familia='s' s.intervalo='[0,N-1]' s.pasos='N-1' tamaño='5' ">
+    <param name="G_15" value="espacio='E2' tipo='punto' color='34495e' dibujar-si='Ve[s]' coord_abs='no' expresión='(Vx[s],Vy[s])' familia='s' s.intervalo='[0,N-1]' s.pasos='N-1' tamaño='3' ">
+    <param name="G_16" value="espacio='E2' tipo='texto' color='000000' dibujar-si='Ve[s]' coord_abs='no' expresión='(Vx[s],Vy[s])' familia='s' s.intervalo='[0,8]' s.pasos='8' texto='[NOM[s]]' ancho='1' color_borde_texto='ffffff' negrita='sí' fuente puntos='16' align='a_left' anchor='a_top_center' border_size='4' ">
+  </ajs>
+
+
+
+</body>
+</html>

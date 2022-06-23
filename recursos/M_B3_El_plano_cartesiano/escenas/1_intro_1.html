@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>El plano cartesiano</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E0' x='15' y='110' ancho='994' alto='450' fijo='sí' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="E_03" value="tipo='R2' id='ciudad' x='(pleca._w-888)/2' y='185' ancho='888' alto='360' fijo='sí' escala='88' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='prev' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' expresión='(pleca._w/2-35-35,pleca._h-50,35,35)' color='222222' color-int='f0f8ff' fuente puntos='19' imagen='images/prev_step.svg' acción='calcular' parámetro='step=step-1' activo-si='step>0' extra_style='borderRadius=35' ">
+    <param name="C_02" value="id='next' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' expresión='(pleca._w/2+35,pleca._h-50,35,35)' color='222222' color-int='f0f8ff' fuente puntos='19' imagen='images/next_step.svg' acción='calcular' parámetro='step=step+1' activo-si='step<3' extra_style='borderRadius=35' ">
+    <param name="C_03" value="id='coordenada' tipo='gráfico' espacio='ciudad' color='2980b9' color-int='3498db' tamaño='10' expresión='(0,0)' dibujar-si='step>2' ">
+    <param name="A_01" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='coordenada.x=(ent(coordenada.x+0.5));coordenada.x=max(-5, min(coordenada.x,5));coordenada.y=(ent(coordenada.y+0.5));coordenada.y=max(-2, min(coordenada.y,2));' ">
+    <param name="G_01" value="espacio='ciudad' tipo='imagen' coord_abs='no' expresión='(0,0,0.5,0.5)' archivo='images/fondoCiudad.png' opacidad='1-step*0.25' ">
+    <param name="G_02" value="espacio='ciudad' tipo='segmento' color='34495e' dibujar-si='step>0' coord_abs='no' expresión='(-200,s)(200,s)' familia='s' s.intervalo='[-100,100]' s.pasos='200' tamaño='0' ancho='2' ">
+    <param name="G_03" value="espacio='ciudad' tipo='segmento' color='34495e' dibujar-si='step>0' coord_abs='no' expresión='(s,-200)(s,200)' familia='s' s.intervalo='[-100,100]' s.pasos='200' tamaño='0' ancho='2' ">
+    <param name="G_04" value="espacio='ciudad' tipo='texto' color='000000' dibujar-si='step==1' coord_abs='no' expresión='(-4.25+s,1.95)' familia='s' s.intervalo='[0,9]' s.pasos='9' texto='[substring(&squot;ABCDEFGHIJ&squot;,s,s+1)]' fijo='no' ancho='1' color_borde_texto='ffffff' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_left' border_size='4' ">
+    <param name="G_05" value="espacio='ciudad' tipo='texto' color='000000' dibujar-si='step==1' coord_abs='no' expresión='(-4.95,1.3-s)' familia='s' s.intervalo='[0,3]' s.pasos='3' texto='[s+1]' fijo='no' ancho='1' color_borde_texto='ffffff' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_left' border_size='4' ">
+    <param name="G_06" value="espacio='ciudad' tipo='flecha' color='000000' dibujar-si='step>1' coord_abs='no' expresión='(0,0)(0,-2)' ancho='4' punta='8' flecha='000000' ">
+    <param name="G_07" value="espacio='E0' tipo='texto' color='000000' dibujar-si='step==0' coord_abs='sí' expresión='[15,15]' texto='Vamos a observar el plano simplificado de una ciudad.' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_08" value="espacio='E0' tipo='texto' color='000000' dibujar-si='step==1' coord_abs='sí' expresión='[15,15]' texto='Los planos de grandes extensiones se dibujan sobre una cuadrícula y los objetos se localizan nombrando la columna y la fila en que se encuentran.' ancho='E0._w-30' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_09" value="espacio='E0' tipo='texto' color='000000' dibujar-si='step==2' coord_abs='sí' expresión='(15,15)' texto='Un \b{plano cartesiano} está formado por dos rectas perpendiculares llamadas \b{ejes de coordenadas}.' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_10" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_11" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_m.svg' clip='(0,0,120,120)' ">
+    <param name="G_12" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='Los planos y mapas son utilizados como ayuda para orientarnos y localizar lugares. Avanza en los pasos para conocer más información.' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_13" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,450)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_14" value="espacio='pleca' tipo='texto' color='1515e7' coord_abs='sí' expresión='(pleca._w/2,pleca._h-32)' texto='[step+1] / 4' fijo='no' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_center_center' ">
+    <param name="G_15" value="espacio='ciudad' tipo='flecha' color='000000' dibujar-si='step>1' coord_abs='no' expresión='(0,0)(0,2)' ancho='4' punta='8' flecha='000000' ">
+    <param name="G_16" value="espacio='E0' tipo='texto' color='000000' dibujar-si='step==3' coord_abs='sí' expresión='(15,15)' texto='Cada punto del plano está determinado por un par ordenado de coordenadas: la primera corresponde al eje horizontal y la segunda al eje vertical. Mueve el punto para ver sus coordenadas.' ancho='E0._w-30' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_17" value="espacio='ciudad' tipo='flecha' color='000000' dibujar-si='step>1' coord_abs='no' expresión='(0,0)(-5,0)' ancho='4' punta='8' flecha='000000' ">
+    <param name="G_18" value="espacio='ciudad' tipo='flecha' color='000000' dibujar-si='step>1' coord_abs='no' expresión='(0,0)(5,0)' ancho='4' punta='8' flecha='000000' ">
+    <param name="G_19" value="espacio='ciudad' tipo='texto' color='000000' dibujar-si='step>2' coord_abs='no' expresión='(coordenada.x+0.3*(coordenada.x<0)-0.3*(coordenada.x>0),coordenada.y+0.5-(0.75*(coordenada.y>0)))' texto='([coordenada.x], [coordenada.y])' fijo='no' ancho='1' color_borde_texto='ffffff' negrita='sí' fuente puntos='25' align='a_left' anchor='a_top_center' border_size='4' ">
+  </ajs>
+
+
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Ortografía de la b y la v</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='500' fijo='sí' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='2bacas' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='baca / baca' expresión='(20,20,150,32)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='verif=0;baca1=1;vaca1=0;baca2=1;vaca2=0;' activo-si='(!baca1)||(!baca2)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_02" value="id='2vacas' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='vaca / vaca' expresión='(200,20,150,32)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='verif=0;baca1=0;vaca1=1;baca2=0;vaca2=1' activo-si='(!vaca1)||(!vaca2)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_03" value="id='1baca1vaca' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='baca / vaca' expresión='(20,75,150,32)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='verif=0;baca1=1;vaca1=0;baca2=0;vaca2=1' activo-si='(!baca1)||(!vaca2)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_04" value="id='1vaca1baca' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='vaca / baca' expresión='(200,75,150,32)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='verif=0;baca1=0;vaca1=1;baca2=1;vaca2=0' activo-si='(!vaca1)||(!baca2)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_05" value="id='Continuar' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Continuar' expresión='(535,E1._h-35-20,150,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='verif=1' dibujar-si='verif=0' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' ">
+    <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer=';' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_h.svg' clip='(120,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='¿Significan lo mismo baca y vaca? Suenan igual pero se escriben de forma diferente. Pulsa los botones para ver qué sucede al ponerlas en una frase.' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,500)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='E1' tipo='imagen' dibujar-si='(baca1=1)&(baca2=1)' coord_abs='sí' expresión='(790,220,0.5)' archivo='images/bacabaca.png' ">
+    <param name="G_06" value="espacio='E1' tipo='texto' color='3498db' dibujar-si='(baca1=1)&(baca2=1)&(verif=0)' coord_abs='sí' expresión='[20,250]' texto='¡Si no la atas bien, la baca de arriba se caerá!' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_07" value="espacio='E1' tipo='imagen' dibujar-si='(vaca1=1)&(vaca2=1)' coord_abs='sí' expresión='(790,220,0.5)' archivo='images/vacavaca.png' ">
+    <param name="G_08" value="espacio='E1' tipo='texto' color='3498db' dibujar-si='(vaca1=1)&(vaca2=1)&(verif=0)' coord_abs='sí' expresión='[20,250]' texto='¡Pobres vacas! Sobre todo la de abajo.' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_09" value="espacio='E1' tipo='imagen' dibujar-si='(baca1=1)&(vaca2=1)' coord_abs='sí' expresión='(790,220,0.5)' archivo='images/bacavaca.png' ">
+    <param name="G_10" value="espacio='E1' tipo='texto' color='3498db' dibujar-si='(baca1=1)&(vaca2=1)&(verif=0)' coord_abs='sí' expresión='[20,250]' texto='Parece que a la vaca no le gusta mucho la idea...' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_11" value="espacio='E1' tipo='imagen' dibujar-si='(vaca1=1)&(baca2=1)' coord_abs='sí' expresión='(790,220,0.5)' archivo='images/vacabaca.png' ">
+    <param name="G_12" value="espacio='E1' tipo='texto' color='3498db' dibujar-si='(vaca1=1)&(baca2=1)&(verif=0)' coord_abs='sí' expresión='[20,250]' texto='¡Una vaca muy viajera! Pero no lo intentes con el coche familiar.' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_13" value="espacio='E1' tipo='texto' color='000000' coord_abs='sí' expresión='[20,160]' texto='Para transportar la ____________, \nponla sobre la ____________.' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_14" value="espacio='E1' tipo='texto' color='3498db' dibujar-si='baca1=1' coord_abs='sí' expresión='[258,158]' texto='baca' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_15" value="espacio='E1' tipo='texto' color='3498db' dibujar-si='vaca2=1' coord_abs='sí' expresión='[216,184]' texto='vaca' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_16" value="espacio='E1' tipo='texto' color='3498db' dibujar-si='vaca1=1' coord_abs='sí' expresión='[258,158]' texto='vaca' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_17" value="espacio='E1' tipo='texto' color='3498db' dibujar-si='baca2=1' coord_abs='sí' expresión='[216,184]' texto='baca' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_18" value="espacio='E1' tipo='texto' color='000000' dibujar-si='verif=0' coord_abs='sí' expresión='[20,E1._h-26]' texto='Cuando hayas probado todas las combinaciones, pulsa ' ancho='1' fuente puntos='20' align='a_left' anchor='a_bottom_left' ">
+    <param name="G_19" value="espacio='E1' tipo='texto' color='000000' dibujar-si='verif=1' coord_abs='sí' expresión='[20,310]' texto='Ya has visto que hay palabras que, aunque suenen igual, se escriben de manera diferente y tienen significados muy distintos. Estas palabras se denominan \b{homófonos}.' ancho='390' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+  </ajs>
+
+
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>El diccionario</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='500' fijo='sí' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="E_03" value="tipo='R2' id='COVER' dibujar-si='gen||sinant||bil||encic' fijo='sí' imagen='images/backwindow.png' despl_imagen='mosaico' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="E_04" value="tipo='R2' id='INFO' x='35' y='185' ancho='954' alto='405' dibujar-si='gen||sinant||bil||encic' fijo='sí' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='cerrar' interfaz='botón' tipo='numérico' región='interior' espacio='INFO' expresión='(INFO._w-35,0,35,35)' color='ffffff' color-int='ffffff' fuente puntos='19' imagen='images/cerrar.svg' acción='calcular' parámetro='gen=0;sinant=0;bil=0;encic=0' ">
+    <param name="C_02" value="id='gen' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='General' expresión='(20,20,220,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='started=1;gen=1;sinant=0;bil=0;encic=0' activo-si='!gen' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_03" value="id='sinant' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Sinónimos y antónimos' expresión='(20+btnw+btnsep,20,220,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='started=1;gen=0;sinant=1;bil=0;encic=0' activo-si='!sinant' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_04" value="id='bil' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Bilingües' expresión='(20+2*(btnw+btnsep),20,220,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='started=1;gen=0;sinant=0;bil=1;encic=0' activo-si='!bil' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_05" value="id='encic' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Enciclopédico' expresión='(20+3*(btnw+btnsep),20,220,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='started=1;gen=0;sinant=0;bil=0;encic=1' activo-si='!encic' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_06" value="id='liga' interfaz='botón' tipo='numérico' región='interior' espacio='INFO' nombre='https://www.rae.es/' expresión='(217,175,200,35)' color='0000bf' color-int='ffffff' subrayada='sí' fuente puntos='20' imagen='vacio.gif' acción='abrir URL' parámetro='https://www.rae.es/' dibujar-si='gen=1' ">
+    <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='started=0;vertexto=0;btnw=220;btnsep=(E1._w-40-4*btnw)/3' ">
+    <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='gen1=(gen)?1:gen1;sinant1=(sinant)?1:sinant1;bil1=(bil)?1:bil1;encic1=(encic)?1:encic1;suma=gen+sinant+bil+encic;vertexto=(gen1+sinant1+bil1+encic1=4)&(suma=0);vertexto1=(vertexto)?1:vertexto1;' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_h.svg' clip='(120,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='¿Son todos los diccionarios iguales? Hay muchos tipos de diccionarios. Pulsa en cada clase de diccionario para ver en qué consiste.' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,500)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='INFO' tipo='rectángulo' fondo='sí' color='341f97' coord_abs='sí' expresión='(1,1,INFO._w-3,INFO._h-3)' relleno='ffffff' ancho='3' border_radius='4' ">
+    <param name="G_06" value="espacio='INFO' tipo='rectángulo' fondo='sí' color='ffffffff' coord_abs='sí' expresión='(0,0,INFO._w,35)' relleno='341f97' ancho='0' border_radius='4' ">
+    <param name="G_07" value="espacio='INFO' tipo='texto' color='000000' dibujar-si='gen=1' coord_abs='sí' expresión='(20,50)' texto='\b{Diccionarios generales}:\n\nExplican el significado de las palabras de una lengua. El Diccionario de la Real Academia Española es el único que tiene carácter normativo porque recoge las palabras oficialmente admitidas. \n\nPuedes consultarlo en' ancho='INFO._w-40' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_08" value="espacio='E1' tipo='texto' color='000000' dibujar-si='vertexto=1' coord_abs='sí' expresión='[E1._w/2,E1._h/2+25]' texto='Seguro que has utilizado muchas veces estos diccionarios, pero debes saber que existen muchos otros tipos de diccionarios, como los etimológicos, los especializados, etcétera.' ancho='600' fuente puntos='20' align='a_center' anchor='a_center_center' ">
+    <param name="G_09" value="espacio='E1' tipo='texto' color='000000' dibujar-si='!started' coord_abs='sí' expresión='[E1._w/2,E1._h/2+25]' texto='Existen distintas \b{clases de diccionarios} según la información que proporcionan.' ancho='1' fuente puntos='20' align='a_left' anchor='a_center_center' ">
+    <param name="G_10" value="espacio='INFO' tipo='texto' color='000000' dibujar-si='sinant=1' coord_abs='sí' expresión='(20,50)' texto='\b{Diccionarios de sinónimos y antónimos}:\n\nContienen listas de palabras que tienen el mismo significado o parecido, y significado contrario. Son muy útiles para enriquecer nuestro vocabulario.' ancho='INFO._w-40' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_11" value="espacio='INFO' tipo='texto' color='000000' dibujar-si='bil=1' coord_abs='sí' expresión='(20,50)' texto='\b{Diccionarios bilingües}:\n\nProporcionan la traducción de palabras de una lengua a otra. Por ejemplo: del español al inglés y viceversa.' ancho='INFO._w-40' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_12" value="espacio='INFO' tipo='texto' color='000000' dibujar-si='encic=1' coord_abs='sí' expresión='(20,50)' texto='\b{Diccionarios enciclopédicos}:\n\nAportan una amplia información sobre distintas materias, nombres propios, lugares y accidentes geográficos. Los nombres de las personas se buscan por los apellidos. ' ancho='INFO._w-40' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+  </ajs>
+
+
+
+</body>
+</html>

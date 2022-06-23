@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="L_B1_La_silaba" 
+	nivel="Primaria" 
+	area="Español, Gramática"
+	plataforma="HTML 5" 
+	>
+	<titulo><![CDATA[
+		La sílaba
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+		Identificar los tipos de sílabas según su número y el nombre de las palabras según la posición de la acentuación.
+	]]></Descripcion>
+</recurso>

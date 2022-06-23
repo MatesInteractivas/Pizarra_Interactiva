@@ -1,9 +1,0 @@
-7
-
-'Estima el valor del ángulo'
-'Estima el valor del ángulo'
-'Un ángulo entre 0º y 90º es un ángulo'
-'La medida del ángulo desconocido es'
-'El ángulo de la figura mide'
-'Un ángulo de 135º corresponde a un ángulo'
-'Determina el ángulo desconocido'

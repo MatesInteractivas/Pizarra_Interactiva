@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Fracciones mixtas</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body>
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='450' fijo='sí' escala='120' O.x='50' O.y='10' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='n3' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Otra fracción' expresión='(20,E1._h-35-20,160,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='max=12;min=2;b=ent(rnd*(max - min + 1) + min);a=ent(rnd*2*b)+1;activo1=1' dibujar-si='etapa=1' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_02" value="id='n3' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Continuar' expresión='((pleca._w-140)/2,pleca._h-35-15,140,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='etapa=2;max=12;min=2;b=ent(rnd*(max - min + 1) + min);max=b-1;min=1;a=b+ent(rnd*(max - min + 1) + min)' dibujar-si='etapa=1' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_03" value="id='n3' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Número mixto' expresión='(20,E1._h-35-20,160,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='max=12;min=2;b=ent(rnd*(max - min + 1) + min);max=b-1;min=1;a=b+ent(rnd*(max - min + 1) + min);;activo1=2' dibujar-si='etapa=2' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_04" value="id='n5' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Continuar' expresión='((pleca._w-140)/2,pleca._h-35-15,140,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='etapa=3;w1=ent(rnd*10)+1;max=9;min=2;w2=ent(rnd*(max - min + 1) + min);min=1;max=w2-1;w3=ent(rnd*(max - min + 1) + min)' dibujar-si='etapa=2' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_05" value="id='n10' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Otro ejemplo' expresión='(20,E1._h-35-20,150,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='etapa=3;w1=ent(rnd*10)+1;max=9;min=2;w2=ent(rnd*(max - min + 1) + min);min=1;max=w2-1;w3=ent(rnd*(max - min + 1) + min);regresar=1;;' dibujar-si='etapa=3' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_06" value="id='n11' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Explorar otra fracción' expresión='((pleca._w-220)/2,pleca._h-35-15,220,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='etapa=3;w1=ent(rnd*10)+1;max=9;min=2;w2=ent(rnd*(max - min + 1) + min);etapa=1;b=ent(rnd*11)+2;a=ent(rnd*2*b)+1;c=ent(a-b)*(a>b);regresar=0' dibujar-si='regresar=1' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='b=ent(rnd*11)+2;a=ent(rnd*2*b)+1;activo1=1;etapa=1;;txt_x=350;txt_y=80' ">
+    <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='r1=ent(a/b);re=a-b*r1;;c=ent(a-b)*(a>b)' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_m.svg' clip='(120,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,42)' texto='Explora las fracciones mixtas e identifica sus características.' ancho='1' fuente puntos='21' align='a_left' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,450)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(etapa=1)' coord_abs='sí' expresión='[20,20]' texto='Observa varias fracciones con el botón “Otra fracción” y cuando hayas identificado las características que diferencian una fracción de otra, pulsa el botón “Continuar”.' ancho='E1._w-40' fuente puntos='20' align='a_justify' anchor='a_top_left' info='etapa=1' ">
+    <param name="G_06" value="espacio='E1' tipo='imagen' dibujar-si='etapa<3' coord_abs='no' expresión='(0,0,0.5,0.5)' archivo='images/pizza.png' ">
+    <param name="G_07" value="espacio='E1' tipo='imagen' dibujar-si='etapa<3' coord_abs='no' expresión='(2,0,0.5,0.5)' archivo='images/pizza.png' ">
+    <param name="G_08" value="espacio='E1' tipo='arco' color='ffffff' dibujar-si='(etapa<3)&(a>b)' coord_abs='no' centro='(0,0)' radio='1' inicio='0' fin='(360*a)/b' relleno='96ff0000' ancho='0' ">
+    <param name="G_09" value="espacio='E1' tipo='segmento' color='ffffff' dibujar-si='(b>1)&(etapa<3)' coord_abs='no' expresión='(0,0)(cos(2*s*pi/b),sen(2*s*pi/b))' familia='s' s.intervalo='[0,b]' s.pasos='b' tamaño='0' ancho='2' ">
+    <param name="G_10" value="espacio='E1' tipo='arco' color='ffffff' dibujar-si='(etapa<3)&(a>b)' coord_abs='no' centro='(2,0)' radio='1' inicio='0' fin='(360*c)/b' relleno='90ff0000' ancho='1' ">
+    <param name="G_11" value="espacio='E1' tipo='segmento' color='ffffff' dibujar-si='(b>1)&(etapa<3)' coord_abs='no' expresión='(2,0)(cos(2*s*pi/b)+2,sen(2*s*pi/b))' familia='s' s.intervalo='[0,b]' s.pasos='b' tamaño='0' ancho='2' ">
+    <param name="G_12" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(etapa=1)' coord_abs='sí' expresión='[20,150]' texto='En total se han marcado \b{\${\frac{[a]}{[b]}}} de pizza.' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_13" value="espacio='E1' tipo='texto' color='000000' dibujar-si='etapa=2' coord_abs='sí' expresión='[20,20]' texto='Las porciones coloreadas representan fracciones mayores que la unidad y se conocen como \b{Números mixtos}. Puedes observar otros números mixtos presionando el botón “Número mixto”.' ancho='E1._w-40' fuente puntos='20' align='a_justify' anchor='a_top_left' info='etapa=2' ">
+    <param name="G_14" value="espacio='E1' tipo='texto' color='000000' dibujar-si='etapa=2' coord_abs='sí' expresión='[20,150]' texto='Los \b{\${\frac{[a]}{[b]}}} de pizza se expresan también como la suma de una unidad y una parte fraccionaria:\n\b{\${\frac{[a]}{[b]} = 1 + \frac{[c]}{[b]} = 1 \frac{[c]}{[b]}}}' fijo='no' ancho='290' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_15" value="espacio='E1' tipo='arco' color='ffffff' dibujar-si='(etapa<3)&(a=b)' coord_abs='no' centro='(0,0)' radio='1' inicio='0' fin='(360*a)/b' relleno='8a0000ff' ancho='0' ">
+    <param name="G_16" value="espacio='E1' tipo='arco' color='ffffff' dibujar-si='(etapa<3)&(a=b)' coord_abs='no' centro='(2,0)' radio='1' inicio='0' fin='(360*c)/b' relleno='870000ff' ancho='1' ">
+    <param name="G_17" value="espacio='E1' tipo='arco' color='ffffff' dibujar-si='(etapa<3)&(a<b)' coord_abs='no' centro='(0,0)' radio='1' inicio='0' fin='(360*a)/b' relleno='7effff00' ancho='0' ">
+    <param name="G_18" value="espacio='E1' tipo='arco' color='ffffff' dibujar-si='(etapa<3)&(a<b)' coord_abs='no' centro='(2,0)' radio='1' inicio='0' fin='(360*c)/b' relleno='7effff00' ancho='1' ">
+    <param name="G_19" value="espacio='E1' tipo='texto' color='000000' dibujar-si='etapa=3' coord_abs='sí' expresión='[20,20]' texto='Una fracción mayor que la unidad se convierte en número mixto así:' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' info='etapa=3' ">
+    <param name="G_20" value="espacio='E1' tipo='texto' color='000000' dibujar-si='etapa=3' coord_abs='sí' expresión='[txt_x,txt_y]' texto='\b{\${\frac{[w2*w1+w3]}{[w2]} =                           = [w1] \frac{[w3]}{[w2]}}}' fijo='no' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_21" value="espacio='E1' tipo='texto' color='000000' dibujar-si='etapa=3' coord_abs='sí' expresión='[txt_x+70,txt_y-5]' texto='[w2*w1+w3]' fijo='no' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_22" value="espacio='E1' tipo='texto' color='000000' dibujar-si='etapa=3' coord_abs='sí' expresión='[txt_x+140,txt_y-5]' texto='[w2]' fijo='no' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_23" value="espacio='E1' tipo='texto' color='000000' dibujar-si='etapa=3' coord_abs='sí' expresión='[txt_x+70,txt_y+25]' texto='([w3])' fijo='no' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_24" value="espacio='E1' tipo='texto' color='000000' dibujar-si='etapa=3' coord_abs='sí' expresión='[txt_x+140,txt_y+25]' texto='[w1]' fijo='no' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_25" value="espacio='E1' tipo='polígono' color='000000' dibujar-si='etapa=3' coord_abs='sí' expresión='(txt_x+110,txt_y-5)(txt_x+110,txt_y+22)(txt_x+180,txt_y+22)' ancho='1' ">
+    <param name="G_26" value="espacio='E1' tipo='texto' color='000000' dibujar-si='etapa=3' coord_abs='sí' expresión='[20,180]' texto='Un número mixto se convierte en fracción así:' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_27" value="espacio='E1' tipo='texto' color='000000' dibujar-si='etapa=3' coord_abs='sí' expresión='[E1._w/2,220]' texto='\b{\${[w1] \frac{[w3]}{[w2]} = \frac{[w1] ∙ [w2] + [w3]}{[w2]} = \frac{[w1*w2+w3]}{[w2]}}}' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_28" value="espacio='E1' tipo='texto' color='000000' dibujar-si='etapa=3' coord_abs='sí' expresión='[20,320]' texto='Un \b{número mixto} es el que está formado por unidades completas y una fracción menor que la unidad.' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+  </ajs>
+
+
+
+</body>
+</html>

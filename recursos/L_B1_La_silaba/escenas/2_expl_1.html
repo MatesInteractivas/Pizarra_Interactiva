@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>La sílaba</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='500' fijo='sí' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="E_03" value="tipo='R2' id='COVER' dibujar-si='boton1||boton2||boton3' fijo='sí' imagen='images/backwindow.png' despl_imagen='mosaico' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="E_04" value="tipo='R2' id='INFO' x='35' y='185' ancho='954' alto='405' dibujar-si='boton1||boton2||boton3' fijo='sí' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='cerrar' interfaz='botón' tipo='numérico' región='interior' espacio='INFO' expresión='(INFO._w-35,0,35,35)' color='ffffff' color-int='ffffff' fuente puntos='19' imagen='images/cerrar.svg' acción='calcular' parámetro='boton1=0;boton2=0;boton3=0' ">
+    <param name="C_02" value="id='boton1' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Agudas' expresión='(E1._w/6-180/2,20,180,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='boton1=1;boton2=0;boton3=0;started=1;' activo-si='!boton1' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_03" value="id='boton2' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Graves o Llanas' expresión='(3*E1._w/6-180/2,20,180,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='boton1=0;boton2=1;boton3=0;started=1;' activo-si='!boton2' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_04" value="id='boton3' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Esdrújulas' expresión='(5*E1._w/6-180/2,20,180,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='boton1=0;boton2=0;boton3=1;started=1;' activo-si='!boton3' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='started=0;vertexto=0;' ">
+    <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='boton11=(boton1)?1:boton11;boton21=(boton2)?1:boton21;boton31=(boton3)?1:boton31;boton41=(boton4)?1:boton41;suma=boton1+boton2+boton3;vertexto=(boton11+boton21+boton31=3)&(suma=0);vertexto1=(vertexto)?1:vertexto1;;' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_h.svg' clip='(120,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='Diferencias entre palabra agudas, graves o esdrújulas. Pulsa los botones para explorar las reglas de acentuación.' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,500)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='E1' tipo='texto' color='000000' dibujar-si='!started' coord_abs='sí' expresión='[E1._w/2,E1._h/2+20]' texto='La \b{silabación} es muy importante a la hora de acentuar la palabra, indica cuál es la \b{sílaba tónica o fuerte}, y cuál es la \b{átona o débil}. Con estas características aprendes escribir \b{la tilde}, que es el \b{acento ortográfico}.' ancho='600' fuente puntos='20' align='a_center' anchor='a_center_center' ">
+    <param name="G_06" value="espacio='E1' tipo='texto' color='000000' dibujar-si='vertexto=1' coord_abs='sí' expresión='[E1._w/2,E1._h/2+30]' texto='Ya has visto las \b{reglas generales de acentuación}.' ancho='1' fuente puntos='20' align='a_left' anchor='a_center_center' ">
+    <param name="G_07" value="espacio='INFO' tipo='rectángulo' fondo='sí' color='341f97' coord_abs='sí' expresión='(1,1,INFO._w-3,INFO._h-3)' relleno='ffffff' ancho='3' border_radius='4' ">
+    <param name="G_08" value="espacio='INFO' tipo='rectángulo' fondo='sí' color='ffffffff' coord_abs='sí' expresión='(0,0,INFO._w,35)' relleno='341f97' ancho='0' border_radius='4' ">
+    <param name="G_09" value="espacio='INFO' tipo='texto' color='000000' dibujar-si='boton1=1' coord_abs='sí' expresión='(20,50)' texto='Las palabras son \color{3498db}{\b{agudas}} cuando su \b{vocal tónica} o acentuada es la \b{última}. Le escribes la tilde si su última letra es una \b{vocal}. O también las consonantes \b{n}, \b{s}.\n\n\b{Ejemplos}: \n\ncajón, mamá, café, evaluación, autobús, limón. ' ancho='INFO._w-40' fuente puntos='20' align='a_justify' anchor='a_top_left' info='boton1=1' ">
+    <param name="G_10" value="espacio='INFO' tipo='texto' color='000000' dibujar-si='boton2=1' coord_abs='sí' expresión='(20,50)' texto='Se llaman \color{3498db}{\b{graves o llanas}}, si su fuerza tónica recae en la penúltima sílaba, le marcas la \b{tilde} cuando su terminación es \b{consonántica}, diferentes a \b{n}, \b{s}.\n\n\b{Ejemplos}: \n\nazúcar, álbum, ángel, lápiz, árbol, túnel.' ancho='INFO._w-40' fuente puntos='20' align='a_justify' anchor='a_top_left' info='boton2=1' ">
+    <param name="G_11" value="espacio='INFO' tipo='texto' color='000000' dibujar-si='boton3=1' coord_abs='sí' expresión='(20,50)' texto='Si su antepenúltima vocal silábica es tónica, se le conoce como \color{3498db}{\b{esdrújula}}, y a todas les pones la tilde.\n\n\b{Ejemplos}: \n\nábaco, capítulo, brócoli, página, ibérico, teléfono. ' ancho='INFO._w-40' fuente puntos='20' align='a_justify' anchor='a_top_left' info='boton3=1' ">
+  </ajs>
+
+
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "nivel": [
+    "Primaria"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Números y operaciones"
+  ], 
+  "titulo": "Descomposición de un número en factores", 
+  "descripcion": "Descomponer un número en dos o más factores.",
+  "resena": "Descomponer un número en dos o más factores.",
+  "id": "M_B1_Descomposicion_de_un_numero_en_factores"
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Porcentajes</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='texto1' x='15' y='175' ancho='450' alto='385' fijo='sí' escala='120' O.x='-73' O.y='83' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="E_03" value="tipo='R2' id='escoge' x='15' y='110' ancho='994' alto='65' dibujar-si='(solucion1#0)' fijo='sí' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="E_04" value="tipo='R2' id='ayuda1' x='475' y='175' ancho='514' alto='365' dibujar-si='(ayuda==1)||(ayuda==2)' fijo='sí' escala='120' O.x='-73' O.y='83' fondo='fffadd' red='no' red10='no' ejes='no' border_width='2' border_color='afa14f' border_radius='6' ">
+    <param name="C_01" value="id='Verificar' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Verificar' expresión='((pleca._w-120)/2,pleca._h-35-15,120,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='verificar()' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_02" value="id='Otro ejercicio' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Otro ejercicio' expresión='(pleca._w-150-15,pleca._h-35-15,150,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='rresp1=&squot;&squot;;resp1=0;v1=0;rresp2=&squot;&squot;;resp2=0;v2=0;rresp3=&squot;&squot;;resp3=0;v3=0;n1=0;n2=0;;todosbien=0;solucion1=0;;nuevosdatos();' activo-si='(ayuda#0)|(todosbien=1)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_03" value="id='ayuda' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='¿Necesitas Ayuda?' expresión='(15,pleca._h-35-15,190,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='solucion1=1' dibujar-si='(verif)&&(!todosbien)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_04" value="id='Tipo 1' interfaz='botón' tipo='numérico' región='interior' espacio='escoge' nombre='Ver resolución 1' expresión='(escoge._w-2*(180+15),15,180,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='n1=1;n2=0;ayuda=1' activo-si='n1=0' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_05" value="id='Tipo 2' interfaz='botón' tipo='numérico' región='interior' espacio='escoge' nombre='Ver resolución 2' expresión='(escoge._w-(180+15),15,180,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='n2=1;n1=0;ayuda=2' activo-si='n2=0' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_06" value="id='rresp1' tipo='numérico' interfaz='campo de texto' región='interior' espacio='texto1' expresión='(190,25,78,35)' valor='&squot;&squot;' min='0' fijo='no' visible='sí' acción='calcular' parámetro='resp1=rresp1' dibujar-si='!bien1' keyboard='sí' kblayout='14x1' kbexp='(194,506)' ">
+    <param name="C_07" value="id='rresp2' tipo='numérico' interfaz='campo de texto' región='interior' espacio='texto1' expresión='(190,25+128,78,35)' valor='&squot;&squot;' min='0' fijo='no' visible='sí' acción='calcular' parámetro='resp2=rresp2' dibujar-si='!bien2' keyboard='sí' kblayout='14x1' kbexp='(194,506)' ">
+    <param name="C_08" value="id='rresp3' tipo='numérico' interfaz='campo de texto' región='interior' espacio='texto1' expresión='(190,25+2*128,78,35)' valor='&squot;&squot;' min='0' fijo='no' visible='sí' acción='calcular' parámetro='resp3=rresp3' dibujar-si='!bien3' keyboard='sí' kblayout='14x1' kbexp='(194,506)' ">
+    <param name="A_01" value="id='nuevosdatos()' algoritmo='sí' expresión='x' inicio='verif=0;ayuda=0' hacer='p1=ent(99*rnd)+1;c1=10*ent(99*rnd+1);x1=p1*c1/100;;p2=ent(99*rnd)+1;c2=10*ent(99*rnd+1);x2=p2*c2/100;;p3=ent(99*rnd)+1;c3=10*ent(99*rnd+1);x3=p3*c3/100;;bien1=0;bien2=0;bien3=0;todosbien=bien1*bien2*bien3;' tipo='función' ">
+    <param name="A_02" value="id='verificar()' algoritmo='sí' expresión='0' inicio='verif=1' hacer='bien1=(resp1=x1)?1:0;bien2=(resp2=x2)?1:0;bien3=(resp3=x3)?1:0;;todosbien=bien1*bien2*bien3;' tipo='función' ">
+    <param name="A_03" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='nuevosdatos()' ">
+    <param name="A_04" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_m.svg' clip='(240,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='Calcula los siguientes porcentajes, escribe el resultado y pulsa el botón “Verificar” para comprobar tus respuestas.' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,450)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='pleca' tipo='texto' color='000000' dibujar-si='todosbien=1' coord_abs='sí' expresión='[430,210]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs76\b\u161  ENHORABUENA !\f2\fs24\b0\par}' ancho='1' negrita='sí' fuente puntos='38' align='a_left' anchor='a_top_left' ">
+    <param name="G_06" value="espacio='escoge' tipo='texto' color='000000' coord_abs='sí' expresión='[300,20]' texto='Elige el método de resolución' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_07" value="espacio='texto1' tipo='texto' color='000000' coord_abs='sí' expresión='[20,30]' texto='El \b{[p1]%} de \b{[c1]} es\n\n\n\n\nEl \b{[p2]%} de \b{[c2]} es\n\n\n\n\nEl \b{[p3]%} de \b{[c3]} es' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_08" value="espacio='texto1' tipo='texto' color='000000' coord_abs='sí' expresión='[200,30]' texto='[x1]\n\n\n\n\n[x2]\n\n\n\n\n[x3]' fijo='no' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_09" value="espacio='texto1' tipo='imagen' dibujar-si='(verif)&&(bien1)' coord_abs='sí' expresión='(190+100,25-3)' archivo='images/ok.svg' ">
+    <param name="G_10" value="espacio='texto1' tipo='imagen' dibujar-si='(verif)&&(!bien1)' coord_abs='sí' expresión='(190+100,25-3)' archivo='images/ko.svg' ">
+    <param name="G_11" value="espacio='texto1' tipo='imagen' dibujar-si='(verif)&&(bien2)' coord_abs='sí' expresión='(190+100,25+128-3)' archivo='images/ok.svg' ">
+    <param name="G_12" value="espacio='texto1' tipo='imagen' dibujar-si='(verif)&&(!bien2)' coord_abs='sí' expresión='(190+100,25+128-3)' archivo='images/ko.svg' ">
+    <param name="G_13" value="espacio='texto1' tipo='imagen' dibujar-si='(verif)&&(bien3)' coord_abs='sí' expresión='(190+100,25+2*128-3)' archivo='images/ok.svg' ">
+    <param name="G_14" value="espacio='texto1' tipo='imagen' dibujar-si='(verif)&&(!bien3)' coord_abs='sí' expresión='(190+100,25+2*128-3)' archivo='images/ko.svg' ">
+    <param name="G_15" value="espacio='ayuda1' tipo='texto' color='000000' dibujar-si='ayuda=1' coord_abs='sí' expresión='[80,20]' texto='a) \${\frac{[p1]}{100} · [c1] = \frac{[p1*c1]}{100} = [x1]}\n\n\n\nb) \${\frac{[p2]}{100} · [c2] = \frac{[p2*c2]}{100} = [x2]}\n\n\n\nc) \${\frac{[p3]}{100} · [c3] = \frac{[p3*c3]}{100} = [x3]}' fijo='no' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_16" value="espacio='ayuda1' tipo='texto' color='000000' dibujar-si='ayuda=2' coord_abs='sí' expresión='[80,20]' texto='a) \${\frac{[p1]}{100} · [c1] = [p1/100] · [c1] = [x1]\n\n\n\nb) \${\frac{[p2]}{100} · [c2] = [p2/100] · [c2] = [x2]\n\n\n\nc) \${\frac{[p3]}{100} · [c3] = [p3/100] · [c3] = [x3]' fijo='no' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+  </ajs>
+
+
+
+</body>
+</html>

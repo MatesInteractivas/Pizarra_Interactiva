@@ -1,7 +1,0 @@
-3
-'Animales'
-'No animales'
-'Ciudades'
-'Frutas'
-'Cuadriláteros'
-'Más de cuatro lados'

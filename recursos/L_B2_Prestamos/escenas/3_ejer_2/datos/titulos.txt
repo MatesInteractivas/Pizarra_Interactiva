@@ -1,7 +1,0 @@
-2
-'Arabismos'
-'Anglicismos'
-'Galicismos'
-'Anglicismos'
-'Cuadriláteros'
-'Más de cuatro lados'

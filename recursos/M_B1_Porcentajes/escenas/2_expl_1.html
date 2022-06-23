@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Porcentajes</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='450' fijo='sí' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="E_03" value="tipo='R2' id='E2' x='330' y='110' ancho='679' alto='450' dibujar-si='p>=1' fijo='sí' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="E_04" value="tipo='R2' id='esp2' x='15' y='110' ancho='300' alto='450' dibujar-si='n2=1' fijo='sí' escala='9' O.x='-90' O.y='180' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="E_05" value="tipo='R2' id='esp3' x='15' y='110' ancho='300' alto='450' dibujar-si='n3=1' fijo='sí' escala='9' O.x='-90' O.y='180' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='Entrar' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Entrar' expresión='((pleca._w-100)/2,pleca._h-35-15,100,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='p=1;n2=1;ver=1;r=0;m=0;limp;iniciardatos()' dibujar-si='p==0' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_02" value="id='ini' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Regresar' expresión='((pleca._w-120)/2,pleca._h-35-15,120,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='inicio' dibujar-si='p!=0' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_03" value="id='valor2' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Otro ejemplo' expresión='(pleca._w-150-15,pleca._h-35-15,150,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='ver=1;grifo=1;r=0;m=0;p=1;ff=iniciardatos1();;' dibujar-si='(n2#0)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_04" value="id='valor3' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Otro ejemplo' expresión='(pleca._w-150-15,pleca._h-35-15,150,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='ver=1;grifo=1;r=0;m=0;p=1;ff=iniciardatos1();;' dibujar-si='(n3#0)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_05" value="id='n2' interfaz='botón' tipo='numérico' región='interior' espacio='E2' nombre='Método 1' expresión='(E2._w/4-150/2,20,150,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='n1=0;n2=1;n3=0;p=1;ver=1;r=0;m=0;limp' dibujar-si='(n1=0)|(n3=0)|(n2=0)' activo-si='n2=0' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_06" value="id='n3' interfaz='botón' tipo='numérico' región='interior' espacio='E2' nombre='Método 2' expresión='(3*E2._w/4-150/2,20,150,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='n1=0;n2=0;n3=1;p=1;;ver=1;r=0;m=0;limp' dibujar-si='(n1=0)|(n2=0)|(n3=0)' activo-si='n3=0' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_07" value="id='ver' interfaz='botón' tipo='numérico' región='interior' espacio='esp2' expresión='(esp2._w/2+esp2.Ox+gri.x*esp2.escala,esp2._h/2+esp2.Oy-gri.y*esp2.escala,40,40)' color='222222' color-int='000000' fuente puntos='19' imagen='vacio.gif' acción='animar' dibujar-si='(r=0)|(r=c)' activo-si='(r=0)|(r=c)' ">
+    <param name="C_08" value="id='ver' interfaz='botón' tipo='numérico' región='interior' espacio='esp3' expresión='(esp2._w/2+esp2.Ox+gri.x*esp2.escala,esp2._h/2+esp2.Oy-gri.y*esp2.escala,40,40)' color='222222' color-int='f0f8ff' fuente puntos='19' imagen='vacio.gif' acción='animar' dibujar-si='(r=0)|(r=c)' activo-si='(r=0)|(r=c)' ">
+    <param name="A_01" value="id='iniciardatos1()' algoritmo='sí' expresión='x' hacer='a=ent(92*rnd+4);b=100*ent(5*rnd)+200;c=a*b/100;' tipo='función' ">
+    <param name="A_02" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='gri.x=13;gri.y=40;' ">
+    <param name="A_03" value="id='CALCULOS' algoritmo='sí' evaluar='una-sola-vez' hacer='fin=(n1=1)?7:((n2=1)?4:5)' ">
+    <param name="A_04" value="id='comenzar' evento='sí' condición='(n1#0)|(n2#0)|(n3#0)' acción='calcular' parámetro='ver=1;ff=iniciardatos1();' ejecución='una-sola-vez' ">
+    <param name="A_05" value="id='abrir' evento='sí' condición='ver=0' acción='animar' ejecución='una-sola-vez' ">
+    <param name="A_06" value="id='limp' evento='sí' condición='ver=1' acción='limpiar' ejecución='siempre' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_m.svg' clip='(0,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='Luis sabe que si ha de llenar un depósito al \b{50%} ha de llenarlo hasta la mitad. Queremos llenar el \b{40%} del depósito ¿Cuántos litros debemos echar?' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' color='729ad4' dibujar-si='p==0' coord_abs='sí' expresión='(15,110,994,450)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='pleca' tipo='rectángulo' color='729ad4' dibujar-si='p>=1' coord_abs='sí' expresión='(15,110,300,450)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_06" value="espacio='pleca' tipo='rectángulo' color='729ad4' dibujar-si='p>=1' coord_abs='sí' expresión='(330,110,679,450)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_07" value="espacio='E1' tipo='imagen' dibujar-si='(n1=0)*(n2=0)*(n3=0)*(p=0)' coord_abs='sí' expresión='(240,200,0.8,0.8)' archivo='images/contenedores_agua.svg' ">
+    <param name="G_08" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(n1=0)*(n2=0)*(n3=0)*(p=0)' coord_abs='sí' expresión='[100,315]' texto='50%                                    40%' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_09" value="espacio='E1' tipo='imagen' dibujar-si='(n1=0)*(n2=0)*(n3=0)*(p=0)' coord_abs='sí' expresión='(735,250,0.5,0.5)' archivo='images/niño.png' ">
+    <param name="G_10" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(n1=0)*(n2=0)*(n3=0)*(p=0)' coord_abs='sí' expresión='[545,110]' texto='¿Llenar el \b{40%}?\n¿Cuántos litros necesito?  ' ancho='1' fuente puntos='20' align='a_center' anchor='a_top_left' ">
+    <param name="G_11" value="espacio='E2' tipo='texto' color='000000' coord_abs='sí' expresión='[20,90]' texto='Un depósito de agua tiene una capacidad de \b{[b]} litros. Llenamos el \b{[a]%} ¿cuántos litros necesitaremos?' fijo='no' ancho='E2._w-40' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_12" value="espacio='E2' tipo='texto' color='000000' dibujar-si='(n2=1)' coord_abs='sí' expresión='[20,170]' texto='Escribimos en forma de fracción \b{\${\frac{[a]}{100}}} de \b{[b]}\n\nSignifica que por cada \b{100} litros se llenan \b{[a]} litros por tanto multiplicamos por \b{[a]} y dividimos entre \b{100}\n\nOperamos \b{\${\frac{[a] · [b]}{100} = \frac{[a*b]}{100} = [a*b/100]}} litros de agua se necesitan' fijo='no' ancho='E2._w-40' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_13" value="espacio='E2' tipo='texto' color='000000' dibujar-si='(n3=1)' coord_abs='sí' expresión='[20,170]' texto='Escribimos en forma de fracción \b{\${\frac{[a]}{100}}} de \b{[b]}\n\nPasamos a forma decimal \b{[a/100]} de \b{[b]}\n\nConvertimos “de” en una multiplicación \b{[a/100] · [b]}\n\nOperamos y obtenemos \b{[a/100*b]} litros de agua para llenar el depósito.' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_14" value="espacio='esp2' tipo='texto' color='000000' dibujar-si='ver=1' coord_abs='sí' expresión='[esp2._w/2,15]' texto='Para abrir pulsa sobre el grifo' ancho='1' fuente puntos='16' align='a_left' anchor='a_top_center' ">
+    <param name="G_15" value="espacio='esp2' tipo='imagen' coord_abs='no' expresión='(gri.x,gri.y)' archivo='images/grifo.svg' ">
+    <param name="G_16" value="espacio='esp2' tipo='imagen' dibujar-si='(grifo>=0)*(r>0)*(r<c)' coord_abs='no' expresión='(gri.x,gri.y-4.5-(s*2))' familia='s' s.intervalo='[0,16]' s.pasos='16' archivo='images/gotas.svg' ">
+    <param name="G_17" value="espacio='esp2' tipo='polígono' color='000000' coord_abs='no' expresión='(0,b/20)(0,0)(20.2,0)(20.2,b/20)' ancho='5' ">
+    <param name="G_18" value="espacio='esp2' tipo='polígono' color='3498db' dibujar-si='(ver=0)*(r>0.1)' coord_abs='no' expresión='(0.2+0.1,0)(0.2+0.1,r/20-0.1)(19.8+0.1,r/20-0.1)(19.8+0.1,0)(0.2+0.1,0)' relleno='3498db' ancho='1' ">
+    <param name="G_19" value="espacio='esp2' tipo='segmento' color='000000' dibujar-si='r>0.1' coord_abs='no' expresión='(2+s,0)(2+s,b/20)' familia='s' s.intervalo='[0,18]' s.pasos='9' tamaño='0' ancho='1' ">
+    <param name="G_20" value="espacio='esp2' tipo='segmento' color='000000' dibujar-si='r>0.1' coord_abs='no' expresión='(0,s)(20,s)' familia='s' s.intervalo='[0,b/20]' s.pasos='10' tamaño='0' ancho='1' ">
+    <param name="G_21" value="espacio='esp2' tipo='texto' color='000000' dibujar-si='(ver=0)*(r>0.25)' coord_abs='sí' expresión='[0+20,310-0.46*b+80]' texto='100%' ancho='1' negrita='sí' fuente puntos='15' align='a_left' anchor='a_top_left' ">
+    <param name="G_22" value="espacio='esp2' tipo='texto' color='0000cb' dibujar-si='(ver=0)*(r>0.25)' coord_abs='sí' expresión='[100+20,310-0.46*b+80]' texto='\b{[b]} litros' fijo='no' ancho='1' fuente puntos='15' align='a_left' anchor='a_top_left' ">
+    <param name="G_23" value="espacio='esp2' tipo='texto' color='0000cb' dibujar-si='(ver=0)*(r>=c)' coord_abs='sí' expresión='[0+20,310-0.47*c+80]' texto='[a]%' fijo='no' ancho='1' negrita='sí' fuente puntos='15' align='a_left' anchor='a_top_left' ">
+    <param name="G_24" value="espacio='esp2' tipo='texto' color='2ecc71' dibujar-si='(ver=0)*(r>=c)' coord_abs='sí' expresión='[120+20,310-0.5*c+80]' texto='?' ancho='1' color_borde_texto='f1f2f6' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_left' border_size='3' ">
+    <param name="G_25" value="espacio='esp3' tipo='texto' color='000000' dibujar-si='ver=1' coord_abs='sí' expresión='[esp2._w/2,15]' texto='Para abrir pulsa sobre el grifo' ancho='1' negrita='sí' fuente puntos='16' align='a_left' anchor='a_top_center' ">
+    <param name="G_26" value="espacio='esp3' tipo='imagen' coord_abs='no' expresión='(gri.x,gri.y)' archivo='images/grifo.svg' ">
+    <param name="G_27" value="espacio='esp3' tipo='imagen' dibujar-si='(grifo>=0)*(r>0)*(r<c)' coord_abs='no' expresión='(gri.x,gri.y-4.5-(s*2))' familia='s' s.intervalo='[0,16]' s.pasos='16' archivo='images/gotas.svg' ">
+    <param name="G_28" value="espacio='esp3' tipo='polígono' color='000000' coord_abs='no' expresión='(0,b/20)(0,0)(20.2,0)(20.2,b/20)' ancho='5' ">
+    <param name="G_29" value="espacio='esp3' tipo='polígono' color='3498db' dibujar-si='(ver=0)*(r>0.1)' coord_abs='no' expresión='(0.2+0.1,0)(0.2+0.1,r/20-0.1)(19.8+0.1,r/20-0.1)(19.8+0.1,0)(0.2+0.1,0)' relleno='3498db' ancho='1' ">
+    <param name="G_30" value="espacio='esp3' tipo='segmento' color='000000' dibujar-si='r>0.1' coord_abs='no' expresión='(2+s,0)(2+s,b/20)' familia='s' s.intervalo='[0,18]' s.pasos='9' tamaño='0' ancho='1' ">
+    <param name="G_31" value="espacio='esp3' tipo='segmento' color='000000' dibujar-si='r>0.1' coord_abs='no' expresión='(0,s)(20,s)' familia='s' s.intervalo='[0,b/20]' s.pasos='10' tamaño='0' ancho='1' ">
+    <param name="G_32" value="espacio='esp3' tipo='texto' color='000000' dibujar-si='(ver=0)*(r>0.25)' coord_abs='sí' expresión='[15+20,310-0.46*b+60]' texto='1' ancho='1' negrita='sí' fuente puntos='15' align='a_left' anchor='a_top_left' ">
+    <param name="G_33" value="espacio='esp3' tipo='texto' color='0000cb' dibujar-si='(ver=0)*(r>0.25)' coord_abs='sí' expresión='[60+20,310-0.46*b+60]' texto='\b{[b]} litros' fijo='no' ancho='1' fuente puntos='15' align='a_left' anchor='a_top_left' ">
+    <param name="G_34" value="espacio='esp3' tipo='texto' color='000000' dibujar-si='(ver=0)*(r>0.25)' coord_abs='sí' expresión='[155+20,310-0.46*b+60]' texto='100%' ancho='1' negrita='sí' fuente puntos='15' align='a_left' anchor='a_top_left' ">
+    <param name="G_35" value="espacio='esp3' tipo='texto' color='0000cb' dibujar-si='(ver=0)*(r>=c)' coord_abs='sí' expresión='[0+20,310-0.46*c+80]' texto='[a/100]' fijo='no' ancho='1' negrita='sí' fuente puntos='15' align='a_left' anchor='a_top_left' ">
+    <param name="G_36" value="espacio='esp3' tipo='texto' color='2ecc71' dibujar-si='(ver=0)*(r>=c)' coord_abs='sí' expresión='[80+20,310-0.5*c+80]' texto='?' ancho='1' color_borde_texto='f1f2f6' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_left' border_size='3' ">
+    <param name="G_37" value="espacio='esp3' tipo='texto' color='0000cb' dibujar-si='(ver=0)*(r>=c)' coord_abs='sí' expresión='[155+20,310-0.48*c+80]' texto='[a]%' fijo='no' ancho='1' color_borde_texto='f1f2f6' negrita='sí' fuente puntos='15' align='a_left' anchor='a_top_left' border_size='3' ">
+    <param name="Animación" value="pausa='40' controles='no' auto='no' repetir='no' inicio='r=0; m=60; j=0' hacer='r=(r<1)?r+0.25:r;r=((r<=c)*(r>=1))?r+4:r;m=(r<c)?m+4:m+20;;j=(j<b/20-b/200)?j+b/200:j' mientras='(r<c-0.1)|(m<=b)' ">
+  </ajs>
+
+
+
+</body>
+</html>

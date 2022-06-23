@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>El diccionario</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='450' fijo='sí' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='verif' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Verificar' expresión='((pleca._w-120)/2,pleca._h-35-15,120,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='verifica=1' dibujar-si='!verifica' activo-si='listo' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_02" value="id='continuar' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Corregir' expresión='((E1._w-130)/2,E1._h-35-15,130,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='verifica=0' dibujar-si='(verifica)&&(buenas<10)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_03" value="id='G01' tipo='gráfico' espacio='E1' color='0000ff' color-int='ff0000' tamaño='4' expresión='(-6.4,3.5)' imagen='images/palabras/palabra0.svg' ">
+    <param name="C_04" value="id='G02' tipo='gráfico' espacio='E1' color='0000ff' color-int='ff0000' tamaño='4' expresión='(3.2,2.5)' imagen='images/palabras/palabra1.svg' ">
+    <param name="C_05" value="id='G03' tipo='gráfico' espacio='E1' color='0000ff' color-int='ff0000' tamaño='4' expresión='(6.4,3.5)' imagen='images/palabras/palabra2.svg' ">
+    <param name="C_06" value="id='G04' tipo='gráfico' espacio='E1' color='0000ff' color-int='ff0000' tamaño='4' expresión='(0,2.5)' imagen='images/palabras/palabra3.svg' ">
+    <param name="C_07" value="id='G05' tipo='gráfico' espacio='E1' color='0000ff' color-int='ff0000' tamaño='4' expresión='(-3.2,2.5)' imagen='images/palabras/palabra4.svg' ">
+    <param name="C_08" value="id='G06' tipo='gráfico' espacio='E1' color='0000ff' color-int='ff0000' tamaño='4' expresión='(0,3.5)' imagen='images/palabras/palabra5.svg' ">
+    <param name="C_09" value="id='G07' tipo='gráfico' espacio='E1' color='0000ff' color-int='ff0000' tamaño='4' expresión='(6.4,2.5)' imagen='images/palabras/palabra6.svg' ">
+    <param name="C_10" value="id='G08' tipo='gráfico' espacio='E1' color='0000ff' color-int='ff0000' tamaño='4' expresión='(3.2,3.5)' imagen='images/palabras/palabra7.svg' ">
+    <param name="C_11" value="id='G09' tipo='gráfico' espacio='E1' color='0000ff' color-int='ff0000' tamaño='4' expresión='(-6.4,2.5)' imagen='images/palabras/palabra8.svg' ">
+    <param name="C_12" value="id='G10' tipo='gráfico' espacio='E1' color='0000ff' color-int='ff0000' tamaño='4' expresión='(-3.2,3.5)' imagen='images/palabras/palabra9.svg' ">
+    <param name="A_01" value="id='Aparecen' vector='sí' evaluar='una-sola-vez' tamaño='10' expresión='Aparecen[0]=0;Aparecen[1]=0;Aparecen[2]=0;Aparecen[3]=0;Aparecen[4]=0;Aparecen[5]=0;Aparecen[6]=1;Aparecen[7]=1;Aparecen[8]=1;Aparecen[9]=1;' tipo='vector' ">
+    <param name="A_02" value="id='verificar()' algoritmo='sí' expresión='1' hacer='buenas=bien01+bien02+bien03+bien04+bien05+bien06+bien07+bien08+bien09+bien10;malas=10-buenas' tipo='función' ">
+    <param name="A_03" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='YI=-0.7' ">
+    <param name="A_04" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='listo=(G01.y<YI)&(G02.y<YI)&(G03.y<YI)&(G04.y<YI)&(G05.y<YI)&(G06.y<YI)&(G07.y<YI)&(G08.y<YI)&(G09.y<YI)&(G10.y<YI);bien01=((Aparecen[0]&(G01.x<0))|(!Aparecen[0]&(G01.x>0)));bien02=((Aparecen[1]&(G02.x<0))|(!Aparecen[1]&(G02.x>0)));bien03=((Aparecen[2]&(G03.x<0))|(!Aparecen[2]&(G03.x>0)));bien04=((Aparecen[3]&(G04.x<0))|(!Aparecen[3]&(G04.x>0)));bien05=((Aparecen[4]&(G05.x<0))|(!Aparecen[4]&(G05.x>0)));bien06=((Aparecen[5]&(G06.x<0))|(!Aparecen[5]&(G06.x>0)));bien07=((Aparecen[6]&(G07.x<0))|(!Aparecen[6]&(G07.x>0)));bien08=((Aparecen[7]&(G08.x<0))|(!Aparecen[7]&(G08.x>0)));bien09=((Aparecen[8]&(G09.x<0))|(!Aparecen[8]&(G09.x>0)));bien10=((Aparecen[9]&(G10.x<0))|(!Aparecen[9]&(G10.x>0)));aux=(verifica)?verificar():0;' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_h.svg' clip='(240,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='No todas las palabras aparecen en el diccionario general. Clasifica las siguientes palabras según si figuran o no en el diccionario general.' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,450)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='E1' tipo='rectángulo' color='80baf3' coord_abs='no' expresión='(-8,-3.3,7.8,2.9)' relleno='ffffff' ancho='2' ">
+    <param name="G_06" value="espacio='E1' tipo='rectángulo' color='80baf3' coord_abs='no' expresión='(-8,-0.4,7.8,0.7)' relleno='fff984' ancho='2' ">
+    <param name="G_07" value="espacio='E1' tipo='texto' color='000000' coord_abs='no' expresión='(-8+7.8/2,0.2)' texto='Aparecen en el diccionario general' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_08" value="espacio='E1' tipo='rectángulo' color='80baf3' coord_abs='no' expresión='(0,-3.3,7.8,2.9)' relleno='ffffff' ancho='2' ">
+    <param name="G_09" value="espacio='E1' tipo='rectángulo' color='80baf3' coord_abs='no' expresión='(0,-0.4,7.8,0.7)' relleno='fff984' ancho='2' ">
+    <param name="G_10" value="espacio='E1' tipo='texto' color='000000' coord_abs='no' expresión='(7.8/2,0.2)' texto='No aparecen en el diccionario general' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_11" value="espacio='E1' tipo='texto' color='000000' dibujar-si='verifica' coord_abs='sí' expresión='[E1._w/2,140]' texto='Tu resultado es:\nAciertos: \b{[buenas]}    Errores: \b{[malas]}' decimales='0' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_12" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(malas>0)&(verifica)' coord_abs='sí' expresión='[20,E1._h-20]' texto='Pulsa el botón para modificar tu respuesta.' decimales='0' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_bottom_left' ">
+    <param name="G_13" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(buenas=10)&(verifica)' coord_abs='sí' expresión='[E1._w/2,20]' texto='Sólo las palabras \i{mandíbula}, \i{pájaro}, \i{percibir} y \i{pizpireta} figuran en el diccionario general.\n\nEntonces, ¿cómo podemos saber qué significan las palabras \i{pisito} o \i{jadeando}, por ejemplo? ' decimales='0' fijo='no' fuente puntos='20' align='a_center' anchor='a_top_center' ">
+  </ajs>
+
+
+
+</body>
+</html>

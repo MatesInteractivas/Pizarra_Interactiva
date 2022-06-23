@@ -1,0 +1,13 @@
+{
+  "nivel": [
+    "Primaria"
+  ], 
+  "area": [
+    "Español", 
+    "Gramática"
+  ], 
+  "titulo": "El nombre", 
+  "descripcion": "Permitir que el alumno aprenda y ponga en práctica los principales aspectos relativos al nombre: el género, el número y los tipos de nombres.",
+  "resena": "Permitir que el alumno aprenda y ponga en práctica los principales aspectos relativos al nombre: el género, el número y los tipos de nombres.",
+  "id": "L_B1_El_nombre"
+}

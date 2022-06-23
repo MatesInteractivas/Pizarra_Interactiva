@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>El verbo</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='500' fijo='sí' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="E_03" value="tipo='R2' id='COVER' dibujar-si='boton1||boton2' fijo='sí' imagen='images/backwindow.png' despl_imagen='mosaico' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="E_04" value="tipo='R2' id='INFO' x='35' y='185' ancho='954' alto='405' dibujar-si='boton1||boton2' fijo='sí' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='cerrar' interfaz='botón' tipo='numérico' región='interior' espacio='INFO' expresión='(INFO._w-35,0,35,35)' color='ffffff' color-int='ffffff' fuente puntos='19' imagen='images/cerrar.svg' acción='calcular' parámetro='boton1=0;boton2=0;boton3=0;boton4=0;boton5=0;boton6=0;ok=0;' ">
+    <param name="C_02" value="id='boton1' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Persona y número' expresión='(E1._w/4-250/2,20,250,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='boton1=1;boton2=0;started=1;' activo-si='!boton1' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_03" value="id='boton2' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Formas no personales' expresión='(3*E1._w/4-250/2,20,250,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='boton1=0;boton2=1;started=1;' activo-si='!boton2' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_04" value="id='boton4' interfaz='botón' tipo='numérico' región='interior' espacio='INFO' nombre='Persona' expresión='(INFO._w/6-270/2,130,270,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='boton4=1;boton5=0;boton6=0;' dibujar-si='boton1=1' activo-si='!boton4' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_05" value="id='boton5' interfaz='botón' tipo='numérico' región='interior' espacio='INFO' nombre='Número' expresión='(3*INFO._w/6-270/2,130,270,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='boton5=1;boton4=0;boton6=0;' dibujar-si='boton1=1' activo-si='!boton5' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_06" value="id='boton6' interfaz='botón' tipo='numérico' región='interior' espacio='INFO' nombre='Combinar persona y número' expresión='(5*INFO._w/6-270/2,130,270,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='boton6=1;boton4=0;boton5=0;' dibujar-si='(ok=1)&(boton1=1)' activo-si='!boton6' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='started=0;vertexto=0;' ">
+    <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='boton11=(boton1)?1:boton11;boton21=(boton2)?1:boton21;suma=boton1+boton2;vertexto=(boton11+boton21=2)&(suma=0);vertexto1=(vertexto)?1:vertexto1;boton41=(boton4)?1:boton41;boton51=(boton5)?1:boton51;ok=(boton41+boton51=2);ok1=(ok)?1:ok1;;' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_h.svg' clip='(120,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='Un verbo puede tener formas personales y formas no personales según si su terminación nos informa o no de quién o quiénes realizan la acción.' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,500)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='E1' tipo='texto' color='000000' dibujar-si='!started' coord_abs='sí' expresión='[20,88]' texto='En los siguientes verbos se ha separado la \b{raíz} de su \b{desinencia}:\n\c{\i{cant-o},    \i{tem-es},    \i{part-en}.}\n\nLas \b{desinencias del verbo} indican \b{persona}, \b{número}, \b{tiempo} y \b{modo}.\n\nPulsa los botones para ver qué información sobre el verbo nos aportan la persona y el número y para conocer las formas no personales. ' ancho='E1._w-40' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_06" value="espacio='INFO' tipo='rectángulo' fondo='sí' color='341f97' coord_abs='sí' expresión='(1,1,INFO._w-3,INFO._h-3)' relleno='ffffff' ancho='3' border_radius='4' ">
+    <param name="G_07" value="espacio='E1' tipo='texto' color='000000' dibujar-si='vertexto=1' coord_abs='sí' expresión='[E1._w/2,(E1._h+50)/2]' texto='Ya has visto qué nos indican la \b{persona} y el \b{número} del verbo y sus \b{formas no personales}.' ancho='1' fuente puntos='20' align='a_left' anchor='a_center_center' ">
+    <param name="G_08" value="espacio='INFO' tipo='rectángulo' fondo='sí' color='ffffffff' coord_abs='sí' expresión='(0,0,INFO._w,35)' relleno='341f97' ancho='0' border_radius='4' ">
+    <param name="G_09" value="espacio='INFO' tipo='texto' color='000000' dibujar-si='boton1=1' coord_abs='sí' expresión='(20,50)' texto='La \b{desinencia} de las \b{formas personales} de los verbos nos indica \b{quién} realiza la acción del verbo y si se trata de \b{un individuo o más}. ' ancho='INFO._w-40' fuente puntos='20' align='a_justify' anchor='a_top_left' info='boton1=1' ">
+    <param name="G_10" value="espacio='INFO' tipo='texto' color='000000' dibujar-si='boton4=1' coord_abs='sí' expresión='(20,200)' texto='La \b{persona} de la forma verbal cambia en función de \b{quién} realiza la acción:\n\n• si es el \b{hablante}, solo o con otros, usamos la \b{primera persona}: \i{soy}, \i{somos}.\n• si es el \b{oyente}, ya sea solo o con otras personas (menos el hablante), se utiliza la \b{segunda persona}: \i{eres}, \i{sois}.\n• si se trata de una o varias cosas o personas \b{distintas} del hablante y del oyente, el verbo debe ir en \b{tercera persona}: \i{es}, \i{son}. ' ancho='INFO._w-40' fuente puntos='20' align='a_justify' anchor='a_top_left' info='boton4=1' ">
+    <param name="G_11" value="espacio='INFO' tipo='texto' color='000000' dibujar-si='boton5=1' coord_abs='sí' expresión='(20,200)' texto='El \b{número del verbo} puede ser: \n\n• \b{Singular}: cuando realiza la acción \b{un único} individuo u objeto.\n\b{Ejemplos}: \i{hablo}, \i{hablas}, \i{habla}.\n\n• \b{Plural}: si la acción es realizada por \b{varias} personas, animales o cosas.\n\b{Ejemplos}: \i{hablamos}, \i{habláis}, \i{hablan}. ' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' info='boton5=1' ">
+    <param name="G_12" value="espacio='INFO' tipo='texto' color='000000' dibujar-si='boton6=1' coord_abs='sí' expresión='(20,200)' texto='Al combinar los posibles tipos de \b{persona y número}, obtenemos las seis opciones siguientes: \n\n\b{Persona/Número}             \b{Singular}                    \b{Plural}\nPrimera persona               Yo \i{canto}                    Nosotros/Nosotras \i{cantamos}\nSegunda persona             Tú \i{cantas}                   Vosotros/Vosotras \i{cantáis}\nTercera persona                Él/Ella \i{canta}             Ellos/Ellas \i{cantan}' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' info='boton6=1' ">
+    <param name="G_13" value="espacio='INFO' tipo='texto' color='000000' dibujar-si='boton2=1' coord_abs='sí' expresión='(20,50)' texto='Las \b{formas no personales} son las formas verbales que no expresan ni persona ni número:\n\n• \b{Infinitivo}: es la forma que usamos para identificar o dar nombre al verbo. Los infinitivos acaban en \b{-ar}, \b{-er} o \b{-ir}: \i{cantar}, \i{temer}, \i{partir}.\n\n• \b{Gerundio}: suele expresar una acción de duración limitada o en proceso de ejecución: \i{cantando}, \i{temiendo}, \i{partiendo}.\n\n• \b{Participio}: se utiliza en las formas compuestas junto con la forma conjugada del verbo auxiliar \i{haber} : (\i{he}) \i{cantado}, (\i{has}) \i{temido}, (\i{ha}) \i{partido}. ' ancho='INFO._w-40' fuente puntos='20' align='a_justify' anchor='a_top_left' info='boton2=1' ">
+  </ajs>
+
+
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="M_B1_Adicion_de_decimales" 
+	nivel="Primaria" 
+	area="Matemáticas, Números y operaciones" 
+	plataforma="HTML 5" 
+	>
+	<titulo><![CDATA[
+		Adición de decimales
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+    Ofrecer actividades que permitan al alumno comprender el procedimiento para sumar números con decimales.
+	]]></Descripcion>
+</recurso>

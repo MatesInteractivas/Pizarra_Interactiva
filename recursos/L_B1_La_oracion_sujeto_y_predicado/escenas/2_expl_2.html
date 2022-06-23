@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>La oración, sujeto y predicado</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='500' fijo='sí' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="E_03" value="tipo='R2' id='COVER' dibujar-si='boton1||boton2' fijo='sí' imagen='images/backwindow.png' despl_imagen='mosaico' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="E_04" value="tipo='R2' id='INFO' x='35' y='185' ancho='954' alto='405' dibujar-si='boton1||boton2' fijo='sí' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='cerrar' interfaz='botón' tipo='numérico' región='interior' espacio='INFO' expresión='(INFO._w-35,0,35,35)' color='ffffff' color-int='ffffff' fuente puntos='19' imagen='images/cerrar.svg' acción='calcular' parámetro='boton1=0;boton2=0;' ">
+    <param name="C_02" value="id='boton1' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Predicado nominal' expresión='(E1._w/4-220/2,20,220,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='boton1=1;boton2=0;started=1;' activo-si='!boton1' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_03" value="id='boton2' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Predicado verbal' expresión='(3*E1._w/4-220/2,20,220,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='boton1=0;boton2=1;started=1;' activo-si='!boton2' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='started=0;vertexto=0;;' ">
+    <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='boton11=(boton1)?1:boton11;boton21=(boton2)?1:boton21;suma=boton1+boton2;vertexto=(boton11+boton21=2)&(suma=0);vertexto1=(vertexto)?1:vertexto1;;;' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_h.svg' clip='(120,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='El predicado es una de las dos partes de la oración. Veamos a continuación los dos tipos de predicado que existen.' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,500)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='INFO' tipo='rectángulo' fondo='sí' color='341f97' coord_abs='sí' expresión='(1,1,INFO._w-3,INFO._h-3)' relleno='ffffff' ancho='3' border_radius='4' ">
+    <param name="G_06" value="espacio='INFO' tipo='rectángulo' fondo='sí' color='ffffffff' coord_abs='sí' expresión='(0,0,INFO._w,35)' relleno='341f97' ancho='0' border_radius='4' ">
+    <param name="G_07" value="espacio='E1' tipo='texto' color='000000' dibujar-si='!started' coord_abs='sí' expresión='[E1._w/2,E1._h/2+25]' texto='El \b{predicado} es la parte de la oración en la que se expresa \b{lo que se dice del sujeto}. El predicado consta como mínimo de \b{un verbo} en forma personal, que es el \b{núcleo del predicado}. Descubre los dos tipos de predicado pulsando los botones.' ancho='600' fuente puntos='20' align='a_center' anchor='a_center_center' ">
+    <param name="G_08" value="espacio='INFO' tipo='texto' color='000000' dibujar-si='boton1=1' coord_abs='sí' expresión='[20,50]' texto='En un \b{predicado nominal} el verbo sirve de enlace entre el sujeto y la cualidad o estado de ese sujeto que se expresa en la oración. El \b{predicado nominal} está formado por un \b{verbo copulativo} \n(\b{\i{ser}}, \b{\i{estar}} o \b{\i{parecer}}) y un \b{atributo}. \n\nEl pasado invierno   \b{fue}   \u{muy frío}.\n\color{34495e}{\b{\ts{15}{                                            Verbo     Atributo}}}\n\nPedro   \b{está}   \u{demasiado cansado}.\n\color{34495e}{\b{\ts{15}{                 Verbo                  Atributo}}}\n\nMaría \b{parece} \u{enfadada}.\n\color{34495e}{\b{\ts{15}{                 Verbo       Atributo}}}\n\ts{15}{\n}Fíjate que el \b{atributo concuerda} en género y número con el \b{sujeto}. ' ancho='INFO._w-40' fuente puntos='20' align='a_justify' anchor='a_top_left' info='boton1=1' ">
+    <param name="G_09" value="espacio='E1' tipo='texto' color='000000' dibujar-si='vertexto=1' coord_abs='sí' expresión='[E1._w/2,E1._h/2+25]' texto='\b{¡Atención!} los verbos \b{\i{ser}} y \b{\i{estar}} no van acompañados de atributo y son el \b{núcleo de un predicado verbal} cuando:\n\n• El verbo \b{\i{ser}} significa \i{suceder}, \i{ocurrir}. \n   El concierto \u{es hoy}.\n\n• El verbo \b{\i{estar}} significa \i{hallarse en un lugar}.\n   El traje \u{está en el armario}.' ancho='600' fuente puntos='20' align='a_left' anchor='a_center_center' ">
+    <param name="G_10" value="espacio='INFO' tipo='texto' color='000000' dibujar-si='boton2=1' coord_abs='sí' expresión='[20,50]' texto='En el \b{predicado verbal} lo que se dice del sujeto está fundamentalmente \b{contenido en el verbo} que funciona como \b{núcleo del predicado}. Si se suprime el verbo, se pierde por completo el significado de la oración.\n\nEl \b{predicado verbal} está formado por cualquier verbo, excepto los copulativos.\n\nTu hermano y yo \u{nos hemos peleado}.\n\nMañana \u{iremos juntos a la biblioteca}. ' ancho='INFO._w-40' fuente puntos='20' align='a_justify' anchor='a_top_left' info='boton2=1' ">
+  </ajs>
+
+
+
+</body>
+</html>

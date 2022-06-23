@@ -1,0 +1,13 @@
+{
+  "nivel": [
+    "Primaria"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Geometría"
+  ], 
+  "titulo": "Área de figuras planas", 
+  "descripcion": "Obtener la superficie de figuras irregulares mediante su descomposición en triángulos, cuadrados y rectángulos.",
+  "resena": "Obtener la superficie de figuras irregulares mediante su descomposición en triángulos, cuadrados y rectángulos.",
+  "id": "M_B3_Area_de_figuras_planas"
+}

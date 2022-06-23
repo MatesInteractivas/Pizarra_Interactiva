@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="L_B1_La_oracion_sujeto_y_predicado" 
+	nivel="Primaria" 
+	area="Español, Gramática"
+	plataforma="HTML 5" 
+	>
+	<titulo><![CDATA[
+		La oración: el sujeto y el predicado
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+		Permitir al alumno adquirir y ejercitar conocimientos sobre el sujeto y el predicado de la oración.
+	]]></Descripcion>
+</recurso>

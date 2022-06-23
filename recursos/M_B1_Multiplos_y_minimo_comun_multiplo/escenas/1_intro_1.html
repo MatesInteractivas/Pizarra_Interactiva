@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Múltiplos y mínimo común múltiplo</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='INSTRUCCIONES' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='hg' x='(1024-994)/2' y='165' ancho='994' alto='395' fijo='sí' despl_imagen='expand.' fondo='ff000000' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='g' tipo='numérico' interfaz='menú' región='interior' espacio='INSTRUCCIONES' expresión='(630,130,50,35)' valor='1' decimales='0' visible='no' opciones='1,2,3' activo-si='n4%2=0' ">
+    <param name="C_02" value="id='a' tipo='numérico' interfaz='pulsador' región='interior' espacio='hg' expresión='(tabla.x+5,tabla.y+celda.h+(celda.h-35)/2,celda1.w-10,35)' valor='2' incr='1' min='2' max='111' decimales='0' visible='sí' activo-si='n4%2=0' fuente puntos='18' image_inc='images/spinner_plus.svg' image_dec='images/spinner_minus.svg' btn_pos='h_left_right' keyboard='sí' kblayout='14x1' kbexp='(194,506)' ">
+    <param name="C_03" value="id='b' tipo='numérico' interfaz='pulsador' región='interior' espacio='hg' expresión='(tabla.x+5,tabla.y+2*celda.h+(celda.h-35)/2,celda1.w-10,35)' valor='3' incr='1' min='2' max='111' decimales='0' visible='sí' dibujar-si='g>0' activo-si='n4%2=0' fuente puntos='18' image_inc='images/spinner_plus.svg' image_dec='images/spinner_minus.svg' btn_pos='h_left_right' keyboard='sí' kblayout='14x1' kbexp='(194,506)' ">
+    <param name="C_04" value="id='c' tipo='numérico' interfaz='pulsador' región='interior' espacio='hg' expresión='(tabla.x+5,tabla.y+3*celda.h+(celda.h-35)/2,celda1.w-10,35)' valor='6' incr='1' min='2' max='111' decimales='0' visible='sí' dibujar-si='g>1' activo-si='n4%2=0' fuente puntos='18' image_inc='images/spinner_plus.svg' image_dec='images/spinner_minus.svg' btn_pos='h_left_right' keyboard='sí' kblayout='14x1' kbexp='(194,506)' ">
+    <param name="C_05" value="id='n4' interfaz='botón' tipo='numérico' región='interior' espacio='INSTRUCCIONES' nombre='Mostrar múltiplos' expresión='(INSTRUCCIONES._w/4-190/2,INSTRUCCIONES._h-35-15,190,35)' valor='n4' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='n4=n4+1;n5=0' dibujar-si='((a>0) | (g>0))&(n5%2=0)&(n4%2=0)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_06" value="id='ocultar' interfaz='botón' tipo='numérico' región='interior' espacio='INSTRUCCIONES' nombre='Ocultar múltiplos' expresión='(INSTRUCCIONES._w/4-190/2,INSTRUCCIONES._h-35-15,190,35)' valor='ocultar' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='n4=n4+1;n5=0' dibujar-si='((a>0) | (g>0))&(n4%2=1)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_07" value="id='n5' interfaz='botón' tipo='numérico' región='interior' espacio='INSTRUCCIONES' nombre='Múltiplos comunes' expresión='((INSTRUCCIONES._w-200)/2,INSTRUCCIONES._h-35-15,200,35)' valor='n5' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='n5=n5+1;mcm2on=1' activo-si='(n4%2=1) & (g>0)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_08" value="id='n6' interfaz='botón' tipo='numérico' región='interior' espacio='INSTRUCCIONES' nombre='Otros números' expresión='(3*INSTRUCCIONES._w/4-190/2,INSTRUCCIONES._h-35-15,190,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='a=2;b=2;c=2;g=g;n4=0;n5=0' activo-si='n4>0' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="A_01" value="id='mcm(a,b)' algoritmo='sí' expresión='y*z*x' inicio='x=min(a,b);z=max(a,b);i=2;y=1' hacer='asigna=((x%i)==0)&((z%i)==0);y=(asigna)?y*i:y;x=(asigna)?x/i:x;z=(asigna)?z/i:z;i=(asigna)?2:(i+1);' mientras='i<=x' tipo='función' ">
+    <param name="A_02" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='margen=30;tabla.x=margen;tabla.y=margen;tabla.w=hg._w-2*margen;tabla.h=hg._h-2*margen-35;celda1.w=tabla.w/10+30;celda.w=(tabla.w-celda1.w)/9;celda.h=tabla.h/4;;' ">
+    <param name="A_03" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='minimo=mcm(a,b);minimo2=mcm(minimo,c);;cond=mcm2on&((a*9<minimo2)|(b*9<minimo2)|(c*9<minimo2))&(g=2)&(n4%2=1)&(n5%2=1)' ">
+    <param name="G_01" value="espacio='INSTRUCCIONES' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='INSTRUCCIONES' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_m.svg' clip='(0,0,120,120)' ">
+    <param name="G_03" value="espacio='INSTRUCCIONES' tipo='texto' color='000000' coord_abs='sí' expresión='(110,30)' texto='Los múltiplos de un número son todos aquellos que se obtienen al multiplicarlo por otro. Los múltiplos son infinitos, siempre puedes multiplicar por otro número.' ancho='INSTRUCCIONES._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='INSTRUCCIONES' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,450)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='INSTRUCCIONES' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='[INSTRUCCIONES._w/2,135]' texto='Selecciona con cuántos números quieres trabajar             y elige con cuáles' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_06" value="espacio='hg' tipo='rectángulo' fondo='sí' color='ffffffff' coord_abs='sí' expresión='(tabla.x-10,tabla.y-10,tabla.w+20,tabla.h+20)' relleno='38863f' ancho='0' border_radius='2' ">
+    <param name="G_07" value="espacio='hg' tipo='segmento' color='ecf0f1' coord_abs='sí' expresión='(tabla.x,tabla.y)(tabla.x,tabla.y+tabla.h)' decimales='0' tamaño='1' ancho='4' font_family='Monospaced' fuente puntos='12' ">
+    <param name="G_08" value="espacio='hg' tipo='segmento' color='ecf0f1' coord_abs='sí' expresión='(tabla.x+celda1.w+celda.w*s,tabla.y)(tabla.x+celda1.w+celda.w*s,tabla.y+tabla.h)' familia='s' s.intervalo='[0,9]' s.pasos='9' decimales='0' tamaño='1' ancho='4' font_family='Monospaced' fuente puntos='12' ">
+    <param name="G_09" value="espacio='hg' tipo='segmento' color='ecf0f1' coord_abs='sí' expresión='(tabla.x,tabla.y+celda.h*s)(tabla.x+tabla.w,tabla.y+celda.h*s)' familia='s' s.intervalo='[0,4]' s.pasos='4' tamaño='2' ancho='4' ">
+    <param name="G_10" value="espacio='hg' tipo='texto' color='ffffff' coord_abs='sí' expresión='[tabla.x+celda1.w/2,tabla.y+celda.h/2]' familia='s' s.intervalo='[1,9]' s.pasos='8' texto='Núm.' decimales='0' ancho='1' negrita='sí' fuente puntos='35' align='a_left' anchor='a_center_center' ">
+    <param name="G_11" value="espacio='hg' tipo='texto' color='ffffff' coord_abs='sí' expresión='[tabla.x+celda1.w+celda.w/2+celda.w*(s-1),tabla.y+celda.h/2]' familia='s' s.intervalo='[1,9]' s.pasos='8' texto='×[s]  ' decimales='0' ancho='1' negrita='sí' fuente puntos='35' align='a_left' anchor='a_center_center' ">
+    <param name="G_12" value="espacio='hg' tipo='punto' color='e67e22' dibujar-si='(((a*s)%b=0) & ((a*s)%c=0) & (n5%2=1) & (g=2) & (n4%2=1)) | (((a*s)%b=0) & (n5%2=1) & (g=1) & (n4%2=1))' coord_abs='sí' expresión='(tabla.x+celda1.w+celda.w/2+celda.w*(s-1),tabla.y+1.5*celda.h)' familia='s' s.intervalo='[1,9]' s.pasos='8' tamaño='30' ">
+    <param name="G_13" value="espacio='hg' tipo='punto' color='e67e22' dibujar-si='(((b*s)%a=0) & ((b*s)%c=0) & (n5%2=1) & (g=2)& (n4%2=1)) | (((b*s)%a=0) & (n5%2=1) & (g=1)& (n4%2=1))' coord_abs='sí' expresión='(tabla.x+celda1.w+celda.w/2+celda.w*(s-1),tabla.y+2.5*celda.h)' familia='s' s.intervalo='[1,9]' s.pasos='8' tamaño='30' ">
+    <param name="G_14" value="espacio='hg' tipo='punto' color='e67e22' dibujar-si='((c*s)%a=0) & ((c*s)%b=0) & (n5%2=1) & (g=2)& (n4%2=1)' coord_abs='sí' expresión='(tabla.x+celda1.w+celda.w/2+celda.w*(s-1),tabla.y+3.5*celda.h)' familia='s' s.intervalo='[1,9]' s.pasos='8' tamaño='30' ">
+    <param name="G_15" value="espacio='hg' tipo='texto' color='ffffff' dibujar-si='n4%2=1' coord_abs='sí' expresión='[tabla.x+celda1.w+celda.w/2+celda.w*(s-1),tabla.y+3*celda.h/2]' familia='s' s.intervalo='[1,9]' s.pasos='8' texto='[a*s]' fijo='no' ancho='1' negrita='sí' fuente puntos='30' align='a_left' anchor='a_center_center' ">
+    <param name="G_16" value="espacio='hg' tipo='texto' color='ffffff' dibujar-si='(g>0) & (n4%2=1)' coord_abs='sí' expresión='[tabla.x+celda1.w+celda.w/2+celda.w*(s-1),tabla.y+5*celda.h/2]' familia='s' s.intervalo='[1,9]' s.pasos='8' texto='[b*s]' fijo='no' ancho='1' negrita='sí' fuente puntos='30' align='a_left' anchor='a_center_center' ">
+    <param name="G_17" value="espacio='hg' tipo='texto' color='ffffff' dibujar-si='(g>1) & (n4%2=1)' coord_abs='sí' expresión='[tabla.x+celda1.w+celda.w/2+celda.w*(s-1),tabla.y+7*celda.h/2]' familia='s' s.intervalo='[1,9]' s.pasos='8' texto='[c*s]' fijo='no' ancho='1' negrita='sí' fuente puntos='30' align='a_left' anchor='a_center_center' ">
+    <param name="G_18" value="espacio='hg' tipo='texto' color='000000' dibujar-si='(a*9<minimo)&(b*9<minimo)&(g=1)&(n4%2=1)&(n5%2=1) &&!cond' coord_abs='sí' expresión='[hg._w/2,hg._h-15]' texto='El primer múltiplo común de \b{[a]} y \b{[b]} es \b{[minimo]} por lo tanto no aparece en la tabla.' decimales='0' ancho='1' fuente puntos='20' align='a_left' anchor='a_bottom_center' ">
+    <param name="G_19" value="espacio='hg' tipo='texto' color='000000' dibujar-si='!((a*9<minimo2)&(b*9<minimo2)&(c*9<minimo2)) &&cond' coord_abs='sí' expresión='[hg._w/2,hg._h-15]' texto='El primer múltiplo común de \b{[a]}, \b{[b]} y \b{[c]} es \b{[minimo2]} y no aparece en todas las filas de la tabla.' decimales='0' ancho='1' fuente puntos='20' align='a_left' anchor='a_bottom_center' ">
+    <param name="G_20" value="espacio='hg' tipo='texto' color='000000' dibujar-si='((a*9<minimo2)&(b*9<minimo2)&(c*9<minimo2)) &&cond' coord_abs='sí' expresión='[hg._w/2,hg._h-15]' texto='El primer múltiplo común de \b{[a]}, \b{[b]} y \b{[c]} es \b{[minimo2]} y por lo tanto no aparece en la tabla.' decimales='0' ancho='1' fuente puntos='20' align='a_left' anchor='a_bottom_center' ">
+  </ajs>
+
+
+
+</body>
+</html>

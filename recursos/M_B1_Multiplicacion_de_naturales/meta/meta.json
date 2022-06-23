@@ -1,0 +1,13 @@
+{
+  "nivel": [
+    "Primaria"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Números y operaciones"
+  ], 
+  "titulo": "Multiplicación de naturales", 
+  "descripcion": "Ofrecer actividades que inviten al alumno a repasar y practicar la multiplicación entre dos números naturales.",
+  "resena": "Ofrecer actividades que inviten al alumno a repasar y practicar la multiplicación entre dos números naturales.",
+  "id": "M_B1_Multiplicacion_de_naturales"
+}

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="M_B1_Potenciacion" 
+	nivel="Primaria" 
+	area="Matemáticas, Números y operaciones" 
+	plataforma="HTML 5" 
+	>
+	<titulo><![CDATA[
+		Potenciación
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+    Ofrecer actividades que permitan al alumno comprender el concepto de potencia y su aplicación.
+	]]></Descripcion>
+</recurso>

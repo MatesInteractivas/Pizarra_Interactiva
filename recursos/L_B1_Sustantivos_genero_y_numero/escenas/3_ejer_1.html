@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Sustantivo: género y número</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' ancho='100%' alto='100%' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='450' fijo='sí' escala='137' O.x='-260' O.y='-30' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='n0' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Inicio' expresión='((pleca._w-120)/2,pleca._h-35-15,120,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='otra=(otra=8)?1:otra+1;respuestas=0;asigna=1;asigna()' dibujar-si='otra=0' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_02" value="id='n1' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Otro ejercicio' expresión='(pleca._w-160-15,pleca._h-35-15,160,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='otra=(otra>=8)?8:otra+1;comprueba=0;asigna=1;asigna()' activo-si='comprueba=1' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_03" value="id='n3' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Verificar' expresión='((pleca._w-120)/2,pleca._h-35-15,120,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='comprueba=1' activo-si='(comprueba=0)&&(otra<8)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_04" value="id='n2' tipo='numérico' interfaz='campo de texto' solo_texto='sí' región='interior' espacio='E1' expresión='((E1._w-750)/2,120,750,35)' visible='sí' dibujar-si='(otra!=0)&&(otra<8)' activo-si='comprueba=0' fuente puntos='20' keyboard='sí' kblayout='10x4_alfa' kbexp='(284,320)' ">
+    <param name="A_01" value="id='P' vector='sí' evaluar='una-sola-vez' tamaño='9' expresión='0;&squot;L__ jueg__ Olímpic__ se realizaron en Londres.&squot;;&squot;Mi novi_ tiene el cabello larg_ y no le gusta la falda cort_&squot;;&squot;L_ gitan_ adivina la suerte.&squot;;&squot;Es__ caball__ son pur_ sangre.&squot;;&squot;Mis zapat__ son de color roj_.&squot;;&squot;El hij_ del lob_ se llama lobat_&squot;;&squot;L__ gall__ no ponen huev__.&squot;;&squot;El sol es u_ astr_.&squot;' tipo='vector' ">
+    <param name="A_02" value="id='R' vector='sí' evaluar='una-sola-vez' tamaño='9' expresión='0;&squot;Los juegos Olímpicos se realizaron en Londres.&squot;;&squot;Mi novia tiene el cabello largo y no le gusta la falda corta&squot;;&squot;La gitana adivina la suerte.&squot;;&squot;Esos caballos son pura sangre.&squot;;&squot;Mis zapatos son de color rojo.&squot;;&squot;El hijo del lobo se llama lobato&squot;;&squot;Los gallos no ponen huevos.&squot;;&squot;El sol es un astro.&squot;' tipo='vector' ">
+    <param name="A_03" value="id='asigna()' algoritmo='sí' expresión='x' hacer='asigna=0;n2=&squot;&squot;;kk=P[otra];n2=kk' tipo='función' ">
+    <param name="A_04" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='otra=0;n2=P[otra];' ">
+    <param name="A_05" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='ff=(asigna=1)?asigna():0;correcto=(n2=R[otra]);;' ">
+    <param name="A_06" value="id='e6' evento='sí' condición='comprueba' acción='calcular' parámetro='correctas=correctas+correcto' ejecución='alternar' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_h.svg' clip='(240,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='Modifica la frase de acuerdo a la instrucción dada, luego pulsa en el botón “Verificar” para comprobar tu respuesta.' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,450)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='E1' tipo='texto' color='000000' dibujar-si='otra=0' coord_abs='sí' expresión='[E1._w/2,E1._h/2]' texto='¡Pulsa el botón “Inicio” para comenzar la actividad!' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_center_center' ">
+    <param name="G_06" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(otra>0)&&(otra<8)' coord_abs='sí' expresión='[E1._w/2,20]' texto='Corrige la frase con el género o el número correspondiente' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_07" value="espacio='E1' tipo='imagen' dibujar-si='(correcto)&(comprueba)' coord_abs='sí' expresión='(900,137,0.7)' archivo='images/ok.svg' ">
+    <param name="G_08" value="espacio='E1' tipo='imagen' dibujar-si='(correcto=0)&(comprueba)' coord_abs='sí' expresión='(900,137,0.7)' archivo='images/ko.svg' ">
+    <param name="G_09" value="espacio='E1' tipo='texto' color='000000' dibujar-si='otra>0' coord_abs='sí' expresión='(90,126)' texto='[otra])' fijo='no' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_10" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(correcto=0)&(comprueba)' coord_abs='sí' expresión='[E1._w/2,300]' texto='La frase correcta es:\n\b{[R[otra]]}' ancho='1' fuente puntos='20' align='a_center' anchor='a_top_center' ">
+    <param name="G_11" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(otra>1)&(correctas!=1)' coord_abs='sí' expresión='[E1._w/2,E1._h-20]' texto='¡Tienes \b{[correctas]} respuestas correctas de \b{8}!' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_bottom_center' ">
+    <param name="G_12" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(otra>1)&(correctas==1)' coord_abs='sí' expresión='[E1._w/2,E1._h-20]' texto='¡Tienes \b{[correctas]} respuesta correcta de \b{8}!' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_bottom_center' ">
+    <param name="G_13" value="espacio='E1' tipo='texto' color='d40809' dibujar-si='(otra==8)&(correctas==0)' coord_abs='sí' expresión='[E1._w/2,E1._h-20]' texto='¡Increible, no atinaste a ninguna!' fijo='no' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_bottom_center' ">
+  </ajs>
+
+
+
+</body>
+</html>

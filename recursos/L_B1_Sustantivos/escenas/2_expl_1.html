@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Sustantivos</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='500' fijo='sí' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="E_03" value="tipo='R2' id='COVER' dibujar-si='fin||fin2||fin3||fin4||fin5||fin6||fin7' fijo='sí' imagen='images/backwindow.png' despl_imagen='mosaico' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="E_04" value="tipo='R2' id='INFO' x='35' y='185' ancho='954' alto='405' dibujar-si='fin||fin2||fin3||fin4||fin5||fin6||fin7' fijo='sí' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='cerrar' interfaz='botón' tipo='numérico' región='interior' espacio='INFO' expresión='(INFO._w-35,0,35,35)' color='ffffff' color-int='ffffff' fuente puntos='19' imagen='images/cerrar.svg' acción='calcular' parámetro='fin=0;fin2=0;fin3=0;fin4=0;fin5=0;fin6=0;fin7=0' ">
+    <param name="C_02" value="id='b1' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Común' expresión='(20,20,btnw,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='fin=1;fin2=0;fin3=0;fin4=0;fin5=0;fin6=0;fin7=0' activo-si='!fin' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_03" value="id='b2' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Propio' expresión='(20+btnw+btnsep,20,btnw,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='fin=0;fin2=1;fin3=0;fin4=0;fin5=0;fin6=0;fin7=0' activo-si='!fin2' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_04" value="id='b3' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Abstracto' expresión='(20+2*(btnw+btnsep),20,btnw,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='fin=0;fin2=0;fin3=1;fin4=0;fin5=0;fin6=0;fin7=0' activo-si='!fin3' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_05" value="id='b4' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Concreto' expresión='(20+3*(btnw+btnsep),20,btnw,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='fin=0;fin2=0;fin3=0;fin4=1;fin5=0;fin6=0;fin7=0' activo-si='!fin4' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_06" value="id='b5' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Individual' expresión='(20+4*(btnw+btnsep),20,btnw,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='fin=0;fin2=0;fin3=0;fin4=0;fin5=1;fin6=0;fin7=0' activo-si='!fin5' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_07" value="id='b6' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Colectivo' expresión='(20+5*(btnw+btnsep),20,btnw,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='fin=0;fin2=0;fin3=0;fin4=0;fin5=0;fin6=1;fin7=0' activo-si='!fin6' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_08" value="id='b7' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Saber +' expresión='(20+6*(btnw+btnsep),20,btnw,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='fin=;fin2=0;fin3=0;fin4=0;fin5=0;fin6=0;fin7=1' activo-si='!fin7' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='btnw=120;btnsep=(E1._w-40-btnw*7)/6' ">
+    <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_h.svg' clip='(120,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,42)' texto='Pulsa en cada botón para identificar diversas clases de sustantivos.' fuente puntos='21' align='a_left' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,500)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='INFO' tipo='rectángulo' fondo='sí' color='341f97' coord_abs='sí' expresión='(1,1,INFO._w-3,INFO._h-3)' relleno='ffffff' ancho='3' border_radius='4' ">
+    <param name="G_06" value="espacio='INFO' tipo='rectángulo' fondo='sí' color='ffffffff' coord_abs='sí' expresión='(0,0,INFO._w,35)' relleno='341f97' ancho='0' border_radius='4' ">
+    <param name="G_07" value="espacio='INFO' tipo='texto' color='000000' dibujar-si='fin=1' coord_abs='sí' expresión='[20,50]' texto='Denomina a todos los seres e individuos de una misma especie, sin establecer \b{distinción}; como por ejemplo: \b{vasija}, \b{pato}, \b{dama}.' ancho='INFO._w-40' fuente puntos='20' align='a_justify' anchor='a_top_left' info='fin=1' ">
+    <param name="G_08" value="espacio='INFO' tipo='texto' color='000000' dibujar-si='fin2=1' coord_abs='sí' expresión='[20,50]' texto='Es el término que nombra al sujeto de manera específica, separándolo de los demás. \n\nLos debes escribir con mayúscula inicial. Mira algunos ejemplos: \b{Mariana}, \b{Venecia}, \b{Lassie}.' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' info='fin2=1' ">
+    <param name="G_09" value="espacio='INFO' tipo='texto' color='000000' dibujar-si='fin3=1' coord_abs='sí' expresión='[20,50]' texto='Es el que se refiere a realidades inmateriales como sentimientos, ideas, cualidades, pasiones; y por tanto son sólo perceptibles por la inteligencia: observa estos ejemplos: \b{amor}, \b{pureza}, \b{deseo}, \b{esperanza}, \b{rabia}.' ancho='INFO._w-40' fuente puntos='20' align='a_justify' anchor='a_top_left' info='fin3=1' ">
+    <param name="G_10" value="espacio='INFO' tipo='texto' color='000000' dibujar-si='fin4=1' coord_abs='sí' expresión='[20,50]' texto='Hace referencia a seres materiales que tú percibes a través de los sentidos; así por ejemplo: \b{Pablo}, \b{vaca}, \b{roca}.' ancho='INFO._w-40' fuente puntos='20' align='a_justify' anchor='a_top_left' info='fin4=1' ">
+    <param name="G_11" value="espacio='INFO' tipo='texto' color='000000' dibujar-si='fin5=1' coord_abs='sí' expresión='[20,50]' texto='Si designa a un solo ser o elemento. \n\nDetalla los siguientes ejemplos: \b{Un niño}, \b{la bicicleta}, \b{una papaya}.' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' info='fin5=1' ">
+    <param name="G_12" value="espacio='INFO' tipo='texto' color='000000' dibujar-si='fin6=1' coord_abs='sí' expresión='[20,50]' texto='Se trata de un sustantivo que, estando en forma singular, designa un grupo de elementos o individuos de la misma especie. Por ejemplo, la palabra \b{enjambre}, designa a una multitud de personas o animales juntos. Un \b{regimiento}, representa un grupo de numerosos soldados.\n\nTrata de \b{no confundirlo} con el número plural, que se refiere a dos o más seres, elementos y cosas. Para ello utiliza artículos como las, los; unas, unos; algunas, algunos, etcétera. Mira los ejemplos: Las palomas están bebiendo en el pozuelo. Mi abuela me regaló dos aviones de colección. Algunos estudiantes no realizaron sus tareas.' ancho='INFO._w-40' fuente puntos='20' align='a_justify' anchor='a_top_left' info='fin6=1' ">
+    <param name="G_13" value="espacio='INFO' tipo='texto' color='000000' dibujar-si='fin7=1' coord_abs='sí' expresión='[20,50]' texto='\b{Distingue los siguientes géneros:}\n\n\b{Masculino}: Corresponde a los hombres y animales machos, a las artes y profesiones afines al género. Por lo general terminan en la vocal \b{o}. Detalla estos ejemplos: \b{Camilo}, \b{perro}, \b{ingeniero}.\n\n\b{El femenino}: Es propio de las mujeres y animales hembras. También son femeninos las artes y profesiones afines a éste género. Los femeninos terminan en \b{a}. Estos son algunos ejemplos: \b{Catalina}, \b{Mochila}, \b{abogada}.\n\n\b{Los sustantivos de género ambiguo}: son aquellos que presentan la característica de ser masculinos o femeninos; pero conservan el significado. Es el caso de los términos \b{ánade}, \b{canal}, \b{azúcar}, \b{mar}, \b{arte}; entre algunos.' ancho='INFO._w-40' fuente puntos='20' align='a_justify' anchor='a_top_left' info='fin7=1' ">
+  </ajs>
+
+
+
+</body>
+</html>

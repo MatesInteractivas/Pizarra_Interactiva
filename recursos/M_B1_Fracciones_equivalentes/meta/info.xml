@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="M_B1_Fracciones_equivalentes" 
+	nivel="Primaria" 
+	area="Matemáticas, Números y operaciones" 
+	plataforma="HTML 5" 
+	>
+	<titulo><![CDATA[
+		Fracciones equivalentes
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+    Aprender a reconocer cuándo dos fracciones son equivalentes y a construir varias fracciones equivalentes a una dada.
+	]]></Descripcion>
+</recurso>

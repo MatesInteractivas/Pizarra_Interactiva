@@ -1,0 +1,13 @@
+{
+  "nivel": [
+    "Primaria"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Números y operaciones"
+  ], 
+  "titulo": "Potenciación", 
+  "descripcion": "Ofrecer actividades que permitan al alumno comprender el concepto de potencia y su aplicación.",
+  "resena": "Ofrecer actividades que permitan al alumno comprender el concepto de potencia y su aplicación.",
+  "id": "M_B1_Potenciacion"
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Sinónimos y antónimos</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='500' fijo='sí' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='compar' tipo='numérico' interfaz='menú' región='interior' espacio='E1' expresión='(145,20,100,35)' fijo='no' visible='no' opciones=' rápida, veloz, lenta' fuente puntos='20' ">
+    <param name="C_02" value="id='Continuar' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Continuar' expresión='(200,135,120,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='cont=1' dibujar-si='cont=0' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_03" value="id='boton1' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Cambia completamente' expresión='(20,180,250,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='boton1=1' dibujar-si='cont=1' activo-si='boton2=0' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_04" value="id='boton2' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Se mantiene igual' expresión='(290,180,200,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='boton2=1' dibujar-si='cont=1' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_05" value="id='boton3' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Cambia completamente' expresión='(20,255,250,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='boton3=1' dibujar-si='cont=1' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_06" value="id='boton4' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Se mantiene igual' expresión='(290,255,200,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='boton4=1' dibujar-si='cont=1' activo-si='boton3=0' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='vertexto=0' ">
+    <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='boton11=(boton1)?1:boton11;boton21=(boton2)?1:boton21;suma=boton1+boton2;vertexto=(boton11+boton21=2)&(suma=0);vertexto1=(vertexto)?1:vertexto1;;' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_h.svg' clip='(0,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='Observa qué sucede con el significado de la oración si cambias la palabra empleada por alguna de las otras opciones que hay en el menú.' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,500)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='E1' tipo='imagen' dibujar-si='compar=2' coord_abs='sí' expresión='(785,190,0.5)' archivo='images/imagen1.png' ">
+    <param name="G_06" value="espacio='E1' tipo='imagen' dibujar-si='(compar=0)|(compar=1)' coord_abs='sí' expresión='(785,190,0.5)' archivo='images/imagen2.png' ">
+    <param name="G_07" value="espacio='E1' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='[20,25]' texto='Luisa es más                       que Emilio.' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_08" value="espacio='E1' tipo='texto' color='000000' dibujar-si='cont=0' coord_abs='sí' expresión='[20,100]' texto='Cuando hayas visto todas las opciones, pulsa el botón' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_09" value="espacio='E1' tipo='texto' color='000000' dibujar-si='cont=1' coord_abs='sí' expresión='[20,100]' texto='Indica qué sucede con el significado de la oración:\n\n• Si cambiamos la palabra \i{rápida} por \i{veloz}: \n\n\n• Si cambiamos la palabra \i{rápida} por \i{lenta}:' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_10" value="espacio='E1' tipo='rectángulo' color='a79c4e' dibujar-si='boton2=1' coord_abs='sí' expresión='(20,E1._h-20-100,(E1._w-60)/2,100)' relleno='f3e372' ancho='1' border_radius='2' ">
+    <param name="G_11" value="espacio='E1' tipo='texto' color='000000' dibujar-si='boton2=1' coord_abs='sí' expresión='[35,E1._h-35]' texto='Las palabras que tienen \b{el mismo significado} o un significado \b{muy parecido} se llaman \b{sinónimos}.' ancho='E1._w/2-60' fuente puntos='20' align='a_justify' anchor='a_bottom_left' ">
+    <param name="G_12" value="espacio='E1' tipo='rectángulo' color='a79c4e' dibujar-si='boton3=1' coord_abs='sí' expresión='(10+E1._w/2,E1._h-20-80,(E1._w-60)/2,80)' relleno='f3e372' ancho='1' border_radius='2' ">
+    <param name="G_13" value="espacio='E1' tipo='texto' color='000000' dibujar-si='boton3=1' coord_abs='sí' expresión='[25+E1._w/2,E1._h-35]' texto='Las palabras que tienen \b{significados opuestos} o \b{contrarios} se llaman \b{antónimos}.' ancho='E1._w/2-60' fuente puntos='20' align='a_justify' anchor='a_bottom_left' ">
+    <param name="G_14" value="espacio='E1' tipo='texto' color='d40809' dibujar-si='(boton1=1)&(boton2=0)|(boton3=0)&(boton4=1)' coord_abs='sí' expresión='[E1._w/4,310]' texto='No es correcto.' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+  </ajs>
+
+
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="M_B3_Figuras_planas" 
+	nivel="Primaria" 
+	area="Matemáticas, Geometría" 
+	plataforma="HTML 5" 
+	>
+	<titulo><![CDATA[
+		Figuras planas
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+    Aprender a reconocer los diversos tipos de figuras planas y a identificar sus elementos.
+	]]></Descripcion>
+</recurso>

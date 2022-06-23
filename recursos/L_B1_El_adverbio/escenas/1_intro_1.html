@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>El adverbio</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='500' fijo='sí' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='r3' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Adverbios' expresión='(E1._w/2-50-130,375,130,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='si=1;no=0;' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_02" value="id='r2' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Adjetivos' expresión='(E1._w/2+50,375,130,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='no=1' activo-si='si=0' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='dia1.x=350;dia1.y=20;dia1.w=420;dia1.h=100;dia1.txt=&squot;\b{Ayer} fui a patinar. ¡Me divertí \b{muchísimo}! Aprendí \b{fácilmente} y patiné \b{muy deprisa}. ¡\b{Seguramente} lo repetiré \b{pronto}! &squot;' ">
+    <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_h.svg' clip='(0,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='Fíjate en lo que cuenta Rubén. ¿Qué información aportan las palabras destacadas? ¿Qué tienen en común todas ellas?' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,500)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='E1' tipo='imagen' coord_abs='sí' expresión='(dia1.x-70,dia1.y+80,0.45)' archivo='images/chica_patinando.svg' ">
+    <param name="G_06" value="espacio='E1' tipo='macro' coord_abs='no' nombre='dia1' expresión='macros/msg_bubble.txt' posini='[0,0]' ">
+    <param name="G_07" value="espacio='E1' tipo='rectángulo' color='a79c4e' coord_abs='sí' expresión='(20,200,E1._w-40,115)' relleno='f3e372' ancho='1' border_radius='2' ">
+    <param name="G_08" value="espacio='E1' tipo='texto' color='000000' coord_abs='sí' expresión='[40,220]' texto='¿Cuándo fue Rubén a patinar? ¿Cuánto se divirtió? ¿Cómo aprendió a patinar? ¿Cómo patinó? ¿Volverá a patinar? ¿Cuándo?\nLas palabras destacadas son las que permiten conocer todos estos detalles.' ancho='E1._w-80' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_09" value="espacio='E1' tipo='texto' color='000000' coord_abs='sí' expresión='[E1._w/2,335]' texto='¿Qué tipo de palabras son?' ancho='E1._w-80' fuente puntos='20' align='a_justify' anchor='a_top_center' ">
+    <param name="G_10" value="espacio='E1' tipo='texto' color='d40809' dibujar-si='no=1' coord_abs='sí' expresión='[700,379]' texto='No es correcto' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_11" value="espacio='E1' tipo='texto' color='34cc67' dibujar-si='si=1' coord_abs='sí' expresión='[700,379]' texto='¡Muy bien!' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_12" value="espacio='E1' tipo='texto' color='000000' dibujar-si='si=1' coord_abs='sí' expresión='[20,430]' texto='Los \b{adverbios} son palabras que \b{expresan las circunstancias} en que se produce una acción: el tiempo, el modo, el lugar, etcétera.' ancho='E1._w-40' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+  </ajs>
+
+<script type="descartes/macro" id="macros/msg_bubble.txt">
+id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='x=10;y=10;w=400;h=50;color=&squot;ffffff&squot;;borde=&squot;34495e&squot;;punta_w=15;punta_h=15;txt=&squot;&squot;;txt_size=20;dir=&squot;izq&squot;;pos=&squot;abj&squot;;' 
+id='CALCULOS' algoritmo='sí' evaluar='siempre' 
+espacio='E1' tipo='rectángulo' color='(_Rojo_(borde),_Verde_(borde),_Azul_(borde),00)' dibujar-si='dir==&squot;izq&squot;' coord_abs='sí' expresión='(x+punta_w,y,w-punta_w,h)' relleno='(_Rojo_(color),_Verde_(color),_Azul_(color),00)' ancho='1' border_radius='6' info='izq' 
+espacio='E1' tipo='polígono' color='(_Rojo_(borde),_Verde_(borde),_Azul_(borde),00)' dibujar-si='(dir==&squot;izq&squot;)&&(pos==&squot;abj&squot;)' coord_abs='sí' expresión='(x+punta_w,y+h-punta_h)(x,y+h)(x+punta_w*2,y+h)' relleno='(_Rojo_(color),_Verde_(color),_Azul_(color),00)' ancho='1' info='punta izq abajo' 
+espacio='E1' tipo='polígono' color='(_Rojo_(borde),_Verde_(borde),_Azul_(borde),00)' dibujar-si='(dir==&squot;izq&squot;)&&(pos!=&squot;abj&squot;)' coord_abs='sí' expresión='(x+punta_w,y+punta_h)(x,y)(x+punta_w*2,y)' relleno='(_Rojo_(color),_Verde_(color),_Azul_(color),00)' ancho='1' info='punta izq arriba' 
+espacio='E1' tipo='texto' color='000000' dibujar-si='dir==&squot;izq&squot;' coord_abs='sí' expresión='(x+punta_w+10,y+10)' texto='[txt]' fijo='no' ancho='w-punta_w-20' fuente puntos='txt_size' align='a_justify' anchor='a_top_left' info='izq' 
+espacio='E1' tipo='rectángulo' color='(_Rojo_(borde),_Verde_(borde),_Azul_(borde),00)' dibujar-si='dir!=&squot;izq&squot;' coord_abs='sí' expresión='(x,y,w-punta_w,h)' relleno='(_Rojo_(color),_Verde_(color),_Azul_(color),00)' ancho='1' border_radius='6' info='der' 
+espacio='E1' tipo='polígono' color='(_Rojo_(borde),_Verde_(borde),_Azul_(borde),00)' dibujar-si='(dir!=&squot;izq&squot;)&&(pos==&squot;abj&squot;)' coord_abs='sí' expresión='(x+w-punta_w,y+h-punta_h)(x+w,y+h)(x+w-punta_w*2,y+h)' relleno='(_Rojo_(color),_Verde_(color),_Azul_(color),00)' ancho='1' info='punta der abajo' 
+espacio='E1' tipo='polígono' color='(_Rojo_(borde),_Verde_(borde),_Azul_(borde),00)' dibujar-si='(dir!=&squot;izq&squot;)&&(pos!=&squot;abj&squot;)' coord_abs='sí' expresión='(x+w-punta_w,y+punta_h)(x+w,y)(x+w-punta_w*2,y)' relleno='(_Rojo_(color),_Verde_(color),_Azul_(color),00)' ancho='1' info='punta der arriba' 
+espacio='E1' tipo='texto' color='000000' dibujar-si='dir!=&squot;izq&squot;' coord_abs='sí' expresión='(x+10,y+10)' texto='[txt]' fijo='no' ancho='w-punta_w-20' fuente puntos='txt_size' align='a_justify' anchor='a_top_left' info='der' 
+</script>
+
+</body>
+</html>

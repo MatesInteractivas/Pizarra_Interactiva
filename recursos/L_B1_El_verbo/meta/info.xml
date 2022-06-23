@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="L_B1_El_verbo" 
+	nivel="Primaria" 
+	area="Español, Gramática"
+	plataforma="HTML 5" 
+	>
+	<titulo><![CDATA[
+		El verbo
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+		Permitir al alumno que adquiera conocimientos y ejercite lo aprendido sobre los principales aspectos relativos al verbo: sus desinencias de persona, número, tiempo y modo, las conjugaciones y los tipos de verbos.
+	]]></Descripcion>
+</recurso>

@@ -1,7 +1,0 @@
-3
-'Determinados'
-'Indeterminados'
-'Determinado Singular'
-'Determinado Plural'
-'Artículo Determinado'
-'Artículo Indeterminado'

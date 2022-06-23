@@ -1,7 +1,0 @@
-'Escribe la respuesta correcta de cada pregunta'
-
-'F'
-'F'
-'F'
-'V'
-'F'

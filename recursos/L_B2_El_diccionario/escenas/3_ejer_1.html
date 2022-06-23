@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>El diccionario</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='450' fijo='sí' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='todas' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Sí,' expresión='(E1._w/6-60,120,120,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='todas=1;no_todas=0' dibujar-si='no_todas=0' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_02" value="id='no_todas' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='  No, ' expresión='(5*E1._w/6-60,120,120,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='todas=0;no_todas=1' dibujar-si='todas=0' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_03" value="id='continuar' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Continuar' expresión='((pleca._w-120)/2,pleca._h-35-15,120,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='abrir Escena' parámetro='3_ejer_1_1.html target=_self' activo-si='(no_todas)||(todas)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' ">
+    <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_h.svg' clip='(240,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='Reflexiona un poco y responde a la siguiente pregunta: ¿aparecen en un diccionario general todas las palabras de una lengua? Selecciona tu respuesta.' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,450)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='E1' tipo='texto' color='8bf5ea' dibujar-si='(todas=0)&(no_todas=0)' coord_abs='sí' expresión='(E1._w/2,E1._h/2,0.5)' texto='?' ancho='1' negrita='sí' fuente puntos='400' align='a_left' anchor='a_center_center' ">
+    <param name="G_06" value="espacio='E1' tipo='texto' color='d40809' dibujar-si='todas=1' coord_abs='sí' expresión='[E1._w/2,E1._h-20]' texto='No es correcto. Hay palabras que no encontrarás en el diccionario general.' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_bottom_center' ">
+    <param name="G_07" value="espacio='E1' tipo='texto' color='34cc67' dibujar-si='no_todas=1' coord_abs='sí' expresión='[E1._w/2,E1._h-20]' texto='Muy bien. Hay palabras que no se encuentran en el diccionario general.' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_bottom_center' ">
+    <param name="G_08" value="espacio='E1' tipo='texto' color='000000' dibujar-si='no_todas=0' coord_abs='sí' expresión='[E1._w/6,190]' texto='el diccionario general \nrecoge todas las palabras\nde una lengua.' ancho='1' fuente puntos='20' align='a_center' anchor='a_top_center' ">
+    <param name="G_09" value="espacio='E1' tipo='texto' color='000000' dibujar-si='todas=0' coord_abs='sí' expresión='[5*E1._w/6,190]' texto='en el diccionario general \nno figuran todas las palabras\nde una lengua.' ancho='1' fuente puntos='20' align='a_center' anchor='a_top_center' ">
+  </ajs>
+
+
+
+</body>
+</html>

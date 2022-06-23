@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>TITULO</title>
+  
+  <script type="text/javascript" src="https://arquimedes.matem.unam.mx/Descartes5/lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="970" height="550">
+      <param name="tamaño" value="970x550">
+      <param name="decimal_symbol" value=".">
+      <param name="nombre" value="">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=40 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='no' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='c0c0c0' red10='808080' ejes='404040' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="A_01" value="id='dd' expresión='(d>0)?d:1' tipo='variable' ">
+      <param name="A_02" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='x=50;y=50;d=5;n=2;r=100;gd=1;gn=2;id=0.5;in=0.6;fondo=1;orilla=1;rayos_d=1;rayos_n=0;arco=1;brazos=1;Transp=0.75;Rojo=0.04;Verde=0;Azul=1' ">
+      <param name="G_01" value="espacio='E1' tipo='arco' fondo='no' color='(id,id,id,0.0)' dibujar-si='fondo' coord_abs='sí' centro='(x,y)' radio='r' inicio='0' fin='360' vectores='no' decimales='2' fijo='sí' relleno='e8e8ec' ancho='gd' negrita='no' cursiva='no' font_family='Monospaced' fuente puntos='12' lineDash='solid' ">
+      <param name="G_02" value="espacio='E1' tipo='arco' fondo='no' color='(id,id,id,0.0)' dibujar-si='orilla' coord_abs='sí' centro='(x,y)' radio='r' inicio='0' fin='360' vectores='no' decimales='2' fijo='sí' ancho='gd' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_03" value="espacio='E1' tipo='segmento' fondo='no' color='(id,id,id,0.0)' dibujar-si='(rayos_d)&&(orilla)&&(d>0)' coord_abs='sí' expresión='(x,y)(x+r*cos(2*pi*s),y-r*sen(2*pi*s))' familia='s' s.intervalo='[0,1]' s.pasos='d' decimales='2' fijo='sí' tamaño='0' ancho='gd' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_04" value="espacio='E1' tipo='arco' fondo='no' color='(Rojo,Verde,Azul,Transp)' dibujar-si='d>0' coord_abs='sí' centro='(x,y)' radio='r' inicio='0' fin='-360*n/dd' vectores='no' decimales='2' fijo='sí' relleno='(Rojo,Verde,Azul,Transp)' ancho='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_05" value="espacio='E1' tipo='arco' fondo='no' color='(in*Rojo,in*Verde,in*Azul,0.0)' dibujar-si='(d>0)&&(rayos_n)&&(!orilla)' coord_abs='sí' centro='(x,y)' radio='r' inicio='0' fin='-360*n/dd' vectores='no' decimales='2' fijo='sí' ancho='gd' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_06" value="espacio='E1' tipo='curva' fondo='no' color='(in*Rojo,in*Verde,in*Azul,0.0)' dibujar-si='(arco)&&(d>0)' coord_abs='sí' expresión='(x+r*cos(2*pi*t),y-r*sen(2*pi*t))' parámetro='t' t.intervalo='[0,n/dd]' t.pasos='r*n/(2*dd)' ancho='3' visible='no' editable='no' lineDash='solid' ">
+      <param name="G_07" value="espacio='E1' tipo='segmento' fondo='no' color='(in*Rojo,in*Verde,in*Azul,0.0)' dibujar-si='(brazos)&&(d>0)&&(n>0)' coord_abs='sí' expresión='(x,y)(x+r*cos(2*pi*s),y-r*sen(2*pi*s))' familia='s' s.intervalo='[0,n/dd]' s.pasos='1' decimales='2' fijo='sí' tamaño='0' ancho='3' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_08" value="espacio='E1' tipo='segmento' fondo='no' color='(in*Rojo,in*Verde,in*Azul,0.0)' dibujar-si='(rayos_n)&&(d>0)&&(n>0)' coord_abs='sí' expresión='(x,y)(x+r*cos(2*pi*s),y-r*sen(2*pi*s))' familia='s' s.intervalo='[0,n/dd]' s.pasos='n' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

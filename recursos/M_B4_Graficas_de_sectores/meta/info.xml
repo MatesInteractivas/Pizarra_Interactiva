@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="M_B4_Graficas_de_sectores" 
+	nivel="Primaria" 
+	area="Matemáticas, Estadística y probabilidad" 
+	plataforma="HTML 5" 
+	>
+	<titulo><![CDATA[
+		Gráfica de sectores
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+    Mostrar ejemplos de situaciones cuyos datos conviene presentar en gráficas de sectores. Además se pide al alumno construir gráficas de sectores a partir de una tabla y también obtener datos de una gráfica de sectores y trasladarlos a una tabla.
+	]]></Descripcion>
+</recurso>

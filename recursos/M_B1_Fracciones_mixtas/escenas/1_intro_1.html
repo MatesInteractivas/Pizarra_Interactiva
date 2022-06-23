@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Fracciones mixtas</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body>
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='450' fijo='sí' escala='120' O.x='50' O.y='10' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='n3' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Clasificación' expresión='((pleca._w-150)/2,pleca._h-35-15,150,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='muestra=1;fracciones=0;clasificacion=1' dibujar-si='clasificacion=0' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_02" value="id='n4' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Fracciones' expresión='((pleca._w-140)/2,pleca._h-35-15,140,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='muestra=0;fracciones=1;clasificacion=0' dibujar-si='fracciones=0' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_03" value="id='a' tipo='numérico' interfaz='pulsador' región='interior' espacio='E1' nombre='Numerador     ' expresión='(20,340,300,35)' valor='9' incr='1' min='0' max='2*b' decimales='0' visible='sí' dibujar-si='fracciones' label_color='ffe0e4e8' fuente puntos='20' image_inc='images/spinner_plus.svg' image_dec='images/spinner_minus.svg' btn_pos='h_left_right' keyboard='sí' kblayout='7x2' kbexp='(360,442)' ">
+    <param name="C_04" value="id='b' tipo='numérico' interfaz='pulsador' región='interior' espacio='E1' nombre='Denominador' expresión='(20,390,300,35)' valor='6' incr='1' min='2' max='20' decimales='0' visible='sí' dibujar-si='fracciones' label_color='ffe0e4e8' fuente puntos='20' image_inc='images/spinner_plus.svg' image_dec='images/spinner_minus.svg' btn_pos='h_left_right' keyboard='sí' kblayout='7x2' kbexp='(360,442)' ">
+    <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='clasificacion=0;fracciones=1;;ej1.x=-3.75;ej1.y=1.1;ej1.sc=0.15;ej2.x=-3.75;ej2.y=0.2;ej2.sc=0.15;ej3.x=-3;ej3.y=0.2;ej3.sc=0.15;ej4.x=-3.75;ej4.y=-0.7;ej4.sc=0.15' ">
+    <param name="A_02" value="id='a2' algoritmo='sí' evaluar='siempre' hacer='r1=ent(a/b);re=a-b*r1' ">
+    <param name="A_03" value="id='c' expresión='ent(a-b)*(a>b)' evaluar='siempre' constante='sí' ">
+    <param name="A_04" value="id='muestra' expresión='0' evaluar='una-sola-vez' constante='sí' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_m.svg' clip='(0,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='Construye fracciones e investiga por qué algunas se marcan con diferente color. Pulsa el botón “Clasificación” para conocer más información sobre la clasificación de las fracciones.' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,450)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='E1' tipo='texto' color='000000' dibujar-si='fracciones' coord_abs='sí' expresión='[20,20]' texto='Mueve los controles y observa las porciones de pizza marcadas. ¿Cuándo las porciones marcadas son de color rojo?' ancho='E1._w-40' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_06" value="espacio='E1' tipo='imagen' dibujar-si='fracciones' coord_abs='no' expresión='(0,0,0.5,0.5)' archivo='images/pizza.png' ">
+    <param name="G_07" value="espacio='E1' tipo='imagen' dibujar-si='fracciones' coord_abs='no' expresión='(2,0,0.5,0.5)' archivo='images/pizza.png' ">
+    <param name="G_08" value="espacio='E1' tipo='arco' color='ffffff' dibujar-si='(fracciones)&(a<b)' coord_abs='no' centro='(0,0)' radio='1' inicio='0' fin='(360*a)/b' relleno='81ffff00' ancho='0' ">
+    <param name="G_09" value="espacio='E1' tipo='arco' color='ffffff' dibujar-si='(a<b)&(fracciones)' coord_abs='no' centro='(2,0)' radio='1' inicio='0' fin='(360*c)/b' relleno='81ffff00' ancho='1' ">
+    <param name="G_10" value="espacio='E1' tipo='texto' color='000000' dibujar-si='fracciones' coord_abs='sí' expresión='[20,150]' texto='En total se han marcado \b{\${\frac{[a]}{[b]}}} de pizza.' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_11" value="espacio='E1' tipo='arco' color='ffffff' dibujar-si='(a=b)&(fracciones)' coord_abs='no' centro='(0,0)' radio='1' inicio='0' fin='(360*a)/b' relleno='870000ff' ancho='0' ">
+    <param name="G_12" value="espacio='E1' tipo='arco' color='ffffff' dibujar-si='(a=b)&(fracciones)' coord_abs='no' centro='(2,0)' radio='1' inicio='0' fin='(360*c)/b' relleno='870000ff' ancho='1' ">
+    <param name="G_13" value="espacio='E1' tipo='arco' color='ffffff' dibujar-si='(a>b)&(fracciones)' coord_abs='no' centro='(0,0)' radio='1' inicio='0' fin='(360*a)/b' relleno='90ff0000' ancho='0' ">
+    <param name="G_14" value="espacio='E1' tipo='arco' color='ffffff' dibujar-si='(a>b)&(fracciones)' coord_abs='no' centro='(2,0)' radio='1' inicio='0' fin='(360*c)/b' relleno='90ff0000' ancho='1' ">
+    <param name="G_15" value="espacio='E1' tipo='segmento' color='ffffff' dibujar-si='(fracciones)&(b>1)' coord_abs='no' expresión='(0,0)(cos(2*s*pi/b),sen(2*s*pi/b))' familia='s' s.intervalo='[0,b]' s.pasos='b' tamaño='0' ancho='2' ">
+    <param name="G_16" value="espacio='E1' tipo='segmento' color='ffffff' dibujar-si='(fracciones)&(b>1)' coord_abs='no' expresión='(2,0)(cos(2*s*pi/b)+2,sen(2*s*pi/b))' familia='s' s.intervalo='[0,b]' s.pasos='b' tamaño='0' ancho='2' ">
+    <param name="G_17" value="espacio='E1' tipo='texto' color='000000' dibujar-si='clasificacion' coord_abs='sí' expresión='[250,20]' texto='Una fracción es: \n\n• \b{menor que la unidad}, si el numerador es menor que el denominador.\n  Por ejemplo: \b{\${\frac{1}{2}}}, \b{\${\frac{5}{8}}}, \b{\${\frac{3}{16}}}.\n  \n• \b{mayor que la unidad}, si el numerador es mayor que el denominador.\n  Por ejemplo: \b{\${\frac{9}{5}}}, \b{\${\frac{15}{4}}}, \b{\${\frac{9}{2}}}.\n  \n• \b{e igual a la unidad}, si los dos términos son iguales.\n  Por ejemplo: \b{\${\frac{4}{4}}}, \b{\${\frac{7}{7}}}, \b{\${\frac{12}{12}}}.' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_18" value="espacio='E1' tipo='imagen' dibujar-si='clasificacion' coord_abs='no' expresión='(ej1.x,ej1.y,ej1.sc,ej1.sc)' archivo='images/pizza.png' ">
+    <param name="G_19" value="espacio='E1' tipo='arco' color='ffffff' dibujar-si='clasificacion' coord_abs='no' centro='(ej1.x,ej1.y)' radio='ej1.sc*2' inicio='0' fin='135' relleno='55ffff00' ancho='0' ">
+    <param name="G_20" value="espacio='E1' tipo='segmento' color='ffffff' dibujar-si='clasificacion' coord_abs='no' expresión='(ej1.x,ej1.y)(ej1.x+ej1.sc*2*cos(s*pi/4),ej1.y+ej1.sc*2*sen(s*pi/4))' familia='s' s.intervalo='[0,8]' s.pasos='8' tamaño='0' ancho='2' ">
+    <param name="G_21" value="espacio='E1' tipo='imagen' dibujar-si='clasificacion' coord_abs='no' expresión='(ej2.x,ej2.y,ej2.sc,ej2.sc)' archivo='images/pizza.png' ">
+    <param name="G_22" value="espacio='E1' tipo='arco' color='ffffff' dibujar-si='clasificacion' coord_abs='no' centro='(ej2.x,ej2.y)' radio='ej2.sc*2' inicio='0' fin='360' relleno='55ff0000' ancho='0' ">
+    <param name="G_23" value="espacio='E1' tipo='segmento' color='ffffff' dibujar-si='clasificacion' coord_abs='no' expresión='(ej2.x,ej2.y)(ej2.x+ej2.sc*2*cos(s*pi/4),ej2.y+ej2.sc*2*sen(s*pi/4))' familia='s' s.intervalo='[0,8]' s.pasos='8' tamaño='0' ancho='2' ">
+    <param name="G_24" value="espacio='E1' tipo='imagen' dibujar-si='clasificacion' coord_abs='no' expresión='(ej3.x,ej3.y,ej3.sc,ej3.sc)' archivo='images/pizza.png' ">
+    <param name="G_25" value="espacio='E1' tipo='arco' color='ffffff' dibujar-si='clasificacion' coord_abs='no' centro='(ej3.x,ej3.y)' radio='ej3.sc*2' inicio='0' fin='225' relleno='55ff0000' ancho='0' ">
+    <param name="G_26" value="espacio='E1' tipo='segmento' color='ffffff' dibujar-si='clasificacion' coord_abs='no' expresión='(ej3.x,ej3.y)(ej3.x+ej3.sc*2*cos(s*pi/4),ej3.y+ej3.sc*2*sen(s*pi/4))' familia='s' s.intervalo='[0,8]' s.pasos='8' tamaño='0' ancho='2' ">
+    <param name="G_27" value="espacio='E1' tipo='imagen' dibujar-si='clasificacion' coord_abs='no' expresión='(ej4.x,ej4.y,ej4.sc,ej4.sc)' archivo='images/pizza.png' ">
+    <param name="G_28" value="espacio='E1' tipo='arco' color='ffffff' dibujar-si='clasificacion' coord_abs='no' centro='(ej4.x,ej4.y)' radio='ej4.sc*2' inicio='0' fin='360' relleno='870000ff' ancho='0' ">
+    <param name="G_29" value="espacio='E1' tipo='segmento' color='ffffff' dibujar-si='clasificacion' coord_abs='no' expresión='(ej4.x,ej4.y)(ej4.x+ej4.sc*2*cos(s*pi/4),ej4.y+ej4.sc*2*sen(s*pi/4))' familia='s' s.intervalo='[0,8]' s.pasos='8' tamaño='0' ancho='2' ">
+  </ajs>
+
+
+
+</body>
+</html>

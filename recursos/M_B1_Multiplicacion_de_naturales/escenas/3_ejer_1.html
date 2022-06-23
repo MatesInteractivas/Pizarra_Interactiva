@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Multiplicación de naturales</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' despl_imagen='expand.' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='450' fijo='sí' escala='30' O.x='-50%' O.y='65%' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='n1' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Verificar' expresión='((pleca._w-130)/2,pleca._h-35-15,130,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='n=1;n3=(n3=&squot;&squot;)?0:n3;n4=(n4=&squot;&squot;)?0:n4;n5=(n5=&squot;&squot;)?0:n5;n6=(n6=&squot;&squot;)?0:n6;n7=(n7=&squot;&squot;)?0:n7;n8=(n8=&squot;&squot;)?0:n8;n9=(n9=&squot;&squot;)?0:n9;n10=(n10=&squot;&squot;)?0:n10;n11=(n11=&squot;&squot;)?0:n11;n12=(n12=&squot;&squot;)?0:n12' activo-si='n=0' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_02" value="id='n2' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Otro ejercicio' expresión='(pleca._w-150-15,pleca._h-35-15,150,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='n=0;mult1=ent(rnd*90)+10;mult2=ent(rnd*90)+10;kk=1;n3=&squot;&squot;;n4=&squot;&squot;;n5=&squot;&squot;;n6=&squot;&squot;;n7=&squot;&squot;;n8=&squot;&squot;;n9=&squot;&squot;;n10=&squot;&squot;;n11=&squot;&squot;;n12=&squot;&squot;;' activo-si='(n=1)|(rtan=10)&(rta<10)|(rta=10)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_03" value="id='n3' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E1' expresión='(pos1.x+80,pos1.y+70,45,50)' valor='&squot;&squot;' decimales='0' visible='sí' keyboard='sí' kblayout='14x1' kbexp='(194,506)' ">
+    <param name="C_04" value="id='n4' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E1' expresión='(pos1.x+80-50,pos1.y+70,45,50)' valor='&squot;&squot;' decimales='0' visible='sí' keyboard='sí' kblayout='14x1' kbexp='(194,506)' ">
+    <param name="C_05" value="id='n5' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E1' expresión='(pos1.x+80-100,pos1.y+70,45,50)' valor='&squot;&squot;' decimales='0' visible='sí' dibujar-si='(umult2*mult1>99)' keyboard='sí' kblayout='14x1' kbexp='(194,506)' ">
+    <param name="C_06" value="id='n6' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E1' expresión='(pos1.x+80-50,pos1.y+2*70,45,50)' valor='&squot;&squot;' decimales='0' visible='sí' keyboard='sí' kblayout='14x1' kbexp='(194,506)' ">
+    <param name="C_07" value="id='n7' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E1' expresión='(pos1.x+80-100,pos1.y+2*70,45,50)' valor='&squot;&squot;' decimales='0' visible='sí' keyboard='sí' kblayout='14x1' kbexp='(194,506)' ">
+    <param name="C_08" value="id='n8' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E1' expresión='(pos1.x+80-150,pos1.y+2*70,45,50)' valor='&squot;&squot;' decimales='0' visible='sí' dibujar-si='(mult1*dmult2>99)' keyboard='sí' kblayout='14x1' kbexp='(194,506)' ">
+    <param name="C_09" value="id='n9' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E1' expresión='(pos1.x+80,pos1.y+3*70,45,50)' valor='&squot;&squot;' decimales='0' visible='sí' keyboard='sí' kblayout='14x1' kbexp='(194,506)' ">
+    <param name="C_10" value="id='n10' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E1' expresión='(pos1.x+80-50,pos1.y+3*70,45,50)' valor='&squot;&squot;' decimales='0' visible='sí' keyboard='sí' kblayout='14x1' kbexp='(194,506)' ">
+    <param name="C_11" value="id='n11' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E1' expresión='(pos1.x+80-100,pos1.y+3*70,45,50)' valor='&squot;&squot;' decimales='0' visible='sí' keyboard='sí' kblayout='14x1' kbexp='(194,506)' ">
+    <param name="C_12" value="id='n12' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E1' expresión='(pos1.x+80-150,pos1.y+3*70,45,50)' valor='&squot;&squot;' decimales='0' visible='sí' dibujar-si='(mult1*mult2>999)' keyboard='sí' kblayout='14x1' kbexp='(194,506)' ">
+    <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='mult1=ent(rnd*90)+10;mult2=ent(rnd*90)+10;kk=1;;pos1.x=470;pos1.y=110;' ">
+    <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='dmult1=ent(mult1/10);umult1=mult1-dmult1*10;dmult2=ent(mult2/10);umult2=mult2-dmult2*10;;pro1=umult2*mult1;pro2=dmult2*mult1;suma=pro1+pro*10;;a1=(n3=umult1*umult2-ent(umult1*umult2/10)*10);a21=(umult2*mult1<100)&(n4=ent(umult2*mult1/10));a22=(umult2*mult1>99)&(n4=ent(umult2*mult1/10)-ent(umult2*mult1/100)*10);a3=(umult2*mult1>99)&(n5=ent(umult2*mult1/100));a3=(umult2*mult1>99)?a3:1;b1=(n6=umult1*dmult2-ent(umult1*dmult2/10)*10);b21=(dmult2*mult1<100)&(n7=ent(dmult2*mult1/10));b22=(dmult2*mult1>99)&(n7=ent(dmult2*mult1/10)-ent(dmult2*mult1/100)*10);b3=(dmult2*mult1>99)&(n8=ent(dmult2*mult1/100));b3=(dmult2*mult1>99)?b3:1;c1=(n9=mult1*mult2-ent(mult1*mult2/10)*10);c2=(n10=ent(mult1*mult2/10)-ent(mult1*mult2/100)*10);c3=(n11=ent(mult1*mult2/100)-ent(mult1*mult2/1000)*10);c4=(mult1*mult2>999)&(n12=ent(mult1*mult2/1000));c4=(mult1*mult2>999)?c4:1;;rta=a1+a21+a22+a3+b1+b21+b22+b3+c1+c2+c3+c4;rtan=(n3!=&squot;&squot;)+(n4!=&squot;&squot;)+(n5!=&squot;&squot;)+(n6!=&squot;&squot;)+(n7!=&squot;&squot;)+(n8!=&squot;&squot;)+(n9!=&squot;&squot;)+(n10!=&squot;&squot;)+(n11!=&squot;&squot;)+(n12!=&squot;&squot;);rtan=(umult2*mult1>99)?rtan:rtan+1;rtan=(dmult2*mult1>99)?rtan:rtan+1;rtan=(mult2*mult1>999)?rtan:rtan+1' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_m.svg' clip='(240,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='Practica la multiplicación con números de dos cifras. Realiza las multiplicaciones llenando los campos de texto y pulsa el botón “Verificar” para comprobar el resultado.' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,450)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='E1' tipo='texto' color='000000' coord_abs='sí' expresión='[E1._w/2,20]' texto='Multiplica \b{[mult1]} por \b{[mult2]}' decimales='0' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_06" value="espacio='E1' tipo='texto' color='d40809' coord_abs='sí' expresión='[pos1.x,pos1.y]' texto='×' ancho='1' negrita='sí' fuente puntos='40' align='a_left' anchor='a_top_left' ">
+    <param name="G_07" value="espacio='E1' tipo='texto' color='000000' coord_abs='sí' expresión='[pos1.x+50,pos1.y-45]' texto='[mult1]' decimales='0' ancho='1' negrita='sí' fuente puntos='50' align='a_left' anchor='a_top_left' ">
+    <param name="G_08" value="espacio='E1' tipo='texto' color='000000' coord_abs='sí' expresión='[pos1.x+50,pos1.y]' texto='[mult2]' decimales='0' ancho='1' negrita='sí' fuente puntos='50' align='a_left' anchor='a_top_left' ">
+    <param name="G_09" value="espacio='E1' tipo='segmento' color='34495e' coord_abs='sí' expresión='(pos1.x-10,pos1.y+50)(pos1.x+125,pos1.y+50)' tamaño='0' ancho='3' ">
+    <param name="G_10" value="espacio='E1' tipo='texto' color='000000' coord_abs='sí' expresión='[pos1.x+80-200,pos1.y+130]' texto='+' ancho='1' negrita='sí' fuente puntos='50' align='a_left' anchor='a_top_left' ">
+    <param name="G_11" value="espacio='E1' tipo='segmento' color='34495e' coord_abs='sí' expresión='(pos1.x-120,pos1.y+200)(pos1.x+125,pos1.y+200)' tamaño='0' ancho='3' ">
+    <param name="G_12" value="espacio='E1' tipo='imagen' dibujar-si='(a1=1)' coord_abs='sí' expresión='(pos1.x+80+22,pos1.y+70-10,0.5,0.5)' archivo='images/ok.svg' ">
+    <param name="G_13" value="espacio='E1' tipo='imagen' dibujar-si='(a1!=1)&(n3!=&squot;&squot;)' coord_abs='sí' expresión='(pos1.x+80+22,pos1.y+70-10,0.5,0.5)' archivo='images/ko.svg' ">
+    <param name="G_14" value="espacio='E1' tipo='imagen' dibujar-si='((a21=1)|(a22=1))&(n4!=&squot;&squot;)' coord_abs='sí' expresión='(pos1.x+80-50+22,pos1.y+70-10,0.5,0.5)' archivo='images/ok.svg' ">
+    <param name="G_15" value="espacio='E1' tipo='imagen' dibujar-si='((a21=0)&(a22=0))&(n4!=&squot;&squot;)' coord_abs='sí' expresión='(pos1.x+80-50+22,pos1.y+70-10,0.5,0.5)' archivo='images/ko.svg' ">
+    <param name="G_16" value="espacio='E1' tipo='imagen' dibujar-si='(a3=1)&(umult2*mult1>99)' coord_abs='sí' expresión='(pos1.x+80-100+22,pos1.y+70-10,0.5,0.5)' archivo='images/ok.svg' ">
+    <param name="G_17" value="espacio='E1' tipo='imagen' dibujar-si='(a3=0)&(umult2*mult1>99)&(n5!=&squot;&squot;)' coord_abs='sí' expresión='(pos1.x+80-100+22,pos1.y+70-10,0.5,0.5)' archivo='images/ko.svg' ">
+    <param name="G_18" value="espacio='E1' tipo='imagen' dibujar-si='(b1=1)' coord_abs='sí' expresión='(pos1.x+80-50+22,pos1.y+2*70-10,0.5,0.5)' archivo='images/ok.svg' ">
+    <param name="G_19" value="espacio='E1' tipo='imagen' dibujar-si='(b1=0)&(n6!=&squot;&squot;)' coord_abs='sí' expresión='(pos1.x+80-50+22,pos1.y+2*70-10,0.5,0.5)' archivo='images/ko.svg' ">
+    <param name="G_20" value="espacio='E1' tipo='imagen' dibujar-si='((b21=1)|(b22=1))&(n7!=&squot;&squot;)' coord_abs='sí' expresión='(pos1.x+80-100+22,pos1.y+2*70-10,0.5,0.5)' archivo='images/ok.svg' ">
+    <param name="G_21" value="espacio='E1' tipo='imagen' dibujar-si='((b21=0)&(b22=0))&(n7!=&squot;&squot;)' coord_abs='sí' expresión='(pos1.x+80-100+22,pos1.y+2*70-10,0.5,0.5)' archivo='images/ko.svg' ">
+    <param name="G_22" value="espacio='E1' tipo='imagen' dibujar-si='(b3=1)&(dmult2*mult1>99)' coord_abs='sí' expresión='(pos1.x+80-150+22,pos1.y+2*70-10,0.5,0.5)' archivo='images/ok.svg' ">
+    <param name="G_23" value="espacio='E1' tipo='imagen' dibujar-si='(b3=0)&(dmult2*mult1>99)&(n8!=&squot;&squot;)' coord_abs='sí' expresión='(pos1.x+80-150+22,pos1.y+2*70-10,0.5,0.5)' archivo='images/ko.svg' ">
+    <param name="G_24" value="espacio='E1' tipo='imagen' dibujar-si='(c1=1)' coord_abs='sí' expresión='(pos1.x+80+22,pos1.y+3*70-10,0.5,0.5)' archivo='images/ok.svg' ">
+    <param name="G_25" value="espacio='E1' tipo='imagen' dibujar-si='(c1=0)&(n9!=&squot;&squot;)' coord_abs='sí' expresión='(pos1.x+80+22,pos1.y+3*70-10,0.5,0.5)' archivo='images/ko.svg' ">
+    <param name="G_26" value="espacio='E1' tipo='imagen' dibujar-si='(c2=1)' coord_abs='sí' expresión='(pos1.x+80-50+22,pos1.y+3*70-10,0.5,0.5)' archivo='images/ok.svg' ">
+    <param name="G_27" value="espacio='E1' tipo='imagen' dibujar-si='(c2=0)&(n10!=&squot;&squot;)' coord_abs='sí' expresión='(pos1.x+80-50+22,pos1.y+3*70-10,0.5,0.5)' archivo='images/ko.svg' ">
+    <param name="G_28" value="espacio='E1' tipo='imagen' dibujar-si='(c3=1)' coord_abs='sí' expresión='(pos1.x+80-100+22,pos1.y+3*70-10,0.5,0.5)' archivo='images/ok.svg' ">
+    <param name="G_29" value="espacio='E1' tipo='imagen' dibujar-si='(c3=0)&(n11!=&squot;&squot;)' coord_abs='sí' expresión='(pos1.x+80-100+22,pos1.y+3*70-10,0.5,0.5)' archivo='images/ko.svg' ">
+    <param name="G_30" value="espacio='E1' tipo='imagen' dibujar-si='(c4=1)&(mult1*mult2>999)' coord_abs='sí' expresión='(pos1.x+80-150+22,pos1.y+3*70-10,0.5,0.5)' archivo='images/ok.svg' ">
+    <param name="G_31" value="espacio='E1' tipo='imagen' dibujar-si='(c4=0)&(mult1*mult2>999)&(n12!=&squot;&squot;)' coord_abs='sí' expresión='(pos1.x+80-150+22,pos1.y+3*70-10,0.5,0.5)' archivo='images/ko.svg' ">
+    <param name="G_32" value="espacio='E1' tipo='texto' color='34cc67' dibujar-si='rta=10' coord_abs='sí' expresión='[E1._w/2,E1._h-20]' texto='¡Excelente! \b{[mult1]} por \b{[mult2]} es \b{[mult1*mult2]}' decimales='0' ancho='1' fuente puntos='20' align='a_left' anchor='a_bottom_center' ">
+    <param name="G_33" value="espacio='E1' tipo='texto' color='d40809' dibujar-si='(n==1)&&(rta<10)' coord_abs='sí' expresión='[E1._w/2,E1._h-20]' texto='¡Incorrecto! \b{[mult1]} por \b{[mult2]} es \b{[mult1*mult2]}' decimales='0' ancho='1' fuente puntos='20' align='a_left' anchor='a_bottom_center' ">
+  </ajs>
+
+
+
+</body>
+</html>

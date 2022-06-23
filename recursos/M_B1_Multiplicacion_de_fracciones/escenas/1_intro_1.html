@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Multiplicación de fracciones</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='450' fijo='sí' escala='30' O.x='120' O.y='150' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='otro' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Otro ejemplo' expresión='(pleca._w-150-15,pleca._h-35-15,150,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='b=ent(rnd*5)+2;d=ent(rnd*5)+2;paso=0;' dibujar-si='paso=3' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_02" value="id='prev' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' expresión='(pleca._w/2-35-35,pleca._h-50,35,35)' color='222222' color-int='f0f8ff' fuente puntos='19' imagen='images/prev_step.svg' acción='calcular' parámetro='paso=paso-1' activo-si='paso>0' extra_style='borderRadius=35' ">
+    <param name="C_03" value="id='next' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' expresión='(pleca._w/2+35,pleca._h-50,35,35)' color='222222' color-int='f0f8ff' fuente puntos='19' imagen='images/next_step.svg' acción='calcular' parámetro='paso=paso+1' activo-si='paso<3' extra_style='borderRadius=35' ">
+    <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='otro=1;angulos=0;lados=0;;s=10;b=ent(rnd*5)+2;d=ent(rnd*5)+2' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_m.svg' clip='(0,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,42)' texto='Sigue los pasos indicados y analiza el proceso para multiplicar dos fracciones.' ancho='1' fuente puntos='21' align='a_left' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,450)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='pleca' tipo='texto' color='1515e7' coord_abs='sí' expresión='(pleca._w/2,pleca._h-32)' texto='[paso+1] / 4' fijo='no' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_center_center' ">
+    <param name="G_06" value="espacio='E1' tipo='texto' color='000000' coord_abs='sí' expresión='[20,20]' texto='Determina \b{\${\frac{1}{[d]}}} de \b{\${\frac{1}{[b]}}}' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_07" value="espacio='E1' tipo='polígono' color='000000' coord_abs='no' expresión='(0,0)(10,0)(10,10)(0,10)(0,0)' relleno='e74c3c' ancho='2' ">
+    <param name="G_08" value="espacio='E1' tipo='polígono' color='000000' dibujar-si='paso>=1' coord_abs='no' expresión='(0,0)(10/b,0)(10/b,10)(0,10)(0,0)' relleno='3498db' ancho='2' ">
+    <param name="G_09" value="espacio='E1' tipo='polígono' color='000000' dibujar-si='paso>=2' coord_abs='no' expresión='(0,0)(10/b,0)(10/b,10/d)(0,10/d)(0,0)' relleno='ffff00' ancho='2' ">
+    <param name="G_10" value="espacio='E1' tipo='segmento' color='000000' dibujar-si='(paso>=1)' coord_abs='no' expresión='(s,0)(s,10)' familia='s' s.intervalo='[0,s]' s.pasos='b' tamaño='0' ancho='2' ">
+    <param name="G_11" value="espacio='E1' tipo='segmento' color='000000' dibujar-si='paso>=2' coord_abs='no' expresión='(0,s)(10,s)' familia='s' s.intervalo='[0,s]' s.pasos='d' tamaño='0' ancho='2' ">
+    <param name="G_12" value="espacio='E1' tipo='texto' color='000000' dibujar-si='paso=3' coord_abs='no' expresión='(-1,10/(2*d))' texto='\${\frac{1}{[d]}}' fijo='no' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_center_center' ">
+    <param name="G_13" value="espacio='E1' tipo='texto' color='000000' dibujar-si='paso=3' coord_abs='no' expresión='(10/(3*b)+0.25,-1.2)' texto='\${\frac{1}{[b]}}' fijo='no' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_center_center' ">
+    <param name="G_14" value="espacio='E1' tipo='texto' color='000000' dibujar-si='paso=3' coord_abs='no' expresión='(10/(3*b)+0.25,10/(2*d))' texto='\${\frac{1}{[b*d]}}' fijo='no' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_center_center' ">
+    <param name="G_15" value="espacio='E1' tipo='texto' color='000000' dibujar-si='paso=1' coord_abs='sí' expresión='[20,110]' texto='Se representa gráficamente la fracción \b{\${\frac{1}{[b]}}}.' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_16" value="espacio='E1' tipo='texto' color='000000' dibujar-si='paso=2' coord_abs='sí' expresión='[20,110]' texto='Tomando como referencia la parte que corresponde \na \b{\${\frac{1}{[b]}}} representamos en ella la fracción \b{\${\frac{1}{[d]}}}.' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_17" value="espacio='E1' tipo='texto' color='000000' dibujar-si='paso=3' coord_abs='sí' expresión='[20,110]' texto='Con relación a la unidad inicial la parte amarilla queda \nrepresentada por la fracción \b{\${\frac{1}{[b*d]}}}. \n\nPor tanto: \b{\${\frac{1}{[d]}}} de \b{\${\frac{1}{[b]}}} es igual a \b{\${\frac{1}{[d]} × \frac{1}{[b]} = \frac{1}{[b*d]}}}' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+  </ajs>
+
+
+
+</body>
+</html>

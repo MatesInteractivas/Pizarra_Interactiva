@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>El diccionario</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='450' fijo='sí' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='verificar' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Verificar' expresión='((pleca._w-120)/2,pleca._h-35-15,120,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='verif0=1;verif1=1;verif2=1;verif3=1;verif4=1;verif5=1;verif6=1;verif=1' activo-si='sitodas=1' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_02" value="id='des0' tipo='numérico' interfaz='menú' región='interior' espacio='E1' expresión='(720,Y-5,200,35)' visible='no' opciones=' , Verdadero, Falso' acción='calcular' parámetro='verif0=0' activo-si='(verif0=0)|(des0=0)' evaluar='sí' respuesta='krypto_cbpi' fuente puntos='20' ">
+    <param name="C_03" value="id='des1' tipo='numérico' interfaz='menú' región='interior' espacio='E1' expresión='(720,3.5Y,200,35)' visible='no' opciones=' , Verdadero, Falso' acción='calcular' parámetro='verif1=0' activo-si='(verif1=0)|(des1=0)' evaluar='sí' respuesta='krypto_34pm' fuente puntos='20' ">
+    <param name="C_04" value="id='des2' tipo='numérico' interfaz='menú' región='interior' espacio='E1' expresión='(720,7Y,200,35)' visible='no' opciones=' , Verdadero, Falso' acción='calcular' parámetro='verif2=0' activo-si='(verif2=0)|(des2=0)' evaluar='sí' respuesta='krypto_3fpq' fuente puntos='20' ">
+    <param name="C_05" value="id='des3' tipo='numérico' interfaz='menú' región='interior' espacio='E1' expresión='(720,10.5Y,200,35)' visible='no' opciones=' , Verdadero, Falso' acción='calcular' parámetro='verif3=0' activo-si='(verif3=0)|(des3=0)' evaluar='sí' respuesta='krypto_3mou' fuente puntos='20' ">
+    <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='X=20;Y=30;vertexto=0;' ">
+    <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='si01=(des0=1)|(des0=2);si11=(des1=1)|(des1=2);si21=(des2=1)|(des2=2);si31=(des3=1)|(des3=2);sitodas=(si01+si11+si21+si31=4);sitodas1=(sitodas)?1:sitodas1;des01=(verif0=1)&(des0.ok=1);des11=(verif1=1)&(des1.ok=1);des21=(verif2=1)&(des2.ok=1);des31=(verif3=1)&(des3.ok=1);vertexto=(des01+des11+des21+des31=4);vertexto1=(vertexto)?1:vertexto1;verifn=((verif0=1)+(verif1=1)+(verif2=1)+(verif3=1)=4);verifn1=(verifn)?1:verifn1;buenas=des0.ok+des1.ok+des2.ok+des3.ok;malas=4-buenas;;' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_h.svg' clip='(360,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='Lee las siguientes oraciones y selecciona en el menú desplegable si lo que dicen es verdadero o falso. Medítalo bien porque sólo puedes responder una vez.' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,450)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='E1' tipo='texto' color='000000' coord_abs='sí' expresión='[X,Y-5]' texto='• Si necesitas saber cómo se traduce la palabra \i{salud} al inglés, debes \n   consultar un diccionario enciclopédico.' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_06" value="espacio='E1' tipo='texto' color='000000' coord_abs='sí' expresión='[X,3.5Y+2]' texto='• En la doble página de un diccionario que tenga como palabras guía \n   \i{comer} y \i{cometa} se encuentra la palabra \i{comeremos}.' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_07" value="espacio='E1' tipo='texto' color='000000' coord_abs='sí' expresión='[X,7Y+2]' texto='• En el diccionario, la palabra guía de la página derecha te indica la \n   primera entrada que aparece en esa página derecha.' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_08" value="espacio='E1' tipo='texto' color='000000' coord_abs='sí' expresión='[X,10.5Y+2]' texto='• Los diccionarios de sinónimos y antónimos proporcionan listas de \n   palabras de significado parecido y de significado contrario.' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_09" value="espacio='E1' tipo='texto' color='34495e' dibujar-si='(verif0=1)&(des0=1)' coord_abs='sí' expresión='[X+10,2Y+15]' texto='→ Deberías consultar un diccionario bilingüe, en este caso español-inglés.' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_10" value="espacio='E1' tipo='texto' color='34495e' dibujar-si='(verif1=1)&(des1=1)' coord_abs='sí' expresión='[X+10,4.5Y+20]' texto='→ La palabra \i{comeremos} no está en el diccionario porque es un verbo conjugado. \n    La palabra \i{comercio}, por ejemplo, sí que aparecería en esta doble página.' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_11" value="espacio='E1' tipo='texto' color='34495e' dibujar-si='(verif2=1)&(des2=1)' coord_abs='sí' expresión='[X+10,8Y+20]' texto='→ La palabra guía de la página derecha te indica la última palabra \n    que se define en esa doble página de diccionario.' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_12" value="espacio='E1' tipo='texto' color='34495e' dibujar-si='(verif3=1)&(des3=2)' coord_abs='sí' expresión='[X+10,11.5Y+20]' texto='→ Y recuerda que son muy útiles para enriquecer tu vocabulario.' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_13" value="espacio='E1' tipo='texto' color='34cc67' dibujar-si='vertexto=1' coord_abs='sí' expresión='[E1._w/2,E1._h-20]' texto='¡Enhorabuena! No has cometido ningún error.' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_bottom_center' ">
+    <param name="G_14" value="espacio='E1' tipo='texto' color='d40809' dibujar-si='(verifn=1)&(malas>1)' coord_abs='sí' expresión='[E1._w/2,E1._h-20]' texto='Has cometido \b{[malas]} errores. Fíjate en la explicación de cada uno.' decimales='0' ancho='1' fuente puntos='20' align='a_left' anchor='a_bottom_center' ">
+    <param name="G_15" value="espacio='E1' tipo='texto' color='d40809' dibujar-si='(verifn=1)&(malas=1)' coord_abs='sí' expresión='[E1._w/2,E1._h-20]' texto='Has cometido un error. Fíjate en su explicación.' ancho='1' fuente puntos='20' align='a_left' anchor='a_bottom_center' ">
+    <param name="G_16" value="espacio='E1' tipo='imagen' dibujar-si='(verif)&&(des0.ok)' coord_abs='sí' expresión='(950,Y+12,0.7)' archivo='images/ok.svg' ">
+    <param name="G_17" value="espacio='E1' tipo='imagen' dibujar-si='(verif)&&(!des0.ok)' coord_abs='sí' expresión='(950,Y+12,0.7)' archivo='images/ko.svg' ">
+    <param name="G_18" value="espacio='E1' tipo='imagen' dibujar-si='(verif)&&(des1.ok)' coord_abs='sí' expresión='(950,3.5*Y+18,0.7)' archivo='images/ok.svg' ">
+    <param name="G_19" value="espacio='E1' tipo='imagen' dibujar-si='(verif)&&(!des1.ok)' coord_abs='sí' expresión='(950,3.5*Y+18,0.7)' archivo='images/ko.svg' ">
+    <param name="G_20" value="espacio='E1' tipo='imagen' dibujar-si='(verif)&&(des2.ok)' coord_abs='sí' expresión='(950,7*Y+18,0.7)' archivo='images/ok.svg' ">
+    <param name="G_21" value="espacio='E1' tipo='imagen' dibujar-si='(verif)&&(!des2.ok)' coord_abs='sí' expresión='(950,7*Y+18,0.7)' archivo='images/ko.svg' ">
+    <param name="G_22" value="espacio='E1' tipo='imagen' dibujar-si='(verif)&&(des3.ok)' coord_abs='sí' expresión='(950,10.5*Y+18,0.7)' archivo='images/ok.svg' ">
+    <param name="G_23" value="espacio='E1' tipo='imagen' dibujar-si='(verif)&&(!des3.ok)' coord_abs='sí' expresión='(950,10.5*Y+18,0.7)' archivo='images/ko.svg' ">
+  </ajs>
+
+
+
+</body>
+</html>

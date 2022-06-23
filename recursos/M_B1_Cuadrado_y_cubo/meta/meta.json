@@ -1,0 +1,13 @@
+{
+  "nivel": [
+    "Primaria"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Números y operaciones"
+  ], 
+  "titulo": "Cuadrado y Cubo", 
+  "descripcion": "Ofrecer actividades que permitan al alumno practicar con los cuadrados y cubos.",
+  "resena": "Ofrecer actividades que permitan al alumno practicar con los cuadrados y cubos.",
+  "id": "M_B1_Cuadrado_y_cubo"
+}

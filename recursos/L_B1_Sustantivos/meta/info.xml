@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="L_B1_Sustantivos" 
+	nivel="Primaria" 
+	area="Español, Gramática"
+	plataforma="HTML 5" 
+	>
+	<titulo><![CDATA[
+		Sustantivos
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+		Conocer el concepto de sustantivo y sus tipos.
+	]]></Descripcion>
+</recurso>

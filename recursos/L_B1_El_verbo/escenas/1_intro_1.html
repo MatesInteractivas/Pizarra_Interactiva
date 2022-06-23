@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>El verbo</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='500' fijo='sí' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='o1' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Nombres' expresión='(500+50,90,120,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='o1=1;o2=0;' dibujar-si='cont=0' activo-si='o2=0;' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_02" value="id='o2' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Verbos' expresión='(E1._w-120-50-25,90,120,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='o2=1;o1=0;' dibujar-si='cont=0' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_03" value="id='cont' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Continuar' expresión='((E1._w-120)/2,E1._h-35-15,120,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='cont=1;' dibujar-si='cont=0' activo-si='o2=1' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_04" value="id='n1' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Las marcadas en azul' expresión='(500+(470-250)/2,150,250,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='n1=1;n2=0;' dibujar-si='(cont=1)&(n1=0)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_05" value="id='n2' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Las marcadas en rojo' expresión='(500+(470-250)/2,150+50,250,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='n2=1;n1=0;' dibujar-si='(cont=1)&(n1=0)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_06" value="id='cont2' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Continuar' expresión='((E1._w-120)/2,E1._h-35-15,120,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='cont2=1;' dibujar-si='(n1=1)&(cont2=0)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_07" value="id='n3' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='¡Resuelve estas dudas!' expresión='(500+(470-250)/2,150,250,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='n3=1;' dibujar-si='(cont2=1)&(n3=0)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_08" value="id='n4' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Lo que no es la raíz...' expresión='(500+(470-250)/2,170,250,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='n4=1;' dibujar-si='(n3=1)&(n4=0)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='dia.x=270;dia.y=20;dia.w=195;dia.h=240;dia.pos=&squot;arr&squot;' ">
+    <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_h.svg' clip='(0,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='Lee atentamente lo que dice el personaje. ¿Se le entiende bien? ¿Qué palabras tendría que cambiar para que se entendiera lo que quiere decir?' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,500)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='E1' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(140,185,0.5)' archivo='images/tartan.svg' ">
+    <param name="G_06" value="espacio='E1' tipo='macro' fondo='sí' coord_abs='no' nombre='dia' expresión='macros/msg_bubble.txt' posini='[0,0]' ">
+    <param name="G_07" value="espacio='E1' tipo='texto' color='000000' dibujar-si='cont=0' coord_abs='sí' expresión='[dia.x+30,dia.y+15]' texto='Llamarme \nTartán y vivir \ncon Chato.\nComer plátanos \nporque trepar \na un árbol y \ncogerlos. \n¡Tomar uno! ' ancho='1' fuente puntos='20' align='a_center' anchor='a_top_left' ">
+    <param name="G_08" value="espacio='E1' tipo='texto' color='95a5a6' dibujar-si='(cont=1)&(n3=0)' coord_abs='sí' expresión='[dia.x+30,dia.y+15]' texto='\color{3742fa}{Llam}\color{d40809}{ar}me \nTartán y \color{3742fa}{viv}\color{d40809}{ir} \ncon Chato.\n\color{3742fa}{Com}\color{d40809}{er} plátanos \nporque \color{3742fa}{trep}\color{d40809}{ar} \na un árbol y \n\color{3742fa}{cog}\color{d40809}{er}los. \n¡\color{3742fa}{Tom}\color{d40809}{ar} uno! ' ancho='1' fuente puntos='20' align='a_center' anchor='a_top_left' ">
+    <param name="G_09" value="espacio='E1' tipo='texto' color='000000' dibujar-si='n3=1' coord_abs='sí' expresión='[dia.x+30,dia.y+15]' texto='Me \color{3498db}{llam\u{o}} Tartán \ny \color{3498db}{viv\u{o}} con Chato.\n\color{3498db}{Com\u{emos}} \nplátanos \nporque \color{3498db}{trep\u{é}} \na un árbol y \nlos \color{3498db}{cog\u{í}}. \n¡\color{3498db}{Tom\u{a}} uno! ' ancho='1' fuente puntos='20' align='a_center' anchor='a_top_left' ">
+    <param name="G_10" value="espacio='E1' tipo='texto' color='000000' dibujar-si='cont=0' coord_abs='sí' expresión='[500,20]' texto='¿Qué palabras no está empleando correctamente Tartán? ¿Sabes para qué sirven estas palabras? ' ancho='470' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_11" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(cont=1)&(cont2=0)' coord_abs='sí' expresión='[500,20]' texto='Fíjate de nuevo en el texto. Aunque Tartán no esté empleando correctamente los verbos, seguro que más o menos entiendes lo que dice. ¿Qué parte de los verbos expresa las acciones o estados? ' ancho='470' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_12" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(cont2=1)&(n3=0)' coord_abs='sí' expresión='[500,20]' texto='Tartán habla con infinitivos, por eso puedes entender el significado de los verbos, pero... ¿Quién se come los plátanos? ¿Quién y cuándo los ha conseguido? ¿A quién le está ofreciendo uno? ' ancho='470' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_13" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(n3=1)&(n4=0)' coord_abs='sí' expresión='[500,20]' texto='Fíjate en el texto ahora... Por fin Tartán ha aprendido a emplear correctamente los verbos y ahora puedes entender exactamente todo lo que quería decirte. ¿Qué les faltaba a los verbos para que se pudiera entender a Tartán? ' ancho='470' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_14" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(o2=1)&(cont=0)' coord_abs='sí' expresión='[500+470/2,150]' texto='\b{\color{34cc67}{¡Correcto!}}\n\nLos \b{verbos} son palabras que expresan \b{acciones} o \b{estados}.' ancho='400' fuente puntos='20' align='a_center' anchor='a_top_center' ">
+    <param name="G_15" value="espacio='E1' tipo='texto' color='d40809' dibujar-si='o1=1' coord_abs='sí' expresión='[500+470/2,150]' texto='No es correcto.' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_16" value="espacio='E1' tipo='texto' color='34cc67' dibujar-si='(n1=1)&(cont2=0)' coord_abs='sí' expresión='[500+470/2,250]' texto='¡Correcto!' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_17" value="espacio='E1' tipo='texto' color='000000' dibujar-si='n1=1' coord_abs='sí' expresión='[20,E1._h-70]' texto='La \b{raíz} del verbo aporta el \b{significado} (qué). Para encontrar la raíz, hay que separar del \b{infinitivo} las terminaciones \b{-ar}, \b{-er} o \b{-ir}.' ancho='400' fuente puntos='20' align='a_justify' anchor='a_bottom_left' ">
+    <param name="G_18" value="espacio='E1' tipo='texto' color='d40809' dibujar-si='n2=1' coord_abs='sí' expresión='[500+470/2,250]' texto='No es correcto.' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_19" value="espacio='E1' tipo='texto' color='000000' dibujar-si='n4=1' coord_abs='sí' expresión='[E1._w-30,E1._h-70]' texto='Las \b{desinencias} del verbo indican \b{persona} y \b{número} (quién o quiénes), \b{tiempo} (cuándo) y \b{modo} (cómo). ' ancho='400' fuente puntos='20' align='a_justify' anchor='a_bottom_right' ">
+  </ajs>
+
+<script type="descartes/macro" id="macros/msg_bubble.txt">
+id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='x=10;y=10;w=400;h=50;color=&squot;ffffff&squot;;borde=&squot;34495e&squot;;punta_w=15;punta_h=15;txt=&squot;&squot;;txt_size=20;dir=&squot;izq&squot;;pos=&squot;abj&squot;;' 
+id='CALCULOS' algoritmo='sí' evaluar='siempre' 
+espacio='E1' tipo='rectángulo' color='(_Rojo_(borde),_Verde_(borde),_Azul_(borde),00)' dibujar-si='dir==&squot;izq&squot;' coord_abs='sí' expresión='(x+punta_w,y,w-punta_w,h)' relleno='(_Rojo_(color),_Verde_(color),_Azul_(color),00)' ancho='1' border_radius='6' info='izq' 
+espacio='E1' tipo='polígono' color='(_Rojo_(borde),_Verde_(borde),_Azul_(borde),00)' dibujar-si='(dir==&squot;izq&squot;)&&(pos==&squot;abj&squot;)' coord_abs='sí' expresión='(x+punta_w,y+h-punta_h)(x,y+h)(x+punta_w*2,y+h)' relleno='(_Rojo_(color),_Verde_(color),_Azul_(color),00)' ancho='1' info='punta izq abajo' 
+espacio='E1' tipo='polígono' color='(_Rojo_(borde),_Verde_(borde),_Azul_(borde),00)' dibujar-si='(dir==&squot;izq&squot;)&&(pos!=&squot;abj&squot;)' coord_abs='sí' expresión='(x+punta_w,y+punta_h)(x,y)(x+punta_w*2,y)' relleno='(_Rojo_(color),_Verde_(color),_Azul_(color),00)' ancho='1' info='punta izq arriba' 
+espacio='E1' tipo='texto' color='000000' dibujar-si='dir==&squot;izq&squot;' coord_abs='sí' expresión='(x+punta_w+10,y+10)' texto='[txt]' fijo='no' ancho='w-punta_w-20' fuente puntos='txt_size' align='a_justify' anchor='a_top_left' info='izq' 
+espacio='E1' tipo='rectángulo' color='(_Rojo_(borde),_Verde_(borde),_Azul_(borde),00)' dibujar-si='dir!=&squot;izq&squot;' coord_abs='sí' expresión='(x,y,w-punta_w,h)' relleno='(_Rojo_(color),_Verde_(color),_Azul_(color),00)' ancho='1' border_radius='6' info='der' 
+espacio='E1' tipo='polígono' color='(_Rojo_(borde),_Verde_(borde),_Azul_(borde),00)' dibujar-si='(dir!=&squot;izq&squot;)&&(pos==&squot;abj&squot;)' coord_abs='sí' expresión='(x+w-punta_w,y+h-punta_h)(x+w,y+h)(x+w-punta_w*2,y+h)' relleno='(_Rojo_(color),_Verde_(color),_Azul_(color),00)' ancho='1' info='punta der abajo' 
+espacio='E1' tipo='polígono' color='(_Rojo_(borde),_Verde_(borde),_Azul_(borde),00)' dibujar-si='(dir!=&squot;izq&squot;)&&(pos!=&squot;abj&squot;)' coord_abs='sí' expresión='(x+w-punta_w,y+punta_h)(x+w,y)(x+w-punta_w*2,y)' relleno='(_Rojo_(color),_Verde_(color),_Azul_(color),00)' ancho='1' info='punta der arriba' 
+espacio='E1' tipo='texto' color='000000' dibujar-si='dir!=&squot;izq&squot;' coord_abs='sí' expresión='(x+10,y+10)' texto='[txt]' fijo='no' ancho='w-punta_w-20' fuente puntos='txt_size' align='a_justify' anchor='a_top_left' info='der' 
+</script>
+
+</body>
+</html>

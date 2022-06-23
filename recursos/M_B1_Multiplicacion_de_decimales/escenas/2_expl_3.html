@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Multiplicación de decimales</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' despl_imagen='expand.' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='450' fijo='sí' escala='30' O.x='-50%' O.y='65%' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='n1' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Siguiente' expresión='((pleca._w-130)/2,pleca._h-35-15,130,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='n=n+1' activo-si='n<5' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_02" value="id='n2' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Otro ejemplo' expresión='(pleca._w-150-15,pleca._h-35-15,150,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='n=0;mult1=ent(rnd*900+100);mult2=ent(rnd*900+100);kk=1;' activo-si='n>4' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='mult1=ent(rnd*900+100);mult2=ent(rnd*900+100);mult2=(mult2=ent(mult2/10)*10)?mult2+2:mult2;mult1=(mult1=ent(mult1/10)*10)?mult1+2:mult1;;pos1.x=450;pos1.y=140' ">
+    <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='umult2=mult2-ent(mult2/10)*10;dmult2=ent(mult2/10)-ent(mult2/100)*10;cmult2=ent(mult2/100)-ent(mult2/1000)*10;mmult2=ent(mult2/1000);pro1=umult2*mult1;pro2=dmult2*mult1;suma=pro1+pro*10;' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_m.svg' clip='(120,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='Observa como se realiza la multiplicación entre números con dos decimales. Pulsa el botón “Siguiente” para ver el siguiente paso de la operación.' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,450)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='E1' tipo='texto' color='000000' coord_abs='sí' expresión='[E1._w/2,20]' texto='Multiplicar \b{[mult1/100]} por \b{[mult2/100]}' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_06" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(n=1)' coord_abs='sí' expresión='[20,60]' texto='Ahora tienes dos números con dos decimales cada uno. El procedimiento es el mismo que antes.' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_07" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(n=2)' coord_abs='sí' expresión='[20,60]' texto='Coloca los números para multiplicarlos uno debajo del otro.' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_08" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(n=3)' coord_abs='sí' expresión='[20,60]' texto='Multiplica sin tener en cuenta los decimales ' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_09" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(n=4)' coord_abs='sí' expresión='[20,60]' texto='Cuenta el número de decimales entre los dos números que son cuatro. ' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_10" value="espacio='E1' tipo='texto' color='7f8c8d' dibujar-si='(n=4)' coord_abs='sí' expresión='[600,100]' texto='Coloca este mismo número \nde decimales a la respuesta' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_11" value="espacio='E1' tipo='rectángulo' color='ffffffff' dibujar-si='(n=4)' coord_abs='sí' expresión='(pos1.x+58,pos1.y-45,70,90)' relleno='55bdc3c7' ancho='1' ">
+    <param name="G_12" value="espacio='E1' tipo='texto' color='d40809' dibujar-si='(n>1)' coord_abs='sí' expresión='[pos1.x,pos1.y]' texto='×' ancho='1' negrita='sí' fuente puntos='40' align='a_left' anchor='a_top_left' ">
+    <param name="G_13" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(n>1)' coord_abs='sí' expresión='[pos1.x+30,pos1.y-40]' texto='[mult1/100]' fijo='no' ancho='1' negrita='sí' fuente puntos='40' align='a_left' anchor='a_top_left' ">
+    <param name="G_14" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(n>1)' coord_abs='sí' expresión='[pos1.x+30,pos1.y]' texto='[mult2/100]' fijo='no' ancho='1' negrita='sí' fuente puntos='40' align='a_left' anchor='a_top_left' ">
+    <param name="G_15" value="espacio='E1' tipo='segmento' color='34495e' dibujar-si='(n>1)' coord_abs='sí' expresión='(pos1.x-10,pos1.y+45)(pos1.x+120,pos1.y+45)' tamaño='0' ancho='3' font_family='Monospaced' fuente puntos='12' ">
+    <param name="G_16" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(n>2)&&(umult2*mult1==0)' coord_abs='sí' expresión='[pos1.x+112,pos1.y+45]' texto='000' ancho='1' negrita='sí' cursiva='sí' fuente puntos='40' align='a_left' anchor='a_top_left' ">
+    <param name="G_17" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(n>2)&&(umult2*mult1>0)' coord_abs='sí' expresión='[pos1.x+112,pos1.y+45]' texto='[umult2*mult1]' fijo='no' ancho='1' negrita='sí' fuente puntos='40' align='a_left' anchor='a_top_right' ">
+    <param name="G_18" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(n>2)&&(dmult2*mult1==0)' coord_abs='sí' expresión='[pos1.x+112-25,pos1.y+85]' texto='000' ancho='1' negrita='sí' fuente puntos='40' align='a_left' anchor='a_top_right' ">
+    <param name="G_19" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(n>2)&&(dmult2*mult1>0)' coord_abs='sí' expresión='[pos1.x+112-25,pos1.y+85]' texto='[dmult2*mult1]' fijo='no' ancho='1' negrita='sí' fuente puntos='40' align='a_left' anchor='a_top_right' ">
+    <param name="G_20" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(n>2)&&(cmult2*mult1=000)' coord_abs='sí' expresión='[542-2d,170]' texto='000' ancho='1' negrita='sí' fuente puntos='40' align='a_left' anchor='a_top_right' ">
+    <param name="G_21" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(n>2)&&(cmult2*mult1>0)' coord_abs='sí' expresión='[pos1.x+112-50,pos1.y+125]' texto='[cmult2*mult1]' fijo='no' ancho='1' negrita='sí' fuente puntos='40' align='a_left' anchor='a_top_right' ">
+    <param name="G_22" value="espacio='E1' tipo='segmento' color='34495e' dibujar-si='(n>2)' coord_abs='sí' expresión='(pos1.x-45,pos1.y+168)(pos1.x+130,pos1.y+168)' tamaño='0' ancho='3' font_family='Monospaced' fuente puntos='12' ">
+    <param name="G_23" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(n>2)' coord_abs='sí' expresión='[pos1.x+112,pos1.y+170]' texto='[mult1*mult2]' fijo='no' ancho='1' negrita='sí' fuente puntos='40' align='a_left' anchor='a_top_right' ">
+    <param name="G_24" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(n=5)' coord_abs='sí' expresión='[E1._w/2,E1._h-20]' texto='Así \b{[mult1/100]} por \b{[mult2/100]} es \b{[toFixed(mult1*mult2/10000,4)]}' ancho='1' fuente puntos='20' align='a_left' anchor='a_bottom_center' ">
+  </ajs>
+
+
+
+</body>
+</html>

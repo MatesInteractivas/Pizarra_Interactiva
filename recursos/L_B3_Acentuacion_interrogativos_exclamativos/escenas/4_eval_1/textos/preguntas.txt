@@ -1,7 +1,0 @@
-5
-
-'¿Cuáles preguntas son de interrogación directa?'
-'¿Cuáles preguntas son de interrogación indirecta?'
-'¿Cuáles expresiones estan bien escrítas?'
-'¿cuáles expresiones tienen bien marcadas las tíldes?'
-'¿Cuáles expresiones estan mal escrítas?'

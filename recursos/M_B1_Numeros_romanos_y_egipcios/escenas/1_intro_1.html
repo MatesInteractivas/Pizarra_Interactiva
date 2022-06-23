@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Números romanos y egipcios</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='500' fijo='sí' escala='50' O.x='250' O.y='-10' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='g1' tipo='gráfico' espacio='E1' color='ffffff' color-int='ccff0000' tamaño='50' expresión='(0,0)' dibujar-si='tt' info='tt' ">
+    <param name="C_02" value="id='g1.x' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='g1.x' expresión='(0,0)' valor='3' min='-2' max='3.5' visible='sí' ">
+    <param name="C_03" value="id='g1.y' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='g1.y' expresión='(0,0)' valor='-3' min='-3.9' max='3.05' visible='sí' ">
+    <param name="A_01" value="id='a1' algoritmo='sí' evaluar='siempre' hacer='r1=(g1.x<0.7)&(g1.x>-0.7)&(g1.y>-4)&(g1.y<-3);r2=(g1.x<0.7)&(g1.x>-0.7)&(g1.y>-3)&(g1.y<-2);r3=(g1.x<0.7)&(g1.x>-0.7)&(g1.y>-2)&(g1.y<-1);r4=(g1.x<0)&(g1.x>-1.4)&(g1.y>-1)&(g1.y<0);r5=(g1.x<1.4)&(g1.x>0)&(g1.y>-1)&(g1.y<0);r6=(g1.x<0.7)&(g1.x>-0.7)&(g1.y>0)&(g1.y<1);r7=(g1.x<0)&(g1.x>-1.4)&(g1.y>1)&(g1.y<2);r8=(g1.x<1.4)&(g1.x>0)&(g1.y>1)&(g1.y<2);r9=(g1.x<0.7)&(g1.x>-0.7)&(g1.y>2)&(g1.y<3);r10=(g1.x<0.7)&(g1.x>-0.7)&(g1.y>3)&(g1.y<4);;z1=(r1=1)?1:z1;z2=(r2=1)?1:z2;z3=(r3=1)?1:z3;z4=(r4=1)?1:z4;z5=(r5=1)?1:z5;z6=(r6=1)?1:z6;z7=(r7=1)?1:z7;z8=(r8=1)?1:z8;z9=(r9=1)?1:z9;z10=(r10=1)?1:z10;;todos=z1+z2+z3+z4+z5+z6+z7+z8+z9+z10' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_m.svg' clip='(0,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='Arrastra el soldado sobre las casillas de la Rayuela y explora los usos de la numeración romana.' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,500)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='E1' tipo='imagen' fondo='sí' coord_abs='no' expresión='(-1.5,3.75)' archivo='images/rayuela.svg' ">
+    <param name="G_06" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(g1.x>2)' coord_abs='sí' expresión='[20,20]' texto='La \b{rayuela} es un juego inventado por los romanos. \n\nLos soldados romanos estaban obligados a jugar el juego como un ejercicio de entrenamiento para aumentar su \b{fuerza} y \b{resistencia}.\n\nTenían que “\b{jugar}” con su equipo completo: con su armadura, lanza, espada, escudo y casco.' ancho='E1._w/2-40' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_07" value="espacio='E1' tipo='imagen' dibujar-si='(g1.x>2)' coord_abs='sí' expresión='(210,300)' archivo='images/estampilla.svg' ">
+    <param name="G_08" value="espacio='E1' tipo='texto' color='000000' dibujar-si='r1=1' coord_abs='sí' expresión='[20,20]' texto='Los números romanos se usan en los nombres propios como son los de los \b{papas}, los \b{reyes}, \b{dinastías} y, personajes de linajes muy elevados desde el punto de vista social.' ancho='E1._w/2-40' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_09" value="espacio='E1' tipo='texto' color='000000' dibujar-si='r2=1' coord_abs='sí' expresión='[20,20]' texto='Se utilizan también en \b{congresos}, \b{ferias}, \b{olimpíadas}, \b{festivales}, \b{simposios}, \b{certámenes}.\n\nPor ejemplo:\n\n\b{IV} Congreso Internacional...\n\b{XXIII} Feria del Libro...' ancho='E1._w/2-40' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_10" value="espacio='E1' tipo='texto' color='000000' dibujar-si='r3=1' coord_abs='sí' expresión='[20,20]' texto='También aplican en la numeración de \b{volúmenes}, \b{tomos}, \b{partes}, \b{libros}, \b{capítulos}, \b{actos}, \b{cuadros} o \b{escenas} en las piezas teatrales.\n\nPor ejemplo: \n\ntomo \b{II}, \nlibro \b{III}, \ncapítulo \b{VI}, \nescena \b{VII}.' ancho='E1._w/2-40' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_11" value="espacio='E1' tipo='texto' color='000000' dibujar-si='r4=1' coord_abs='sí' expresión='[20,20]' texto='En \b{monumentos} o \b{lápidas conmemorativas}, para indicarlos años.\n\nEsta costumbre está cayendo en desuso y actualmente es más normal usar la numeración arábiga. ' ancho='E1._w/2-40' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_12" value="espacio='E1' tipo='texto' color='000000' dibujar-si='r5=1' coord_abs='sí' expresión='[20,20]' texto='Muchas películas utilizan números romanos en sus \b{títulos}.\n\nDentro de las más reconocidas están películas como: Star Wars \b{VI} y Rocky \b{V}.' ancho='E1._w/2-40' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_13" value="espacio='E1' tipo='texto' color='000000' dibujar-si='r6=1' coord_abs='sí' expresión='[20,20]' texto='En la actualidad se mantiene el uso de números romanos, para indicar los \b{siglos}.\n\nPor ejemplo:\n\nsiglo \b{XV},\nsiglo \b{XXI}. ' ancho='E1._w/2-40' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_14" value="espacio='E1' tipo='texto' color='000000' dibujar-si='r7=1' coord_abs='sí' expresión='[20,20]' texto='Para indicar las \b{dinastías} en ciertas culturas.\n\nPor ejemplo:\n\nLos faraones de la \b{XVIII} dinastía. Se escriben normalmente antepuestos al nombre. ' ancho='E1._w/2-40' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_15" value="espacio='E1' tipo='texto' color='000000' dibujar-si='r8=1' coord_abs='sí' expresión='[20,20]' texto='En la numeración de \b{volúmenes}, \b{tomos}, \b{partes}, \b{libros}, \b{capítulos} o cualquier otra división de una obra.\n\nDe igual manera, en la numeración de \b{actos}, \b{cuadros} o \b{escenas} en las piezas teatrales.\n\nPor ejemplo:\n\ntomo \b{IV}, \ncapítulo \b{VI}, \nescena \b{X}.' ancho='E1._w/2-40' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_16" value="espacio='E1' tipo='texto' color='000000' dibujar-si='r9=1' coord_abs='sí' expresión='[20,20]' texto='Para numerar las páginas de \b{secciones preliminares} de una \b{obra} con el fin de distinguirlas de las del cuerpo central.' ancho='E1._w/2-40' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_17" value="espacio='E1' tipo='texto' color='000000' dibujar-si='r10=1' coord_abs='sí' expresión='[20,20]' texto='En la \b{secuencia} de juegos de videos, \b{logotipos} de los Juegos Olímpicos, y en los \b{créditos} de películas y programas de televisión. ' ancho='E1._w/2-40' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_18" value="espacio='E1' tipo='texto' color='34cc67' dibujar-si='todos=10' coord_abs='sí' expresión='[20,E1._h-20]' texto='¡Muy bien! Continúa con la siguiente escena.' ancho='1' negrita='sí' fuente puntos='20' align='a_justify' anchor='a_bottom_left' ">
+    <param name="G_19" value="espacio='E1' tipo='polígono' color='000000' dibujar-si='r1=1' coord_abs='no' expresión='(-0.75,-3)(0.75,-3)(0.75,-4)(-0.75,-4)' relleno='d2ff00ff' ancho='0' ">
+    <param name="G_20" value="espacio='E1' tipo='polígono' color='000000' dibujar-si='r2=1' coord_abs='no' expresión='(-0.75,-2)(0.75,-2)(0.75,-3)(-0.75,-3)' relleno='d2ff00ff' ancho='0' ">
+    <param name="G_21" value="espacio='E1' tipo='polígono' color='000000' dibujar-si='r3=1' coord_abs='no' expresión='(-0.75,-1)(0.75,-1)(0.75,-2)(-0.75,-2)' relleno='d2ff00ff' ancho='0' ">
+    <param name="G_22" value="espacio='E1' tipo='polígono' color='000000' dibujar-si='r4=1' coord_abs='no' expresión='(-1.5,0)(0,0)(0,-1)(-1.5,-1)' relleno='d2ff00ff' ancho='0' ">
+    <param name="G_23" value="espacio='E1' tipo='polígono' color='000000' dibujar-si='r5=1' coord_abs='no' expresión='(0,0)(1.5,0)(1.5,-1)(0,-1)' relleno='d2ff00ff' ancho='0' ">
+    <param name="G_24" value="espacio='E1' tipo='polígono' color='000000' dibujar-si='r6=1' coord_abs='no' expresión='(-0.75,0)(0.75,0)(0.75,1)(-0.75,1)' relleno='d2ff00ff' ancho='0' ">
+    <param name="G_25" value="espacio='E1' tipo='polígono' color='000000' dibujar-si='r7=1' coord_abs='no' expresión='(-1.5,2)(0,2)(0,1)(-1.5,1)' relleno='d2ff00ff' ancho='0' ">
+    <param name="G_26" value="espacio='E1' tipo='polígono' color='000000' dibujar-si='r8=1' coord_abs='no' expresión='(0,2)(1.5,2)(1.5,1)(0,1)' relleno='d2ff00ff' ancho='0' ">
+    <param name="G_27" value="espacio='E1' tipo='polígono' color='000000' dibujar-si='r9=1' coord_abs='no' expresión='(-0.75,2)(0.75,2)(0.75,3)(-0.75,3)' relleno='d2ff00ff' ancho='0' ">
+    <param name="G_28" value="espacio='E1' tipo='arco' color='000000' dibujar-si='r10=1' coord_abs='no' centro='(0,3)' radio='0.74' inicio='0' fin='180' relleno='d20000ff' ancho='0' font_family='Monospaced' fuente puntos='12' ">
+    <param name="G_29" value="espacio='E1' tipo='imagen' coord_abs='no' expresión='(g1.x,g1.y,0.5,0.5)' archivo='images/soldado.png' ">
+  </ajs>
+
+
+
+</body>
+</html>

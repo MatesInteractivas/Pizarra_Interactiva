@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Unidades de masa</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' despl_imagen='expand.' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='450' fijo='sí' O.y='-48' despl_imagen='expand.' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='preg' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Verificar' expresión='((pleca._w-120)/2,pleca._h-35-15,120,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='verifica()' activo-si='Caso!=3' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_02" value="id='nuevo' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Otro ejercicio' expresión='(pleca._w-160-15,pleca._h-35-15,160,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='EjeNuevo();verif=0' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_03" value="id='masder' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E1' expresión='(ctrx,ctry,ctrw,ctrh)' valor='&squot;&squot;' min='0' decimales='13' fijo='no' visible='sí' acción='calcular' parámetro='verifica()' activo-si='Caso!=3' keyboard='sí' kblayout='16x1' kbexp='(194,506)' ">
+    <param name="A_01" value="id='initMacros()' algoritmo='sí' expresión='x' hacer='RA.transp=0.0;RA.rojo=1.0;RA.verde=0.93;RA.azul=0.32;RA.w=360;RA.h=240;RA.x=(E1._w-RA.w)/2;RA.y=((E1._h-50)-RA.h)/2;SOM1.transp=0.8;SOM1.rojo=0.2;SOM1.verde=0.8;SOM1.azul=0.99;SOM1.Top=500;SOM1.Left=300;SOM2.transp=0.8;SOM2.rojo=0.2;SOM2.verde=0.8;SOM2.azul=0.99;SOM2.Top=500;SOM2.Left=300;' tipo='función' ">
+    <param name="A_02" value="id='EjeNuevo()' algoritmo='sí' expresión='x' hacer='verif=0;Caso=0;masder=&squot;&squot;;masader=0;numizq=1+ent(rnd*999.99)/100;ordizq=-3+ent(rnd*9.99);ordder=-3+ent(rnd*9.99);ordder=((ordder=ordizq)&(ordder<6))?ordder+1:ordder-1;ordder=((ordder=ordizq)&(ordder>-3))?ordder-1:ordder+1;masaizq=numizq*(10^ordizq);unidizq=(ordizq=-3)?&squot;mg&squot;:unidizq;unidizq=(ordizq=-2)?&squot;cg&squot;:unidizq;unidizq=(ordizq=-1)?&squot;dg&squot;:unidizq;unidizq=(ordizq=0)?&squot;g&squot;:unidizq;unidizq=(ordizq=1)?&squot;dag&squot;:unidizq;unidizq=(ordizq=2)?&squot;hg&squot;:unidizq;unidizq=(ordizq=3)?&squot;kg&squot;:unidizq;unidizq=(ordizq=4)?&squot;q&squot;:unidizq;unidizq=(ordizq=5)?&squot;mag&squot;:unidizq;unidizq=(ordizq=6)?&squot;ton&squot;:unidizq;unidder=(ordder=-3)?&squot;mg&squot;:unidder;unidder=(ordder=-2)?&squot;cg&squot;:unidder;unidder=(ordder=-1)?&squot;dg&squot;:unidder;unidder=(ordder=0)?&squot;g&squot;:unidder;unidder=(ordder=1)?&squot;dag&squot;:unidder;unidder=(ordder=2)?&squot;hg&squot;:unidder;unidder=(ordder=3)?&squot;kg&squot;:unidder;unidder=(ordder=4)?&squot;q&squot;:unidder;unidder=(ordder=5)?&squot;mag&squot;:unidder;unidder=(ordder=6)?&squot;ton&squot;:unidder' tipo='función' ">
+    <param name="A_03" value="id='verifica()' algoritmo='sí' expresión='x' hacer='masader=(masder==&squot;&squot;)?0:masder*(10^ordder);cocienteverif=(min(masader,masaizq)/max(masader,masaizq));Caso=(masaizq>masader)?1:Caso;Caso=(masader>masaizq)?2:Caso;Caso=(cocienteverif>0.999999999)?3:Caso;cocpesas=masader/masaizq;pesaderSize=(cocpesas<0.333)?pesaizqSize/3:pesaderSize;pesaderSize=((cocpesas>=0.333)&(cocpesas<0.666))?2*pesaizqSize/3:pesaderSize;pesaderSize=((cocpesas>=0.666)&(cocpesas<1))?3*pesaizqSize/4:pesaderSize;pesaderSize=((cocpesas>=1)&(cocpesas<1.333))?5*pesaizqSize/4:pesaderSize;pesaderSize=((cocpesas>=1.333)&(cocpesas<1.666))?4*pesaizqSize/3:pesaderSize;pesaderSize=(cocpesas>=1.666)?5*pesaizqSize/3:pesaderSize;pesaderSize=(Caso=3)?pesaizqSize:pesaderSize;verif=1' tipo='función' ">
+    <param name="A_04" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='initMacros();EjeNuevo();tmx=0.5;tmn=0.2;;ctrw=150;ctrh=35;ctrx=(E1._w-ctrw)/2;ctry=350;' ">
+    <param name="A_05" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='Px=E1._w/2+g.x*E1.escala;Py=(E1._h/2-g.y*E1.escala)-48;masader=(masder=&squot;&squot;)?0:masder*(10^ordder);cociente=(min(masader,masaizq)/max(masader,masaizq));desf=(cociente<=0.333)?0.4:desf;desf=((cociente>0.333)&(cociente<=0.666))?0.27:desf;desf=(cociente>0.666)?0.13:desf;desf=(cociente>0.999999999)?0:desf;angl=(masaizq>masader)?(180/pi)*atan(desf/3):-(180/pi)*atan(desf/3);baseizq=(masaizq>=masader)?0.3-desf:0.3+desf;baseder=(masaizq>=masader)?0.3+desf:0.3-desf;comment=|baseizq=-2+2*(masader/masaizq)|;comment=|baseder=2-2*(masader/masaizq)|;pesaizqSize=((tmx-tmn)/9)*ordizq+(tmx+2*tmn)/3;cocpesas=masader/masaizq;pesaderSize=(cocpesas<0.333)?pesaizqSize/3:pesaderSize;pesaderSize=((cocpesas>=0.333)&(cocpesas<0.666))?2*pesaizqSize/3:pesaderSize;pesaderSize=((cocpesas>=0.666)&(cocpesas<1))?3*pesaizqSize/4:pesaderSize;pesaderSize=((cocpesas>=1)&(cocpesas<1.333))?5*pesaizqSize/4:pesaderSize;pesaderSize=((cocpesas>=1.333)&(cocpesas<1.666))?4*pesaizqSize/3:pesaderSize;pesaderSize=(cocpesas>=1.666)?5*pesaizqSize/3:pesaderSize;pesaderSize=(Caso=3)?pesaizqSize:pesaderSize' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_m.svg' clip='(240,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='Llena el dato faltante en la balanza hasta equilibrarla. Pulsa el botón “Verificar” para corroborar tu resultado.' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,450)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='E1' tipo='texto' color='20303a' dibujar-si='0' coord_abs='sí' expresión='[20,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Times New Roman;}\f1\fs24 masaizq(g) = \f2\fs28\i{\*\mjaformula{\expr masaizq\decimals 13\fixed0}}\f1\fs24\i0\par masader(g) = \f2\fs28\i{\*\mjaformula{\expr masader\decimals 13\fixed0}}\f1\fs24\i0\par entrada der correcta = \f2\fs28\i{\*\mjaformula{\expr numizq*(10^(ordizq-ordder))\decimals 10\fixed0}}\f1\fs24\i0\par ordizq = \f2\fs28\i{\*\mjaformula{\expr ordizq\decimals 2\fixed0}}\f1\fs24\i0\par ordder = \f2\fs28\i{\*\mjaformula{\expr ordder\decimals 2\fixed0}}\f1\fs24\i0\par cociente = \f2\fs28\i{\*\mjaformula{\expr cociente\decimals 7\fixed0}}\f1\fs24\i0\par desf = \f2\fs28\i{\*\mjaformula{\expr desf\decimals 2\fixed1}}\f1\fs24\i0\par baseder = \f2\fs28\i{\*\mjaformula{\expr baseder\decimals 2\fixed1}}\f1\fs24\i0\par baseizq = \f2\fs28\i{\*\mjaformula{\expr baseizq\decimals 2\fixed1}}\f1\fs24\i0}' ancho='1' font_family='Monospaced' fuente puntos='12' align='a_left' anchor='a_top_left' ">
+    <param name="G_06" value="espacio='E1' tipo='imagen' coord_abs='no' expresión='(0,0,0.5,0.5)' archivo='images/barra.png' rotini='angl' ">
+    <param name="G_07" value="espacio='E1' tipo='imagen' coord_abs='no' expresión='(0,-1.4,0.5,0.5)' archivo='images/base.png' ">
+    <param name="G_08" value="espacio='E1' tipo='imagen' coord_abs='no' expresión='(0,0.1,0.6,0.6)' archivo='images/medio.png' ">
+    <param name="G_09" value="espacio='E1' tipo='imagen' coord_abs='no' expresión='(2.75,baseder,1,1)' archivo='images/plato.png' ">
+    <param name="G_10" value="espacio='E1' tipo='imagen' coord_abs='no' expresión='(-2.65,baseizq,1,1)' archivo='images/plato.png' ">
+    <param name="G_11" value="espacio='E1' tipo='imagen' coord_abs='no' expresión='(-2.6,baseizq+(101*pesaizqSize/E1.escala)+0.4,pesaizqSize/4,pesaizqSize/4)' archivo='images/weight.png' ">
+    <param name="G_12" value="espacio='E1' tipo='imagen' dibujar-si='verif&(masader>0)' coord_abs='no' expresión='(2.8,baseder+(101*pesaderSize/E1.escala)+0.4,pesaderSize/4,pesaderSize/4)' archivo='images/pesader.png' ">
+    <param name="G_13" value="espacio='E1' tipo='texto' color='000000' coord_abs='sí' expresión='[ctrx-15,ctry+5]' texto='\b{[numizq]} [unidizq] equivalen a ' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_right' ">
+    <param name="G_14" value="espacio='E1' tipo='texto' color='000000' coord_abs='sí' expresión='[ctrx+ctrw+15,ctry+5]' texto='[unidder]' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_15" value="espacio='E1' tipo='texto' color='d40809' dibujar-si='(Caso=1)&verif' coord_abs='sí' expresión='[E1._w/2,E1._h-20]' texto='La masa de la izquierda es mayor que la de la derecha' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_bottom_center' ">
+    <param name="G_16" value="espacio='E1' tipo='texto' color='d40809' dibujar-si='(Caso=2)&verif' coord_abs='sí' expresión='[E1._w/2,E1._h-20]' texto='La masa de la derecha es mayor que la de la izquierda' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_bottom_center' ">
+    <param name="G_17" value="espacio='E1' tipo='texto' color='34cc67' dibujar-si='(Caso=3)&verif' coord_abs='sí' expresión='[E1._w/2,E1._h-20]' texto='¡Correcto!' ancho='1' negrita='sí' fuente puntos='30' align='a_left' anchor='a_bottom_center' ">
+    <param name="Animación" value="pausa='20' controles='no' auto='sí' repetir='no' inicio='t=0;anim=1;animar=0' hacer='t=t+10;anim=(t<RA1.w-10)?1:0' mientras='t<RA1.w' ">
+  </ajs>
+
+
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Medición del tiempo</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='500' fijo='sí' escala='130' O.x='70' O.y='20' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="E_03" value="tipo='R2' id='conversor' x='594' y='125' ancho='400' alto='420' dibujar-si='vercalc' fijo='sí' despl_imagen='expand.' fondo='fffadd' red='no' red10='no' ejes='no' border_width='2' border_color='afa14f' border_radius='6' ">
+    <param name="C_01" value="id='segE' interfaz='botón' tipo='numérico' región='interior' espacio='conversor' nombre='Segundos' expresión='(btnsep,btnsep,btnw,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='pintamin=0;pintahrs=0;pintaseg=1;botSegEsc=(botSegEsc=1)?1.2:1;botMinEsc=1;botHorEsc=1;' activo-si='!pintaseg' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_02" value="id='seg' tipo='numérico' interfaz='campo de texto' región='interior' espacio='conversor' expresión='(120,75,115,35)' valor='75' min='0' max='9999' decimales='0' visible='sí' dibujar-si='pintaseg' keyboard='sí' kblayout='4x4' kbexp='(700,300)' ">
+    <param name="C_03" value="id='sega' tipo='numérico' interfaz='menú' región='interior' espacio='conversor' expresión='(50,125,300,35)' decimales='0' visible='no' opciones=' ,minutos y segundos[1],horas minutos y segundos[2]' acción='calcular' parámetro='seg=(sega=1)?75:7500\nseg=(sega=0)?&squot;&squot;:seg' dibujar-si='pintaseg' ">
+    <param name="C_04" value="id='minE' interfaz='botón' tipo='numérico' región='interior' espacio='conversor' nombre='Minutos' expresión='(btnsep+(btnw+btnsep),btnsep,btnw,35)' valor='125' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='pintaseg=0;pintahrs=0;pintamin=1;botMinEsc=(botMinEsc=1)?1.2:1;botSegEsc=1;botHorEsc=1' activo-si='!pintamin' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_05" value="id='min' tipo='numérico' interfaz='campo de texto' región='interior' espacio='conversor' expresión='(120,75,115,35)' valor='123' min='0' max='9999' decimales='0' visible='sí' dibujar-si='pintamin' keyboard='sí' kblayout='4x4' kbexp='(700,300)' ">
+    <param name="C_06" value="id='mina' tipo='numérico' interfaz='menú' región='interior' espacio='conversor' expresión='(50,125,300,35)' decimales='0' visible='no' opciones=' ,segundos[1],horas y minutos[2]' dibujar-si='pintamin' ">
+    <param name="C_07" value="id='hrsE' interfaz='botón' tipo='numérico' región='interior' espacio='conversor' nombre='Horas' expresión='(btnsep+2*(btnw+btnsep),btnsep,btnw,35)' valor='125' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='pintaseg=0;pintamin=0;pintahrs=1;botHorEsc=(botHorEsc=1)?1.2:1;botMinEsc=1;botSegEsc=1' activo-si='!pintahrs' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_08" value="id='hrs' tipo='numérico' interfaz='campo de texto' región='interior' espacio='conversor' expresión='(120,75,115,35)' valor='76' decimales='0' visible='sí' dibujar-si='pintahrs' keyboard='sí' kblayout='4x4' kbexp='(700,300)' ">
+    <param name="C_09" value="id='hrsa' tipo='numérico' interfaz='menú' región='interior' espacio='conversor' expresión='(50,125,300,35)' decimales='0' visible='no' opciones=' ,segundos[1],minutos[2],dias y horas[3]' dibujar-si='pintahrs' ">
+    <param name="C_10" value="id='Calcular' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Calcular' expresión='(E1._w-120-15,E1._h-35-15,120,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='vercalc=1;vertabla=0;E1.Ox=-110;' dibujar-si='!vercalc' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_11" value="id='cerrarc' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Cerrar calcular' expresión='(E1._w-180-15,E1._h-35-15,180,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='vercalc=0;vertabla=0;E1.Ox=70;pintaseg=0;pintamin=0;pintahrs=0;calcReInit();' dibujar-si='vercalc' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="A_01" value="id='tipo' vector='sí' evaluar='una-sola-vez' tamaño='3' expresión='tipo[0]=&squot;segundos&squot;;tipo[1]=&squot;minutos&squot;;tipo[2]=&squot;horas&squot;' tipo='vector' ">
+    <param name="A_02" value="id='getHours(tSeg)' algoritmo='sí' expresión='hours' hacer='cociente1=ent(tSeg/60);hours=ent(cociente1/60)' tipo='función' ">
+    <param name="A_03" value="id='getMinutes(tSeg)' algoritmo='sí' expresión='minutes' hacer='cociente1=ent(tSeg/60);cociente2=ent(cociente1/60);minutes=60*((cociente1/60)-cociente2)' tipo='función' ">
+    <param name="A_04" value="id='getSeconds(tSeg)' algoritmo='sí' expresión='seconds' hacer='cociente1=ent(tSeg/60);seconds=60*((tSeg/60)-cociente1);;' tipo='función' ">
+    <param name="A_05" value="id='initTime()' algoritmo='sí' expresión='tiempo' hacer='tiempo=ent(rnd*43200)' tipo='función' ">
+    <param name="A_06" value="id='reInit()' algoritmo='sí' expresión='x' hacer='tSeg1=0;tSeg2=0;seg1=0;seg2=0;min1=0;min2=0;hor1=0;hor2=0;tSeg2=initTime();pintaseg=0;pintamin=0;pintahrs=0;' tipo='función' ">
+    <param name="A_07" value="id='calcReInit()' algoritmo='sí' expresión='x' hacer='segE=0;seg=75;sega=0;minE=0;min=123;mina=0;hrsE=0;hrs=76;hrsa=0;;' tipo='función' ">
+    <param name="A_08" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='btnSig.w=40;btnSig.h=32;btnSig.x=E1._w-btnSig.w-4;btnSig.y=E1._h-btnSig.h-5;;btnAnt.w=btnSig.w;btnAnt.h=btnSig.h;btnAnt.x=btnSig.x-btnAnt.w-5;btnAnt.y=btnSig.y;;btnsep=20;btnw=(conversor._w-4*btnsep)/3;;clockX=0;clockY=0;;reInit();;' ">
+    <param name="A_09" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='tSeg2=(tSeg2>=43200)?tSeg2-43200:tSeg2;tSeg2=(tSeg2<0)?tSeg2+43200:tSeg2;s2=tSeg2/60;m2=s2/60;h2=m2/12;seg2=getSeconds(tSeg2);min2=getMinutes(tSeg2);hor2=getHours(tSeg2);;;;;' ">
+    <param name="G_01" value="espacio='E1' tipo='imagen' fondo='sí' coord_abs='no' expresión='(clockX,clockY,0.5,0.5)' archivo='images/reloj.png' ">
+    <param name="G_02" value="espacio='E1' tipo='segmento' color='2ecc71' coord_abs='no' expresión='(clockX,clockY)(clockX+(0.5*sen(2*pi*h2)),clockY+(0.5*cos(2*pi*h2))) ' tamaño='0' ancho='7' ">
+    <param name="G_03" value="espacio='E1' tipo='segmento' color='2980b9' coord_abs='no' expresión='(clockX,clockY)(clockX+(0.7*sen(2*pi*m2)),clockY+(0.7*cos(2*pi*m2))) ' tamaño='0' ancho='4' ">
+    <param name="G_04" value="espacio='conversor' tipo='texto' color='000000' dibujar-si='pintaseg || pintamin || pintahrs' coord_abs='sí' expresión='[20,80]' texto='Convertir                            [(pintaseg)?&squot;segundos&squot;:((pintamin)?&squot;minutos&squot;:&squot;horas&squot;)]\n\na ' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_05" value="espacio='conversor' tipo='texto' color='000000' dibujar-si='pintaseg && (sega==1)' coord_abs='sí' expresión='[20,180]' texto='Resultado:\n\b{[ent(seg/60)]} minutos    \b{[seg-((ent(seg/60))*60)]} segundos\n\nCálculos: \n\b{60} segundos = \b{1} minuto\n\b{[seg] ÷ 60 = [ent(seg/60)]} y sobran \b{[seg-60*ent(seg/60)]}' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_06" value="espacio='conversor' tipo='texto' color='000000' dibujar-si='pintaseg && (sega=2)' coord_abs='sí' expresión='[20,180]' texto='Resultado:\n\b{[getHours(seg)]} hora(s)    \b{[getMinutes(seg)]} minuto(s)    \b{[getSeconds(seg)]} segundo(s)\n\nCálculos:\n\b{60} segundos = \b{1} minuto\n\b{3600} segundos = \b{1} hora\n\b{[seg] ÷ 3600 = [ent(seg/3600)]} y sobran \b{[seg-3600*ent(seg/3600)]}\n\b{[seg-3600*ent(seg/3600)] ÷ 60 = [ent((seg-3600*ent(seg/3600))/60)]} y sobran \b{[seg-3600*ent(seg/3600)-60*ent((seg-3600*ent(seg/3600))/60)]}' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_07" value="espacio='conversor' tipo='texto' color='000000' dibujar-si='pintamin && (mina==1)' coord_abs='sí' expresión='[20,180]' texto='Resultado:\n\b{[min*60]} segundos\n\nCálculos:\n\b{1} minuto = \b{60} segundos\n\b{[min] × 60 = [min*60]}' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_08" value="espacio='E1' tipo='segmento' color='000000' coord_abs='no' expresión='(clockX,clockY)(clockX+(0.75*sen(2*pi*s2)),clockY+(0.75*cos(2*pi*s2))) ' tamaño='0' ancho='2' ">
+    <param name="G_09" value="espacio='conversor' tipo='texto' color='000000' dibujar-si='pintamin && (mina==2)' coord_abs='sí' expresión='[20,180]' texto='Resultado:\n\b{[ent(min/60)]} horas    \b{[min-((ent(min/60))*60)]} minutos\n\nCálculos:\n\b{60} minutos = \b{1} hora\n\b{1} minuto = \b{60} segundos\n\b{[min] ÷ 60 = [ent(min/60)]} y sobran \b{[min-60*ent(min/60)]}' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_10" value="espacio='conversor' tipo='texto' color='000000' dibujar-si='pintahrs && (hrsa==1)' coord_abs='sí' expresión='[20,180]' texto='Resultado:\n\b{[hrs*3600]} segundos\n\nCálculos:\n\b{1} hora = \b{3600} segundos\n\b{[hrs] × 3600 = [hrs*3600]}' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_11" value="espacio='conversor' tipo='texto' color='000000' dibujar-si='pintahrs && (hrsa==2)' coord_abs='sí' expresión='[20,180]' texto='Resultado:\n\b{[hrs*60]} minutos\n\nCálculos:\n\b{1} hora = \b{60} minutos\n\b{[hrs] × 60 = [hrs*60]}' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_12" value="espacio='conversor' tipo='texto' color='000000' dibujar-si='pintahrs && (hrsa==3)' coord_abs='sí' expresión='[20,180]' texto='Resultado:\n\b{[ent(hrs/24)]} días    \b{[hrs-((ent(hrs/24))*24)]} horas\n\nCálculos:\n\b{1} día = \b{24} horas\n\b{[hrs] ÷ 24 = [ent(hrs/24)]} y sobran \b{[hrs-24*ent(hrs/24)]}' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_13" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_14" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_m.svg' clip='(0,0,120,120)' ">
+    <param name="G_15" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='Pulsa el botón “Calcular” para explorar las equivalencias entre las diferentes unidades de tiempo.' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_16" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,500)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_17" value="espacio='E1' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='[20,20]' texto='\b{60} segundos = \b{1} minuto\n\n\b{60} minutos = \b{1} hora\n\n\b{24} horas = \b{1} día\n\n\b{7} días = \b{1} semana\n\n\b{30} días = \b{1} mes\n\n\b{12} meses = \b{1} año\n\n\b{5} años = \b{1} lustro\n\n\b{10} años = \b{1} década\n\n\b{100} años = \b{1} siglo ' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="Animación" value="pausa='1000' controles='no' auto='sí' repetir='no' inicio='lineaPrincipal=0' hacer=';;tSeg2=(modSegundero=0)?tSeg2+1:tSeg2;;;;' mientras='1' ">
+  </ajs>
+
+
+
+</body>
+</html>

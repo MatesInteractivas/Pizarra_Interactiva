@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>El plano cartesiano</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='530' y='110' ancho='479' alto='500' fijo='sí' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="E_03" value="tipo='R2' id='E2' x='17' y='112' ancho='496' alto='496' fijo='sí' escala='30' red='c0c0c0' red10='no' ejes='808080' border_radius='6' ">
+    <param name="C_01" value="id='P' tipo='gráfico' espacio='E2' color='ff000000' color-int='00dd22' tamaño='0' expresión='(0,0)' imagen='images/vacio.gif' ">
+    <param name="C_02" value="id='P.x' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='P.x' expresión='(0,0)' incr='1' min='-8' max='8' discreto='sí' visible='sí' ">
+    <param name="C_03" value="id='P.y' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='P.y' expresión='(0,0)' incr='1' min='-8' max='8' discreto='sí' visible='sí' ">
+    <param name="C_04" value="id='d_d' interfaz='botón' tipo='numérico' región='interior' espacio='E1' expresión='(E1._w/2-45-20,posY+40,45,45)' color='222222' color-int='f0f8ff' fuente puntos='19' imagen='images/spinner_minus.svg' acción='calcular' parámetro='P.x=(!bien)?P.x-1:P.x;edoCamion=2' ">
+    <param name="C_05" value="id='a_d' interfaz='botón' tipo='numérico' región='interior' espacio='E1' expresión='(E1._w/2-45-20,posY-45,45,45)' color='222222' color-int='f0f8ff' fuente puntos='19' imagen='images/spinner_plus.svg' acción='calcular' parámetro='P.x=(!bien)?P.x+1:P.x;edoCamion=1' ">
+    <param name="C_06" value="id='d_n' interfaz='botón' tipo='numérico' región='interior' espacio='E1' expresión='(E1._w/2+20,posY+40,45,45)' color='222222' color-int='f0f8ff' fuente puntos='19' imagen='images/spinner_minus.svg' acción='calcular' parámetro='P.y=(!bien)?P.y-1:P.y;edoCamion=4' ">
+    <param name="C_07" value="id='a_n' interfaz='botón' tipo='numérico' región='interior' espacio='E1' expresión='(E1._w/2+20,posY-45,45,45)' color='222222' color-int='f0f8ff' fuente puntos='19' imagen='images/spinner_plus.svg' acción='calcular' parámetro='P.y=(!bien)?P.y+1:P.y\nedoCamion=3' ">
+    <param name="C_08" value="id='n5' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='n5' expresión='(0,0)' incr='1' visible='sí' ">
+    <param name="C_09" value="id='n6' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='n5' expresión='(0,0)' incr='1' visible='sí' ">
+    <param name="A_01" value="id='Vx' vector='sí' evaluar='una-sola-vez' tamaño='N' tipo='vector' ">
+    <param name="A_02" value="id='Vy' vector='sí' evaluar='una-sola-vez' tamaño='N' tipo='vector' ">
+    <param name="A_03" value="id='NOM' vector='sí' evaluar='una-sola-vez' tamaño='8' expresión='&squot;Norma&squot;;&squot;Sonia&squot;;&squot;Carlos&squot;;&squot;Marga&squot;;&squot;Luis&squot;;&squot;Lola&squot;;&squot;Irma&squot;;&squot;Escuela&squot;' tipo='vector' ">
+    <param name="A_04" value="id='NOM_UB' vector='sí' evaluar='una-sola-vez' tamaño='8' expresión='&squot;a casa de Norma&squot;;&squot;a casa de Sonia&squot;;&squot;por Carlos&squot;;&squot;a casa de Marga&squot;;&squot;a casa de Luis&squot;;&squot;a casa de Lola&squot;;&squot;a casa de Irma&squot;;&squot;a la escuela&squot;' tipo='vector' ">
+    <param name="A_05" value="id='INI_B' algoritmo='sí' evaluar='una-sola-vez' hacer='N=8;xB=305;yB=465;B.dx=18;B.dy=8;B.texto=&squot;Otra posición&squot;;B.ancho=180;B.alto=40;;sclauto=0.1;posY=325' ">
+    <param name="A_06" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='p2x=729;p2y=210;p1x=565;p1y=412;t1x=90;t1y=300;t2x=180;t2y=t1y;;caso=0;Vx[0]=-3;Vy[0]=4;Vx[1]=-2;Vy[1]=-3;Vx[2]=-2;Vy[2]=-7;Vx[3]=3;Vy[3]=4;Vx[4]=-5;Vy[4]=6;Vx[5]=4;Vy[5]=-6;Vx[6]=-6;Vy[6]=0;Vx[7]=3;Vy[7]=-4;edoCamion=1' ">
+    <param name="A_07" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+    <param name="A_08" value="id='encuentro' evento='sí' condición='(Vx[caso]=P.x)&(Vy[caso]=P.y)' acción='animar' ejecución='alternar' ">
+    <param name="G_01" value="espacio='E1' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(E1._w/2,135,-0.5,0.5)' archivo='images/autobus.png' ">
+    <param name="G_02" value="espacio='E1' tipo='texto' color='000000' coord_abs='sí' expresión='[E1._w/2,posY-120]' texto='( \color{2980b9}{Abscisas} , \color{e74c3c}{Ordenadas} )' ancho='1' negrita='sí' fuente puntos='30' align='a_left' anchor='a_top_center' ">
+    <param name="G_03" value="espacio='E1' tipo='texto' color='000000' coord_abs='sí' expresión='[E1._w/2,posY]' texto=',' fijo='no' ancho='1' negrita='sí' fuente puntos='30' align='a_left' anchor='a_top_center' ">
+    <param name="G_04" value="espacio='E1' tipo='texto' color='000000' coord_abs='sí' expresión='[E1._w/2-20,posY]' texto='( \color{2980b9}{[(P.x<0)?&squot;&squot;:&squot;+&squot;][P.x]}' fijo='no' ancho='1' negrita='sí' fuente puntos='30' align='a_left' anchor='a_top_right' ">
+    <param name="G_05" value="espacio='E1' tipo='texto' color='000000' coord_abs='sí' expresión='[E1._w/2+20,posY]' texto='\color{e74c3c}{[(P.y<0)?&squot;&squot;:&squot;+&squot;][P.y]} )' fijo='no' ancho='1' negrita='sí' fuente puntos='30' align='a_left' anchor='a_top_left' ">
+    <param name="G_06" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(!bien)&(caso=0)' coord_abs='sí' expresión='[20,20]' texto='Lleva el autobús [NOM_UB[0]]' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_07" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(!bien)&(caso>0)&(caso<7)' coord_abs='sí' expresión='[20,20]' texto='Ahora lleva el autobús [NOM_UB[caso]]' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_08" value="espacio='E2' tipo='flecha' fondo='sí' color='2980b9' coord_abs='no' expresión='(7.75,0)(8.25,0)' ancho='2' punta='3' flecha='2980b9' ">
+    <param name="G_09" value="espacio='E2' tipo='flecha' fondo='sí' color='2980b9' coord_abs='no' expresión='(7.75,0)(-8.25,0)' ancho='2' punta='3' flecha='2980b9' ">
+    <param name="G_10" value="espacio='E2' tipo='flecha' color='e74c3c' coord_abs='no' expresión='(0,7.75)(0,8.25)' ancho='2' punta='3' flecha='e74c3c' ">
+    <param name="G_11" value="espacio='E2' tipo='flecha' color='e74c3c' coord_abs='no' expresión='(0,7.75)(0,-8.25)' ancho='2' punta='3' flecha='e74c3c' ">
+    <param name="G_12" value="espacio='E2' tipo='punto' color='ffffff' coord_abs='no' expresión='(Vx[s],Vy[s])' familia='s' s.intervalo='[0,N-1]' s.pasos='N-1' tamaño='5' ">
+    <param name="G_13" value="espacio='E2' tipo='punto' color='34495e' coord_abs='no' expresión='(Vx[s],Vy[s])' familia='s' s.intervalo='[0,N-1]' s.pasos='N-1' tamaño='3' ">
+    <param name="G_14" value="espacio='E2' tipo='texto' color='000000' coord_abs='no' expresión='(Vx[s],Vy[s])' familia='s' s.intervalo='[0,7]' s.pasos='7' texto='[NOM[s]]' ancho='1' negrita='sí' fuente puntos='16' align='a_left' anchor='a_top_center' ">
+    <param name="G_15" value="espacio='E2' tipo='imagen' dibujar-si='edoCamion=1' coord_abs='no' expresión='(P.x,P.y,sclauto,sclauto)' archivo='images/autobus.png' ">
+    <param name="G_16" value="espacio='E2' tipo='imagen' dibujar-si='edoCamion=2' coord_abs='no' expresión='(P.x,P.y,-sclauto,sclauto)' archivo='images/autobus.png' ">
+    <param name="G_17" value="espacio='E2' tipo='imagen' dibujar-si='edoCamion=3' coord_abs='no' expresión='(P.x,P.y,sclauto,sclauto)' archivo='images/autobus.png' rotini='90' ">
+    <param name="G_18" value="espacio='E2' tipo='imagen' dibujar-si='edoCamion=4' coord_abs='no' expresión='(P.x,P.y,sclauto,sclauto)' archivo='images/autobus.png' rotini='-90' ">
+    <param name="G_19" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_20" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_m.svg' clip='(120,0,120,120)' ">
+    <param name="G_21" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='El autobús escolar debe pasar por todos los estudiantes para llevarlos a la escuela, utiliza los pulsadores para realizar su recorrido como se pide.' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_22" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,500,500)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_23" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(530,110,479,500)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_24" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(!bien)&(caso=7)' coord_abs='sí' expresión='[20,20]' texto='Terminamos el recorrido, lleva el camión [NOM_UB[7]]' ancho='E1._w-40' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_25" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(!bien)&(caso=8)' coord_abs='sí' expresión='[20,20]' texto='¡Muy bien hecho! Terminaste el recorrido' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_26" value="espacio='E1' tipo='texto' color='34cc67' dibujar-si='bien' coord_abs='sí' expresión='[E1._w/2,E1._h-20]' texto='¡Muy bien!' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_bottom_center' ">
+    <param name="Animación" value="pausa='50' controles='no' auto='no' repetir='no' inicio='bien=1;t=0;T=16' hacer='t=t+1;caso=(t=T)?(caso+1):caso;bien=(t=T)?0:bien;P.x=(t=T)?0:P.x;P.y=(t=T)?0:P.y' mientras='t<T' ">
+  </ajs>
+
+
+
+</body>
+</html>

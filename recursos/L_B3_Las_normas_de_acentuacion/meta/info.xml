@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="L_B3_Las_normas_de_acentuacion" 
+	nivel="Primaria" 
+	area="Español, Ortografía"
+	plataforma="HTML 5" 
+	>
+	<titulo><![CDATA[
+		Las normas de acentuación
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+		Permitir el repaso de las normas generales de acentuación y del acento diacrítico, y ofrecer ejercicios para practicar la ortografía de la tilde.
+	]]></Descripcion>
+</recurso>

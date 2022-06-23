@@ -1,0 +1,13 @@
+{
+  "nivel": [
+    "Primaria"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Números y operaciones"
+  ], 
+  "titulo": "Múltiplos y mínimo común múltiplo", 
+  "descripcion": "Obtener los múltiplos de un número y aprender a identificar el mínimo común múltiplo de dos o tres números dados.",
+  "resena": "Obtener los múltiplos de un número y aprender a identificar el mínimo común múltiplo de dos o tres números dados.",
+  "id": "M_B1_Multiplos_y_minimo_comun_multiplo"
+}

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="L_B1_El_adjetivo" 
+	nivel="Primaria" 
+	area="Español, Gramática"
+	plataforma="HTML 5" 
+	>
+	<titulo><![CDATA[
+		El adjetivo
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+    Presentar y permitir que el alumno practique la concordancia del adjetivo con el nombre y los grados del adjetivo.
+	]]></Descripcion>
+</recurso>

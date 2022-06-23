@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Cuadrado y cubo</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body>
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E2' x='15' y='110' ancho='520' alto='450' fijo='sí' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="E_03" value="tipo='R3' R3='sí' id='E1' x='550' y='110' ancho='459' alto='450' escala='42' O.x='-30' O.y='-20' fondo='ffffffff' despliegue='pintor' ">
+    <param name="C_01" value="id='otro' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Otro ejemplo' expresión='(pleca._w-160-15,pleca._h-50,150,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='otroEjemplo()' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_02" value="id='n3' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Siguiente' expresión='((pleca._w-130)/2,pleca._h-50,130,35)' valor='1' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='vv=(vv=0)?1:0' dibujar-si='(hh=1)&(paso!=0)&(n1!=a1)' activo-si='(vv==0)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' info='Siguiente3' ">
+    <param name="C_03" value="id='n2' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Siguiente' expresión='((pleca._w-130)/2,pleca._h-50,130,35)' valor='1' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='hh=(hh=0)?1:0;vv=(hh=0)?0:vv' dibujar-si='(n1>0)&(paso!=0)&(n1!=a1)&(a1>1)&(n6=a1)&(n7=a1)&(n8=a1)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' info='Siguiente2' ">
+    <param name="C_04" value="id='sig' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Siguiente' expresión='((pleca._w-130)/2,pleca._h-50,130,35)' valor='1' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='n6=a1;n7=a1;n8=a1' dibujar-si='(n6!=a1)&&(n7!=a1)&&(n8!=a1)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' info='Siguiente1' ">
+    <param name="C_05" value="id='n6' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E2' expresión='(15,48,35,35)' valor='n6' decimales='0' visible='sí' dibujar-si='0' ">
+    <param name="C_06" value="id='n7' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E2' expresión='(232,48,35,35)' valor='n7' decimales='0' visible='sí' dibujar-si='0' ">
+    <param name="C_07" value="id='n8' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E2' expresión='(372,48,35,35)' valor='n8' decimales='0' visible='sí' dibujar-si='0' ">
+    <param name="C_08" value="id='n5' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E1' expresión='(255,428,30,35)' valor='&squot;&squot;' decimales='0' visible='sí' dibujar-si='0' ">
+    <param name="A_01" value="id='C1' vector='sí' evaluar='una-sola-vez' tamaño='10' expresión='C1[0]=0;C1[1]=0;C1[2]=0' tipo='vector' ">
+    <param name="A_02" value="id='C2' vector='sí' evaluar='una-sola-vez' tamaño='10' expresión='C2[0]=0;C2[1]=0;C2[2]=0' tipo='vector' ">
+    <param name="A_03" value="id='C3' vector='sí' evaluar='una-sola-vez' tamaño='10' expresión='C3[0]=0;C3[1]=0;C3[2]=0' tipo='vector' ">
+    <param name="A_04" value="id='otroEjemplo()' algoritmo='sí' expresión='0' hacer='E1.rot.z=-30;E1.rot.y=20;a1=ent(rnd*8)+2;;paso=0;vv=0;hh=0;n1=1;n5=&squot;&squot;;n6=&squot;&squot;;n7=&squot;&squot;;n8=&squot;&squot;' tipo='función' ">
+    <param name="A_05" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='otroEjemplo()' ">
+    <param name="A_06" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='a11=a1*sqrt(3)/3;paso=(n1=0)?0:a1/n1;paso=(ent(paso)=paso)?paso:0;a2=n1*sqrt(3)/3;jj=-3+a1*sqrt(3)/6;gg=n1*paso' ">
+    <param name="A_07" value="id='e3' evento='sí' condición='n1=0' acción='calcular' parámetro='a1=1;a11=0;a2=0;paso=0;jj=0;gg=0;vv=0;hh=0' ejecución='alternar' ">
+    <param name="A_08" value="id='a4' algoritmo='sí' evaluar='siempre' hacer='C1[1]=(n1=1)?.85:C1[1];C1[1]=(n1=2)?.99:C1[1];C1[1]=(n1=3)?0:C1[1];C1[1]=(n1=4)?.99:C1[1];C1[1]=(n1=5)?0:C1[1];C1[1]=(n1=6)?.6:C1[1];C1[1]=(n1=7)?.99:C1[1];C1[1]=(n1=8)?.5:C1[1];C1[1]=(n1=9)?0:C1[1];C1[2]=(n1=1)?.723:C1[2];C1[2]=(n1=2)?.684:C1[2];C1[2]=(n1=3)?.602:C1[2];C1[2]=(n1=4)?0:C1[2];C1[2]=(n1=5)?.711:C1[2];C1[2]=(n1=6)?0:C1[2];C1[2]=(n1=7)?.99:C1[2];C1[2]=(n1=8)?0:C1[2];C1[2]=(n1=9)?0:C1[2];C1[3]=(n1=1)?.574:C1[3];C1[3]=(n1=2)?.684:C1[3];C1[3]=(n1=3)?.99:C1[3];C1[3]=(n1=4)?0:C1[3];C1[3]=(n1=5)?0:C1[3];C1[3]=(n1=6)?0.99:C1[3];C1[3]=(n1=7)?0:C1[3];C1[3]=(n1=8)?0:C1[3];C1[3]=(n1=9)?.656:C1[3];rta=(n1>0)?(a1^3)/(n1^3):rta' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_m.svg' clip='(120,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,42)' texto='Observa la figura, y sigue los pasos para entender mejor el concepto de cubo de un número.' ancho='1' fuente puntos='21' align='a_left' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,450)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='E2' tipo='texto' color='000000' dibujar-si='(a1>1)&(n1!=a1)' coord_abs='sí' expresión='[15,15]' texto='La figura que tiene:\n\b{[a1]} unidades de largo, \b{[a1]} de ancho y \b{[a1]} de alto.' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_06" value="espacio='E2' tipo='texto' color='000000' dibujar-si='(a1>1)&(n1!=a1)&(n6=a1)&(n7=a1)&(n8=a1)' coord_abs='sí' expresión='[16,120]' texto='¿Cuántas unidades caben en la base cuadrada?' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_07" value="espacio='E2' tipo='texto' color='000000' dibujar-si='(hh=1)&(paso!=0)&(n1!=a1)' coord_abs='sí' expresión='[15,200]' texto='Caben \b{[gg] × [gg] = [gg^2]} que se escribe \b{\${[gg]^2}} y se lee “\b{[gg]} elevado a \b{2}” o “\b{[gg]} elevado al cuadrado” y ¿cuántas unidades caben en todo el cubo?' fijo='no' ancho='420' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_08" value="espacio='E2' tipo='texto' color='000000' dibujar-si='(vv=1)&(paso!=0)&(n1!=a1)' coord_abs='sí' expresión='[15,350]' texto='\b{[gg] × [gg] × [gg] = [gg^3]} unidades cúbicas, que se escribe como \b{\${[gg]^3}} y se lee “\b{[gg]} elevado a \b{3}” o “\b{[gg]} elevado al cubo”.' fijo='no' ancho='420' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="S_01" value="espacio='E1' tipo='cubo' color='0000ff' color_reverso='ffafaf' dibujar-si='a1>=2' expresión='Cubo' posini='(0,-3+paso*a2,0)' aristas='808080' modelo='alambre' ancho='a1' ">
+    <param name="S_02" value="espacio='E1' tipo='cubo' color='azul' color_reverso='amarillo' dibujar-si='a1>=2' expresión='Cubo' familia='s' s.intervalo='[1,paso]' s.pasos='paso-1' posini='(-a11/2-a2/2+s*a2,jj+a2/2,a2/2-a11/2)' aristas='808080' modelo='color' ancho='n1' ">
+    <param name="S_03" value="espacio='E1' tipo='paralelepípedo' color='azul' color_reverso='azul' dibujar-si='(hh=1)&(vv=0)' expresión='Paralelepípedo' familia='s' s.intervalo='[0,paso-1]' s.pasos='paso-1' posini='(0,jj+a2/2+s*a2,a2/2-a11/2)' aristas='808080' modelo='color' ancho='a11' largo='a2' alto='a2' ">
+    <param name="S_04" value="espacio='E1' tipo='superficie' color='azul' color_reverso='azul' dibujar-si='(hh=1)&(vv=0)' expresión='x=a11*u y=a11*v z=0' posini='(-a11/2,jj,a2-a11/2+.01)' aristas='808080' modelo='metal' Nu='paso' Nv='paso' ">
+    <param name="S_05" value="espacio='E1' tipo='superficie' color='azul' color_reverso='azul' dibujar-si='hh=1' expresión='x=a11*u y=a11*v z=0' posini='(-a11/2,jj,-a11/2-.01)' aristas='808080' modelo='metal' Nu='paso' Nv='paso' ">
+    <param name="S_06" value="espacio='E1' tipo='paralelepípedo' color='azul' color_reverso='azul' dibujar-si='(vv=1)&(n1=1)' expresión='Paralelepípedo' familia='s' s.intervalo='[0,paso-1]' s.pasos='paso-1' posini='(0,jj+a11/2,a2/2-a11/2+s*a2)' aristas='808080' modelo='color' ancho='a11' largo='a11' alto='a2' ">
+    <param name="S_07" value="espacio='E1' tipo='superficie' color='azul' color_reverso='azul' dibujar-si='(hh=1)&(vv=1)' expresión='x=a11*u y=a11*v z=0' posini='(-a11/2,jj,a11/2+.01)' aristas='808080' modelo='metal' Nu='paso' Nv='paso' ">
+    <param name="S_08" value="espacio='E1' tipo='superficie' color='azul' color_reverso='azul' dibujar-si='(hh=1)&(vv=1)' expresión='x=a11*u z=a11*v y=0' posini='(-a11/2,jj+a11+.01,-a11/2+.01)' aristas='808080' modelo='metal' Nu='paso' Nv='paso' ">
+    <param name="S_09" value="espacio='E1' tipo='superficie' color='azul' color_reverso='azul' dibujar-si='(hh=1)&(vv=0)' expresión='x=a11*u z=a2*v y=0' posini='(-a11/2,jj+a11+.01,-a11/2+.01)' aristas='808080' modelo='metal' Nu='paso' Nv='1' ">
+    <param name="S_10" value="espacio='E1' tipo='superficie' color='azul' color_reverso='azul' dibujar-si='(hh=1)&(vv=1)' expresión='z=a11*u y=a11*v x=0' posini='(-a11/2-.01,jj+.01,-a11/2+.01)' aristas='808080' modelo='metal' Nu='paso' Nv='paso' ">
+    <param name="S_11" value="espacio='E1' tipo='superficie' color='azul' color_reverso='azul' dibujar-si='(hh=1)&(vv=1)' expresión='z=a11*u y=a11*v x=0' posini='(a11/2+.01,jj+.01,-a11/2+.01)' aristas='808080' modelo='metal' Nu='paso' Nv='paso' ">
+    <param name="S_12" value="espacio='E1' tipo='cubo' color='(C1[1],C1[2],C1[3],00)' color_reverso='(C1[1],C1[2],C1[3],00)' dibujar-si='a1=n1' expresión='Cubo' posini='(0,jj+a2/2,0)' aristas='808080' modelo='color' ancho='a1' ">
+    <param name="S_13" value="espacio='E1' tipo='segmento' color='negro' dibujar-si='pp' expresión='(0,0,0)(0,0,5)' ancho='3' Nu='7' ">
+    <param name="S_14" value="espacio='E1' tipo='segmento' color='negro' dibujar-si='pp' expresión='(0,0,0)(0,5,0)' ancho='3' Nu='7' ">
+    <param name="S_15" value="espacio='E1' tipo='segmento' color='negro' dibujar-si='pp' expresión='(0,0,0)(5,0,0)' ancho='3' Nu='7' ">
+    <param name="S_16" value="espacio='E1' tipo='cubo' color='azul' color_reverso='amarillo' dibujar-si='a1>=2' expresión='Cubo' familia='s' s.intervalo='[1,paso]' s.pasos='paso-1' posini='(-a11/2+a2/2,jj+a2/2+(s-1)*a2,a2/2-a11/2)' aristas='808080' modelo='color' ancho='n1' ">
+    <param name="S_17" value="espacio='E1' tipo='cubo' color='azul' color_reverso='amarillo' dibujar-si='a1>=2' expresión='Cubo' familia='s' s.intervalo='[1,paso]' s.pasos='paso-1' posini='(-a11/2-a2/2+a2,jj+a2/2,a2/2-a11/2+(s-1)*a2)' aristas='808080' modelo='color' ancho='n1' ">
+  </ajs>
+
+
+
+</body>
+</html>

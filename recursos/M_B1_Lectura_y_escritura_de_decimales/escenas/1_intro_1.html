@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Lectura y escritura de números decimales</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='E1' ancho='100%' alto='100%' fijo='sí' despl_imagen='expand.' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='numdec' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E1' expresión='(E1._w-100-posX,125,100,35)' valor='3.65' visible='sí' keyboard='sí' kblayout='4x4' kbexp='(788,175)' ">
+    <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='posX=135' hacer='txt1.x=115;txt1.y=385;txt1.w=250;txt1.h=65;;txt2.x=245;txt2.y=225;txt2.w=213;txt2.h=65;;txt3.x=485;txt3.y=340;txt3.w=434;txt3.h=65;;txt4.x=575;txt4.y=200;txt4.w=341;txt4.h=70' ">
+    <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='absoluto=abs(numdec);entera=sgn(numdec)*ent(absoluto);decimal=(absoluto*100)-(sgn(numdec)*entera*100)' ">
+    <param name="G_01" value="espacio='E1' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='E1' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_m.svg' clip='(0,0,120,120)' ">
+    <param name="G_03" value="espacio='E1' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='¿Sabías que? Desde que se inventaron los números decimales no se han puesto de acuerdo todos los países en cómo representarlos.' ancho='E1._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='E1' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,500)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='E1' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='[posX,130]' texto='Escribe un número decimal y observa algunas formas en que se escribe' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_06" value="espacio='E1' tipo='rectángulo' fondo='sí' color='ff4a69bd' coord_abs='sí' expresión='(50,175,924,400)' relleno='3498db' ancho='2' border_radius='6' ">
+    <param name="G_07" value="espacio='E1' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(E1._w/2,E1._h/2+70,0.555)' archivo='images/planisferio.png' ">
+    <param name="G_08" value="espacio='E1' tipo='rectángulo' fondo='sí' color='ffffffff' coord_abs='sí' expresión='(txt1.x-10,txt1.y-5,txt1.w+20,txt1.h)' relleno='ffffff' ancho='0' border_radius='2' ">
+    <param name="G_09" value="espacio='E1' tipo='polígono' fondo='sí' color='ff20303a' coord_abs='sí' expresión='(txt1.x+txt1.w/2-10,txt1.y-5)(txt1.x+txt1.w/2,txt1.y-5-20)(txt1.x+txt1.w/2+10,txt1.y-5)' relleno='ffffff' ancho='0' ">
+    <param name="G_10" value="espacio='E1' tipo='texto' color='000000' coord_abs='sí' expresión='[txt1.x,txt1.y]' texto='En México y EUA se escribe\n\b{\${[entera].[decimal]}}' decimales='0' fijo='no' ancho='1' fuente puntos='20' align='a_center' anchor='a_top_left' ">
+    <param name="G_11" value="espacio='E1' tipo='rectángulo' fondo='sí' color='ffffffff' coord_abs='sí' expresión='(txt2.x-10,txt2.y-5,txt2.w+20,txt2.h)' relleno='ffffff' ancho='0' border_radius='2' ">
+    <param name="G_12" value="espacio='E1' tipo='polígono' fondo='sí' color='ff20303a' coord_abs='sí' expresión='(txt2.x+txt2.w-5,txt2.y+txt2.h-5)(txt2.x+txt2.w+25,txt2.y+txt2.h-5)(txt2.x+txt2.w-5,txt2.y+txt2.h-30-5)' relleno='ffffff' ancho='0' ">
+    <param name="G_13" value="espacio='E1' tipo='texto' color='000000' coord_abs='sí' expresión='[txt2.x,txt2.y]' texto='En Inglaterra se escribe\n\b{\${[entera]·[decimal]}}' decimales='0' fijo='no' ancho='1' fuente puntos='20' align='a_center' anchor='a_top_left' ">
+    <param name="G_14" value="espacio='E1' tipo='rectángulo' fondo='sí' color='ffffffff' coord_abs='sí' expresión='(txt3.x-10,txt3.y-5,txt3.w+20,txt3.h)' relleno='ffffff' ancho='0' border_radius='2' ">
+    <param name="G_15" value="espacio='E1' tipo='polígono' fondo='sí' color='ff20303a' coord_abs='sí' expresión='(txt3.x-10,txt3.y)(txt3.x-10,txt3.y-20)(txt3.x+15,txt3.y)' relleno='ffffff' ancho='0' ">
+    <param name="G_16" value="espacio='E1' tipo='texto' color='000000' coord_abs='sí' expresión='[txt3.x,txt3.y]' texto='En Alemania, España, Francia  e Italia se escribe\n\b{\${[entera],[decimal]}}' decimales='0' fijo='no' ancho='1' fuente puntos='20' align='a_center' anchor='a_top_left' ">
+    <param name="G_17" value="espacio='E1' tipo='rectángulo' fondo='sí' color='ffffffff' coord_abs='sí' expresión='(txt4.x-10,txt4.y-5,txt4.w+20,txt4.h)' relleno='ffffff' ancho='0' border_radius='2' ">
+    <param name="G_18" value="espacio='E1' tipo='polígono' fondo='sí' color='ff20303a' coord_abs='sí' expresión='(txt4.x-5,txt4.y+txt4.h-5)(txt4.x-5-20,txt4.y+txt4.h-5)(txt4.x-5,txt4.y+txt4.h-5-20)' relleno='ffffff' ancho='0' ">
+    <param name="G_19" value="espacio='E1' tipo='texto' color='000000' coord_abs='sí' expresión='[txt4.x,txt4.y]' texto='En los países escandinavos se escribe\n\b{\${[entera],^{[decimal]}}}' decimales='0' fijo='no' ancho='1' fuente puntos='20' align='a_center' anchor='a_top_left' ">
+  </ajs>
+
+
+
+</body>
+</html>

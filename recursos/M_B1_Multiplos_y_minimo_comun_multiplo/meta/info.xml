@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="M_B1_Multiplos_y_minimo_comun_multiplo" 
+	nivel="Primaria" 
+	area="Matemáticas, Números y operaciones" 
+	plataforma="HTML 5" 
+	>
+	<titulo><![CDATA[
+		Múltiplos y mínimo común múltiplo
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+    Obtener los múltiplos de un número y aprender a identificar el mínimo común múltiplo de dos o tres números dados.
+	]]></Descripcion>
+</recurso>

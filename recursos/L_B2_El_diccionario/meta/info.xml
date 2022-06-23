@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="L_B2_El_diccionario" 
+	nivel="Primaria" 
+	area="Español, Vocabulario"
+	plataforma="HTML 5" 
+	>
+	<titulo><![CDATA[
+		El diccionario
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+		Dar a conocer el diccionario, su estructura y los principales tipos de diccionario, permitir la reflexión sobre su utilidad, mostrar cómo se usa y poner en práctica todos estos conocimientos.
+	]]></Descripcion>
+</recurso>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Gráfica de sectores</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="A_01" value="id='initRedon()' algoritmo='sí' expresión='x' hacer='RA1.transp=0.80;RA1.rojo=0.95;RA1.verde=0.00;RA1.azul=0.10;RA1.w=280;RA1.h=40;RA1.x=(E1._w-RA1.w)/2;RA1.y=16;RA2.transp=0.80;RA2.rojo=0.95;RA2.verde=0.00;RA2.azul=0.10;RA2.x=180;RA2.y=140;RA2.w=420;RA2.h=120' tipo='función' ">
+    <param name="A_02" value="id='initSombras()' algoritmo='sí' expresión='x' hacer='SOM1.transp=0.80;SOM1.rojo=0.90;SOM1.verde=0.10;SOM1.azul=0.99;SOM1.Top=200;SOM1.Left=100;SOM2.transp=0.90;SOM2.rojo=0.00;SOM2.verde=0.50;SOM2.azul=0.95;SOM2.Top=400;SOM2.Left=300;' tipo='función' ">
+    <param name="A_03" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='anim=1' ">
+    <param name="A_04" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='Px=E1._w/2+g.x*E1.escala;Py=E1._h/2-g.y*E1.escala;;Px2=graficas._w/2+g2.x*graficas.escala;Py2=graficas._h/2-g2.y*graficas.escala;;;' ">
+    <param name="A_05" value="id='Animar' evento='sí' condición='animar' acción='animar' ejecución='alternar' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_m.svg' clip='(0,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='En los periódicos, libros y revistas seguramente has visto tablas y gráficas que nos dan información completa de un fenómeno.' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,500)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='pleca' tipo='imagen' coord_abs='sí' expresión='(80,200)' archivo='images/lector.svg' ">
+    <param name="G_06" value="espacio='pleca' tipo='imagen' coord_abs='sí' expresión='(460,175)' archivo='images/sectores.svg' ">
+    <param name="G_07" value="espacio='pleca' tipo='texto' color='3498db' coord_abs='sí' expresión='(pleca._w/2,125)' texto='Gráfica de sectores' ancho='1' negrita='sí' fuente puntos='22' align='a_left' anchor='a_top_center' ">
+    <param name="Animación" value="pausa='20' controles='no' auto='sí' repetir='no' inicio='t=0;anim=1;animar=0' hacer='t=t+10;anim=(t<RA1.w-10)?1:0' mientras='t<RA1.w' ">
+  </ajs>
+
+
+
+</body>
+</html>

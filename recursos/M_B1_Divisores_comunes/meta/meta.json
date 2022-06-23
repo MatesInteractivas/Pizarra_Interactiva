@@ -1,0 +1,13 @@
+{
+  "nivel": [
+    "Primaria"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Números y operaciones"
+  ], 
+  "titulo": "Divisores comunes", 
+  "descripcion": "Ofrecer actividades que inviten al alumno a repasar y practicar los divisores comunes entre dos números enteros.",
+  "resena": "Ofrecer actividades que inviten al alumno a repasar y practicar los divisores comunes entre dos números enteros.",
+  "id": "M_B1_Divisores_comunes"
+}

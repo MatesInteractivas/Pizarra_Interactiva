@@ -1,9 +1,0 @@
-7
-
-'Selecciona la palabra monosílaba'
-'El término "Cuarzo" corresponde a una palabra'
-'Los vocablos voz y miel corresponden a palabras:'
-'Selecciona la palabra aguda'
-'Marca la palabra esdrùjula'
-'Marca la silabación correcta de "pordiosero":'
-'Silabea correctamente el término Uruguay:'

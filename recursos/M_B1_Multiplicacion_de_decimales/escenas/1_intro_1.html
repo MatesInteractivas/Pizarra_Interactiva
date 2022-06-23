@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Multiplicación de decimales</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' despl_imagen='expand.' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='450' fijo='sí' escala='30' O.x='-50%' O.y='65%' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='n1' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Respuesta' expresión='((pleca._w-140)/2,pleca._h-35-15,140,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='z=1' activo-si='z=0' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_02" value="id='n2' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Otro ejemplo' expresión='(pleca._w-150-15,pleca._h-35-15,150,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='otro()' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="A_01" value="id='V' vector='sí' evaluar='una-sola-vez' tamaño='6' expresión='V[0]=&squot;&squot;;V[1]=&squot;Manzanas&squot;;V[2]=&squot;Bananas&squot;;V[3]=&squot;Naranjas&squot;;V[4]=&squot;Sandía&squot;;V[5]=&squot;Peras&squot;' tipo='vector' ">
+    <param name="A_02" value="id='W' vector='sí' evaluar='una-sola-vez' tamaño='6' expresión='W[0]=&squot;&squot;;W[1]=49.90;W[2]=21.95;W[3]=16.75;W[4]=12.00;W[5]=42.35' tipo='vector' ">
+    <param name="A_03" value="id='otro()' algoritmo='sí' expresión='0' hacer='z=0;w=ent(rnd*5+1)+ent(rnd*10+1)/10;n=ent(rnd*5+1);' tipo='función' ">
+    <param name="A_04" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='otro()' ">
+    <param name="A_05" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_m.svg' clip='(0,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,42)' texto='Recordemos el uso de la multiplicación de decimales en actividades cotidianas.' ancho='1' fuente puntos='21' align='a_left' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,450)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='E1' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(E1._w/2,E1._h/2+20,0.7,0.7)' archivo='images/venta.svg' ">
+    <param name="G_06" value="espacio='E1' tipo='texto' color='000000' coord_abs='sí' expresión='[20,20]' texto='¿Cuánto te cuestan \b{[w]} kgs de \b{[V[n]]}?' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_07" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(z==1)' coord_abs='sí' expresión='[E1._w-20,20]' texto='Te cuestan \b{[w] × [W[n]]} que son: \b{$[w*W[n]]}' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_right' ">
+    <param name="G_08" value="espacio='E1' tipo='texto' color='ffffff' coord_abs='sí' expresión='[230+s*134,365]' familia='s' s.intervalo='[0,4]' s.pasos='4' texto='$[W[s+1]]/kg' ancho='1' color_borde_texto='c28933' negrita='sí' align='a_left' anchor='a_top_center' border_size='6' ">
+  </ajs>
+
+
+
+</body>
+</html>

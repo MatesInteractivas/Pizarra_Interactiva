@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="M_B3_El_plano_cartesiano" 
+	nivel="Primaria" 
+	area="Matemáticas, Geometría" 
+	plataforma="HTML 5" 
+	>
+	<titulo><![CDATA[
+		El plano cartesiano
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+    Que los alumnos encuentren las coordenadas cartesianas de un punto dado y ubiquen puntos en el plano dadas sus coordenadas.
+	]]></Descripcion>
+</recurso>

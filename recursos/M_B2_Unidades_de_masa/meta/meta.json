@@ -1,0 +1,13 @@
+{
+  "nivel": [
+    "Primaria"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Medidas"
+  ], 
+  "titulo": "Unidades de masa", 
+  "descripcion": "Presentar las diferentes unidades con las que se mide la masa y que el alumno ejercite las conversiones entre ellas.",
+  "resena": "Presentar las diferentes unidades con las que se mide la masa y que el alumno ejercite las conversiones entre ellas.",
+  "id": "M_B2_Unidades_de_masa"
+}

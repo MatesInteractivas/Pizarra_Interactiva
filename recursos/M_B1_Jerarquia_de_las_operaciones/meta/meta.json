@@ -1,0 +1,13 @@
+{
+  "nivel": [
+    "Primaria"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Números y operaciones"
+  ], 
+  "titulo": "Jerarquía de las operaciones", 
+  "descripcion": "Que el estudiante deduzca la jerarquía de las operaciones y la practique.",
+  "resena": "Que el estudiante deduzca la jerarquía de las operaciones y la practique.",
+  "id": "M_B1_Jerarquia_de_las_operaciones"
+}

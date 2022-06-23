@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="M_B1_Multiplicacion_de_decimales" 
+	nivel="Primaria" 
+	area="Matemáticas, Números y operaciones" 
+	plataforma="HTML 5" 
+	>
+	<titulo><![CDATA[
+		Multiplicación de decimales
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+    Ofrecer actividades que inviten al alumno a repasar y practicar la multiplicación entre dos números decimales.
+	]]></Descripcion>
+</recurso>

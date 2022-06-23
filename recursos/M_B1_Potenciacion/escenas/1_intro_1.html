@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Potenciación</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='450' fijo='sí' escala='25' O.x='-240' O.y='100' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='n1' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Animar' expresión='((pleca._w-120)/2,pleca._h-35-15,120,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='animar' dibujar-si='kk=0' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_02" value="id='n2' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Otra vez' expresión='((pleca._w-120)/2,pleca._h-35-15,120,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='pn=-6;hp=6;h0=6;kk=0;numerador=ent(rnd*9)+1' dibujar-si='kk=50' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='pn=-6;hp=6;h0=6;kk=0;;numerador=ent(rnd*9)+1' ">
+    <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_m.svg' clip='(0,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='En algunas ocasiones debemos realizar multiplicaciones en las que se repite un factor. Pulsa el botón “Animar” y observa la información.' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,450)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='E1' tipo='rectángulo' fondo='sí' color='20303a' coord_abs='sí' expresión='(1,343,E1._w-1,10)' relleno='95a5a6' ancho='0' ">
+    <param name="G_06" value="espacio='E1' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(E1._w/2,E1._h/2,1,1)' archivo='images/edificio.svg' ">
+    <param name="G_07" value="espacio='E1' tipo='imagen' dibujar-si='(kk>0)&&(kk<50)' coord_abs='no' expresión='(.6*(50+kk)-35,-2.5,.2,.2)' archivo='images/auto.svg' ">
+    <param name="G_08" value="espacio='E1' tipo='imagen' dibujar-si='kk>10' coord_abs='no' expresión='(3,3*(kk-50)*0.1+10.2,.25,.25)' archivo='images/flores4.png' ">
+    <param name="G_09" value="espacio='E1' tipo='imagen' dibujar-si='kk>20' coord_abs='no' expresión='(3,3*(kk-50)*0.1+7.3,.3,.2)' archivo='images/flores4b.png' ">
+    <param name="G_10" value="espacio='E1' tipo='imagen' dibujar-si='kk>25' coord_abs='no' expresión='(3,3*(kk-50)*0.1+4.3,.25,.25)' archivo='images/flores4.png' ">
+    <param name="G_11" value="espacio='E1' tipo='imagen' dibujar-si='kk>10' coord_abs='no' expresión='(3,3*(kk-50)*0.1+1.3,.3,.2)' archivo='images/flores4b.png' ">
+    <param name="G_12" value="espacio='E1' tipo='imagen' dibujar-si='kk>15' coord_abs='no' expresión='(7.5,0.3*(kk-70)+13.3,.3,.2)' archivo='images/flores4b.png' ">
+    <param name="G_13" value="espacio='E1' tipo='imagen' dibujar-si='kk>15' coord_abs='no' expresión='(7.5,0.3*(kk-50)+4.3,.25,.25)' archivo='images/flores4.png' ">
+    <param name="G_14" value="espacio='E1' tipo='imagen' dibujar-si='kk>30' coord_abs='no' expresión='(7.5,0.3*(kk-50)+1.3,.3,.2)' archivo='images/flores4b.png' ">
+    <param name="G_15" value="espacio='E1' tipo='imagen' dibujar-si='kk>20' coord_abs='no' expresión='(7.5,0.3*(kk-150)+40.3,.25,.25)' archivo='images/flores4.png' ">
+    <param name="G_16" value="espacio='E1' tipo='imagen' dibujar-si='kk>30' coord_abs='no' expresión='(12.1,0.3*(kk-60)+13.3,.25,.25)' archivo='images/flores4.png' ">
+    <param name="G_17" value="espacio='E1' tipo='imagen' dibujar-si='kk>30' coord_abs='no' expresión='(12.1,0.3*(kk-150)+37.3,.3,.2)' archivo='images/flores4b.png' ">
+    <param name="G_18" value="espacio='E1' tipo='imagen' dibujar-si='kk>30' coord_abs='no' expresión='(12.1,0.3*(kk-60)+7.3,.25,.25)' archivo='images/flores4.png' ">
+    <param name="G_19" value="espacio='E1' tipo='imagen' dibujar-si='kk>30' coord_abs='no' expresión='(12.1,0.3*(kk-150)+31.3,.3,.2)' archivo='images/flores4b.png' ">
+    <param name="G_20" value="espacio='E1' tipo='imagen' dibujar-si='kk>35' coord_abs='no' expresión='(16.8,0.3*(kk-150)+31.3,.3,.2)' archivo='images/flores4b.png' ">
+    <param name="G_21" value="espacio='E1' tipo='imagen' dibujar-si='kk>35' coord_abs='no' expresión='(16.8,0.3*(kk-150)+34.3,.25,.25)' archivo='images/flores4.png' ">
+    <param name="G_22" value="espacio='E1' tipo='imagen' dibujar-si='kk>35' coord_abs='no' expresión='(16.8,0.3*(kk-150)+37.3,.3,.2)' archivo='images/flores4b.png' ">
+    <param name="G_23" value="espacio='E1' tipo='imagen' dibujar-si='kk>30' coord_abs='no' expresión='(16.8,0.3*(kk-150)+40.3,.25,.25)' archivo='images/flores4.png' ">
+    <param name="G_24" value="espacio='E1' tipo='texto' color='000000' dibujar-si='kk==0' coord_abs='sí' expresión='[15,E1._h-15]' texto='Para calcular el número de cristales que hay en el frente del edificio multiplicamos \b{4} cristales de cada ventana por \b{4} ventanas en cada piso y por \b{4} pisos: \b{4 × 4 × 4 = 64} cristales en total.' ancho='E1._w-40' fuente puntos='20' align='a_justify' anchor='a_bottom_left' ">
+    <param name="G_25" value="espacio='E1' tipo='texto' color='000000' dibujar-si='kk>49' coord_abs='sí' expresión='[15,E1._h-15]' texto='Ahora hay \b{4} flores en cada maceta y \b{4} macetas en cada ventana. ¿Cuántas flores hay en el frente? \b{4 × 4 × 4 × 4 = 256} flores. Cuando en multiplicaciones como ésta, los factores son iguales, las representamos como: \b{\${4^{4}}} que significa \b{4 × 4 × 4 × 4}.' ancho='E1._w-40' fuente puntos='20' align='a_justify' anchor='a_bottom_left' ">
+    <param name="Animación" value="pausa='40' controles='no' auto='no' repetir='no' inicio='kk=0' hacer='kk=kk+1;hp=(pn<-3.5)*6+((pn>-3.5)&(pn<0))*1.8-(pn>0)&(pn<1)-(pn>1)*pn;h0=(pn<-3.5)*6+((pn>-3.5)&(pn<0))*3+(pn>0)&(pn<1)+(pn>1)*0;pn=pn+.2;ang=ang+kk*36' mientras='kk<50' ">
+  </ajs>
+
+
+
+</body>
+</html>

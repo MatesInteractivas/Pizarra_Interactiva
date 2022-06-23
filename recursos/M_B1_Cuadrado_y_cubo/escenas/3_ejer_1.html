@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Cuadrado y cubo</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body>
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='450' fijo='sí' escala='45' O.x='25' O.y='50%' fondo='ceffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='n3' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E1' expresión='(160,190,120,60)' valor='&squot;&squot;' decimales='0' visible='sí' activo-si='intento<2' keyboard='sí' kblayout='4x4' kbexp='(110,372)' ">
+    <param name="C_02" value="id='veri' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Verificar' expresión='((pleca._w-120)/2,pleca._h-50,120,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='verificar()' activo-si='!correcto' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_03" value="id='n1' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Otro ejercicio' expresión='(pleca._w-140-15,pleca._h-50,140,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='A=ent(rnd*8)+1;B=ent(rnd*2)+2;otro=otro+1;intento=0;n2=&squot;&squot;;n3=&squot;&squot;;correcto=0' activo-si='(correcto)|(intento=2)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="A_01" value="id='verificar()' algoritmo='sí' expresión='0' inicio='intento=intento+1' hacer='correcto=((A^B)==ent(n3))' tipo='función' ">
+    <param name="A_02" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='imgscl=1.5/2' hacer='evalua=0;A=ent(rnd*8)+1;B=ent(rnd*2)+2;intento=0;otro=1;n2=&squot;&squot;;n3=&squot;&squot;;;' ">
+    <param name="A_03" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='//correcto=((A^B)=ent(n3))' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_m.svg' clip='(240,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='Encuentra el valor del exponente para la potenciación. Escribe el resultado en el campo de texto y pulsa el botón “Verificar” para comprobar tu respuesta.' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,450)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='E1' tipo='rectángulo' color='b49f52' coord_abs='sí' expresión='(380,15,600,420)' relleno='fff2c2' ancho='2' border_radius='6' ">
+    <param name="G_06" value="espacio='E1' tipo='imagen' dibujar-si='(A=3)&(B=3)' coord_abs='sí' expresión='(380,15)' archivo='images/fondo33.svg' ">
+    <param name="G_07" value="espacio='E1' tipo='imagen' dibujar-si='(A=9)&(B=3)' coord_abs='sí' expresión='(380,15)' archivo='images/fondo9.svg' ">
+    <param name="G_08" value="espacio='E1' tipo='imagen' dibujar-si='(A=8)&(B=2)' coord_abs='sí' expresión='(380,15)' archivo='images/fondo8.svg' ">
+    <param name="G_09" value="espacio='E1' tipo='imagen' dibujar-si='(A=8)&(B=3)' coord_abs='sí' expresión='(380,15)' archivo='images/fondo83.svg' ">
+    <param name="G_10" value="espacio='E1' tipo='imagen' dibujar-si='(A=7)&(B=3)' coord_abs='sí' expresión='(380,15)' archivo='images/fondo73.svg' ">
+    <param name="G_11" value="espacio='E1' tipo='imagen' dibujar-si='(A=7)&(B=2)' coord_abs='sí' expresión='(380,15)' archivo='images/fondo7.svg' ">
+    <param name="G_12" value="espacio='E1' tipo='imagen' dibujar-si='(A=6)&(B=2)' coord_abs='sí' expresión='(380,15)' archivo='images/fondo6.svg' ">
+    <param name="G_13" value="espacio='E1' tipo='imagen' dibujar-si='(A=6)&(B=3)' coord_abs='sí' expresión='(380,15)' archivo='images/fondo63.svg' ">
+    <param name="G_14" value="espacio='E1' tipo='imagen' dibujar-si='(A=5)&(B=3)' coord_abs='sí' expresión='(380,15)' archivo='images/fondo53.svg' ">
+    <param name="G_15" value="espacio='E1' tipo='imagen' dibujar-si='(A=5)&(B=2)' coord_abs='sí' expresión='(380,15)' archivo='images/fondo5.svg' ">
+    <param name="G_16" value="espacio='E1' tipo='imagen' dibujar-si='(A=4)&(B=2)' coord_abs='sí' expresión='(380,15)' archivo='images/fondo4.svg' ">
+    <param name="G_17" value="espacio='E1' tipo='imagen' dibujar-si='(A=4)&(B=3)' coord_abs='sí' expresión='(380,15)' archivo='images/fondo43.svg' ">
+    <param name="G_18" value="espacio='E1' tipo='imagen' dibujar-si='(A=3)&(B=2)' coord_abs='sí' expresión='(380,15)' archivo='images/fondo3.svg' ">
+    <param name="G_19" value="espacio='E1' tipo='imagen' dibujar-si='(A=2)&(B=2)' coord_abs='sí' expresión='(380,15)' archivo='images/fondo2.svg' ">
+    <param name="G_20" value="espacio='E1' tipo='imagen' dibujar-si='(A=2)&(B=3)' coord_abs='sí' expresión='(380,15)' archivo='images/fondo23.svg' ">
+    <param name="G_21" value="espacio='E1' tipo='imagen' dibujar-si='A=1' coord_abs='sí' expresión='(380,15)' archivo='images/fondo1.svg' ">
+    <param name="G_22" value="espacio='E1' tipo='texto' color='000000' coord_abs='sí' expresión='[15,15]' texto='Calcula la siguiente potencia:' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_23" value="espacio='E1' tipo='texto' color='000000' coord_abs='sí' expresión='[15,160]' texto='\${[A]^{[B]}=}' fijo='no' ancho='1' negrita='sí' fuente puntos='80' align='a_left' anchor='a_top_left' ">
+    <param name="G_24" value="espacio='E1' tipo='texto' color='000000' coord_abs='sí' expresión='[((s==0)?20:-30)+s*100,70]' familia='s' s.intervalo='[0,B-1]' s.pasos='B-1' texto='[(s==0)?&squot;&squot;:&squot;\color{1eab00}{×} &squot;][A]' fijo='no' ancho='1' negrita='sí' fuente puntos='60' align='a_left' anchor='a_top_left' ">
+    <param name="G_25" value="espacio='E1' tipo='texto' color='34cc67' dibujar-si='correcto' coord_abs='sí' expresión='[15,E1._h-15]' texto='¡Muy bien! Intenta con otro ejercicio' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_bottom_left' ">
+    <param name="G_26" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(correcto=0)&(intento=1)' coord_abs='sí' expresión='[15,E1._h-15]' texto='\b{Recuerda}:\nEl exponente es el número de veces que una cantidad se multiplica por sí misma. ¡Intenta de nuevo! ' ancho='340' fuente puntos='20' align='a_justify' anchor='a_bottom_left' ">
+    <param name="G_27" value="espacio='E1' tipo='texto' color='d40809' dibujar-si='(correcto=0)&(intento=2)' coord_abs='sí' expresión='[15,E1._h-15]' texto='¡Lo siento! La potencia correcta es \n\b{[A^B]}. Intenta con otro ejercicio.' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_bottom_left' ">
+    <param name="G_28" value="espacio='E1' tipo='imagen' dibujar-si='correcto' coord_abs='sí' expresión='(320,220,1,1)' archivo='images/bien.svg' ">
+    <param name="G_29" value="espacio='E1' tipo='imagen' dibujar-si='(intento>0)&&(!correcto)' coord_abs='sí' expresión='(320,220,1,1)' archivo='images/mal.svg' ">
+  </ajs>
+
+
+
+</body>
+</html>

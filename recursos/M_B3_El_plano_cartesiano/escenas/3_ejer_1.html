@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>El plano cartesiano</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E0' x='730' y='110' ancho='279' alto='450' fijo='sí' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="E_03" value="tipo='R2' id='E1' x='17' y='112' ancho='696' alto='446' fijo='sí' escala='30' red='c0c0c0' red10='no' ejes='808080' border_radius='6' ">
+    <param name="C_01" value="id='G.x' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='G.x' expresión='(0,0)' incr='1' min='minX' max='maxX' discreto='sí' visible='sí' ">
+    <param name="C_02" value="id='G.y' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='G.y' expresión='(0,0)' incr='1' min='minY' max='maxY' discreto='sí' visible='sí' ">
+    <param name="C_03" value="id='G' tipo='gráfico' espacio='E1' color='000000' color-int='00ffff' tamaño='16' expresión='(0,0)' dibujar-si='0' ">
+    <param name="C_04" value="id='otros' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Otro ejercicio' expresión='(pleca._w-160-15,pleca._h-35-15,160,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='a=(ent(rnd*24))-12;b=(ent(rnd*10))-5;verif=0;G.x=0;G.y=0;correcto=0;cerrar=0;' activo-si='correcto=1' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_05" value="id='verif' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Verificar' expresión='((pleca._w-120)/2,pleca._h-35-15,120,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='verif=1;cerrar=1' activo-si='correcto=0' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_06" value="id='n8' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='n8' expresión='(0,0)' incr='1' visible='sí' ">
+    <param name="C_07" value="id='n9' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='n9' expresión='(0,0)' incr='1' visible='sí' ">
+    <param name="A_01" value="id='Bien(x1,y1)' algoritmo='no' expresión='(abs(x1-y1)<0.15)?1:0' hacer=';;' tipo='función' ">
+    <param name="A_02" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='maxX=11;minX=-maxX;maxY=7;minY=-maxY;;a=(ent(rnd*(2*maxX)))-maxX;b=(ent(rnd*(2*maxY)))-maxY' ">
+    <param name="A_03" value="id='FinBien' evento='sí' condición='(verif=1)&((Bien(a,G.x)=1)&(Bien(b,G.y)=1))' acción='calcular' parámetro='correcto=1' ejecución='alternar' ">
+    <param name="A_04" value="id='FinMal' evento='sí' condición='(verif=1)&((Bien(a,G.x)=0)|(Bien(b,G.y)=0))' acción='calcular' parámetro='correcto=0' ejecución='alternar' ">
+    <param name="A_05" value="id='default' evento='sí' condición='1' acción='calcular' parámetro='verif=0' ejecución='siempre' ">
+    <param name="G_01" value="espacio='E0' tipo='texto' color='000000' coord_abs='sí' expresión='[E0._w/2,20]' texto='abscisa: \b{\color{e74c3c}{[a]}}\nordenada: \b{\color{2980b9}{[b]}}' fijo='no' ancho='1' fuente puntos='20' align='a_center' anchor='a_top_center' ">
+    <param name="G_02" value="espacio='E0' tipo='texto' color='000000' dibujar-si='(correcto=0)&(cerrar=1)' coord_abs='sí' expresión='[20,100]' texto='\b{¡Inténtalo de nuevo!}\n\nLa primera coordenada indica la distancia del punto al eje horizontal. La segunda coordenada indica la distancia del punto al eje vertical. Apóyate en la cuadrícula.' ancho='E0._w-40' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_03" value="espacio='E0' tipo='texto' color='000000' dibujar-si='(correcto=1)&(cerrar=1)' coord_abs='sí' expresión='[20,100]' texto='\b{¡Felicidades!}\n\nUbicaste bien el autobús en el plano de ejes coordenados. ' ancho='E0._w-40' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_m.svg' clip='(240,0,120,120)' ">
+    <param name="G_06" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='Arrastra el autobús y ubícalo según las coordenadas dadas, verifica tu respuesta. Puedes apoyarte en la cuadrícula.' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_07" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,700,450)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_08" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(730,110,279,450)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_09" value="espacio='E1' tipo='texto' color='000000' coord_abs='no' expresión='(maxX,0)' texto='X' ancho='1' color_borde_texto='ffffff' negrita='sí' fuente puntos='15' align='a_left' anchor='a_bottom_left' border_size='6' ">
+    <param name="G_10" value="espacio='E1' tipo='texto' color='000000' coord_abs='no' expresión='(0,maxY)' texto=' Y' ancho='1' color_borde_texto='ffffff' negrita='sí' fuente puntos='15' align='a_left' anchor='a_top_left' border_size='6' ">
+    <param name="G_11" value="espacio='E1' tipo='texto' color='000000' dibujar-si='s!=0' coord_abs='no' expresión='(-0.1,s)' familia='s' s.intervalo='[minY-1,maxY+1]' s.pasos='2*maxY+2' texto='[s]' decimales='1' fijo='no' ancho='1' color_borde_texto='ffffff' negrita='sí' fuente puntos='12' align='a_left' anchor='a_center_right' border_size='4' ">
+    <param name="G_12" value="espacio='E1' tipo='texto' color='000000' coord_abs='no' expresión='(s,-0.1)' familia='s' s.intervalo='[minX-1,maxX+1]' s.pasos='2*maxX+2' texto='[s]' decimales='1' fijo='no' ancho='1' color_borde_texto='ffffff' negrita='sí' fuente puntos='12' align='a_left' anchor='a_top_center' border_size='4' ">
+    <param name="G_13" value="espacio='E1' tipo='segmento' color='e74c3c' coord_abs='no' expresión='(G.x,0)(G.x,G.y)' tamaño='0' ancho='2' lineDash='dash' ">
+    <param name="G_14" value="espacio='E1' tipo='segmento' color='2980b9' coord_abs='no' expresión='(0,G.y)(G.x,G.y)' tamaño='0' ancho='2' lineDash='dash' ">
+    <param name="G_15" value="espacio='E1' tipo='imagen' coord_abs='no' expresión='(G.x,G.y,0.1)' archivo='images/autobus.png' ">
+  </ajs>
+
+
+
+</body>
+</html>

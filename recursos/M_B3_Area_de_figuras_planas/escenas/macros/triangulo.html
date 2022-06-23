@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>TITULO</title>
+  <script type="text/javascript" src="https://arquimedes.matem.unam.mx/Descartes5/lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body bgcolor="e0e4e8">
+
+  <p align="center">
+    <ajs name="Descartes" code="Descartes" width="970" height="550">
+      <param name="tamaño" value="970x550">
+      <param name="decimal_symbol" value=".">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="sí">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=40 ">
+      <param name="E_01" value="tipo='R2' id='E1' red='no' red10='no' ejes='no' ">
+      <param name="A_01" value="id='vertices' matriz='sí' evaluar='una-sola-vez' columnas='3' filas='3' tipo='matriz' ">
+      <param name="A_02" value="id='creaTriangulo(ct_base,ct_altura)' algoritmo='sí' expresión='x' hacer='base=ct_base;altura=ct_altura;;ct_desp=ent(rnd*base);;vertices[0,0]=-(base/2);vertices[0,1]=-(altura/2);vertices[1,0]=vertices[0,0]+base;vertices[1,1]=-(altura/2);vertices[2,0]=(rnd<1/3)?vertices[0,0]:vertices[1,0];vertices[2,0]=(rnd>0.2)?-(base/2)+base/6+rnd*base*2/3:vertices[2,0];vertices[2,0]=(rnd<0.00)?-(base/2)+base*(-1+rnd*3):vertices[2,0];vertices[2,1]=(altura/2);;baseNuevoTriangulo=(((vertices[2,0]<vertices[0,0])?(vertices[0,0]):((vertices[1,0]<vertices[2,0])?(vertices[2,0]):(vertices[2,0]))) - ((vertices[2,0]<vertices[0,0])?(vertices[2,0]):((vertices[1,0]<vertices[2,0])?(vertices[1,0]):(vertices[2,0]))))' tipo='función' ">
+      <param name="A_03" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='base=2;altura=2;muestraMedidas=0;muestraAltura=0;muestraRectangulo=0;muestraOtroTriangulo=0;baseNuevoTriangulo=(((vertices[2,0]<vertices[0,0])?(vertices[0,0]):((vertices[1,0]<vertices[2,0])?(vertices[2,0]):(vertices[2,0]))) - ((vertices[2,0]<vertices[0,0])?(vertices[2,0]):((vertices[1,0]<vertices[2,0])?(vertices[1,0]):(vertices[2,0]))));;creaTriangulo(2,3)' ">
+      <param name="G_01" value="espacio='E1' tipo='polígono' color='20303a' dibujar-si='muestraRectangulo' coord_abs='no' expresión='((vertices[0,0]<vertices[2,0])?(vertices[0,0]):(vertices[2,0]), vertices[0,1])((vertices[1,0]>vertices[2,0])?(vertices[1,0]):(vertices[2,0]), vertices[1,1])((vertices[1,0]>vertices[2,0])?(vertices[1,0]):(vertices[2,0]), vertices[2,1])((vertices[0,0]<vertices[2,0])?(vertices[0,0]):(vertices[2,0]), vertices[2,1])((vertices[0,0]<vertices[2,0])?(vertices[0,0]):(vertices[2,0]), vertices[0,1])' relleno='ffff00' ancho='1' ">
+      <param name="G_02" value="espacio='E1' tipo='polígono' color='20303a' dibujar-si='muestraOtroTriangulo' coord_abs='no' expresión='((vertices[2,0]<vertices[0,0])?(vertices[2,0]):((vertices[1,0]<vertices[2,0])?(vertices[1,0]):(vertices[2,0])), vertices[0,1])((vertices[2,0]<vertices[0,0])?(vertices[0,0]):((vertices[1,0]<vertices[2,0])?(vertices[2,0]):(vertices[2,0])), vertices[1,1])(vertices[2,0] ,vertices[2,1])((vertices[2,0]<vertices[0,0])?(vertices[2,0]):((vertices[1,0]<vertices[2,0])?(vertices[1,0]):(vertices[2,0])), vertices[0,1])' relleno='00ffff' ancho='1' ">
+      <param name="G_03" value="espacio='E1' tipo='segmento' color='ff00ff' dibujar-si='muestraMedidas' coord_abs='no' expresión='((vertices[2,0]<vertices[0,0])?(vertices[2,0]):((vertices[1,0]<vertices[2,0])?(vertices[1,0]):(vertices[2,0])), vertices[0,1]-.75)((vertices[2,0]<vertices[0,0])?(vertices[0,0]):((vertices[1,0]<vertices[2,0])?(vertices[2,0]):(vertices[2,0])), vertices[1,1]-.75)' tamaño='0' ancho='1.5' ">
+      <param name="G_04" value="espacio='E1' tipo='segmento' color='ff00ff' dibujar-si='muestraMedidas' coord_abs='no' expresión='(vertices[2,0], vertices[0,1]-.5)(vertices[2,0], vertices[0,1]-1)' tamaño='0' ancho='1.5' ">
+      <param name="G_05" value="espacio='E1' tipo='texto' color='00ffff' dibujar-si='(muestraMedidas)&(baseNuevoTriangulo!=0)' coord_abs='no' expresión='(-.5+((vertices[2,0]<vertices[0,0])?(vertices[2,0]):((vertices[1,0]<vertices[2,0])?(vertices[1,0]):(vertices[2,0]))) + (((vertices[2,0]<vertices[0,0])?(vertices[0,0]):((vertices[1,0]<vertices[2,0])?(vertices[2,0]):(vertices[2,0]))) - ((vertices[2,0]<vertices[0,0])?(vertices[2,0]):((vertices[1,0]<vertices[2,0])?(vertices[1,0]):(vertices[2,0]))))/2, vertices[0,1]-1.5)' texto='\${b_{1} = [baseNuevoTriangulo]}' fijo='no' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+      <param name="G_06" value="espacio='E1' tipo='polígono' color='000000' coord_abs='no' expresión='(vertices[0,0], vertices[0,1])(vertices[1,0], vertices[1,1])(vertices[2,0], vertices[2,1])(vertices[0,0], vertices[0,1])' ancho='1.5' ">
+      <param name="G_07" value="espacio='E1' tipo='segmento' color='000000' dibujar-si='muestraMedidas' coord_abs='no' expresión='(vertices[0,0], vertices[0,1]-.5)(vertices[0,0], vertices[0,1]-1)' tamaño='0' ancho='1.5' ">
+      <param name="G_08" value="espacio='E1' tipo='segmento' color='000000' dibujar-si='muestraMedidas' coord_abs='no' expresión='(vertices[1,0], vertices[1,1]-.5)(vertices[1,0], vertices[1,1]-1)' tamaño='0' ancho='1.5' ">
+      <param name="G_09" value="espacio='E1' tipo='segmento' color='000000' dibujar-si='muestraMedidas' coord_abs='no' expresión='(vertices[0,0], vertices[0,1]-.75)(vertices[1,0], vertices[1,1]-.75)' tamaño='0' ancho='1.5' ">
+      <param name="G_10" value="espacio='E1' tipo='texto' color='000000' dibujar-si='muestraMedidas' coord_abs='no' expresión='(vertices[0,0]-.5+(vertices[1,0]-vertices[0,0])/2, vertices[0,1]-1.5)(vertices[0,0]-.25+(vertices[1,0]-vertices[0,0])/2, vertices[1,1]-1.5) ' texto='b = [base]' decimales='(ent(lado)<lado)?2:0' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+      <param name="G_11" value="espacio='E1' tipo='segmento' color='000000' dibujar-si='muestraMedidas' coord_abs='no' expresión='(((vertices[0,0]<vertices[2,0])?vertices[0,0]:vertices[2,0])-.5, vertices[0,1])(((vertices[0,0]<vertices[2,0])?vertices[0,0]:vertices[2,0])-1, vertices[0,1]) ' tamaño='0' ancho='1.5' ">
+      <param name="G_12" value="espacio='E1' tipo='segmento' color='000000' dibujar-si='muestraMedidas' coord_abs='no' expresión='(((vertices[0,0]<vertices[2,0])?vertices[0,0]:vertices[2,0])-.5, vertices[2,1])(((vertices[0,0]<vertices[2,0])?vertices[0,0]:vertices[2,0])-1, vertices[2,1]) ' tamaño='0' ancho='1.5' ">
+      <param name="G_13" value="espacio='E1' tipo='segmento' color='000000' dibujar-si='muestraMedidas' coord_abs='no' expresión='(((vertices[0,0]<vertices[2,0])?vertices[0,0]:vertices[2,0])-.75, vertices[0,1])(((vertices[0,0]<vertices[2,0])?vertices[0,0]:vertices[2,0])-.75, vertices[2,1])' tamaño='0' ancho='1.5' ">
+      <param name="G_14" value="espacio='E1' tipo='texto' color='000000' dibujar-si='muestraMedidas' coord_abs='no' expresión='(((vertices[0,0]<vertices[2,0])?vertices[0,0]:vertices[2,0])-3+((ent(lado)<lado)?0:.5), vertices[0,1]+altura/2)(((vertices[0,0]<vertices[2,0])?vertices[0,0]:vertices[2,0])-3+((ent(lado)<lado)?0:.5), vertices[2,1]+altura/2)' texto='h = [altura]' decimales='(ent(lado)<lado)?2:0' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+      <param name="G_15" value="espacio='E1' tipo='segmento' color='000000' dibujar-si='muestraAltura' coord_abs='no' expresión='(vertices[2,0],vertices[2,1])(vertices[2,0],vertices[0,1])' tamaño='0' ancho='3' ">
+    </ajs>
+  </p>
+
+
+
+</body>
+</html>

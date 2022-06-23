@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Números romanos y egipcios</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='500' fijo='sí' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='boton1' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Símbolos' expresión='(E1._w/4-140/2,100,140,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='boton1=1;boton2=0' activo-si='!boton1' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_02" value="id='boton2' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Reglas' expresión='(3*E1._w/4-140/2,100,140,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='boton1=0;boton2=1' activo-si='!boton2' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='started=0' hacer='vertexto=0;SOM.Top=500;SOM.Left=400;SOM.transp=0.80;SOM.rojo=0.28;SOM.verde=0.60;SOM.azul=0.93;RA1.x=80;RA1.y=130;RA1.w=630;RA1.h=180;RA1.transp=0.2;RA1.rojo=214/256;RA1.verde=245/256;RA1.azul=254/256;RA2.x=110;RA2.y=190;RA2.w=580;RA2.h=80;RA2.transp=0.2;RA2.rojo=214/256;RA2.verde=245/256;RA2.azul=254/256;RA3.x=100;RA3.y=80;RA3.w=590;RA3.h=300;RA3.transp=0.0;RA3.rojo=1;RA3.verde=0.9;RA3.azul=0.25;RA4.x=60;RA4.y=90;RA4.w=670;RA4.h=320;RA4.transp=0.0;RA4.rojo=1;RA4.verde=0.9;RA4.azul=0.25;' ">
+    <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='boton11=(boton1)?1:boton11;boton21=(boton2)?1:boton21;boton31=(boton3)?1:boton31;boton41=(boton4)?1:boton41;suma=boton1+boton2+boton3;vertexto=(boton11+boton21+boton31=2)&(suma=0);vertexto1=(vertexto)?1:vertexto1;;' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_m.svg' clip='(120,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,42)' texto='Pulsa los botones para explorar el sistema de numeración usado por los Egipcios.' ancho='1' fuente puntos='21' align='a_left' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,500)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='E1' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='[20,20]' texto='Los egipcios utilizaron un sistema de numeración basado en \b{jeroglíficos}, el cual dispone de un símbolo particular para cada potencia de diez pero \b{sin considerar un valor posicional}.' ancho='E1._w-40' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    <param name="G_06" value="espacio='E1' tipo='rectángulo' color='afa14f' dibujar-si='boton1||boton2||boton3||boton4' coord_abs='sí' expresión='(20,165,730,315)' relleno='fffadd' ancho='2' border_radius='6' ">
+    <param name="G_07" value="espacio='E1' tipo='imagen' dibujar-si='(boton1)||(boton2)||(boton3)' coord_abs='sí' expresión='(880,380,0.5,0.5)' archivo='images/egipcio.png' ">
+    <param name="G_08" value="espacio='E1' tipo='texto' color='000000' dibujar-si='boton1' coord_abs='sí' expresión='[40,185]' texto='Los cuatro primeros símbolos son:' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_09" value="espacio='E1' tipo='imagen' dibujar-si='boton1' coord_abs='sí' expresión='(180,250)' archivo='images/egipcio_regla1.svg' ">
+    <param name="G_10" value="espacio='E1' tipo='texto' color='000000' dibujar-si='boton2' coord_abs='sí' expresión='[40,185]' texto='Cada número podía repetirse \b{nueve} veces.\n\nLa \b{posición} de los números no afectaba la cifra que se quería representar. ' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_11" value="espacio='E1' tipo='imagen' dibujar-si='boton2' coord_abs='sí' expresión='(100,270)' archivo='images/egipcio_regla2.svg' ">
+  </ajs>
+
+
+
+</body>
+</html>

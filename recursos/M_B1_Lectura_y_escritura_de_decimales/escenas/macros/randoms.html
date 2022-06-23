@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>TITULO</title>
+  <script type="text/javascript" src="https://arquimedes.matem.unam.mx/Descartes5/lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="970" height="550">
+      <param name="tamaño" value="970x550">
+      <param name="decimal_symbol" value=".">
+      <param name="nombre" value="">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=40 ">
+      <param name="E_01" value="tipo='R2' id='E1' ">
+      <param name="A_01" value="id='n_numeros' expresión='ent(maxRango-minRango)' tipo='variable' ">
+      <param name="A_02" value="id='VecAux1' vector='sí' evaluar='una-sola-vez' tamaño='n_numeros+100' expresión='VecAux1[0]=0;VecAux1[1]=0;VecAux1[2]=0' tipo='vector' ">
+      <param name="A_03" value="id='resultadoVec' vector='sí' evaluar='una-sola-vez' tamaño='n_numeros+100' tipo='vector' ">
+      <param name="A_04" value="id='initVecAux1()' algoritmo='sí' expresión='x' inicio='_indexT=0;_ancla=minRango;' hacer='VecAux1[_indexT]=_ancla;_indexT=_indexT+1;_ancla=_ancla+1;' mientras='_indexT<n_numeros' tipo='función' ">
+      <param name="A_05" value="id='reacomodaVector(_posBorrar)' algoritmo='sí' expresión='x' inicio='_indexAcomoda=_posBorrar;' hacer='VecAux1[_indexAcomoda]=VecAux1[_indexAcomoda+1];_indexAcomoda=_indexAcomoda+1' mientras='_indexAcomoda<(n_numeros-1)' tipo='función' ">
+      <param name="A_06" value="id='creaAleatorios()' algoritmo='sí' expresión='x' inicio='initVecAux1();_indexCrearAl=0;' hacer='_cuantosQuedan=(n_numeros-_indexCrearAl);_indexAleatorio=ent(rnd*_cuantosQuedan);;resultadoVec[_indexCrearAl]=VecAux1[_indexAleatorio];;reacomodaVector(_indexAleatorio);_indexCrearAl=_indexCrearAl+1' mientras='_indexCrearAl<n_numeros' tipo='función' ">
+      <param name="A_07" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='minRango=0;maxRango=10' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' color='0000ff' coord_abs='sí' expresión='[20,20*s]' familia='s' s.intervalo='[0,n_numeros-1]' s.pasos='n_numeros-1' texto='resultadoVec([s])=[resultadoVec[s]]' fijo='no' ancho='1' align='a_left' anchor='a_top_left' ">
+      <param name="G_02" value="espacio='E1' tipo='texto' color='0000ff' coord_abs='sí' expresión='[220,20*s]' familia='s' s.intervalo='[0,n_numeros-1]' s.pasos='n_numeros-1' texto='VecAux1([s])=[VecAux1[s]]' fijo='no' ancho='1' align='a_left' anchor='a_top_left' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

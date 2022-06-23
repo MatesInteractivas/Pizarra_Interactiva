@@ -1,0 +1,13 @@
+{
+  "nivel": [
+    "Primaria"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Números y operaciones"
+  ], 
+  "titulo": "Divisibilidad", 
+  "descripcion": "Ofrecer actividades que inviten al alumno a repasar y practicar la divisibilidad entre dos números enteros.",
+  "resena": "Ofrecer actividades que inviten al alumno a repasar y practicar la divisibilidad entre dos números enteros.",
+  "id": "M_B1_Divisibilidad"
+}

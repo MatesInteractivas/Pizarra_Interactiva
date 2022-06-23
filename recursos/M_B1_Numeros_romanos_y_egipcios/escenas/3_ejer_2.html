@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Números romanos y egipcios</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='450' fijo='sí' escala='47' O.x='-500' O.y='200' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='f1' tipo='gráfico' espacio='E1' color='0000ff' color-int='ff0000' tamaño='18' expresión='(0,0)' dibujar-si='mm' activo-si='letras>0' ">
+    <param name="C_02" value="id='f1.x' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='f1.x' expresión='(0,0)' incr='.1' min='1.5' max='15.5' decimales='1' visible='sí' ">
+    <param name="C_03" value="id='f1.y' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='f1.y' expresión='(0,0)' min='.5' max='5.5' visible='sí' ">
+    <param name="C_04" value="id='f2' tipo='gráfico' espacio='E1' color='azul' color-int='rojo' tamaño='18' expresión='(0,0)' dibujar-si='mm' activo-si='letras>1' ">
+    <param name="C_05" value="id='f2.x' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='f2.x' expresión='(0,0)' incr='.1' min='1.5' max='15.5' decimales='1' visible='sí' ">
+    <param name="C_06" value="id='f2.y' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='f2.y' expresión='(0,0)' min='.5' max='5.5' visible='sí' ">
+    <param name="C_07" value="id='f3' tipo='gráfico' espacio='E1' color='azul' color-int='rojo' tamaño='18' expresión='(0,0)' dibujar-si='mm' activo-si='letras>2' ">
+    <param name="C_08" value="id='f3.x' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='f3.x' expresión='(0,0)' incr='.1' min='1.5' max='15.5' decimales='1' visible='sí' ">
+    <param name="C_09" value="id='f3.y' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='f3.y' expresión='(0,0)' min='.5' max='5.5' visible='sí' ">
+    <param name="C_10" value="id='f4' tipo='gráfico' espacio='E1' color='azul' color-int='rojo' tamaño='18' expresión='(0,0)' dibujar-si='mm' activo-si='letras>3' ">
+    <param name="C_11" value="id='f4.x' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='f4.x' expresión='(0,0)' incr='.1' min='1.5' max='15.5' decimales='1' visible='sí' ">
+    <param name="C_12" value="id='f4.y' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='f4.y' expresión='(0,0)' min='.5' max='5.5' visible='sí' ">
+    <param name="C_13" value="id='f5' tipo='gráfico' espacio='E1' color='azul' color-int='rojo' tamaño='18' expresión='(0,0)' dibujar-si='mm' activo-si='letras>4' ">
+    <param name="C_14" value="id='f5.x' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='f5.x' expresión='(0,0)' incr='.1' min='1.5' max='15.5' decimales='1' visible='sí' ">
+    <param name="C_15" value="id='f5.y' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='f5.y' expresión='(0,0)' min='.5' max='5.5' visible='sí' ">
+    <param name="C_16" value="id='f6' tipo='gráfico' espacio='E1' color='azul' color-int='rojo' tamaño='18' expresión='(0,0)' dibujar-si='mm' activo-si='letras>5' ">
+    <param name="C_17" value="id='f6.x' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='f6.x' expresión='(0,0)' incr='.1' min='1.5' max='15.5' decimales='1' visible='sí' ">
+    <param name="C_18" value="id='f6.y' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='f6.y' expresión='(0,0)' min='.5' max='5.5' visible='sí' ">
+    <param name="C_19" value="id='f7' tipo='gráfico' espacio='E1' color='azul' color-int='rojo' tamaño='18' expresión='(0,0)' dibujar-si='mm' activo-si='letras>6' ">
+    <param name="C_20" value="id='f7.x' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='f7.x' expresión='(0,0)' incr='.1' min='1.5' max='15.5' decimales='1' visible='sí' ">
+    <param name="C_21" value="id='f7.y' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='f7.y' expresión='(0,0)' min='.5' max='5.5' visible='sí' ">
+    <param name="C_22" value="id='f8' tipo='gráfico' espacio='E1' color='azul' color-int='rojo' tamaño='18' expresión='(0,0)' dibujar-si='mm' activo-si='letras>7' ">
+    <param name="C_23" value="id='f8.x' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='f8.x' expresión='(0,0)' incr='.1' min='1.5' max='15.5' decimales='1' visible='sí' ">
+    <param name="C_24" value="id='f8.y' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='f8.y' expresión='(0,0)' min='.5' max='5.5' visible='sí' ">
+    <param name="C_25" value="id='f9' tipo='gráfico' espacio='E1' color='azul' color-int='rojo' tamaño='18' expresión='(0,0)' dibujar-si='mm' activo-si='letras>08' ">
+    <param name="C_26" value="id='f9.x' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='f9.x' expresión='(0,0)' incr='.1' min='1.5' max='15.5' decimales='1' visible='sí' ">
+    <param name="C_27" value="id='f9.y' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='f9.y' expresión='(0,0)' min='.5' max='5.5' visible='sí' ">
+    <param name="C_28" value="id='f10' tipo='gráfico' espacio='E1' color='azul' color-int='rojo' tamaño='18' expresión='(0,0)' dibujar-si='mm' activo-si='letras>9' ">
+    <param name="C_29" value="id='f10.x' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='f10.x' expresión='(0,0)' incr='.1' min='1.5' max='15.5' decimales='1' visible='sí' ">
+    <param name="C_30" value="id='f10.y' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='f10.y' expresión='(0,0)' min='.5' max='5.5' visible='sí' ">
+    <param name="C_31" value="id='f11' tipo='gráfico' espacio='E1' color='azul' color-int='rojo' tamaño='18' expresión='(0,0)' dibujar-si='mm' activo-si='letras>10' ">
+    <param name="C_32" value="id='f11.x' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='f11.x' expresión='(0,0)' incr='.1' min='1.5' max='15.5' decimales='1' visible='sí' ">
+    <param name="C_33" value="id='f11.y' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='f11.y' expresión='(0,0)' min='.5' max='5.5' visible='sí' ">
+    <param name="C_34" value="id='f12' tipo='gráfico' espacio='E1' color='azul' color-int='rojo' tamaño='18' expresión='(0,0)' dibujar-si='mm' activo-si='letras>11' ">
+    <param name="C_35" value="id='f12.x' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='f12.x' expresión='(0,0)' incr='.1' min='1.5' max='15.5' decimales='1' visible='sí' ">
+    <param name="C_36" value="id='f12.y' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='f12.y' expresión='(0,0)' min='.5' max='5.5' visible='sí' ">
+    <param name="C_37" value="id='f13' tipo='gráfico' espacio='E1' color='azul' color-int='rojo' tamaño='18' expresión='(0,0)' dibujar-si='mm' activo-si='letras>12' ">
+    <param name="C_38" value="id='f13.x' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='f13.x' expresión='(0,0)' incr='.1' min='1.5' max='15.5' decimales='1' visible='sí' ">
+    <param name="C_39" value="id='f13.y' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='f13.y' expresión='(0,0)' min='.5' max='5.5' visible='sí' ">
+    <param name="C_40" value="id='f14' tipo='gráfico' espacio='E1' color='azul' color-int='rojo' tamaño='18' expresión='(0,0)' dibujar-si='mm' activo-si='letras>13' ">
+    <param name="C_41" value="id='f14.x' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='f14.x' expresión='(0,0)' incr='.1' min='1.5' max='15.5' decimales='1' visible='sí' ">
+    <param name="C_42" value="id='f14.y' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='f14.y' expresión='(0,0)' min='.5' max='5.5' visible='sí' ">
+    <param name="C_43" value="id='f15' tipo='gráfico' espacio='E1' color='azul' color-int='rojo' tamaño='18' expresión='(0,0)' dibujar-si='mm' activo-si='letras>14' ">
+    <param name="C_44" value="id='f15.x' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='f15.x' expresión='(0,0)' incr='.1' min='1.5' max='15.5' decimales='1' visible='sí' ">
+    <param name="C_45" value="id='f15.y' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='f15.y' expresión='(0,0)' min='.5' max='5.5' visible='sí' ">
+    <param name="C_46" value="id='n46' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Solución' expresión='((pleca._w-130)/2,pleca._h-35-15,130,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='sol=1' activo-si='(sol=0)&(correcto=0)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_47" value="id='n47' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Otro número' expresión='(pleca._w-150-15,pleca._h-35-15,150,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='otro=otro+1;sol=0;rta=0;otroEjercicio()' activo-si='((sol=1)|(correcto=1))&(otro<5)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="A_01" value="id='P1' vector='sí' evaluar='una-sola-vez' tamaño='20' expresión='6;&squot;L&squot;;&squot;X&squot;;&squot;V&squot;;&squot;I&squot;;&squot;I&squot;;&squot;I&squot;' tipo='vector' ">
+    <param name="A_02" value="id='P2' vector='sí' evaluar='una-sola-vez' tamaño='20' expresión='5;&squot;M&squot;;&squot;D&squot;;&squot;L&squot;;&squot;I&squot;;&squot;I&squot;' tipo='vector' ">
+    <param name="A_03" value="id='P3' vector='sí' evaluar='una-sola-vez' tamaño='20' expresión='6;&squot;M&squot;;&squot;C&squot;;&squot;D&squot;;&squot;X&squot;;&squot;X&squot;;&squot;X&squot;' tipo='vector' ">
+    <param name="A_04" value="id='P4' vector='sí' evaluar='una-sola-vez' tamaño='20' expresión='4;&squot;C&squot;;&squot;D&squot;;&squot;X&squot;;&squot;I&squot;' tipo='vector' ">
+    <param name="A_05" value="id='P5' vector='sí' evaluar='una-sola-vez' tamaño='20' expresión='10;&squot;M&squot;;&squot;D&squot;;&squot;C&squot;;&squot;C&squot;;&squot;C&squot;;&squot;L&squot;;&squot;X&squot;;&squot;X&squot;;&squot;V&squot;;&squot;I&squot;' tipo='vector' ">
+    <param name="A_06" value="id='R' vector='sí' evaluar='una-sola-vez' tamaño='20' tipo='vector' ">
+    <param name="A_07" value="id='Q' vector='sí' evaluar='una-sola-vez' tamaño='20' tipo='vector' ">
+    <param name="A_08" value="id='T' vector='sí' evaluar='una-sola-vez' tamaño='2' expresión='0;&squot;Numeración Romana&squot;' tipo='vector' ">
+    <param name="A_09" value="id='N1' vector='sí' evaluar='una-sola-vez' tamaño='20' expresión='0;68;1552;1430;411;1876;748;79;915;234;362' tipo='vector' ">
+    <param name="A_10" value="id='otroEjercicio()' algoritmo='sí' expresión='0' hacer='f1.x=3;f1.y=rnd*3+1;f2.x=rnd*15;f2.y=rnd*3+1;f3.x=rnd*15;f3.y=rnd*3+1;f4.x=rnd*15;f2.y=rnd*3+1;f4.x=rnd*15;f4.y=rnd*3+1;f5.x=rnd*15;f5.y=rnd*3+1;f6.x=rnd*15;f6.y=rnd*3+1;f7.x=rnd*15;f7.y=rnd*3+1;f8.x=rnd*15;f8.y=rnd*3+1;f9.x=rnd*15;f9.y=rnd*3+1;f10.x=rnd*15;f10.y=rnd*3+1;f11.x=rnd*15;f11.y=rnd*3+1;f12.x=rnd*15;f12.y=rnd*3+1;f13.x=rnd*15;f13.y=rnd*3+1;f14.x=rnd*15;f14.y=rnd*3+1;f15.x=rnd*15;f15.y=rnd*6+1' tipo='función' ">
+    <param name="A_11" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='otro=1;pp=1;' ">
+    <param name="A_12" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='f1.x=ent(f1.x)+.5;f2.x=ent(f2.x)+.5;f3.x=ent(f3.x)+.5;f4.x=ent(f4.x)+.5;f5.x=ent(f5.x)+.5;f6.x=ent(f6.x)+.5;f7.x=ent(f7.x)+.5;f8.x=ent(f8.x)+.5;f9.x=ent(f9.x)+.5;f10.x=ent(f10.x)+.5;f11.x=ent(f11.x)+.5;f12.x=ent(f12.x)+.5;f13.x=ent(f13.x)+.5;f14.x=ent(f14.x)+.5;f15.x=ent(f15.x)+.5;f1.y=ent(f1.y)+.5;f2.y=ent(f2.y)+.5;f3.y=ent(f3.y)+.5;f4.y=ent(f4.y)+.5;f5.y=ent(f5.y)+.5;f6.y=ent(f6.y)+.5;f7.y=ent(f7.y)+.5;f8.y=ent(f8.y)+.5;f9.y=ent(f9.y)+.5;f10.y=ent(f10.y)+.5;f11.y=ent(f11.y)+.5;f12.y=ent(f12.y)+.5;f13.y=ent(f13.y)+.5;f14.y=ent(f14.y)+.5;f15.y=ent(f15.y)+.5' ">
+    <param name="A_13" value="id='e3' evento='sí' condición='pp' acción='calcular' parámetro='otroEjercicio()' ejecución='alternar' ">
+    <param name="A_14" value="id='Letras' algoritmo='sí' evaluar='siempre' hacer='letras=(otro==1)?P1[0]:letras;letras=(otro==2)?P2[0]:letras;letras=(otro==3)?P3[0]:letras;letras=(otro==4)?P4[0]:letras;letras=(otro==5)?P5[0]:letras' ">
+    <param name="A_15" value="id='ASIGNA PALABRA' algoritmo='sí' evaluar='siempre' inicio='kk=0' hacer='kk=kk+1;R[kk]=(otro=1)?P1[kk]:R[kk];R[kk]=(otro=2)?P2[kk]:R[kk];R[kk]=(otro=3)?P3[kk]:R[kk];R[kk]=(otro=4)?P4[kk]:R[kk];R[kk]=(otro=5)?P5[kk]:R[kk]' mientras='kk<letras' ">
+    <param name="A_16" value="id='a14' algoritmo='sí' evaluar='siempre' inicio='uu=0;Q[1]=0;Q[2]=0;Q[3]=0;Q[4]=0;Q[5]=0;Q[6]=0;Q[7]=0;Q[8]=0;Q[9]=0;Q[10]=0;Q[11]=0;Q[12]=0;Q[13]=0;Q[14]=0;Q[15]=0' hacer='uu=uu+1;Q[uu]=(f1.x=0.5+uu)&(f1.y=5.5)?R[1]:Q[uu];Q[uu]=(f2.x=0.5+uu)&(f2.y=5.5)?R[2]:Q[uu];Q[uu]=(f3.x=0.5+uu)&(f3.y=5.5)?R[3]:Q[uu];Q[uu]=(f4.x=0.5+uu)&(f4.y=5.5)?R[4]:Q[uu];Q[uu]=(f5.x=0.5+uu)&(f5.y=5.5)?R[5]:Q[uu];Q[uu]=(f6.x=0.5+uu)&(f6.y=5.5)?R[6]:Q[uu];Q[uu]=(f7.x=0.5+uu)&(f7.y=5.5)?R[7]:Q[uu];Q[uu]=(f8.x=0.5+uu)&(f8.y=5.5)?R[8]:Q[uu];Q[uu]=(f9.x=0.5+uu)&(f9.y=5.5)?R[9]:Q[uu];Q[uu]=(f10.x=0.5+uu)&(f10.y=5.5)?R[10]:Q[uu];Q[uu]=(f11.x=0.5+uu)&(f11.y=5.5)?R[11]:Q[uu];Q[uu]=(f12.x=0.5+uu)&(f12.y=5.5)?R[12]:Q[uu];Q[uu]=(f13.x=0.5+uu)&(f13.y=5.5)?R[13]:Q[uu];Q[uu]=(f14.x=0.5+uu)&(f14.y=5.5)?R[14]:Q[uu];Q[uu]=(f15.x=0.5+uu)&(f15.y=5.5)?R[15]:Q[uu]' mientras='uu<letras' ">
+    <param name="A_17" value="id='a15' algoritmo='sí' evaluar='siempre' inicio='nn=0;rta=0 ' hacer='nn=nn+1;rta=rta+(Q[nn]=R[nn])' mientras='nn<letras' ">
+    <param name="A_18" value="id='a16' algoritmo='sí' evaluar='siempre' hacer='correcto=(rta=letras)?1:0' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_m.svg' clip='(240,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='Mueve todas las letras a su posición correcta y forma el número romano equivalente al numero arábigo indicado.' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,450)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='E1' tipo='polígono' color='000000' coord_abs='no' expresión='(s,5)(s,6)(s+1,6)(s+1,5)(s,5)' familia='s' s.intervalo='[1,letras]' s.pasos='letras-1' relleno='ffffff' ancho='2' ">
+    <param name="G_06" value="espacio='E1' tipo='imagen' dibujar-si='letras>0' coord_abs='no' expresión='(f1.x,f1.y,0.5,0.5)' archivo='images/ficha.png' ">
+    <param name="G_07" value="espacio='E1' tipo='texto' color='000000' dibujar-si='letras>0' coord_abs='no' expresión='(f1.x,f1.y)' texto='[R[1]]' ancho='1' negrita='sí' fuente puntos='32' align='a_left' anchor='a_center_center' ">
+    <param name="G_08" value="espacio='E1' tipo='imagen' dibujar-si='letras>1' coord_abs='no' expresión='(f2.x,f2.y,0.5,0.5)' archivo='images/ficha.png' ">
+    <param name="G_09" value="espacio='E1' tipo='texto' color='000000' dibujar-si='letras>1' coord_abs='no' expresión='(f2.x,f2.y)' texto='[R[2]]' ancho='1' negrita='sí' fuente puntos='32' align='a_left' anchor='a_center_center' ">
+    <param name="G_10" value="espacio='E1' tipo='imagen' dibujar-si='letras>2' coord_abs='no' expresión='(f3.x,f3.y,0.5,0.5)' archivo='images/ficha.png' ">
+    <param name="G_11" value="espacio='E1' tipo='texto' color='000000' dibujar-si='letras>2' coord_abs='no' expresión='(f3.x,f3.y)' texto='[R[3]]' ancho='1' negrita='sí' fuente puntos='32' align='a_left' anchor='a_center_center' ">
+    <param name="G_12" value="espacio='E1' tipo='imagen' dibujar-si='letras>3' coord_abs='no' expresión='(f4.x,f4.y,0.5,0.5)' archivo='images/ficha.png' ">
+    <param name="G_13" value="espacio='E1' tipo='texto' color='000000' dibujar-si='letras>3' coord_abs='no' expresión='(f4.x,f4.y)' texto='[R[4]]' ancho='1' negrita='sí' fuente puntos='32' align='a_left' anchor='a_center_center' ">
+    <param name="G_14" value="espacio='E1' tipo='imagen' dibujar-si='letras>4' coord_abs='no' expresión='(f5.x,f5.y,0.5,0.5)' archivo='images/ficha.png' ">
+    <param name="G_15" value="espacio='E1' tipo='texto' color='000000' dibujar-si='letras>4' coord_abs='no' expresión='(f5.x,f5.y)' texto='[R[5]]' ancho='1' negrita='sí' fuente puntos='32' align='a_left' anchor='a_center_center' ">
+    <param name="G_16" value="espacio='E1' tipo='imagen' dibujar-si='letras>5' coord_abs='no' expresión='(f6.x,f6.y,0.5,0.5)' archivo='images/ficha.png' ">
+    <param name="G_17" value="espacio='E1' tipo='texto' color='000000' dibujar-si='letras>5' coord_abs='no' expresión='(f6.x,f6.y)' texto='[R[6]]' ancho='1' negrita='sí' fuente puntos='32' align='a_left' anchor='a_center_center' ">
+    <param name="G_18" value="espacio='E1' tipo='imagen' dibujar-si='letras>6' coord_abs='no' expresión='(f7.x,f7.y,0.5,0.5)' archivo='images/ficha.png' ">
+    <param name="G_19" value="espacio='E1' tipo='texto' color='000000' dibujar-si='letras>6' coord_abs='no' expresión='(f7.x,f7.y)' texto='[R[7]]' ancho='1' negrita='sí' fuente puntos='32' align='a_left' anchor='a_center_center' ">
+    <param name="G_20" value="espacio='E1' tipo='imagen' dibujar-si='letras>7' coord_abs='no' expresión='(f8.x,f8.y,0.5,0.5)' archivo='images/ficha.png' ">
+    <param name="G_21" value="espacio='E1' tipo='texto' color='000000' dibujar-si='letras>7' coord_abs='no' expresión='(f8.x,f8.y)' texto='[R[8]]' ancho='1' negrita='sí' fuente puntos='32' align='a_left' anchor='a_center_center' ">
+    <param name="G_22" value="espacio='E1' tipo='imagen' dibujar-si='letras>8' coord_abs='no' expresión='(f9.x,f9.y,0.5,0.5)' archivo='images/ficha.png' ">
+    <param name="G_23" value="espacio='E1' tipo='texto' color='000000' dibujar-si='letras>8' coord_abs='no' expresión='(f9.x,f9.y)' texto='[R[9]]' ancho='1' negrita='sí' fuente puntos='32' align='a_left' anchor='a_center_center' ">
+    <param name="G_24" value="espacio='E1' tipo='imagen' dibujar-si='letras>9' coord_abs='no' expresión='(f10.x,f10.y,0.5,0.5)' archivo='images/ficha.png' ">
+    <param name="G_25" value="espacio='E1' tipo='texto' color='000000' dibujar-si='letras>9' coord_abs='no' expresión='(f10.x,f10.y)' texto='[R[10]]' ancho='1' negrita='sí' fuente puntos='32' align='a_left' anchor='a_center_center' ">
+    <param name="G_26" value="espacio='E1' tipo='imagen' dibujar-si='letras>10' coord_abs='no' expresión='(f11.x,f11.y,0.5,0.5)' archivo='images/ficha.png' ">
+    <param name="G_27" value="espacio='E1' tipo='texto' color='000000' dibujar-si='letras>10' coord_abs='no' expresión='(f11.x,f11.y)' texto='[R[11]]' ancho='1' negrita='sí' fuente puntos='32' align='a_left' anchor='a_center_center' ">
+    <param name="G_28" value="espacio='E1' tipo='imagen' dibujar-si='letras>11' coord_abs='no' expresión='(f12.x,f12.y,0.5,0.5)' archivo='images/ficha.png' ">
+    <param name="G_29" value="espacio='E1' tipo='texto' color='000000' dibujar-si='letras>11' coord_abs='no' expresión='(f12.x,f12.y)' texto='[R[12]]' ancho='1' negrita='sí' fuente puntos='32' align='a_left' anchor='a_center_center' ">
+    <param name="G_30" value="espacio='E1' tipo='imagen' dibujar-si='letras>12' coord_abs='no' expresión='(f13.x,f13.y,0.5,0.5)' archivo='images/ficha.png' ">
+    <param name="G_31" value="espacio='E1' tipo='texto' color='000000' dibujar-si='letras>12' coord_abs='no' expresión='(f13.x,f13.y)' texto='[R[13]]' ancho='1' negrita='sí' fuente puntos='32' align='a_left' anchor='a_center_center' ">
+    <param name="G_32" value="espacio='E1' tipo='imagen' dibujar-si='letras>13' coord_abs='no' expresión='(f14.x,f14.y,0.5,0.5)' archivo='images/ficha.png' ">
+    <param name="G_33" value="espacio='E1' tipo='texto' color='000000' dibujar-si='letras>13' coord_abs='no' expresión='(f14.x,f14.y)' texto='[R[14]]' ancho='1' negrita='sí' fuente puntos='32' align='a_left' anchor='a_center_center' ">
+    <param name="G_34" value="espacio='E1' tipo='imagen' dibujar-si='letras>14' coord_abs='no' expresión='(f15.x,f15.y,0.5,0.5)' archivo='images/ficha.png' ">
+    <param name="G_35" value="espacio='E1' tipo='texto' color='000000' dibujar-si='letras>14' coord_abs='no' expresión='(f15.x,f15.y)' texto='[R[15]]' ancho='1' negrita='sí' fuente puntos='32' align='a_left' anchor='a_center_center' ">
+    <param name="G_36" value="espacio='E1' tipo='texto' color='000000' dibujar-si='sol' coord_abs='sí' expresión='[10+s*48,173-25]' familia='s' s.intervalo='[1,letras]' s.pasos='letras-1' texto='[R[s]]' ancho='1' negrita='sí' fuente puntos='32' align='a_left' anchor='a_top_left' ">
+    <param name="G_37" value="espacio='E1' tipo='texto' color='000000' coord_abs='sí' expresión='[20,20]' texto='Escribe en notación romana: \b{[N1[otro]]}\n\color{7f8c8d}{Mueve todas las letras, ya que pueden haber letras encimadas.}' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_38" value="espacio='E1' tipo='imagen' dibujar-si='correcto' coord_abs='sí' expresión='(800,180,2,2)' archivo='images/emojis.svg' clip='(0,0,100,100)' ">
+  </ajs>
+
+
+
+</body>
+</html>

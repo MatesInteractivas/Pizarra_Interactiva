@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Descomposición de un número en factores</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body>
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='450' fijo='sí' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='n2' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E1' expresión='(330,40*otra-25,70,35)' valor='&squot;&squot;' decimales='0' visible='sí' dibujar-si='otra!=11' activo-si='comprueba=0' keyboard='sí' kblayout='4x4' kbexp='(85,240)' ">
+    <param name="C_02" value="id='n4' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E1' expresión='(448,40*otra-25,70,35)' valor='&squot;&squot;' decimales='0' visible='sí' dibujar-si='otra!=11' activo-si='comprueba=0' keyboard='sí' kblayout='4x4' kbexp='(85,240)' ">
+    <param name="C_03" value="id='n6' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E1' expresión='(563,40*otra-25,70,35)' valor='&squot;&squot;' decimales='0' visible='sí' dibujar-si='otra!=11' activo-si='comprueba=0' keyboard='sí' kblayout='4x4' kbexp='(85,240)' ">
+    <param name="C_04" value="id='n3' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Verificar' expresión='((pleca._w-120)/2,pleca._h-35-15,120,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='asigna();otra=(otra=11)?0:otra+1' activo-si='(otra<11)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="A_01" value="id='P' vector='sí' evaluar='una-sola-vez' tamaño='12' expresión='P[0]=0;P[1]=8;P[2]=42;P[3]=45;P[4]=30;P[5]=12;P[6]=27;P[7]=18;P[8]=63;P[9]=28;P[10]=44' tipo='vector' ">
+    <param name="A_02" value="id='R1' vector='sí' evaluar='una-sola-vez' tamaño='12' expresión='R1[0]=&squot;&squot;;R1[1]=&squot;&squot;;R1[2]=&squot;&squot;' tipo='vector' ">
+    <param name="A_03" value="id='R2' vector='sí' evaluar='una-sola-vez' tamaño='12' expresión='R2[0]=&squot;&squot;;R2[1]=&squot;&squot;;R2[2]=&squot;&squot;' tipo='vector' ">
+    <param name="A_04" value="id='R3' vector='sí' evaluar='una-sola-vez' tamaño='12' expresión='R3[0]=&squot;&squot;;R3[1]=&squot;&squot;;R3[2]=&squot;&squot;' tipo='vector' ">
+    <param name="A_05" value="id='C' vector='sí' evaluar='una-sola-vez' tamaño='12' expresión='C[0]=&squot;&squot;;C[1]=&squot;&squot;;C[2]=&squot;&squot;' tipo='vector' ">
+    <param name="A_06" value="id='asigna()' algoritmo='sí' expresión='x' hacer='asigna=0;R1[otra]=n2;R2[otra]=n4;R3[otra]=n6;n2=&squot;&squot;;n4=&squot;&squot;;n6=&squot;&squot;' tipo='función' ">
+    <param name="A_07" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='otra=1;n2=P[otra];' ">
+    <param name="A_08" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='ff=(asigna=1)?asigna():0;;;' ">
+    <param name="A_09" value="id='verifica' algoritmo='sí' evaluar='siempre' inicio='gg=0;buenas=0' hacer='gg=gg+1;C[gg]=(R1[gg]*R2[gg]*R3[gg]=P[gg]);C[gg]=(R1[gg]=1)|(R2[gg]=1)|(R3[gg]=1)?0:C[gg];buenas=buenas+C[gg]' mientras='gg<10' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_m.svg' clip='(360,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='Descompón cada número en tres factores, por ejemplo: para el número \b{20} sería \b{2 × 2 × 5}. Llena los campos de texto y pulsa el botón “Verificar” para comprobar tu respuesta.' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,450)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(otra>(s-1))' coord_abs='sí' expresión='[315,40*s-20]' familia='s' s.intervalo='[1,10]' s.pasos='9' texto='                   ×                   ×                   = [P[s]]' fijo='no' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_06" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(otra>(s-1))' coord_abs='sí' expresión='[365,40*s-20]' familia='s' s.intervalo='[1,10]' s.pasos='9' texto='[(R1[s])?R1[s]:0]' fijo='no' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_07" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(otra>(s-1))' coord_abs='sí' expresión='[480,40*s-20]' familia='s' s.intervalo='[1,10]' s.pasos='9' texto='[(R2[s])?R2[s]:0]' fijo='no' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_08" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(otra>(s-1))' coord_abs='sí' expresión='[590,40*s-20]' familia='s' s.intervalo='[1,10]' s.pasos='9' texto='[(R3[s])?R3[s]:0]' fijo='no' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_09" value="espacio='E1' tipo='texto' color='34cc67' dibujar-si='(otra=11)&(buenas!=0)' coord_abs='sí' expresión='[15,E1._h-15]' texto='¡Tienes \b{[buenas]} respuesta[(buenas!=1)?&squot;s&squot;:&squot;&squot;] correcta[(buenas!=1)?&squot;s&squot;:&squot;&squot;] de \b{8}!' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_bottom_left' ">
+    <param name="G_10" value="espacio='E1' tipo='imagen' dibujar-si='(otra=11)&(buenas!=0)&&(buenas>=8)' coord_abs='sí' expresión='(E1._w/6,E1._h/2,1,1)' archivo='images/emojis.svg' clip='(0,0,100,100)' info=':)' ">
+    <param name="G_11" value="espacio='E1' tipo='imagen' dibujar-si='(otra=11)&(buenas!=0)&&(buenas<8)' coord_abs='sí' expresión='(E1._w/6,E1._h/2,1,1)' archivo='images/emojis.svg' clip='(100,0,100,100)' info=':|' ">
+    <param name="G_12" value="espacio='E1' tipo='texto' color='d40809' dibujar-si='(otra=11)&(buenas=0)' coord_abs='sí' expresión='[15,E1._h-20]' texto='¡Increible, no atinaste a ninguna!' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_bottom_left' ">
+    <param name="G_13" value="espacio='E1' tipo='imagen' dibujar-si='(otra=11)&(buenas=0)' coord_abs='sí' expresión='(E1._w/6,E1._h/2,1,1)' archivo='images/emojis.svg' clip='(200,0,100,100)' info=':(' ">
+    <param name="G_14" value="espacio='E1' tipo='texto' color='3498db' dibujar-si='(otra<6)' coord_abs='sí' expresión='[E1._w/2,E1._h-15]' texto='¡Si usas el número uno, la respuesta será errada!' ancho='1' fuente puntos='20' align='a_left' anchor='a_bottom_center' ">
+    <param name="G_15" value="espacio='E1' tipo='imagen' dibujar-si='(otra>(s-1))&&(C[s]=1)' coord_abs='sí' expresión='(720,40*s-10,0.7,0.7)' familia='s' s.intervalo='[1,10]' s.pasos='9' archivo='images/ok.svg' ">
+    <param name="G_16" value="espacio='E1' tipo='imagen' dibujar-si='(otra>(s))&&(C[s]==0)' coord_abs='sí' expresión='(720,40*s-10,0.7,0.7)' familia='s' s.intervalo='[1,10]' s.pasos='9' archivo='images/ko.svg' ">
+  </ajs>
+
+
+
+</body>
+</html>

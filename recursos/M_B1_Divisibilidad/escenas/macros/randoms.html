@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>TITULO</title>
+  
+  <script type="text/javascript" src="lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body bgcolor="ffffff">
+
+  <p align="left">
+    <ajs name="macroedit" code="descinst.Descartes.class" width="790" height="565">
+      <param name="tamaño" value="790x565">
+      <param name="decimal_symbol" value=",">
+      <param name="nombre" value="macroedit">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="sí">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=sí config=sí inicio=sí limpiar=sí filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='no' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='c0c0c0' red10='808080' ejes='404040' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="A_01" value="id='V1' vector='sí' evaluar='una-sola-vez' tamaño='rangMax-rangMin+1' tipo='vector' ">
+      <param name="A_02" value="id='VecAux' vector='sí' evaluar='una-sola-vez' tamaño='rangMax-rangMin+1' tipo='vector' ">
+      <param name="A_03" value="id='VecAleat' vector='sí' evaluar='una-sola-vez' tamaño='rangMax-rangMin+1' tipo='vector' ">
+      <param name="A_04" value="id='inV1()' algoritmo='sí' expresión='x' inicio='iV1=0' hacer='V1[iV1]=iV1+rangMin;iV1=iV1+1' mientras='iV1<(rangMax-rangMin+1)' tipo='función' ">
+      <param name="A_05" value="id='wVecAux(iwVA)' algoritmo='sí' expresión='x' inicio='_ii=0' hacer='VecAux[_ii]=(_ii>=iwVA)?V1[_ii+1]:V1[_ii];_ii=_ii+1' mientras='_ii<(rangMax-rangMin)' tipo='función' ">
+      <param name="A_06" value="id='copiaVecs()' algoritmo='sí' expresión='x' inicio='_icp=0' hacer='V1[_icp]=VecAux[_icp];_icp=_icp+1' mientras='_icp<(rangMax-rangMin+1)' tipo='función' ">
+      <param name="A_07" value="id='elige()' algoritmo='sí' expresión='x' inicio='_i=0' hacer='_indx=ent(rnd*(rangMax-rangMin-_i+0.999));VecAleat[_i]=V1[_indx];wVecAux(_indx);copiaVecs();_i=_i+1' mientras='_i<(rangMax-rangMin+1)' tipo='función' ">
+      <param name="A_08" value="id='rangMin' expresión='2' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_09" value="id='rangMax' expresión='10' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_10" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='inV1();elige()' ">
+      <param name="A_11" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='no' color='20303a' coord_abs='sí' expresión='[20,20+15*s]' familia='s' s.intervalo='[0,rangMax-rangMin]' s.pasos='rangMax-rangMin' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Times New Roman;}\f1\fs24 V1[\f2\fs28\i{\*\mjaformula{\expr s\decimals 2\fixed0}}\f1\fs24\i0 ]=\f2\fs28\i{\*\mjaformula{\expr V1[s]\decimals 2\fixed0}}\f1\fs24\i0}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='Monospaced' fuente puntos='12' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_02" value="espacio='E1' tipo='texto' fondo='no' color='20303a' coord_abs='sí' expresión='[100,20+15*s]' familia='s' s.intervalo='[0,rangMax-rangMin]' s.pasos='rangMax-rangMin' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Times New Roman;}\f1\fs24 VecAleat[\f2\fs28\i{\*\mjaformula{\expr s\decimals 2\fixed0}}\f1\fs24\i0 ]=\f2\fs28\i{\*\mjaformula{\expr VecAleat[s]\decimals 2\fixed0}}\f1\fs24\i0}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='Monospaced' fuente puntos='12' align='left' anchor='top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+    </ajs>
+    <ajs name="macrotst" code="descinst.Descartes.class" width="790" height="565">
+      <param name="tamaño" value="790x565">
+      <param name="decimal_symbol" value=",">
+      <param name="nombre" value="macrotst">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="sí">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=sí config=sí inicio=sí limpiar=sí filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='no' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='c0c0c0' red10='808080' ejes='404040' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='myRnd.rangMin' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='myRnd.rangMin' expresión='(0,0)' valor='0' incr='1' min='0' max='myRnd.rangMax' discreto='no' decimales='0' fijo='no' visible='sí' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' btn_pos='v_left' ">
+      <param name="C_02" value="id='myRnd.rangMax' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='myRnd.rangMax' expresión='(0,0)' valor='mn+10' incr='1' min='myRnd.rangMin+1' discreto='no' decimales='0' fijo='no' visible='sí' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' btn_pos='v_left' ">
+      <param name="C_03" value="id='nNums' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='nNums' expresión='(0,0)' valor='myRnd.rangMax-myRnd.rangMin+1' incr='1' min='1' max='myRnd.rangMax-myRnd.rangMin+1' discreto='no' decimales='0' fijo='no' visible='sí' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' btn_pos='v_left' ">
+      <param name="C_04" value="id='genera' interfaz='botón' tipo='numérico' región='exterior' espacio='E1' nombre='Genera' expresión='(0,0)' valor='0' color='222222' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='19' acción='calcular' parámetro='myRnd.inV1()\nmyRnd.elige()' ">
+      <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='myRnd.inV1();myRnd.elige()' ">
+      <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E1' tipo='macro' fondo='no' dibujar-si='0' coord_abs='no' nombre='myRnd' expresión='randoms.txt' rotini='0' posini='[0,0]' ">
+      <param name="G_02" value="espacio='E1' tipo='texto' fondo='no' color='20303a' coord_abs='sí' expresión='[300,20+15*s]' familia='s' s.intervalo='[0,nNums-1]' s.pasos='nNums-1' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Courier New;}\f1\fs28\i{\*\mjaformula{\expr myRnd.VecAleat[s]\decimals 2\fixed0}}\f2\fs24\i0}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='Monospaced' fuente puntos='12' align='left' anchor='top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+    </ajs>
+  </p>
+
+<script type="descartes/macro" id="randoms.txt">
+id='V1' vector='sí' evaluar='una-sola-vez' tamaño='rangMax-rangMin+1' tipo='vector' 
+id='VecAux' vector='sí' evaluar='una-sola-vez' tamaño='rangMax-rangMin+1' tipo='vector' 
+id='VecAleat' vector='sí' evaluar='una-sola-vez' tamaño='rangMax-rangMin+1' tipo='vector' 
+id='inV1()' algoritmo='sí' expresión='x' inicio='iV1=0' hacer='V1[iV1]=iV1+rangMin;iV1=iV1+1' mientras='iV1&lt;(rangMax-rangMin+1)' tipo='función' 
+id='wVecAux(iwVA)' algoritmo='sí' expresión='x' inicio='_ii=0' hacer='VecAux[_ii]=(_ii&gt;=iwVA)?V1[_ii+1]:V1[_ii];_ii=_ii+1' mientras='_ii&lt;(rangMax-rangMin)' tipo='función' 
+id='copiaVecs()' algoritmo='sí' expresión='x' inicio='_icp=0' hacer='V1[_icp]=VecAux[_icp];_icp=_icp+1' mientras='_icp&lt;(rangMax-rangMin+1)' tipo='función' 
+id='elige()' algoritmo='sí' expresión='x' inicio='_i=0' hacer='_indx=ent(rnd*(rangMax-rangMin-_i+0.999));VecAleat[_i]=V1[_indx];wVecAux(_indx);copiaVecs();_i=_i+1' mientras='_i&lt;(rangMax-rangMin+1)' tipo='función' 
+id='rangMin' expresión='2' evaluar='una-sola-vez' constante='sí' 
+id='rangMax' expresión='10' evaluar='una-sola-vez' constante='sí' 
+id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='inV1();elige()' 
+id='CALCULOS' algoritmo='sí' evaluar='siempre' 
+espacio='E1' tipo='texto' fondo='no' color='20303a' coord_abs='sí' expresión='[20,20+15*s]' familia='s' s.intervalo='[0,rangMax-rangMin]' s.pasos='rangMax-rangMin' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Times New Roman;}\f1\fs24 V1[\f2\fs28\i{\*\mjaformula{\expr s\decimals 2\fixed0}}\f1\fs24\i0 ]=\f2\fs28\i{\*\mjaformula{\expr V1[s]\decimals 2\fixed0}}\f1\fs24\i0}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='Monospaced' fuente puntos='12' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' 
+espacio='E1' tipo='texto' fondo='no' color='20303a' coord_abs='sí' expresión='[100,20+15*s]' familia='s' s.intervalo='[0,rangMax-rangMin]' s.pasos='rangMax-rangMin' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Times New Roman;}\f1\fs24 VecAleat[\f2\fs28\i{\*\mjaformula{\expr s\decimals 2\fixed0}}\f1\fs24\i0 ]=\f2\fs28\i{\*\mjaformula{\expr VecAleat[s]\decimals 2\fixed0}}\f1\fs24\i0}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='Monospaced' fuente puntos='12' align='left' anchor='top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' 
+</script>
+
+</body>
+</html>

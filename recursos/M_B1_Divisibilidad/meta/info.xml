@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="M_B1_Divisibilidad" 
+	nivel="Primaria" 
+	area="Matemáticas, Números y operaciones" 
+	plataforma="HTML 5" 
+	>
+	<titulo><![CDATA[
+		Divisibilidad
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+    Ofrecer actividades que inviten al alumno a repasar y practicar la divisibilidad entre dos números enteros.
+	]]></Descripcion>
+</recurso>

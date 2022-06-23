@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Números romanos y egipcios</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='450' fijo='sí' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='sigue' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' expresión='(pleca._w/2+35,pleca._h-50,35,35)' color='ffffff' color-int='f0f8ff' negrita='sí' fuente puntos='18' imagen='images/next_step.svg' acción='calcular' parámetro='otro=otro+1;pos1=ent(rnd*3)+1;pos2=(pos1=3)?1:pos1+1;pos3=(pos2=3)?1:pos2+1;p=0;q=0;r1=0;r2=0;r3=0;btnSel=0;verifica=0' activo-si='(otro<ejercicios)&verifica' extra_style='borderRadius=35' ">
+    <param name="C_02" value="id='Verificar' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Verificar' expresión='((E1._w-120)/2,E1._h-35-15,120,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='verificar()' dibujar-si='(otro<=ejercicios)' activo-si='(verifica=0)&(r1+r2+r3>0)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_03" value="id='Resultado' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Resultados' expresión='(E1._w-150-15,E1._h-35-15,150,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='resultados=1' dibujar-si='(otro=ejercicios)&(resultados=0)&(verifica=1)' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_04" value="id='op1' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='       [R[(otro-1)*4+1]]' expresión='(posX[pos1],posY[pos1],btnw,btnh)' color='000000' color-int='f1f2f6' text_align='a_center_left' image_align='a_center_left' fuente puntos='19' imagen='[(btnSel==pos1)?&squot;images/radio_on.svg&squot;:&squot;images/radio_off.svg&squot;]' acción='calcular' parámetro='seleccionar(pos1)' activo-si='!verifica' extra_style='border=1|borderColor=bdc3c7|borderRadius=2|inactiveColor=f1f2f6' ">
+    <param name="C_05" value="id='op2' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='       [R[(otro-1)*4+2]]' expresión='(posX[pos2],posY[pos2],btnw,btnh)' color='000000' color-int='f1f2f6' text_align='a_center_left' image_align='a_center_left' fuente puntos='19' imagen='[(btnSel==pos2)?&squot;images/radio_on.svg&squot;:&squot;images/radio_off.svg&squot;]' acción='calcular' parámetro='seleccionar(pos2)' activo-si='!verifica' extra_style='border=1|borderColor=bdc3c7|borderRadius=2|inactiveColor=f1f2f6' ">
+    <param name="C_06" value="id='op3' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='       [R[(otro-1)*4+3]]' expresión='(posX[pos3],posY[pos3],btnw,btnh)' color='000000' color-int='f1f2f6' text_align='a_center_left' image_align='a_center_left' fuente puntos='19' imagen='[(btnSel==pos3)?&squot;images/radio_on.svg&squot;:&squot;images/radio_off.svg&squot;]' acción='calcular' parámetro='seleccionar(pos3)' activo-si='!verifica' extra_style='border=1|borderColor=bdc3c7|borderRadius=2|inactiveColor=f1f2f6' ">
+    <param name="A_01" value="id='P' vector='sí' evaluar='una-sola-vez' tamaño='10' expresión='7;&squot;Qué número describe a \b{475} en notación romana&squot;;&squot;\b{XXVIII}, en notación decimal corresponde a&squot;;&squot;Descubre el número escrito en notación Egipcia&squot;;&squot;El número mal escrito en la figura es&squot;;&squot;Descubre el valor del número Egipcio&squot;;&squot;Descifra la altura de la pirámide de Keops en metros&squot;;&squot;Escribe en notación decimal&squot;' tipo='vector' ">
+    <param name="A_02" value="id='R' vector='sí' evaluar='una-sola-vez' tamaño='ejercicios*4+1' expresión='&squot;Escribe las tres respuestas de cada pregunta y la posición de la respuesta correcta&squot;;&squot;CDLXXIIIII&squot;;&squot;CDLXXV&squot;;&squot;CDXXLV&squot;;2;&squot;38&squot;;&squot;18&squot;;&squot;28&squot;;3;135;531;315;1;&squot;8&squot;;&squot;4&squot;;&squot;6&squot;;2;&squot;10233&squot;;&squot;1233&squot;;&squot;1303&squot;;2;&squot;1046&squot;;&squot;164&squot;;&squot;146&squot;;3;&squot;4669&squot;;&squot;4629&squot;;&squot;4679&squot;;3' tipo='vector' ">
+    <param name="A_03" value="id='posX' vector='sí' evaluar='una-sola-vez' tamaño='4' expresión='btnw=280;btnh=45;;posX[0]=0;posX[1]=  E1._w/6-btnw/2;posX[2]=3*E1._w/6-btnw/2;posX[3]=5*E1._w/6-btnw/2' tipo='vector' ">
+    <param name="A_04" value="id='posY' vector='sí' evaluar='una-sola-vez' tamaño='4' expresión='posY[0]=0;posY[1]=240;posY[2]=posY[1];posY[3]=posY[1]' tipo='vector' ">
+    <param name="A_05" value="id='seleccionar(idx)' algoritmo='sí' expresión='0' hacer='r1=(idx==1);r2=(idx==2);r3=(idx==3);btnSel=idx' tipo='función' ">
+    <param name="A_06" value="id='verificar()' algoritmo='sí' expresión='0' hacer='verifica=1;;rta=R[(otro-1)*4+4];rta2=pos1-1+rta;rta2=(rta2=4)?1:rta2;rta2=(rta2=5)?2:rta2;correcto=((rta2=1)&(r1=1))|((rta2=2)&(r2=1))|((rta2=3)&(r3=1));px1=rta2;;buenas=(correcto)?buenas+1:buenas' tipo='función' ">
+    <param name="A_07" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='ejercicios=P[0];otro=1;pos1=ent(rnd*3)+1;pos2=(pos1=3)?1:pos1+1;pos3=(pos2=3)?1:pos2+1;' ">
+    <param name="A_08" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_m.svg' clip='(360,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,42)' texto='Analiza cada pregunta y selecciona la respuesta correcta.' ancho='1' fuente puntos='21' align='a_left' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,450)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='pleca' tipo='texto' color='1515e7' coord_abs='sí' expresión='(pleca._w/2,pleca._h-32)' texto='[otro] / [ejercicios]' fijo='no' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_center_center' ">
+    <param name="G_06" value="espacio='E1' tipo='texto' color='000000' coord_abs='sí' expresión='(25,20)' texto='\b{[otro])} [P[otro]]' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+    <param name="G_07" value="espacio='E1' tipo='rectángulo' color='34cc67' dibujar-si='verifica&(correcto=0)' coord_abs='sí' expresión='(posX[px1],posY[px1],btnw,btnh)' ancho='12' border_radius='2' ">
+    <param name="G_08" value="espacio='E1' tipo='texto' color='d40809' dibujar-si='verifica&(correcto=0)&(resultados=0)&(otro<ejercicios)' coord_abs='sí' expresión='[E1._w/2,350]' texto='¡No es correcto! Pasa a la siguiente pregunta' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_09" value="espacio='E1' tipo='texto' color='d40809' dibujar-si='verifica&(correcto=0)&(resultados=0)&(otro=ejercicios)' coord_abs='sí' expresión='[E1._w/2,350]' texto='¡No es correcto! Consulta tus resultados' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_10" value="espacio='E1' tipo='texto' color='34cc67' dibujar-si='verifica&(correcto)&(resultados=0)&(otro<ejercicios)' coord_abs='sí' expresión='[E1._w/2,350]' texto='¡Excelente! Pasa a la siguiente pregunta' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_11" value="espacio='E1' tipo='texto' color='34cc67' dibujar-si='verifica&(correcto)&(resultados=0)&(otro=ejercicios)' coord_abs='sí' expresión='[E1._w/2,350]' texto='¡Excelente! Consulta tus resultados' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_12" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(resultados=1)&(buenas==0)' coord_abs='sí' expresión='[E1._w/2,350]' texto='¡Debes prepararte mejor!, no lograste obtener una respuesta correcta de \b{[ejercicios]}' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_13" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(resultados=1)&(buenas==1)' coord_abs='sí' expresión='[E1._w/2,350]' texto='Es lamentable, sólo lograste una respuesta correcta de \b{[ejercicios]}' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_14" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(resultados=1)&(buenas>1)' coord_abs='sí' expresión='[E1._w/2,350]' texto='Lograste \b{[buenas]} respuestas correctas de \b{[ejercicios]}' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_15" value="espacio='E1' tipo='imagen' dibujar-si='otro==3' coord_abs='sí' expresión='(E1._w/2,150,1.5,1.5)' archivo='images/egipcio1.svg' ">
+    <param name="G_16" value="espacio='E1' tipo='imagen' dibujar-si='otro==4' coord_abs='sí' expresión='(E1._w/2,140,0.45,0.45)' archivo='images/reloj.png' ">
+    <param name="G_17" value="espacio='E1' tipo='imagen' dibujar-si='otro==5' coord_abs='sí' expresión='(E1._w/2,150,1.5,1.5)' archivo='images/egipcio5.svg' ">
+    <param name="G_18" value="espacio='E1' tipo='imagen' dibujar-si='otro==6' coord_abs='sí' expresión='(E1._w/2,150,1.5,1.5)' archivo='images/egipcio6.svg' ">
+    <param name="G_19" value="espacio='E1' tipo='texto' color='000000' dibujar-si='otro==7' coord_abs='sí' expresión='(E1._w/2,150)' texto='\o{IV}DCLXXIX' ancho='1' negrita='sí' fuente puntos='40' align='a_left' anchor='a_center_center' ">
+  </ajs>
+
+
+
+</body>
+</html>

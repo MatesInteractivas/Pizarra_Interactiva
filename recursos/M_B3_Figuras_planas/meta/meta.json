@@ -1,0 +1,13 @@
+{
+  "nivel": [
+    "Primaria"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Geometría"
+  ], 
+  "titulo": "Figuras planas", 
+  "descripcion": "Aprender a reconocer los diversos tipos de figuras planas y a identificar sus elementos.",
+  "resena": "Aprender a reconocer los diversos tipos de figuras planas y a identificar sus elementos.",
+  "id": "M_B3_Figuras_planas"
+}

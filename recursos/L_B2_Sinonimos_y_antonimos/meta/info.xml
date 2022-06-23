@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="L_B2_Sinonimos_y_antonimos" 
+	nivel="Primaria" 
+	area="Español, Vocabulario"
+	plataforma="HTML 5" 
+	>
+	<titulo><![CDATA[
+		Sinónimos y antónimos
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+		Enriquecer el vocabulario del alumno practicando el uso de sinónimos y antónimos.
+	]]></Descripcion>
+</recurso>

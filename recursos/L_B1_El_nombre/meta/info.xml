@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="L_B1_El_nombre" 
+	nivel="Primaria" 
+	area="Español, Gramática"
+	plataforma="HTML 5" 
+	>
+	<titulo><![CDATA[
+		El nombre
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+		Permitir que el alumno aprenda y ponga en práctica los principales aspectos relativos al nombre: el género, el número y los tipos de nombres.
+	]]></Descripcion>
+</recurso>

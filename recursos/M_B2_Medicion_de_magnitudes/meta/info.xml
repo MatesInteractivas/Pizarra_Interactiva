@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="M_B2_Medicion" 
+	nivel="Primaria" 
+	area="Matemáticas, Medidas" 
+	plataforma="HTML 5" 
+	>
+	<titulo><![CDATA[
+		Medición
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+    Presentar ejemplos de los objetos que medimos y las unidades de medida que normalmente ocupamos para ello.
+	]]></Descripcion>
+</recurso>

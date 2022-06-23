@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="M_B2_Medicion_del_tiempo" 
+	nivel="Primaria" 
+	area="Matemáticas, Medidas" 
+	plataforma="HTML 5" 
+	>
+	<titulo><![CDATA[
+		Medición del tiempo
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+    Aprender a describir las medidas de tiempo en días, horas, minutos y segundos y a realizar operaciones de suma y resta con medidas de tiempo.
+	]]></Descripcion>
+</recurso>

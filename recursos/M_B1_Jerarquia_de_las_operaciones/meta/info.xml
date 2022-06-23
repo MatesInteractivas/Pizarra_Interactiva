@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="M_B1_Jerarquia_de_las_operaciones" 
+	nivel="Primaria" 
+	area="Matemáticas, Números y operaciones" 
+	plataforma="HTML 5" 
+	>
+	<titulo><![CDATA[
+		Jerarquía de las operaciones
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+    Que el estudiante deduzca la jerarquía de las operaciones y la practique.
+	]]></Descripcion>
+</recurso>

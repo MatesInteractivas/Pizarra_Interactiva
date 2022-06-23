@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="M_B2_Clasificacion_de_angulos" 
+	nivel="Primaria" 
+	area="Matemáticas, Medidas" 
+	plataforma="HTML 5" 
+	>
+	<titulo><![CDATA[
+		Clasificación de ángulos
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+    Aprender a reconocer los elementos de un ángulo y a clasificar los ángulos de acuerdo a su abertura.
+	]]></Descripcion>
+</recurso>

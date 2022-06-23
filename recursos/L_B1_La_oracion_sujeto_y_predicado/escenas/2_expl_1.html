@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>La oración, sujeto y predicado</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body style="padding:0; margin:0; background:#CFF2FE;">
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' ancho='100%' alto='100%' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='500' fijo='sí' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="E_03" value="tipo='R2' id='COVER' ancho='100%' alto='100%' dibujar-si='boton1||boton2||boton3' fijo='sí' imagen='images/backwindow.png' despl_imagen='mosaico' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="E_04" value="tipo='R2' id='INFO' x='35' y='185' ancho='954' alto='405' dibujar-si='boton1||boton2||boton3' fijo='sí' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='cerrar' interfaz='botón' tipo='numérico' región='interior' espacio='INFO' expresión='(INFO._w-35,0,35,35)' color='ffffff' color-int='ffffff' fuente puntos='19' imagen='images/cerrar.svg' acción='calcular' parámetro='boton1=0;boton2=0;boton3=0;boton4=0;boton5=0;' ">
+    <param name="C_02" value="id='boton1' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Elementos del sujeto' expresión='(E1._w/6-220/2,20,220,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='boton1=1;boton2=0;boton3=0;started=1;' activo-si='!boton1' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_03" value="id='boton2' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='¿Cómo localizarlo?' expresión='(3*E1._w/6-220/2,20,220,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='boton1=0;boton2=1;boton3=0;started=1;' activo-si='!boton2' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_04" value="id='boton3' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='El sujeto elíptico' expresión='(5*E1._w/6-220/2,20,220,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='boton1=0;boton2=0;boton3=1;started=1;' activo-si='!boton3' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_05" value="id='boton4' interfaz='botón' tipo='numérico' región='interior' espacio='INFO' nombre='Busca de quién se habla' expresión='(INFO._w/4-280/2,150,280,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='boton4=1;boton5=0;' dibujar-si='boton2=1' activo-si='!boton4' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="C_06" value="id='boton5' interfaz='botón' tipo='numérico' región='interior' espacio='INFO' nombre='Cambia el número del verbo' expresión='(3*INFO._w/4-280/2,150,280,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='boton5=1;boton4=0;' dibujar-si='boton2=1' activo-si='!boton5' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A|inactiveColor=3498db' ">
+    <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='started=0;vertexto=0' ">
+    <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='boton11=(boton1)?1:boton11;boton21=(boton2)?1:boton21;boton31=(boton3)?1:boton31;suma=boton1+boton2+boton3;vertexto=(boton11+boton21+boton31=3)&(suma=0);vertexto1=(vertexto)?1:vertexto1;boton41=(boton4)?1:boton41;boton51=(boton5)?1:boton51;ok=(boton41+boton51=2);ok1=(ok)?1:ok1;;' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_h.svg' clip='(120,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,30)' texto='El sujeto es una de las dos partes de la oración. Veamos a continuación qué elementos integran el sujeto y cómo podemos identificarlo fácilmente.' ancho='pleca._w-145' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,500)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='INFO' tipo='rectángulo' fondo='sí' color='341f97' coord_abs='sí' expresión='(1,1,INFO._w-3,INFO._h-3)' relleno='ffffff' ancho='3' border_radius='4' ">
+    <param name="G_06" value="espacio='INFO' tipo='rectángulo' fondo='sí' color='ffffffff' coord_abs='sí' expresión='(0,0,INFO._w,35)' relleno='341f97' ancho='0' border_radius='4' ">
+    <param name="G_07" value="espacio='E1' tipo='texto' color='000000' dibujar-si='!started' coord_abs='sí' expresión='[E1._w/2,E1._h/2+25]' texto='Ya sabes que el \b{sujeto} de la oración es la \b{persona}, \b{animal} o \b{cosa} que \b{realiza la acción del verbo o de la que se dice algo}. Descubre más cosas sobre el sujeto pulsando los botones. ' ancho='600' fuente puntos='20' align='a_center' anchor='a_center_center' ">
+    <param name="G_08" value="espacio='E1' tipo='texto' color='000000' dibujar-si='vertexto=1' coord_abs='sí' expresión='[E1._w/2,E1._h/2+25]' texto='Ya sabes cómo es el \b{sujeto de la oración} y cómo puedes encontrarlo.' ancho='1' fuente puntos='20' align='a_left' anchor='a_center_center' ">
+    <param name="G_09" value="espacio='INFO' tipo='texto' color='000000' dibujar-si='boton1=1' coord_abs='sí' expresión='[20,50]' texto='El \b{sujeto} puede ser:\n\n• Un \b{nombre propio}: \u{Alicia} estudia.\n\n• Un \b{pronombre}: \u{Nosotros} aprendemos.\n\n• Un \b{grupo nominal}: formado por un \b{nombre} acompañado de otras palabras: \n   determinantes, adjetivos...: \u{Mi primo de Valencia} llegará pronto. \n\nEl \b{núcleo del sujeto} siempre es un \b{nombre} o un \b{pronombre}. ' ancho='1' fuente puntos='20' align='a_justify' anchor='a_top_left' info='boton1=1' ">
+    <param name="G_10" value="espacio='INFO' tipo='texto' color='000000' dibujar-si='boton2=1' coord_abs='sí' expresión='[20,50]' texto='Puedes localizar fácilmente el sujeto si recuerdas que:' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' info='boton2=1' ">
+    <param name="G_11" value="espacio='INFO' tipo='texto' color='000000' dibujar-si='boton2=1' coord_abs='sí' expresión='[INFO._w/4,85]' texto='• El \b{sujeto} de la oración es \n  aquello de lo que se dice algo:' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_12" value="espacio='INFO' tipo='texto' color='000000' dibujar-si='boton2=1' coord_abs='sí' expresión='[3*INFO._w/4,85]' texto='• El \b{sujeto concuerda con el \n  predicado} en persona y número: ' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+    <param name="G_13" value="espacio='INFO' tipo='texto' color='000000' dibujar-si='boton3=1' coord_abs='sí' expresión='[20,50]' texto='En algunas ocasiones, el sujeto \b{no aparece en la oración} porque se sobreentiende por el contexto. Este sujeto se llama \b{sujeto elíptico}. \n\nComo el sujeto y el predicado concuerdan en persona y número, puedes saber cuál es el sujeto de la oración fijándote en la \b{desinencia del verbo}: \n\nNado muy rápido. → el verbo está en primera persona del singular: el \b{sujeto elíptico} es \b{\i{yo}}.\n\nLlegarán pronto. → el verbo está en tercera persona del plural: el \b{sujeto elíptico} puede ser \b{\i{ellos}} o \b{\i{ellas}}. ' ancho='INFO._w-40' fuente puntos='20' align='a_justify' anchor='a_top_left' info='boton3=1' ">
+    <param name="G_14" value="espacio='INFO' tipo='texto' color='000000' dibujar-si='boton4=1' coord_abs='sí' expresión='[20,205]' texto='Puedes preguntar \b{¿Qué?}, \b{¿Quién?} o \b{¿Quiénes?} realizan la acción del verbo.\n\nEl hermano pequeño de tu amiga crece muy rápido.\n¿\b{Quién} crece muy rápido? → \u{El hermano pequeño de tu amiga} (\b{sujeto}).\n\nMañana empieza el torneo de ajedrez.\n¿\b{Qué} empieza mañana? → \u{El torneo de ajedrez} (\b{sujeto}). ' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' info='boton4=1' ">
+    <param name="G_15" value="espacio='INFO' tipo='texto' color='000000' dibujar-si='boton5=1' coord_abs='sí' expresión='[20,205]' texto='Puedes \b{cambiar el número del verbo} del singular al plural o viceversa y observar qué sucede: \b{las palabras que varían} forman parte del sujeto.\n\nMi primo \u{ha cantado} una canción. → Mis primos \u{han cantado} una canción.\n               Verbo en singular              →               Verbo en plural\n\n\i{Mi primo} es el sujeto de la oración porque se ha convertido en \i{Mis primos}.' ancho='INFO._w-40' fuente puntos='20' align='a_justify' anchor='a_top_left' info='boton5=1' ">
+  </ajs>
+
+
+
+</body>
+</html>

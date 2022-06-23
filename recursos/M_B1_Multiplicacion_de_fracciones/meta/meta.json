@@ -1,0 +1,13 @@
+{
+  "nivel": [
+    "Primaria"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Números y operaciones"
+  ], 
+  "titulo": "Multiplicación de fracciones", 
+  "descripcion": "Ofrecer actividades que permitan al alumno comprender el procedimiento para multiplicar fracciones.",
+  "resena": "Ofrecer actividades que permitan al alumno comprender el procedimiento para multiplicar fracciones.",
+  "id": "M_B1_Multiplicacion_de_fracciones"
+}

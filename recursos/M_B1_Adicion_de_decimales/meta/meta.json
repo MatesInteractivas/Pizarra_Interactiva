@@ -1,0 +1,13 @@
+{
+  "nivel": [
+    "Primaria"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Números y operaciones"
+  ], 
+  "titulo": "Adición de decimales", 
+  "descripcion": "Ofrecer actividades que permitan al alumno comprender el procedimiento para sumar números con decimales.",
+  "resena": "Ofrecer actividades que permitan al alumno comprender el procedimiento para sumar números con decimales.",
+  "id": "M_B1_Adicion_de_decimales"
+}

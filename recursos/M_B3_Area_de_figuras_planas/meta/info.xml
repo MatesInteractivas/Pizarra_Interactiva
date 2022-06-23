@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="M_B3_Area_de_figuras_planas" 
+	nivel="Primaria" 
+	area="Matemáticas, Geometría" 
+	plataforma="HTML 5" 
+	>
+	<titulo><![CDATA[
+		Área de figuras planas
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+    Obtener la superficie de figuras irregulares mediante su descomposición en triángulos, cuadrados y rectángulos.
+	]]></Descripcion>
+</recurso>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Cuadrado y cubo</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8" external_fonts=""></script>
+</head>
+
+<body>
+  <ajs name="Descartes" code="Descartes" width="1024" height="625">
+    <param name="tamaño" value="1024x625">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="vacio.gif">
+    <param name="nombre" value="">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='pleca' fijo='sí' fondo='6ad4f7' red='no' red10='no' ejes='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='15' y='110' ancho='994' alto='450' fijo='sí' escala='25' O.x='-400' O.y='65' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+    <param name="C_01" value="id='n1' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Animar' expresión='((pleca._w-120)/2,pleca._h-35-15,120,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='animar' activo-si='kk=0' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="C_02" value="id='n2' interfaz='botón' tipo='numérico' región='interior' espacio='pleca' nombre='Otra vez' expresión='(pleca._w-120-15,pleca._h-35-15,120,35)' color='ffffff' color-int='00b894' negrita='sí' fuente puntos='18' acción='calcular' parámetro='pn=-6;hp=6;h0=6;kk=0;jj=ent(rnd*4);a=ent(rnd*4)+1;' activo-si='kk=50' extra_style='flat=1|class=button|overColor=008F73|downColor=00705A' ">
+    <param name="A_01" value="id='I' vector='sí' evaluar='una-sola-vez' tamaño='100' expresión='I[0]=&squot;images/intro/img01.svg&squot;;I[1]=&squot;images/intro/img02.svg&squot;;I[2]=&squot;images/intro/img03.svg&squot;;I[3]=&squot;images/intro/img04.svg&squot;;I[4]=&squot;images/intro/img05.svg&squot;;I[5]=&squot;images/intro/img06.svg&squot;;I[6]=&squot;images/intro/img07.svg&squot;;I[7]=&squot;images/intro/img08.svg&squot;;I[8]=&squot;images/intro/img09.svg&squot;;I[9]=&squot;images/intro/img10.svg&squot;;I[10]=&squot;images/intro/img11.svg&squot;;I[11]=&squot;images/intro/img12.svg&squot;;I[12]=&squot;images/intro/img13.svg&squot;;I[13]=&squot;images/intro/img14.svg&squot;;I[14]=&squot;images/intro/img15.svg&squot;;I[15]=&squot;images/intro/img16.svg&squot;;I[16]=&squot;images/intro/img17.svg&squot;;I[17]=&squot;images/intro/img18.svg&squot;;I[18]=&squot;images/intro/img19.svg&squot;;I[19]=&squot;images/intro/img20.svg&squot;;I[20]=&squot;images/intro/img21.svg&squot;;I[21]=&squot;images/intro/img22.svg&squot;;I[22]=&squot;images/intro/img23.svg&squot;;I[23]=&squot;images/intro/img24.svg&squot;;I[24]=&squot;images/intro/img25.svg&squot;;I[25]=&squot;images/intro/img26.svg&squot;;I[26]=&squot;images/intro/img27.svg&squot;;I[27]=&squot;images/intro/img28.svg&squot;;I[28]=&squot;images/intro/img29.svg&squot;;I[29]=&squot;images/intro/img30.svg&squot;;I[30]=&squot;images/intro/img31.svg&squot;;I[31]=&squot;images/intro/img32.svg&squot;;I[32]=&squot;images/intro/img33.svg&squot;;I[33]=&squot;images/intro/img34.svg&squot;;I[34]=&squot;images/intro/img35.svg&squot;;I[35]=&squot;images/intro/img36.svg&squot;;I[36]=&squot;images/intro/img37.svg&squot;;I[37]=&squot;images/intro/img38.svg&squot;;I[38]=&squot;images/intro/img39.svg&squot;;I[39]=&squot;images/intro/img40.svg&squot;;I[40]=&squot;images/intro/img41.svg&squot;;I[41]=&squot;images/intro/img42.svg&squot;;I[42]=&squot;images/intro/img43.svg&squot;;I[43]=&squot;images/intro/img44.svg&squot;;I[44]=&squot;images/intro/img45.svg&squot;;I[45]=&squot;images/intro/img46.svg&squot;;I[46]=&squot;images/intro/img47.svg&squot;;I[47]=&squot;images/intro/img48.svg&squot;;I[48]=&squot;images/intro/img49.svg&squot;;I[49]=&squot;images/intro/img50.svg&squot;;I[50]=&squot;images/intro/img51.svg&squot;;I[51]=&squot;images/intro/img52.svg&squot;;I[52]=&squot;images/intro/img53.svg&squot;;I[53]=&squot;images/intro/img54.svg&squot;;I[54]=&squot;images/intro/img55.svg&squot;;I[55]=&squot;images/intro/img56.svg&squot;;I[56]=&squot;images/intro/img57.svg&squot;;I[57]=&squot;images/intro/img58.svg&squot;;I[58]=&squot;images/intro/img59.svg&squot;;I[59]=&squot;images/intro/img60.svg&squot;;I[60]=&squot;images/intro/img61.svg&squot;;I[61]=&squot;images/intro/img62.svg&squot;;I[62]=&squot;images/intro/img63.svg&squot;;I[63]=&squot;images/intro/img64.svg&squot;' tipo='vector' ">
+    <param name="A_02" value="id='init()' algoritmo='sí' expresión='0' hacer='xo0=17+ent(rnd*18);yo0=-5+ent(rnd*15);xd0=-0.4;yd0=8;xo1=17+ent(rnd*18);yo1=-5+ent(rnd*15);xd1=3.2;yd1=8;xo2=17+ent(rnd*18);yo2=-5+ent(rnd*15);xd2=-0.4;yd2=4.5;xo3=17+ent(rnd*18);yo3=-5+ent(rnd*15);xd3=3.2;yd3=4.5;xo4=17+ent(rnd*18);yo4=-5+ent(rnd*15);xd4=6.8;yd4=8;xo5=17+ent(rnd*18);yo5=-5+ent(rnd*15);xd5=-0.4;yd5=0.8;xo6=17+ent(rnd*18);yo6=-5+ent(rnd*15);xd6=6.8;yd6=4.5;xo7=17+ent(rnd*18);yo7=-5+ent(rnd*15);xd7=3.2;yd7=0.8;xo8=17+ent(rnd*18);yo8=-5+ent(rnd*15);xd8=6.8;yd8=0.8;xo9=17+ent(rnd*18);yo9=-5+ent(rnd*15);xd9=10.5;yd9=8;xo10=17+ent(rnd*18);yo10=-5+ent(rnd*15);xd10=-0.4;yd10=-2.8;xo11=17+ent(rnd*18);yo11=-5+ent(rnd*15);xd11=10.5;yd11=4.5;xo12=17+ent(rnd*18);yo12=-5+ent(rnd*15);xd12=3.2;yd12=-2.8;xo13=17+ent(rnd*18);yo13=-5+ent(rnd*15);xd13=10.5;yd13=0.8;xo14=17+ent(rnd*18);yo14=-5+ent(rnd*15);xd14=6.8;yd14=-2.8;xo15=17+ent(rnd*18);yo15=-5+ent(rnd*15);xd15=10.5;yd15=-2.8;' tipo='función' ">
+    <param name="A_03" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='jj=ent(rnd*4);a=ent(rnd*4)+1;pn=-6;hp=6;h0=6;kk=0;;numerador=ent(rnd*9)+1;init()' ">
+    <param name="A_04" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+    <param name="G_01" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,15,994,80)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_02" value="espacio='pleca' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(60,58,0.62,0.62)' archivo='images/avatar_m.svg' clip='(0,0,120,120)' ">
+    <param name="G_03" value="espacio='pleca' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(110,42)' texto='Observa el cuadrado que se forma con las figuras al pulsar el botón “Animar”.' ancho='0' fuente puntos='21' align='a_left' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='pleca' tipo='rectángulo' fondo='sí' color='729ad4' coord_abs='sí' expresión='(15,110,994,450)' relleno='f1f2f6' ancho='2' border_radius='6' ">
+    <param name="G_05" value="espacio='E1' tipo='rectángulo' color='30336b' coord_abs='no' expresión='(-1.86+(s%4)*3.7,-4.38+ent(s/4)*3.7,3.1,3.1)' familia='s' s.intervalo='[0,15]' s.pasos='15' relleno='dff9fb' ancho='2' border_radius='4' ">
+    <param name="G_06" value="espacio='E1' tipo='rectángulo' color='6ab04c' dibujar-si='kk=50' coord_abs='no' expresión='(-2.06,-4.58+3*3.7-((a-1)*3.7),3.5+((a-1)*3.7),3.5+((a-1)*3.7))' relleno='aa7f8c8d' ancho='6' border_radius='4' ">
+    <param name="G_07" value="espacio='E1' tipo='imagen' dibujar-si='s<(a^2)' coord_abs='no' expresión='(0.12+_Eval_(&squot;xo&squot;+s)+(_Eval_(&squot;xd&squot;+s)-_Eval_(&squot;xo&squot;+s))*kk/50,+0.15+_Eval_(&squot;yo&squot;+s)+(_Eval_(&squot;yd&squot;+s)-_Eval_(&squot;yo&squot;+s))*kk/50,1,1)' familia='s' s.intervalo='[0,15]' s.pasos='15' archivo='I[16*jj+s]' ">
+    <param name="G_08" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(kk=50)' coord_abs='sí' expresión='[3*E1._w/4-30,E1._h/2-20]' texto='El cuadrado que se forma con [(a==1)?&squot;&squot;:&squot;las &squot;]\b{[a^2]} figura[(a==1)?&squot;&squot;:&squot;s&squot;] es:\n\n\ts{60}{\b{\${[a] × [a] = [a]^2 = [a*a]}}}' fijo='no' ancho='1' fuente puntos='20' align='a_center' anchor='a_center_center' ">
+    <param name="Animación" value="pausa='40' controles='no' auto='no' repetir='no' inicio='kk=0' hacer='kk=kk+1;pn=pn+.2;ang=ang+kk*36' mientras='kk<50' ">
+  </ajs>
+
+
+
+</body>
+</html>

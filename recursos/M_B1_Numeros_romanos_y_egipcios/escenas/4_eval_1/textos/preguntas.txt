@@ -1,9 +1,0 @@
-7
-
-'Escribe en notación romana 475'
-'XXVIII, en notación decimal corresponde a'
-'Descubre el número escrito en notación Egipcia'
-'El número mal escrito en la figura es'
-'Descubre el valor del número Egipcio'
-'Descifra la altura de la pirámide de Keops en metros'
-'Escribe en notación decimal'

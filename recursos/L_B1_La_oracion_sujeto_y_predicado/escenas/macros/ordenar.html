@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>TITULO</title>
+  <script type="text/javascript" src="https://arquimedes.matem.unam.mx/Descartes5/lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body bgcolor="e0e4e8">
+
+  <p align="center">
+    <ajs name="Descartes" code="Descartes" width="970" height="550">
+      <param name="tamaño" value="970x550">
+      <param name="decimal_symbol" value=",">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="sí">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=40 ">
+      <param name="E_01" value="tipo='R2' id='E1' red='c0c0c0' red10='808080' ejes='404040' ">
+      <param name="A_01" value="id='vecValue' vector='sí' evaluar='una-sola-vez' tamaño='n_numeros+20' tipo='vector' ">
+      <param name="A_02" value="id='vecValueDis' vector='sí' evaluar='una-sola-vez' tamaño='n_numeros+20' tipo='vector' ">
+      <param name="A_03" value="id='VecAux1' vector='sí' evaluar='una-sola-vez' tamaño='n_numeros+20' tipo='vector' ">
+      <param name="A_04" value="id='resVec' vector='sí' evaluar='una-sola-vez' tamaño='n_numeros+20' tipo='vector' ">
+      <param name="A_05" value="id='initVecAux()' algoritmo='sí' expresión='x' inicio='_indexT=0;_ancla=minRango;' hacer='VecAux1[_indexT]=_indexT;resVec[_indexT]=-1;_indexT=_indexT+1;' mientras='_indexT<n_numeros' tipo='función' ">
+      <param name="A_06" value="id='reacomodaVector(_posBorrar)' algoritmo='sí' expresión='x' inicio='_indexAcomoda=_posBorrar;' hacer='VecAux1[_indexAcomoda]=VecAux1[_indexAcomoda+1];_indexAcomoda=_indexAcomoda+1' mientras='_indexAcomoda<nIndicesAux' tipo='función' ">
+      <param name="A_07" value="id='buscaMin()' algoritmo='sí' expresión='_tmpIndexMin' inicio='_indexBuscMin=0;_tmpIndexMin=0;_tmpMin=vecValue[VecAux1[_tmpIndexMin]];' hacer='_indexTmp=VecAux1[_indexBuscMin];_valueTmp=vecValue[_indexTmp];_valueTmpDis=vecValueDis[_indexTmp];_valueTmpDisAnt=vecValueDis[VecAux1[_tmpIndexMin]];;_tmpMin2=min(_tmpMin,_valueTmp);_igualesTmp=(_tmpMin==_valueTmp);_menorDisc=(_valueTmpDis<_valueTmpDisAnt);;_cambioMin=(_tmpMin2==_valueTmp)&((!_igualesTmp)|_menorDisc);_tmpIndexMin=(_cambioMin)?_indexBuscMin:_tmpIndexMin;_tmpMin=_tmpMin2;_indexBuscMin=_indexBuscMin+1;' mientras='_indexBuscMin<nIndicesAux' tipo='función' ">
+      <param name="A_08" value="id='ordenaAux()' algoritmo='sí' expresión='x' inicio='nIndicesAux=n_numeros;' hacer='_indexMin=buscaMin();_indexDebug=(n_numeros-nIndicesAux);resVec[_indexDebug]=VecAux1[_indexMin];reacomodaVector(_indexMin);nIndicesAux=nIndicesAux-1;' mientras='(nIndicesAux>0)' tipo='función' ">
+      <param name="A_09" value="id='ordena()' algoritmo='sí' expresión='x' hacer='initVecAux();ordenaAux()' tipo='función' ">
+      <param name="A_10" value="id='generaAleatorios()' algoritmo='sí' expresión='x' inicio='_indexAle=0;' hacer='vecValue[_indexAle]=(rnd*1000-500);_indexAle=_indexAle+1' mientras='_indexAle<n_numeros' tipo='función' ">
+      <param name="A_11" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='debug=0;nIndicesAux=0;n_numeros=3' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' color='20303a' dibujar-si='debug>=1' coord_abs='sí' expresión='[10,20*s]' familia='s' s.intervalo='[0,n_numeros-1]' s.pasos='n_numeros-1' texto='res([s])=[resVec[s]]' fijo='no' ancho='1' align='a_left' anchor='a_top_left' ">
+      <param name="G_02" value="espacio='E1' tipo='texto' color='20303a' dibujar-si='debug>=1' coord_abs='sí' expresión='[110,20*s]' familia='s' s.intervalo='[0,n_numeros-1]' s.pasos='n_numeros-1' texto='aux([s])=[VecAux1[s]]' fijo='no' ancho='1' align='a_left' anchor='a_top_left' ">
+      <param name="G_03" value="espacio='E1' tipo='texto' color='20303a' dibujar-si='debug>=1' coord_abs='sí' expresión='[220,20*s]' familia='s' s.intervalo='[0,n_numeros-1]' s.pasos='n_numeros-1' texto='value([s])=[vecValue[s]],[[vecValueDis[s]]]' fijo='no' ancho='1' align='a_left' anchor='a_top_left' ">
+      <param name="G_04" value="espacio='E1' tipo='texto' color='20303a' dibujar-si='debug>=1' coord_abs='sí' expresión='[370,20*s]' familia='s' s.intervalo='[0,n_numeros-1]' s.pasos='n_numeros-1' texto='[s]=[vecValue[resVec[s]]]' fijo='no' ancho='1' align='a_left' anchor='a_top_left' ">
+    </ajs>
+  </p>
+
+
+
+</body>
+</html>
